@@ -1,0 +1,63 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/empty.proto";
+
+import "part.proto";
+import "kinematics.proto";
+import "error.proto";
+
+package reachy.part.head;
+
+message HeadOrientation {
+    reachy.kinematics.Quaternion q = 1;
+}
+
+message HeadFKRequest {
+    reachy.part.PartKinematicsChain chain = 1;
+    reachy.part.PartPosition position = 2;
+}
+
+message HeadFKSolution {
+    bool success = 1;
+    HeadOrientation orientation = 2;
+}
+
+message HeadIKRequest {
+    HeadOrientation target = 1;
+    reachy.part.PartPosition q0 = 2;
+}
+
+message HeadIKSolution {
+    bool success = 1;
+    reachy.part.PartPosition position = 2;
+
+    error.Error error = 3;
+}
+
+message HeadState {
+
+}
+
+message HeadGoal {
+    reachy.part.PartId id = 1;
+    kinematics.Rotation3D rotation = 2;
+    google.protobuf.FloatValue duration = 3;
+}
+
+message HeadAck {
+    google.protobuf.BoolValue success = 1;
+
+    error.Error error = 3;
+}
+
+
+service HeadService {
+    rpc GetAllHeads (google.protobuf.Empty) returns (reachy.part.ListOfPart);
+
+    rpc ComputeHeadFK (HeadFKRequest) returns (HeadFKSolution);
+    rpc ComputeHeadIK (HeadIKRequest) returns (HeadIKSolution);
+
+    rpc GoToOrientation (HeadGoal) returns (HeadAck);
+    rpc GetOrientation (reachy.part.PartId) returns (reachy.kinematics.Quaternion);
+}

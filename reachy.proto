@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+import "part.proto";
+import "arm.proto";
+import "head.proto";
+import "hand.proto";
+import "mobile_base.proto";
+
+package reachy;
+
+message Reachy {
+    ReachyId id = 1;
+    repeated reachy.part.Part parts = 2;
+    
+    ReachyInfo info = 3;
+}
+
+message ReachyId {
+    string name = 1;
+    string id = 2;
+}
+
+message ReachyInfo {
+    string serial_number = 1;
+    string version_hard = 2;
+    string version_soft = 3;
+}
+
+message ListOfReachy {
+    repeated Reachy reachy = 1;
+}
+
+message ReachyState {
+    reachy.part.arm.ArmState l_arm_state = 1;
+    reachy.part.arm.ArmState r_arm_state = 2;
+    reachy.part.head.HeadState head_state = 3;
+    reachy.part.hand.HandState l_hand_state = 4;
+    reachy.part.hand.HandState r_hand_state = 5;
+    reachy.part.mobile_base.MobileBaseState mobile_base_state = 6;
+}
+
+service ReachyService {
+    rpc GetListOfReachy (google.protobuf.Empty) returns (ListOfReachy);
+    rpc GetReachyState (ReachyId) returns (ReachyState);
+}

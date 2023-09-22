@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package error;
+
+message Error {
+    string details = 1;
+}

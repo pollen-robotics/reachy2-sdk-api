@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+import "part.proto";
+import "kinematics.proto";
+import "error.proto";
+
+package reachy.part.arm;
+
+message ArmEndEffector {
+    reachy.kinematics.Matrix4x4 pose = 1;
+}
+
+message ArmFKRequest {
+    reachy.part.PartKinematicsChain chain = 1;
+    reachy.part.PartPosition position = 2;
+}
+
+message ArmFKSolution {
+    bool success = 1;
+    ArmEndEffector end_effector = 2;
+}
+
+message ArmIKRequest {
+    ArmEndEffector target = 1;
+    reachy.part.PartPosition q0 = 2;
+}
+
+message ArmIKSolution {
+    bool success = 1;
+    reachy.part.PartPosition arm_position = 2;
+
+    error.Error error = 3;
+}
+
+message ArmState {
+    
+}
+
+
+service ArmService {
+    rpc GetAllArms (google.protobuf.Empty) returns (reachy.part.ListOfPart);
+
+    rpc ComputeArmFK(ArmFKRequest) returns (ArmFKSolution);
+    rpc ComputeArmIK(ArmIKRequest) returns (ArmIKSolution);
+}

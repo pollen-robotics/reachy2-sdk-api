@@ -1,0 +1,79 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+
+import "actuator.proto";
+
+package reachy.part;
+
+enum Field {
+    NONE = 0;
+    ALL = 15;
+}
+
+enum PartType {
+    HEAD = 0;
+    ARM = 1;
+    GRIPPER = 2;
+}
+
+message PartId {
+    string name = 1;
+    string id = 2;
+}
+
+message PartIds {
+    repeated PartId id = 1;
+}
+
+message StateRequest {
+    repeated Field fields = 1;
+    PartId id = 2;
+}
+
+message State {
+    google.protobuf.Timestamp timestamp = 15;
+}
+
+enum Axis {
+    ROLL = 0;
+    PITCH = 1;
+    YAW = 2;
+}
+
+message AxisList {
+    repeated Axis axis = 1;
+}
+
+message Part {
+    PartId part_id = 1;
+    PartType part_type = 3;
+
+    PartKinematicsChain kin_chain= 4;
+
+    PartInfo info = 5;
+}
+
+message PartKinematicsChain {
+    repeated actuator.ActuatorId actuators_list = 4;
+    repeated AxisList axis_list = 5;
+}
+
+message Position {
+    repeated google.protobuf.FloatValue position = 1;
+}
+
+message PartPosition {
+    repeated Position position = 1;
+}
+
+message PartInfo {
+    string serial_number = 1;
+    string version_hard = 2;
+    string version_soft = 3;
+}
+
+message ListOfPart {
+    repeated Part part = 1;
+}

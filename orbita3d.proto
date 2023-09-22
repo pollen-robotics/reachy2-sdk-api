@@ -1,0 +1,62 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+
+import "actuator.proto";
+import "error.proto";
+
+package actuator.orbita3d;
+
+enum Field {
+    NONE = 0;
+    ALL = 15;
+}
+
+message Ids {
+    repeated actuator.ActuatorId id = 1;
+}
+
+message StateRequest {
+    repeated Field fields = 1;
+    actuator.ActuatorId id = 2;
+}
+
+message State {
+    google.protobuf.Timestamp timestamp = 15;
+}
+
+message Orbita3DCommand {
+
+}
+
+message StreamStateRequest {
+    StateRequest req = 1;
+    float freq = 2;
+}
+
+message Orbita3DInfo {
+    string serial_number = 1;
+    ActuatorId id = 2;
+}
+
+message Orbita3DAck {
+    google.protobuf.BoolValue success = 1;
+
+    error.Error error = 2;
+}
+
+message ListOfOrbita3DInfo {
+    repeated Orbita3DInfo orbita3D_info = 1;
+}
+
+service Orbita3dService {
+    rpc GetAllOrbita3D (google.protobuf.Empty) returns (ListOfOrbita3DInfo);
+
+    rpc GetState (StateRequest) returns (State);
+    rpc StreamState (StreamStateRequest) returns (stream State);
+
+    rpc SendCommand (Orbita3DCommand) returns (Orbita3DAck);
+    rpc StreamCommand (stream Orbita3DCommand) returns (Orbita3DAck);
+}

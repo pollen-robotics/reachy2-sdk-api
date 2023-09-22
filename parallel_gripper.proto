@@ -1,0 +1,59 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/empty.proto";
+
+import "actuator.proto";
+
+package actuator.parallel_gripper;
+
+enum Field {
+    NONE = 0;
+    ALL = 15;
+}
+
+message Ids {
+    repeated actuator.ActuatorId id = 1;
+}
+
+message StateRequest {
+    repeated Field fields = 1;
+    actuator.ActuatorId id = 2;
+}
+
+message State {
+    google.protobuf.Timestamp timestamp = 15;
+}
+
+message Config {
+
+}
+
+message Error {
+
+}
+
+message GripperCommand {
+
+}
+
+message StreamStateRequest {
+    StateRequest req = 1;
+    float freq = 2;
+}
+
+message Info {
+    string serial_nb = 1;
+}
+
+service GripperService {
+    rpc GetAllIds (google.protobuf.Empty) returns (Ids);
+    rpc GetConfig (actuator.ActuatorId) returns (Config);
+    rpc GetInfo (actuator.ActuatorId) returns (Info);
+
+    rpc GetState (StateRequest) returns (State);
+    rpc StreamState (StreamStateRequest) returns (stream State);
+
+    rpc SendCommand (GripperCommand) returns (Error);
+    rpc StreamCommand (stream GripperCommand) returns (Error);
+}

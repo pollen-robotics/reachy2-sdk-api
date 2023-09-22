@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/empty.proto";
+
+import "part.proto";
+import "error.proto";
+
+package reachy.part.hand;
+
+message HandState {
+    google.protobuf.FloatValue opening = 1;
+    google.protobuf.FloatValue force = 2;
+
+    google.protobuf.BoolValue holding_object = 3;
+}
+
+message HandAck {
+    google.protobuf.BoolValue success = 1;
+
+    error.Error error = 3;
+}
+
+
+service HandService {
+    rpc GetAllHands (google.protobuf.Empty) returns (reachy.part.ListOfPart);
+    rpc GetHandState (reachy.part.PartId) returns (HandState);
+
+    rpc OpenHand (reachy.part.PartId) returns (HandAck);
+    rpc CloseHand (reachy.part.PartId) returns (HandAck);
+}

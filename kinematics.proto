@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package reachy.kinematics;
+
+message Matrix4x4 {
+    repeated double data = 1;
+}
+
+message Quaternion {
+    double w = 1;
+    double x = 2;
+    double y = 3;
+    double z = 4;
+}
+
+message Rotation3D {
+    oneof rotation {
+        Quaternion q = 1;
+    }
+}

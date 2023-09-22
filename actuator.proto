@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package actuator;
+
+message ActuatorId {
+    string id = 1;
+}
+
+message Actuator {
+    
+}
+
+message ListOfActuator {
+    repeated Actuator actuator = 1;
+}
