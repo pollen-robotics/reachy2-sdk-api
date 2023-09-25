@@ -1,20 +1,19 @@
 syntax = "proto3";
 
-// import "google/protobuf/timestamp.proto";
 import "google/protobuf/wrappers.proto";
 import "google/protobuf/empty.proto";
 
-import "component.proto";
-import "error.proto";
+import "proto/component.proto";
+import "proto/error.proto";
 
 package component.sound;
 
 message Microphone {
-
+    MicrophoneInfo info = 1;
 }
 
 message Speaker {
-    
+    SpeakerInfo info = 1;
 }
 
 message MicrophoneInfo {

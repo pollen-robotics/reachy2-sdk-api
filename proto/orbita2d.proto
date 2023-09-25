@@ -4,8 +4,8 @@ import "google/protobuf/wrappers.proto";
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/empty.proto";
 
-import "component.proto";
-import "error.proto";
+import "proto/component.proto";
+import "proto/error.proto";
 
 package component.orbita2d;
 
@@ -59,12 +59,12 @@ message Orbita2DCommand {
 }
 
 message Orbita2DInfo {
-    ComponentId id = 1;
+    component.ComponentId id = 1;
     string serial_number = 2;
 }
 
 message ListOfOrbita2DInfo {
-    repeated Orbita2DInfo orbita3D_info = 1;
+    repeated Orbita2DInfo info = 1;
 }
 
 message Orbita2DAck {

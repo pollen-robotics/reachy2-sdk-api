@@ -3,9 +3,9 @@ syntax = "proto3";
 import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
 
-import "part.proto";
-import "kinematics.proto";
-import "error.proto";
+import "proto/part.proto";
+import "proto/kinematics.proto";
+import "proto/error.proto";
 
 package reachy.part.arm;
 
@@ -40,6 +40,10 @@ message Arm {
     PartInfo info = 5;
 }
 
+message ListOfArm {
+    repeated Arm arm = 1;
+}
+
 message ArmPosition {
     float shoulder_pitch = 1;
     float shoulder_roll = 2;
@@ -56,6 +60,12 @@ message ArmCartesianGoal {
     google.protobuf.FloatValue duration = 3;
 }
 
+message ArmJointGoal {
+    reachy.part.PartId id = 1;
+    ArmPosition position = 2;
+    google.protobuf.FloatValue duration = 3;
+}
+
 message ArmEndEffector {
     reachy.kinematics.Matrix4x4 pose = 1;
 }
@@ -67,7 +77,7 @@ message ArmFKSolution {
 
 message ArmIKRequest {
     ArmEndEffector target = 1;
-    reachy.part.PartPosition q0 = 2;
+    ArmPosition q0 = 2;
 }
 
 message ArmIKSolution {
@@ -87,12 +97,6 @@ message ArmStatus {
     ArmAck ack = 1;
 }
 
-message ArmJointGoal {
-    reachy.part.PartId id = 1;
-    ArmPosition position = 2;
-    google.protobuf.FloatValue duration = 3;
-}
-
 enum SpeedLimit {
     NO_LIMIT = 0;
     FAST = 1;
@@ -100,8 +104,43 @@ enum SpeedLimit {
     SLOW = 3;
 }
 
+message SpeedLimitRequest {
+    reachy.part.PartId id = 1;
+    SpeedLimit limit = 2;
+}
+
+message JointLimits {
+    float min = 1;
+    float max = 2;
+}
+
+message JointsLimits {
+    JointLimits shoulder_pitch = 1;
+    JointLimits shoulder_roll = 2;
+    JointLimits elbow_yaw = 3;
+    JointLimits elbow_pitch = 4;
+    JointLimits wrist_roll = 5;
+    JointLimits wrist_pitch = 6;
+    JointLimits wrist_yaw = 7;
+}
+
+message Temperatures {
+    float motor = 1;
+    float driver = 2;
+}
+
+message ArmTemperatures {
+    Temperatures shoulder_motor_1 = 1;
+    Temperatures shoulder_motor_2 = 2;
+    Temperatures elbow_motor_1 = 3;
+    Temperatures elbow_motor_2 = 4;
+    Temperatures wrist_motor_1 = 5;
+    Temperatures wrist_motor_2 = 6;
+    Temperatures wrist_motor_3 = 7;
+}
+
 service ArmService {
-    rpc GetAllArms (google.protobuf.Empty) returns (reachy.part.ListOfPart);
+    rpc GetAllArms (google.protobuf.Empty) returns (ListOfArm);
 
     rpc ComputeArmFK(ArmPosition) returns (ArmFKSolution);
     rpc ComputeArmIK(ArmIKRequest) returns (ArmIKSolution);
@@ -121,9 +160,9 @@ service ArmService {
     rpc TurnOn (part.PartId) returns (ArmAck);
     rpc TurnOff (part.PartId) returns (ArmAck);
 
-    rpc GetJointLimit (part.PartId) returns (ArmState);
-    rpc GetTemperature (part.PartId) returns (ArmState);
-    rpc GetGoalPosition (part.PartId) returns (ArmState);
+    rpc GetJointsLimits (part.PartId) returns (JointsLimits);
+    rpc GetTemperatures (part.PartId) returns (ArmTemperatures);
+    rpc GetJointGoalPosition (part.PartId) returns (ArmPosition);
 
-    rpc SetSpeedLimit (part.PartId) returns (ArmState);
+    rpc SetSpeedLimit (SpeedLimitRequest) returns (ArmAck);
 }

@@ -3,10 +3,18 @@ syntax = "proto3";
 import "google/protobuf/wrappers.proto";
 import "google/protobuf/empty.proto";
 
-import "part.proto";
-import "error.proto";
+import "proto/part.proto";
+import "proto/error.proto";
 
 package reachy.part.hand;
+
+message Hand {
+
+}
+
+message ListOfHand {
+    repeated Hand hand = 1;
+}
 
 message HandState {
     google.protobuf.FloatValue opening = 1;
@@ -25,16 +33,12 @@ message HandStatus {
 
 }
 
-message Hand {
-    
-}
-
 message Force {
 
 }
 
 service HandService {
-    rpc GetAllHands (google.protobuf.Empty) returns (reachy.part.ListOfPart);
+    rpc GetAllHands (google.protobuf.Empty) returns (ListOfHand);
     rpc GetHandState (reachy.part.PartId) returns (HandState);
 
     rpc OpenHand (reachy.part.PartId) returns (HandAck);

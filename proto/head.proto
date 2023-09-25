@@ -1,0 +1,146 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/empty.proto";
+
+import "proto/part.proto";
+import "proto/kinematics.proto";
+import "proto/error.proto";
+
+package reachy.part.head;
+
+message Head {
+    
+}
+
+message ListOfHead {
+    repeated Head head = 1;
+}
+
+message HeadState {
+
+}
+
+message NeckPosition {
+    float neck_roll = 1;
+    float neck_pitch = 2;
+    float neck_yaw = 3;
+}
+
+message HeadPosition {
+    NeckPosition position = 1;
+    google.protobuf.FloatValue l_antenna = 2;
+    google.protobuf.FloatValue r_antenna = 3;
+}
+
+message NeckGoal {
+    reachy.part.PartId id = 1;
+    kinematics.Rotation3D rotation = 2;
+    google.protobuf.FloatValue duration = 3;
+}
+
+message NeckOrientation {
+    reachy.kinematics.Quaternion q = 1;
+}
+
+message NeckFKRequest {
+    HeadPosition position = 2;
+}
+
+message NeckFKSolution {
+    bool success = 1;
+    NeckOrientation orientation = 2;
+}
+
+message NeckIKRequest {
+    NeckOrientation target = 1;
+    NeckPosition q0 = 2;
+}
+
+message NeckIKSolution {
+    bool success = 1;
+    NeckPosition position = 2;
+
+    error.Error error = 3;
+}
+
+message HeadAck {
+    google.protobuf.BoolValue success = 1;
+
+    error.Error error = 3;
+}
+
+message HeadStatus {
+
+}
+
+message HeadTargetPoint {
+    reachy.part.PartId id = 1;
+    reachy.kinematics.Point point = 2;
+}
+
+enum SpeedLimit {
+    NO_LIMIT = 0;
+    FAST = 1;
+    NORMAL = 2;
+    SLOW = 3;
+}
+
+message SpeedLimitRequest {
+    reachy.part.PartId id = 1;
+    SpeedLimit limit = 2;
+}
+
+message JointLimits {
+    float min = 1;
+    float max = 2;
+}
+
+message JointsLimits {
+    JointLimits neck_roll = 1;
+    JointLimits neck_pitch = 2;
+    JointLimits neck_yaw = 3;
+    JointLimits l_antenna = 4;
+    JointLimits r_antenna = 5;
+}
+
+message Temperatures {
+    float motor = 1;
+    float driver = 2;
+}
+
+message ArmTemperatures {
+    Temperatures neck_motor_1 = 1;
+    Temperatures neck_motor_2 = 2;
+    Temperatures neck_motor_3 = 3;
+    Temperatures l_antenna = 4;
+    Temperatures r_antenna = 5;
+
+}
+
+service HeadService {
+    rpc GetAllHeads (google.protobuf.Empty) returns (ListOfHead);
+
+    rpc ComputeNeckFK (NeckFKRequest) returns (NeckFKSolution);
+    rpc ComputeNeckIK (NeckIKRequest) returns (NeckIKSolution);
+
+    rpc GoToOrientation (NeckGoal) returns (HeadAck);
+    rpc GetOrientation (reachy.part.PartId) returns (reachy.kinematics.Quaternion);
+
+    rpc LookAt (HeadTargetPoint) returns (HeadAck);
+
+    rpc Audit (part.PartId) returns (HeadStatus);
+    rpc HeartBeat (part.PartId) returns (HeadAck);
+
+    rpc Restart (part.PartId) returns (HeadAck);
+    rpc ResetDefaultValues(part.PartId) returns (HeadAck);
+
+    rpc TurnOn (part.PartId) returns (HeadAck);
+    rpc TurnOff (part.PartId) returns (HeadAck);
+
+    rpc GetJointsLimits (part.PartId) returns (JointsLimits);
+    rpc GetTemperatures (part.PartId) returns (ArmTemperatures);
+    rpc GetJointGoalPosition (part.PartId) returns (NeckPosition);
+
+    rpc SetSpeedLimit (SpeedLimitRequest) returns (HeadAck);
+}

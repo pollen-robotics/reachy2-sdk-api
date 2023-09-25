@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package reachy.part;
+
+message PartId {
+    string name = 1;
+    string id = 2;
+}
+
+message PartInfo {
+    string serial_number = 1;
+    string version_hard = 2;
+    string version_soft = 3;
+}

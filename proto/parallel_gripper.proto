@@ -4,12 +4,12 @@ import "google/protobuf/timestamp.proto";
 import "google/protobuf/wrappers.proto";
 import "google/protobuf/empty.proto";
 
-import "component.proto";
-import "error.proto";
+import "proto/component.proto";
+import "proto/error.proto";
 
 package component.parallel_gripper;
 
-enum Field {
+enum ParallelGripperField {
     NONE = 0;
 
     NAME = 1;
@@ -35,7 +35,7 @@ message ParallelGripperState {
 }
 
 message ParallelGripperStateRequest {
-    repeated Field fields = 1;
+    repeated ParallelGripperField fields = 1;
     component.ComponentId id = 2;
 }
 
@@ -65,6 +65,10 @@ message ParallelGripperAck {
     error.Error error = 2;
 }
 
+message ParallelGripperStatus {
+    ParallelGripperAck ack = 1;
+}
+
 service GripperService {
     rpc GetAllParallelGripper (google.protobuf.Empty) returns (ListOfParallelGripperInfo);
 
@@ -73,4 +77,9 @@ service GripperService {
 
     rpc SendCommand (ParallelGripperCommand) returns (ParallelGripperAck);
     rpc StreamCommand (stream ParallelGripperCommand) returns (ParallelGripperAck);
+
+    rpc Audit (component.ComponentId) returns (ParallelGripperStatus);
+    rpc HeartBeat (component.ComponentId) returns (ParallelGripperAck);
+
+    rpc Restart (component.ComponentId) returns (ParallelGripperAck);
 }
