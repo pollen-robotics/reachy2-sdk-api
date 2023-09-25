@@ -4,10 +4,10 @@ import "google/protobuf/wrappers.proto";
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/empty.proto";
 
-import "actuator.proto";
+import "component.proto";
 import "error.proto";
 
-package actuator.orbita2d;
+package component.orbita2d;
 
 enum Orbita2DField {
     NONE = 0;
@@ -19,12 +19,13 @@ enum Orbita2DField {
     PRESENT_SPEED = 4;
     PRESENT_LOAD = 5;
     TEMPERATURE = 6;
+    JOINT_LIMIT = 7;
 
-    COMPLIANT = 7;
-    GOAL_POSITION = 8;
-    SPEED_LIMIT = 9;
-    TORQUE_LIMIT = 10;
-    PID = 11;
+    COMPLIANT = 8;
+    GOAL_POSITION = 9;
+    SPEED_LIMIT = 10;
+    TORQUE_LIMIT = 11;
+    PID = 12;
 
     ALL = 15;
 }
@@ -35,7 +36,7 @@ message Orbita2DState {
 
 message Orbita2DStateRequest {
     repeated Orbita2DField fields = 1;
-    actuator.ActuatorId id = 2;
+    component.ComponentId id = 2;
 }
 
 message Orbita2DStreamStateRequest {
@@ -43,12 +44,22 @@ message Orbita2DStreamStateRequest {
     float freq = 2;
 }
 
+message Float2D {
+    float axis_1 = 1;
+    float axis_2 = 2;
+}
+
 message Orbita2DCommand {
-   
+    component.ComponentId id = 1;
+
+    google.protobuf.BoolValue compliant = 2;
+    Float2D goal_position = 3;
+    Float2D speed_limit = 4;
+    Float2D torque_limit = 5;
 }
 
 message Orbita2DInfo {
-    ActuatorId id = 1;
+    ComponentId id = 1;
     string serial_number = 2;
 }
 
@@ -62,6 +73,10 @@ message Orbita2DAck {
     error.Error error = 2;
 }
 
+message Orbita2DStatus {
+    Orbita2DAck ack = 1;
+}
+
 service Orbita2DService {
     rpc GetAllOrbita2D (google.protobuf.Empty) returns (ListOfOrbita2DInfo);
 
@@ -70,4 +85,9 @@ service Orbita2DService {
 
     rpc SendCommand (Orbita2DCommand) returns (Orbita2DAck);
     rpc StreamCommand (stream Orbita2DCommand) returns (Orbita2DAck);
+
+    rpc Audit (component.ComponentId) returns (Orbita2DStatus);
+    rpc HeartBeat (component.ComponentId) returns (Orbita2DAck);
+
+    rpc Restart (component.ComponentId) returns (Orbita2DAck);
 }

@@ -18,3 +18,9 @@ message Rotation3D {
         Quaternion q = 1;
     }
 }
+
+message Point {
+    double x = 1;
+    double y = 2;
+    double z = 3;
+}

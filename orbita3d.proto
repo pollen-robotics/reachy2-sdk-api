@@ -4,10 +4,11 @@ import "google/protobuf/timestamp.proto";
 import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
 
-import "actuator.proto";
+import "component.proto";
 import "error.proto";
+import "kinematics.proto";
 
-package actuator.orbita3d;
+package component.orbita3d;
 
 enum Field {
     NONE = 0;
@@ -20,7 +21,7 @@ message Orbita3DState {
 
 message Orbita3DStateRequest {
     repeated Field fields = 1;
-    actuator.ActuatorId id = 2;
+    component.ComponentId id = 2;
 }
 
 message Orbita3DStreamStateRequest {
@@ -28,12 +29,23 @@ message Orbita3DStreamStateRequest {
     float freq = 2;
 }
 
-message Orbita3DCommand {
+message Float3D {
+    float roll = 1;
+    float pitch = 2;
+    float yaw = 3;
+}
 
+message Orbita3DCommand {
+    component.ComponentId id = 1;
+
+    google.protobuf.BoolValue compliant = 2;
+    reachy.kinematics.Quaternion goal_position = 3;
+    Float3D speed_limit = 4;
+    Float3D torque_limit = 5;
 }
 
 message Orbita3DInfo {
-    ActuatorId id = 1;
+    ComponentId id = 1;
     string serial_number = 2;
 }
 

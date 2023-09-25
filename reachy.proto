@@ -3,20 +3,31 @@ syntax = "proto3";
 import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
 
-import "part.proto";
 import "arm.proto";
 import "head.proto";
 import "hand.proto";
 import "mobile_base.proto";
 import "error.proto";
+import "sound.proto";
+import "stereo_camera.proto";
 
 package reachy;
 
 message Reachy {
     ReachyId id = 1;
-    repeated reachy.part.Part parts = 2;
+    reachy.part.arm.Arm l_arm = 2;
+    reachy.part.arm.Arm r_arm = 3;
+    reachy.part.head.Head head = 4;
+    reachy.part.hand.Hand l_hand= 5;
+    reachy.part.hand.Hand r_hand= 6;
+
+    component.sound.Microphone microphone = 7;
+    component.sound.Speaker speaker = 8;
+
+    component.video.StereoCamera stereo_camera = 9;
+    // component.video.DepthCamera depth_camera = 10;
     
-    ReachyInfo info = 3;
+    ReachyInfo info = 20;
 }
 
 message ReachyId {
@@ -43,12 +54,6 @@ message ReachyState {
     reachy.part.mobile_base.MobileBaseState mobile_base_state = 6;
 }
 
-message ReachyCommand {
-    reachy.part.arm.ArmGoal l_arm_command = 1;
-    reachy.part.arm.ArmGoal r_arm_command = 2;
-    reachy.part.head.HeadGoal head_command = 3;
-}
-
 message ReachyAck {
     google.protobuf.BoolValue success = 1;
 
@@ -59,5 +64,4 @@ service ReachyService {
     rpc GetListOfReachy (google.protobuf.Empty) returns (ListOfReachy);
 
     rpc GetReachyState (ReachyId) returns (ReachyState);
-    rpc SendReachyCommand (ReachyCommand) returns (ReachyAck);
 }

@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+// import "google/protobuf/timestamp.proto";
+// import "google/protobuf/wrappers.proto";
+import "google/protobuf/empty.proto";
+
+import "component.proto";
+// import "error.proto";
+
+package component.depth_camera;
+
+message DepthCameraInfo {
+    component.ComponentId id = 1;
+
+    repeated float intrinsic_parameters = 2;
+}
+
+message ListOfDepthCameraInfo {
+    repeated DepthCameraInfo stereo_camera_info = 1;
+}
+
+message Frame {
+
+}
+
+service DepthCameraService {
+    rpc GetAllDepthCamera (google.protobuf.Empty) returns (ListOfDepthCameraInfo);
+
+    rpc GetFrame (component.ComponentId) returns (Frame);
+}

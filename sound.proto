@@ -1,0 +1,72 @@
+syntax = "proto3";
+
+// import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/empty.proto";
+
+import "component.proto";
+import "error.proto";
+
+package component.sound;
+
+message Microphone {
+
+}
+
+message Speaker {
+    
+}
+
+message MicrophoneInfo {
+    component.ComponentId id = 1;
+
+    float gain = 2;
+}
+
+message ListOfMicrophoneInfo {
+    repeated MicrophoneInfo stereo_camera_info = 1;
+}
+
+message SoundAck {
+    google.protobuf.BoolValue success = 1;
+
+    error.Error error = 2;
+}
+
+message SoundId {
+    string id = 1;
+}
+
+message RecordingAck {
+    SoundAck ack = 1;
+    SoundId recording_id = 2;
+}
+
+
+message SpeakerInfo {
+    component.ComponentId id = 1;
+
+    float volume = 2;
+}
+
+message ListOfSpeakerInfo {
+    repeated SpeakerInfo stereo_camera_info = 1;
+}
+
+message VolumeRequest {
+    component.ComponentId id = 1;
+    float volume = 2;
+}
+
+
+service SoundService {
+    rpc GetAllMicrophone (google.protobuf.Empty) returns (ListOfMicrophoneInfo);
+    rpc GetAllSpeaker (google.protobuf.Empty) returns (ListOfSpeakerInfo);
+
+    rpc StartRecording (component.ComponentId) returns (SoundAck);
+    rpc StopRecording (component.ComponentId) returns (RecordingAck);
+
+    rpc TestSpeaker (component.ComponentId) returns (SoundAck);
+    rpc ChangeVolume (VolumeRequest) returns (SoundAck);
+    rpc PlaySound (SoundId) returns (SoundAck);
+}

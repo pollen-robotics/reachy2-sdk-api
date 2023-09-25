@@ -4,13 +4,29 @@ import "google/protobuf/timestamp.proto";
 import "google/protobuf/wrappers.proto";
 import "google/protobuf/empty.proto";
 
-import "actuator.proto";
+import "component.proto";
 import "error.proto";
 
-package actuator.parallel_gripper;
+package component.parallel_gripper;
 
 enum Field {
     NONE = 0;
+
+    NAME = 1;
+    UID = 2;
+
+    PRESENT_POSITION = 3;
+    PRESENT_SPEED = 4;
+    PRESENT_LOAD = 5;
+    TEMPERATURE = 6;
+    FORCE_SENSOR = 7;
+
+    COMPLIANT = 8;
+    GOAL_POSITION = 9;
+    SPEED_LIMIT = 10;
+    TORQUE_LIMIT = 11;
+    PID = 12;
+
     ALL = 15;
 }
 
@@ -20,7 +36,7 @@ message ParallelGripperState {
 
 message ParallelGripperStateRequest {
     repeated Field fields = 1;
-    actuator.ActuatorId id = 2;
+    component.ComponentId id = 2;
 }
 
 message ParallelGripperStreamStateRequest {
@@ -30,12 +46,12 @@ message ParallelGripperStreamStateRequest {
 
 
 message ParallelGripperCommand {
-
+    
 }
 
 
 message ParallelGripperInfo {
-    ActuatorId id = 1;
+    ComponentId id = 1;
     string serial_number = 2;
 }
 

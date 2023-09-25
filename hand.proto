@@ -21,6 +21,17 @@ message HandAck {
     error.Error error = 3;
 }
 
+message HandStatus {
+
+}
+
+message Hand {
+    
+}
+
+message Force {
+
+}
 
 service HandService {
     rpc GetAllHands (google.protobuf.Empty) returns (reachy.part.ListOfPart);
@@ -28,4 +39,21 @@ service HandService {
 
     rpc OpenHand (reachy.part.PartId) returns (HandAck);
     rpc CloseHand (reachy.part.PartId) returns (HandAck);
+
+    rpc Audit (part.PartId) returns (HandStatus);
+    rpc HeartBeat (part.PartId) returns (HandAck);
+
+    rpc Restart (part.PartId) returns (HandAck);
+    rpc ResetDefaultValues(part.PartId) returns (HandAck);
+
+    rpc TurnOn (part.PartId) returns (HandAck);
+    rpc TurnOff (part.PartId) returns (HandAck);
+
+    rpc GetJointLimit (part.PartId) returns (HandState);
+    rpc GetTemperature (part.PartId) returns (HandState);
+    rpc GetGoalPosition (part.PartId) returns (HandState);
+
+    rpc SetSpeedLimit (part.PartId) returns (HandState);
+
+    rpc GetForce (part.PartId) returns (Force);
 }

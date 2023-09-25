@@ -9,11 +9,48 @@ import "error.proto";
 
 package reachy.part.arm;
 
+enum ArmField {
+    NONE = 0;
+
+    NAME = 1;
+    UID = 2;
+
+    PRESENT_POSITION = 3;
+    PRESENT_SPEED = 4;
+    PRESENT_LOAD = 5;
+    TEMPERATURE = 6;
+    JOINT_LIMIT = 7;
+
+    COMPLIANT = 8;
+    GOAL_POSITION = 9;
+    SPEED_LIMIT = 10;
+    TORQUE_LIMIT = 11;
+    PID = 12;
+
+    ALL = 15;
+}
+
 message ArmState {
     
 }
 
-message ArmGoal {
+message Arm {
+    PartId part_id = 1;
+
+    PartInfo info = 5;
+}
+
+message ArmPosition {
+    float shoulder_pitch = 1;
+    float shoulder_roll = 2;
+    float elbow_yaw = 3;
+    float elbow_pitch = 4;
+    float wrist_roll = 5;
+    float wrist_pitch = 6;
+    float wrist_yaw = 7;
+}
+
+message ArmCartesianGoal {
     reachy.part.PartId id = 1;
     kinematics.Matrix4x4 position = 2;
     google.protobuf.FloatValue duration = 3;
@@ -21,11 +58,6 @@ message ArmGoal {
 
 message ArmEndEffector {
     reachy.kinematics.Matrix4x4 pose = 1;
-}
-
-message ArmFKRequest {
-    reachy.part.PartKinematicsChain chain = 1;
-    reachy.part.PartPosition position = 2;
 }
 
 message ArmFKSolution {
@@ -40,7 +72,7 @@ message ArmIKRequest {
 
 message ArmIKSolution {
     bool success = 1;
-    reachy.part.PartPosition arm_position = 2;
+    ArmPosition arm_position = 2;
 
     error.Error error = 3;
 }
@@ -51,12 +83,47 @@ message ArmAck {
     error.Error error = 3;
 }
 
+message ArmStatus {
+    ArmAck ack = 1;
+}
+
+message ArmJointGoal {
+    reachy.part.PartId id = 1;
+    ArmPosition position = 2;
+    google.protobuf.FloatValue duration = 3;
+}
+
+enum SpeedLimit {
+    NO_LIMIT = 0;
+    FAST = 1;
+    NORMAL = 2;
+    SLOW = 3;
+}
+
 service ArmService {
     rpc GetAllArms (google.protobuf.Empty) returns (reachy.part.ListOfPart);
 
-    rpc ComputeArmFK(ArmFKRequest) returns (ArmFKSolution);
+    rpc ComputeArmFK(ArmPosition) returns (ArmFKSolution);
     rpc ComputeArmIK(ArmIKRequest) returns (ArmIKSolution);
 
-    rpc GoToPosition (ArmGoal) returns (ArmAck);
-    rpc GetPosition (reachy.part.PartId) returns (kinematics.Matrix4x4);
+    rpc GoToCartesianPosition (ArmCartesianGoal) returns (ArmAck);
+    rpc GoToJointPosition (ArmJointGoal) returns (ArmAck);
+
+    rpc GetCartesianPosition (reachy.part.PartId) returns (kinematics.Matrix4x4);
+    rpc GetJointPosition (reachy.part.PartId) returns (ArmPosition);
+
+    rpc Audit (part.PartId) returns (ArmStatus);
+    rpc HeartBeat (part.PartId) returns (ArmAck);
+
+    rpc Restart (part.PartId) returns (ArmAck);
+    rpc ResetDefaultValues(part.PartId) returns (ArmAck);
+
+    rpc TurnOn (part.PartId) returns (ArmAck);
+    rpc TurnOff (part.PartId) returns (ArmAck);
+
+    rpc GetJointLimit (part.PartId) returns (ArmState);
+    rpc GetTemperature (part.PartId) returns (ArmState);
+    rpc GetGoalPosition (part.PartId) returns (ArmState);
+
+    rpc SetSpeedLimit (part.PartId) returns (ArmState);
 }

@@ -9,8 +9,24 @@ import "error.proto";
 
 package reachy.part.head;
 
+message Head {
+    
+}
+
 message HeadState {
 
+}
+
+message NeckPosition {
+    float neck_roll = 1;
+    float neck_pitch = 2;
+    float neck_yaw = 3;
+}
+
+message HeadPosition {
+    NeckPosition position = 1;
+    google.protobuf.FloatValue l_antenna = 2;
+    google.protobuf.FloatValue r_antenna = 3;
 }
 
 message HeadGoal {
@@ -24,8 +40,7 @@ message HeadOrientation {
 }
 
 message HeadFKRequest {
-    reachy.part.PartKinematicsChain chain = 1;
-    reachy.part.PartPosition position = 2;
+    HeadPosition position = 2;
 }
 
 message HeadFKSolution {
@@ -51,6 +66,14 @@ message HeadAck {
     error.Error error = 3;
 }
 
+message HeadStatus {
+
+}
+
+message HeadTargetPoint {
+    reachy.part.PartId id = 1;
+    reachy.kinematics.Point point = 2;
+}
 
 service HeadService {
     rpc GetAllHeads (google.protobuf.Empty) returns (reachy.part.ListOfPart);
@@ -60,4 +83,21 @@ service HeadService {
 
     rpc GoToOrientation (HeadGoal) returns (HeadAck);
     rpc GetOrientation (reachy.part.PartId) returns (reachy.kinematics.Quaternion);
+
+    rpc LookAt (HeadTargetPoint) returns (HeadAck);
+
+    rpc Audit (part.PartId) returns (HeadStatus);
+    rpc HeartBeat (part.PartId) returns (HeadAck);
+
+    rpc Restart (part.PartId) returns (HeadAck);
+    rpc ResetDefaultValues(part.PartId) returns (HeadAck);
+
+    rpc TurnOn (part.PartId) returns (HeadAck);
+    rpc TurnOff (part.PartId) returns (HeadAck);
+
+    rpc GetJointLimit (part.PartId) returns (HeadState);
+    rpc GetTemperature (part.PartId) returns (HeadState);
+    rpc GetGoalPosition (part.PartId) returns (HeadState);
+
+    rpc SetSpeedLimit (part.PartId) returns (HeadState);
 }

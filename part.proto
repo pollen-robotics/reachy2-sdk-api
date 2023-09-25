@@ -3,8 +3,6 @@ syntax = "proto3";
 import "google/protobuf/wrappers.proto";
 import "google/protobuf/timestamp.proto";
 
-import "actuator.proto";
-
 package reachy.part;
 
 enum Field {
@@ -50,14 +48,8 @@ message Part {
     PartId part_id = 1;
     PartType part_type = 3;
 
-    PartKinematicsChain kin_chain= 4;
-
+    
     PartInfo info = 5;
-}
-
-message PartKinematicsChain {
-    repeated actuator.ActuatorId actuators_list = 4;
-    repeated AxisList axis_list = 5;
 }
 
 message Position {

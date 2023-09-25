@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package component;
+
+message ComponentId {
+    string id = 1;
+}
+
+message PIDGains {
+    float p = 1;
+    float i = 2;
+    float d = 3;
+}
