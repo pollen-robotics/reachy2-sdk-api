@@ -3,9 +3,9 @@ syntax = "proto3";
 import "google/protobuf/wrappers.proto";
 import "google/protobuf/empty.proto";
 
-import "proto/part.proto";
-import "proto/kinematics.proto";
-import "proto/error.proto";
+import "part.proto";
+import "kinematics.proto";
+import "error.proto";
 
 package reachy.part.head;
 

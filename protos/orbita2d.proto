@@ -4,8 +4,8 @@ import "google/protobuf/wrappers.proto";
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/empty.proto";
 
-import "proto/component.proto";
-import "proto/error.proto";
+import "component.proto";
+import "error.proto";
 
 package component.orbita2d;
 

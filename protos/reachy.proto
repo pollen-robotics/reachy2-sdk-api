@@ -9,7 +9,7 @@ import "hand.proto";
 import "mobile_base.proto";
 import "error.proto";
 import "sound.proto";
-import "stereo_camera.proto";
+import "video.proto";
 
 package reachy;
 

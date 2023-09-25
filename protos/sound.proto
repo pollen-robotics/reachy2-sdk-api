@@ -3,8 +3,8 @@ syntax = "proto3";
 import "google/protobuf/wrappers.proto";
 import "google/protobuf/empty.proto";
 
-import "proto/component.proto";
-import "proto/error.proto";
+import "component.proto";
+import "error.proto";
 
 package component.sound;
 
