@@ -1,9 +1,11 @@
 syntax = "proto3";
 
 import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
 import "google/protobuf/empty.proto";
 
 import "actuator.proto";
+import "error.proto";
 
 package actuator.parallel_gripper;
 
@@ -12,48 +14,47 @@ enum Field {
     ALL = 15;
 }
 
-message Ids {
-    repeated actuator.ActuatorId id = 1;
+message ParallelGripperState {
+    google.protobuf.Timestamp timestamp = 15;
 }
 
-message StateRequest {
+message ParallelGripperStateRequest {
     repeated Field fields = 1;
     actuator.ActuatorId id = 2;
 }
 
-message State {
-    google.protobuf.Timestamp timestamp = 15;
-}
-
-message Config {
-
-}
-
-message Error {
-
-}
-
-message GripperCommand {
-
-}
-
-message StreamStateRequest {
-    StateRequest req = 1;
+message ParallelGripperStreamStateRequest {
+    ParallelGripperStateRequest req = 1;
     float freq = 2;
 }
 
-message Info {
-    string serial_nb = 1;
+
+message ParallelGripperCommand {
+
+}
+
+
+message ParallelGripperInfo {
+    ActuatorId id = 1;
+    string serial_number = 2;
+}
+
+message ListOfParallelGripperInfo {
+    repeated ParallelGripperInfo parallel_gripper_info = 1;
+}
+
+message ParallelGripperAck {
+    google.protobuf.BoolValue success = 1;
+
+    error.Error error = 2;
 }
 
 service GripperService {
-    rpc GetAllIds (google.protobuf.Empty) returns (Ids);
-    rpc GetConfig (actuator.ActuatorId) returns (Config);
-    rpc GetInfo (actuator.ActuatorId) returns (Info);
+    rpc GetAllParallelGripper (google.protobuf.Empty) returns (ListOfParallelGripperInfo);
 
-    rpc GetState (StateRequest) returns (State);
-    rpc StreamState (StreamStateRequest) returns (stream State);
+    rpc GetState (ParallelGripperStateRequest) returns (ParallelGripperState);
+    rpc StreamState (ParallelGripperStreamStateRequest) returns (stream ParallelGripperState);
 
-    rpc SendCommand (GripperCommand) returns (Error);
-    rpc StreamCommand (stream GripperCommand) returns (Error);
+    rpc SendCommand (ParallelGripperCommand) returns (ParallelGripperAck);
+    rpc StreamCommand (stream ParallelGripperCommand) returns (ParallelGripperAck);
 }

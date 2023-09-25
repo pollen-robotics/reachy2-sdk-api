@@ -5,6 +5,7 @@ import "google/protobuf/timestamp.proto";
 import "google/protobuf/empty.proto";
 
 import "actuator.proto";
+import "error.proto";
 
 package actuator.orbita2d;
 
@@ -28,8 +29,8 @@ enum Orbita2DField {
     ALL = 15;
 }
 
-message Orbita2DIds {
-    repeated actuator.ActuatorId id = 1;
+message Orbita2DState {
+    google.protobuf.Timestamp timestamp = 15;
 }
 
 message Orbita2DStateRequest {
@@ -37,65 +38,36 @@ message Orbita2DStateRequest {
     actuator.ActuatorId id = 2;
 }
 
-message Orbita2DState {
-    google.protobuf.Timestamp timestamp = 15;
-}
-
-message Orbita2DConfig {
-
-}
-
-message Orbita2DError {
-
-}
-
-message PIDGains {
-    float p = 1;
-    float i = 2;
-    float d = 3;
-}
-
-message ComplianceMarginSlope {
-    float cw_compliance_margin = 1;
-    float ccw_compliance_margin = 2;
-    float cw_compliance_slope = 3;
-    float ccw_compliance_slope = 4;
-}
-
-message PIDValue {
-    oneof gains {
-        PIDGains pid = 1;
-        ComplianceMarginSlope compliance = 2;
-    }
-}
-
-message Orbita2DCommand {
-    actuator.ActuatorId id = 1;
-
-    google.protobuf.BoolValue compliant = 7;
-    google.protobuf.FloatValue goal_position = 8;
-    google.protobuf.FloatValue speed_limit = 9;
-    google.protobuf.FloatValue torque_limit = 10;
-    PIDValue pid = 11;
-}
-
-message StreamOrbita2DStateRequest {
+message Orbita2DStreamStateRequest {
     Orbita2DStateRequest req = 1;
     float freq = 2;
 }
 
+message Orbita2DCommand {
+   
+}
+
 message Orbita2DInfo {
-    string serial_nb = 1;
+    ActuatorId id = 1;
+    string serial_number = 2;
+}
+
+message ListOfOrbita2DInfo {
+    repeated Orbita2DInfo orbita3D_info = 1;
+}
+
+message Orbita2DAck {
+    google.protobuf.BoolValue success = 1;
+
+    error.Error error = 2;
 }
 
 service Orbita2DService {
-    rpc GetAllIds (google.protobuf.Empty) returns (Orbita2DIds);
-    rpc GetConfig (actuator.ActuatorId) returns (Orbita2DConfig);
-    rpc GetInfo (actuator.ActuatorId) returns (Orbita2DInfo);
+    rpc GetAllOrbita2D (google.protobuf.Empty) returns (ListOfOrbita2DInfo);
 
     rpc GetState (Orbita2DStateRequest) returns (Orbita2DState);
-    rpc StreamState (StreamOrbita2DStateRequest) returns (stream Orbita2DState);
+    rpc StreamState (Orbita2DStreamStateRequest) returns (stream Orbita2DState);
 
-    rpc SendCommand (Orbita2DCommand) returns (Orbita2DError);
-    rpc StreamCommand (stream Orbita2DCommand) returns (Orbita2DError);
+    rpc SendCommand (Orbita2DCommand) returns (Orbita2DAck);
+    rpc StreamCommand (stream Orbita2DCommand) returns (Orbita2DAck);
 }

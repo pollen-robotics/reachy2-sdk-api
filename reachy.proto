@@ -1,12 +1,14 @@
 syntax = "proto3";
 
 import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
 
 import "part.proto";
 import "arm.proto";
 import "head.proto";
 import "hand.proto";
 import "mobile_base.proto";
+import "error.proto";
 
 package reachy;
 
@@ -41,7 +43,21 @@ message ReachyState {
     reachy.part.mobile_base.MobileBaseState mobile_base_state = 6;
 }
 
+message ReachyCommand {
+    reachy.part.arm.ArmGoal l_arm_command = 1;
+    reachy.part.arm.ArmGoal r_arm_command = 2;
+    reachy.part.head.HeadGoal head_command = 3;
+}
+
+message ReachyAck {
+    google.protobuf.BoolValue success = 1;
+
+    error.Error error = 3;
+}
+
 service ReachyService {
     rpc GetListOfReachy (google.protobuf.Empty) returns (ListOfReachy);
+
     rpc GetReachyState (ReachyId) returns (ReachyState);
+    rpc SendReachyCommand (ReachyCommand) returns (ReachyAck);
 }

@@ -9,6 +9,16 @@ import "error.proto";
 
 package reachy.part.head;
 
+message HeadState {
+
+}
+
+message HeadGoal {
+    reachy.part.PartId id = 1;
+    kinematics.Rotation3D rotation = 2;
+    google.protobuf.FloatValue duration = 3;
+}
+
 message HeadOrientation {
     reachy.kinematics.Quaternion q = 1;
 }
@@ -33,16 +43,6 @@ message HeadIKSolution {
     reachy.part.PartPosition position = 2;
 
     error.Error error = 3;
-}
-
-message HeadState {
-
-}
-
-message HeadGoal {
-    reachy.part.PartId id = 1;
-    kinematics.Rotation3D rotation = 2;
-    google.protobuf.FloatValue duration = 3;
 }
 
 message HeadAck {
