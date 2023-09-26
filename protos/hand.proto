@@ -37,6 +37,58 @@ message Force {
 
 }
 
+message JointLimits {
+    float min = 1;
+    float max = 2;
+}
+
+message ParallelGripperLimits {
+    JointLimits limits = 1;
+}
+
+message JointsLimits {
+    oneof limits {
+        ParallelGripperLimits parallel_gripper = 1;
+    }
+}
+
+message ParallelGripperPosition {
+    float position = 1;
+}
+
+message HandPosition {
+    oneof position {
+        ParallelGripperPosition parallel_gripper = 1;
+    }
+}
+
+message Temperatures {
+    float motor = 1;
+    float driver = 2;
+}
+
+message ParallelGripperTemperature {
+    Temperatures temperature = 1;
+}
+
+message HandTemperatures {
+    oneof temperatures {
+        Temperatures parallel_gripper = 1;
+    }
+}
+
+enum SpeedLimit {
+    NO_LIMIT = 0;
+    FAST = 1;
+    NORMAL = 2;
+    SLOW = 3;
+}
+
+message SpeedLimitRequest {
+    reachy.part.PartId id = 1;
+    SpeedLimit limit = 2;
+}
+
 service HandService {
     rpc GetAllHands (google.protobuf.Empty) returns (ListOfHand);
     rpc GetHandState (reachy.part.PartId) returns (HandState);
@@ -44,20 +96,20 @@ service HandService {
     rpc OpenHand (reachy.part.PartId) returns (HandAck);
     rpc CloseHand (reachy.part.PartId) returns (HandAck);
 
-    rpc Audit (part.PartId) returns (HandStatus);
-    rpc HeartBeat (part.PartId) returns (HandAck);
+    rpc Audit (reachy.part.PartId) returns (HandStatus);
+    rpc HeartBeat (reachy.part.PartId) returns (HandAck);
 
-    rpc Restart (part.PartId) returns (HandAck);
-    rpc ResetDefaultValues(part.PartId) returns (HandAck);
+    rpc Restart (reachy.part.PartId) returns (HandAck);
+    rpc ResetDefaultValues(reachy.part.PartId) returns (HandAck);
 
-    rpc TurnOn (part.PartId) returns (HandAck);
-    rpc TurnOff (part.PartId) returns (HandAck);
+    rpc TurnOn (reachy.part.PartId) returns (HandAck);
+    rpc TurnOff (reachy.part.PartId) returns (HandAck);
 
-    rpc GetJointLimit (part.PartId) returns (HandState);
-    rpc GetTemperature (part.PartId) returns (HandState);
-    rpc GetGoalPosition (part.PartId) returns (HandState);
+    rpc GetJointLimit (reachy.part.PartId) returns (JointsLimits);
+    rpc GetTemperature (reachy.part.PartId) returns (HandTemperatures);
+    rpc GetHandGoalPosition (reachy.part.PartId) returns (HandPosition);
 
-    rpc SetSpeedLimit (part.PartId) returns (HandState);
+    rpc SetSpeedLimit (SpeedLimitRequest) returns (HandAck);
 
     rpc GetForce (part.PartId) returns (Force);
 }

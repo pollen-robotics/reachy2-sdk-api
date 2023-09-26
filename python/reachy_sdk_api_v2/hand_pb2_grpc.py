@@ -69,22 +69,22 @@ class HandServiceStub(object):
         self.GetJointLimit = channel.unary_unary(
                 '/reachy.part.hand.HandService/GetJointLimit',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=hand__pb2.HandState.FromString,
+                response_deserializer=hand__pb2.JointsLimits.FromString,
                 )
         self.GetTemperature = channel.unary_unary(
                 '/reachy.part.hand.HandService/GetTemperature',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=hand__pb2.HandState.FromString,
+                response_deserializer=hand__pb2.HandTemperatures.FromString,
                 )
-        self.GetGoalPosition = channel.unary_unary(
-                '/reachy.part.hand.HandService/GetGoalPosition',
+        self.GetHandGoalPosition = channel.unary_unary(
+                '/reachy.part.hand.HandService/GetHandGoalPosition',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=hand__pb2.HandState.FromString,
+                response_deserializer=hand__pb2.HandPosition.FromString,
                 )
         self.SetSpeedLimit = channel.unary_unary(
                 '/reachy.part.hand.HandService/SetSpeedLimit',
-                request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=hand__pb2.HandState.FromString,
+                request_serializer=hand__pb2.SpeedLimitRequest.SerializeToString,
+                response_deserializer=hand__pb2.HandAck.FromString,
                 )
         self.GetForce = channel.unary_unary(
                 '/reachy.part.hand.HandService/GetForce',
@@ -168,7 +168,7 @@ class HandServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
-    def GetGoalPosition(self, request, context):
+    def GetHandGoalPosition(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -242,22 +242,22 @@ def add_HandServiceServicer_to_server(servicer, server):
             'GetJointLimit': grpc.unary_unary_rpc_method_handler(
                     servicer.GetJointLimit,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=hand__pb2.HandState.SerializeToString,
+                    response_serializer=hand__pb2.JointsLimits.SerializeToString,
             ),
             'GetTemperature': grpc.unary_unary_rpc_method_handler(
                     servicer.GetTemperature,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=hand__pb2.HandState.SerializeToString,
+                    response_serializer=hand__pb2.HandTemperatures.SerializeToString,
             ),
-            'GetGoalPosition': grpc.unary_unary_rpc_method_handler(
-                    servicer.GetGoalPosition,
+            'GetHandGoalPosition': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetHandGoalPosition,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=hand__pb2.HandState.SerializeToString,
+                    response_serializer=hand__pb2.HandPosition.SerializeToString,
             ),
             'SetSpeedLimit': grpc.unary_unary_rpc_method_handler(
                     servicer.SetSpeedLimit,
-                    request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=hand__pb2.HandState.SerializeToString,
+                    request_deserializer=hand__pb2.SpeedLimitRequest.FromString,
+                    response_serializer=hand__pb2.HandAck.SerializeToString,
             ),
             'GetForce': grpc.unary_unary_rpc_method_handler(
                     servicer.GetForce,
@@ -457,7 +457,7 @@ class HandService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/GetJointLimit',
             part__pb2.PartId.SerializeToString,
-            hand__pb2.HandState.FromString,
+            hand__pb2.JointsLimits.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -474,12 +474,12 @@ class HandService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/GetTemperature',
             part__pb2.PartId.SerializeToString,
-            hand__pb2.HandState.FromString,
+            hand__pb2.HandTemperatures.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
-    def GetGoalPosition(request,
+    def GetHandGoalPosition(request,
             target,
             options=(),
             channel_credentials=None,
@@ -489,9 +489,9 @@ class HandService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/GetGoalPosition',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/GetHandGoalPosition',
             part__pb2.PartId.SerializeToString,
-            hand__pb2.HandState.FromString,
+            hand__pb2.HandPosition.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -507,8 +507,8 @@ class HandService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/SetSpeedLimit',
-            part__pb2.PartId.SerializeToString,
-            hand__pb2.HandState.FromString,
+            hand__pb2.SpeedLimitRequest.SerializeToString,
+            hand__pb2.HandAck.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 

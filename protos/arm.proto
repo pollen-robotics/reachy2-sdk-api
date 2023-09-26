@@ -151,18 +151,18 @@ service ArmService {
     rpc GetCartesianPosition (reachy.part.PartId) returns (kinematics.Matrix4x4);
     rpc GetJointPosition (reachy.part.PartId) returns (ArmPosition);
 
-    rpc Audit (part.PartId) returns (ArmStatus);
-    rpc HeartBeat (part.PartId) returns (ArmAck);
+    rpc Audit (reachy.part.PartId) returns (ArmStatus);
+    rpc HeartBeat (reachy.part.PartId) returns (ArmAck);
 
-    rpc Restart (part.PartId) returns (ArmAck);
-    rpc ResetDefaultValues(part.PartId) returns (ArmAck);
+    rpc Restart (reachy.part.PartId) returns (ArmAck);
+    rpc ResetDefaultValues(reachy.part.PartId) returns (ArmAck);
 
-    rpc TurnOn (part.PartId) returns (ArmAck);
-    rpc TurnOff (part.PartId) returns (ArmAck);
+    rpc TurnOn (reachy.part.PartId) returns (ArmAck);
+    rpc TurnOff (reachy.part.PartId) returns (ArmAck);
 
-    rpc GetJointsLimits (part.PartId) returns (JointsLimits);
-    rpc GetTemperatures (part.PartId) returns (ArmTemperatures);
-    rpc GetJointGoalPosition (part.PartId) returns (ArmPosition);
+    rpc GetJointsLimits (reachy.part.PartId) returns (JointsLimits);
+    rpc GetTemperatures (reachy.part.PartId) returns (ArmTemperatures);
+    rpc GetJointGoalPosition (reachy.part.PartId) returns (ArmPosition);
 
     rpc SetSpeedLimit (SpeedLimitRequest) returns (ArmAck);
 }

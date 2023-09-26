@@ -129,18 +129,18 @@ service HeadService {
 
     rpc LookAt (HeadTargetPoint) returns (HeadAck);
 
-    rpc Audit (part.PartId) returns (HeadStatus);
-    rpc HeartBeat (part.PartId) returns (HeadAck);
+    rpc Audit (reachy.part.PartId) returns (HeadStatus);
+    rpc HeartBeat (reachy.part.PartId) returns (HeadAck);
 
-    rpc Restart (part.PartId) returns (HeadAck);
-    rpc ResetDefaultValues(part.PartId) returns (HeadAck);
+    rpc Restart (reachy.part.PartId) returns (HeadAck);
+    rpc ResetDefaultValues(reachy.part.PartId) returns (HeadAck);
 
-    rpc TurnOn (part.PartId) returns (HeadAck);
-    rpc TurnOff (part.PartId) returns (HeadAck);
+    rpc TurnOn (reachy.part.PartId) returns (HeadAck);
+    rpc TurnOff (reachy.part.PartId) returns (HeadAck);
 
-    rpc GetJointsLimits (part.PartId) returns (JointsLimits);
-    rpc GetTemperatures (part.PartId) returns (ArmTemperatures);
-    rpc GetJointGoalPosition (part.PartId) returns (NeckPosition);
+    rpc GetJointsLimits (reachy.part.PartId) returns (JointsLimits);
+    rpc GetTemperatures (reachy.part.PartId) returns (ArmTemperatures);
+    rpc GetJointGoalPosition (reachy.part.PartId) returns (NeckPosition);
 
     rpc SetSpeedLimit (SpeedLimitRequest) returns (HeadAck);
 }
