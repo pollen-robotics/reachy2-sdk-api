@@ -9,7 +9,9 @@ import "error.proto";
 package reachy.part.hand;
 
 message Hand {
+    PartId part_id = 1;
 
+    PartInfo info = 5;
 }
 
 message ListOfHand {
