@@ -21,11 +21,13 @@ message Reachy {
     reachy.part.hand.Hand l_hand= 5;
     reachy.part.hand.Hand r_hand= 6;
 
-    component.sound.Microphone microphone = 7;
-    component.sound.Speaker speaker = 8;
+    reachy.part.mobile_base.MobileBase mobile_base= 7;
 
-    component.video.StereoCamera stereo_camera = 9;
-    // component.video.DepthCamera depth_camera = 10;
+    component.sound.Microphone microphone = 8;
+    component.sound.Speaker speaker = 9;
+
+    component.video.StereoCamera stereo_camera = 10;
+    // component.video.DepthCamera depth_camera = 11;
     
     ReachyInfo info = 20;
 }
