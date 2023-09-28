@@ -29,6 +29,12 @@ enum Orbita2DField {
     ALL = 15;
 }
 
+enum Axis {
+    ROLL = 0;
+    PITCH = 1;
+    YAW = 2;
+}
+
 message Orbita2DState {
     google.protobuf.Timestamp timestamp = 1;
 
@@ -80,6 +86,8 @@ message Orbita2DCommand {
 message Orbita2DInfo {
     component.ComponentId id = 1;
     string serial_number = 2;
+    Axis axis_1 = 3;
+    Axis axis_2 = 4;
 }
 
 message ListOfOrbita2DInfo {
