@@ -31,7 +31,22 @@ enum Orbita3DField {
 }
 
 message Orbita3DState {
-    google.protobuf.Timestamp timestamp = 15;
+    google.protobuf.Timestamp timestamp = 1;
+
+    string name = 2;
+    string uid = 3;
+
+    Float3D present_position = 4;
+    Float3D present_speed = 5;
+    Float3D present_load = 6;
+    Float3D temperature = 7;
+
+    google.protobuf.BoolValue compliant = 8;
+    Float3D goal_position = 9;
+    Float3D speed_limit = 10;
+    Float3D torque_limit = 11;
+
+    PID3D pid = 12;
 }
 
 message Orbita3DStateRequest {
@@ -42,6 +57,12 @@ message Orbita3DStateRequest {
 message Orbita3DStreamStateRequest {
     Orbita3DStateRequest req = 1;
     float freq = 2;
+}
+
+message PID3D {
+    PIDGains roll = 1;
+    PIDGains pitch = 2;
+    PIDGains yaw = 3;
 }
 
 message Float3D {
@@ -72,7 +93,7 @@ message Orbita3DStatus {
 
 }
 
-service Orbita3dService {
+service Orbita3DService {
     rpc GetAllOrbita3D (google.protobuf.Empty) returns (ListOfOrbita3DInfo);
 
     rpc GetState (Orbita3DStateRequest) returns (Orbita3DState);

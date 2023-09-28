@@ -4,8 +4,9 @@
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -15,18 +16,49 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x10kinematics.proto\x12\x11reachy.kinematics\"\x19\n\tMatrix4x4\x12\x0c\n\x04\x64\x61ta\x18\x01 \x03(\x01\"8\n\nQuaternion\x12\t\n\x01w\x18\x01 \x01(\x01\x12\t\n\x01x\x18\x02 \x01(\x01\x12\t\n\x01y\x18\x03 \x01(\x01\x12\t\n\x01z\x18\x04 \x01(\x01\"D\n\nRotation3D\x12*\n\x01q\x18\x01 \x01(\x0b\x32\x1d.reachy.kinematics.QuaternionH\x00\x42\n\n\x08rotation\"(\n\x05Point\x12\t\n\x01x\x18\x01 \x01(\x01\x12\t\n\x01y\x18\x02 \x01(\x01\x12\t\n\x01z\x18\x03 \x01(\x01\x62\x06proto3')
 
-_globals = globals()
-_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
-_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'kinematics_pb2', _globals)
+
+
+_MATRIX4X4 = DESCRIPTOR.message_types_by_name['Matrix4x4']
+_QUATERNION = DESCRIPTOR.message_types_by_name['Quaternion']
+_ROTATION3D = DESCRIPTOR.message_types_by_name['Rotation3D']
+_POINT = DESCRIPTOR.message_types_by_name['Point']
+Matrix4x4 = _reflection.GeneratedProtocolMessageType('Matrix4x4', (_message.Message,), {
+  'DESCRIPTOR' : _MATRIX4X4,
+  '__module__' : 'kinematics_pb2'
+  # @@protoc_insertion_point(class_scope:reachy.kinematics.Matrix4x4)
+  })
+_sym_db.RegisterMessage(Matrix4x4)
+
+Quaternion = _reflection.GeneratedProtocolMessageType('Quaternion', (_message.Message,), {
+  'DESCRIPTOR' : _QUATERNION,
+  '__module__' : 'kinematics_pb2'
+  # @@protoc_insertion_point(class_scope:reachy.kinematics.Quaternion)
+  })
+_sym_db.RegisterMessage(Quaternion)
+
+Rotation3D = _reflection.GeneratedProtocolMessageType('Rotation3D', (_message.Message,), {
+  'DESCRIPTOR' : _ROTATION3D,
+  '__module__' : 'kinematics_pb2'
+  # @@protoc_insertion_point(class_scope:reachy.kinematics.Rotation3D)
+  })
+_sym_db.RegisterMessage(Rotation3D)
+
+Point = _reflection.GeneratedProtocolMessageType('Point', (_message.Message,), {
+  'DESCRIPTOR' : _POINT,
+  '__module__' : 'kinematics_pb2'
+  # @@protoc_insertion_point(class_scope:reachy.kinematics.Point)
+  })
+_sym_db.RegisterMessage(Point)
+
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  _globals['_MATRIX4X4']._serialized_start=39
-  _globals['_MATRIX4X4']._serialized_end=64
-  _globals['_QUATERNION']._serialized_start=66
-  _globals['_QUATERNION']._serialized_end=122
-  _globals['_ROTATION3D']._serialized_start=124
-  _globals['_ROTATION3D']._serialized_end=192
-  _globals['_POINT']._serialized_start=194
-  _globals['_POINT']._serialized_end=234
+  _MATRIX4X4._serialized_start=39
+  _MATRIX4X4._serialized_end=64
+  _QUATERNION._serialized_start=66
+  _QUATERNION._serialized_end=122
+  _ROTATION3D._serialized_start=124
+  _ROTATION3D._serialized_end=192
+  _POINT._serialized_start=194
+  _POINT._serialized_end=234
 # @@protoc_insertion_point(module_scope)

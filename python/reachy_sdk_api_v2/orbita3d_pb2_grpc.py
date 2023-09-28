@@ -7,7 +7,7 @@ from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 import orbita3d_pb2 as orbita3d__pb2
 
 
-class Orbita3dServiceStub(object):
+class Orbita3DServiceStub(object):
     """Missing associated documentation comment in .proto file."""
 
     def __init__(self, channel):
@@ -17,48 +17,48 @@ class Orbita3dServiceStub(object):
             channel: A grpc.Channel.
         """
         self.GetAllOrbita3D = channel.unary_unary(
-                '/component.orbita3d.Orbita3dService/GetAllOrbita3D',
+                '/component.orbita3d.Orbita3DService/GetAllOrbita3D',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=orbita3d__pb2.ListOfOrbita3DInfo.FromString,
                 )
         self.GetState = channel.unary_unary(
-                '/component.orbita3d.Orbita3dService/GetState',
+                '/component.orbita3d.Orbita3DService/GetState',
                 request_serializer=orbita3d__pb2.Orbita3DStateRequest.SerializeToString,
                 response_deserializer=orbita3d__pb2.Orbita3DState.FromString,
                 )
         self.StreamState = channel.unary_stream(
-                '/component.orbita3d.Orbita3dService/StreamState',
+                '/component.orbita3d.Orbita3DService/StreamState',
                 request_serializer=orbita3d__pb2.Orbita3DStreamStateRequest.SerializeToString,
                 response_deserializer=orbita3d__pb2.Orbita3DState.FromString,
                 )
         self.SendCommand = channel.unary_unary(
-                '/component.orbita3d.Orbita3dService/SendCommand',
+                '/component.orbita3d.Orbita3DService/SendCommand',
                 request_serializer=orbita3d__pb2.Orbita3DCommand.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.StreamCommand = channel.stream_unary(
-                '/component.orbita3d.Orbita3dService/StreamCommand',
+                '/component.orbita3d.Orbita3DService/StreamCommand',
                 request_serializer=orbita3d__pb2.Orbita3DCommand.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.Audit = channel.unary_unary(
-                '/component.orbita3d.Orbita3dService/Audit',
+                '/component.orbita3d.Orbita3DService/Audit',
                 request_serializer=component__pb2.ComponentId.SerializeToString,
                 response_deserializer=orbita3d__pb2.Orbita3DStatus.FromString,
                 )
         self.HeartBeat = channel.unary_unary(
-                '/component.orbita3d.Orbita3dService/HeartBeat',
+                '/component.orbita3d.Orbita3DService/HeartBeat',
                 request_serializer=component__pb2.ComponentId.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.Restart = channel.unary_unary(
-                '/component.orbita3d.Orbita3dService/Restart',
+                '/component.orbita3d.Orbita3DService/Restart',
                 request_serializer=component__pb2.ComponentId.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
 
 
-class Orbita3dServiceServicer(object):
+class Orbita3DServiceServicer(object):
     """Missing associated documentation comment in .proto file."""
 
     def GetAllOrbita3D(self, request, context):
@@ -110,7 +110,7 @@ class Orbita3dServiceServicer(object):
         raise NotImplementedError('Method not implemented!')
 
 
-def add_Orbita3dServiceServicer_to_server(servicer, server):
+def add_Orbita3DServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
             'GetAllOrbita3D': grpc.unary_unary_rpc_method_handler(
                     servicer.GetAllOrbita3D,
@@ -154,12 +154,12 @@ def add_Orbita3dServiceServicer_to_server(servicer, server):
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-            'component.orbita3d.Orbita3dService', rpc_method_handlers)
+            'component.orbita3d.Orbita3DService', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
 
 
  # This class is part of an EXPERIMENTAL API.
-class Orbita3dService(object):
+class Orbita3DService(object):
     """Missing associated documentation comment in .proto file."""
 
     @staticmethod
@@ -173,7 +173,7 @@ class Orbita3dService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/component.orbita3d.Orbita3dService/GetAllOrbita3D',
+        return grpc.experimental.unary_unary(request, target, '/component.orbita3d.Orbita3DService/GetAllOrbita3D',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             orbita3d__pb2.ListOfOrbita3DInfo.FromString,
             options, channel_credentials,
@@ -190,7 +190,7 @@ class Orbita3dService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/component.orbita3d.Orbita3dService/GetState',
+        return grpc.experimental.unary_unary(request, target, '/component.orbita3d.Orbita3DService/GetState',
             orbita3d__pb2.Orbita3DStateRequest.SerializeToString,
             orbita3d__pb2.Orbita3DState.FromString,
             options, channel_credentials,
@@ -207,7 +207,7 @@ class Orbita3dService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_stream(request, target, '/component.orbita3d.Orbita3dService/StreamState',
+        return grpc.experimental.unary_stream(request, target, '/component.orbita3d.Orbita3DService/StreamState',
             orbita3d__pb2.Orbita3DStreamStateRequest.SerializeToString,
             orbita3d__pb2.Orbita3DState.FromString,
             options, channel_credentials,
@@ -224,7 +224,7 @@ class Orbita3dService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/component.orbita3d.Orbita3dService/SendCommand',
+        return grpc.experimental.unary_unary(request, target, '/component.orbita3d.Orbita3DService/SendCommand',
             orbita3d__pb2.Orbita3DCommand.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
@@ -241,7 +241,7 @@ class Orbita3dService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.stream_unary(request_iterator, target, '/component.orbita3d.Orbita3dService/StreamCommand',
+        return grpc.experimental.stream_unary(request_iterator, target, '/component.orbita3d.Orbita3DService/StreamCommand',
             orbita3d__pb2.Orbita3DCommand.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
@@ -258,7 +258,7 @@ class Orbita3dService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/component.orbita3d.Orbita3dService/Audit',
+        return grpc.experimental.unary_unary(request, target, '/component.orbita3d.Orbita3DService/Audit',
             component__pb2.ComponentId.SerializeToString,
             orbita3d__pb2.Orbita3DStatus.FromString,
             options, channel_credentials,
@@ -275,7 +275,7 @@ class Orbita3dService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/component.orbita3d.Orbita3dService/HeartBeat',
+        return grpc.experimental.unary_unary(request, target, '/component.orbita3d.Orbita3DService/HeartBeat',
             component__pb2.ComponentId.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
@@ -292,7 +292,7 @@ class Orbita3dService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/component.orbita3d.Orbita3dService/Restart',
+        return grpc.experimental.unary_unary(request, target, '/component.orbita3d.Orbita3DService/Restart',
             component__pb2.ComponentId.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,

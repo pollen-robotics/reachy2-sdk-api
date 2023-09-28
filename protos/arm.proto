@@ -6,6 +6,8 @@ import "google/protobuf/wrappers.proto";
 import "part.proto";
 import "kinematics.proto";
 import "error.proto";
+import "orbita2d.proto";
+import "orbita3d.proto";
 
 package reachy.part.arm;
 
@@ -32,6 +34,12 @@ enum ArmField {
 
 message ArmState {
     
+}
+
+message ArmDescription {
+    component.orbita2d.Orbita2DInfo shoulder = 1;
+    component.orbita2d.Orbita2DInfo elbow = 2;
+    component.orbita3d.Orbita3DInfo wrist = 3;
 }
 
 message Arm {

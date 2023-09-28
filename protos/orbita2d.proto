@@ -30,7 +30,22 @@ enum Orbita2DField {
 }
 
 message Orbita2DState {
-    google.protobuf.Timestamp timestamp = 15;
+    google.protobuf.Timestamp timestamp = 1;
+
+    string name = 2;
+    string uid = 3;
+
+    Float2D present_position = 4;
+    Float2D present_speed = 5;
+    Float2D present_load = 6;
+    Float2D temperature = 7;
+
+    google.protobuf.BoolValue compliant = 8;
+    Float2D goal_position = 9;
+    Float2D speed_limit = 10;
+    Float2D torque_limit = 11;
+
+    PID2D pid = 12;
 }
 
 message Orbita2DStateRequest {
@@ -41,6 +56,11 @@ message Orbita2DStateRequest {
 message Orbita2DStreamStateRequest {
     Orbita2DStateRequest req = 1;
     float freq = 2;
+}
+
+message PID2D {
+    PIDGains gains_axis_1 = 1;
+    PIDGains gains_axis_2 = 2;
 }
 
 message Float2D {
