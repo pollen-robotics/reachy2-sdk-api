@@ -5,7 +5,6 @@ import "google/protobuf/timestamp.proto";
 import "google/protobuf/empty.proto";
 
 import "component.proto";
-import "error.proto";
 
 package component.orbita2d;
 
@@ -67,14 +66,8 @@ message ListOfOrbita2DInfo {
     repeated Orbita2DInfo info = 1;
 }
 
-message Orbita2DAck {
-    google.protobuf.BoolValue success = 1;
-
-    error.Error error = 2;
-}
-
 message Orbita2DStatus {
-    Orbita2DAck ack = 1;
+
 }
 
 service Orbita2DService {
@@ -83,11 +76,11 @@ service Orbita2DService {
     rpc GetState (Orbita2DStateRequest) returns (Orbita2DState);
     rpc StreamState (Orbita2DStreamStateRequest) returns (stream Orbita2DState);
 
-    rpc SendCommand (Orbita2DCommand) returns (Orbita2DAck);
-    rpc StreamCommand (stream Orbita2DCommand) returns (Orbita2DAck);
+    rpc SendCommand (Orbita2DCommand) returns (google.protobuf.Empty);
+    rpc StreamCommand (stream Orbita2DCommand) returns (google.protobuf.Empty);
 
     rpc Audit (component.ComponentId) returns (Orbita2DStatus);
-    rpc HeartBeat (component.ComponentId) returns (Orbita2DAck);
+    rpc HeartBeat (component.ComponentId) returns (google.protobuf.Empty);
 
-    rpc Restart (component.ComponentId) returns (Orbita2DAck);
+    rpc Restart (component.ComponentId) returns (google.protobuf.Empty);
 }

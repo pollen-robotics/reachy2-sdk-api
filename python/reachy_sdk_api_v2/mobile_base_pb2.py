@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x11mobile_base.proto\x12\x17reachy.part.mobile_base\"\x11\n\x0fMobileBaseStateb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x11mobile_base.proto\x12\x17reachy.part.mobile_base\"\x0c\n\nMobileBase\"\x11\n\x0fMobileBaseStateb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -21,6 +21,8 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mobile_base_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  _globals['_MOBILEBASESTATE']._serialized_start=46
-  _globals['_MOBILEBASESTATE']._serialized_end=63
+  _globals['_MOBILEBASE']._serialized_start=46
+  _globals['_MOBILEBASE']._serialized_end=58
+  _globals['_MOBILEBASESTATE']._serialized_start=60
+  _globals['_MOBILEBASESTATE']._serialized_end=77
 # @@protoc_insertion_point(module_scope)

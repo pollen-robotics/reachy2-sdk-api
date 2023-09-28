@@ -87,14 +87,8 @@ message ArmIKSolution {
     error.Error error = 3;
 }
 
-message ArmAck {
-    google.protobuf.BoolValue success = 1;
-
-    error.Error error = 3;
-}
-
 message ArmStatus {
-    ArmAck ack = 1;
+
 }
 
 enum SpeedLimit {
@@ -145,24 +139,24 @@ service ArmService {
     rpc ComputeArmFK(ArmPosition) returns (ArmFKSolution);
     rpc ComputeArmIK(ArmIKRequest) returns (ArmIKSolution);
 
-    rpc GoToCartesianPosition (ArmCartesianGoal) returns (ArmAck);
-    rpc GoToJointPosition (ArmJointGoal) returns (ArmAck);
+    rpc GoToCartesianPosition (ArmCartesianGoal) returns (google.protobuf.Empty);
+    rpc GoToJointPosition (ArmJointGoal) returns (google.protobuf.Empty);
 
     rpc GetCartesianPosition (reachy.part.PartId) returns (kinematics.Matrix4x4);
     rpc GetJointPosition (reachy.part.PartId) returns (ArmPosition);
 
     rpc Audit (reachy.part.PartId) returns (ArmStatus);
-    rpc HeartBeat (reachy.part.PartId) returns (ArmAck);
+    rpc HeartBeat (reachy.part.PartId) returns (google.protobuf.Empty);
 
-    rpc Restart (reachy.part.PartId) returns (ArmAck);
-    rpc ResetDefaultValues(reachy.part.PartId) returns (ArmAck);
+    rpc Restart (reachy.part.PartId) returns (google.protobuf.Empty);
+    rpc ResetDefaultValues(reachy.part.PartId) returns (google.protobuf.Empty);
 
-    rpc TurnOn (reachy.part.PartId) returns (ArmAck);
-    rpc TurnOff (reachy.part.PartId) returns (ArmAck);
+    rpc TurnOn (reachy.part.PartId) returns (google.protobuf.Empty);
+    rpc TurnOff (reachy.part.PartId) returns (google.protobuf.Empty);
 
     rpc GetJointsLimits (reachy.part.PartId) returns (JointsLimits);
     rpc GetTemperatures (reachy.part.PartId) returns (ArmTemperatures);
     rpc GetJointGoalPosition (reachy.part.PartId) returns (ArmPosition);
 
-    rpc SetSpeedLimit (SpeedLimitRequest) returns (ArmAck);
+    rpc SetSpeedLimit (SpeedLimitRequest) returns (google.protobuf.Empty);
 }

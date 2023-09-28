@@ -35,7 +35,7 @@ class HeadServiceStub(object):
         self.GoToOrientation = channel.unary_unary(
                 '/reachy.part.head.HeadService/GoToOrientation',
                 request_serializer=head__pb2.NeckGoal.SerializeToString,
-                response_deserializer=head__pb2.HeadAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.GetOrientation = channel.unary_unary(
                 '/reachy.part.head.HeadService/GetOrientation',
@@ -45,7 +45,7 @@ class HeadServiceStub(object):
         self.LookAt = channel.unary_unary(
                 '/reachy.part.head.HeadService/LookAt',
                 request_serializer=head__pb2.HeadTargetPoint.SerializeToString,
-                response_deserializer=head__pb2.HeadAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.Audit = channel.unary_unary(
                 '/reachy.part.head.HeadService/Audit',
@@ -55,27 +55,27 @@ class HeadServiceStub(object):
         self.HeartBeat = channel.unary_unary(
                 '/reachy.part.head.HeadService/HeartBeat',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=head__pb2.HeadAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.Restart = channel.unary_unary(
                 '/reachy.part.head.HeadService/Restart',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=head__pb2.HeadAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.ResetDefaultValues = channel.unary_unary(
                 '/reachy.part.head.HeadService/ResetDefaultValues',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=head__pb2.HeadAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.TurnOn = channel.unary_unary(
                 '/reachy.part.head.HeadService/TurnOn',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=head__pb2.HeadAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.TurnOff = channel.unary_unary(
                 '/reachy.part.head.HeadService/TurnOff',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=head__pb2.HeadAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.GetJointsLimits = channel.unary_unary(
                 '/reachy.part.head.HeadService/GetJointsLimits',
@@ -95,7 +95,7 @@ class HeadServiceStub(object):
         self.SetSpeedLimit = channel.unary_unary(
                 '/reachy.part.head.HeadService/SetSpeedLimit',
                 request_serializer=head__pb2.SpeedLimitRequest.SerializeToString,
-                response_deserializer=head__pb2.HeadAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
 
 
@@ -219,7 +219,7 @@ def add_HeadServiceServicer_to_server(servicer, server):
             'GoToOrientation': grpc.unary_unary_rpc_method_handler(
                     servicer.GoToOrientation,
                     request_deserializer=head__pb2.NeckGoal.FromString,
-                    response_serializer=head__pb2.HeadAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'GetOrientation': grpc.unary_unary_rpc_method_handler(
                     servicer.GetOrientation,
@@ -229,7 +229,7 @@ def add_HeadServiceServicer_to_server(servicer, server):
             'LookAt': grpc.unary_unary_rpc_method_handler(
                     servicer.LookAt,
                     request_deserializer=head__pb2.HeadTargetPoint.FromString,
-                    response_serializer=head__pb2.HeadAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'Audit': grpc.unary_unary_rpc_method_handler(
                     servicer.Audit,
@@ -239,27 +239,27 @@ def add_HeadServiceServicer_to_server(servicer, server):
             'HeartBeat': grpc.unary_unary_rpc_method_handler(
                     servicer.HeartBeat,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=head__pb2.HeadAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'Restart': grpc.unary_unary_rpc_method_handler(
                     servicer.Restart,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=head__pb2.HeadAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'ResetDefaultValues': grpc.unary_unary_rpc_method_handler(
                     servicer.ResetDefaultValues,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=head__pb2.HeadAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'TurnOn': grpc.unary_unary_rpc_method_handler(
                     servicer.TurnOn,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=head__pb2.HeadAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'TurnOff': grpc.unary_unary_rpc_method_handler(
                     servicer.TurnOff,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=head__pb2.HeadAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'GetJointsLimits': grpc.unary_unary_rpc_method_handler(
                     servicer.GetJointsLimits,
@@ -279,7 +279,7 @@ def add_HeadServiceServicer_to_server(servicer, server):
             'SetSpeedLimit': grpc.unary_unary_rpc_method_handler(
                     servicer.SetSpeedLimit,
                     request_deserializer=head__pb2.SpeedLimitRequest.FromString,
-                    response_serializer=head__pb2.HeadAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -355,7 +355,7 @@ class HeadService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/GoToOrientation',
             head__pb2.NeckGoal.SerializeToString,
-            head__pb2.HeadAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -389,7 +389,7 @@ class HeadService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/LookAt',
             head__pb2.HeadTargetPoint.SerializeToString,
-            head__pb2.HeadAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -423,7 +423,7 @@ class HeadService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/HeartBeat',
             part__pb2.PartId.SerializeToString,
-            head__pb2.HeadAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -440,7 +440,7 @@ class HeadService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/Restart',
             part__pb2.PartId.SerializeToString,
-            head__pb2.HeadAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -457,7 +457,7 @@ class HeadService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/ResetDefaultValues',
             part__pb2.PartId.SerializeToString,
-            head__pb2.HeadAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -474,7 +474,7 @@ class HeadService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/TurnOn',
             part__pb2.PartId.SerializeToString,
-            head__pb2.HeadAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -491,7 +491,7 @@ class HeadService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/TurnOff',
             part__pb2.PartId.SerializeToString,
-            head__pb2.HeadAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -559,6 +559,6 @@ class HeadService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/SetSpeedLimit',
             head__pb2.SpeedLimitRequest.SerializeToString,
-            head__pb2.HeadAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

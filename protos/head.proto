@@ -64,12 +64,6 @@ message NeckIKSolution {
     error.Error error = 3;
 }
 
-message HeadAck {
-    google.protobuf.BoolValue success = 1;
-
-    error.Error error = 3;
-}
-
 message HeadStatus {
 
 }
@@ -124,23 +118,23 @@ service HeadService {
     rpc ComputeNeckFK (NeckFKRequest) returns (NeckFKSolution);
     rpc ComputeNeckIK (NeckIKRequest) returns (NeckIKSolution);
 
-    rpc GoToOrientation (NeckGoal) returns (HeadAck);
+    rpc GoToOrientation (NeckGoal) returns (google.protobuf.Empty);
     rpc GetOrientation (reachy.part.PartId) returns (reachy.kinematics.Quaternion);
 
-    rpc LookAt (HeadTargetPoint) returns (HeadAck);
+    rpc LookAt (HeadTargetPoint) returns (google.protobuf.Empty);
 
     rpc Audit (reachy.part.PartId) returns (HeadStatus);
-    rpc HeartBeat (reachy.part.PartId) returns (HeadAck);
+    rpc HeartBeat (reachy.part.PartId) returns (google.protobuf.Empty);
 
-    rpc Restart (reachy.part.PartId) returns (HeadAck);
-    rpc ResetDefaultValues(reachy.part.PartId) returns (HeadAck);
+    rpc Restart (reachy.part.PartId) returns (google.protobuf.Empty);
+    rpc ResetDefaultValues(reachy.part.PartId) returns (google.protobuf.Empty);
 
-    rpc TurnOn (reachy.part.PartId) returns (HeadAck);
-    rpc TurnOff (reachy.part.PartId) returns (HeadAck);
+    rpc TurnOn (reachy.part.PartId) returns (google.protobuf.Empty);
+    rpc TurnOff (reachy.part.PartId) returns (google.protobuf.Empty);
 
     rpc GetJointsLimits (reachy.part.PartId) returns (JointsLimits);
     rpc GetTemperatures (reachy.part.PartId) returns (ArmTemperatures);
     rpc GetJointGoalPosition (reachy.part.PartId) returns (NeckPosition);
 
-    rpc SetSpeedLimit (SpeedLimitRequest) returns (HeadAck);
+    rpc SetSpeedLimit (SpeedLimitRequest) returns (google.protobuf.Empty);
 }

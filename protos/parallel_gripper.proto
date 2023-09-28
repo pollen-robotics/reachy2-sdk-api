@@ -1,11 +1,9 @@
 syntax = "proto3";
 
 import "google/protobuf/timestamp.proto";
-import "google/protobuf/wrappers.proto";
 import "google/protobuf/empty.proto";
 
 import "component.proto";
-import "error.proto";
 
 package component.parallel_gripper;
 
@@ -59,14 +57,8 @@ message ListOfParallelGripperInfo {
     repeated ParallelGripperInfo parallel_gripper_info = 1;
 }
 
-message ParallelGripperAck {
-    google.protobuf.BoolValue success = 1;
-
-    error.Error error = 2;
-}
-
 message ParallelGripperStatus {
-    ParallelGripperAck ack = 1;
+
 }
 
 service GripperService {
@@ -75,11 +67,11 @@ service GripperService {
     rpc GetState (ParallelGripperStateRequest) returns (ParallelGripperState);
     rpc StreamState (ParallelGripperStreamStateRequest) returns (stream ParallelGripperState);
 
-    rpc SendCommand (ParallelGripperCommand) returns (ParallelGripperAck);
-    rpc StreamCommand (stream ParallelGripperCommand) returns (ParallelGripperAck);
+    rpc SendCommand (ParallelGripperCommand) returns (google.protobuf.Empty);
+    rpc StreamCommand (stream ParallelGripperCommand) returns (google.protobuf.Empty);
 
     rpc Audit (component.ComponentId) returns (ParallelGripperStatus);
-    rpc HeartBeat (component.ComponentId) returns (ParallelGripperAck);
+    rpc HeartBeat (component.ComponentId) returns (google.protobuf.Empty);
 
-    rpc Restart (component.ComponentId) returns (ParallelGripperAck);
+    rpc Restart (component.ComponentId) returns (google.protobuf.Empty);
 }

@@ -2,6 +2,11 @@ syntax = "proto3";
 
 package reachy.part.mobile_base;
 
+
+message MobileBase {
+    
+}
+
 message MobileBaseState {
     
 }

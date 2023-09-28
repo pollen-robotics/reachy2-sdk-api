@@ -34,12 +34,12 @@ class Orbita3dServiceStub(object):
         self.SendCommand = channel.unary_unary(
                 '/component.orbita3d.Orbita3dService/SendCommand',
                 request_serializer=orbita3d__pb2.Orbita3DCommand.SerializeToString,
-                response_deserializer=orbita3d__pb2.Orbita3DAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.StreamCommand = channel.stream_unary(
                 '/component.orbita3d.Orbita3dService/StreamCommand',
                 request_serializer=orbita3d__pb2.Orbita3DCommand.SerializeToString,
-                response_deserializer=orbita3d__pb2.Orbita3DAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.Audit = channel.unary_unary(
                 '/component.orbita3d.Orbita3dService/Audit',
@@ -49,12 +49,12 @@ class Orbita3dServiceStub(object):
         self.HeartBeat = channel.unary_unary(
                 '/component.orbita3d.Orbita3dService/HeartBeat',
                 request_serializer=component__pb2.ComponentId.SerializeToString,
-                response_deserializer=orbita3d__pb2.Orbita3DAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.Restart = channel.unary_unary(
                 '/component.orbita3d.Orbita3dService/Restart',
                 request_serializer=component__pb2.ComponentId.SerializeToString,
-                response_deserializer=orbita3d__pb2.Orbita3DAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
 
 
@@ -130,12 +130,12 @@ def add_Orbita3dServiceServicer_to_server(servicer, server):
             'SendCommand': grpc.unary_unary_rpc_method_handler(
                     servicer.SendCommand,
                     request_deserializer=orbita3d__pb2.Orbita3DCommand.FromString,
-                    response_serializer=orbita3d__pb2.Orbita3DAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'StreamCommand': grpc.stream_unary_rpc_method_handler(
                     servicer.StreamCommand,
                     request_deserializer=orbita3d__pb2.Orbita3DCommand.FromString,
-                    response_serializer=orbita3d__pb2.Orbita3DAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'Audit': grpc.unary_unary_rpc_method_handler(
                     servicer.Audit,
@@ -145,12 +145,12 @@ def add_Orbita3dServiceServicer_to_server(servicer, server):
             'HeartBeat': grpc.unary_unary_rpc_method_handler(
                     servicer.HeartBeat,
                     request_deserializer=component__pb2.ComponentId.FromString,
-                    response_serializer=orbita3d__pb2.Orbita3DAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'Restart': grpc.unary_unary_rpc_method_handler(
                     servicer.Restart,
                     request_deserializer=component__pb2.ComponentId.FromString,
-                    response_serializer=orbita3d__pb2.Orbita3DAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -226,7 +226,7 @@ class Orbita3dService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/component.orbita3d.Orbita3dService/SendCommand',
             orbita3d__pb2.Orbita3DCommand.SerializeToString,
-            orbita3d__pb2.Orbita3DAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -243,7 +243,7 @@ class Orbita3dService(object):
             metadata=None):
         return grpc.experimental.stream_unary(request_iterator, target, '/component.orbita3d.Orbita3dService/StreamCommand',
             orbita3d__pb2.Orbita3DCommand.SerializeToString,
-            orbita3d__pb2.Orbita3DAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -277,7 +277,7 @@ class Orbita3dService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/component.orbita3d.Orbita3dService/HeartBeat',
             component__pb2.ComponentId.SerializeToString,
-            orbita3d__pb2.Orbita3DAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -294,6 +294,6 @@ class Orbita3dService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/component.orbita3d.Orbita3dService/Restart',
             component__pb2.ComponentId.SerializeToString,
-            orbita3d__pb2.Orbita3DAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

@@ -4,7 +4,6 @@ import "google/protobuf/wrappers.proto";
 import "google/protobuf/empty.proto";
 
 import "part.proto";
-import "error.proto";
 
 package reachy.part.hand;
 
@@ -23,12 +22,6 @@ message HandState {
     google.protobuf.FloatValue force = 2;
 
     google.protobuf.BoolValue holding_object = 3;
-}
-
-message HandAck {
-    google.protobuf.BoolValue success = 1;
-
-    error.Error error = 3;
 }
 
 message HandStatus {
@@ -95,23 +88,23 @@ service HandService {
     rpc GetAllHands (google.protobuf.Empty) returns (ListOfHand);
     rpc GetHandState (reachy.part.PartId) returns (HandState);
 
-    rpc OpenHand (reachy.part.PartId) returns (HandAck);
-    rpc CloseHand (reachy.part.PartId) returns (HandAck);
+    rpc OpenHand (reachy.part.PartId) returns (google.protobuf.Empty);
+    rpc CloseHand (reachy.part.PartId) returns (google.protobuf.Empty);
 
     rpc Audit (reachy.part.PartId) returns (HandStatus);
-    rpc HeartBeat (reachy.part.PartId) returns (HandAck);
+    rpc HeartBeat (reachy.part.PartId) returns (google.protobuf.Empty);
 
-    rpc Restart (reachy.part.PartId) returns (HandAck);
-    rpc ResetDefaultValues(reachy.part.PartId) returns (HandAck);
+    rpc Restart (reachy.part.PartId) returns (google.protobuf.Empty);
+    rpc ResetDefaultValues(reachy.part.PartId) returns (google.protobuf.Empty);
 
-    rpc TurnOn (reachy.part.PartId) returns (HandAck);
-    rpc TurnOff (reachy.part.PartId) returns (HandAck);
+    rpc TurnOn (reachy.part.PartId) returns (google.protobuf.Empty);
+    rpc TurnOff (reachy.part.PartId) returns (google.protobuf.Empty);
 
     rpc GetJointLimit (reachy.part.PartId) returns (JointsLimits);
     rpc GetTemperature (reachy.part.PartId) returns (HandTemperatures);
     rpc GetHandGoalPosition (reachy.part.PartId) returns (HandPosition);
 
-    rpc SetSpeedLimit (SpeedLimitRequest) returns (HandAck);
+    rpc SetSpeedLimit (SpeedLimitRequest) returns (google.protobuf.Empty);
 
     rpc GetForce (part.PartId) returns (Force);
 }

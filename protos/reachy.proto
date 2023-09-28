@@ -1,13 +1,11 @@
 syntax = "proto3";
 
 import "google/protobuf/empty.proto";
-import "google/protobuf/wrappers.proto";
 
 import "arm.proto";
 import "head.proto";
 import "hand.proto";
 import "mobile_base.proto";
-import "error.proto";
 import "sound.proto";
 import "video.proto";
 
@@ -54,12 +52,6 @@ message ReachyState {
     reachy.part.hand.HandState l_hand_state = 4;
     reachy.part.hand.HandState r_hand_state = 5;
     reachy.part.mobile_base.MobileBaseState mobile_base_state = 6;
-}
-
-message ReachyAck {
-    google.protobuf.BoolValue success = 1;
-
-    error.Error error = 3;
 }
 
 service ReachyService {

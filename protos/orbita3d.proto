@@ -5,7 +5,6 @@ import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
 
 import "component.proto";
-import "error.proto";
 import "kinematics.proto";
 
 package component.orbita3d;
@@ -69,14 +68,8 @@ message ListOfOrbita3DInfo {
     repeated Orbita3DInfo info = 1;
 }
 
-message Orbita3DAck {
-    google.protobuf.BoolValue success = 1;
-
-    error.Error error = 2;
-}
-
 message Orbita3DStatus {
-    Orbita3DAck ack = 1;
+
 }
 
 service Orbita3dService {
@@ -85,11 +78,11 @@ service Orbita3dService {
     rpc GetState (Orbita3DStateRequest) returns (Orbita3DState);
     rpc StreamState (Orbita3DStreamStateRequest) returns (stream Orbita3DState);
 
-    rpc SendCommand (Orbita3DCommand) returns (Orbita3DAck);
-    rpc StreamCommand (stream Orbita3DCommand) returns (Orbita3DAck);
+    rpc SendCommand (Orbita3DCommand) returns (google.protobuf.Empty);
+    rpc StreamCommand (stream Orbita3DCommand) returns (google.protobuf.Empty);
 
     rpc Audit (component.ComponentId) returns (Orbita3DStatus);
-    rpc HeartBeat (component.ComponentId) returns (Orbita3DAck);
+    rpc HeartBeat (component.ComponentId) returns (google.protobuf.Empty);
 
-    rpc Restart (component.ComponentId) returns (Orbita3DAck);
+    rpc Restart (component.ComponentId) returns (google.protobuf.Empty);
 }

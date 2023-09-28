@@ -35,12 +35,12 @@ class ArmServiceStub(object):
         self.GoToCartesianPosition = channel.unary_unary(
                 '/reachy.part.arm.ArmService/GoToCartesianPosition',
                 request_serializer=arm__pb2.ArmCartesianGoal.SerializeToString,
-                response_deserializer=arm__pb2.ArmAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.GoToJointPosition = channel.unary_unary(
                 '/reachy.part.arm.ArmService/GoToJointPosition',
                 request_serializer=arm__pb2.ArmJointGoal.SerializeToString,
-                response_deserializer=arm__pb2.ArmAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.GetCartesianPosition = channel.unary_unary(
                 '/reachy.part.arm.ArmService/GetCartesianPosition',
@@ -60,27 +60,27 @@ class ArmServiceStub(object):
         self.HeartBeat = channel.unary_unary(
                 '/reachy.part.arm.ArmService/HeartBeat',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=arm__pb2.ArmAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.Restart = channel.unary_unary(
                 '/reachy.part.arm.ArmService/Restart',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=arm__pb2.ArmAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.ResetDefaultValues = channel.unary_unary(
                 '/reachy.part.arm.ArmService/ResetDefaultValues',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=arm__pb2.ArmAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.TurnOn = channel.unary_unary(
                 '/reachy.part.arm.ArmService/TurnOn',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=arm__pb2.ArmAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.TurnOff = channel.unary_unary(
                 '/reachy.part.arm.ArmService/TurnOff',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=arm__pb2.ArmAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.GetJointsLimits = channel.unary_unary(
                 '/reachy.part.arm.ArmService/GetJointsLimits',
@@ -100,7 +100,7 @@ class ArmServiceStub(object):
         self.SetSpeedLimit = channel.unary_unary(
                 '/reachy.part.arm.ArmService/SetSpeedLimit',
                 request_serializer=arm__pb2.SpeedLimitRequest.SerializeToString,
-                response_deserializer=arm__pb2.ArmAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
 
 
@@ -230,12 +230,12 @@ def add_ArmServiceServicer_to_server(servicer, server):
             'GoToCartesianPosition': grpc.unary_unary_rpc_method_handler(
                     servicer.GoToCartesianPosition,
                     request_deserializer=arm__pb2.ArmCartesianGoal.FromString,
-                    response_serializer=arm__pb2.ArmAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'GoToJointPosition': grpc.unary_unary_rpc_method_handler(
                     servicer.GoToJointPosition,
                     request_deserializer=arm__pb2.ArmJointGoal.FromString,
-                    response_serializer=arm__pb2.ArmAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'GetCartesianPosition': grpc.unary_unary_rpc_method_handler(
                     servicer.GetCartesianPosition,
@@ -255,27 +255,27 @@ def add_ArmServiceServicer_to_server(servicer, server):
             'HeartBeat': grpc.unary_unary_rpc_method_handler(
                     servicer.HeartBeat,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=arm__pb2.ArmAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'Restart': grpc.unary_unary_rpc_method_handler(
                     servicer.Restart,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=arm__pb2.ArmAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'ResetDefaultValues': grpc.unary_unary_rpc_method_handler(
                     servicer.ResetDefaultValues,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=arm__pb2.ArmAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'TurnOn': grpc.unary_unary_rpc_method_handler(
                     servicer.TurnOn,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=arm__pb2.ArmAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'TurnOff': grpc.unary_unary_rpc_method_handler(
                     servicer.TurnOff,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=arm__pb2.ArmAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'GetJointsLimits': grpc.unary_unary_rpc_method_handler(
                     servicer.GetJointsLimits,
@@ -295,7 +295,7 @@ def add_ArmServiceServicer_to_server(servicer, server):
             'SetSpeedLimit': grpc.unary_unary_rpc_method_handler(
                     servicer.SetSpeedLimit,
                     request_deserializer=arm__pb2.SpeedLimitRequest.FromString,
-                    response_serializer=arm__pb2.ArmAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -371,7 +371,7 @@ class ArmService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/GoToCartesianPosition',
             arm__pb2.ArmCartesianGoal.SerializeToString,
-            arm__pb2.ArmAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -388,7 +388,7 @@ class ArmService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/GoToJointPosition',
             arm__pb2.ArmJointGoal.SerializeToString,
-            arm__pb2.ArmAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -456,7 +456,7 @@ class ArmService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/HeartBeat',
             part__pb2.PartId.SerializeToString,
-            arm__pb2.ArmAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -473,7 +473,7 @@ class ArmService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/Restart',
             part__pb2.PartId.SerializeToString,
-            arm__pb2.ArmAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -490,7 +490,7 @@ class ArmService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/ResetDefaultValues',
             part__pb2.PartId.SerializeToString,
-            arm__pb2.ArmAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -507,7 +507,7 @@ class ArmService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/TurnOn',
             part__pb2.PartId.SerializeToString,
-            arm__pb2.ArmAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -524,7 +524,7 @@ class ArmService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/TurnOff',
             part__pb2.PartId.SerializeToString,
-            arm__pb2.ArmAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -592,6 +592,6 @@ class ArmService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/SetSpeedLimit',
             arm__pb2.SpeedLimitRequest.SerializeToString,
-            arm__pb2.ArmAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

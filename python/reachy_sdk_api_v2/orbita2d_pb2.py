@@ -15,10 +15,9 @@ from google.protobuf import wrappers_pb2 as google_dot_protobuf_dot_wrappers__pb
 from google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__pb2
 from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 import component_pb2 as component__pb2
-import error_pb2 as error__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0eorbita2d.proto\x12\x12\x63omponent.orbita2d\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a\x0f\x63omponent.proto\x1a\x0b\x65rror.proto\">\n\rOrbita2DState\x12-\n\ttimestamp\x18\x0f \x01(\x0b\x32\x1a.google.protobuf.Timestamp\"m\n\x14Orbita2DStateRequest\x12\x31\n\x06\x66ields\x18\x01 \x03(\x0e\x32!.component.orbita2d.Orbita2DField\x12\"\n\x02id\x18\x02 \x01(\x0b\x32\x16.component.ComponentId\"a\n\x1aOrbita2DStreamStateRequest\x12\x35\n\x03req\x18\x01 \x01(\x0b\x32(.component.orbita2d.Orbita2DStateRequest\x12\x0c\n\x04\x66req\x18\x02 \x01(\x02\")\n\x07\x46loat2D\x12\x0e\n\x06\x61xis_1\x18\x01 \x01(\x02\x12\x0e\n\x06\x61xis_2\x18\x02 \x01(\x02\"\xfd\x01\n\x0fOrbita2DCommand\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12-\n\tcompliant\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x32\n\rgoal_position\x18\x03 \x01(\x0b\x32\x1b.component.orbita2d.Float2D\x12\x30\n\x0bspeed_limit\x18\x04 \x01(\x0b\x32\x1b.component.orbita2d.Float2D\x12\x31\n\x0ctorque_limit\x18\x05 \x01(\x0b\x32\x1b.component.orbita2d.Float2D\"I\n\x0cOrbita2DInfo\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\x15\n\rserial_number\x18\x02 \x01(\t\"D\n\x12ListOfOrbita2DInfo\x12.\n\x04info\x18\x01 \x03(\x0b\x32 .component.orbita2d.Orbita2DInfo\"W\n\x0bOrbita2DAck\x12+\n\x07success\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x1b\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x0c.error.Error\">\n\x0eOrbita2DStatus\x12,\n\x03\x61\x63k\x18\x01 \x01(\x0b\x32\x1f.component.orbita2d.Orbita2DAck*\xe0\x01\n\rOrbita2DField\x12\x08\n\x04NONE\x10\x00\x12\x08\n\x04NAME\x10\x01\x12\x07\n\x03UID\x10\x02\x12\x14\n\x10PRESENT_POSITION\x10\x03\x12\x11\n\rPRESENT_SPEED\x10\x04\x12\x10\n\x0cPRESENT_LOAD\x10\x05\x12\x0f\n\x0bTEMPERATURE\x10\x06\x12\x0f\n\x0bJOINT_LIMIT\x10\x07\x12\r\n\tCOMPLIANT\x10\x08\x12\x11\n\rGOAL_POSITION\x10\t\x12\x0f\n\x0bSPEED_LIMIT\x10\n\x12\x10\n\x0cTORQUE_LIMIT\x10\x0b\x12\x07\n\x03PID\x10\x0c\x12\x07\n\x03\x41LL\x10\x0f\x32\x9d\x05\n\x0fOrbita2DService\x12P\n\x0eGetAllOrbita2D\x12\x16.google.protobuf.Empty\x1a&.component.orbita2d.ListOfOrbita2DInfo\x12W\n\x08GetState\x12(.component.orbita2d.Orbita2DStateRequest\x1a!.component.orbita2d.Orbita2DState\x12\x62\n\x0bStreamState\x12..component.orbita2d.Orbita2DStreamStateRequest\x1a!.component.orbita2d.Orbita2DState0\x01\x12S\n\x0bSendCommand\x12#.component.orbita2d.Orbita2DCommand\x1a\x1f.component.orbita2d.Orbita2DAck\x12W\n\rStreamCommand\x12#.component.orbita2d.Orbita2DCommand\x1a\x1f.component.orbita2d.Orbita2DAck(\x01\x12\x43\n\x05\x41udit\x12\x16.component.ComponentId\x1a\".component.orbita2d.Orbita2DStatus\x12\x44\n\tHeartBeat\x12\x16.component.ComponentId\x1a\x1f.component.orbita2d.Orbita2DAck\x12\x42\n\x07Restart\x12\x16.component.ComponentId\x1a\x1f.component.orbita2d.Orbita2DAckb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0eorbita2d.proto\x12\x12\x63omponent.orbita2d\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a\x0f\x63omponent.proto\">\n\rOrbita2DState\x12-\n\ttimestamp\x18\x0f \x01(\x0b\x32\x1a.google.protobuf.Timestamp\"m\n\x14Orbita2DStateRequest\x12\x31\n\x06\x66ields\x18\x01 \x03(\x0e\x32!.component.orbita2d.Orbita2DField\x12\"\n\x02id\x18\x02 \x01(\x0b\x32\x16.component.ComponentId\"a\n\x1aOrbita2DStreamStateRequest\x12\x35\n\x03req\x18\x01 \x01(\x0b\x32(.component.orbita2d.Orbita2DStateRequest\x12\x0c\n\x04\x66req\x18\x02 \x01(\x02\")\n\x07\x46loat2D\x12\x0e\n\x06\x61xis_1\x18\x01 \x01(\x02\x12\x0e\n\x06\x61xis_2\x18\x02 \x01(\x02\"\xfd\x01\n\x0fOrbita2DCommand\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12-\n\tcompliant\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x32\n\rgoal_position\x18\x03 \x01(\x0b\x32\x1b.component.orbita2d.Float2D\x12\x30\n\x0bspeed_limit\x18\x04 \x01(\x0b\x32\x1b.component.orbita2d.Float2D\x12\x31\n\x0ctorque_limit\x18\x05 \x01(\x0b\x32\x1b.component.orbita2d.Float2D\"I\n\x0cOrbita2DInfo\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\x15\n\rserial_number\x18\x02 \x01(\t\"D\n\x12ListOfOrbita2DInfo\x12.\n\x04info\x18\x01 \x03(\x0b\x32 .component.orbita2d.Orbita2DInfo\"\x10\n\x0eOrbita2DStatus*\xe0\x01\n\rOrbita2DField\x12\x08\n\x04NONE\x10\x00\x12\x08\n\x04NAME\x10\x01\x12\x07\n\x03UID\x10\x02\x12\x14\n\x10PRESENT_POSITION\x10\x03\x12\x11\n\rPRESENT_SPEED\x10\x04\x12\x10\n\x0cPRESENT_LOAD\x10\x05\x12\x0f\n\x0bTEMPERATURE\x10\x06\x12\x0f\n\x0bJOINT_LIMIT\x10\x07\x12\r\n\tCOMPLIANT\x10\x08\x12\x11\n\rGOAL_POSITION\x10\t\x12\x0f\n\x0bSPEED_LIMIT\x10\n\x12\x10\n\x0cTORQUE_LIMIT\x10\x0b\x12\x07\n\x03PID\x10\x0c\x12\x07\n\x03\x41LL\x10\x0f\x32\xf9\x04\n\x0fOrbita2DService\x12P\n\x0eGetAllOrbita2D\x12\x16.google.protobuf.Empty\x1a&.component.orbita2d.ListOfOrbita2DInfo\x12W\n\x08GetState\x12(.component.orbita2d.Orbita2DStateRequest\x1a!.component.orbita2d.Orbita2DState\x12\x62\n\x0bStreamState\x12..component.orbita2d.Orbita2DStreamStateRequest\x1a!.component.orbita2d.Orbita2DState0\x01\x12J\n\x0bSendCommand\x12#.component.orbita2d.Orbita2DCommand\x1a\x16.google.protobuf.Empty\x12N\n\rStreamCommand\x12#.component.orbita2d.Orbita2DCommand\x1a\x16.google.protobuf.Empty(\x01\x12\x43\n\x05\x41udit\x12\x16.component.ComponentId\x1a\".component.orbita2d.Orbita2DStatus\x12;\n\tHeartBeat\x12\x16.component.ComponentId\x1a\x16.google.protobuf.Empty\x12\x39\n\x07Restart\x12\x16.component.ComponentId\x1a\x16.google.protobuf.Emptyb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -26,26 +25,24 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'orbita2d_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  _globals['_ORBITA2DFIELD']._serialized_start=1034
-  _globals['_ORBITA2DFIELD']._serialized_end=1258
-  _globals['_ORBITA2DSTATE']._serialized_start=162
-  _globals['_ORBITA2DSTATE']._serialized_end=224
-  _globals['_ORBITA2DSTATEREQUEST']._serialized_start=226
-  _globals['_ORBITA2DSTATEREQUEST']._serialized_end=335
-  _globals['_ORBITA2DSTREAMSTATEREQUEST']._serialized_start=337
-  _globals['_ORBITA2DSTREAMSTATEREQUEST']._serialized_end=434
-  _globals['_FLOAT2D']._serialized_start=436
-  _globals['_FLOAT2D']._serialized_end=477
-  _globals['_ORBITA2DCOMMAND']._serialized_start=480
-  _globals['_ORBITA2DCOMMAND']._serialized_end=733
-  _globals['_ORBITA2DINFO']._serialized_start=735
-  _globals['_ORBITA2DINFO']._serialized_end=808
-  _globals['_LISTOFORBITA2DINFO']._serialized_start=810
-  _globals['_LISTOFORBITA2DINFO']._serialized_end=878
-  _globals['_ORBITA2DACK']._serialized_start=880
-  _globals['_ORBITA2DACK']._serialized_end=967
-  _globals['_ORBITA2DSTATUS']._serialized_start=969
-  _globals['_ORBITA2DSTATUS']._serialized_end=1031
-  _globals['_ORBITA2DSERVICE']._serialized_start=1261
-  _globals['_ORBITA2DSERVICE']._serialized_end=1930
+  _globals['_ORBITA2DFIELD']._serialized_start=886
+  _globals['_ORBITA2DFIELD']._serialized_end=1110
+  _globals['_ORBITA2DSTATE']._serialized_start=149
+  _globals['_ORBITA2DSTATE']._serialized_end=211
+  _globals['_ORBITA2DSTATEREQUEST']._serialized_start=213
+  _globals['_ORBITA2DSTATEREQUEST']._serialized_end=322
+  _globals['_ORBITA2DSTREAMSTATEREQUEST']._serialized_start=324
+  _globals['_ORBITA2DSTREAMSTATEREQUEST']._serialized_end=421
+  _globals['_FLOAT2D']._serialized_start=423
+  _globals['_FLOAT2D']._serialized_end=464
+  _globals['_ORBITA2DCOMMAND']._serialized_start=467
+  _globals['_ORBITA2DCOMMAND']._serialized_end=720
+  _globals['_ORBITA2DINFO']._serialized_start=722
+  _globals['_ORBITA2DINFO']._serialized_end=795
+  _globals['_LISTOFORBITA2DINFO']._serialized_start=797
+  _globals['_LISTOFORBITA2DINFO']._serialized_end=865
+  _globals['_ORBITA2DSTATUS']._serialized_start=867
+  _globals['_ORBITA2DSTATUS']._serialized_end=883
+  _globals['_ORBITA2DSERVICE']._serialized_start=1113
+  _globals['_ORBITA2DSERVICE']._serialized_end=1746
 # @@protoc_insertion_point(module_scope)

@@ -29,12 +29,12 @@ class HandServiceStub(object):
         self.OpenHand = channel.unary_unary(
                 '/reachy.part.hand.HandService/OpenHand',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=hand__pb2.HandAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.CloseHand = channel.unary_unary(
                 '/reachy.part.hand.HandService/CloseHand',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=hand__pb2.HandAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.Audit = channel.unary_unary(
                 '/reachy.part.hand.HandService/Audit',
@@ -44,27 +44,27 @@ class HandServiceStub(object):
         self.HeartBeat = channel.unary_unary(
                 '/reachy.part.hand.HandService/HeartBeat',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=hand__pb2.HandAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.Restart = channel.unary_unary(
                 '/reachy.part.hand.HandService/Restart',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=hand__pb2.HandAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.ResetDefaultValues = channel.unary_unary(
                 '/reachy.part.hand.HandService/ResetDefaultValues',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=hand__pb2.HandAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.TurnOn = channel.unary_unary(
                 '/reachy.part.hand.HandService/TurnOn',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=hand__pb2.HandAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.TurnOff = channel.unary_unary(
                 '/reachy.part.hand.HandService/TurnOff',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=hand__pb2.HandAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.GetJointLimit = channel.unary_unary(
                 '/reachy.part.hand.HandService/GetJointLimit',
@@ -84,7 +84,7 @@ class HandServiceStub(object):
         self.SetSpeedLimit = channel.unary_unary(
                 '/reachy.part.hand.HandService/SetSpeedLimit',
                 request_serializer=hand__pb2.SpeedLimitRequest.SerializeToString,
-                response_deserializer=hand__pb2.HandAck.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.GetForce = channel.unary_unary(
                 '/reachy.part.hand.HandService/GetForce',
@@ -202,12 +202,12 @@ def add_HandServiceServicer_to_server(servicer, server):
             'OpenHand': grpc.unary_unary_rpc_method_handler(
                     servicer.OpenHand,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=hand__pb2.HandAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'CloseHand': grpc.unary_unary_rpc_method_handler(
                     servicer.CloseHand,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=hand__pb2.HandAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'Audit': grpc.unary_unary_rpc_method_handler(
                     servicer.Audit,
@@ -217,27 +217,27 @@ def add_HandServiceServicer_to_server(servicer, server):
             'HeartBeat': grpc.unary_unary_rpc_method_handler(
                     servicer.HeartBeat,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=hand__pb2.HandAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'Restart': grpc.unary_unary_rpc_method_handler(
                     servicer.Restart,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=hand__pb2.HandAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'ResetDefaultValues': grpc.unary_unary_rpc_method_handler(
                     servicer.ResetDefaultValues,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=hand__pb2.HandAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'TurnOn': grpc.unary_unary_rpc_method_handler(
                     servicer.TurnOn,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=hand__pb2.HandAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'TurnOff': grpc.unary_unary_rpc_method_handler(
                     servicer.TurnOff,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=hand__pb2.HandAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'GetJointLimit': grpc.unary_unary_rpc_method_handler(
                     servicer.GetJointLimit,
@@ -257,7 +257,7 @@ def add_HandServiceServicer_to_server(servicer, server):
             'SetSpeedLimit': grpc.unary_unary_rpc_method_handler(
                     servicer.SetSpeedLimit,
                     request_deserializer=hand__pb2.SpeedLimitRequest.FromString,
-                    response_serializer=hand__pb2.HandAck.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'GetForce': grpc.unary_unary_rpc_method_handler(
                     servicer.GetForce,
@@ -321,7 +321,7 @@ class HandService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/OpenHand',
             part__pb2.PartId.SerializeToString,
-            hand__pb2.HandAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -338,7 +338,7 @@ class HandService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/CloseHand',
             part__pb2.PartId.SerializeToString,
-            hand__pb2.HandAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -372,7 +372,7 @@ class HandService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/HeartBeat',
             part__pb2.PartId.SerializeToString,
-            hand__pb2.HandAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -389,7 +389,7 @@ class HandService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/Restart',
             part__pb2.PartId.SerializeToString,
-            hand__pb2.HandAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -406,7 +406,7 @@ class HandService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/ResetDefaultValues',
             part__pb2.PartId.SerializeToString,
-            hand__pb2.HandAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -423,7 +423,7 @@ class HandService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/TurnOn',
             part__pb2.PartId.SerializeToString,
-            hand__pb2.HandAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -440,7 +440,7 @@ class HandService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/TurnOff',
             part__pb2.PartId.SerializeToString,
-            hand__pb2.HandAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -508,7 +508,7 @@ class HandService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/SetSpeedLimit',
             hand__pb2.SpeedLimitRequest.SerializeToString,
-            hand__pb2.HandAck.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
