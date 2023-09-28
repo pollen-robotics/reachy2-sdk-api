@@ -44,7 +44,7 @@ message ArmDescription {
 
 message Arm {
     PartId part_id = 1;
-
+    ArmDescription description = 2;
     PartInfo info = 5;
 }
 
