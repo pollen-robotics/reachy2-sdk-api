@@ -53,9 +53,12 @@ protoc -I=. your_proto_file.proto --grpc-web_out=import_style=commonjs,mode=grpc
 Replace `your_proto_file.proto` with the name of your actual `.proto` file. Ensure you have the correct import paths and output paths specified for your project structure.
 
 ## Generation of js/ts grpc files
+
+```bash
 for f in ./protos/*.proto; do
   protoc -I=./protos \
          --js_out=import_style=commonjs:./js \
          --grpc-web_out=import_style=typescript,mode=grpcwebtext:./ts \
          "$f"
 done
+```
