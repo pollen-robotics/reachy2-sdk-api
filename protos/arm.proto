@@ -42,8 +42,6 @@ message ArmState {
     component.orbita2d.Orbita2DState shoulder_state = 4;
     component.orbita2d.Orbita2DState elbow_state = 5;
     component.orbita3d.Orbita3DState wrist_state = 6;
-
-    ArmPosition joints_positions = 7;
 }
 
 message ArmDescription {
