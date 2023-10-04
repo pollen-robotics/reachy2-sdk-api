@@ -84,6 +84,7 @@ message NeckOrientation {
 }
 
 message NeckFKRequest {
+    reachy.part.PartId id = 1;
     HeadPosition position = 2;
 }
 
@@ -93,8 +94,9 @@ message NeckFKSolution {
 }
 
 message NeckIKRequest {
-    NeckOrientation target = 1;
-    NeckPosition q0 = 2;
+    reachy.part.PartId id = 1;
+    NeckOrientation target = 2;
+    NeckPosition q0 = 3;
 }
 
 message NeckIKSolution {
