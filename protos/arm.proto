@@ -124,7 +124,7 @@ message JointLimits {
     float max = 2;
 }
 
-message JointsLimits {
+message ArmLimits {
     JointLimits shoulder_pitch = 1;
     JointLimits shoulder_roll = 2;
     JointLimits elbow_yaw = 3;
@@ -170,7 +170,7 @@ service ArmService {
     rpc TurnOn (reachy.part.PartId) returns (google.protobuf.Empty);
     rpc TurnOff (reachy.part.PartId) returns (google.protobuf.Empty);
 
-    rpc GetJointsLimits (reachy.part.PartId) returns (JointsLimits);
+    rpc GetJointsLimits (reachy.part.PartId) returns (ArmLimits);
     rpc GetTemperatures (reachy.part.PartId) returns (ArmTemperatures);
     rpc GetJointGoalPosition (reachy.part.PartId) returns (ArmPosition);
 
