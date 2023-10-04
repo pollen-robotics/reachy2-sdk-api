@@ -16,7 +16,7 @@ enum HeadField {
     NONE = 0;
 
     NAME = 1;
-    UID = 2;
+    ID = 2;
 
     PRESENT_POSITION = 3;
     PRESENT_SPEED = 4;
@@ -54,7 +54,7 @@ message HeadState {
     google.protobuf.Timestamp timestamp = 1;
 
     string name = 2;
-    string uid = 3;
+    uint32 id = 3;
 
     component.orbita3d.Orbita3DState neck_state = 4;
     component.dynamixel_motor.DynamixelMotorState l_antenna_state = 5;

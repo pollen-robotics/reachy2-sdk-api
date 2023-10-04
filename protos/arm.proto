@@ -16,7 +16,7 @@ enum ArmField {
     NONE = 0;
 
     NAME = 1;
-    UID = 2;
+    ID = 2;
 
     PRESENT_POSITION = 3;
     PRESENT_SPEED = 4;
@@ -37,7 +37,7 @@ message ArmState {
     google.protobuf.Timestamp timestamp = 1;
 
     string name = 2;
-    string uid = 3;
+    uint32 id = 3;
 
     component.orbita2d.Orbita2DState shoulder_state = 4;
     component.orbita2d.Orbita2DState elbow_state = 5;
