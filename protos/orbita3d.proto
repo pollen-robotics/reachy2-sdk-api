@@ -13,7 +13,7 @@ enum Orbita3DField {
     NONE = 0;
 
     NAME = 1;
-    UID = 2;
+    ID = 2;
 
     PRESENT_POSITION = 3;
     PRESENT_SPEED = 4;
@@ -34,7 +34,7 @@ message Orbita3DState {
     google.protobuf.Timestamp timestamp = 1;
 
     string name = 2;
-    string uid = 3;
+    uint32 id = 3;
 
     Float3D present_position = 4;
     Float3D present_speed = 5;

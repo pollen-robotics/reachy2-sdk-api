@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0f\x63omponent.proto\x12\tcomponent\"\x19\n\x0b\x43omponentId\x12\n\n\x02id\x18\x01 \x01(\t\"+\n\x08PIDGains\x12\t\n\x01p\x18\x01 \x01(\x02\x12\t\n\x01i\x18\x02 \x01(\x02\x12\t\n\x01\x64\x18\x03 \x01(\x02\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0f\x63omponent.proto\x12\tcomponent\"\'\n\x0b\x43omponentId\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\"+\n\x08PIDGains\x12\t\n\x01p\x18\x01 \x01(\x02\x12\t\n\x01i\x18\x02 \x01(\x02\x12\t\n\x01\x64\x18\x03 \x01(\x02\x62\x06proto3')
 
 
 
@@ -38,7 +38,7 @@ if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
   _COMPONENTID._serialized_start=30
-  _COMPONENTID._serialized_end=55
-  _PIDGAINS._serialized_start=57
-  _PIDGAINS._serialized_end=100
+  _COMPONENTID._serialized_end=69
+  _PIDGAINS._serialized_start=71
+  _PIDGAINS._serialized_end=114
 # @@protoc_insertion_point(module_scope)
