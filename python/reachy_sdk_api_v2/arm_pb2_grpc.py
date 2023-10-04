@@ -85,7 +85,7 @@ class ArmServiceStub(object):
         self.GetJointsLimits = channel.unary_unary(
                 '/reachy.part.arm.ArmService/GetJointsLimits',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=arm__pb2.JointsLimits.FromString,
+                response_deserializer=arm__pb2.ArmLimits.FromString,
                 )
         self.GetTemperatures = channel.unary_unary(
                 '/reachy.part.arm.ArmService/GetTemperatures',
@@ -280,7 +280,7 @@ def add_ArmServiceServicer_to_server(servicer, server):
             'GetJointsLimits': grpc.unary_unary_rpc_method_handler(
                     servicer.GetJointsLimits,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=arm__pb2.JointsLimits.SerializeToString,
+                    response_serializer=arm__pb2.ArmLimits.SerializeToString,
             ),
             'GetTemperatures': grpc.unary_unary_rpc_method_handler(
                     servicer.GetTemperatures,
@@ -541,7 +541,7 @@ class ArmService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/GetJointsLimits',
             part__pb2.PartId.SerializeToString,
-            arm__pb2.JointsLimits.FromString,
+            arm__pb2.ArmLimits.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
