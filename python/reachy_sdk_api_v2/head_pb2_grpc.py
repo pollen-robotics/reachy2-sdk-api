@@ -85,7 +85,7 @@ class HeadServiceStub(object):
         self.GetTemperatures = channel.unary_unary(
                 '/reachy.part.head.HeadService/GetTemperatures',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=head__pb2.ArmTemperatures.FromString,
+                response_deserializer=head__pb2.HeadTemperatures.FromString,
                 )
         self.GetJointGoalPosition = channel.unary_unary(
                 '/reachy.part.head.HeadService/GetJointGoalPosition',
@@ -269,7 +269,7 @@ def add_HeadServiceServicer_to_server(servicer, server):
             'GetTemperatures': grpc.unary_unary_rpc_method_handler(
                     servicer.GetTemperatures,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=head__pb2.ArmTemperatures.SerializeToString,
+                    response_serializer=head__pb2.HeadTemperatures.SerializeToString,
             ),
             'GetJointGoalPosition': grpc.unary_unary_rpc_method_handler(
                     servicer.GetJointGoalPosition,
@@ -525,7 +525,7 @@ class HeadService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/GetTemperatures',
             part__pb2.PartId.SerializeToString,
-            head__pb2.ArmTemperatures.FromString,
+            head__pb2.HeadTemperatures.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
