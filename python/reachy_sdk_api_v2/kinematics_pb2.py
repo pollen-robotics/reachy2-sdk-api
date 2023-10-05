@@ -14,20 +14,31 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x10kinematics.proto\x12\x11reachy.kinematics\"\x19\n\tMatrix4x4\x12\x0c\n\x04\x64\x61ta\x18\x01 \x03(\x01\"8\n\nQuaternion\x12\t\n\x01w\x18\x01 \x01(\x01\x12\t\n\x01x\x18\x02 \x01(\x01\x12\t\n\x01y\x18\x03 \x01(\x01\x12\t\n\x01z\x18\x04 \x01(\x01\"D\n\nRotation3D\x12*\n\x01q\x18\x01 \x01(\x0b\x32\x1d.reachy.kinematics.QuaternionH\x00\x42\n\n\x08rotation\"(\n\x05Point\x12\t\n\x01x\x18\x01 \x01(\x01\x12\t\n\x01y\x18\x02 \x01(\x01\x12\t\n\x01z\x18\x03 \x01(\x01\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x10kinematics.proto\x12\x11reachy.kinematics\"\x19\n\tMatrix4x4\x12\x0c\n\x04\x64\x61ta\x18\x01 \x03(\x01\"\x19\n\tMatrix3x3\x12\x0c\n\x04\x64\x61ta\x18\x01 \x03(\x01\"8\n\nQuaternion\x12\t\n\x01w\x18\x01 \x01(\x01\x12\t\n\x01x\x18\x02 \x01(\x01\x12\t\n\x01y\x18\x03 \x01(\x01\x12\t\n\x01z\x18\x04 \x01(\x01\"\xa3\x01\n\nRotation3D\x12*\n\x01q\x18\x01 \x01(\x0b\x32\x1d.reachy.kinematics.QuaternionH\x00\x12-\n\x03rpy\x18\x02 \x01(\x0b\x32\x1e.reachy.kinematics.EulerAnglesH\x00\x12.\n\x06matrix\x18\x03 \x01(\x0b\x32\x1c.reachy.kinematics.Matrix3x3H\x00\x42\n\n\x08rotation\"(\n\x05Point\x12\t\n\x01x\x18\x01 \x01(\x01\x12\t\n\x01y\x18\x02 \x01(\x01\x12\t\n\x01z\x18\x03 \x01(\x01\"7\n\x0b\x45ulerAngles\x12\x0c\n\x04roll\x18\x01 \x01(\x01\x12\r\n\x05pitch\x18\x02 \x01(\x01\x12\x0b\n\x03yaw\x18\x03 \x01(\x01\"F\n\x17PointDistanceTolerances\x12\r\n\x05x_tol\x18\x01 \x01(\x01\x12\r\n\x05y_tol\x18\x02 \x01(\x01\x12\r\n\x05z_tol\x18\x03 \x01(\x01\"M\n\x15\x45ulerAnglesTolerances\x12\x10\n\x08roll_tol\x18\x01 \x01(\x01\x12\x11\n\tpitch_tol\x18\x02 \x01(\x01\x12\x0f\n\x07yaw_tol\x18\x03 \x01(\x01\x62\x06proto3')
 
 
 
 _MATRIX4X4 = DESCRIPTOR.message_types_by_name['Matrix4x4']
+_MATRIX3X3 = DESCRIPTOR.message_types_by_name['Matrix3x3']
 _QUATERNION = DESCRIPTOR.message_types_by_name['Quaternion']
 _ROTATION3D = DESCRIPTOR.message_types_by_name['Rotation3D']
 _POINT = DESCRIPTOR.message_types_by_name['Point']
+_EULERANGLES = DESCRIPTOR.message_types_by_name['EulerAngles']
+_POINTDISTANCETOLERANCES = DESCRIPTOR.message_types_by_name['PointDistanceTolerances']
+_EULERANGLESTOLERANCES = DESCRIPTOR.message_types_by_name['EulerAnglesTolerances']
 Matrix4x4 = _reflection.GeneratedProtocolMessageType('Matrix4x4', (_message.Message,), {
   'DESCRIPTOR' : _MATRIX4X4,
   '__module__' : 'kinematics_pb2'
   # @@protoc_insertion_point(class_scope:reachy.kinematics.Matrix4x4)
   })
 _sym_db.RegisterMessage(Matrix4x4)
+
+Matrix3x3 = _reflection.GeneratedProtocolMessageType('Matrix3x3', (_message.Message,), {
+  'DESCRIPTOR' : _MATRIX3X3,
+  '__module__' : 'kinematics_pb2'
+  # @@protoc_insertion_point(class_scope:reachy.kinematics.Matrix3x3)
+  })
+_sym_db.RegisterMessage(Matrix3x3)
 
 Quaternion = _reflection.GeneratedProtocolMessageType('Quaternion', (_message.Message,), {
   'DESCRIPTOR' : _QUATERNION,
@@ -50,15 +61,44 @@ Point = _reflection.GeneratedProtocolMessageType('Point', (_message.Message,), {
   })
 _sym_db.RegisterMessage(Point)
 
+EulerAngles = _reflection.GeneratedProtocolMessageType('EulerAngles', (_message.Message,), {
+  'DESCRIPTOR' : _EULERANGLES,
+  '__module__' : 'kinematics_pb2'
+  # @@protoc_insertion_point(class_scope:reachy.kinematics.EulerAngles)
+  })
+_sym_db.RegisterMessage(EulerAngles)
+
+PointDistanceTolerances = _reflection.GeneratedProtocolMessageType('PointDistanceTolerances', (_message.Message,), {
+  'DESCRIPTOR' : _POINTDISTANCETOLERANCES,
+  '__module__' : 'kinematics_pb2'
+  # @@protoc_insertion_point(class_scope:reachy.kinematics.PointDistanceTolerances)
+  })
+_sym_db.RegisterMessage(PointDistanceTolerances)
+
+EulerAnglesTolerances = _reflection.GeneratedProtocolMessageType('EulerAnglesTolerances', (_message.Message,), {
+  'DESCRIPTOR' : _EULERANGLESTOLERANCES,
+  '__module__' : 'kinematics_pb2'
+  # @@protoc_insertion_point(class_scope:reachy.kinematics.EulerAnglesTolerances)
+  })
+_sym_db.RegisterMessage(EulerAnglesTolerances)
+
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
   _MATRIX4X4._serialized_start=39
   _MATRIX4X4._serialized_end=64
-  _QUATERNION._serialized_start=66
-  _QUATERNION._serialized_end=122
-  _ROTATION3D._serialized_start=124
-  _ROTATION3D._serialized_end=192
-  _POINT._serialized_start=194
-  _POINT._serialized_end=234
+  _MATRIX3X3._serialized_start=66
+  _MATRIX3X3._serialized_end=91
+  _QUATERNION._serialized_start=93
+  _QUATERNION._serialized_end=149
+  _ROTATION3D._serialized_start=152
+  _ROTATION3D._serialized_end=315
+  _POINT._serialized_start=317
+  _POINT._serialized_end=357
+  _EULERANGLES._serialized_start=359
+  _EULERANGLES._serialized_end=414
+  _POINTDISTANCETOLERANCES._serialized_start=416
+  _POINTDISTANCETOLERANCES._serialized_end=486
+  _EULERANGLESTOLERANCES._serialized_start=488
+  _EULERANGLESTOLERANCES._serialized_end=565
 # @@protoc_insertion_point(module_scope)

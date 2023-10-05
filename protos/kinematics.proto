@@ -6,6 +6,10 @@ message Matrix4x4 {
     repeated double data = 1;
 }
 
+message Matrix3x3 {
+    repeated double data = 1;
+}
+
 message Quaternion {
     double w = 1;
     double x = 2;
@@ -16,6 +20,8 @@ message Quaternion {
 message Rotation3D {
     oneof rotation {
         Quaternion q = 1;
+        EulerAngles rpy = 2;
+        Matrix3x3 matrix = 3;
     }
 }
 
@@ -23,4 +29,22 @@ message Point {
     double x = 1;
     double y = 2;
     double z = 3;
+}
+
+message EulerAngles {
+    double roll = 1;
+    double pitch = 2;
+    double yaw = 3;
+}
+
+message PointDistanceTolerances {
+    double x_tol = 1;
+    double y_tol = 2;
+    double z_tol = 3;
+}
+
+message EulerAnglesTolerances {
+    double roll_tol = 1;
+    double pitch_tol = 2;
+    double yaw_tol = 3;
 }
