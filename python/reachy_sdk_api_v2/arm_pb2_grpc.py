@@ -24,7 +24,7 @@ class ArmServiceStub(object):
                 )
         self.ComputeArmFK = channel.unary_unary(
                 '/reachy.part.arm.ArmService/ComputeArmFK',
-                request_serializer=arm__pb2.ArmPosition.SerializeToString,
+                request_serializer=arm__pb2.ArmFKRequest.SerializeToString,
                 response_deserializer=arm__pb2.ArmFKSolution.FromString,
                 )
         self.ComputeArmIK = channel.unary_unary(
@@ -219,7 +219,7 @@ def add_ArmServiceServicer_to_server(servicer, server):
             ),
             'ComputeArmFK': grpc.unary_unary_rpc_method_handler(
                     servicer.ComputeArmFK,
-                    request_deserializer=arm__pb2.ArmPosition.FromString,
+                    request_deserializer=arm__pb2.ArmFKRequest.FromString,
                     response_serializer=arm__pb2.ArmFKSolution.SerializeToString,
             ),
             'ComputeArmIK': grpc.unary_unary_rpc_method_handler(
@@ -336,7 +336,7 @@ class ArmService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/ComputeArmFK',
-            arm__pb2.ArmPosition.SerializeToString,
+            arm__pb2.ArmFKRequest.SerializeToString,
             arm__pb2.ArmFKSolution.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
