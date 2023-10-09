@@ -19,7 +19,7 @@ from google.protobuf import wrappers_pb2 as google_dot_protobuf_dot_wrappers__pb
 import component_pb2 as component__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x15\x64ynamixel_motor.proto\x12\x19\x63omponent.dynamixel_motor\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x0f\x63omponent.proto\"\x98\x04\n\x13\x44ynamixelMotorState\x12-\n\ttimestamp\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\n\n\x02id\x18\x03 \x01(\r\x12\x35\n\x10present_position\x18\x04 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x32\n\rpresent_speed\x18\x05 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x31\n\x0cpresent_load\x18\x06 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x30\n\x0btemperature\x18\x07 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12-\n\tcompliant\x18\x08 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x32\n\rgoal_position\x18\t \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x30\n\x0bspeed_limit\x18\n \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x31\n\x0ctorque_limit\x18\x0b \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12 \n\x03pid\x18\x0c \x01(\x0b\x32\x13.component.PIDGains\"\x80\x01\n\x1a\x44ynamixelMotorStateRequest\x12>\n\x06\x66ields\x18\x01 \x03(\x0e\x32..component.dynamixel_motor.DynamixelMotorField\x12\"\n\x02id\x18\x02 \x01(\x0b\x32\x16.component.ComponentId\"t\n DynamixelMotorStreamStateRequest\x12\x42\n\x03req\x18\x01 \x01(\x0b\x32\x35.component.dynamixel_motor.DynamixelMotorStateRequest\x12\x0c\n\x04\x66req\x18\x02 \x01(\x02\"\x83\x02\n\x15\x44ynamixelMotorCommand\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12-\n\tcompliant\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x32\n\rgoal_position\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x30\n\x0bspeed_limit\x18\x04 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x31\n\x0ctorque_limit\x18\x05 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"O\n\x12\x44ynamixelMotorInfo\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\x15\n\rserial_number\x18\x02 \x01(\t\"h\n\x18ListOfDynamixelMotorInfo\x12L\n\x15parallel_gripper_info\x18\x01 \x03(\x0b\x32-.component.dynamixel_motor.DynamixelMotorInfo\"\x16\n\x14\x44ynamixelMotorStatus*\xe5\x01\n\x13\x44ynamixelMotorField\x12\x08\n\x04NONE\x10\x00\x12\x08\n\x04NAME\x10\x01\x12\x06\n\x02ID\x10\x02\x12\x14\n\x10PRESENT_POSITION\x10\x03\x12\x11\n\rPRESENT_SPEED\x10\x04\x12\x10\n\x0cPRESENT_LOAD\x10\x05\x12\x0f\n\x0bTEMPERATURE\x10\x06\x12\x0f\n\x0bJOINT_LIMIT\x10\x07\x12\r\n\tCOMPLIANT\x10\x08\x12\x11\n\rGOAL_POSITION\x10\t\x12\x0f\n\x0bSPEED_LIMIT\x10\n\x12\x10\n\x0cTORQUE_LIMIT\x10\x0b\x12\x07\n\x03PID\x10\x0c\x12\x07\n\x03\x41LL\x10\x0f\x32\xed\x05\n\x15\x44ynamixelMotorService\x12\x63\n\x14GetAllDynamixelMotor\x12\x16.google.protobuf.Empty\x1a\x33.component.dynamixel_motor.ListOfDynamixelMotorInfo\x12q\n\x08GetState\x12\x35.component.dynamixel_motor.DynamixelMotorStateRequest\x1a..component.dynamixel_motor.DynamixelMotorState\x12|\n\x0bStreamState\x12;.component.dynamixel_motor.DynamixelMotorStreamStateRequest\x1a..component.dynamixel_motor.DynamixelMotorState0\x01\x12W\n\x0bSendCommand\x12\x30.component.dynamixel_motor.DynamixelMotorCommand\x1a\x16.google.protobuf.Empty\x12[\n\rStreamCommand\x12\x30.component.dynamixel_motor.DynamixelMotorCommand\x1a\x16.google.protobuf.Empty(\x01\x12P\n\x05\x41udit\x12\x16.component.ComponentId\x1a/.component.dynamixel_motor.DynamixelMotorStatus\x12;\n\tHeartBeat\x12\x16.component.ComponentId\x1a\x16.google.protobuf.Empty\x12\x39\n\x07Restart\x12\x16.component.ComponentId\x1a\x16.google.protobuf.Emptyb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x15\x64ynamixel_motor.proto\x12\x19\x63omponent.dynamixel_motor\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x0f\x63omponent.proto\"\x98\x04\n\x13\x44ynamixelMotorState\x12-\n\ttimestamp\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\n\n\x02id\x18\x03 \x01(\r\x12\x35\n\x10present_position\x18\x04 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x32\n\rpresent_speed\x18\x05 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x31\n\x0cpresent_load\x18\x06 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x30\n\x0btemperature\x18\x07 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12-\n\tcompliant\x18\x08 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x32\n\rgoal_position\x18\t \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x30\n\x0bspeed_limit\x18\n \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x31\n\x0ctorque_limit\x18\x0b \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12 \n\x03pid\x18\x0c \x01(\x0b\x32\x13.component.PIDGains\"\x80\x01\n\x1a\x44ynamixelMotorStateRequest\x12>\n\x06\x66ields\x18\x01 \x03(\x0e\x32..component.dynamixel_motor.DynamixelMotorField\x12\"\n\x02id\x18\x02 \x01(\x0b\x32\x16.component.ComponentId\"t\n DynamixelMotorStreamStateRequest\x12\x42\n\x03req\x18\x01 \x01(\x0b\x32\x35.component.dynamixel_motor.DynamixelMotorStateRequest\x12\x0c\n\x04\x66req\x18\x02 \x01(\x02\"~\n\x12\x44ynamixelMotorGoal\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\x15\n\rgoal_position\x18\x02 \x01(\x02\x12-\n\x08\x64uration\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"\x83\x02\n\x15\x44ynamixelMotorCommand\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12-\n\tcompliant\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x32\n\rgoal_position\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x30\n\x0bspeed_limit\x18\x04 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x31\n\x0ctorque_limit\x18\x05 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"O\n\x12\x44ynamixelMotorInfo\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\x15\n\rserial_number\x18\x02 \x01(\t\"h\n\x18ListOfDynamixelMotorInfo\x12L\n\x15parallel_gripper_info\x18\x01 \x03(\x0b\x32-.component.dynamixel_motor.DynamixelMotorInfo\"\x16\n\x14\x44ynamixelMotorStatus*\xe5\x01\n\x13\x44ynamixelMotorField\x12\x08\n\x04NONE\x10\x00\x12\x08\n\x04NAME\x10\x01\x12\x06\n\x02ID\x10\x02\x12\x14\n\x10PRESENT_POSITION\x10\x03\x12\x11\n\rPRESENT_SPEED\x10\x04\x12\x10\n\x0cPRESENT_LOAD\x10\x05\x12\x0f\n\x0bTEMPERATURE\x10\x06\x12\x0f\n\x0bJOINT_LIMIT\x10\x07\x12\r\n\tCOMPLIANT\x10\x08\x12\x11\n\rGOAL_POSITION\x10\t\x12\x0f\n\x0bSPEED_LIMIT\x10\n\x12\x10\n\x0cTORQUE_LIMIT\x10\x0b\x12\x07\n\x03PID\x10\x0c\x12\x07\n\x03\x41LL\x10\x0f\x32\xc3\x06\n\x15\x44ynamixelMotorService\x12\x63\n\x14GetAllDynamixelMotor\x12\x16.google.protobuf.Empty\x1a\x33.component.dynamixel_motor.ListOfDynamixelMotorInfo\x12q\n\x08GetState\x12\x35.component.dynamixel_motor.DynamixelMotorStateRequest\x1a..component.dynamixel_motor.DynamixelMotorState\x12|\n\x0bStreamState\x12;.component.dynamixel_motor.DynamixelMotorStreamStateRequest\x1a..component.dynamixel_motor.DynamixelMotorState0\x01\x12W\n\x0bSendCommand\x12\x30.component.dynamixel_motor.DynamixelMotorCommand\x1a\x16.google.protobuf.Empty\x12[\n\rStreamCommand\x12\x30.component.dynamixel_motor.DynamixelMotorCommand\x1a\x16.google.protobuf.Empty(\x01\x12T\n\x0bSetPosition\x12-.component.dynamixel_motor.DynamixelMotorGoal\x1a\x16.google.protobuf.Empty\x12P\n\x05\x41udit\x12\x16.component.ComponentId\x1a/.component.dynamixel_motor.DynamixelMotorStatus\x12;\n\tHeartBeat\x12\x16.component.ComponentId\x1a\x16.google.protobuf.Empty\x12\x39\n\x07Restart\x12\x16.component.ComponentId\x1a\x16.google.protobuf.Emptyb\x06proto3')
 
 _DYNAMIXELMOTORFIELD = DESCRIPTOR.enum_types_by_name['DynamixelMotorField']
 DynamixelMotorField = enum_type_wrapper.EnumTypeWrapper(_DYNAMIXELMOTORFIELD)
@@ -42,6 +42,7 @@ ALL = 15
 _DYNAMIXELMOTORSTATE = DESCRIPTOR.message_types_by_name['DynamixelMotorState']
 _DYNAMIXELMOTORSTATEREQUEST = DESCRIPTOR.message_types_by_name['DynamixelMotorStateRequest']
 _DYNAMIXELMOTORSTREAMSTATEREQUEST = DESCRIPTOR.message_types_by_name['DynamixelMotorStreamStateRequest']
+_DYNAMIXELMOTORGOAL = DESCRIPTOR.message_types_by_name['DynamixelMotorGoal']
 _DYNAMIXELMOTORCOMMAND = DESCRIPTOR.message_types_by_name['DynamixelMotorCommand']
 _DYNAMIXELMOTORINFO = DESCRIPTOR.message_types_by_name['DynamixelMotorInfo']
 _LISTOFDYNAMIXELMOTORINFO = DESCRIPTOR.message_types_by_name['ListOfDynamixelMotorInfo']
@@ -66,6 +67,13 @@ DynamixelMotorStreamStateRequest = _reflection.GeneratedProtocolMessageType('Dyn
   # @@protoc_insertion_point(class_scope:component.dynamixel_motor.DynamixelMotorStreamStateRequest)
   })
 _sym_db.RegisterMessage(DynamixelMotorStreamStateRequest)
+
+DynamixelMotorGoal = _reflection.GeneratedProtocolMessageType('DynamixelMotorGoal', (_message.Message,), {
+  'DESCRIPTOR' : _DYNAMIXELMOTORGOAL,
+  '__module__' : 'dynamixel_motor_pb2'
+  # @@protoc_insertion_point(class_scope:component.dynamixel_motor.DynamixelMotorGoal)
+  })
+_sym_db.RegisterMessage(DynamixelMotorGoal)
 
 DynamixelMotorCommand = _reflection.GeneratedProtocolMessageType('DynamixelMotorCommand', (_message.Message,), {
   'DESCRIPTOR' : _DYNAMIXELMOTORCOMMAND,
@@ -99,22 +107,24 @@ _DYNAMIXELMOTORSERVICE = DESCRIPTOR.services_by_name['DynamixelMotorService']
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  _DYNAMIXELMOTORFIELD._serialized_start=1425
-  _DYNAMIXELMOTORFIELD._serialized_end=1654
+  _DYNAMIXELMOTORFIELD._serialized_start=1553
+  _DYNAMIXELMOTORFIELD._serialized_end=1782
   _DYNAMIXELMOTORSTATE._serialized_start=164
   _DYNAMIXELMOTORSTATE._serialized_end=700
   _DYNAMIXELMOTORSTATEREQUEST._serialized_start=703
   _DYNAMIXELMOTORSTATEREQUEST._serialized_end=831
   _DYNAMIXELMOTORSTREAMSTATEREQUEST._serialized_start=833
   _DYNAMIXELMOTORSTREAMSTATEREQUEST._serialized_end=949
-  _DYNAMIXELMOTORCOMMAND._serialized_start=952
-  _DYNAMIXELMOTORCOMMAND._serialized_end=1211
-  _DYNAMIXELMOTORINFO._serialized_start=1213
-  _DYNAMIXELMOTORINFO._serialized_end=1292
-  _LISTOFDYNAMIXELMOTORINFO._serialized_start=1294
-  _LISTOFDYNAMIXELMOTORINFO._serialized_end=1398
-  _DYNAMIXELMOTORSTATUS._serialized_start=1400
-  _DYNAMIXELMOTORSTATUS._serialized_end=1422
-  _DYNAMIXELMOTORSERVICE._serialized_start=1657
-  _DYNAMIXELMOTORSERVICE._serialized_end=2406
+  _DYNAMIXELMOTORGOAL._serialized_start=951
+  _DYNAMIXELMOTORGOAL._serialized_end=1077
+  _DYNAMIXELMOTORCOMMAND._serialized_start=1080
+  _DYNAMIXELMOTORCOMMAND._serialized_end=1339
+  _DYNAMIXELMOTORINFO._serialized_start=1341
+  _DYNAMIXELMOTORINFO._serialized_end=1420
+  _LISTOFDYNAMIXELMOTORINFO._serialized_start=1422
+  _LISTOFDYNAMIXELMOTORINFO._serialized_end=1526
+  _DYNAMIXELMOTORSTATUS._serialized_start=1528
+  _DYNAMIXELMOTORSTATUS._serialized_end=1550
+  _DYNAMIXELMOTORSERVICE._serialized_start=1785
+  _DYNAMIXELMOTORSERVICE._serialized_end=2620
 # @@protoc_insertion_point(module_scope)

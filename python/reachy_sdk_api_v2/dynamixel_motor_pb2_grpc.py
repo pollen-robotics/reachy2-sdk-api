@@ -41,6 +41,11 @@ class DynamixelMotorServiceStub(object):
                 request_serializer=dynamixel__motor__pb2.DynamixelMotorCommand.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
+        self.SetPosition = channel.unary_unary(
+                '/component.dynamixel_motor.DynamixelMotorService/SetPosition',
+                request_serializer=dynamixel__motor__pb2.DynamixelMotorGoal.SerializeToString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                )
         self.Audit = channel.unary_unary(
                 '/component.dynamixel_motor.DynamixelMotorService/Audit',
                 request_serializer=component__pb2.ComponentId.SerializeToString,
@@ -91,6 +96,12 @@ class DynamixelMotorServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def SetPosition(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
     def Audit(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
@@ -135,6 +146,11 @@ def add_DynamixelMotorServiceServicer_to_server(servicer, server):
             'StreamCommand': grpc.stream_unary_rpc_method_handler(
                     servicer.StreamCommand,
                     request_deserializer=dynamixel__motor__pb2.DynamixelMotorCommand.FromString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            ),
+            'SetPosition': grpc.unary_unary_rpc_method_handler(
+                    servicer.SetPosition,
+                    request_deserializer=dynamixel__motor__pb2.DynamixelMotorGoal.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'Audit': grpc.unary_unary_rpc_method_handler(
@@ -243,6 +259,23 @@ class DynamixelMotorService(object):
             metadata=None):
         return grpc.experimental.stream_unary(request_iterator, target, '/component.dynamixel_motor.DynamixelMotorService/StreamCommand',
             dynamixel__motor__pb2.DynamixelMotorCommand.SerializeToString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def SetPosition(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/component.dynamixel_motor.DynamixelMotorService/SetPosition',
+            dynamixel__motor__pb2.DynamixelMotorGoal.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
