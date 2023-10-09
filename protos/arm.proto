@@ -74,8 +74,14 @@ message ArmPosition {
 
 message ArmCartesianGoal {
     reachy.part.PartId id = 1;
-    kinematics.Matrix4x4 position = 2;
-    google.protobuf.FloatValue duration = 3;
+
+    kinematics.Point target_position = 2;
+    kinematics.Rotation3D target_orientation = 3;
+    
+    kinematics.PointDistanceTolerances position_tolerance = 4;
+    kinematics.ExtEulerAnglesTolerances orientation_tolerance = 5;
+
+    google.protobuf.FloatValue duration = 10;
 }
 
 message ArmJointGoal {
@@ -85,7 +91,7 @@ message ArmJointGoal {
 }
 
 message ArmEndEffector {
-    reachy.kinematics.Matrix4x4 pose = 1;
+    kinematics.Matrix4x4 pose = 1;
 }
 
 message ArmFKRequest {
