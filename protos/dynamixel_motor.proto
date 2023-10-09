@@ -58,6 +58,12 @@ message DynamixelMotorStreamStateRequest {
     float freq = 2;
 }
 
+message DynamixelMotorGoal {
+    component.ComponentId id = 1;
+    float goal_position = 2;
+    google.protobuf.FloatValue duration = 3;
+}
+
 
 message DynamixelMotorCommand {
     component.ComponentId id = 1;
@@ -89,6 +95,8 @@ service DynamixelMotorService {
 
     rpc SendCommand (DynamixelMotorCommand) returns (google.protobuf.Empty);
     rpc StreamCommand (stream DynamixelMotorCommand) returns (google.protobuf.Empty);
+
+    rpc SetPosition (DynamixelMotorGoal) returns (google.protobuf.Empty);
 
     rpc Audit (component.ComponentId) returns (DynamixelMotorStatus);
     rpc HeartBeat (component.ComponentId) returns (google.protobuf.Empty);
