@@ -20,7 +20,7 @@ message Quaternion {
 message Rotation3D {
     oneof rotation {
         Quaternion q = 1;
-        EulerAngles rpy = 2;
+        ExtEulerAngles rpy = 2;
         Matrix3x3 matrix = 3;
     }
 }
@@ -31,7 +31,7 @@ message Point {
     double z = 3;
 }
 
-message EulerAngles {
+message ExtEulerAngles {
     double roll = 1;
     double pitch = 2;
     double yaw = 3;
@@ -43,7 +43,7 @@ message PointDistanceTolerances {
     double z_tol = 3;
 }
 
-message EulerAnglesTolerances {
+message ExtEulerAnglesTolerances {
     double roll_tol = 1;
     double pitch_tol = 2;
     double yaw_tol = 3;
