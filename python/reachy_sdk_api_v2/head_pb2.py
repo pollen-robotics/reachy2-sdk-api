@@ -23,7 +23,7 @@ import orbita3d_pb2 as orbita3d__pb2
 import dynamixel_motor_pb2 as dynamixel__motor__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\nhead.proto\x12\x10reachy.part.head\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\npart.proto\x1a\x10kinematics.proto\x1a\x0b\x65rror.proto\x1a\x0eorbita3d.proto\x1a\x15\x64ynamixel_motor.proto\"\x89\x01\n\x04Head\x12$\n\x07part_id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x36\n\x0b\x64\x65scription\x18\x02 \x01(\x0b\x32!.reachy.part.head.HeadDescription\x12#\n\x04info\x18\x05 \x01(\x0b\x32\x15.reachy.part.PartInfo\"\xc5\x01\n\x0fHeadDescription\x12.\n\x04neck\x18\x01 \x01(\x0b\x32 .component.orbita3d.Orbita3DInfo\x12@\n\tl_antenna\x18\x02 \x01(\x0b\x32-.component.dynamixel_motor.DynamixelMotorInfo\x12@\n\tr_antenna\x18\x03 \x01(\x0b\x32-.component.dynamixel_motor.DynamixelMotorInfo\"2\n\nListOfHead\x12$\n\x04head\x18\x01 \x03(\x0b\x32\x16.reachy.part.head.Head\"\x9d\x02\n\tHeadState\x12-\n\ttimestamp\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\n\n\x02id\x18\x03 \x01(\r\x12\x35\n\nneck_state\x18\x04 \x01(\x0b\x32!.component.orbita3d.Orbita3DState\x12G\n\x0fl_antenna_state\x18\x05 \x01(\x0b\x32..component.dynamixel_motor.DynamixelMotorState\x12G\n\x0fr_antenna_state\x18\x06 \x01(\x0b\x32..component.dynamixel_motor.DynamixelMotorState\"G\n\x0cNeckPosition\x12\x11\n\tneck_roll\x18\x01 \x01(\x02\x12\x12\n\nneck_pitch\x18\x02 \x01(\x02\x12\x10\n\x08neck_yaw\x18\x03 \x01(\x02\"\xb7\x01\n\x0cHeadPosition\x12\x35\n\rneck_position\x18\x01 \x01(\x0b\x32\x1e.reachy.part.head.NeckPosition\x12\x37\n\x12l_antenna_position\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x37\n\x12r_antenna_position\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"\x8b\x01\n\x08NeckGoal\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12/\n\x08rotation\x18\x02 \x01(\x0b\x32\x1d.reachy.kinematics.Rotation3D\x12-\n\x08\x64uration\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\";\n\x0fNeckOrientation\x12(\n\x01q\x18\x01 \x01(\x0b\x32\x1d.reachy.kinematics.Quaternion\"b\n\rNeckFKRequest\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x30\n\x08position\x18\x02 \x01(\x0b\x32\x1e.reachy.part.head.HeadPosition\"Y\n\x0eNeckFKSolution\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x36\n\x0borientation\x18\x02 \x01(\x0b\x32!.reachy.part.head.NeckOrientation\"\x8f\x01\n\rNeckIKRequest\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x31\n\x06target\x18\x02 \x01(\x0b\x32!.reachy.part.head.NeckOrientation\x12*\n\x02q0\x18\x03 \x01(\x0b\x32\x1e.reachy.part.head.NeckPosition\"p\n\x0eNeckIKSolution\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x30\n\x08position\x18\x02 \x01(\x0b\x32\x1e.reachy.part.head.NeckPosition\x12\x1b\n\x05\x65rror\x18\x03 \x01(\x0b\x32\x0c.error.Error\"\x0c\n\nHeadStatus\"[\n\x0fHeadTargetPoint\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12\'\n\x05point\x18\x02 \x01(\x0b\x32\x18.reachy.kinematics.Point\"a\n\x11SpeedLimitRequest\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12+\n\x05limit\x18\x02 \x01(\x0e\x32\x1c.reachy.part.head.SpeedLimit\"\'\n\x0bJointLimits\x12\x0b\n\x03min\x18\x01 \x01(\x02\x12\x0b\n\x03max\x18\x02 \x01(\x02\"\x88\x02\n\x0cJointsLimits\x12\x30\n\tneck_roll\x18\x01 \x01(\x0b\x32\x1d.reachy.part.head.JointLimits\x12\x31\n\nneck_pitch\x18\x02 \x01(\x0b\x32\x1d.reachy.part.head.JointLimits\x12/\n\x08neck_yaw\x18\x03 \x01(\x0b\x32\x1d.reachy.part.head.JointLimits\x12\x30\n\tl_antenna\x18\x04 \x01(\x0b\x32\x1d.reachy.part.head.JointLimits\x12\x30\n\tr_antenna\x18\x05 \x01(\x0b\x32\x1d.reachy.part.head.JointLimits\"-\n\x0cTemperatures\x12\r\n\x05motor\x18\x01 \x01(\x02\x12\x0e\n\x06\x64river\x18\x02 \x01(\x02\"\x9a\x02\n\x10HeadTemperatures\x12\x34\n\x0cneck_motor_1\x18\x01 \x01(\x0b\x32\x1e.reachy.part.head.Temperatures\x12\x34\n\x0cneck_motor_2\x18\x02 \x01(\x0b\x32\x1e.reachy.part.head.Temperatures\x12\x34\n\x0cneck_motor_3\x18\x03 \x01(\x0b\x32\x1e.reachy.part.head.Temperatures\x12\x31\n\tl_antenna\x18\x04 \x01(\x0b\x32\x1e.reachy.part.head.Temperatures\x12\x31\n\tr_antenna\x18\x05 \x01(\x0b\x32\x1e.reachy.part.head.Temperatures*\xdb\x01\n\tHeadField\x12\x08\n\x04NONE\x10\x00\x12\x08\n\x04NAME\x10\x01\x12\x06\n\x02ID\x10\x02\x12\x14\n\x10PRESENT_POSITION\x10\x03\x12\x11\n\rPRESENT_SPEED\x10\x04\x12\x10\n\x0cPRESENT_LOAD\x10\x05\x12\x0f\n\x0bTEMPERATURE\x10\x06\x12\x0f\n\x0bJOINT_LIMIT\x10\x07\x12\r\n\tCOMPLIANT\x10\x08\x12\x11\n\rGOAL_POSITION\x10\t\x12\x0f\n\x0bSPEED_LIMIT\x10\n\x12\x10\n\x0cTORQUE_LIMIT\x10\x0b\x12\x07\n\x03PID\x10\x0c\x12\x07\n\x03\x41LL\x10\x0f*:\n\nSpeedLimit\x12\x0c\n\x08NO_LIMIT\x10\x00\x12\x08\n\x04\x46\x41ST\x10\x01\x12\n\n\x06NORMAL\x10\x02\x12\x08\n\x04SLOW\x10\x03\x32\xdb\x08\n\x0bHeadService\x12\x43\n\x0bGetAllHeads\x12\x16.google.protobuf.Empty\x1a\x1c.reachy.part.head.ListOfHead\x12R\n\rComputeNeckFK\x12\x1f.reachy.part.head.NeckFKRequest\x1a .reachy.part.head.NeckFKSolution\x12R\n\rComputeNeckIK\x12\x1f.reachy.part.head.NeckIKRequest\x1a .reachy.part.head.NeckIKSolution\x12\x45\n\x0fGoToOrientation\x12\x1a.reachy.part.head.NeckGoal\x1a\x16.google.protobuf.Empty\x12\x44\n\x0eGetOrientation\x12\x13.reachy.part.PartId\x1a\x1d.reachy.kinematics.Quaternion\x12\x43\n\x06LookAt\x12!.reachy.part.head.HeadTargetPoint\x1a\x16.google.protobuf.Empty\x12:\n\x05\x41udit\x12\x13.reachy.part.PartId\x1a\x1c.reachy.part.head.HeadStatus\x12\x38\n\tHeartBeat\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x36\n\x07Restart\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x41\n\x12ResetDefaultValues\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x35\n\x06TurnOn\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x36\n\x07TurnOff\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x46\n\x0fGetJointsLimits\x12\x13.reachy.part.PartId\x1a\x1e.reachy.part.head.JointsLimits\x12J\n\x0fGetTemperatures\x12\x13.reachy.part.PartId\x1a\".reachy.part.head.HeadTemperatures\x12K\n\x14GetJointGoalPosition\x12\x13.reachy.part.PartId\x1a\x1e.reachy.part.head.NeckPosition\x12L\n\rSetSpeedLimit\x12#.reachy.part.head.SpeedLimitRequest\x1a\x16.google.protobuf.Emptyb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\nhead.proto\x12\x10reachy.part.head\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\npart.proto\x1a\x10kinematics.proto\x1a\x0b\x65rror.proto\x1a\x0eorbita3d.proto\x1a\x15\x64ynamixel_motor.proto\"\x89\x01\n\x04Head\x12$\n\x07part_id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x36\n\x0b\x64\x65scription\x18\x02 \x01(\x0b\x32!.reachy.part.head.HeadDescription\x12#\n\x04info\x18\x05 \x01(\x0b\x32\x15.reachy.part.PartInfo\"\xc5\x01\n\x0fHeadDescription\x12.\n\x04neck\x18\x01 \x01(\x0b\x32 .component.orbita3d.Orbita3DInfo\x12@\n\tl_antenna\x18\x02 \x01(\x0b\x32-.component.dynamixel_motor.DynamixelMotorInfo\x12@\n\tr_antenna\x18\x03 \x01(\x0b\x32-.component.dynamixel_motor.DynamixelMotorInfo\"2\n\nListOfHead\x12$\n\x04head\x18\x01 \x03(\x0b\x32\x16.reachy.part.head.Head\"\xb0\x02\n\tHeadState\x12-\n\ttimestamp\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\n\n\x02id\x18\x03 \x01(\r\x12\x11\n\tactivated\x18\x04 \x01(\x08\x12\x35\n\nneck_state\x18\x05 \x01(\x0b\x32!.component.orbita3d.Orbita3DState\x12G\n\x0fl_antenna_state\x18\x06 \x01(\x0b\x32..component.dynamixel_motor.DynamixelMotorState\x12G\n\x0fr_antenna_state\x18\x07 \x01(\x0b\x32..component.dynamixel_motor.DynamixelMotorState\"G\n\x0cNeckPosition\x12\x11\n\tneck_roll\x18\x01 \x01(\x02\x12\x12\n\nneck_pitch\x18\x02 \x01(\x02\x12\x10\n\x08neck_yaw\x18\x03 \x01(\x02\"\xb7\x01\n\x0cHeadPosition\x12\x35\n\rneck_position\x18\x01 \x01(\x0b\x32\x1e.reachy.part.head.NeckPosition\x12\x37\n\x12l_antenna_position\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x37\n\x12r_antenna_position\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"\x8b\x01\n\x08NeckGoal\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12/\n\x08rotation\x18\x02 \x01(\x0b\x32\x1d.reachy.kinematics.Rotation3D\x12-\n\x08\x64uration\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\";\n\x0fNeckOrientation\x12(\n\x01q\x18\x01 \x01(\x0b\x32\x1d.reachy.kinematics.Quaternion\"b\n\rNeckFKRequest\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x30\n\x08position\x18\x02 \x01(\x0b\x32\x1e.reachy.part.head.HeadPosition\"Y\n\x0eNeckFKSolution\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x36\n\x0borientation\x18\x02 \x01(\x0b\x32!.reachy.part.head.NeckOrientation\"\x8f\x01\n\rNeckIKRequest\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x31\n\x06target\x18\x02 \x01(\x0b\x32!.reachy.part.head.NeckOrientation\x12*\n\x02q0\x18\x03 \x01(\x0b\x32\x1e.reachy.part.head.NeckPosition\"p\n\x0eNeckIKSolution\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x30\n\x08position\x18\x02 \x01(\x0b\x32\x1e.reachy.part.head.NeckPosition\x12\x1b\n\x05\x65rror\x18\x03 \x01(\x0b\x32\x0c.error.Error\"\x0c\n\nHeadStatus\"[\n\x0fHeadTargetPoint\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12\'\n\x05point\x18\x02 \x01(\x0b\x32\x18.reachy.kinematics.Point\"a\n\x11SpeedLimitRequest\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12+\n\x05limit\x18\x02 \x01(\x0e\x32\x1c.reachy.part.head.SpeedLimit\"\'\n\x0bJointLimits\x12\x0b\n\x03min\x18\x01 \x01(\x02\x12\x0b\n\x03max\x18\x02 \x01(\x02\"\x88\x02\n\x0cJointsLimits\x12\x30\n\tneck_roll\x18\x01 \x01(\x0b\x32\x1d.reachy.part.head.JointLimits\x12\x31\n\nneck_pitch\x18\x02 \x01(\x0b\x32\x1d.reachy.part.head.JointLimits\x12/\n\x08neck_yaw\x18\x03 \x01(\x0b\x32\x1d.reachy.part.head.JointLimits\x12\x30\n\tl_antenna\x18\x04 \x01(\x0b\x32\x1d.reachy.part.head.JointLimits\x12\x30\n\tr_antenna\x18\x05 \x01(\x0b\x32\x1d.reachy.part.head.JointLimits\"-\n\x0cTemperatures\x12\r\n\x05motor\x18\x01 \x01(\x02\x12\x0e\n\x06\x64river\x18\x02 \x01(\x02\"\x9a\x02\n\x10HeadTemperatures\x12\x34\n\x0cneck_motor_1\x18\x01 \x01(\x0b\x32\x1e.reachy.part.head.Temperatures\x12\x34\n\x0cneck_motor_2\x18\x02 \x01(\x0b\x32\x1e.reachy.part.head.Temperatures\x12\x34\n\x0cneck_motor_3\x18\x03 \x01(\x0b\x32\x1e.reachy.part.head.Temperatures\x12\x31\n\tl_antenna\x18\x04 \x01(\x0b\x32\x1e.reachy.part.head.Temperatures\x12\x31\n\tr_antenna\x18\x05 \x01(\x0b\x32\x1e.reachy.part.head.Temperatures*\xdb\x01\n\tHeadField\x12\x08\n\x04NONE\x10\x00\x12\x08\n\x04NAME\x10\x01\x12\x06\n\x02ID\x10\x02\x12\x14\n\x10PRESENT_POSITION\x10\x03\x12\x11\n\rPRESENT_SPEED\x10\x04\x12\x10\n\x0cPRESENT_LOAD\x10\x05\x12\x0f\n\x0bTEMPERATURE\x10\x06\x12\x0f\n\x0bJOINT_LIMIT\x10\x07\x12\r\n\tCOMPLIANT\x10\x08\x12\x11\n\rGOAL_POSITION\x10\t\x12\x0f\n\x0bSPEED_LIMIT\x10\n\x12\x10\n\x0cTORQUE_LIMIT\x10\x0b\x12\x07\n\x03PID\x10\x0c\x12\x07\n\x03\x41LL\x10\x0f*:\n\nSpeedLimit\x12\x0c\n\x08NO_LIMIT\x10\x00\x12\x08\n\x04\x46\x41ST\x10\x01\x12\n\n\x06NORMAL\x10\x02\x12\x08\n\x04SLOW\x10\x03\x32\xdb\x08\n\x0bHeadService\x12\x43\n\x0bGetAllHeads\x12\x16.google.protobuf.Empty\x1a\x1c.reachy.part.head.ListOfHead\x12R\n\rComputeNeckFK\x12\x1f.reachy.part.head.NeckFKRequest\x1a .reachy.part.head.NeckFKSolution\x12R\n\rComputeNeckIK\x12\x1f.reachy.part.head.NeckIKRequest\x1a .reachy.part.head.NeckIKSolution\x12\x45\n\x0fGoToOrientation\x12\x1a.reachy.part.head.NeckGoal\x1a\x16.google.protobuf.Empty\x12\x44\n\x0eGetOrientation\x12\x13.reachy.part.PartId\x1a\x1d.reachy.kinematics.Quaternion\x12\x43\n\x06LookAt\x12!.reachy.part.head.HeadTargetPoint\x1a\x16.google.protobuf.Empty\x12:\n\x05\x41udit\x12\x13.reachy.part.PartId\x1a\x1c.reachy.part.head.HeadStatus\x12\x38\n\tHeartBeat\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x36\n\x07Restart\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x41\n\x12ResetDefaultValues\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x35\n\x06TurnOn\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x36\n\x07TurnOff\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x46\n\x0fGetJointsLimits\x12\x13.reachy.part.PartId\x1a\x1e.reachy.part.head.JointsLimits\x12J\n\x0fGetTemperatures\x12\x13.reachy.part.PartId\x1a\".reachy.part.head.HeadTemperatures\x12K\n\x14GetJointGoalPosition\x12\x13.reachy.part.PartId\x1a\x1e.reachy.part.head.NeckPosition\x12L\n\rSetSpeedLimit\x12#.reachy.part.head.SpeedLimitRequest\x1a\x16.google.protobuf.Emptyb\x06proto3')
 
 _HEADFIELD = DESCRIPTOR.enum_types_by_name['HeadField']
 HeadField = enum_type_wrapper.EnumTypeWrapper(_HEADFIELD)
@@ -205,10 +205,10 @@ _HEADSERVICE = DESCRIPTOR.services_by_name['HeadService']
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  _HEADFIELD._serialized_start=2648
-  _HEADFIELD._serialized_end=2867
-  _SPEEDLIMIT._serialized_start=2869
-  _SPEEDLIMIT._serialized_end=2927
+  _HEADFIELD._serialized_start=2667
+  _HEADFIELD._serialized_end=2886
+  _SPEEDLIMIT._serialized_start=2888
+  _SPEEDLIMIT._serialized_end=2946
   _HEAD._serialized_start=209
   _HEAD._serialized_end=346
   _HEADDESCRIPTION._serialized_start=349
@@ -216,37 +216,37 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _LISTOFHEAD._serialized_start=548
   _LISTOFHEAD._serialized_end=598
   _HEADSTATE._serialized_start=601
-  _HEADSTATE._serialized_end=886
-  _NECKPOSITION._serialized_start=888
-  _NECKPOSITION._serialized_end=959
-  _HEADPOSITION._serialized_start=962
-  _HEADPOSITION._serialized_end=1145
-  _NECKGOAL._serialized_start=1148
-  _NECKGOAL._serialized_end=1287
-  _NECKORIENTATION._serialized_start=1289
-  _NECKORIENTATION._serialized_end=1348
-  _NECKFKREQUEST._serialized_start=1350
-  _NECKFKREQUEST._serialized_end=1448
-  _NECKFKSOLUTION._serialized_start=1450
-  _NECKFKSOLUTION._serialized_end=1539
-  _NECKIKREQUEST._serialized_start=1542
-  _NECKIKREQUEST._serialized_end=1685
-  _NECKIKSOLUTION._serialized_start=1687
-  _NECKIKSOLUTION._serialized_end=1799
-  _HEADSTATUS._serialized_start=1801
-  _HEADSTATUS._serialized_end=1813
-  _HEADTARGETPOINT._serialized_start=1815
-  _HEADTARGETPOINT._serialized_end=1906
-  _SPEEDLIMITREQUEST._serialized_start=1908
-  _SPEEDLIMITREQUEST._serialized_end=2005
-  _JOINTLIMITS._serialized_start=2007
-  _JOINTLIMITS._serialized_end=2046
-  _JOINTSLIMITS._serialized_start=2049
-  _JOINTSLIMITS._serialized_end=2313
-  _TEMPERATURES._serialized_start=2315
-  _TEMPERATURES._serialized_end=2360
-  _HEADTEMPERATURES._serialized_start=2363
-  _HEADTEMPERATURES._serialized_end=2645
-  _HEADSERVICE._serialized_start=2930
-  _HEADSERVICE._serialized_end=4045
+  _HEADSTATE._serialized_end=905
+  _NECKPOSITION._serialized_start=907
+  _NECKPOSITION._serialized_end=978
+  _HEADPOSITION._serialized_start=981
+  _HEADPOSITION._serialized_end=1164
+  _NECKGOAL._serialized_start=1167
+  _NECKGOAL._serialized_end=1306
+  _NECKORIENTATION._serialized_start=1308
+  _NECKORIENTATION._serialized_end=1367
+  _NECKFKREQUEST._serialized_start=1369
+  _NECKFKREQUEST._serialized_end=1467
+  _NECKFKSOLUTION._serialized_start=1469
+  _NECKFKSOLUTION._serialized_end=1558
+  _NECKIKREQUEST._serialized_start=1561
+  _NECKIKREQUEST._serialized_end=1704
+  _NECKIKSOLUTION._serialized_start=1706
+  _NECKIKSOLUTION._serialized_end=1818
+  _HEADSTATUS._serialized_start=1820
+  _HEADSTATUS._serialized_end=1832
+  _HEADTARGETPOINT._serialized_start=1834
+  _HEADTARGETPOINT._serialized_end=1925
+  _SPEEDLIMITREQUEST._serialized_start=1927
+  _SPEEDLIMITREQUEST._serialized_end=2024
+  _JOINTLIMITS._serialized_start=2026
+  _JOINTLIMITS._serialized_end=2065
+  _JOINTSLIMITS._serialized_start=2068
+  _JOINTSLIMITS._serialized_end=2332
+  _TEMPERATURES._serialized_start=2334
+  _TEMPERATURES._serialized_end=2379
+  _HEADTEMPERATURES._serialized_start=2382
+  _HEADTEMPERATURES._serialized_end=2664
+  _HEADSERVICE._serialized_start=2949
+  _HEADSERVICE._serialized_end=4064
 # @@protoc_insertion_point(module_scope)

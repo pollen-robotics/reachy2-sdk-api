@@ -39,9 +39,11 @@ message ArmState {
     string name = 2;
     uint32 id = 3;
 
-    component.orbita2d.Orbita2DState shoulder_state = 4;
-    component.orbita2d.Orbita2DState elbow_state = 5;
-    component.orbita3d.Orbita3DState wrist_state = 6;
+    bool activated = 4;
+
+    component.orbita2d.Orbita2DState shoulder_state = 5;
+    component.orbita2d.Orbita2DState elbow_state = 6;
+    component.orbita3d.Orbita3DState wrist_state = 7;
 }
 
 message ArmDescription {
@@ -92,14 +94,20 @@ message ArmEndEffector {
     kinematics.Matrix4x4 pose = 1;
 }
 
+message ArmFKRequest {
+    reachy.part.PartId id = 1;
+    ArmPosition position = 2;
+}
+
 message ArmFKSolution {
     bool success = 1;
     ArmEndEffector end_effector = 2;
 }
 
 message ArmIKRequest {
-    ArmEndEffector target = 1;
-    ArmPosition q0 = 2;
+    reachy.part.PartId id = 1;
+    ArmEndEffector target = 2;
+    ArmPosition q0 = 3;
 }
 
 message ArmIKSolution {
@@ -158,7 +166,7 @@ message ArmTemperatures {
 service ArmService {
     rpc GetAllArms (google.protobuf.Empty) returns (ListOfArm);
 
-    rpc ComputeArmFK(ArmPosition) returns (ArmFKSolution);
+    rpc ComputeArmFK(ArmFKRequest) returns (ArmFKSolution);
     rpc ComputeArmIK(ArmIKRequest) returns (ArmIKSolution);
 
     rpc GoToCartesianPosition (ArmCartesianGoal) returns (google.protobuf.Empty);
