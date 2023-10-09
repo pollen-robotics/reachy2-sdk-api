@@ -65,8 +65,8 @@ message Orbita2DStreamStateRequest {
 }
 
 message PID2D {
-    PIDGains gains_axis_1 = 1;
-    PIDGains gains_axis_2 = 2;
+    PIDGains motor_1 = 1;
+    PIDGains motor_2 = 2;
 }
 
 message Pose2D {
