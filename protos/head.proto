@@ -112,9 +112,10 @@ message HeadStatus {
 
 }
 
-message HeadTargetPoint {
+message HeadLookAtGoal {
     reachy.part.PartId id = 1;
     reachy.kinematics.Point point = 2;
+    google.protobuf.FloatValue duration = 3;
 }
 
 enum SpeedLimit {
@@ -164,7 +165,7 @@ service HeadService {
     rpc GoToOrientation (NeckGoal) returns (google.protobuf.Empty);
     rpc GetOrientation (reachy.part.PartId) returns (reachy.kinematics.Quaternion);
 
-    rpc LookAt (HeadTargetPoint) returns (google.protobuf.Empty);
+    rpc LookAt (HeadLookAtGoal) returns (google.protobuf.Empty);
 
     rpc Audit (reachy.part.PartId) returns (HeadStatus);
     rpc HeartBeat (reachy.part.PartId) returns (google.protobuf.Empty);
