@@ -1,4 +1,4 @@
-## Generate gRPC code
+## Generate gRPC code
 
 ### For Python:
 ```python
