@@ -7,6 +7,7 @@ import "google/protobuf/timestamp.proto";
 import "part.proto";
 import "kinematics.proto";
 import "error.proto";
+import "component.proto";
 import "orbita3d.proto";
 import "dynamixel_motor.proto";
 
@@ -126,8 +127,8 @@ message SpeedLimitRequest {
 
 message JointsLimits {
     component.orbita3d.Limits3D neck_limits = 1;
-    JointLimits l_antenna_limits = 2;
-    JointLimits r_antenna_limits = 3;
+    component.JointLimits l_antenna_limits = 2;
+    component.JointLimits r_antenna_limits = 3;
 }
 
 message HeadTemperatures {
