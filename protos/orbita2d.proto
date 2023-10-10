@@ -45,13 +45,14 @@ message Orbita2DState {
     Vector2D present_speed = 5;
     Vector2D present_load = 6;
     Float2D temperature = 7;
+    Limits2D joint_limit = 8;
 
-    google.protobuf.BoolValue compliant = 8;
-    Pose2D goal_position = 9;
-    Float2D speed_limit = 10;
-    Float2D torque_limit = 11;
+    google.protobuf.BoolValue compliant = 9;
+    Pose2D goal_position = 10;
+    Float2D speed_limit = 11;
+    Float2D torque_limit = 12;
 
-    PID2D pid = 12;
+    PID2D pid = 13;
 }
 
 message Orbita2DStateRequest {
@@ -67,6 +68,11 @@ message Orbita2DStreamStateRequest {
 message PID2D {
     PIDGains motor_1 = 1;
     PIDGains motor_2 = 2;
+}
+
+message Limits2D {
+    JointLimits axis_1 = 1;
+    JointLimits axis_2 = 2;
 }
 
 message Pose2D {

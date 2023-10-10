@@ -12,3 +12,8 @@ message PIDGains {
     float i = 2;
     float d = 3;
 }
+
+message JointLimits {
+    float min = 1;
+    float max = 2;
+}
