@@ -44,7 +44,7 @@ class HeadServiceStub(object):
                 )
         self.LookAt = channel.unary_unary(
                 '/reachy.part.head.HeadService/LookAt',
-                request_serializer=head__pb2.HeadTargetPoint.SerializeToString,
+                request_serializer=head__pb2.HeadLookAtGoal.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.Audit = channel.unary_unary(
@@ -85,7 +85,7 @@ class HeadServiceStub(object):
         self.GetTemperatures = channel.unary_unary(
                 '/reachy.part.head.HeadService/GetTemperatures',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=head__pb2.ArmTemperatures.FromString,
+                response_deserializer=head__pb2.HeadTemperatures.FromString,
                 )
         self.GetJointGoalPosition = channel.unary_unary(
                 '/reachy.part.head.HeadService/GetJointGoalPosition',
@@ -228,7 +228,7 @@ def add_HeadServiceServicer_to_server(servicer, server):
             ),
             'LookAt': grpc.unary_unary_rpc_method_handler(
                     servicer.LookAt,
-                    request_deserializer=head__pb2.HeadTargetPoint.FromString,
+                    request_deserializer=head__pb2.HeadLookAtGoal.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'Audit': grpc.unary_unary_rpc_method_handler(
@@ -269,7 +269,7 @@ def add_HeadServiceServicer_to_server(servicer, server):
             'GetTemperatures': grpc.unary_unary_rpc_method_handler(
                     servicer.GetTemperatures,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=head__pb2.ArmTemperatures.SerializeToString,
+                    response_serializer=head__pb2.HeadTemperatures.SerializeToString,
             ),
             'GetJointGoalPosition': grpc.unary_unary_rpc_method_handler(
                     servicer.GetJointGoalPosition,
@@ -388,7 +388,7 @@ class HeadService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/LookAt',
-            head__pb2.HeadTargetPoint.SerializeToString,
+            head__pb2.HeadLookAtGoal.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
@@ -525,7 +525,7 @@ class HeadService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/GetTemperatures',
             part__pb2.PartId.SerializeToString,
-            head__pb2.ArmTemperatures.FromString,
+            head__pb2.HeadTemperatures.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 

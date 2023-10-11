@@ -13,7 +13,7 @@ enum Orbita3DField {
     NONE = 0;
 
     NAME = 1;
-    UID = 2;
+    ID = 2;
 
     PRESENT_POSITION = 3;
     PRESENT_SPEED = 4;
@@ -34,15 +34,15 @@ message Orbita3DState {
     google.protobuf.Timestamp timestamp = 1;
 
     string name = 2;
-    string uid = 3;
+    uint32 id = 3;
 
-    Float3D present_position = 4;
-    Float3D present_speed = 5;
-    Float3D present_load = 6;
+    reachy.kinematics.Rotation3D present_position = 4;
+    Vector3D present_speed = 5;
+    Vector3D present_load = 6;
     Float3D temperature = 7;
 
     google.protobuf.BoolValue compliant = 8;
-    Float3D goal_position = 9;
+    reachy.kinematics.Rotation3D goal_position = 9;
     Float3D speed_limit = 10;
     Float3D torque_limit = 11;
 
@@ -60,22 +60,28 @@ message Orbita3DStreamStateRequest {
 }
 
 message PID3D {
-    PIDGains roll = 1;
-    PIDGains pitch = 2;
-    PIDGains yaw = 3;
+    PIDGains motor_1 = 1;
+    PIDGains motor_2 = 2;
+    PIDGains motor_3 = 3;
 }
 
 message Float3D {
-    float roll = 1;
-    float pitch = 2;
-    float yaw = 3;
+    float motor_1 = 1;
+    float motor_2 = 2;
+    float motor_3 = 3;
+}
+
+message Vector3D {
+    float x = 1;
+    float y = 2;
+    float z = 3;
 }
 
 message Orbita3DCommand {
     component.ComponentId id = 1;
 
     google.protobuf.BoolValue compliant = 2;
-    reachy.kinematics.Quaternion goal_position = 3;
+    reachy.kinematics.Rotation3D goal_position = 3;
     Float3D speed_limit = 4;
     Float3D torque_limit = 5;
 }

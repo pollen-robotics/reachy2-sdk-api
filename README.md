@@ -52,8 +52,9 @@ protoc -I=. your_proto_file.proto --grpc-web_out=import_style=commonjs,mode=grpc
 
 Replace `your_proto_file.proto` with the name of your actual `.proto` file. Ensure you have the correct import paths and output paths specified for your project structure.
 
-## Generation of js/ts grpc files
+## Generation of grpc files
 
+### For js/ts:
 ```bash
 for f in ./protos/*.proto; do
   protoc -I=./protos \
@@ -62,3 +63,8 @@ for f in ./protos/*.proto; do
          "$f"
 done
 ```
+
+### For Python:
+```python
+python -m grpc_tools.protoc -I./protos --python_out=./python/reachy_sdk_api_v2 --grpc_python_out=./python/reachy_sdk_api_v2 ./protos/*.proto
+

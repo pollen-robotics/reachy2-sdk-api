@@ -2,6 +2,7 @@ syntax = "proto3";
 
 import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
 
 import "part.proto";
 import "kinematics.proto";
@@ -15,7 +16,7 @@ enum ArmField {
     NONE = 0;
 
     NAME = 1;
-    UID = 2;
+    ID = 2;
 
     PRESENT_POSITION = 3;
     PRESENT_SPEED = 4;
@@ -33,7 +34,16 @@ enum ArmField {
 }
 
 message ArmState {
-    
+    google.protobuf.Timestamp timestamp = 1;
+
+    string name = 2;
+    uint32 id = 3;
+
+    bool activated = 4;
+
+    component.orbita2d.Orbita2DState shoulder_state = 5;
+    component.orbita2d.Orbita2DState elbow_state = 6;
+    component.orbita3d.Orbita3DState wrist_state = 7;
 }
 
 message ArmDescription {
@@ -64,8 +74,14 @@ message ArmPosition {
 
 message ArmCartesianGoal {
     reachy.part.PartId id = 1;
-    kinematics.Matrix4x4 position = 2;
-    google.protobuf.FloatValue duration = 3;
+
+    kinematics.Point target_position = 2;
+    kinematics.Rotation3D target_orientation = 3;
+    
+    kinematics.PointDistanceTolerances position_tolerance = 4;
+    kinematics.ExtEulerAnglesTolerances orientation_tolerance = 5;
+
+    google.protobuf.FloatValue duration = 10;
 }
 
 message ArmJointGoal {
@@ -75,7 +91,12 @@ message ArmJointGoal {
 }
 
 message ArmEndEffector {
-    reachy.kinematics.Matrix4x4 pose = 1;
+    kinematics.Matrix4x4 pose = 1;
+}
+
+message ArmFKRequest {
+    reachy.part.PartId id = 1;
+    ArmPosition position = 2;
 }
 
 message ArmFKSolution {
@@ -84,8 +105,9 @@ message ArmFKSolution {
 }
 
 message ArmIKRequest {
-    ArmEndEffector target = 1;
-    ArmPosition q0 = 2;
+    reachy.part.PartId id = 1;
+    ArmEndEffector target = 2;
+    ArmPosition q0 = 3;
 }
 
 message ArmIKSolution {
@@ -116,7 +138,7 @@ message JointLimits {
     float max = 2;
 }
 
-message JointsLimits {
+message ArmLimits {
     JointLimits shoulder_pitch = 1;
     JointLimits shoulder_roll = 2;
     JointLimits elbow_yaw = 3;
@@ -144,7 +166,7 @@ message ArmTemperatures {
 service ArmService {
     rpc GetAllArms (google.protobuf.Empty) returns (ListOfArm);
 
-    rpc ComputeArmFK(ArmPosition) returns (ArmFKSolution);
+    rpc ComputeArmFK(ArmFKRequest) returns (ArmFKSolution);
     rpc ComputeArmIK(ArmIKRequest) returns (ArmIKSolution);
 
     rpc GoToCartesianPosition (ArmCartesianGoal) returns (google.protobuf.Empty);
@@ -162,7 +184,7 @@ service ArmService {
     rpc TurnOn (reachy.part.PartId) returns (google.protobuf.Empty);
     rpc TurnOff (reachy.part.PartId) returns (google.protobuf.Empty);
 
-    rpc GetJointsLimits (reachy.part.PartId) returns (JointsLimits);
+    rpc GetJointsLimits (reachy.part.PartId) returns (ArmLimits);
     rpc GetTemperatures (reachy.part.PartId) returns (ArmTemperatures);
     rpc GetJointGoalPosition (reachy.part.PartId) returns (ArmPosition);
 

@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\npart.proto\x12\x0breachy.part\"\"\n\x06PartId\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\t\"M\n\x08PartInfo\x12\x15\n\rserial_number\x18\x01 \x01(\t\x12\x14\n\x0cversion_hard\x18\x02 \x01(\t\x12\x14\n\x0cversion_soft\x18\x03 \x01(\tb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\npart.proto\x12\x0breachy.part\"\"\n\x06PartId\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\"M\n\x08PartInfo\x12\x15\n\rserial_number\x18\x01 \x01(\t\x12\x14\n\x0cversion_hard\x18\x02 \x01(\t\x12\x14\n\x0cversion_soft\x18\x03 \x01(\tb\x06proto3')
 
 
 

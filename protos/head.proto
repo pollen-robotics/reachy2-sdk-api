@@ -2,15 +2,48 @@ syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
 import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
 
 import "part.proto";
 import "kinematics.proto";
 import "error.proto";
+import "orbita3d.proto";
+import "dynamixel_motor.proto";
 
 package reachy.part.head;
 
+enum HeadField {
+    NONE = 0;
+
+    NAME = 1;
+    ID = 2;
+
+    PRESENT_POSITION = 3;
+    PRESENT_SPEED = 4;
+    PRESENT_LOAD = 5;
+    TEMPERATURE = 6;
+    JOINT_LIMIT = 7;
+
+    COMPLIANT = 8;
+    GOAL_POSITION = 9;
+    SPEED_LIMIT = 10;
+    TORQUE_LIMIT = 11;
+    PID = 12;
+
+    ALL = 15;
+}
+
 message Head {
-    
+    PartId part_id = 1;
+    HeadDescription description = 2;
+    PartInfo info = 5;
+}
+
+message HeadDescription {
+    component.orbita3d.Orbita3DInfo neck = 1;
+
+    component.dynamixel_motor.DynamixelMotorInfo l_antenna = 2;
+    component.dynamixel_motor.DynamixelMotorInfo r_antenna = 3;
 }
 
 message ListOfHead {
@@ -18,7 +51,16 @@ message ListOfHead {
 }
 
 message HeadState {
+    google.protobuf.Timestamp timestamp = 1;
 
+    string name = 2;
+    uint32 id = 3;
+
+    bool activated = 4;
+
+    component.orbita3d.Orbita3DState neck_state = 5;
+    component.dynamixel_motor.DynamixelMotorState l_antenna_state = 6;
+    component.dynamixel_motor.DynamixelMotorState r_antenna_state = 7;
 }
 
 message NeckPosition {
@@ -28,9 +70,9 @@ message NeckPosition {
 }
 
 message HeadPosition {
-    NeckPosition position = 1;
-    google.protobuf.FloatValue l_antenna = 2;
-    google.protobuf.FloatValue r_antenna = 3;
+    NeckPosition neck_position = 1;
+    google.protobuf.FloatValue l_antenna_position = 2;
+    google.protobuf.FloatValue r_antenna_position = 3;
 }
 
 message NeckGoal {
@@ -44,6 +86,7 @@ message NeckOrientation {
 }
 
 message NeckFKRequest {
+    reachy.part.PartId id = 1;
     HeadPosition position = 2;
 }
 
@@ -53,8 +96,9 @@ message NeckFKSolution {
 }
 
 message NeckIKRequest {
-    NeckOrientation target = 1;
-    NeckPosition q0 = 2;
+    reachy.part.PartId id = 1;
+    NeckOrientation target = 2;
+    NeckPosition q0 = 3;
 }
 
 message NeckIKSolution {
@@ -68,9 +112,10 @@ message HeadStatus {
 
 }
 
-message HeadTargetPoint {
+message HeadLookAtGoal {
     reachy.part.PartId id = 1;
     reachy.kinematics.Point point = 2;
+    google.protobuf.FloatValue duration = 3;
 }
 
 enum SpeedLimit {
@@ -103,13 +148,12 @@ message Temperatures {
     float driver = 2;
 }
 
-message ArmTemperatures {
+message HeadTemperatures {
     Temperatures neck_motor_1 = 1;
     Temperatures neck_motor_2 = 2;
     Temperatures neck_motor_3 = 3;
     Temperatures l_antenna = 4;
     Temperatures r_antenna = 5;
-
 }
 
 service HeadService {
@@ -121,7 +165,7 @@ service HeadService {
     rpc GoToOrientation (NeckGoal) returns (google.protobuf.Empty);
     rpc GetOrientation (reachy.part.PartId) returns (reachy.kinematics.Quaternion);
 
-    rpc LookAt (HeadTargetPoint) returns (google.protobuf.Empty);
+    rpc LookAt (HeadLookAtGoal) returns (google.protobuf.Empty);
 
     rpc Audit (reachy.part.PartId) returns (HeadStatus);
     rpc HeartBeat (reachy.part.PartId) returns (google.protobuf.Empty);
@@ -133,7 +177,7 @@ service HeadService {
     rpc TurnOff (reachy.part.PartId) returns (google.protobuf.Empty);
 
     rpc GetJointsLimits (reachy.part.PartId) returns (JointsLimits);
-    rpc GetTemperatures (reachy.part.PartId) returns (ArmTemperatures);
+    rpc GetTemperatures (reachy.part.PartId) returns (HeadTemperatures);
     rpc GetJointGoalPosition (reachy.part.PartId) returns (NeckPosition);
 
     rpc SetSpeedLimit (SpeedLimitRequest) returns (google.protobuf.Empty);
