@@ -1,6 +1,7 @@
 import * as jspb from 'google-protobuf'
 
 import * as google_protobuf_empty_pb from 'google-protobuf/google/protobuf/empty_pb';
+import * as google_protobuf_timestamp_pb from 'google-protobuf/google/protobuf/timestamp_pb';
 import * as arm_pb from './arm_pb';
 import * as head_pb from './head_pb';
 import * as hand_pb from './hand_pb';
@@ -158,6 +159,16 @@ export namespace ListOfReachy {
 }
 
 export class ReachyState extends jspb.Message {
+  getTimestamp(): google_protobuf_timestamp_pb.Timestamp | undefined;
+  setTimestamp(value?: google_protobuf_timestamp_pb.Timestamp): ReachyState;
+  hasTimestamp(): boolean;
+  clearTimestamp(): ReachyState;
+
+  getId(): ReachyId | undefined;
+  setId(value?: ReachyId): ReachyState;
+  hasId(): boolean;
+  clearId(): ReachyState;
+
   getLArmState(): arm_pb.ArmState | undefined;
   setLArmState(value?: arm_pb.ArmState): ReachyState;
   hasLArmState(): boolean;
@@ -198,12 +209,38 @@ export class ReachyState extends jspb.Message {
 
 export namespace ReachyState {
   export type AsObject = {
+    timestamp?: google_protobuf_timestamp_pb.Timestamp.AsObject,
+    id?: ReachyId.AsObject,
     lArmState?: arm_pb.ArmState.AsObject,
     rArmState?: arm_pb.ArmState.AsObject,
     headState?: head_pb.HeadState.AsObject,
     lHandState?: hand_pb.HandState.AsObject,
     rHandState?: hand_pb.HandState.AsObject,
     mobileBaseState?: mobile_base_pb.MobileBaseState.AsObject,
+  }
+}
+
+export class ReachyStreamStateRequest extends jspb.Message {
+  getId(): ReachyId | undefined;
+  setId(value?: ReachyId): ReachyStreamStateRequest;
+  hasId(): boolean;
+  clearId(): ReachyStreamStateRequest;
+
+  getPublishFrequency(): number;
+  setPublishFrequency(value: number): ReachyStreamStateRequest;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): ReachyStreamStateRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: ReachyStreamStateRequest): ReachyStreamStateRequest.AsObject;
+  static serializeBinaryToWriter(message: ReachyStreamStateRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ReachyStreamStateRequest;
+  static deserializeBinaryFromReader(message: ReachyStreamStateRequest, reader: jspb.BinaryReader): ReachyStreamStateRequest;
+}
+
+export namespace ReachyStreamStateRequest {
+  export type AsObject = {
+    id?: ReachyId.AsObject,
+    publishFrequency: number,
   }
 }
 

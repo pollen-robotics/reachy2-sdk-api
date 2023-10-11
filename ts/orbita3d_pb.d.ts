@@ -16,21 +16,21 @@ export class Orbita3DState extends jspb.Message {
   getName(): string;
   setName(value: string): Orbita3DState;
 
-  getUid(): string;
-  setUid(value: string): Orbita3DState;
+  getId(): number;
+  setId(value: number): Orbita3DState;
 
-  getPresentPosition(): Float3D | undefined;
-  setPresentPosition(value?: Float3D): Orbita3DState;
+  getPresentPosition(): kinematics_pb.Rotation3D | undefined;
+  setPresentPosition(value?: kinematics_pb.Rotation3D): Orbita3DState;
   hasPresentPosition(): boolean;
   clearPresentPosition(): Orbita3DState;
 
-  getPresentSpeed(): Float3D | undefined;
-  setPresentSpeed(value?: Float3D): Orbita3DState;
+  getPresentSpeed(): Vector3D | undefined;
+  setPresentSpeed(value?: Vector3D): Orbita3DState;
   hasPresentSpeed(): boolean;
   clearPresentSpeed(): Orbita3DState;
 
-  getPresentLoad(): Float3D | undefined;
-  setPresentLoad(value?: Float3D): Orbita3DState;
+  getPresentLoad(): Vector3D | undefined;
+  setPresentLoad(value?: Vector3D): Orbita3DState;
   hasPresentLoad(): boolean;
   clearPresentLoad(): Orbita3DState;
 
@@ -44,8 +44,8 @@ export class Orbita3DState extends jspb.Message {
   hasCompliant(): boolean;
   clearCompliant(): Orbita3DState;
 
-  getGoalPosition(): Float3D | undefined;
-  setGoalPosition(value?: Float3D): Orbita3DState;
+  getGoalPosition(): kinematics_pb.Rotation3D | undefined;
+  setGoalPosition(value?: kinematics_pb.Rotation3D): Orbita3DState;
   hasGoalPosition(): boolean;
   clearGoalPosition(): Orbita3DState;
 
@@ -76,13 +76,13 @@ export namespace Orbita3DState {
   export type AsObject = {
     timestamp?: google_protobuf_timestamp_pb.Timestamp.AsObject,
     name: string,
-    uid: string,
-    presentPosition?: Float3D.AsObject,
-    presentSpeed?: Float3D.AsObject,
-    presentLoad?: Float3D.AsObject,
+    id: number,
+    presentPosition?: kinematics_pb.Rotation3D.AsObject,
+    presentSpeed?: Vector3D.AsObject,
+    presentLoad?: Vector3D.AsObject,
     temperature?: Float3D.AsObject,
     compliant?: google_protobuf_wrappers_pb.BoolValue.AsObject,
-    goalPosition?: Float3D.AsObject,
+    goalPosition?: kinematics_pb.Rotation3D.AsObject,
     speedLimit?: Float3D.AsObject,
     torqueLimit?: Float3D.AsObject,
     pid?: PID3D.AsObject,
@@ -140,20 +140,20 @@ export namespace Orbita3DStreamStateRequest {
 }
 
 export class PID3D extends jspb.Message {
-  getRoll(): component_pb.PIDGains | undefined;
-  setRoll(value?: component_pb.PIDGains): PID3D;
-  hasRoll(): boolean;
-  clearRoll(): PID3D;
+  getMotor1(): component_pb.PIDGains | undefined;
+  setMotor1(value?: component_pb.PIDGains): PID3D;
+  hasMotor1(): boolean;
+  clearMotor1(): PID3D;
 
-  getPitch(): component_pb.PIDGains | undefined;
-  setPitch(value?: component_pb.PIDGains): PID3D;
-  hasPitch(): boolean;
-  clearPitch(): PID3D;
+  getMotor2(): component_pb.PIDGains | undefined;
+  setMotor2(value?: component_pb.PIDGains): PID3D;
+  hasMotor2(): boolean;
+  clearMotor2(): PID3D;
 
-  getYaw(): component_pb.PIDGains | undefined;
-  setYaw(value?: component_pb.PIDGains): PID3D;
-  hasYaw(): boolean;
-  clearYaw(): PID3D;
+  getMotor3(): component_pb.PIDGains | undefined;
+  setMotor3(value?: component_pb.PIDGains): PID3D;
+  hasMotor3(): boolean;
+  clearMotor3(): PID3D;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): PID3D.AsObject;
@@ -165,21 +165,21 @@ export class PID3D extends jspb.Message {
 
 export namespace PID3D {
   export type AsObject = {
-    roll?: component_pb.PIDGains.AsObject,
-    pitch?: component_pb.PIDGains.AsObject,
-    yaw?: component_pb.PIDGains.AsObject,
+    motor1?: component_pb.PIDGains.AsObject,
+    motor2?: component_pb.PIDGains.AsObject,
+    motor3?: component_pb.PIDGains.AsObject,
   }
 }
 
 export class Float3D extends jspb.Message {
-  getRoll(): number;
-  setRoll(value: number): Float3D;
+  getMotor1(): number;
+  setMotor1(value: number): Float3D;
 
-  getPitch(): number;
-  setPitch(value: number): Float3D;
+  getMotor2(): number;
+  setMotor2(value: number): Float3D;
 
-  getYaw(): number;
-  setYaw(value: number): Float3D;
+  getMotor3(): number;
+  setMotor3(value: number): Float3D;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Float3D.AsObject;
@@ -191,9 +191,35 @@ export class Float3D extends jspb.Message {
 
 export namespace Float3D {
   export type AsObject = {
-    roll: number,
-    pitch: number,
-    yaw: number,
+    motor1: number,
+    motor2: number,
+    motor3: number,
+  }
+}
+
+export class Vector3D extends jspb.Message {
+  getX(): number;
+  setX(value: number): Vector3D;
+
+  getY(): number;
+  setY(value: number): Vector3D;
+
+  getZ(): number;
+  setZ(value: number): Vector3D;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Vector3D.AsObject;
+  static toObject(includeInstance: boolean, msg: Vector3D): Vector3D.AsObject;
+  static serializeBinaryToWriter(message: Vector3D, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Vector3D;
+  static deserializeBinaryFromReader(message: Vector3D, reader: jspb.BinaryReader): Vector3D;
+}
+
+export namespace Vector3D {
+  export type AsObject = {
+    x: number,
+    y: number,
+    z: number,
   }
 }
 
@@ -208,8 +234,8 @@ export class Orbita3DCommand extends jspb.Message {
   hasCompliant(): boolean;
   clearCompliant(): Orbita3DCommand;
 
-  getGoalPosition(): kinematics_pb.Quaternion | undefined;
-  setGoalPosition(value?: kinematics_pb.Quaternion): Orbita3DCommand;
+  getGoalPosition(): kinematics_pb.Rotation3D | undefined;
+  setGoalPosition(value?: kinematics_pb.Rotation3D): Orbita3DCommand;
   hasGoalPosition(): boolean;
   clearGoalPosition(): Orbita3DCommand;
 
@@ -235,7 +261,7 @@ export namespace Orbita3DCommand {
   export type AsObject = {
     id?: component_pb.ComponentId.AsObject,
     compliant?: google_protobuf_wrappers_pb.BoolValue.AsObject,
-    goalPosition?: kinematics_pb.Quaternion.AsObject,
+    goalPosition?: kinematics_pb.Rotation3D.AsObject,
     speedLimit?: Float3D.AsObject,
     torqueLimit?: Float3D.AsObject,
   }
@@ -302,7 +328,7 @@ export namespace Orbita3DStatus {
 export enum Orbita3DField { 
   NONE = 0,
   NAME = 1,
-  UID = 2,
+  ID = 2,
   PRESENT_POSITION = 3,
   PRESENT_SPEED = 4,
   PRESENT_LOAD = 5,

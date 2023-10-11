@@ -88,8 +88,8 @@ proto.reachy.part.PartId.prototype.toObject = function(opt_includeInstance) {
  */
 proto.reachy.part.PartId.toObject = function(includeInstance, msg) {
   var f, obj = {
-    name: jspb.Message.getFieldWithDefault(msg, 1, ""),
-    id: jspb.Message.getFieldWithDefault(msg, 2, "")
+    id: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    name: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
   if (includeInstance) {
@@ -127,12 +127,12 @@ proto.reachy.part.PartId.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setName(value);
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setId(value);
       break;
     case 2:
       var value = /** @type {string} */ (reader.readString());
-      msg.setId(value);
+      msg.setName(value);
       break;
     default:
       reader.skipField();
@@ -163,14 +163,14 @@ proto.reachy.part.PartId.prototype.serializeBinary = function() {
  */
 proto.reachy.part.PartId.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
-  f = message.getName();
-  if (f.length > 0) {
-    writer.writeString(
+  f = message.getId();
+  if (f !== 0) {
+    writer.writeUint32(
       1,
       f
     );
   }
-  f = message.getId();
+  f = message.getName();
   if (f.length > 0) {
     writer.writeString(
       2,
@@ -181,28 +181,28 @@ proto.reachy.part.PartId.serializeBinaryToWriter = function(message, writer) {
 
 
 /**
- * optional string name = 1;
+ * optional uint32 id = 1;
+ * @return {number}
+ */
+proto.reachy.part.PartId.prototype.getId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.reachy.part.PartId} returns this
+ */
+proto.reachy.part.PartId.prototype.setId = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * optional string name = 2;
  * @return {string}
  */
 proto.reachy.part.PartId.prototype.getName = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
-};
-
-
-/**
- * @param {string} value
- * @return {!proto.reachy.part.PartId} returns this
- */
-proto.reachy.part.PartId.prototype.setName = function(value) {
-  return jspb.Message.setProto3StringField(this, 1, value);
-};
-
-
-/**
- * optional string id = 2;
- * @return {string}
- */
-proto.reachy.part.PartId.prototype.getId = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
@@ -211,7 +211,7 @@ proto.reachy.part.PartId.prototype.getId = function() {
  * @param {string} value
  * @return {!proto.reachy.part.PartId} returns this
  */
-proto.reachy.part.PartId.prototype.setId = function(value) {
+proto.reachy.part.PartId.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
 

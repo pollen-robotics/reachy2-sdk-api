@@ -3,11 +3,11 @@ import * as jspb from 'google-protobuf'
 
 
 export class PartId extends jspb.Message {
+  getId(): number;
+  setId(value: number): PartId;
+
   getName(): string;
   setName(value: string): PartId;
-
-  getId(): string;
-  setId(value: string): PartId;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): PartId.AsObject;
@@ -19,8 +19,8 @@ export class PartId extends jspb.Message {
 
 export namespace PartId {
   export type AsObject = {
+    id: number,
     name: string,
-    id: string,
   }
 }
 

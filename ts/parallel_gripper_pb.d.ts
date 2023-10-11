@@ -150,7 +150,7 @@ export namespace ParallelGripperStatus {
 export enum ParallelGripperField { 
   NONE = 0,
   NAME = 1,
-  UID = 2,
+  ID = 2,
   PRESENT_POSITION = 3,
   PRESENT_SPEED = 4,
   PRESENT_LOAD = 5,

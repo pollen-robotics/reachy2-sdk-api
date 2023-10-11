@@ -260,26 +260,26 @@ export class HeadServiceClient {
   methodDescriptorLookAt = new grpcWeb.MethodDescriptor(
     '/reachy.part.head.HeadService/LookAt',
     grpcWeb.MethodType.UNARY,
-    head_pb.HeadTargetPoint,
+    head_pb.HeadLookAtGoal,
     google_protobuf_empty_pb.Empty,
-    (request: head_pb.HeadTargetPoint) => {
+    (request: head_pb.HeadLookAtGoal) => {
       return request.serializeBinary();
     },
     google_protobuf_empty_pb.Empty.deserializeBinary
   );
 
   lookAt(
-    request: head_pb.HeadTargetPoint,
+    request: head_pb.HeadLookAtGoal,
     metadata: grpcWeb.Metadata | null): Promise<google_protobuf_empty_pb.Empty>;
 
   lookAt(
-    request: head_pb.HeadTargetPoint,
+    request: head_pb.HeadLookAtGoal,
     metadata: grpcWeb.Metadata | null,
     callback: (err: grpcWeb.RpcError,
                response: google_protobuf_empty_pb.Empty) => void): grpcWeb.ClientReadableStream<google_protobuf_empty_pb.Empty>;
 
   lookAt(
-    request: head_pb.HeadTargetPoint,
+    request: head_pb.HeadLookAtGoal,
     metadata: grpcWeb.Metadata | null,
     callback?: (err: grpcWeb.RpcError,
                response: google_protobuf_empty_pb.Empty) => void) {
@@ -605,28 +605,28 @@ export class HeadServiceClient {
     '/reachy.part.head.HeadService/GetTemperatures',
     grpcWeb.MethodType.UNARY,
     part_pb.PartId,
-    head_pb.ArmTemperatures,
+    head_pb.HeadTemperatures,
     (request: part_pb.PartId) => {
       return request.serializeBinary();
     },
-    head_pb.ArmTemperatures.deserializeBinary
+    head_pb.HeadTemperatures.deserializeBinary
   );
 
   getTemperatures(
     request: part_pb.PartId,
-    metadata: grpcWeb.Metadata | null): Promise<head_pb.ArmTemperatures>;
+    metadata: grpcWeb.Metadata | null): Promise<head_pb.HeadTemperatures>;
 
   getTemperatures(
     request: part_pb.PartId,
     metadata: grpcWeb.Metadata | null,
     callback: (err: grpcWeb.RpcError,
-               response: head_pb.ArmTemperatures) => void): grpcWeb.ClientReadableStream<head_pb.ArmTemperatures>;
+               response: head_pb.HeadTemperatures) => void): grpcWeb.ClientReadableStream<head_pb.HeadTemperatures>;
 
   getTemperatures(
     request: part_pb.PartId,
     metadata: grpcWeb.Metadata | null,
     callback?: (err: grpcWeb.RpcError,
-               response: head_pb.ArmTemperatures) => void) {
+               response: head_pb.HeadTemperatures) => void) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
         this.hostname_ +

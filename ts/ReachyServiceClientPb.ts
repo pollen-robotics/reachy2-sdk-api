@@ -169,5 +169,27 @@ export class ReachyServiceClient {
     this.methodDescriptorGetReachyState);
   }
 
+  methodDescriptorStreamReachyState = new grpcWeb.MethodDescriptor(
+    '/reachy.ReachyService/StreamReachyState',
+    grpcWeb.MethodType.SERVER_STREAMING,
+    reachy_pb.ReachyStreamStateRequest,
+    reachy_pb.ReachyState,
+    (request: reachy_pb.ReachyStreamStateRequest) => {
+      return request.serializeBinary();
+    },
+    reachy_pb.ReachyState.deserializeBinary
+  );
+
+  streamReachyState(
+    request: reachy_pb.ReachyStreamStateRequest,
+    metadata?: grpcWeb.Metadata): grpcWeb.ClientReadableStream<reachy_pb.ReachyState> {
+    return this.client_.serverStreaming(
+      this.hostname_ +
+        '/reachy.ReachyService/StreamReachyState',
+      request,
+      metadata || {},
+      this.methodDescriptorStreamReachyState);
+  }
+
 }
 

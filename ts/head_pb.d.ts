@@ -2,12 +2,30 @@ import * as jspb from 'google-protobuf'
 
 import * as google_protobuf_wrappers_pb from 'google-protobuf/google/protobuf/wrappers_pb';
 import * as google_protobuf_empty_pb from 'google-protobuf/google/protobuf/empty_pb';
+import * as google_protobuf_timestamp_pb from 'google-protobuf/google/protobuf/timestamp_pb';
 import * as part_pb from './part_pb';
 import * as kinematics_pb from './kinematics_pb';
 import * as error_pb from './error_pb';
+import * as orbita3d_pb from './orbita3d_pb';
+import * as dynamixel_motor_pb from './dynamixel_motor_pb';
 
 
 export class Head extends jspb.Message {
+  getPartId(): part_pb.PartId | undefined;
+  setPartId(value?: part_pb.PartId): Head;
+  hasPartId(): boolean;
+  clearPartId(): Head;
+
+  getDescription(): HeadDescription | undefined;
+  setDescription(value?: HeadDescription): Head;
+  hasDescription(): boolean;
+  clearDescription(): Head;
+
+  getInfo(): part_pb.PartInfo | undefined;
+  setInfo(value?: part_pb.PartInfo): Head;
+  hasInfo(): boolean;
+  clearInfo(): Head;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Head.AsObject;
   static toObject(includeInstance: boolean, msg: Head): Head.AsObject;
@@ -18,6 +36,41 @@ export class Head extends jspb.Message {
 
 export namespace Head {
   export type AsObject = {
+    partId?: part_pb.PartId.AsObject,
+    description?: HeadDescription.AsObject,
+    info?: part_pb.PartInfo.AsObject,
+  }
+}
+
+export class HeadDescription extends jspb.Message {
+  getNeck(): orbita3d_pb.Orbita3DInfo | undefined;
+  setNeck(value?: orbita3d_pb.Orbita3DInfo): HeadDescription;
+  hasNeck(): boolean;
+  clearNeck(): HeadDescription;
+
+  getLAntenna(): dynamixel_motor_pb.DynamixelMotorInfo | undefined;
+  setLAntenna(value?: dynamixel_motor_pb.DynamixelMotorInfo): HeadDescription;
+  hasLAntenna(): boolean;
+  clearLAntenna(): HeadDescription;
+
+  getRAntenna(): dynamixel_motor_pb.DynamixelMotorInfo | undefined;
+  setRAntenna(value?: dynamixel_motor_pb.DynamixelMotorInfo): HeadDescription;
+  hasRAntenna(): boolean;
+  clearRAntenna(): HeadDescription;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): HeadDescription.AsObject;
+  static toObject(includeInstance: boolean, msg: HeadDescription): HeadDescription.AsObject;
+  static serializeBinaryToWriter(message: HeadDescription, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): HeadDescription;
+  static deserializeBinaryFromReader(message: HeadDescription, reader: jspb.BinaryReader): HeadDescription;
+}
+
+export namespace HeadDescription {
+  export type AsObject = {
+    neck?: orbita3d_pb.Orbita3DInfo.AsObject,
+    lAntenna?: dynamixel_motor_pb.DynamixelMotorInfo.AsObject,
+    rAntenna?: dynamixel_motor_pb.DynamixelMotorInfo.AsObject,
   }
 }
 
@@ -42,6 +95,35 @@ export namespace ListOfHead {
 }
 
 export class HeadState extends jspb.Message {
+  getTimestamp(): google_protobuf_timestamp_pb.Timestamp | undefined;
+  setTimestamp(value?: google_protobuf_timestamp_pb.Timestamp): HeadState;
+  hasTimestamp(): boolean;
+  clearTimestamp(): HeadState;
+
+  getName(): string;
+  setName(value: string): HeadState;
+
+  getId(): number;
+  setId(value: number): HeadState;
+
+  getActivated(): boolean;
+  setActivated(value: boolean): HeadState;
+
+  getNeckState(): orbita3d_pb.Orbita3DState | undefined;
+  setNeckState(value?: orbita3d_pb.Orbita3DState): HeadState;
+  hasNeckState(): boolean;
+  clearNeckState(): HeadState;
+
+  getLAntennaState(): dynamixel_motor_pb.DynamixelMotorState | undefined;
+  setLAntennaState(value?: dynamixel_motor_pb.DynamixelMotorState): HeadState;
+  hasLAntennaState(): boolean;
+  clearLAntennaState(): HeadState;
+
+  getRAntennaState(): dynamixel_motor_pb.DynamixelMotorState | undefined;
+  setRAntennaState(value?: dynamixel_motor_pb.DynamixelMotorState): HeadState;
+  hasRAntennaState(): boolean;
+  clearRAntennaState(): HeadState;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): HeadState.AsObject;
   static toObject(includeInstance: boolean, msg: HeadState): HeadState.AsObject;
@@ -52,6 +134,13 @@ export class HeadState extends jspb.Message {
 
 export namespace HeadState {
   export type AsObject = {
+    timestamp?: google_protobuf_timestamp_pb.Timestamp.AsObject,
+    name: string,
+    id: number,
+    activated: boolean,
+    neckState?: orbita3d_pb.Orbita3DState.AsObject,
+    lAntennaState?: dynamixel_motor_pb.DynamixelMotorState.AsObject,
+    rAntennaState?: dynamixel_motor_pb.DynamixelMotorState.AsObject,
   }
 }
 
@@ -82,20 +171,20 @@ export namespace NeckPosition {
 }
 
 export class HeadPosition extends jspb.Message {
-  getPosition(): NeckPosition | undefined;
-  setPosition(value?: NeckPosition): HeadPosition;
-  hasPosition(): boolean;
-  clearPosition(): HeadPosition;
+  getNeckPosition(): NeckPosition | undefined;
+  setNeckPosition(value?: NeckPosition): HeadPosition;
+  hasNeckPosition(): boolean;
+  clearNeckPosition(): HeadPosition;
 
-  getLAntenna(): google_protobuf_wrappers_pb.FloatValue | undefined;
-  setLAntenna(value?: google_protobuf_wrappers_pb.FloatValue): HeadPosition;
-  hasLAntenna(): boolean;
-  clearLAntenna(): HeadPosition;
+  getLAntennaPosition(): google_protobuf_wrappers_pb.FloatValue | undefined;
+  setLAntennaPosition(value?: google_protobuf_wrappers_pb.FloatValue): HeadPosition;
+  hasLAntennaPosition(): boolean;
+  clearLAntennaPosition(): HeadPosition;
 
-  getRAntenna(): google_protobuf_wrappers_pb.FloatValue | undefined;
-  setRAntenna(value?: google_protobuf_wrappers_pb.FloatValue): HeadPosition;
-  hasRAntenna(): boolean;
-  clearRAntenna(): HeadPosition;
+  getRAntennaPosition(): google_protobuf_wrappers_pb.FloatValue | undefined;
+  setRAntennaPosition(value?: google_protobuf_wrappers_pb.FloatValue): HeadPosition;
+  hasRAntennaPosition(): boolean;
+  clearRAntennaPosition(): HeadPosition;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): HeadPosition.AsObject;
@@ -107,9 +196,9 @@ export class HeadPosition extends jspb.Message {
 
 export namespace HeadPosition {
   export type AsObject = {
-    position?: NeckPosition.AsObject,
-    lAntenna?: google_protobuf_wrappers_pb.FloatValue.AsObject,
-    rAntenna?: google_protobuf_wrappers_pb.FloatValue.AsObject,
+    neckPosition?: NeckPosition.AsObject,
+    lAntennaPosition?: google_protobuf_wrappers_pb.FloatValue.AsObject,
+    rAntennaPosition?: google_protobuf_wrappers_pb.FloatValue.AsObject,
   }
 }
 
@@ -166,6 +255,11 @@ export namespace NeckOrientation {
 }
 
 export class NeckFKRequest extends jspb.Message {
+  getId(): part_pb.PartId | undefined;
+  setId(value?: part_pb.PartId): NeckFKRequest;
+  hasId(): boolean;
+  clearId(): NeckFKRequest;
+
   getPosition(): HeadPosition | undefined;
   setPosition(value?: HeadPosition): NeckFKRequest;
   hasPosition(): boolean;
@@ -181,6 +275,7 @@ export class NeckFKRequest extends jspb.Message {
 
 export namespace NeckFKRequest {
   export type AsObject = {
+    id?: part_pb.PartId.AsObject,
     position?: HeadPosition.AsObject,
   }
 }
@@ -210,6 +305,11 @@ export namespace NeckFKSolution {
 }
 
 export class NeckIKRequest extends jspb.Message {
+  getId(): part_pb.PartId | undefined;
+  setId(value?: part_pb.PartId): NeckIKRequest;
+  hasId(): boolean;
+  clearId(): NeckIKRequest;
+
   getTarget(): NeckOrientation | undefined;
   setTarget(value?: NeckOrientation): NeckIKRequest;
   hasTarget(): boolean;
@@ -230,6 +330,7 @@ export class NeckIKRequest extends jspb.Message {
 
 export namespace NeckIKRequest {
   export type AsObject = {
+    id?: part_pb.PartId.AsObject,
     target?: NeckOrientation.AsObject,
     q0?: NeckPosition.AsObject,
   }
@@ -279,29 +380,35 @@ export namespace HeadStatus {
   }
 }
 
-export class HeadTargetPoint extends jspb.Message {
+export class HeadLookAtGoal extends jspb.Message {
   getId(): part_pb.PartId | undefined;
-  setId(value?: part_pb.PartId): HeadTargetPoint;
+  setId(value?: part_pb.PartId): HeadLookAtGoal;
   hasId(): boolean;
-  clearId(): HeadTargetPoint;
+  clearId(): HeadLookAtGoal;
 
   getPoint(): kinematics_pb.Point | undefined;
-  setPoint(value?: kinematics_pb.Point): HeadTargetPoint;
+  setPoint(value?: kinematics_pb.Point): HeadLookAtGoal;
   hasPoint(): boolean;
-  clearPoint(): HeadTargetPoint;
+  clearPoint(): HeadLookAtGoal;
+
+  getDuration(): google_protobuf_wrappers_pb.FloatValue | undefined;
+  setDuration(value?: google_protobuf_wrappers_pb.FloatValue): HeadLookAtGoal;
+  hasDuration(): boolean;
+  clearDuration(): HeadLookAtGoal;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): HeadTargetPoint.AsObject;
-  static toObject(includeInstance: boolean, msg: HeadTargetPoint): HeadTargetPoint.AsObject;
-  static serializeBinaryToWriter(message: HeadTargetPoint, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): HeadTargetPoint;
-  static deserializeBinaryFromReader(message: HeadTargetPoint, reader: jspb.BinaryReader): HeadTargetPoint;
+  toObject(includeInstance?: boolean): HeadLookAtGoal.AsObject;
+  static toObject(includeInstance: boolean, msg: HeadLookAtGoal): HeadLookAtGoal.AsObject;
+  static serializeBinaryToWriter(message: HeadLookAtGoal, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): HeadLookAtGoal;
+  static deserializeBinaryFromReader(message: HeadLookAtGoal, reader: jspb.BinaryReader): HeadLookAtGoal;
 }
 
-export namespace HeadTargetPoint {
+export namespace HeadLookAtGoal {
   export type AsObject = {
     id?: part_pb.PartId.AsObject,
     point?: kinematics_pb.Point.AsObject,
+    duration?: google_protobuf_wrappers_pb.FloatValue.AsObject,
   }
 }
 
@@ -417,41 +524,41 @@ export namespace Temperatures {
   }
 }
 
-export class ArmTemperatures extends jspb.Message {
+export class HeadTemperatures extends jspb.Message {
   getNeckMotor1(): Temperatures | undefined;
-  setNeckMotor1(value?: Temperatures): ArmTemperatures;
+  setNeckMotor1(value?: Temperatures): HeadTemperatures;
   hasNeckMotor1(): boolean;
-  clearNeckMotor1(): ArmTemperatures;
+  clearNeckMotor1(): HeadTemperatures;
 
   getNeckMotor2(): Temperatures | undefined;
-  setNeckMotor2(value?: Temperatures): ArmTemperatures;
+  setNeckMotor2(value?: Temperatures): HeadTemperatures;
   hasNeckMotor2(): boolean;
-  clearNeckMotor2(): ArmTemperatures;
+  clearNeckMotor2(): HeadTemperatures;
 
   getNeckMotor3(): Temperatures | undefined;
-  setNeckMotor3(value?: Temperatures): ArmTemperatures;
+  setNeckMotor3(value?: Temperatures): HeadTemperatures;
   hasNeckMotor3(): boolean;
-  clearNeckMotor3(): ArmTemperatures;
+  clearNeckMotor3(): HeadTemperatures;
 
   getLAntenna(): Temperatures | undefined;
-  setLAntenna(value?: Temperatures): ArmTemperatures;
+  setLAntenna(value?: Temperatures): HeadTemperatures;
   hasLAntenna(): boolean;
-  clearLAntenna(): ArmTemperatures;
+  clearLAntenna(): HeadTemperatures;
 
   getRAntenna(): Temperatures | undefined;
-  setRAntenna(value?: Temperatures): ArmTemperatures;
+  setRAntenna(value?: Temperatures): HeadTemperatures;
   hasRAntenna(): boolean;
-  clearRAntenna(): ArmTemperatures;
+  clearRAntenna(): HeadTemperatures;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): ArmTemperatures.AsObject;
-  static toObject(includeInstance: boolean, msg: ArmTemperatures): ArmTemperatures.AsObject;
-  static serializeBinaryToWriter(message: ArmTemperatures, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): ArmTemperatures;
-  static deserializeBinaryFromReader(message: ArmTemperatures, reader: jspb.BinaryReader): ArmTemperatures;
+  toObject(includeInstance?: boolean): HeadTemperatures.AsObject;
+  static toObject(includeInstance: boolean, msg: HeadTemperatures): HeadTemperatures.AsObject;
+  static serializeBinaryToWriter(message: HeadTemperatures, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): HeadTemperatures;
+  static deserializeBinaryFromReader(message: HeadTemperatures, reader: jspb.BinaryReader): HeadTemperatures;
 }
 
-export namespace ArmTemperatures {
+export namespace HeadTemperatures {
   export type AsObject = {
     neckMotor1?: Temperatures.AsObject,
     neckMotor2?: Temperatures.AsObject,
@@ -461,6 +568,22 @@ export namespace ArmTemperatures {
   }
 }
 
+export enum HeadField { 
+  NONE = 0,
+  NAME = 1,
+  ID = 2,
+  PRESENT_POSITION = 3,
+  PRESENT_SPEED = 4,
+  PRESENT_LOAD = 5,
+  TEMPERATURE = 6,
+  JOINT_LIMIT = 7,
+  COMPLIANT = 8,
+  GOAL_POSITION = 9,
+  SPEED_LIMIT = 10,
+  TORQUE_LIMIT = 11,
+  PID = 12,
+  ALL = 15,
+}
 export enum SpeedLimit { 
   NO_LIMIT = 0,
   FAST = 1,

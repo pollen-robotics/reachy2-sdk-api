@@ -88,26 +88,26 @@ export class ArmServiceClient {
   methodDescriptorComputeArmFK = new grpcWeb.MethodDescriptor(
     '/reachy.part.arm.ArmService/ComputeArmFK',
     grpcWeb.MethodType.UNARY,
-    arm_pb.ArmPosition,
+    arm_pb.ArmFKRequest,
     arm_pb.ArmFKSolution,
-    (request: arm_pb.ArmPosition) => {
+    (request: arm_pb.ArmFKRequest) => {
       return request.serializeBinary();
     },
     arm_pb.ArmFKSolution.deserializeBinary
   );
 
   computeArmFK(
-    request: arm_pb.ArmPosition,
+    request: arm_pb.ArmFKRequest,
     metadata: grpcWeb.Metadata | null): Promise<arm_pb.ArmFKSolution>;
 
   computeArmFK(
-    request: arm_pb.ArmPosition,
+    request: arm_pb.ArmFKRequest,
     metadata: grpcWeb.Metadata | null,
     callback: (err: grpcWeb.RpcError,
                response: arm_pb.ArmFKSolution) => void): grpcWeb.ClientReadableStream<arm_pb.ArmFKSolution>;
 
   computeArmFK(
-    request: arm_pb.ArmPosition,
+    request: arm_pb.ArmFKRequest,
     metadata: grpcWeb.Metadata | null,
     callback?: (err: grpcWeb.RpcError,
                response: arm_pb.ArmFKSolution) => void) {
@@ -605,28 +605,28 @@ export class ArmServiceClient {
     '/reachy.part.arm.ArmService/GetJointsLimits',
     grpcWeb.MethodType.UNARY,
     part_pb.PartId,
-    arm_pb.JointsLimits,
+    arm_pb.ArmLimits,
     (request: part_pb.PartId) => {
       return request.serializeBinary();
     },
-    arm_pb.JointsLimits.deserializeBinary
+    arm_pb.ArmLimits.deserializeBinary
   );
 
   getJointsLimits(
     request: part_pb.PartId,
-    metadata: grpcWeb.Metadata | null): Promise<arm_pb.JointsLimits>;
+    metadata: grpcWeb.Metadata | null): Promise<arm_pb.ArmLimits>;
 
   getJointsLimits(
     request: part_pb.PartId,
     metadata: grpcWeb.Metadata | null,
     callback: (err: grpcWeb.RpcError,
-               response: arm_pb.JointsLimits) => void): grpcWeb.ClientReadableStream<arm_pb.JointsLimits>;
+               response: arm_pb.ArmLimits) => void): grpcWeb.ClientReadableStream<arm_pb.ArmLimits>;
 
   getJointsLimits(
     request: part_pb.PartId,
     metadata: grpcWeb.Metadata | null,
     callback?: (err: grpcWeb.RpcError,
-               response: arm_pb.JointsLimits) => void) {
+               response: arm_pb.ArmLimits) => void) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
         this.hostname_ +

@@ -15,21 +15,21 @@ export class Orbita2DState extends jspb.Message {
   getName(): string;
   setName(value: string): Orbita2DState;
 
-  getUid(): string;
-  setUid(value: string): Orbita2DState;
+  getId(): number;
+  setId(value: number): Orbita2DState;
 
-  getPresentPosition(): Float2D | undefined;
-  setPresentPosition(value?: Float2D): Orbita2DState;
+  getPresentPosition(): Pose2D | undefined;
+  setPresentPosition(value?: Pose2D): Orbita2DState;
   hasPresentPosition(): boolean;
   clearPresentPosition(): Orbita2DState;
 
-  getPresentSpeed(): Float2D | undefined;
-  setPresentSpeed(value?: Float2D): Orbita2DState;
+  getPresentSpeed(): Vector2D | undefined;
+  setPresentSpeed(value?: Vector2D): Orbita2DState;
   hasPresentSpeed(): boolean;
   clearPresentSpeed(): Orbita2DState;
 
-  getPresentLoad(): Float2D | undefined;
-  setPresentLoad(value?: Float2D): Orbita2DState;
+  getPresentLoad(): Vector2D | undefined;
+  setPresentLoad(value?: Vector2D): Orbita2DState;
   hasPresentLoad(): boolean;
   clearPresentLoad(): Orbita2DState;
 
@@ -43,8 +43,8 @@ export class Orbita2DState extends jspb.Message {
   hasCompliant(): boolean;
   clearCompliant(): Orbita2DState;
 
-  getGoalPosition(): Float2D | undefined;
-  setGoalPosition(value?: Float2D): Orbita2DState;
+  getGoalPosition(): Pose2D | undefined;
+  setGoalPosition(value?: Pose2D): Orbita2DState;
   hasGoalPosition(): boolean;
   clearGoalPosition(): Orbita2DState;
 
@@ -75,13 +75,13 @@ export namespace Orbita2DState {
   export type AsObject = {
     timestamp?: google_protobuf_timestamp_pb.Timestamp.AsObject,
     name: string,
-    uid: string,
-    presentPosition?: Float2D.AsObject,
-    presentSpeed?: Float2D.AsObject,
-    presentLoad?: Float2D.AsObject,
+    id: number,
+    presentPosition?: Pose2D.AsObject,
+    presentSpeed?: Vector2D.AsObject,
+    presentLoad?: Vector2D.AsObject,
     temperature?: Float2D.AsObject,
     compliant?: google_protobuf_wrappers_pb.BoolValue.AsObject,
-    goalPosition?: Float2D.AsObject,
+    goalPosition?: Pose2D.AsObject,
     speedLimit?: Float2D.AsObject,
     torqueLimit?: Float2D.AsObject,
     pid?: PID2D.AsObject,
@@ -139,15 +139,15 @@ export namespace Orbita2DStreamStateRequest {
 }
 
 export class PID2D extends jspb.Message {
-  getGainsAxis1(): component_pb.PIDGains | undefined;
-  setGainsAxis1(value?: component_pb.PIDGains): PID2D;
-  hasGainsAxis1(): boolean;
-  clearGainsAxis1(): PID2D;
+  getMotor1(): component_pb.PIDGains | undefined;
+  setMotor1(value?: component_pb.PIDGains): PID2D;
+  hasMotor1(): boolean;
+  clearMotor1(): PID2D;
 
-  getGainsAxis2(): component_pb.PIDGains | undefined;
-  setGainsAxis2(value?: component_pb.PIDGains): PID2D;
-  hasGainsAxis2(): boolean;
-  clearGainsAxis2(): PID2D;
+  getMotor2(): component_pb.PIDGains | undefined;
+  setMotor2(value?: component_pb.PIDGains): PID2D;
+  hasMotor2(): boolean;
+  clearMotor2(): PID2D;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): PID2D.AsObject;
@@ -159,17 +159,39 @@ export class PID2D extends jspb.Message {
 
 export namespace PID2D {
   export type AsObject = {
-    gainsAxis1?: component_pb.PIDGains.AsObject,
-    gainsAxis2?: component_pb.PIDGains.AsObject,
+    motor1?: component_pb.PIDGains.AsObject,
+    motor2?: component_pb.PIDGains.AsObject,
+  }
+}
+
+export class Pose2D extends jspb.Message {
+  getAxis1(): number;
+  setAxis1(value: number): Pose2D;
+
+  getAxis2(): number;
+  setAxis2(value: number): Pose2D;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Pose2D.AsObject;
+  static toObject(includeInstance: boolean, msg: Pose2D): Pose2D.AsObject;
+  static serializeBinaryToWriter(message: Pose2D, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Pose2D;
+  static deserializeBinaryFromReader(message: Pose2D, reader: jspb.BinaryReader): Pose2D;
+}
+
+export namespace Pose2D {
+  export type AsObject = {
+    axis1: number,
+    axis2: number,
   }
 }
 
 export class Float2D extends jspb.Message {
-  getAxis1(): number;
-  setAxis1(value: number): Float2D;
+  getMotor1(): number;
+  setMotor1(value: number): Float2D;
 
-  getAxis2(): number;
-  setAxis2(value: number): Float2D;
+  getMotor2(): number;
+  setMotor2(value: number): Float2D;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Float2D.AsObject;
@@ -181,8 +203,30 @@ export class Float2D extends jspb.Message {
 
 export namespace Float2D {
   export type AsObject = {
-    axis1: number,
-    axis2: number,
+    motor1: number,
+    motor2: number,
+  }
+}
+
+export class Vector2D extends jspb.Message {
+  getX(): number;
+  setX(value: number): Vector2D;
+
+  getY(): number;
+  setY(value: number): Vector2D;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Vector2D.AsObject;
+  static toObject(includeInstance: boolean, msg: Vector2D): Vector2D.AsObject;
+  static serializeBinaryToWriter(message: Vector2D, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Vector2D;
+  static deserializeBinaryFromReader(message: Vector2D, reader: jspb.BinaryReader): Vector2D;
+}
+
+export namespace Vector2D {
+  export type AsObject = {
+    x: number,
+    y: number,
   }
 }
 
@@ -299,7 +343,7 @@ export namespace Orbita2DStatus {
 export enum Orbita2DField { 
   NONE = 0,
   NAME = 1,
-  UID = 2,
+  ID = 2,
   PRESENT_POSITION = 3,
   PRESENT_SPEED = 4,
   PRESENT_LOAD = 5,

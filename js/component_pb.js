@@ -88,7 +88,8 @@ proto.component.ComponentId.prototype.toObject = function(opt_includeInstance) {
  */
 proto.component.ComponentId.toObject = function(includeInstance, msg) {
   var f, obj = {
-    id: jspb.Message.getFieldWithDefault(msg, 1, "")
+    id: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    name: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
   if (includeInstance) {
@@ -126,8 +127,12 @@ proto.component.ComponentId.deserializeBinaryFromReader = function(msg, reader) 
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {string} */ (reader.readString());
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setId(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
       break;
     default:
       reader.skipField();
@@ -159,9 +164,16 @@ proto.component.ComponentId.prototype.serializeBinary = function() {
 proto.component.ComponentId.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
+  if (f !== 0) {
+    writer.writeUint32(
+      1,
+      f
+    );
+  }
+  f = message.getName();
   if (f.length > 0) {
     writer.writeString(
-      1,
+      2,
       f
     );
   }
@@ -169,11 +181,29 @@ proto.component.ComponentId.serializeBinaryToWriter = function(message, writer) 
 
 
 /**
- * optional string id = 1;
- * @return {string}
+ * optional uint32 id = 1;
+ * @return {number}
  */
 proto.component.ComponentId.prototype.getId = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.component.ComponentId} returns this
+ */
+proto.component.ComponentId.prototype.setId = function(value) {
+  return jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * optional string name = 2;
+ * @return {string}
+ */
+proto.component.ComponentId.prototype.getName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
@@ -181,8 +211,8 @@ proto.component.ComponentId.prototype.getId = function() {
  * @param {string} value
  * @return {!proto.component.ComponentId} returns this
  */
-proto.component.ComponentId.prototype.setId = function(value) {
-  return jspb.Message.setProto3StringField(this, 1, value);
+proto.component.ComponentId.prototype.setName = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 

@@ -2,6 +2,7 @@ import * as jspb from 'google-protobuf'
 
 import * as google_protobuf_empty_pb from 'google-protobuf/google/protobuf/empty_pb';
 import * as google_protobuf_wrappers_pb from 'google-protobuf/google/protobuf/wrappers_pb';
+import * as google_protobuf_timestamp_pb from 'google-protobuf/google/protobuf/timestamp_pb';
 import * as part_pb from './part_pb';
 import * as kinematics_pb from './kinematics_pb';
 import * as error_pb from './error_pb';
@@ -10,6 +11,35 @@ import * as orbita3d_pb from './orbita3d_pb';
 
 
 export class ArmState extends jspb.Message {
+  getTimestamp(): google_protobuf_timestamp_pb.Timestamp | undefined;
+  setTimestamp(value?: google_protobuf_timestamp_pb.Timestamp): ArmState;
+  hasTimestamp(): boolean;
+  clearTimestamp(): ArmState;
+
+  getName(): string;
+  setName(value: string): ArmState;
+
+  getId(): number;
+  setId(value: number): ArmState;
+
+  getActivated(): boolean;
+  setActivated(value: boolean): ArmState;
+
+  getShoulderState(): orbita2d_pb.Orbita2DState | undefined;
+  setShoulderState(value?: orbita2d_pb.Orbita2DState): ArmState;
+  hasShoulderState(): boolean;
+  clearShoulderState(): ArmState;
+
+  getElbowState(): orbita2d_pb.Orbita2DState | undefined;
+  setElbowState(value?: orbita2d_pb.Orbita2DState): ArmState;
+  hasElbowState(): boolean;
+  clearElbowState(): ArmState;
+
+  getWristState(): orbita3d_pb.Orbita3DState | undefined;
+  setWristState(value?: orbita3d_pb.Orbita3DState): ArmState;
+  hasWristState(): boolean;
+  clearWristState(): ArmState;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ArmState.AsObject;
   static toObject(includeInstance: boolean, msg: ArmState): ArmState.AsObject;
@@ -20,6 +50,13 @@ export class ArmState extends jspb.Message {
 
 export namespace ArmState {
   export type AsObject = {
+    timestamp?: google_protobuf_timestamp_pb.Timestamp.AsObject,
+    name: string,
+    id: number,
+    activated: boolean,
+    shoulderState?: orbita2d_pb.Orbita2DState.AsObject,
+    elbowState?: orbita2d_pb.Orbita2DState.AsObject,
+    wristState?: orbita3d_pb.Orbita3DState.AsObject,
   }
 }
 
@@ -155,10 +192,25 @@ export class ArmCartesianGoal extends jspb.Message {
   hasId(): boolean;
   clearId(): ArmCartesianGoal;
 
-  getPosition(): kinematics_pb.Matrix4x4 | undefined;
-  setPosition(value?: kinematics_pb.Matrix4x4): ArmCartesianGoal;
-  hasPosition(): boolean;
-  clearPosition(): ArmCartesianGoal;
+  getTargetPosition(): kinematics_pb.Point | undefined;
+  setTargetPosition(value?: kinematics_pb.Point): ArmCartesianGoal;
+  hasTargetPosition(): boolean;
+  clearTargetPosition(): ArmCartesianGoal;
+
+  getTargetOrientation(): kinematics_pb.Rotation3D | undefined;
+  setTargetOrientation(value?: kinematics_pb.Rotation3D): ArmCartesianGoal;
+  hasTargetOrientation(): boolean;
+  clearTargetOrientation(): ArmCartesianGoal;
+
+  getPositionTolerance(): kinematics_pb.PointDistanceTolerances | undefined;
+  setPositionTolerance(value?: kinematics_pb.PointDistanceTolerances): ArmCartesianGoal;
+  hasPositionTolerance(): boolean;
+  clearPositionTolerance(): ArmCartesianGoal;
+
+  getOrientationTolerance(): kinematics_pb.ExtEulerAnglesTolerances | undefined;
+  setOrientationTolerance(value?: kinematics_pb.ExtEulerAnglesTolerances): ArmCartesianGoal;
+  hasOrientationTolerance(): boolean;
+  clearOrientationTolerance(): ArmCartesianGoal;
 
   getDuration(): google_protobuf_wrappers_pb.FloatValue | undefined;
   setDuration(value?: google_protobuf_wrappers_pb.FloatValue): ArmCartesianGoal;
@@ -176,7 +228,10 @@ export class ArmCartesianGoal extends jspb.Message {
 export namespace ArmCartesianGoal {
   export type AsObject = {
     id?: part_pb.PartId.AsObject,
-    position?: kinematics_pb.Matrix4x4.AsObject,
+    targetPosition?: kinematics_pb.Point.AsObject,
+    targetOrientation?: kinematics_pb.Rotation3D.AsObject,
+    positionTolerance?: kinematics_pb.PointDistanceTolerances.AsObject,
+    orientationTolerance?: kinematics_pb.ExtEulerAnglesTolerances.AsObject,
     duration?: google_protobuf_wrappers_pb.FloatValue.AsObject,
   }
 }
@@ -233,6 +288,32 @@ export namespace ArmEndEffector {
   }
 }
 
+export class ArmFKRequest extends jspb.Message {
+  getId(): part_pb.PartId | undefined;
+  setId(value?: part_pb.PartId): ArmFKRequest;
+  hasId(): boolean;
+  clearId(): ArmFKRequest;
+
+  getPosition(): ArmPosition | undefined;
+  setPosition(value?: ArmPosition): ArmFKRequest;
+  hasPosition(): boolean;
+  clearPosition(): ArmFKRequest;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): ArmFKRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: ArmFKRequest): ArmFKRequest.AsObject;
+  static serializeBinaryToWriter(message: ArmFKRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ArmFKRequest;
+  static deserializeBinaryFromReader(message: ArmFKRequest, reader: jspb.BinaryReader): ArmFKRequest;
+}
+
+export namespace ArmFKRequest {
+  export type AsObject = {
+    id?: part_pb.PartId.AsObject,
+    position?: ArmPosition.AsObject,
+  }
+}
+
 export class ArmFKSolution extends jspb.Message {
   getSuccess(): boolean;
   setSuccess(value: boolean): ArmFKSolution;
@@ -258,6 +339,11 @@ export namespace ArmFKSolution {
 }
 
 export class ArmIKRequest extends jspb.Message {
+  getId(): part_pb.PartId | undefined;
+  setId(value?: part_pb.PartId): ArmIKRequest;
+  hasId(): boolean;
+  clearId(): ArmIKRequest;
+
   getTarget(): ArmEndEffector | undefined;
   setTarget(value?: ArmEndEffector): ArmIKRequest;
   hasTarget(): boolean;
@@ -278,6 +364,7 @@ export class ArmIKRequest extends jspb.Message {
 
 export namespace ArmIKRequest {
   export type AsObject = {
+    id?: part_pb.PartId.AsObject,
     target?: ArmEndEffector.AsObject,
     q0?: ArmPosition.AsObject,
   }
@@ -373,51 +460,51 @@ export namespace JointLimits {
   }
 }
 
-export class JointsLimits extends jspb.Message {
+export class ArmLimits extends jspb.Message {
   getShoulderPitch(): JointLimits | undefined;
-  setShoulderPitch(value?: JointLimits): JointsLimits;
+  setShoulderPitch(value?: JointLimits): ArmLimits;
   hasShoulderPitch(): boolean;
-  clearShoulderPitch(): JointsLimits;
+  clearShoulderPitch(): ArmLimits;
 
   getShoulderRoll(): JointLimits | undefined;
-  setShoulderRoll(value?: JointLimits): JointsLimits;
+  setShoulderRoll(value?: JointLimits): ArmLimits;
   hasShoulderRoll(): boolean;
-  clearShoulderRoll(): JointsLimits;
+  clearShoulderRoll(): ArmLimits;
 
   getElbowYaw(): JointLimits | undefined;
-  setElbowYaw(value?: JointLimits): JointsLimits;
+  setElbowYaw(value?: JointLimits): ArmLimits;
   hasElbowYaw(): boolean;
-  clearElbowYaw(): JointsLimits;
+  clearElbowYaw(): ArmLimits;
 
   getElbowPitch(): JointLimits | undefined;
-  setElbowPitch(value?: JointLimits): JointsLimits;
+  setElbowPitch(value?: JointLimits): ArmLimits;
   hasElbowPitch(): boolean;
-  clearElbowPitch(): JointsLimits;
+  clearElbowPitch(): ArmLimits;
 
   getWristRoll(): JointLimits | undefined;
-  setWristRoll(value?: JointLimits): JointsLimits;
+  setWristRoll(value?: JointLimits): ArmLimits;
   hasWristRoll(): boolean;
-  clearWristRoll(): JointsLimits;
+  clearWristRoll(): ArmLimits;
 
   getWristPitch(): JointLimits | undefined;
-  setWristPitch(value?: JointLimits): JointsLimits;
+  setWristPitch(value?: JointLimits): ArmLimits;
   hasWristPitch(): boolean;
-  clearWristPitch(): JointsLimits;
+  clearWristPitch(): ArmLimits;
 
   getWristYaw(): JointLimits | undefined;
-  setWristYaw(value?: JointLimits): JointsLimits;
+  setWristYaw(value?: JointLimits): ArmLimits;
   hasWristYaw(): boolean;
-  clearWristYaw(): JointsLimits;
+  clearWristYaw(): ArmLimits;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): JointsLimits.AsObject;
-  static toObject(includeInstance: boolean, msg: JointsLimits): JointsLimits.AsObject;
-  static serializeBinaryToWriter(message: JointsLimits, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): JointsLimits;
-  static deserializeBinaryFromReader(message: JointsLimits, reader: jspb.BinaryReader): JointsLimits;
+  toObject(includeInstance?: boolean): ArmLimits.AsObject;
+  static toObject(includeInstance: boolean, msg: ArmLimits): ArmLimits.AsObject;
+  static serializeBinaryToWriter(message: ArmLimits, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ArmLimits;
+  static deserializeBinaryFromReader(message: ArmLimits, reader: jspb.BinaryReader): ArmLimits;
 }
 
-export namespace JointsLimits {
+export namespace ArmLimits {
   export type AsObject = {
     shoulderPitch?: JointLimits.AsObject,
     shoulderRoll?: JointLimits.AsObject,
@@ -510,7 +597,7 @@ export namespace ArmTemperatures {
 export enum ArmField { 
   NONE = 0,
   NAME = 1,
-  UID = 2,
+  ID = 2,
   PRESENT_POSITION = 3,
   PRESENT_SPEED = 4,
   PRESENT_LOAD = 5,

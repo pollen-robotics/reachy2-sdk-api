@@ -22,6 +22,26 @@ export namespace Matrix4x4 {
   }
 }
 
+export class Matrix3x3 extends jspb.Message {
+  getDataList(): Array<number>;
+  setDataList(value: Array<number>): Matrix3x3;
+  clearDataList(): Matrix3x3;
+  addData(value: number, index?: number): Matrix3x3;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Matrix3x3.AsObject;
+  static toObject(includeInstance: boolean, msg: Matrix3x3): Matrix3x3.AsObject;
+  static serializeBinaryToWriter(message: Matrix3x3, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Matrix3x3;
+  static deserializeBinaryFromReader(message: Matrix3x3, reader: jspb.BinaryReader): Matrix3x3;
+}
+
+export namespace Matrix3x3 {
+  export type AsObject = {
+    dataList: Array<number>,
+  }
+}
+
 export class Quaternion extends jspb.Message {
   getW(): number;
   setW(value: number): Quaternion;
@@ -58,6 +78,16 @@ export class Rotation3D extends jspb.Message {
   hasQ(): boolean;
   clearQ(): Rotation3D;
 
+  getRpy(): ExtEulerAngles | undefined;
+  setRpy(value?: ExtEulerAngles): Rotation3D;
+  hasRpy(): boolean;
+  clearRpy(): Rotation3D;
+
+  getMatrix(): Matrix3x3 | undefined;
+  setMatrix(value?: Matrix3x3): Rotation3D;
+  hasMatrix(): boolean;
+  clearMatrix(): Rotation3D;
+
   getRotationCase(): Rotation3D.RotationCase;
 
   serializeBinary(): Uint8Array;
@@ -71,11 +101,15 @@ export class Rotation3D extends jspb.Message {
 export namespace Rotation3D {
   export type AsObject = {
     q?: Quaternion.AsObject,
+    rpy?: ExtEulerAngles.AsObject,
+    matrix?: Matrix3x3.AsObject,
   }
 
   export enum RotationCase { 
     ROTATION_NOT_SET = 0,
     Q = 1,
+    RPY = 2,
+    MATRIX = 3,
   }
 }
 
@@ -102,6 +136,84 @@ export namespace Point {
     x: number,
     y: number,
     z: number,
+  }
+}
+
+export class ExtEulerAngles extends jspb.Message {
+  getRoll(): number;
+  setRoll(value: number): ExtEulerAngles;
+
+  getPitch(): number;
+  setPitch(value: number): ExtEulerAngles;
+
+  getYaw(): number;
+  setYaw(value: number): ExtEulerAngles;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): ExtEulerAngles.AsObject;
+  static toObject(includeInstance: boolean, msg: ExtEulerAngles): ExtEulerAngles.AsObject;
+  static serializeBinaryToWriter(message: ExtEulerAngles, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ExtEulerAngles;
+  static deserializeBinaryFromReader(message: ExtEulerAngles, reader: jspb.BinaryReader): ExtEulerAngles;
+}
+
+export namespace ExtEulerAngles {
+  export type AsObject = {
+    roll: number,
+    pitch: number,
+    yaw: number,
+  }
+}
+
+export class PointDistanceTolerances extends jspb.Message {
+  getXTol(): number;
+  setXTol(value: number): PointDistanceTolerances;
+
+  getYTol(): number;
+  setYTol(value: number): PointDistanceTolerances;
+
+  getZTol(): number;
+  setZTol(value: number): PointDistanceTolerances;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): PointDistanceTolerances.AsObject;
+  static toObject(includeInstance: boolean, msg: PointDistanceTolerances): PointDistanceTolerances.AsObject;
+  static serializeBinaryToWriter(message: PointDistanceTolerances, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): PointDistanceTolerances;
+  static deserializeBinaryFromReader(message: PointDistanceTolerances, reader: jspb.BinaryReader): PointDistanceTolerances;
+}
+
+export namespace PointDistanceTolerances {
+  export type AsObject = {
+    xTol: number,
+    yTol: number,
+    zTol: number,
+  }
+}
+
+export class ExtEulerAnglesTolerances extends jspb.Message {
+  getRollTol(): number;
+  setRollTol(value: number): ExtEulerAnglesTolerances;
+
+  getPitchTol(): number;
+  setPitchTol(value: number): ExtEulerAnglesTolerances;
+
+  getYawTol(): number;
+  setYawTol(value: number): ExtEulerAnglesTolerances;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): ExtEulerAnglesTolerances.AsObject;
+  static toObject(includeInstance: boolean, msg: ExtEulerAnglesTolerances): ExtEulerAnglesTolerances.AsObject;
+  static serializeBinaryToWriter(message: ExtEulerAnglesTolerances, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ExtEulerAnglesTolerances;
+  static deserializeBinaryFromReader(message: ExtEulerAnglesTolerances, reader: jspb.BinaryReader): ExtEulerAnglesTolerances;
+}
+
+export namespace ExtEulerAnglesTolerances {
+  export type AsObject = {
+    rollTol: number,
+    pitchTol: number,
+    yawTol: number,
   }
 }
 
