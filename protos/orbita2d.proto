@@ -83,6 +83,10 @@ message Orbita2DCommand {
     Float2D torque_limit = 5;
 }
 
+message Orbita2DsCommand {
+    repeated Orbita2DCommand cmd = 1;
+}
+
 message Orbita2DInfo {
     component.ComponentId id = 1;
     string serial_number = 2;
@@ -104,8 +108,8 @@ service Orbita2DService {
     rpc GetState (Orbita2DStateRequest) returns (Orbita2DState);
     rpc StreamState (Orbita2DStreamStateRequest) returns (stream Orbita2DState);
 
-    rpc SendCommand (Orbita2DCommand) returns (google.protobuf.Empty);
-    rpc StreamCommand (stream Orbita2DCommand) returns (google.protobuf.Empty);
+    rpc SendCommand (Orbita2DsCommand) returns (google.protobuf.Empty);
+    rpc StreamCommand (stream Orbita2DsCommand) returns (google.protobuf.Empty);
 
     rpc Audit (component.ComponentId) returns (Orbita2DStatus);
     rpc HeartBeat (component.ComponentId) returns (google.protobuf.Empty);
