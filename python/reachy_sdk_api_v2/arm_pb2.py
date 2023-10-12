@@ -23,7 +23,7 @@ import orbita2d_pb2 as orbita2d__pb2
 import orbita3d_pb2 as orbita3d__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\tarm.proto\x12\x0freachy.part.arm\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\npart.proto\x1a\x10kinematics.proto\x1a\x0b\x65rror.proto\x1a\x0eorbita2d.proto\x1a\x0eorbita3d.proto\"\x91\x02\n\x08\x41rmState\x12-\n\ttimestamp\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\n\n\x02id\x18\x03 \x01(\r\x12\x11\n\tactivated\x18\x04 \x01(\x08\x12\x39\n\x0eshoulder_state\x18\x05 \x01(\x0b\x32!.component.orbita2d.Orbita2DState\x12\x36\n\x0b\x65lbow_state\x18\x06 \x01(\x0b\x32!.component.orbita2d.Orbita2DState\x12\x36\n\x0bwrist_state\x18\x07 \x01(\x0b\x32!.component.orbita3d.Orbita3DState\"\xa6\x01\n\x0e\x41rmDescription\x12\x32\n\x08shoulder\x18\x01 \x01(\x0b\x32 .component.orbita2d.Orbita2DInfo\x12/\n\x05\x65lbow\x18\x02 \x01(\x0b\x32 .component.orbita2d.Orbita2DInfo\x12/\n\x05wrist\x18\x03 \x01(\x0b\x32 .component.orbita3d.Orbita3DInfo\"\x86\x01\n\x03\x41rm\x12$\n\x07part_id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x34\n\x0b\x64\x65scription\x18\x02 \x01(\x0b\x32\x1f.reachy.part.arm.ArmDescription\x12#\n\x04info\x18\x05 \x01(\x0b\x32\x15.reachy.part.PartInfo\".\n\tListOfArm\x12!\n\x03\x61rm\x18\x01 \x03(\x0b\x32\x14.reachy.part.arm.Arm\"\xa0\x01\n\x0b\x41rmPosition\x12\x16\n\x0eshoulder_pitch\x18\x01 \x01(\x02\x12\x15\n\rshoulder_roll\x18\x02 \x01(\x02\x12\x11\n\telbow_yaw\x18\x03 \x01(\x02\x12\x13\n\x0b\x65lbow_pitch\x18\x04 \x01(\x02\x12\x12\n\nwrist_roll\x18\x05 \x01(\x02\x12\x13\n\x0bwrist_pitch\x18\x06 \x01(\x02\x12\x11\n\twrist_yaw\x18\x07 \x01(\x02\"\xe4\x02\n\x10\x41rmCartesianGoal\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x31\n\x0ftarget_position\x18\x02 \x01(\x0b\x32\x18.reachy.kinematics.Point\x12\x39\n\x12target_orientation\x18\x03 \x01(\x0b\x32\x1d.reachy.kinematics.Rotation3D\x12\x46\n\x12position_tolerance\x18\x04 \x01(\x0b\x32*.reachy.kinematics.PointDistanceTolerances\x12J\n\x15orientation_tolerance\x18\x05 \x01(\x0b\x32+.reachy.kinematics.ExtEulerAnglesTolerances\x12-\n\x08\x64uration\x18\n \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"\x8e\x01\n\x0c\x41rmJointGoal\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12.\n\x08position\x18\x02 \x01(\x0b\x32\x1c.reachy.part.arm.ArmPosition\x12-\n\x08\x64uration\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"<\n\x0e\x41rmEndEffector\x12*\n\x04pose\x18\x01 \x01(\x0b\x32\x1c.reachy.kinematics.Matrix4x4\"_\n\x0c\x41rmFKRequest\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12.\n\x08position\x18\x02 \x01(\x0b\x32\x1c.reachy.part.arm.ArmPosition\"W\n\rArmFKSolution\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x35\n\x0c\x65nd_effector\x18\x02 \x01(\x0b\x32\x1f.reachy.part.arm.ArmEndEffector\"\x8a\x01\n\x0c\x41rmIKRequest\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12/\n\x06target\x18\x02 \x01(\x0b\x32\x1f.reachy.part.arm.ArmEndEffector\x12(\n\x02q0\x18\x03 \x01(\x0b\x32\x1c.reachy.part.arm.ArmPosition\"q\n\rArmIKSolution\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x32\n\x0c\x61rm_position\x18\x02 \x01(\x0b\x32\x1c.reachy.part.arm.ArmPosition\x12\x1b\n\x05\x65rror\x18\x03 \x01(\x0b\x32\x0c.error.Error\"\x0b\n\tArmStatus\"`\n\x11SpeedLimitRequest\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12*\n\x05limit\x18\x02 \x01(\x0e\x32\x1b.reachy.part.arm.SpeedLimit\"\'\n\x0bJointLimits\x12\x0b\n\x03min\x18\x01 \x01(\x02\x12\x0b\n\x03max\x18\x02 \x01(\x02\"\xf0\x02\n\tArmLimits\x12\x34\n\x0eshoulder_pitch\x18\x01 \x01(\x0b\x32\x1c.reachy.part.arm.JointLimits\x12\x33\n\rshoulder_roll\x18\x02 \x01(\x0b\x32\x1c.reachy.part.arm.JointLimits\x12/\n\telbow_yaw\x18\x03 \x01(\x0b\x32\x1c.reachy.part.arm.JointLimits\x12\x31\n\x0b\x65lbow_pitch\x18\x04 \x01(\x0b\x32\x1c.reachy.part.arm.JointLimits\x12\x30\n\nwrist_roll\x18\x05 \x01(\x0b\x32\x1c.reachy.part.arm.JointLimits\x12\x31\n\x0bwrist_pitch\x18\x06 \x01(\x0b\x32\x1c.reachy.part.arm.JointLimits\x12/\n\twrist_yaw\x18\x07 \x01(\x0b\x32\x1c.reachy.part.arm.JointLimits\"-\n\x0cTemperatures\x12\r\n\x05motor\x18\x01 \x01(\x02\x12\x0e\n\x06\x64river\x18\x02 \x01(\x02\"\x91\x03\n\x0f\x41rmTemperatures\x12\x37\n\x10shoulder_motor_1\x18\x01 \x01(\x0b\x32\x1d.reachy.part.arm.Temperatures\x12\x37\n\x10shoulder_motor_2\x18\x02 \x01(\x0b\x32\x1d.reachy.part.arm.Temperatures\x12\x34\n\relbow_motor_1\x18\x03 \x01(\x0b\x32\x1d.reachy.part.arm.Temperatures\x12\x34\n\relbow_motor_2\x18\x04 \x01(\x0b\x32\x1d.reachy.part.arm.Temperatures\x12\x34\n\rwrist_motor_1\x18\x05 \x01(\x0b\x32\x1d.reachy.part.arm.Temperatures\x12\x34\n\rwrist_motor_2\x18\x06 \x01(\x0b\x32\x1d.reachy.part.arm.Temperatures\x12\x34\n\rwrist_motor_3\x18\x07 \x01(\x0b\x32\x1d.reachy.part.arm.Temperatures*\xda\x01\n\x08\x41rmField\x12\x08\n\x04NONE\x10\x00\x12\x08\n\x04NAME\x10\x01\x12\x06\n\x02ID\x10\x02\x12\x14\n\x10PRESENT_POSITION\x10\x03\x12\x11\n\rPRESENT_SPEED\x10\x04\x12\x10\n\x0cPRESENT_LOAD\x10\x05\x12\x0f\n\x0bTEMPERATURE\x10\x06\x12\x0f\n\x0bJOINT_LIMIT\x10\x07\x12\r\n\tCOMPLIANT\x10\x08\x12\x11\n\rGOAL_POSITION\x10\t\x12\x0f\n\x0bSPEED_LIMIT\x10\n\x12\x10\n\x0cTORQUE_LIMIT\x10\x0b\x12\x07\n\x03PID\x10\x0c\x12\x07\n\x03\x41LL\x10\x0f*:\n\nSpeedLimit\x12\x0c\n\x08NO_LIMIT\x10\x00\x12\x08\n\x04\x46\x41ST\x10\x01\x12\n\n\x06NORMAL\x10\x02\x12\x08\n\x04SLOW\x10\x03\x32\xa2\t\n\nArmService\x12@\n\nGetAllArms\x12\x16.google.protobuf.Empty\x1a\x1a.reachy.part.arm.ListOfArm\x12M\n\x0c\x43omputeArmFK\x12\x1d.reachy.part.arm.ArmFKRequest\x1a\x1e.reachy.part.arm.ArmFKSolution\x12M\n\x0c\x43omputeArmIK\x12\x1d.reachy.part.arm.ArmIKRequest\x1a\x1e.reachy.part.arm.ArmIKSolution\x12R\n\x15GoToCartesianPosition\x12!.reachy.part.arm.ArmCartesianGoal\x1a\x16.google.protobuf.Empty\x12J\n\x11GoToJointPosition\x12\x1d.reachy.part.arm.ArmJointGoal\x1a\x16.google.protobuf.Empty\x12I\n\x14GetCartesianPosition\x12\x13.reachy.part.PartId\x1a\x1c.reachy.kinematics.Matrix4x4\x12\x45\n\x10GetJointPosition\x12\x13.reachy.part.PartId\x1a\x1c.reachy.part.arm.ArmPosition\x12\x38\n\x05\x41udit\x12\x13.reachy.part.PartId\x1a\x1a.reachy.part.arm.ArmStatus\x12\x38\n\tHeartBeat\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x36\n\x07Restart\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x41\n\x12ResetDefaultValues\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x35\n\x06TurnOn\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x36\n\x07TurnOff\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x42\n\x0fGetJointsLimits\x12\x13.reachy.part.PartId\x1a\x1a.reachy.part.arm.ArmLimits\x12H\n\x0fGetTemperatures\x12\x13.reachy.part.PartId\x1a .reachy.part.arm.ArmTemperatures\x12I\n\x14GetJointGoalPosition\x12\x13.reachy.part.PartId\x1a\x1c.reachy.part.arm.ArmPosition\x12K\n\rSetSpeedLimit\x12\".reachy.part.arm.SpeedLimitRequest\x1a\x16.google.protobuf.Emptyb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\tarm.proto\x12\x0freachy.part.arm\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\npart.proto\x1a\x10kinematics.proto\x1a\x0b\x65rror.proto\x1a\x0eorbita2d.proto\x1a\x0eorbita3d.proto\"\x91\x02\n\x08\x41rmState\x12-\n\ttimestamp\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\n\n\x02id\x18\x03 \x01(\r\x12\x11\n\tactivated\x18\x04 \x01(\x08\x12\x39\n\x0eshoulder_state\x18\x05 \x01(\x0b\x32!.component.orbita2d.Orbita2DState\x12\x36\n\x0b\x65lbow_state\x18\x06 \x01(\x0b\x32!.component.orbita2d.Orbita2DState\x12\x36\n\x0bwrist_state\x18\x07 \x01(\x0b\x32!.component.orbita3d.Orbita3DState\"\xa6\x01\n\x0e\x41rmDescription\x12\x32\n\x08shoulder\x18\x01 \x01(\x0b\x32 .component.orbita2d.Orbita2DInfo\x12/\n\x05\x65lbow\x18\x02 \x01(\x0b\x32 .component.orbita2d.Orbita2DInfo\x12/\n\x05wrist\x18\x03 \x01(\x0b\x32 .component.orbita3d.Orbita3DInfo\"\x86\x01\n\x03\x41rm\x12$\n\x07part_id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x34\n\x0b\x64\x65scription\x18\x02 \x01(\x0b\x32\x1f.reachy.part.arm.ArmDescription\x12#\n\x04info\x18\x05 \x01(\x0b\x32\x15.reachy.part.PartInfo\".\n\tListOfArm\x12!\n\x03\x61rm\x18\x01 \x03(\x0b\x32\x14.reachy.part.arm.Arm\"\xaf\x01\n\x0b\x41rmPosition\x12\x35\n\x11shoulder_position\x18\x01 \x01(\x0b\x32\x1a.component.orbita2d.Pose2D\x12\x32\n\x0e\x65lbow_position\x18\x02 \x01(\x0b\x32\x1a.component.orbita2d.Pose2D\x12\x35\n\x0ewrist_position\x18\x03 \x01(\x0b\x32\x1d.reachy.kinematics.Rotation3D\"\xe4\x02\n\x10\x41rmCartesianGoal\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x31\n\x0ftarget_position\x18\x02 \x01(\x0b\x32\x18.reachy.kinematics.Point\x12\x39\n\x12target_orientation\x18\x03 \x01(\x0b\x32\x1d.reachy.kinematics.Rotation3D\x12\x46\n\x12position_tolerance\x18\x04 \x01(\x0b\x32*.reachy.kinematics.PointDistanceTolerances\x12J\n\x15orientation_tolerance\x18\x05 \x01(\x0b\x32+.reachy.kinematics.ExtEulerAnglesTolerances\x12-\n\x08\x64uration\x18\n \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"\x8e\x01\n\x0c\x41rmJointGoal\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12.\n\x08position\x18\x02 \x01(\x0b\x32\x1c.reachy.part.arm.ArmPosition\x12-\n\x08\x64uration\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"<\n\x0e\x41rmEndEffector\x12*\n\x04pose\x18\x01 \x01(\x0b\x32\x1c.reachy.kinematics.Matrix4x4\"_\n\x0c\x41rmFKRequest\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12.\n\x08position\x18\x02 \x01(\x0b\x32\x1c.reachy.part.arm.ArmPosition\"W\n\rArmFKSolution\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x35\n\x0c\x65nd_effector\x18\x02 \x01(\x0b\x32\x1f.reachy.part.arm.ArmEndEffector\"\x8a\x01\n\x0c\x41rmIKRequest\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12/\n\x06target\x18\x02 \x01(\x0b\x32\x1f.reachy.part.arm.ArmEndEffector\x12(\n\x02q0\x18\x03 \x01(\x0b\x32\x1c.reachy.part.arm.ArmPosition\"q\n\rArmIKSolution\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x32\n\x0c\x61rm_position\x18\x02 \x01(\x0b\x32\x1c.reachy.part.arm.ArmPosition\x12\x1b\n\x05\x65rror\x18\x03 \x01(\x0b\x32\x0c.error.Error\"\x0b\n\tArmStatus\"`\n\x11SpeedLimitRequest\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12*\n\x05limit\x18\x02 \x01(\x0e\x32\x1b.reachy.part.arm.SpeedLimit\"\xaa\x01\n\tArmLimits\x12\x35\n\x0fshoulder_limits\x18\x01 \x01(\x0b\x32\x1c.component.orbita2d.Limits2D\x12\x32\n\x0c\x65lbow_limits\x18\x02 \x01(\x0b\x32\x1c.component.orbita2d.Limits2D\x12\x32\n\x0cwrist_limits\x18\x03 \x01(\x0b\x32\x1c.component.orbita3d.Limits3D\"\xbc\x01\n\x0f\x41rmTemperatures\x12\x39\n\x14shoulder_temperature\x18\x01 \x01(\x0b\x32\x1b.component.orbita2d.Float2D\x12\x36\n\x11\x65lbow_temperature\x18\x02 \x01(\x0b\x32\x1b.component.orbita2d.Float2D\x12\x36\n\x11wrist_temperature\x18\x03 \x01(\x0b\x32\x1b.component.orbita3d.Float3D*\xda\x01\n\x08\x41rmField\x12\x08\n\x04NONE\x10\x00\x12\x08\n\x04NAME\x10\x01\x12\x06\n\x02ID\x10\x02\x12\x14\n\x10PRESENT_POSITION\x10\x03\x12\x11\n\rPRESENT_SPEED\x10\x04\x12\x10\n\x0cPRESENT_LOAD\x10\x05\x12\x0f\n\x0bTEMPERATURE\x10\x06\x12\x0f\n\x0bJOINT_LIMIT\x10\x07\x12\r\n\tCOMPLIANT\x10\x08\x12\x11\n\rGOAL_POSITION\x10\t\x12\x0f\n\x0bSPEED_LIMIT\x10\n\x12\x10\n\x0cTORQUE_LIMIT\x10\x0b\x12\x07\n\x03PID\x10\x0c\x12\x07\n\x03\x41LL\x10\x0f*:\n\nSpeedLimit\x12\x0c\n\x08NO_LIMIT\x10\x00\x12\x08\n\x04\x46\x41ST\x10\x01\x12\n\n\x06NORMAL\x10\x02\x12\x08\n\x04SLOW\x10\x03\x32\xa2\t\n\nArmService\x12@\n\nGetAllArms\x12\x16.google.protobuf.Empty\x1a\x1a.reachy.part.arm.ListOfArm\x12M\n\x0c\x43omputeArmFK\x12\x1d.reachy.part.arm.ArmFKRequest\x1a\x1e.reachy.part.arm.ArmFKSolution\x12M\n\x0c\x43omputeArmIK\x12\x1d.reachy.part.arm.ArmIKRequest\x1a\x1e.reachy.part.arm.ArmIKSolution\x12R\n\x15GoToCartesianPosition\x12!.reachy.part.arm.ArmCartesianGoal\x1a\x16.google.protobuf.Empty\x12J\n\x11GoToJointPosition\x12\x1d.reachy.part.arm.ArmJointGoal\x1a\x16.google.protobuf.Empty\x12I\n\x14GetCartesianPosition\x12\x13.reachy.part.PartId\x1a\x1c.reachy.kinematics.Matrix4x4\x12\x45\n\x10GetJointPosition\x12\x13.reachy.part.PartId\x1a\x1c.reachy.part.arm.ArmPosition\x12\x38\n\x05\x41udit\x12\x13.reachy.part.PartId\x1a\x1a.reachy.part.arm.ArmStatus\x12\x38\n\tHeartBeat\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x36\n\x07Restart\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x41\n\x12ResetDefaultValues\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x35\n\x06TurnOn\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x36\n\x07TurnOff\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x42\n\x0fGetJointsLimits\x12\x13.reachy.part.PartId\x1a\x1a.reachy.part.arm.ArmLimits\x12H\n\x0fGetTemperatures\x12\x13.reachy.part.PartId\x1a .reachy.part.arm.ArmTemperatures\x12I\n\x14GetJointGoalPosition\x12\x13.reachy.part.PartId\x1a\x1c.reachy.part.arm.ArmPosition\x12K\n\rSetSpeedLimit\x12\".reachy.part.arm.SpeedLimitRequest\x1a\x16.google.protobuf.Emptyb\x06proto3')
 
 _ARMFIELD = DESCRIPTOR.enum_types_by_name['ArmField']
 ArmField = enum_type_wrapper.EnumTypeWrapper(_ARMFIELD)
@@ -63,9 +63,7 @@ _ARMIKREQUEST = DESCRIPTOR.message_types_by_name['ArmIKRequest']
 _ARMIKSOLUTION = DESCRIPTOR.message_types_by_name['ArmIKSolution']
 _ARMSTATUS = DESCRIPTOR.message_types_by_name['ArmStatus']
 _SPEEDLIMITREQUEST = DESCRIPTOR.message_types_by_name['SpeedLimitRequest']
-_JOINTLIMITS = DESCRIPTOR.message_types_by_name['JointLimits']
 _ARMLIMITS = DESCRIPTOR.message_types_by_name['ArmLimits']
-_TEMPERATURES = DESCRIPTOR.message_types_by_name['Temperatures']
 _ARMTEMPERATURES = DESCRIPTOR.message_types_by_name['ArmTemperatures']
 ArmState = _reflection.GeneratedProtocolMessageType('ArmState', (_message.Message,), {
   'DESCRIPTOR' : _ARMSTATE,
@@ -165,26 +163,12 @@ SpeedLimitRequest = _reflection.GeneratedProtocolMessageType('SpeedLimitRequest'
   })
 _sym_db.RegisterMessage(SpeedLimitRequest)
 
-JointLimits = _reflection.GeneratedProtocolMessageType('JointLimits', (_message.Message,), {
-  'DESCRIPTOR' : _JOINTLIMITS,
-  '__module__' : 'arm_pb2'
-  # @@protoc_insertion_point(class_scope:reachy.part.arm.JointLimits)
-  })
-_sym_db.RegisterMessage(JointLimits)
-
 ArmLimits = _reflection.GeneratedProtocolMessageType('ArmLimits', (_message.Message,), {
   'DESCRIPTOR' : _ARMLIMITS,
   '__module__' : 'arm_pb2'
   # @@protoc_insertion_point(class_scope:reachy.part.arm.ArmLimits)
   })
 _sym_db.RegisterMessage(ArmLimits)
-
-Temperatures = _reflection.GeneratedProtocolMessageType('Temperatures', (_message.Message,), {
-  'DESCRIPTOR' : _TEMPERATURES,
-  '__module__' : 'arm_pb2'
-  # @@protoc_insertion_point(class_scope:reachy.part.arm.Temperatures)
-  })
-_sym_db.RegisterMessage(Temperatures)
 
 ArmTemperatures = _reflection.GeneratedProtocolMessageType('ArmTemperatures', (_message.Message,), {
   'DESCRIPTOR' : _ARMTEMPERATURES,
@@ -197,10 +181,10 @@ _ARMSERVICE = DESCRIPTOR.services_by_name['ArmService']
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  _ARMFIELD._serialized_start=2975
-  _ARMFIELD._serialized_end=3193
-  _SPEEDLIMIT._serialized_start=3195
-  _SPEEDLIMIT._serialized_end=3253
+  _ARMFIELD._serialized_start=2491
+  _ARMFIELD._serialized_end=2709
+  _SPEEDLIMIT._serialized_start=2711
+  _SPEEDLIMIT._serialized_end=2769
   _ARMSTATE._serialized_start=200
   _ARMSTATE._serialized_end=473
   _ARMDESCRIPTION._serialized_start=476
@@ -210,33 +194,29 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _LISTOFARM._serialized_start=781
   _LISTOFARM._serialized_end=827
   _ARMPOSITION._serialized_start=830
-  _ARMPOSITION._serialized_end=990
-  _ARMCARTESIANGOAL._serialized_start=993
-  _ARMCARTESIANGOAL._serialized_end=1349
-  _ARMJOINTGOAL._serialized_start=1352
-  _ARMJOINTGOAL._serialized_end=1494
-  _ARMENDEFFECTOR._serialized_start=1496
-  _ARMENDEFFECTOR._serialized_end=1556
-  _ARMFKREQUEST._serialized_start=1558
-  _ARMFKREQUEST._serialized_end=1653
-  _ARMFKSOLUTION._serialized_start=1655
-  _ARMFKSOLUTION._serialized_end=1742
-  _ARMIKREQUEST._serialized_start=1745
-  _ARMIKREQUEST._serialized_end=1883
-  _ARMIKSOLUTION._serialized_start=1885
-  _ARMIKSOLUTION._serialized_end=1998
-  _ARMSTATUS._serialized_start=2000
-  _ARMSTATUS._serialized_end=2011
-  _SPEEDLIMITREQUEST._serialized_start=2013
-  _SPEEDLIMITREQUEST._serialized_end=2109
-  _JOINTLIMITS._serialized_start=2111
-  _JOINTLIMITS._serialized_end=2150
-  _ARMLIMITS._serialized_start=2153
-  _ARMLIMITS._serialized_end=2521
-  _TEMPERATURES._serialized_start=2523
-  _TEMPERATURES._serialized_end=2568
-  _ARMTEMPERATURES._serialized_start=2571
-  _ARMTEMPERATURES._serialized_end=2972
-  _ARMSERVICE._serialized_start=3256
-  _ARMSERVICE._serialized_end=4442
+  _ARMPOSITION._serialized_end=1005
+  _ARMCARTESIANGOAL._serialized_start=1008
+  _ARMCARTESIANGOAL._serialized_end=1364
+  _ARMJOINTGOAL._serialized_start=1367
+  _ARMJOINTGOAL._serialized_end=1509
+  _ARMENDEFFECTOR._serialized_start=1511
+  _ARMENDEFFECTOR._serialized_end=1571
+  _ARMFKREQUEST._serialized_start=1573
+  _ARMFKREQUEST._serialized_end=1668
+  _ARMFKSOLUTION._serialized_start=1670
+  _ARMFKSOLUTION._serialized_end=1757
+  _ARMIKREQUEST._serialized_start=1760
+  _ARMIKREQUEST._serialized_end=1898
+  _ARMIKSOLUTION._serialized_start=1900
+  _ARMIKSOLUTION._serialized_end=2013
+  _ARMSTATUS._serialized_start=2015
+  _ARMSTATUS._serialized_end=2026
+  _SPEEDLIMITREQUEST._serialized_start=2028
+  _SPEEDLIMITREQUEST._serialized_end=2124
+  _ARMLIMITS._serialized_start=2127
+  _ARMLIMITS._serialized_end=2297
+  _ARMTEMPERATURES._serialized_start=2300
+  _ARMTEMPERATURES._serialized_end=2488
+  _ARMSERVICE._serialized_start=2772
+  _ARMSERVICE._serialized_end=3958
 # @@protoc_insertion_point(module_scope)

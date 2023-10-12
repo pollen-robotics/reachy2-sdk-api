@@ -63,13 +63,9 @@ message ListOfArm {
 }
 
 message ArmPosition {
-    float shoulder_pitch = 1;
-    float shoulder_roll = 2;
-    float elbow_yaw = 3;
-    float elbow_pitch = 4;
-    float wrist_roll = 5;
-    float wrist_pitch = 6;
-    float wrist_yaw = 7;
+    component.orbita2d.Pose2D shoulder_position = 1;
+    component.orbita2d.Pose2D elbow_position = 2;
+    kinematics.Rotation3D wrist_position = 3;
 }
 
 message ArmCartesianGoal {
@@ -133,34 +129,16 @@ message SpeedLimitRequest {
     SpeedLimit limit = 2;
 }
 
-message JointLimits {
-    float min = 1;
-    float max = 2;
-}
-
 message ArmLimits {
-    JointLimits shoulder_pitch = 1;
-    JointLimits shoulder_roll = 2;
-    JointLimits elbow_yaw = 3;
-    JointLimits elbow_pitch = 4;
-    JointLimits wrist_roll = 5;
-    JointLimits wrist_pitch = 6;
-    JointLimits wrist_yaw = 7;
-}
-
-message Temperatures {
-    float motor = 1;
-    float driver = 2;
+    component.orbita2d.Limits2D shoulder_limits = 1;
+    component.orbita2d.Limits2D elbow_limits = 2;
+    component.orbita3d.Limits3D wrist_limits = 3;
 }
 
 message ArmTemperatures {
-    Temperatures shoulder_motor_1 = 1;
-    Temperatures shoulder_motor_2 = 2;
-    Temperatures elbow_motor_1 = 3;
-    Temperatures elbow_motor_2 = 4;
-    Temperatures wrist_motor_1 = 5;
-    Temperatures wrist_motor_2 = 6;
-    Temperatures wrist_motor_3 = 7;
+    component.orbita2d.Float2D shoulder_temperature = 1;
+    component.orbita2d.Float2D elbow_temperature = 2;
+    component.orbita3d.Float3D wrist_temperature = 3;
 }
 
 service ArmService {

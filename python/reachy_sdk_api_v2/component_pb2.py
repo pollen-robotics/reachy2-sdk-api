@@ -14,12 +14,13 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0f\x63omponent.proto\x12\tcomponent\"\'\n\x0b\x43omponentId\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\"+\n\x08PIDGains\x12\t\n\x01p\x18\x01 \x01(\x02\x12\t\n\x01i\x18\x02 \x01(\x02\x12\t\n\x01\x64\x18\x03 \x01(\x02\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0f\x63omponent.proto\x12\tcomponent\"\'\n\x0b\x43omponentId\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\"+\n\x08PIDGains\x12\t\n\x01p\x18\x01 \x01(\x02\x12\t\n\x01i\x18\x02 \x01(\x02\x12\t\n\x01\x64\x18\x03 \x01(\x02\"\'\n\x0bJointLimits\x12\x0b\n\x03min\x18\x01 \x01(\x02\x12\x0b\n\x03max\x18\x02 \x01(\x02\x62\x06proto3')
 
 
 
 _COMPONENTID = DESCRIPTOR.message_types_by_name['ComponentId']
 _PIDGAINS = DESCRIPTOR.message_types_by_name['PIDGains']
+_JOINTLIMITS = DESCRIPTOR.message_types_by_name['JointLimits']
 ComponentId = _reflection.GeneratedProtocolMessageType('ComponentId', (_message.Message,), {
   'DESCRIPTOR' : _COMPONENTID,
   '__module__' : 'component_pb2'
@@ -34,6 +35,13 @@ PIDGains = _reflection.GeneratedProtocolMessageType('PIDGains', (_message.Messag
   })
 _sym_db.RegisterMessage(PIDGains)
 
+JointLimits = _reflection.GeneratedProtocolMessageType('JointLimits', (_message.Message,), {
+  'DESCRIPTOR' : _JOINTLIMITS,
+  '__module__' : 'component_pb2'
+  # @@protoc_insertion_point(class_scope:component.JointLimits)
+  })
+_sym_db.RegisterMessage(JointLimits)
+
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
@@ -41,4 +49,6 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _COMPONENTID._serialized_end=69
   _PIDGAINS._serialized_start=71
   _PIDGAINS._serialized_end=114
+  _JOINTLIMITS._serialized_start=116
+  _JOINTLIMITS._serialized_end=155
 # @@protoc_insertion_point(module_scope)
