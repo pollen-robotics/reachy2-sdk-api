@@ -4,9 +4,8 @@
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import message as _message
-from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
+from google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -18,82 +17,26 @@ import component_pb2 as component__pb2
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0bvideo.proto\x12\x0f\x63omponent.video\x1a\x1bgoogle/protobuf/empty.proto\x1a\x0f\x63omponent.proto\"\x0e\n\x0cStereoCamera\"\r\n\x0b\x44\x65pthCamera\"T\n\x10StereoCameraInfo\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\x1c\n\x14intrinsic_parameters\x18\x02 \x03(\x02\"W\n\x16ListOfStereoCameraInfo\x12=\n\x12stereo_camera_info\x18\x01 \x03(\x0b\x32!.component.video.StereoCameraInfo\"S\n\x0f\x44\x65pthCameraInfo\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\x1c\n\x14intrinsic_parameters\x18\x02 \x03(\x02\"U\n\x15ListOfDepthCameraInfo\x12<\n\x12stereo_camera_info\x18\x01 \x03(\x0b\x32 .component.video.DepthCameraInfo\"\x07\n\x05\x46rame2\xf6\x01\n\x0cVideoService\x12U\n\x12GetAllStereoCamera\x12\x16.google.protobuf.Empty\x1a\'.component.video.ListOfStereoCameraInfo\x12S\n\x11GetAllDepthCamera\x12\x16.google.protobuf.Empty\x1a&.component.video.ListOfDepthCameraInfo\x12:\n\x08GetFrame\x12\x16.component.ComponentId\x1a\x16.component.video.Frameb\x06proto3')
 
-
-
-_STEREOCAMERA = DESCRIPTOR.message_types_by_name['StereoCamera']
-_DEPTHCAMERA = DESCRIPTOR.message_types_by_name['DepthCamera']
-_STEREOCAMERAINFO = DESCRIPTOR.message_types_by_name['StereoCameraInfo']
-_LISTOFSTEREOCAMERAINFO = DESCRIPTOR.message_types_by_name['ListOfStereoCameraInfo']
-_DEPTHCAMERAINFO = DESCRIPTOR.message_types_by_name['DepthCameraInfo']
-_LISTOFDEPTHCAMERAINFO = DESCRIPTOR.message_types_by_name['ListOfDepthCameraInfo']
-_FRAME = DESCRIPTOR.message_types_by_name['Frame']
-StereoCamera = _reflection.GeneratedProtocolMessageType('StereoCamera', (_message.Message,), {
-  'DESCRIPTOR' : _STEREOCAMERA,
-  '__module__' : 'video_pb2'
-  # @@protoc_insertion_point(class_scope:component.video.StereoCamera)
-  })
-_sym_db.RegisterMessage(StereoCamera)
-
-DepthCamera = _reflection.GeneratedProtocolMessageType('DepthCamera', (_message.Message,), {
-  'DESCRIPTOR' : _DEPTHCAMERA,
-  '__module__' : 'video_pb2'
-  # @@protoc_insertion_point(class_scope:component.video.DepthCamera)
-  })
-_sym_db.RegisterMessage(DepthCamera)
-
-StereoCameraInfo = _reflection.GeneratedProtocolMessageType('StereoCameraInfo', (_message.Message,), {
-  'DESCRIPTOR' : _STEREOCAMERAINFO,
-  '__module__' : 'video_pb2'
-  # @@protoc_insertion_point(class_scope:component.video.StereoCameraInfo)
-  })
-_sym_db.RegisterMessage(StereoCameraInfo)
-
-ListOfStereoCameraInfo = _reflection.GeneratedProtocolMessageType('ListOfStereoCameraInfo', (_message.Message,), {
-  'DESCRIPTOR' : _LISTOFSTEREOCAMERAINFO,
-  '__module__' : 'video_pb2'
-  # @@protoc_insertion_point(class_scope:component.video.ListOfStereoCameraInfo)
-  })
-_sym_db.RegisterMessage(ListOfStereoCameraInfo)
-
-DepthCameraInfo = _reflection.GeneratedProtocolMessageType('DepthCameraInfo', (_message.Message,), {
-  'DESCRIPTOR' : _DEPTHCAMERAINFO,
-  '__module__' : 'video_pb2'
-  # @@protoc_insertion_point(class_scope:component.video.DepthCameraInfo)
-  })
-_sym_db.RegisterMessage(DepthCameraInfo)
-
-ListOfDepthCameraInfo = _reflection.GeneratedProtocolMessageType('ListOfDepthCameraInfo', (_message.Message,), {
-  'DESCRIPTOR' : _LISTOFDEPTHCAMERAINFO,
-  '__module__' : 'video_pb2'
-  # @@protoc_insertion_point(class_scope:component.video.ListOfDepthCameraInfo)
-  })
-_sym_db.RegisterMessage(ListOfDepthCameraInfo)
-
-Frame = _reflection.GeneratedProtocolMessageType('Frame', (_message.Message,), {
-  'DESCRIPTOR' : _FRAME,
-  '__module__' : 'video_pb2'
-  # @@protoc_insertion_point(class_scope:component.video.Frame)
-  })
-_sym_db.RegisterMessage(Frame)
-
-_VIDEOSERVICE = DESCRIPTOR.services_by_name['VideoService']
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'video_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  _STEREOCAMERA._serialized_start=78
-  _STEREOCAMERA._serialized_end=92
-  _DEPTHCAMERA._serialized_start=94
-  _DEPTHCAMERA._serialized_end=107
-  _STEREOCAMERAINFO._serialized_start=109
-  _STEREOCAMERAINFO._serialized_end=193
-  _LISTOFSTEREOCAMERAINFO._serialized_start=195
-  _LISTOFSTEREOCAMERAINFO._serialized_end=282
-  _DEPTHCAMERAINFO._serialized_start=284
-  _DEPTHCAMERAINFO._serialized_end=367
-  _LISTOFDEPTHCAMERAINFO._serialized_start=369
-  _LISTOFDEPTHCAMERAINFO._serialized_end=454
-  _FRAME._serialized_start=456
-  _FRAME._serialized_end=463
-  _VIDEOSERVICE._serialized_start=466
-  _VIDEOSERVICE._serialized_end=712
+  _globals['_STEREOCAMERA']._serialized_start=78
+  _globals['_STEREOCAMERA']._serialized_end=92
+  _globals['_DEPTHCAMERA']._serialized_start=94
+  _globals['_DEPTHCAMERA']._serialized_end=107
+  _globals['_STEREOCAMERAINFO']._serialized_start=109
+  _globals['_STEREOCAMERAINFO']._serialized_end=193
+  _globals['_LISTOFSTEREOCAMERAINFO']._serialized_start=195
+  _globals['_LISTOFSTEREOCAMERAINFO']._serialized_end=282
+  _globals['_DEPTHCAMERAINFO']._serialized_start=284
+  _globals['_DEPTHCAMERAINFO']._serialized_end=367
+  _globals['_LISTOFDEPTHCAMERAINFO']._serialized_start=369
+  _globals['_LISTOFDEPTHCAMERAINFO']._serialized_end=454
+  _globals['_FRAME']._serialized_start=456
+  _globals['_FRAME']._serialized_end=463
+  _globals['_VIDEOSERVICE']._serialized_start=466
+  _globals['_VIDEOSERVICE']._serialized_end=712
 # @@protoc_insertion_point(module_scope)

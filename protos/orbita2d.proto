@@ -41,13 +41,13 @@ message Orbita2DState {
     string name = 2;
     uint32 id = 3;
 
-    Float2D present_position = 4;
-    Float2D present_speed = 5;
-    Float2D present_load = 6;
+    Pose2D present_position = 4;
+    Vector2D present_speed = 5;
+    Vector2D present_load = 6;
     Float2D temperature = 7;
 
     google.protobuf.BoolValue compliant = 8;
-    Float2D goal_position = 9;
+    Pose2D goal_position = 9;
     Float2D speed_limit = 10;
     Float2D torque_limit = 11;
 
@@ -65,20 +65,30 @@ message Orbita2DStreamStateRequest {
 }
 
 message PID2D {
-    PIDGains gains_axis_1 = 1;
-    PIDGains gains_axis_2 = 2;
+    PIDGains motor_1 = 1;
+    PIDGains motor_2 = 2;
+}
+
+message Pose2D {
+    float axis_1 = 1;
+    float axis_2 = 2;
 }
 
 message Float2D {
-    float axis_1 = 1;
-    float axis_2 = 2;
+    float motor_1 = 1;
+    float motor_2 = 2;
+}
+
+message Vector2D {
+    float x = 1;
+    float y = 2;
 }
 
 message Orbita2DCommand {
     component.ComponentId id = 1;
 
     google.protobuf.BoolValue compliant = 2;
-    Float2D goal_position = 3;
+    Pose2D goal_position = 3;
     Float2D speed_limit = 4;
     Float2D torque_limit = 5;
 }

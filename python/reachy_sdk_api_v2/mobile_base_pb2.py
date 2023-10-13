@@ -4,9 +4,8 @@
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import message as _message
-from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
+from google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -16,29 +15,14 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x11mobile_base.proto\x12\x17reachy.part.mobile_base\"\x0c\n\nMobileBase\"\x11\n\x0fMobileBaseStateb\x06proto3')
 
-
-
-_MOBILEBASE = DESCRIPTOR.message_types_by_name['MobileBase']
-_MOBILEBASESTATE = DESCRIPTOR.message_types_by_name['MobileBaseState']
-MobileBase = _reflection.GeneratedProtocolMessageType('MobileBase', (_message.Message,), {
-  'DESCRIPTOR' : _MOBILEBASE,
-  '__module__' : 'mobile_base_pb2'
-  # @@protoc_insertion_point(class_scope:reachy.part.mobile_base.MobileBase)
-  })
-_sym_db.RegisterMessage(MobileBase)
-
-MobileBaseState = _reflection.GeneratedProtocolMessageType('MobileBaseState', (_message.Message,), {
-  'DESCRIPTOR' : _MOBILEBASESTATE,
-  '__module__' : 'mobile_base_pb2'
-  # @@protoc_insertion_point(class_scope:reachy.part.mobile_base.MobileBaseState)
-  })
-_sym_db.RegisterMessage(MobileBaseState)
-
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mobile_base_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  _MOBILEBASE._serialized_start=46
-  _MOBILEBASE._serialized_end=58
-  _MOBILEBASESTATE._serialized_start=60
-  _MOBILEBASESTATE._serialized_end=77
+  _globals['_MOBILEBASE']._serialized_start=46
+  _globals['_MOBILEBASE']._serialized_end=58
+  _globals['_MOBILEBASESTATE']._serialized_start=60
+  _globals['_MOBILEBASESTATE']._serialized_end=77
 # @@protoc_insertion_point(module_scope)
