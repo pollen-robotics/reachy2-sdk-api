@@ -33,12 +33,12 @@ class Orbita2DServiceStub(object):
                 )
         self.SendCommand = channel.unary_unary(
                 '/component.orbita2d.Orbita2DService/SendCommand',
-                request_serializer=orbita2d__pb2.Orbita2DCommand.SerializeToString,
+                request_serializer=orbita2d__pb2.Orbita2DsCommand.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.StreamCommand = channel.stream_unary(
                 '/component.orbita2d.Orbita2DService/StreamCommand',
-                request_serializer=orbita2d__pb2.Orbita2DCommand.SerializeToString,
+                request_serializer=orbita2d__pb2.Orbita2DsCommand.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.Audit = channel.unary_unary(
@@ -129,12 +129,12 @@ def add_Orbita2DServiceServicer_to_server(servicer, server):
             ),
             'SendCommand': grpc.unary_unary_rpc_method_handler(
                     servicer.SendCommand,
-                    request_deserializer=orbita2d__pb2.Orbita2DCommand.FromString,
+                    request_deserializer=orbita2d__pb2.Orbita2DsCommand.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'StreamCommand': grpc.stream_unary_rpc_method_handler(
                     servicer.StreamCommand,
-                    request_deserializer=orbita2d__pb2.Orbita2DCommand.FromString,
+                    request_deserializer=orbita2d__pb2.Orbita2DsCommand.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'Audit': grpc.unary_unary_rpc_method_handler(
@@ -225,7 +225,7 @@ class Orbita2DService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/component.orbita2d.Orbita2DService/SendCommand',
-            orbita2d__pb2.Orbita2DCommand.SerializeToString,
+            orbita2d__pb2.Orbita2DsCommand.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
@@ -242,7 +242,7 @@ class Orbita2DService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.stream_unary(request_iterator, target, '/component.orbita2d.Orbita2DService/StreamCommand',
-            orbita2d__pb2.Orbita2DCommand.SerializeToString,
+            orbita2d__pb2.Orbita2DsCommand.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
