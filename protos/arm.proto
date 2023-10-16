@@ -36,14 +36,13 @@ enum ArmField {
 message ArmState {
     google.protobuf.Timestamp timestamp = 1;
 
-    string name = 2;
-    uint32 id = 3;
+    reachy.part.PartId id = 2;
 
-    bool activated = 4;
+    bool activated = 3;
 
-    component.orbita2d.Orbita2DState shoulder_state = 5;
-    component.orbita2d.Orbita2DState elbow_state = 6;
-    component.orbita3d.Orbita3DState wrist_state = 7;
+    component.orbita2d.Orbita2DState shoulder_state = 4;
+    component.orbita2d.Orbita2DState elbow_state = 5;
+    component.orbita3d.Orbita3DState wrist_state = 6;
 }
 
 message ArmDescription {
