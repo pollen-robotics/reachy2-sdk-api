@@ -54,14 +54,13 @@ message ListOfHead {
 message HeadState {
     google.protobuf.Timestamp timestamp = 1;
 
-    string name = 2;
-    uint32 id = 3;
+    reachy.part.PartId id = 2;
 
-    bool activated = 4;
+    bool activated = 3;
 
-    component.orbita3d.Orbita3DState neck_state = 5;
-    component.dynamixel_motor.DynamixelMotorState l_antenna_state = 6;
-    component.dynamixel_motor.DynamixelMotorState r_antenna_state = 7;
+    component.orbita3d.Orbita3DState neck_state = 4;
+    component.dynamixel_motor.DynamixelMotorState l_antenna_state = 5;
+    component.dynamixel_motor.DynamixelMotorState r_antenna_state = 6;
 }
 
 message HeadPosition {
