@@ -38,21 +38,20 @@ enum Axis {
 message Orbita2DState {
     google.protobuf.Timestamp timestamp = 1;
 
-    string name = 2;
-    uint32 id = 3;
+    component.ComponentId id = 2;
 
-    Pose2D present_position = 4;
-    Vector2D present_speed = 5;
-    Vector2D present_load = 6;
-    Float2D temperature = 7;
-    Limits2D joint_limit = 8;
+    Pose2D present_position = 3;
+    Vector2D present_speed = 4;
+    Vector2D present_load = 5;
+    Float2D temperature = 6;
+    Limits2D joint_limit = 7;
 
-    google.protobuf.BoolValue compliant = 9;
-    Pose2D goal_position = 10;
-    Float2D speed_limit = 11;
-    Float2D torque_limit = 12;
+    google.protobuf.BoolValue compliant = 8;
+    Pose2D goal_position = 9;
+    Float2D speed_limit = 10;
+    Float2D torque_limit = 11;
 
-    PID2D pid = 13;
+    PID2D pid = 12;
 }
 
 message Orbita2DStateRequest {
