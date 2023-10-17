@@ -42,10 +42,6 @@ message ReachyInfo {
     string version_soft = 3;
 }
 
-message ListOfReachy {
-    repeated Reachy reachy = 1;
-}
-
 message ReachyState {
     google.protobuf.Timestamp timestamp = 1;
 
@@ -65,7 +61,6 @@ message ReachyStreamStateRequest {
 }
 
 service ReachyService {
-    rpc GetListOfReachy (google.protobuf.Empty) returns (ListOfReachy);
     rpc GetReachy (google.protobuf.Empty) returns (Reachy);
 
     rpc GetReachyState (ReachyId) returns (ReachyState);
