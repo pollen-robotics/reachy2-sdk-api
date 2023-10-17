@@ -22,6 +22,11 @@ class HeadServiceStub(object):
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=head__pb2.ListOfHead.FromString,
                 )
+        self.GetState = channel.unary_unary(
+                '/reachy.part.head.HeadService/GetState',
+                request_serializer=part__pb2.PartId.SerializeToString,
+                response_deserializer=head__pb2.HeadState.FromString,
+                )
         self.ComputeNeckFK = channel.unary_unary(
                 '/reachy.part.head.HeadService/ComputeNeckFK',
                 request_serializer=head__pb2.NeckFKRequest.SerializeToString,
@@ -103,6 +108,12 @@ class HeadServiceServicer(object):
     """Missing associated documentation comment in .proto file."""
 
     def GetAllHeads(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def GetState(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -206,6 +217,11 @@ def add_HeadServiceServicer_to_server(servicer, server):
                     request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                     response_serializer=head__pb2.ListOfHead.SerializeToString,
             ),
+            'GetState': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetState,
+                    request_deserializer=part__pb2.PartId.FromString,
+                    response_serializer=head__pb2.HeadState.SerializeToString,
+            ),
             'ComputeNeckFK': grpc.unary_unary_rpc_method_handler(
                     servicer.ComputeNeckFK,
                     request_deserializer=head__pb2.NeckFKRequest.FromString,
@@ -305,6 +321,23 @@ class HeadService(object):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/GetAllHeads',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             head__pb2.ListOfHead.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def GetState(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/GetState',
+            part__pb2.PartId.SerializeToString,
+            head__pb2.HeadState.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
