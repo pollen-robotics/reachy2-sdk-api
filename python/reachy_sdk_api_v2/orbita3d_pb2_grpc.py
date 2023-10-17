@@ -19,7 +19,7 @@ class Orbita3DServiceStub(object):
         self.GetAllOrbita3D = channel.unary_unary(
                 '/component.orbita3d.Orbita3DService/GetAllOrbita3D',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-                response_deserializer=orbita3d__pb2.ListOfOrbita3DInfo.FromString,
+                response_deserializer=orbita3d__pb2.ListOfOrbita3D.FromString,
                 )
         self.GetState = channel.unary_unary(
                 '/component.orbita3d.Orbita3DService/GetState',
@@ -115,7 +115,7 @@ def add_Orbita3DServiceServicer_to_server(servicer, server):
             'GetAllOrbita3D': grpc.unary_unary_rpc_method_handler(
                     servicer.GetAllOrbita3D,
                     request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
-                    response_serializer=orbita3d__pb2.ListOfOrbita3DInfo.SerializeToString,
+                    response_serializer=orbita3d__pb2.ListOfOrbita3D.SerializeToString,
             ),
             'GetState': grpc.unary_unary_rpc_method_handler(
                     servicer.GetState,
@@ -175,7 +175,7 @@ class Orbita3DService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/component.orbita3d.Orbita3DService/GetAllOrbita3D',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-            orbita3d__pb2.ListOfOrbita3DInfo.FromString,
+            orbita3d__pb2.ListOfOrbita3D.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
