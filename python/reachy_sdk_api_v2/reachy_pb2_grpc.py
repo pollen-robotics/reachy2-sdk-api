@@ -15,11 +15,6 @@ class ReachyServiceStub(object):
         Args:
             channel: A grpc.Channel.
         """
-        self.GetListOfReachy = channel.unary_unary(
-                '/reachy.ReachyService/GetListOfReachy',
-                request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-                response_deserializer=reachy__pb2.ListOfReachy.FromString,
-                )
         self.GetReachy = channel.unary_unary(
                 '/reachy.ReachyService/GetReachy',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
@@ -39,12 +34,6 @@ class ReachyServiceStub(object):
 
 class ReachyServiceServicer(object):
     """Missing associated documentation comment in .proto file."""
-
-    def GetListOfReachy(self, request, context):
-        """Missing associated documentation comment in .proto file."""
-        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
-        context.set_details('Method not implemented!')
-        raise NotImplementedError('Method not implemented!')
 
     def GetReachy(self, request, context):
         """Missing associated documentation comment in .proto file."""
@@ -67,11 +56,6 @@ class ReachyServiceServicer(object):
 
 def add_ReachyServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
-            'GetListOfReachy': grpc.unary_unary_rpc_method_handler(
-                    servicer.GetListOfReachy,
-                    request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
-                    response_serializer=reachy__pb2.ListOfReachy.SerializeToString,
-            ),
             'GetReachy': grpc.unary_unary_rpc_method_handler(
                     servicer.GetReachy,
                     request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
@@ -96,23 +80,6 @@ def add_ReachyServiceServicer_to_server(servicer, server):
  # This class is part of an EXPERIMENTAL API.
 class ReachyService(object):
     """Missing associated documentation comment in .proto file."""
-
-    @staticmethod
-    def GetListOfReachy(request,
-            target,
-            options=(),
-            channel_credentials=None,
-            call_credentials=None,
-            insecure=False,
-            compression=None,
-            wait_for_ready=None,
-            timeout=None,
-            metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/reachy.ReachyService/GetListOfReachy',
-            google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-            reachy__pb2.ListOfReachy.FromString,
-            options, channel_credentials,
-            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
     def GetReachy(request,
