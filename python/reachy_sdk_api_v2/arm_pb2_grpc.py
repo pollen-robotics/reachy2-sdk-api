@@ -22,6 +22,11 @@ class ArmServiceStub(object):
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=arm__pb2.ListOfArm.FromString,
                 )
+        self.GetState = channel.unary_unary(
+                '/reachy.part.arm.ArmService/GetState',
+                request_serializer=part__pb2.PartId.SerializeToString,
+                response_deserializer=arm__pb2.ArmState.FromString,
+                )
         self.ComputeArmFK = channel.unary_unary(
                 '/reachy.part.arm.ArmService/ComputeArmFK',
                 request_serializer=arm__pb2.ArmFKRequest.SerializeToString,
@@ -108,6 +113,12 @@ class ArmServiceServicer(object):
     """Missing associated documentation comment in .proto file."""
 
     def GetAllArms(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def GetState(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -217,6 +228,11 @@ def add_ArmServiceServicer_to_server(servicer, server):
                     request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                     response_serializer=arm__pb2.ListOfArm.SerializeToString,
             ),
+            'GetState': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetState,
+                    request_deserializer=part__pb2.PartId.FromString,
+                    response_serializer=arm__pb2.ArmState.SerializeToString,
+            ),
             'ComputeArmFK': grpc.unary_unary_rpc_method_handler(
                     servicer.ComputeArmFK,
                     request_deserializer=arm__pb2.ArmFKRequest.FromString,
@@ -321,6 +337,23 @@ class ArmService(object):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/GetAllArms',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             arm__pb2.ListOfArm.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def GetState(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/GetState',
+            part__pb2.PartId.SerializeToString,
+            arm__pb2.ArmState.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
