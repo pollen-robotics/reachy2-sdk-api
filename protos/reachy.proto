@@ -65,7 +65,6 @@ message ReachyStreamStateRequest {
 }
 
 service ReachyService {
-    rpc GetListOfReachy (google.protobuf.Empty) returns (ListOfReachy);
     rpc GetReachy (google.protobuf.Empty) returns (Reachy);
 
     rpc GetReachyState (ReachyId) returns (ReachyState);
