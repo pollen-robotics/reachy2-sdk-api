@@ -32,8 +32,8 @@ message Reachy {
 }
 
 message ReachyId {
-    string name = 1;
-    string id = 2;
+    uint32 id = 1;
+    string name = 2;
 }
 
 message ReachyInfo {

@@ -22,13 +22,14 @@ import sound_pb2 as sound__pb2
 import video_pb2 as video__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0creachy.proto\x12\x06reachy\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\tarm.proto\x1a\nhead.proto\x1a\nhand.proto\x1a\x11mobile_base.proto\x1a\x0bsound.proto\x1a\x0bvideo.proto\"\xd4\x03\n\x06Reachy\x12\x1c\n\x02id\x18\x01 \x01(\x0b\x32\x10.reachy.ReachyId\x12#\n\x05l_arm\x18\x02 \x01(\x0b\x32\x14.reachy.part.arm.Arm\x12#\n\x05r_arm\x18\x03 \x01(\x0b\x32\x14.reachy.part.arm.Arm\x12$\n\x04head\x18\x04 \x01(\x0b\x32\x16.reachy.part.head.Head\x12&\n\x06l_hand\x18\x05 \x01(\x0b\x32\x16.reachy.part.hand.Hand\x12&\n\x06r_hand\x18\x06 \x01(\x0b\x32\x16.reachy.part.hand.Hand\x12\x38\n\x0bmobile_base\x18\x07 \x01(\x0b\x32#.reachy.part.mobile_base.MobileBase\x12/\n\nmicrophone\x18\x08 \x01(\x0b\x32\x1b.component.sound.Microphone\x12)\n\x07speaker\x18\t \x01(\x0b\x32\x18.component.sound.Speaker\x12\x34\n\rstereo_camera\x18\n \x01(\x0b\x32\x1d.component.video.StereoCamera\x12 \n\x04info\x18\x14 \x01(\x0b\x32\x12.reachy.ReachyInfo\"$\n\x08ReachyId\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\t\"O\n\nReachyInfo\x12\x15\n\rserial_number\x18\x01 \x01(\t\x12\x14\n\x0cversion_hard\x18\x02 \x01(\t\x12\x14\n\x0cversion_soft\x18\x03 \x01(\t\"\x96\x03\n\x0bReachyState\x12-\n\ttimestamp\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x1c\n\x02id\x18\x02 \x01(\x0b\x32\x10.reachy.ReachyId\x12.\n\x0bl_arm_state\x18\x03 \x01(\x0b\x32\x19.reachy.part.arm.ArmState\x12.\n\x0br_arm_state\x18\x04 \x01(\x0b\x32\x19.reachy.part.arm.ArmState\x12/\n\nhead_state\x18\x05 \x01(\x0b\x32\x1b.reachy.part.head.HeadState\x12\x31\n\x0cl_hand_state\x18\x06 \x01(\x0b\x32\x1b.reachy.part.hand.HandState\x12\x31\n\x0cr_hand_state\x18\x07 \x01(\x0b\x32\x1b.reachy.part.hand.HandState\x12\x43\n\x11mobile_base_state\x18\x08 \x01(\x0b\x32(.reachy.part.mobile_base.MobileBaseState\"S\n\x18ReachyStreamStateRequest\x12\x1c\n\x02id\x18\x01 \x01(\x0b\x32\x10.reachy.ReachyId\x12\x19\n\x11publish_frequency\x18\x02 \x01(\x02\x32\xcb\x01\n\rReachyService\x12\x33\n\tGetReachy\x12\x16.google.protobuf.Empty\x1a\x0e.reachy.Reachy\x12\x37\n\x0eGetReachyState\x12\x10.reachy.ReachyId\x1a\x13.reachy.ReachyState\x12L\n\x11StreamReachyState\x12 .reachy.ReachyStreamStateRequest\x1a\x13.reachy.ReachyState0\x01\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0creachy.proto\x12\x06reachy\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\tarm.proto\x1a\nhead.proto\x1a\nhand.proto\x1a\x11mobile_base.proto\x1a\x0bsound.proto\x1a\x0bvideo.proto\"\xd4\x03\n\x06Reachy\x12\x1c\n\x02id\x18\x01 \x01(\x0b\x32\x10.reachy.ReachyId\x12#\n\x05l_arm\x18\x02 \x01(\x0b\x32\x14.reachy.part.arm.Arm\x12#\n\x05r_arm\x18\x03 \x01(\x0b\x32\x14.reachy.part.arm.Arm\x12$\n\x04head\x18\x04 \x01(\x0b\x32\x16.reachy.part.head.Head\x12&\n\x06l_hand\x18\x05 \x01(\x0b\x32\x16.reachy.part.hand.Hand\x12&\n\x06r_hand\x18\x06 \x01(\x0b\x32\x16.reachy.part.hand.Hand\x12\x38\n\x0bmobile_base\x18\x07 \x01(\x0b\x32#.reachy.part.mobile_base.MobileBase\x12/\n\nmicrophone\x18\x08 \x01(\x0b\x32\x1b.component.sound.Microphone\x12)\n\x07speaker\x18\t \x01(\x0b\x32\x18.component.sound.Speaker\x12\x34\n\rstereo_camera\x18\n \x01(\x0b\x32\x1d.component.video.StereoCamera\x12 \n\x04info\x18\x14 \x01(\x0b\x32\x12.reachy.ReachyInfo\"$\n\x08ReachyId\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\"O\n\nReachyInfo\x12\x15\n\rserial_number\x18\x01 \x01(\t\x12\x14\n\x0cversion_hard\x18\x02 \x01(\t\x12\x14\n\x0cversion_soft\x18\x03 \x01(\t\".\n\x0cListOfReachy\x12\x1e\n\x06reachy\x18\x01 \x03(\x0b\x32\x0e.reachy.Reachy\"\x96\x03\n\x0bReachyState\x12-\n\ttimestamp\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x1c\n\x02id\x18\x02 \x01(\x0b\x32\x10.reachy.ReachyId\x12.\n\x0bl_arm_state\x18\x03 \x01(\x0b\x32\x19.reachy.part.arm.ArmState\x12.\n\x0br_arm_state\x18\x04 \x01(\x0b\x32\x19.reachy.part.arm.ArmState\x12/\n\nhead_state\x18\x05 \x01(\x0b\x32\x1b.reachy.part.head.HeadState\x12\x31\n\x0cl_hand_state\x18\x06 \x01(\x0b\x32\x1b.reachy.part.hand.HandState\x12\x31\n\x0cr_hand_state\x18\x07 \x01(\x0b\x32\x1b.reachy.part.hand.HandState\x12\x43\n\x11mobile_base_state\x18\x08 \x01(\x0b\x32(.reachy.part.mobile_base.MobileBaseState\"S\n\x18ReachyStreamStateRequest\x12\x1c\n\x02id\x18\x01 \x01(\x0b\x32\x10.reachy.ReachyId\x12\x19\n\x11publish_frequency\x18\x02 \x01(\x02\x32\x8c\x02\n\rReachyService\x12?\n\x0fGetListOfReachy\x12\x16.google.protobuf.Empty\x1a\x14.reachy.ListOfReachy\x12\x33\n\tGetReachy\x12\x16.google.protobuf.Empty\x1a\x0e.reachy.Reachy\x12\x37\n\x0eGetReachyState\x12\x10.reachy.ReachyId\x1a\x13.reachy.ReachyState\x12L\n\x11StreamReachyState\x12 .reachy.ReachyStreamStateRequest\x1a\x13.reachy.ReachyState0\x01\x62\x06proto3')
 
 
 
 _REACHY = DESCRIPTOR.message_types_by_name['Reachy']
 _REACHYID = DESCRIPTOR.message_types_by_name['ReachyId']
 _REACHYINFO = DESCRIPTOR.message_types_by_name['ReachyInfo']
+_LISTOFREACHY = DESCRIPTOR.message_types_by_name['ListOfReachy']
 _REACHYSTATE = DESCRIPTOR.message_types_by_name['ReachyState']
 _REACHYSTREAMSTATEREQUEST = DESCRIPTOR.message_types_by_name['ReachyStreamStateRequest']
 Reachy = _reflection.GeneratedProtocolMessageType('Reachy', (_message.Message,), {
@@ -51,6 +52,13 @@ ReachyInfo = _reflection.GeneratedProtocolMessageType('ReachyInfo', (_message.Me
   # @@protoc_insertion_point(class_scope:reachy.ReachyInfo)
   })
 _sym_db.RegisterMessage(ReachyInfo)
+
+ListOfReachy = _reflection.GeneratedProtocolMessageType('ListOfReachy', (_message.Message,), {
+  'DESCRIPTOR' : _LISTOFREACHY,
+  '__module__' : 'reachy_pb2'
+  # @@protoc_insertion_point(class_scope:reachy.ListOfReachy)
+  })
+_sym_db.RegisterMessage(ListOfReachy)
 
 ReachyState = _reflection.GeneratedProtocolMessageType('ReachyState', (_message.Message,), {
   'DESCRIPTOR' : _REACHYSTATE,
@@ -76,10 +84,12 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _REACHYID._serialized_end=673
   _REACHYINFO._serialized_start=675
   _REACHYINFO._serialized_end=754
-  _REACHYSTATE._serialized_start=757
-  _REACHYSTATE._serialized_end=1163
-  _REACHYSTREAMSTATEREQUEST._serialized_start=1165
-  _REACHYSTREAMSTATEREQUEST._serialized_end=1248
-  _REACHYSERVICE._serialized_start=1251
-  _REACHYSERVICE._serialized_end=1454
+  _LISTOFREACHY._serialized_start=756
+  _LISTOFREACHY._serialized_end=802
+  _REACHYSTATE._serialized_start=805
+  _REACHYSTATE._serialized_end=1211
+  _REACHYSTREAMSTATEREQUEST._serialized_start=1213
+  _REACHYSTREAMSTATEREQUEST._serialized_end=1296
+  _REACHYSERVICE._serialized_start=1299
+  _REACHYSERVICE._serialized_end=1567
 # @@protoc_insertion_point(module_scope)
