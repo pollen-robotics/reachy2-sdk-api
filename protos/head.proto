@@ -139,6 +139,8 @@ message HeadTemperatures {
 service HeadService {
     rpc GetAllHeads (google.protobuf.Empty) returns (ListOfHead);
 
+    rpc GetState (reachy.part.PartId) returns (HeadState);
+
     rpc ComputeNeckFK (NeckFKRequest) returns (NeckFKSolution);
     rpc ComputeNeckIK (NeckIKRequest) returns (NeckIKSolution);
 
