@@ -143,6 +143,8 @@ message ArmTemperatures {
 service ArmService {
     rpc GetAllArms (google.protobuf.Empty) returns (ListOfArm);
 
+    rpc GetState (reachy.part.PartId) returns (ArmState);
+
     rpc ComputeArmFK(ArmFKRequest) returns (ArmFKSolution);
     rpc ComputeArmIK(ArmIKRequest) returns (ArmIKSolution);
 
