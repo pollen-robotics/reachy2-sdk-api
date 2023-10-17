@@ -98,13 +98,13 @@ message Orbita3DsCommand {
     repeated Orbita3DCommand cmd = 1;
 }
 
-message Orbita3DInfo {
+message Orbita3D {
     ComponentId id = 1;
     string serial_number = 2;
 }
 
-message ListOfOrbita3DInfo {
-    repeated Orbita3DInfo info = 1;
+message ListOfOrbita3D {
+    repeated Orbita3D info = 1;
 }
 
 message Orbita3DStatus {
@@ -112,7 +112,7 @@ message Orbita3DStatus {
 }
 
 service Orbita3DService {
-    rpc GetAllOrbita3D (google.protobuf.Empty) returns (ListOfOrbita3DInfo);
+    rpc GetAllOrbita3D (google.protobuf.Empty) returns (ListOfOrbita3D);
 
     rpc GetState (Orbita3DStateRequest) returns (Orbita3DState);
     rpc StreamState (Orbita3DStreamStateRequest) returns (stream Orbita3DState);

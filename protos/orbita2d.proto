@@ -104,15 +104,15 @@ message Orbita2DsCommand {
     repeated Orbita2DCommand cmd = 1;
 }
 
-message Orbita2DInfo {
+message Orbita2D {
     component.ComponentId id = 1;
     string serial_number = 2;
     Axis axis_1 = 3;
     Axis axis_2 = 4;
 }
 
-message ListOfOrbita2DInfo {
-    repeated Orbita2DInfo info = 1;
+message ListOfOrbita2D {
+    repeated Orbita2D orbita2D = 1;
 }
 
 message Orbita2DStatus {
@@ -120,7 +120,7 @@ message Orbita2DStatus {
 }
 
 service Orbita2DService {
-    rpc GetAllOrbita2D (google.protobuf.Empty) returns (ListOfOrbita2DInfo);
+    rpc GetAllOrbita2D (google.protobuf.Empty) returns (ListOfOrbita2D);
 
     rpc GetState (Orbita2DStateRequest) returns (Orbita2DState);
     rpc StreamState (Orbita2DStreamStateRequest) returns (stream Orbita2DState);
