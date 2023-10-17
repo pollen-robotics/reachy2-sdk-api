@@ -90,6 +90,8 @@ message Orbita3DCommand {
     reachy.kinematics.Rotation3D goal_position = 3;
     Float3D speed_limit = 4;
     Float3D torque_limit = 5;
+
+    PID3D pid = 6;
 }
 
 message Orbita3DsCommand {

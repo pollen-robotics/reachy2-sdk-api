@@ -96,6 +96,8 @@ message Orbita2DCommand {
     Pose2D goal_position = 3;
     Float2D speed_limit = 4;
     Float2D torque_limit = 5;
+
+    PID2D pid = 12;
 }
 
 message Orbita2DsCommand {
