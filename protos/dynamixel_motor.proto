@@ -78,13 +78,13 @@ message DynamixelMotorsCommand {
     repeated DynamixelMotorCommand cmd = 1;
 }
 
-message DynamixelMotorInfo {
+message DynamixelMotor {
     ComponentId id = 1;
     string serial_number = 2;
 }
 
-message ListOfDynamixelMotorInfo {
-    repeated DynamixelMotorInfo parallel_gripper_info = 1;
+message ListOfDynamixelMotor {
+    repeated DynamixelMotor info = 1;
 }
 
 message DynamixelMotorStatus {
@@ -92,7 +92,7 @@ message DynamixelMotorStatus {
 }
 
 service DynamixelMotorService {
-    rpc GetAllDynamixelMotor (google.protobuf.Empty) returns (ListOfDynamixelMotorInfo);
+    rpc GetAllDynamixelMotor (google.protobuf.Empty) returns (ListOfDynamixelMotor);
 
     rpc GetState (DynamixelMotorStateRequest) returns (DynamixelMotorState);
     rpc StreamState (DynamixelMotorStreamStateRequest) returns (stream DynamixelMotorState);
