@@ -43,8 +43,8 @@ message Head {
 message HeadDescription {
     component.orbita3d.Orbita3D neck = 1;
 
-    component.dynamixel_motor.DynamixelMotorInfo l_antenna = 2;
-    component.dynamixel_motor.DynamixelMotorInfo r_antenna = 3;
+    component.dynamixel_motor.DynamixelMotor l_antenna = 2;
+    component.dynamixel_motor.DynamixelMotor r_antenna = 3;
 }
 
 message ListOfHead {
