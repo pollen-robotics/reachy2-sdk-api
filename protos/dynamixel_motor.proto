@@ -74,6 +74,10 @@ message DynamixelMotorCommand {
     google.protobuf.FloatValue torque_limit = 5;
 }
 
+message DynamixelMotorsCommand {
+    repeated DynamixelMotorCommand cmd = 1;
+}
+
 message DynamixelMotorInfo {
     ComponentId id = 1;
     string serial_number = 2;
@@ -93,8 +97,8 @@ service DynamixelMotorService {
     rpc GetState (DynamixelMotorStateRequest) returns (DynamixelMotorState);
     rpc StreamState (DynamixelMotorStreamStateRequest) returns (stream DynamixelMotorState);
 
-    rpc SendCommand (DynamixelMotorCommand) returns (google.protobuf.Empty);
-    rpc StreamCommand (stream DynamixelMotorCommand) returns (google.protobuf.Empty);
+    rpc SendCommand (DynamixelMotorsCommand) returns (google.protobuf.Empty);
+    rpc StreamCommand (stream DynamixelMotorsCommand) returns (google.protobuf.Empty);
 
     rpc SetPosition (DynamixelMotorGoal) returns (google.protobuf.Empty);
 
