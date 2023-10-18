@@ -46,9 +46,9 @@ message ArmState {
 }
 
 message ArmDescription {
-    component.orbita2d.Orbita2DInfo shoulder = 1;
-    component.orbita2d.Orbita2DInfo elbow = 2;
-    component.orbita3d.Orbita3DInfo wrist = 3;
+    component.orbita2d.Orbita2D shoulder = 1;
+    component.orbita2d.Orbita2D elbow = 2;
+    component.orbita3d.Orbita3D wrist = 3;
 }
 
 message Arm {
