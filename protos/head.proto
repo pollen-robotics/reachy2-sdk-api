@@ -76,7 +76,7 @@ message NeckGoal {
 }
 
 message NeckOrientation {
-    reachy.kinematics.Quaternion q = 1;
+    kinematics.Rotation3D rotation = 1;
 }
 
 message NeckFKRequest {
@@ -145,7 +145,7 @@ service HeadService {
     rpc ComputeNeckIK (NeckIKRequest) returns (NeckIKSolution);
 
     rpc GoToOrientation (NeckGoal) returns (google.protobuf.Empty);
-    rpc GetOrientation (reachy.part.PartId) returns (reachy.kinematics.Quaternion);
+    rpc GetOrientation (reachy.part.PartId) returns (kinematics.Rotation3D);
 
     rpc LookAt (HeadLookAtGoal) returns (google.protobuf.Empty);
 
