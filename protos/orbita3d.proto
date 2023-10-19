@@ -72,15 +72,15 @@ message Limits3D {
 }
 
 message Float3D {
-    float motor_1 = 1;
-    float motor_2 = 2;
-    float motor_3 = 3;
+    google.protobuf.FloatValue motor_1 = 1;
+    google.protobuf.FloatValue motor_2 = 2;
+    google.protobuf.FloatValue motor_3 = 3;
 }
 
 message Vector3D {
-    float x = 1;
-    float y = 2;
-    float z = 3;
+    google.protobuf.FloatValue x = 1;
+    google.protobuf.FloatValue y = 2;
+    google.protobuf.FloatValue z = 3;
 }
 
 message Orbita3DCommand {

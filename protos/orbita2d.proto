@@ -75,18 +75,18 @@ message Limits2D {
 }
 
 message Pose2D {
-    float axis_1 = 1;
-    float axis_2 = 2;
+    google.protobuf.FloatValue axis_1 = 1;
+    google.protobuf.FloatValue axis_2 = 2;
 }
 
 message Float2D {
-    float motor_1 = 1;
-    float motor_2 = 2;
+    google.protobuf.FloatValue motor_1 = 1;
+    google.protobuf.FloatValue motor_2 = 2;
 }
 
 message Vector2D {
-    float x = 1;
-    float y = 2;
+    google.protobuf.FloatValue x = 1;
+    google.protobuf.FloatValue y = 2;
 }
 
 message Orbita2DCommand {
