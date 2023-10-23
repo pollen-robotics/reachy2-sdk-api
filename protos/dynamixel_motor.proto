@@ -60,7 +60,7 @@ message DynamixelMotorStreamStateRequest {
 
 message DynamixelMotorGoal {
     component.ComponentId id = 1;
-    float goal_position = 2;
+    google.protobuf.FloatValue goal_position = 2;
     google.protobuf.FloatValue duration = 3;
 }
 
