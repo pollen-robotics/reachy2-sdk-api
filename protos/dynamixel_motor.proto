@@ -32,13 +32,13 @@ enum DynamixelMotorField {
 message DynamixelMotorState {
     google.protobuf.Timestamp timestamp = 1;
 
-    string name = 2;
-    uint32 id = 3;
+    component.ComponentId id = 2;
 
-    google.protobuf.FloatValue present_position = 4;
-    google.protobuf.FloatValue present_speed = 5;
-    google.protobuf.FloatValue present_load = 6;
-    google.protobuf.FloatValue temperature = 7;
+    google.protobuf.FloatValue present_position = 3;
+    google.protobuf.FloatValue present_speed = 4;
+    google.protobuf.FloatValue present_load = 5;
+    google.protobuf.FloatValue temperature = 6;
+    JointLimits joint_limit = 7;
 
     google.protobuf.BoolValue compliant = 8;
     google.protobuf.FloatValue goal_position = 9;
@@ -60,7 +60,7 @@ message DynamixelMotorStreamStateRequest {
 
 message DynamixelMotorGoal {
     component.ComponentId id = 1;
-    float goal_position = 2;
+    google.protobuf.FloatValue goal_position = 2;
     google.protobuf.FloatValue duration = 3;
 }
 
@@ -74,13 +74,17 @@ message DynamixelMotorCommand {
     google.protobuf.FloatValue torque_limit = 5;
 }
 
-message DynamixelMotorInfo {
+message DynamixelMotorsCommand {
+    repeated DynamixelMotorCommand cmd = 1;
+}
+
+message DynamixelMotor {
     ComponentId id = 1;
     string serial_number = 2;
 }
 
-message ListOfDynamixelMotorInfo {
-    repeated DynamixelMotorInfo parallel_gripper_info = 1;
+message ListOfDynamixelMotor {
+    repeated DynamixelMotor info = 1;
 }
 
 message DynamixelMotorStatus {
@@ -88,13 +92,13 @@ message DynamixelMotorStatus {
 }
 
 service DynamixelMotorService {
-    rpc GetAllDynamixelMotor (google.protobuf.Empty) returns (ListOfDynamixelMotorInfo);
+    rpc GetAllDynamixelMotor (google.protobuf.Empty) returns (ListOfDynamixelMotor);
 
     rpc GetState (DynamixelMotorStateRequest) returns (DynamixelMotorState);
     rpc StreamState (DynamixelMotorStreamStateRequest) returns (stream DynamixelMotorState);
 
-    rpc SendCommand (DynamixelMotorCommand) returns (google.protobuf.Empty);
-    rpc StreamCommand (stream DynamixelMotorCommand) returns (google.protobuf.Empty);
+    rpc SendCommand (DynamixelMotorsCommand) returns (google.protobuf.Empty);
+    rpc StreamCommand (stream DynamixelMotorsCommand) returns (google.protobuf.Empty);
 
     rpc SetPosition (DynamixelMotorGoal) returns (google.protobuf.Empty);
 

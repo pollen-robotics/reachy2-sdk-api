@@ -32,18 +32,14 @@ message Reachy {
 }
 
 message ReachyId {
-    string name = 1;
-    string id = 2;
+    uint32 id = 1;
+    string name = 2;
 }
 
 message ReachyInfo {
     string serial_number = 1;
     string version_hard = 2;
     string version_soft = 3;
-}
-
-message ListOfReachy {
-    repeated Reachy reachy = 1;
 }
 
 message ReachyState {
@@ -65,7 +61,6 @@ message ReachyStreamStateRequest {
 }
 
 service ReachyService {
-    rpc GetListOfReachy (google.protobuf.Empty) returns (ListOfReachy);
     rpc GetReachy (google.protobuf.Empty) returns (Reachy);
 
     rpc GetReachyState (ReachyId) returns (ReachyState);

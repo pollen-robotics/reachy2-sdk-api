@@ -19,7 +19,7 @@ class DynamixelMotorServiceStub(object):
         self.GetAllDynamixelMotor = channel.unary_unary(
                 '/component.dynamixel_motor.DynamixelMotorService/GetAllDynamixelMotor',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-                response_deserializer=dynamixel__motor__pb2.ListOfDynamixelMotorInfo.FromString,
+                response_deserializer=dynamixel__motor__pb2.ListOfDynamixelMotor.FromString,
                 )
         self.GetState = channel.unary_unary(
                 '/component.dynamixel_motor.DynamixelMotorService/GetState',
@@ -33,12 +33,12 @@ class DynamixelMotorServiceStub(object):
                 )
         self.SendCommand = channel.unary_unary(
                 '/component.dynamixel_motor.DynamixelMotorService/SendCommand',
-                request_serializer=dynamixel__motor__pb2.DynamixelMotorCommand.SerializeToString,
+                request_serializer=dynamixel__motor__pb2.DynamixelMotorsCommand.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.StreamCommand = channel.stream_unary(
                 '/component.dynamixel_motor.DynamixelMotorService/StreamCommand',
-                request_serializer=dynamixel__motor__pb2.DynamixelMotorCommand.SerializeToString,
+                request_serializer=dynamixel__motor__pb2.DynamixelMotorsCommand.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.SetPosition = channel.unary_unary(
@@ -126,7 +126,7 @@ def add_DynamixelMotorServiceServicer_to_server(servicer, server):
             'GetAllDynamixelMotor': grpc.unary_unary_rpc_method_handler(
                     servicer.GetAllDynamixelMotor,
                     request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
-                    response_serializer=dynamixel__motor__pb2.ListOfDynamixelMotorInfo.SerializeToString,
+                    response_serializer=dynamixel__motor__pb2.ListOfDynamixelMotor.SerializeToString,
             ),
             'GetState': grpc.unary_unary_rpc_method_handler(
                     servicer.GetState,
@@ -140,12 +140,12 @@ def add_DynamixelMotorServiceServicer_to_server(servicer, server):
             ),
             'SendCommand': grpc.unary_unary_rpc_method_handler(
                     servicer.SendCommand,
-                    request_deserializer=dynamixel__motor__pb2.DynamixelMotorCommand.FromString,
+                    request_deserializer=dynamixel__motor__pb2.DynamixelMotorsCommand.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'StreamCommand': grpc.stream_unary_rpc_method_handler(
                     servicer.StreamCommand,
-                    request_deserializer=dynamixel__motor__pb2.DynamixelMotorCommand.FromString,
+                    request_deserializer=dynamixel__motor__pb2.DynamixelMotorsCommand.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'SetPosition': grpc.unary_unary_rpc_method_handler(
@@ -191,7 +191,7 @@ class DynamixelMotorService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/component.dynamixel_motor.DynamixelMotorService/GetAllDynamixelMotor',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-            dynamixel__motor__pb2.ListOfDynamixelMotorInfo.FromString,
+            dynamixel__motor__pb2.ListOfDynamixelMotor.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -241,7 +241,7 @@ class DynamixelMotorService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/component.dynamixel_motor.DynamixelMotorService/SendCommand',
-            dynamixel__motor__pb2.DynamixelMotorCommand.SerializeToString,
+            dynamixel__motor__pb2.DynamixelMotorsCommand.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
@@ -258,7 +258,7 @@ class DynamixelMotorService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.stream_unary(request_iterator, target, '/component.dynamixel_motor.DynamixelMotorService/StreamCommand',
-            dynamixel__motor__pb2.DynamixelMotorCommand.SerializeToString,
+            dynamixel__motor__pb2.DynamixelMotorsCommand.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

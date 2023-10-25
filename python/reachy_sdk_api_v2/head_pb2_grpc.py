@@ -22,6 +22,11 @@ class HeadServiceStub(object):
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=head__pb2.ListOfHead.FromString,
                 )
+        self.GetState = channel.unary_unary(
+                '/reachy.part.head.HeadService/GetState',
+                request_serializer=part__pb2.PartId.SerializeToString,
+                response_deserializer=head__pb2.HeadState.FromString,
+                )
         self.ComputeNeckFK = channel.unary_unary(
                 '/reachy.part.head.HeadService/ComputeNeckFK',
                 request_serializer=head__pb2.NeckFKRequest.SerializeToString,
@@ -40,7 +45,7 @@ class HeadServiceStub(object):
         self.GetOrientation = channel.unary_unary(
                 '/reachy.part.head.HeadService/GetOrientation',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=kinematics__pb2.Quaternion.FromString,
+                response_deserializer=kinematics__pb2.Rotation3D.FromString,
                 )
         self.LookAt = channel.unary_unary(
                 '/reachy.part.head.HeadService/LookAt',
@@ -90,7 +95,7 @@ class HeadServiceStub(object):
         self.GetJointGoalPosition = channel.unary_unary(
                 '/reachy.part.head.HeadService/GetJointGoalPosition',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=head__pb2.NeckPosition.FromString,
+                response_deserializer=kinematics__pb2.Rotation3D.FromString,
                 )
         self.SetSpeedLimit = channel.unary_unary(
                 '/reachy.part.head.HeadService/SetSpeedLimit',
@@ -103,6 +108,12 @@ class HeadServiceServicer(object):
     """Missing associated documentation comment in .proto file."""
 
     def GetAllHeads(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def GetState(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -206,6 +217,11 @@ def add_HeadServiceServicer_to_server(servicer, server):
                     request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                     response_serializer=head__pb2.ListOfHead.SerializeToString,
             ),
+            'GetState': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetState,
+                    request_deserializer=part__pb2.PartId.FromString,
+                    response_serializer=head__pb2.HeadState.SerializeToString,
+            ),
             'ComputeNeckFK': grpc.unary_unary_rpc_method_handler(
                     servicer.ComputeNeckFK,
                     request_deserializer=head__pb2.NeckFKRequest.FromString,
@@ -224,7 +240,7 @@ def add_HeadServiceServicer_to_server(servicer, server):
             'GetOrientation': grpc.unary_unary_rpc_method_handler(
                     servicer.GetOrientation,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=kinematics__pb2.Quaternion.SerializeToString,
+                    response_serializer=kinematics__pb2.Rotation3D.SerializeToString,
             ),
             'LookAt': grpc.unary_unary_rpc_method_handler(
                     servicer.LookAt,
@@ -274,7 +290,7 @@ def add_HeadServiceServicer_to_server(servicer, server):
             'GetJointGoalPosition': grpc.unary_unary_rpc_method_handler(
                     servicer.GetJointGoalPosition,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=head__pb2.NeckPosition.SerializeToString,
+                    response_serializer=kinematics__pb2.Rotation3D.SerializeToString,
             ),
             'SetSpeedLimit': grpc.unary_unary_rpc_method_handler(
                     servicer.SetSpeedLimit,
@@ -305,6 +321,23 @@ class HeadService(object):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/GetAllHeads',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             head__pb2.ListOfHead.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def GetState(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/GetState',
+            part__pb2.PartId.SerializeToString,
+            head__pb2.HeadState.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -372,7 +405,7 @@ class HeadService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/GetOrientation',
             part__pb2.PartId.SerializeToString,
-            kinematics__pb2.Quaternion.FromString,
+            kinematics__pb2.Rotation3D.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -542,7 +575,7 @@ class HeadService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/GetJointGoalPosition',
             part__pb2.PartId.SerializeToString,
-            head__pb2.NeckPosition.FromString,
+            kinematics__pb2.Rotation3D.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 

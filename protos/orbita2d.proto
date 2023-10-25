@@ -38,13 +38,13 @@ enum Axis {
 message Orbita2DState {
     google.protobuf.Timestamp timestamp = 1;
 
-    string name = 2;
-    uint32 id = 3;
+    component.ComponentId id = 2;
 
-    Pose2D present_position = 4;
-    Vector2D present_speed = 5;
-    Vector2D present_load = 6;
-    Float2D temperature = 7;
+    Pose2D present_position = 3;
+    Vector2D present_speed = 4;
+    Vector2D present_load = 5;
+    Float2D temperature = 6;
+    Limits2D joint_limit = 7;
 
     google.protobuf.BoolValue compliant = 8;
     Pose2D goal_position = 9;
@@ -69,39 +69,50 @@ message PID2D {
     PIDGains motor_2 = 2;
 }
 
+message Limits2D {
+    JointLimits axis_1 = 1;
+    JointLimits axis_2 = 2;
+}
+
 message Pose2D {
-    float axis_1 = 1;
-    float axis_2 = 2;
+    google.protobuf.FloatValue axis_1 = 1;
+    google.protobuf.FloatValue axis_2 = 2;
 }
 
 message Float2D {
-    float motor_1 = 1;
-    float motor_2 = 2;
+    google.protobuf.FloatValue motor_1 = 1;
+    google.protobuf.FloatValue motor_2 = 2;
 }
 
 message Vector2D {
-    float x = 1;
-    float y = 2;
+    google.protobuf.FloatValue x = 1;
+    google.protobuf.FloatValue y = 2;
 }
 
 message Orbita2DCommand {
     component.ComponentId id = 1;
 
     google.protobuf.BoolValue compliant = 2;
-    Float2D goal_position = 3;
+    Pose2D goal_position = 3;
     Float2D speed_limit = 4;
     Float2D torque_limit = 5;
+
+    PID2D pid = 12;
 }
 
-message Orbita2DInfo {
+message Orbita2DsCommand {
+    repeated Orbita2DCommand cmd = 1;
+}
+
+message Orbita2D {
     component.ComponentId id = 1;
     string serial_number = 2;
     Axis axis_1 = 3;
     Axis axis_2 = 4;
 }
 
-message ListOfOrbita2DInfo {
-    repeated Orbita2DInfo info = 1;
+message ListOfOrbita2D {
+    repeated Orbita2D orbita2D = 1;
 }
 
 message Orbita2DStatus {
@@ -109,13 +120,13 @@ message Orbita2DStatus {
 }
 
 service Orbita2DService {
-    rpc GetAllOrbita2D (google.protobuf.Empty) returns (ListOfOrbita2DInfo);
+    rpc GetAllOrbita2D (google.protobuf.Empty) returns (ListOfOrbita2D);
 
     rpc GetState (Orbita2DStateRequest) returns (Orbita2DState);
     rpc StreamState (Orbita2DStreamStateRequest) returns (stream Orbita2DState);
 
-    rpc SendCommand (Orbita2DCommand) returns (google.protobuf.Empty);
-    rpc StreamCommand (stream Orbita2DCommand) returns (google.protobuf.Empty);
+    rpc SendCommand (Orbita2DsCommand) returns (google.protobuf.Empty);
+    rpc StreamCommand (stream Orbita2DsCommand) returns (google.protobuf.Empty);
 
     rpc Audit (component.ComponentId) returns (Orbita2DStatus);
     rpc HeartBeat (component.ComponentId) returns (google.protobuf.Empty);

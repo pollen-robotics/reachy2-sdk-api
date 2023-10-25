@@ -12,14 +12,16 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
+from google.protobuf import wrappers_pb2 as google_dot_protobuf_dot_wrappers__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0f\x63omponent.proto\x12\tcomponent\"\'\n\x0b\x43omponentId\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\"+\n\x08PIDGains\x12\t\n\x01p\x18\x01 \x01(\x02\x12\t\n\x01i\x18\x02 \x01(\x02\x12\t\n\x01\x64\x18\x03 \x01(\x02\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0f\x63omponent.proto\x12\tcomponent\x1a\x1egoogle/protobuf/wrappers.proto\"\'\n\x0b\x43omponentId\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\"\x82\x01\n\x08PIDGains\x12&\n\x01p\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12&\n\x01i\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12&\n\x01\x64\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"a\n\x0bJointLimits\x12(\n\x03min\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12(\n\x03max\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValueb\x06proto3')
 
 
 
 _COMPONENTID = DESCRIPTOR.message_types_by_name['ComponentId']
 _PIDGAINS = DESCRIPTOR.message_types_by_name['PIDGains']
+_JOINTLIMITS = DESCRIPTOR.message_types_by_name['JointLimits']
 ComponentId = _reflection.GeneratedProtocolMessageType('ComponentId', (_message.Message,), {
   'DESCRIPTOR' : _COMPONENTID,
   '__module__' : 'component_pb2'
@@ -34,11 +36,20 @@ PIDGains = _reflection.GeneratedProtocolMessageType('PIDGains', (_message.Messag
   })
 _sym_db.RegisterMessage(PIDGains)
 
+JointLimits = _reflection.GeneratedProtocolMessageType('JointLimits', (_message.Message,), {
+  'DESCRIPTOR' : _JOINTLIMITS,
+  '__module__' : 'component_pb2'
+  # @@protoc_insertion_point(class_scope:component.JointLimits)
+  })
+_sym_db.RegisterMessage(JointLimits)
+
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  _COMPONENTID._serialized_start=30
-  _COMPONENTID._serialized_end=69
-  _PIDGAINS._serialized_start=71
-  _PIDGAINS._serialized_end=114
+  _COMPONENTID._serialized_start=62
+  _COMPONENTID._serialized_end=101
+  _PIDGAINS._serialized_start=104
+  _PIDGAINS._serialized_end=234
+  _JOINTLIMITS._serialized_start=236
+  _JOINTLIMITS._serialized_end=333
 # @@protoc_insertion_point(module_scope)
