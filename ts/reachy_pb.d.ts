@@ -91,11 +91,11 @@ export namespace Reachy {
 }
 
 export class ReachyId extends jspb.Message {
+  getId(): number;
+  setId(value: number): ReachyId;
+
   getName(): string;
   setName(value: string): ReachyId;
-
-  getId(): string;
-  setId(value: string): ReachyId;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ReachyId.AsObject;
@@ -107,8 +107,8 @@ export class ReachyId extends jspb.Message {
 
 export namespace ReachyId {
   export type AsObject = {
+    id: number,
     name: string,
-    id: string,
   }
 }
 
@@ -135,26 +135,6 @@ export namespace ReachyInfo {
     serialNumber: string,
     versionHard: string,
     versionSoft: string,
-  }
-}
-
-export class ListOfReachy extends jspb.Message {
-  getReachyList(): Array<Reachy>;
-  setReachyList(value: Array<Reachy>): ListOfReachy;
-  clearReachyList(): ListOfReachy;
-  addReachy(value?: Reachy, index?: number): Reachy;
-
-  serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): ListOfReachy.AsObject;
-  static toObject(includeInstance: boolean, msg: ListOfReachy): ListOfReachy.AsObject;
-  static serializeBinaryToWriter(message: ListOfReachy, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): ListOfReachy;
-  static deserializeBinaryFromReader(message: ListOfReachy, reader: jspb.BinaryReader): ListOfReachy;
-}
-
-export namespace ListOfReachy {
-  export type AsObject = {
-    reachyList: Array<Reachy.AsObject>,
   }
 }
 

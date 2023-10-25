@@ -12,11 +12,10 @@ export class Orbita2DState extends jspb.Message {
   hasTimestamp(): boolean;
   clearTimestamp(): Orbita2DState;
 
-  getName(): string;
-  setName(value: string): Orbita2DState;
-
-  getId(): number;
-  setId(value: number): Orbita2DState;
+  getId(): component_pb.ComponentId | undefined;
+  setId(value?: component_pb.ComponentId): Orbita2DState;
+  hasId(): boolean;
+  clearId(): Orbita2DState;
 
   getPresentPosition(): Pose2D | undefined;
   setPresentPosition(value?: Pose2D): Orbita2DState;
@@ -37,6 +36,11 @@ export class Orbita2DState extends jspb.Message {
   setTemperature(value?: Float2D): Orbita2DState;
   hasTemperature(): boolean;
   clearTemperature(): Orbita2DState;
+
+  getJointLimit(): Limits2D | undefined;
+  setJointLimit(value?: Limits2D): Orbita2DState;
+  hasJointLimit(): boolean;
+  clearJointLimit(): Orbita2DState;
 
   getCompliant(): google_protobuf_wrappers_pb.BoolValue | undefined;
   setCompliant(value?: google_protobuf_wrappers_pb.BoolValue): Orbita2DState;
@@ -74,12 +78,12 @@ export class Orbita2DState extends jspb.Message {
 export namespace Orbita2DState {
   export type AsObject = {
     timestamp?: google_protobuf_timestamp_pb.Timestamp.AsObject,
-    name: string,
-    id: number,
+    id?: component_pb.ComponentId.AsObject,
     presentPosition?: Pose2D.AsObject,
     presentSpeed?: Vector2D.AsObject,
     presentLoad?: Vector2D.AsObject,
     temperature?: Float2D.AsObject,
+    jointLimit?: Limits2D.AsObject,
     compliant?: google_protobuf_wrappers_pb.BoolValue.AsObject,
     goalPosition?: Pose2D.AsObject,
     speedLimit?: Float2D.AsObject,
@@ -164,12 +168,42 @@ export namespace PID2D {
   }
 }
 
-export class Pose2D extends jspb.Message {
-  getAxis1(): number;
-  setAxis1(value: number): Pose2D;
+export class Limits2D extends jspb.Message {
+  getAxis1(): component_pb.JointLimits | undefined;
+  setAxis1(value?: component_pb.JointLimits): Limits2D;
+  hasAxis1(): boolean;
+  clearAxis1(): Limits2D;
 
-  getAxis2(): number;
-  setAxis2(value: number): Pose2D;
+  getAxis2(): component_pb.JointLimits | undefined;
+  setAxis2(value?: component_pb.JointLimits): Limits2D;
+  hasAxis2(): boolean;
+  clearAxis2(): Limits2D;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Limits2D.AsObject;
+  static toObject(includeInstance: boolean, msg: Limits2D): Limits2D.AsObject;
+  static serializeBinaryToWriter(message: Limits2D, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Limits2D;
+  static deserializeBinaryFromReader(message: Limits2D, reader: jspb.BinaryReader): Limits2D;
+}
+
+export namespace Limits2D {
+  export type AsObject = {
+    axis1?: component_pb.JointLimits.AsObject,
+    axis2?: component_pb.JointLimits.AsObject,
+  }
+}
+
+export class Pose2D extends jspb.Message {
+  getAxis1(): google_protobuf_wrappers_pb.FloatValue | undefined;
+  setAxis1(value?: google_protobuf_wrappers_pb.FloatValue): Pose2D;
+  hasAxis1(): boolean;
+  clearAxis1(): Pose2D;
+
+  getAxis2(): google_protobuf_wrappers_pb.FloatValue | undefined;
+  setAxis2(value?: google_protobuf_wrappers_pb.FloatValue): Pose2D;
+  hasAxis2(): boolean;
+  clearAxis2(): Pose2D;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Pose2D.AsObject;
@@ -181,17 +215,21 @@ export class Pose2D extends jspb.Message {
 
 export namespace Pose2D {
   export type AsObject = {
-    axis1: number,
-    axis2: number,
+    axis1?: google_protobuf_wrappers_pb.FloatValue.AsObject,
+    axis2?: google_protobuf_wrappers_pb.FloatValue.AsObject,
   }
 }
 
 export class Float2D extends jspb.Message {
-  getMotor1(): number;
-  setMotor1(value: number): Float2D;
+  getMotor1(): google_protobuf_wrappers_pb.FloatValue | undefined;
+  setMotor1(value?: google_protobuf_wrappers_pb.FloatValue): Float2D;
+  hasMotor1(): boolean;
+  clearMotor1(): Float2D;
 
-  getMotor2(): number;
-  setMotor2(value: number): Float2D;
+  getMotor2(): google_protobuf_wrappers_pb.FloatValue | undefined;
+  setMotor2(value?: google_protobuf_wrappers_pb.FloatValue): Float2D;
+  hasMotor2(): boolean;
+  clearMotor2(): Float2D;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Float2D.AsObject;
@@ -203,17 +241,21 @@ export class Float2D extends jspb.Message {
 
 export namespace Float2D {
   export type AsObject = {
-    motor1: number,
-    motor2: number,
+    motor1?: google_protobuf_wrappers_pb.FloatValue.AsObject,
+    motor2?: google_protobuf_wrappers_pb.FloatValue.AsObject,
   }
 }
 
 export class Vector2D extends jspb.Message {
-  getX(): number;
-  setX(value: number): Vector2D;
+  getX(): google_protobuf_wrappers_pb.FloatValue | undefined;
+  setX(value?: google_protobuf_wrappers_pb.FloatValue): Vector2D;
+  hasX(): boolean;
+  clearX(): Vector2D;
 
-  getY(): number;
-  setY(value: number): Vector2D;
+  getY(): google_protobuf_wrappers_pb.FloatValue | undefined;
+  setY(value?: google_protobuf_wrappers_pb.FloatValue): Vector2D;
+  hasY(): boolean;
+  clearY(): Vector2D;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Vector2D.AsObject;
@@ -225,8 +267,8 @@ export class Vector2D extends jspb.Message {
 
 export namespace Vector2D {
   export type AsObject = {
-    x: number,
-    y: number,
+    x?: google_protobuf_wrappers_pb.FloatValue.AsObject,
+    y?: google_protobuf_wrappers_pb.FloatValue.AsObject,
   }
 }
 
@@ -241,8 +283,8 @@ export class Orbita2DCommand extends jspb.Message {
   hasCompliant(): boolean;
   clearCompliant(): Orbita2DCommand;
 
-  getGoalPosition(): Float2D | undefined;
-  setGoalPosition(value?: Float2D): Orbita2DCommand;
+  getGoalPosition(): Pose2D | undefined;
+  setGoalPosition(value?: Pose2D): Orbita2DCommand;
   hasGoalPosition(): boolean;
   clearGoalPosition(): Orbita2DCommand;
 
@@ -256,6 +298,11 @@ export class Orbita2DCommand extends jspb.Message {
   hasTorqueLimit(): boolean;
   clearTorqueLimit(): Orbita2DCommand;
 
+  getPid(): PID2D | undefined;
+  setPid(value?: PID2D): Orbita2DCommand;
+  hasPid(): boolean;
+  clearPid(): Orbita2DCommand;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Orbita2DCommand.AsObject;
   static toObject(includeInstance: boolean, msg: Orbita2DCommand): Orbita2DCommand.AsObject;
@@ -268,36 +315,57 @@ export namespace Orbita2DCommand {
   export type AsObject = {
     id?: component_pb.ComponentId.AsObject,
     compliant?: google_protobuf_wrappers_pb.BoolValue.AsObject,
-    goalPosition?: Float2D.AsObject,
+    goalPosition?: Pose2D.AsObject,
     speedLimit?: Float2D.AsObject,
     torqueLimit?: Float2D.AsObject,
+    pid?: PID2D.AsObject,
   }
 }
 
-export class Orbita2DInfo extends jspb.Message {
-  getId(): component_pb.ComponentId | undefined;
-  setId(value?: component_pb.ComponentId): Orbita2DInfo;
-  hasId(): boolean;
-  clearId(): Orbita2DInfo;
-
-  getSerialNumber(): string;
-  setSerialNumber(value: string): Orbita2DInfo;
-
-  getAxis1(): Axis;
-  setAxis1(value: Axis): Orbita2DInfo;
-
-  getAxis2(): Axis;
-  setAxis2(value: Axis): Orbita2DInfo;
+export class Orbita2DsCommand extends jspb.Message {
+  getCmdList(): Array<Orbita2DCommand>;
+  setCmdList(value: Array<Orbita2DCommand>): Orbita2DsCommand;
+  clearCmdList(): Orbita2DsCommand;
+  addCmd(value?: Orbita2DCommand, index?: number): Orbita2DCommand;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Orbita2DInfo.AsObject;
-  static toObject(includeInstance: boolean, msg: Orbita2DInfo): Orbita2DInfo.AsObject;
-  static serializeBinaryToWriter(message: Orbita2DInfo, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): Orbita2DInfo;
-  static deserializeBinaryFromReader(message: Orbita2DInfo, reader: jspb.BinaryReader): Orbita2DInfo;
+  toObject(includeInstance?: boolean): Orbita2DsCommand.AsObject;
+  static toObject(includeInstance: boolean, msg: Orbita2DsCommand): Orbita2DsCommand.AsObject;
+  static serializeBinaryToWriter(message: Orbita2DsCommand, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Orbita2DsCommand;
+  static deserializeBinaryFromReader(message: Orbita2DsCommand, reader: jspb.BinaryReader): Orbita2DsCommand;
 }
 
-export namespace Orbita2DInfo {
+export namespace Orbita2DsCommand {
+  export type AsObject = {
+    cmdList: Array<Orbita2DCommand.AsObject>,
+  }
+}
+
+export class Orbita2D extends jspb.Message {
+  getId(): component_pb.ComponentId | undefined;
+  setId(value?: component_pb.ComponentId): Orbita2D;
+  hasId(): boolean;
+  clearId(): Orbita2D;
+
+  getSerialNumber(): string;
+  setSerialNumber(value: string): Orbita2D;
+
+  getAxis1(): Axis;
+  setAxis1(value: Axis): Orbita2D;
+
+  getAxis2(): Axis;
+  setAxis2(value: Axis): Orbita2D;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Orbita2D.AsObject;
+  static toObject(includeInstance: boolean, msg: Orbita2D): Orbita2D.AsObject;
+  static serializeBinaryToWriter(message: Orbita2D, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Orbita2D;
+  static deserializeBinaryFromReader(message: Orbita2D, reader: jspb.BinaryReader): Orbita2D;
+}
+
+export namespace Orbita2D {
   export type AsObject = {
     id?: component_pb.ComponentId.AsObject,
     serialNumber: string,
@@ -306,23 +374,23 @@ export namespace Orbita2DInfo {
   }
 }
 
-export class ListOfOrbita2DInfo extends jspb.Message {
-  getInfoList(): Array<Orbita2DInfo>;
-  setInfoList(value: Array<Orbita2DInfo>): ListOfOrbita2DInfo;
-  clearInfoList(): ListOfOrbita2DInfo;
-  addInfo(value?: Orbita2DInfo, index?: number): Orbita2DInfo;
+export class ListOfOrbita2D extends jspb.Message {
+  getOrbita2dList(): Array<Orbita2D>;
+  setOrbita2dList(value: Array<Orbita2D>): ListOfOrbita2D;
+  clearOrbita2dList(): ListOfOrbita2D;
+  addOrbita2d(value?: Orbita2D, index?: number): Orbita2D;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): ListOfOrbita2DInfo.AsObject;
-  static toObject(includeInstance: boolean, msg: ListOfOrbita2DInfo): ListOfOrbita2DInfo.AsObject;
-  static serializeBinaryToWriter(message: ListOfOrbita2DInfo, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): ListOfOrbita2DInfo;
-  static deserializeBinaryFromReader(message: ListOfOrbita2DInfo, reader: jspb.BinaryReader): ListOfOrbita2DInfo;
+  toObject(includeInstance?: boolean): ListOfOrbita2D.AsObject;
+  static toObject(includeInstance: boolean, msg: ListOfOrbita2D): ListOfOrbita2D.AsObject;
+  static serializeBinaryToWriter(message: ListOfOrbita2D, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ListOfOrbita2D;
+  static deserializeBinaryFromReader(message: ListOfOrbita2D, reader: jspb.BinaryReader): ListOfOrbita2D;
 }
 
-export namespace ListOfOrbita2DInfo {
+export namespace ListOfOrbita2D {
   export type AsObject = {
-    infoList: Array<Orbita2DInfo.AsObject>,
+    orbita2dList: Array<Orbita2D.AsObject>,
   }
 }
 

@@ -85,6 +85,49 @@ export class ArmServiceClient {
     this.methodDescriptorGetAllArms);
   }
 
+  methodDescriptorGetState = new grpcWeb.MethodDescriptor(
+    '/reachy.part.arm.ArmService/GetState',
+    grpcWeb.MethodType.UNARY,
+    part_pb.PartId,
+    arm_pb.ArmState,
+    (request: part_pb.PartId) => {
+      return request.serializeBinary();
+    },
+    arm_pb.ArmState.deserializeBinary
+  );
+
+  getState(
+    request: part_pb.PartId,
+    metadata: grpcWeb.Metadata | null): Promise<arm_pb.ArmState>;
+
+  getState(
+    request: part_pb.PartId,
+    metadata: grpcWeb.Metadata | null,
+    callback: (err: grpcWeb.RpcError,
+               response: arm_pb.ArmState) => void): grpcWeb.ClientReadableStream<arm_pb.ArmState>;
+
+  getState(
+    request: part_pb.PartId,
+    metadata: grpcWeb.Metadata | null,
+    callback?: (err: grpcWeb.RpcError,
+               response: arm_pb.ArmState) => void) {
+    if (callback !== undefined) {
+      return this.client_.rpcCall(
+        this.hostname_ +
+          '/reachy.part.arm.ArmService/GetState',
+        request,
+        metadata || {},
+        this.methodDescriptorGetState,
+        callback);
+    }
+    return this.client_.unaryCall(
+    this.hostname_ +
+      '/reachy.part.arm.ArmService/GetState',
+    request,
+    metadata || {},
+    this.methodDescriptorGetState);
+  }
+
   methodDescriptorComputeArmFK = new grpcWeb.MethodDescriptor(
     '/reachy.part.arm.ArmService/ComputeArmFK',
     grpcWeb.MethodType.UNARY,

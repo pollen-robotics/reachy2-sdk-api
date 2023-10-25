@@ -12,6 +12,8 @@ var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
+var google_protobuf_wrappers_pb = require('google-protobuf/google/protobuf/wrappers_pb.js');
+goog.object.extend(proto, google_protobuf_wrappers_pb);
 goog.exportSymbol('proto.reachy.kinematics.ExtEulerAngles', null, global);
 goog.exportSymbol('proto.reachy.kinematics.ExtEulerAnglesTolerances', null, global);
 goog.exportSymbol('proto.reachy.kinematics.Matrix3x3', null, global);
@@ -1223,9 +1225,9 @@ proto.reachy.kinematics.ExtEulerAngles.prototype.toObject = function(opt_include
  */
 proto.reachy.kinematics.ExtEulerAngles.toObject = function(includeInstance, msg) {
   var f, obj = {
-    roll: jspb.Message.getFloatingPointFieldWithDefault(msg, 1, 0.0),
-    pitch: jspb.Message.getFloatingPointFieldWithDefault(msg, 2, 0.0),
-    yaw: jspb.Message.getFloatingPointFieldWithDefault(msg, 3, 0.0)
+    roll: (f = msg.getRoll()) && google_protobuf_wrappers_pb.FloatValue.toObject(includeInstance, f),
+    pitch: (f = msg.getPitch()) && google_protobuf_wrappers_pb.FloatValue.toObject(includeInstance, f),
+    yaw: (f = msg.getYaw()) && google_protobuf_wrappers_pb.FloatValue.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -1263,15 +1265,18 @@ proto.reachy.kinematics.ExtEulerAngles.deserializeBinaryFromReader = function(ms
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {number} */ (reader.readDouble());
+      var value = new google_protobuf_wrappers_pb.FloatValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.FloatValue.deserializeBinaryFromReader);
       msg.setRoll(value);
       break;
     case 2:
-      var value = /** @type {number} */ (reader.readDouble());
+      var value = new google_protobuf_wrappers_pb.FloatValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.FloatValue.deserializeBinaryFromReader);
       msg.setPitch(value);
       break;
     case 3:
-      var value = /** @type {number} */ (reader.readDouble());
+      var value = new google_protobuf_wrappers_pb.FloatValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.FloatValue.deserializeBinaryFromReader);
       msg.setYaw(value);
       break;
     default:
@@ -1304,80 +1309,140 @@ proto.reachy.kinematics.ExtEulerAngles.prototype.serializeBinary = function() {
 proto.reachy.kinematics.ExtEulerAngles.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getRoll();
-  if (f !== 0.0) {
-    writer.writeDouble(
+  if (f != null) {
+    writer.writeMessage(
       1,
-      f
+      f,
+      google_protobuf_wrappers_pb.FloatValue.serializeBinaryToWriter
     );
   }
   f = message.getPitch();
-  if (f !== 0.0) {
-    writer.writeDouble(
+  if (f != null) {
+    writer.writeMessage(
       2,
-      f
+      f,
+      google_protobuf_wrappers_pb.FloatValue.serializeBinaryToWriter
     );
   }
   f = message.getYaw();
-  if (f !== 0.0) {
-    writer.writeDouble(
+  if (f != null) {
+    writer.writeMessage(
       3,
-      f
+      f,
+      google_protobuf_wrappers_pb.FloatValue.serializeBinaryToWriter
     );
   }
 };
 
 
 /**
- * optional double roll = 1;
- * @return {number}
+ * optional google.protobuf.FloatValue roll = 1;
+ * @return {?proto.google.protobuf.FloatValue}
  */
 proto.reachy.kinematics.ExtEulerAngles.prototype.getRoll = function() {
-  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 1, 0.0));
+  return /** @type{?proto.google.protobuf.FloatValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.FloatValue, 1));
 };
 
 
 /**
- * @param {number} value
+ * @param {?proto.google.protobuf.FloatValue|undefined} value
+ * @return {!proto.reachy.kinematics.ExtEulerAngles} returns this
+*/
+proto.reachy.kinematics.ExtEulerAngles.prototype.setRoll = function(value) {
+  return jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
  * @return {!proto.reachy.kinematics.ExtEulerAngles} returns this
  */
-proto.reachy.kinematics.ExtEulerAngles.prototype.setRoll = function(value) {
-  return jspb.Message.setProto3FloatField(this, 1, value);
+proto.reachy.kinematics.ExtEulerAngles.prototype.clearRoll = function() {
+  return this.setRoll(undefined);
 };
 
 
 /**
- * optional double pitch = 2;
- * @return {number}
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.reachy.kinematics.ExtEulerAngles.prototype.hasRoll = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional google.protobuf.FloatValue pitch = 2;
+ * @return {?proto.google.protobuf.FloatValue}
  */
 proto.reachy.kinematics.ExtEulerAngles.prototype.getPitch = function() {
-  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 2, 0.0));
+  return /** @type{?proto.google.protobuf.FloatValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.FloatValue, 2));
 };
 
 
 /**
- * @param {number} value
+ * @param {?proto.google.protobuf.FloatValue|undefined} value
+ * @return {!proto.reachy.kinematics.ExtEulerAngles} returns this
+*/
+proto.reachy.kinematics.ExtEulerAngles.prototype.setPitch = function(value) {
+  return jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
  * @return {!proto.reachy.kinematics.ExtEulerAngles} returns this
  */
-proto.reachy.kinematics.ExtEulerAngles.prototype.setPitch = function(value) {
-  return jspb.Message.setProto3FloatField(this, 2, value);
+proto.reachy.kinematics.ExtEulerAngles.prototype.clearPitch = function() {
+  return this.setPitch(undefined);
 };
 
 
 /**
- * optional double yaw = 3;
- * @return {number}
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.reachy.kinematics.ExtEulerAngles.prototype.hasPitch = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional google.protobuf.FloatValue yaw = 3;
+ * @return {?proto.google.protobuf.FloatValue}
  */
 proto.reachy.kinematics.ExtEulerAngles.prototype.getYaw = function() {
-  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 3, 0.0));
+  return /** @type{?proto.google.protobuf.FloatValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.FloatValue, 3));
 };
 
 
 /**
- * @param {number} value
+ * @param {?proto.google.protobuf.FloatValue|undefined} value
+ * @return {!proto.reachy.kinematics.ExtEulerAngles} returns this
+*/
+proto.reachy.kinematics.ExtEulerAngles.prototype.setYaw = function(value) {
+  return jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
  * @return {!proto.reachy.kinematics.ExtEulerAngles} returns this
  */
-proto.reachy.kinematics.ExtEulerAngles.prototype.setYaw = function(value) {
-  return jspb.Message.setProto3FloatField(this, 3, value);
+proto.reachy.kinematics.ExtEulerAngles.prototype.clearYaw = function() {
+  return this.setYaw(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.reachy.kinematics.ExtEulerAngles.prototype.hasYaw = function() {
+  return jspb.Message.getField(this, 3) != null;
 };
 
 

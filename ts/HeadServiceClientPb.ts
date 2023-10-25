@@ -85,6 +85,49 @@ export class HeadServiceClient {
     this.methodDescriptorGetAllHeads);
   }
 
+  methodDescriptorGetState = new grpcWeb.MethodDescriptor(
+    '/reachy.part.head.HeadService/GetState',
+    grpcWeb.MethodType.UNARY,
+    part_pb.PartId,
+    head_pb.HeadState,
+    (request: part_pb.PartId) => {
+      return request.serializeBinary();
+    },
+    head_pb.HeadState.deserializeBinary
+  );
+
+  getState(
+    request: part_pb.PartId,
+    metadata: grpcWeb.Metadata | null): Promise<head_pb.HeadState>;
+
+  getState(
+    request: part_pb.PartId,
+    metadata: grpcWeb.Metadata | null,
+    callback: (err: grpcWeb.RpcError,
+               response: head_pb.HeadState) => void): grpcWeb.ClientReadableStream<head_pb.HeadState>;
+
+  getState(
+    request: part_pb.PartId,
+    metadata: grpcWeb.Metadata | null,
+    callback?: (err: grpcWeb.RpcError,
+               response: head_pb.HeadState) => void) {
+    if (callback !== undefined) {
+      return this.client_.rpcCall(
+        this.hostname_ +
+          '/reachy.part.head.HeadService/GetState',
+        request,
+        metadata || {},
+        this.methodDescriptorGetState,
+        callback);
+    }
+    return this.client_.unaryCall(
+    this.hostname_ +
+      '/reachy.part.head.HeadService/GetState',
+    request,
+    metadata || {},
+    this.methodDescriptorGetState);
+  }
+
   methodDescriptorComputeNeckFK = new grpcWeb.MethodDescriptor(
     '/reachy.part.head.HeadService/ComputeNeckFK',
     grpcWeb.MethodType.UNARY,
@@ -218,28 +261,28 @@ export class HeadServiceClient {
     '/reachy.part.head.HeadService/GetOrientation',
     grpcWeb.MethodType.UNARY,
     part_pb.PartId,
-    kinematics_pb.Quaternion,
+    kinematics_pb.Rotation3D,
     (request: part_pb.PartId) => {
       return request.serializeBinary();
     },
-    kinematics_pb.Quaternion.deserializeBinary
+    kinematics_pb.Rotation3D.deserializeBinary
   );
 
   getOrientation(
     request: part_pb.PartId,
-    metadata: grpcWeb.Metadata | null): Promise<kinematics_pb.Quaternion>;
+    metadata: grpcWeb.Metadata | null): Promise<kinematics_pb.Rotation3D>;
 
   getOrientation(
     request: part_pb.PartId,
     metadata: grpcWeb.Metadata | null,
     callback: (err: grpcWeb.RpcError,
-               response: kinematics_pb.Quaternion) => void): grpcWeb.ClientReadableStream<kinematics_pb.Quaternion>;
+               response: kinematics_pb.Rotation3D) => void): grpcWeb.ClientReadableStream<kinematics_pb.Rotation3D>;
 
   getOrientation(
     request: part_pb.PartId,
     metadata: grpcWeb.Metadata | null,
     callback?: (err: grpcWeb.RpcError,
-               response: kinematics_pb.Quaternion) => void) {
+               response: kinematics_pb.Rotation3D) => void) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
         this.hostname_ +
@@ -648,28 +691,28 @@ export class HeadServiceClient {
     '/reachy.part.head.HeadService/GetJointGoalPosition',
     grpcWeb.MethodType.UNARY,
     part_pb.PartId,
-    head_pb.NeckPosition,
+    kinematics_pb.Rotation3D,
     (request: part_pb.PartId) => {
       return request.serializeBinary();
     },
-    head_pb.NeckPosition.deserializeBinary
+    kinematics_pb.Rotation3D.deserializeBinary
   );
 
   getJointGoalPosition(
     request: part_pb.PartId,
-    metadata: grpcWeb.Metadata | null): Promise<head_pb.NeckPosition>;
+    metadata: grpcWeb.Metadata | null): Promise<kinematics_pb.Rotation3D>;
 
   getJointGoalPosition(
     request: part_pb.PartId,
     metadata: grpcWeb.Metadata | null,
     callback: (err: grpcWeb.RpcError,
-               response: head_pb.NeckPosition) => void): grpcWeb.ClientReadableStream<head_pb.NeckPosition>;
+               response: kinematics_pb.Rotation3D) => void): grpcWeb.ClientReadableStream<kinematics_pb.Rotation3D>;
 
   getJointGoalPosition(
     request: part_pb.PartId,
     metadata: grpcWeb.Metadata | null,
     callback?: (err: grpcWeb.RpcError,
-               response: head_pb.NeckPosition) => void) {
+               response: kinematics_pb.Rotation3D) => void) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
         this.hostname_ +

@@ -45,28 +45,28 @@ export class Orbita3DServiceClient {
     '/component.orbita3d.Orbita3DService/GetAllOrbita3D',
     grpcWeb.MethodType.UNARY,
     google_protobuf_empty_pb.Empty,
-    orbita3d_pb.ListOfOrbita3DInfo,
+    orbita3d_pb.ListOfOrbita3D,
     (request: google_protobuf_empty_pb.Empty) => {
       return request.serializeBinary();
     },
-    orbita3d_pb.ListOfOrbita3DInfo.deserializeBinary
+    orbita3d_pb.ListOfOrbita3D.deserializeBinary
   );
 
   getAllOrbita3D(
     request: google_protobuf_empty_pb.Empty,
-    metadata: grpcWeb.Metadata | null): Promise<orbita3d_pb.ListOfOrbita3DInfo>;
+    metadata: grpcWeb.Metadata | null): Promise<orbita3d_pb.ListOfOrbita3D>;
 
   getAllOrbita3D(
     request: google_protobuf_empty_pb.Empty,
     metadata: grpcWeb.Metadata | null,
     callback: (err: grpcWeb.RpcError,
-               response: orbita3d_pb.ListOfOrbita3DInfo) => void): grpcWeb.ClientReadableStream<orbita3d_pb.ListOfOrbita3DInfo>;
+               response: orbita3d_pb.ListOfOrbita3D) => void): grpcWeb.ClientReadableStream<orbita3d_pb.ListOfOrbita3D>;
 
   getAllOrbita3D(
     request: google_protobuf_empty_pb.Empty,
     metadata: grpcWeb.Metadata | null,
     callback?: (err: grpcWeb.RpcError,
-               response: orbita3d_pb.ListOfOrbita3DInfo) => void) {
+               response: orbita3d_pb.ListOfOrbita3D) => void) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
         this.hostname_ +
@@ -152,26 +152,26 @@ export class Orbita3DServiceClient {
   methodDescriptorSendCommand = new grpcWeb.MethodDescriptor(
     '/component.orbita3d.Orbita3DService/SendCommand',
     grpcWeb.MethodType.UNARY,
-    orbita3d_pb.Orbita3DCommand,
+    orbita3d_pb.Orbita3DsCommand,
     google_protobuf_empty_pb.Empty,
-    (request: orbita3d_pb.Orbita3DCommand) => {
+    (request: orbita3d_pb.Orbita3DsCommand) => {
       return request.serializeBinary();
     },
     google_protobuf_empty_pb.Empty.deserializeBinary
   );
 
   sendCommand(
-    request: orbita3d_pb.Orbita3DCommand,
+    request: orbita3d_pb.Orbita3DsCommand,
     metadata: grpcWeb.Metadata | null): Promise<google_protobuf_empty_pb.Empty>;
 
   sendCommand(
-    request: orbita3d_pb.Orbita3DCommand,
+    request: orbita3d_pb.Orbita3DsCommand,
     metadata: grpcWeb.Metadata | null,
     callback: (err: grpcWeb.RpcError,
                response: google_protobuf_empty_pb.Empty) => void): grpcWeb.ClientReadableStream<google_protobuf_empty_pb.Empty>;
 
   sendCommand(
-    request: orbita3d_pb.Orbita3DCommand,
+    request: orbita3d_pb.Orbita3DsCommand,
     metadata: grpcWeb.Metadata | null,
     callback?: (err: grpcWeb.RpcError,
                response: google_protobuf_empty_pb.Empty) => void) {

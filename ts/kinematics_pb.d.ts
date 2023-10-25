@@ -1,5 +1,6 @@
 import * as jspb from 'google-protobuf'
 
+import * as google_protobuf_wrappers_pb from 'google-protobuf/google/protobuf/wrappers_pb';
 
 
 export class Matrix4x4 extends jspb.Message {
@@ -140,14 +141,20 @@ export namespace Point {
 }
 
 export class ExtEulerAngles extends jspb.Message {
-  getRoll(): number;
-  setRoll(value: number): ExtEulerAngles;
+  getRoll(): google_protobuf_wrappers_pb.FloatValue | undefined;
+  setRoll(value?: google_protobuf_wrappers_pb.FloatValue): ExtEulerAngles;
+  hasRoll(): boolean;
+  clearRoll(): ExtEulerAngles;
 
-  getPitch(): number;
-  setPitch(value: number): ExtEulerAngles;
+  getPitch(): google_protobuf_wrappers_pb.FloatValue | undefined;
+  setPitch(value?: google_protobuf_wrappers_pb.FloatValue): ExtEulerAngles;
+  hasPitch(): boolean;
+  clearPitch(): ExtEulerAngles;
 
-  getYaw(): number;
-  setYaw(value: number): ExtEulerAngles;
+  getYaw(): google_protobuf_wrappers_pb.FloatValue | undefined;
+  setYaw(value?: google_protobuf_wrappers_pb.FloatValue): ExtEulerAngles;
+  hasYaw(): boolean;
+  clearYaw(): ExtEulerAngles;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ExtEulerAngles.AsObject;
@@ -159,9 +166,9 @@ export class ExtEulerAngles extends jspb.Message {
 
 export namespace ExtEulerAngles {
   export type AsObject = {
-    roll: number,
-    pitch: number,
-    yaw: number,
+    roll?: google_protobuf_wrappers_pb.FloatValue.AsObject,
+    pitch?: google_protobuf_wrappers_pb.FloatValue.AsObject,
+    yaw?: google_protobuf_wrappers_pb.FloatValue.AsObject,
   }
 }
 

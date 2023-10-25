@@ -45,28 +45,28 @@ export class DynamixelMotorServiceClient {
     '/component.dynamixel_motor.DynamixelMotorService/GetAllDynamixelMotor',
     grpcWeb.MethodType.UNARY,
     google_protobuf_empty_pb.Empty,
-    dynamixel_motor_pb.ListOfDynamixelMotorInfo,
+    dynamixel_motor_pb.ListOfDynamixelMotor,
     (request: google_protobuf_empty_pb.Empty) => {
       return request.serializeBinary();
     },
-    dynamixel_motor_pb.ListOfDynamixelMotorInfo.deserializeBinary
+    dynamixel_motor_pb.ListOfDynamixelMotor.deserializeBinary
   );
 
   getAllDynamixelMotor(
     request: google_protobuf_empty_pb.Empty,
-    metadata: grpcWeb.Metadata | null): Promise<dynamixel_motor_pb.ListOfDynamixelMotorInfo>;
+    metadata: grpcWeb.Metadata | null): Promise<dynamixel_motor_pb.ListOfDynamixelMotor>;
 
   getAllDynamixelMotor(
     request: google_protobuf_empty_pb.Empty,
     metadata: grpcWeb.Metadata | null,
     callback: (err: grpcWeb.RpcError,
-               response: dynamixel_motor_pb.ListOfDynamixelMotorInfo) => void): grpcWeb.ClientReadableStream<dynamixel_motor_pb.ListOfDynamixelMotorInfo>;
+               response: dynamixel_motor_pb.ListOfDynamixelMotor) => void): grpcWeb.ClientReadableStream<dynamixel_motor_pb.ListOfDynamixelMotor>;
 
   getAllDynamixelMotor(
     request: google_protobuf_empty_pb.Empty,
     metadata: grpcWeb.Metadata | null,
     callback?: (err: grpcWeb.RpcError,
-               response: dynamixel_motor_pb.ListOfDynamixelMotorInfo) => void) {
+               response: dynamixel_motor_pb.ListOfDynamixelMotor) => void) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
         this.hostname_ +
@@ -152,26 +152,26 @@ export class DynamixelMotorServiceClient {
   methodDescriptorSendCommand = new grpcWeb.MethodDescriptor(
     '/component.dynamixel_motor.DynamixelMotorService/SendCommand',
     grpcWeb.MethodType.UNARY,
-    dynamixel_motor_pb.DynamixelMotorCommand,
+    dynamixel_motor_pb.DynamixelMotorsCommand,
     google_protobuf_empty_pb.Empty,
-    (request: dynamixel_motor_pb.DynamixelMotorCommand) => {
+    (request: dynamixel_motor_pb.DynamixelMotorsCommand) => {
       return request.serializeBinary();
     },
     google_protobuf_empty_pb.Empty.deserializeBinary
   );
 
   sendCommand(
-    request: dynamixel_motor_pb.DynamixelMotorCommand,
+    request: dynamixel_motor_pb.DynamixelMotorsCommand,
     metadata: grpcWeb.Metadata | null): Promise<google_protobuf_empty_pb.Empty>;
 
   sendCommand(
-    request: dynamixel_motor_pb.DynamixelMotorCommand,
+    request: dynamixel_motor_pb.DynamixelMotorsCommand,
     metadata: grpcWeb.Metadata | null,
     callback: (err: grpcWeb.RpcError,
                response: google_protobuf_empty_pb.Empty) => void): grpcWeb.ClientReadableStream<google_protobuf_empty_pb.Empty>;
 
   sendCommand(
-    request: dynamixel_motor_pb.DynamixelMotorCommand,
+    request: dynamixel_motor_pb.DynamixelMotorsCommand,
     metadata: grpcWeb.Metadata | null,
     callback?: (err: grpcWeb.RpcError,
                response: google_protobuf_empty_pb.Empty) => void) {

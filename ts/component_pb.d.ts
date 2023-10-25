@@ -1,5 +1,6 @@
 import * as jspb from 'google-protobuf'
 
+import * as google_protobuf_wrappers_pb from 'google-protobuf/google/protobuf/wrappers_pb';
 
 
 export class ComponentId extends jspb.Message {
@@ -25,14 +26,20 @@ export namespace ComponentId {
 }
 
 export class PIDGains extends jspb.Message {
-  getP(): number;
-  setP(value: number): PIDGains;
+  getP(): google_protobuf_wrappers_pb.FloatValue | undefined;
+  setP(value?: google_protobuf_wrappers_pb.FloatValue): PIDGains;
+  hasP(): boolean;
+  clearP(): PIDGains;
 
-  getI(): number;
-  setI(value: number): PIDGains;
+  getI(): google_protobuf_wrappers_pb.FloatValue | undefined;
+  setI(value?: google_protobuf_wrappers_pb.FloatValue): PIDGains;
+  hasI(): boolean;
+  clearI(): PIDGains;
 
-  getD(): number;
-  setD(value: number): PIDGains;
+  getD(): google_protobuf_wrappers_pb.FloatValue | undefined;
+  setD(value?: google_protobuf_wrappers_pb.FloatValue): PIDGains;
+  hasD(): boolean;
+  clearD(): PIDGains;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): PIDGains.AsObject;
@@ -44,9 +51,35 @@ export class PIDGains extends jspb.Message {
 
 export namespace PIDGains {
   export type AsObject = {
-    p: number,
-    i: number,
-    d: number,
+    p?: google_protobuf_wrappers_pb.FloatValue.AsObject,
+    i?: google_protobuf_wrappers_pb.FloatValue.AsObject,
+    d?: google_protobuf_wrappers_pb.FloatValue.AsObject,
+  }
+}
+
+export class JointLimits extends jspb.Message {
+  getMin(): google_protobuf_wrappers_pb.FloatValue | undefined;
+  setMin(value?: google_protobuf_wrappers_pb.FloatValue): JointLimits;
+  hasMin(): boolean;
+  clearMin(): JointLimits;
+
+  getMax(): google_protobuf_wrappers_pb.FloatValue | undefined;
+  setMax(value?: google_protobuf_wrappers_pb.FloatValue): JointLimits;
+  hasMax(): boolean;
+  clearMax(): JointLimits;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): JointLimits.AsObject;
+  static toObject(includeInstance: boolean, msg: JointLimits): JointLimits.AsObject;
+  static serializeBinaryToWriter(message: JointLimits, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): JointLimits;
+  static deserializeBinaryFromReader(message: JointLimits, reader: jspb.BinaryReader): JointLimits;
+}
+
+export namespace JointLimits {
+  export type AsObject = {
+    min?: google_protobuf_wrappers_pb.FloatValue.AsObject,
+    max?: google_protobuf_wrappers_pb.FloatValue.AsObject,
   }
 }
 

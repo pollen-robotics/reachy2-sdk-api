@@ -16,11 +16,10 @@ export class ArmState extends jspb.Message {
   hasTimestamp(): boolean;
   clearTimestamp(): ArmState;
 
-  getName(): string;
-  setName(value: string): ArmState;
-
-  getId(): number;
-  setId(value: number): ArmState;
+  getId(): part_pb.PartId | undefined;
+  setId(value?: part_pb.PartId): ArmState;
+  hasId(): boolean;
+  clearId(): ArmState;
 
   getActivated(): boolean;
   setActivated(value: boolean): ArmState;
@@ -51,8 +50,7 @@ export class ArmState extends jspb.Message {
 export namespace ArmState {
   export type AsObject = {
     timestamp?: google_protobuf_timestamp_pb.Timestamp.AsObject,
-    name: string,
-    id: number,
+    id?: part_pb.PartId.AsObject,
     activated: boolean,
     shoulderState?: orbita2d_pb.Orbita2DState.AsObject,
     elbowState?: orbita2d_pb.Orbita2DState.AsObject,
@@ -61,18 +59,18 @@ export namespace ArmState {
 }
 
 export class ArmDescription extends jspb.Message {
-  getShoulder(): orbita2d_pb.Orbita2DInfo | undefined;
-  setShoulder(value?: orbita2d_pb.Orbita2DInfo): ArmDescription;
+  getShoulder(): orbita2d_pb.Orbita2D | undefined;
+  setShoulder(value?: orbita2d_pb.Orbita2D): ArmDescription;
   hasShoulder(): boolean;
   clearShoulder(): ArmDescription;
 
-  getElbow(): orbita2d_pb.Orbita2DInfo | undefined;
-  setElbow(value?: orbita2d_pb.Orbita2DInfo): ArmDescription;
+  getElbow(): orbita2d_pb.Orbita2D | undefined;
+  setElbow(value?: orbita2d_pb.Orbita2D): ArmDescription;
   hasElbow(): boolean;
   clearElbow(): ArmDescription;
 
-  getWrist(): orbita3d_pb.Orbita3DInfo | undefined;
-  setWrist(value?: orbita3d_pb.Orbita3DInfo): ArmDescription;
+  getWrist(): orbita3d_pb.Orbita3D | undefined;
+  setWrist(value?: orbita3d_pb.Orbita3D): ArmDescription;
   hasWrist(): boolean;
   clearWrist(): ArmDescription;
 
@@ -86,9 +84,9 @@ export class ArmDescription extends jspb.Message {
 
 export namespace ArmDescription {
   export type AsObject = {
-    shoulder?: orbita2d_pb.Orbita2DInfo.AsObject,
-    elbow?: orbita2d_pb.Orbita2DInfo.AsObject,
-    wrist?: orbita3d_pb.Orbita3DInfo.AsObject,
+    shoulder?: orbita2d_pb.Orbita2D.AsObject,
+    elbow?: orbita2d_pb.Orbita2D.AsObject,
+    wrist?: orbita3d_pb.Orbita3D.AsObject,
   }
 }
 
@@ -145,26 +143,20 @@ export namespace ListOfArm {
 }
 
 export class ArmPosition extends jspb.Message {
-  getShoulderPitch(): number;
-  setShoulderPitch(value: number): ArmPosition;
+  getShoulderPosition(): orbita2d_pb.Pose2D | undefined;
+  setShoulderPosition(value?: orbita2d_pb.Pose2D): ArmPosition;
+  hasShoulderPosition(): boolean;
+  clearShoulderPosition(): ArmPosition;
 
-  getShoulderRoll(): number;
-  setShoulderRoll(value: number): ArmPosition;
+  getElbowPosition(): orbita2d_pb.Pose2D | undefined;
+  setElbowPosition(value?: orbita2d_pb.Pose2D): ArmPosition;
+  hasElbowPosition(): boolean;
+  clearElbowPosition(): ArmPosition;
 
-  getElbowYaw(): number;
-  setElbowYaw(value: number): ArmPosition;
-
-  getElbowPitch(): number;
-  setElbowPitch(value: number): ArmPosition;
-
-  getWristRoll(): number;
-  setWristRoll(value: number): ArmPosition;
-
-  getWristPitch(): number;
-  setWristPitch(value: number): ArmPosition;
-
-  getWristYaw(): number;
-  setWristYaw(value: number): ArmPosition;
+  getWristPosition(): kinematics_pb.Rotation3D | undefined;
+  setWristPosition(value?: kinematics_pb.Rotation3D): ArmPosition;
+  hasWristPosition(): boolean;
+  clearWristPosition(): ArmPosition;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ArmPosition.AsObject;
@@ -176,13 +168,9 @@ export class ArmPosition extends jspb.Message {
 
 export namespace ArmPosition {
   export type AsObject = {
-    shoulderPitch: number,
-    shoulderRoll: number,
-    elbowYaw: number,
-    elbowPitch: number,
-    wristRoll: number,
-    wristPitch: number,
-    wristYaw: number,
+    shoulderPosition?: orbita2d_pb.Pose2D.AsObject,
+    elbowPosition?: orbita2d_pb.Pose2D.AsObject,
+    wristPosition?: kinematics_pb.Rotation3D.AsObject,
   }
 }
 
@@ -438,63 +426,21 @@ export namespace SpeedLimitRequest {
   }
 }
 
-export class JointLimits extends jspb.Message {
-  getMin(): number;
-  setMin(value: number): JointLimits;
-
-  getMax(): number;
-  setMax(value: number): JointLimits;
-
-  serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): JointLimits.AsObject;
-  static toObject(includeInstance: boolean, msg: JointLimits): JointLimits.AsObject;
-  static serializeBinaryToWriter(message: JointLimits, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): JointLimits;
-  static deserializeBinaryFromReader(message: JointLimits, reader: jspb.BinaryReader): JointLimits;
-}
-
-export namespace JointLimits {
-  export type AsObject = {
-    min: number,
-    max: number,
-  }
-}
-
 export class ArmLimits extends jspb.Message {
-  getShoulderPitch(): JointLimits | undefined;
-  setShoulderPitch(value?: JointLimits): ArmLimits;
-  hasShoulderPitch(): boolean;
-  clearShoulderPitch(): ArmLimits;
+  getShoulderLimits(): orbita2d_pb.Limits2D | undefined;
+  setShoulderLimits(value?: orbita2d_pb.Limits2D): ArmLimits;
+  hasShoulderLimits(): boolean;
+  clearShoulderLimits(): ArmLimits;
 
-  getShoulderRoll(): JointLimits | undefined;
-  setShoulderRoll(value?: JointLimits): ArmLimits;
-  hasShoulderRoll(): boolean;
-  clearShoulderRoll(): ArmLimits;
+  getElbowLimits(): orbita2d_pb.Limits2D | undefined;
+  setElbowLimits(value?: orbita2d_pb.Limits2D): ArmLimits;
+  hasElbowLimits(): boolean;
+  clearElbowLimits(): ArmLimits;
 
-  getElbowYaw(): JointLimits | undefined;
-  setElbowYaw(value?: JointLimits): ArmLimits;
-  hasElbowYaw(): boolean;
-  clearElbowYaw(): ArmLimits;
-
-  getElbowPitch(): JointLimits | undefined;
-  setElbowPitch(value?: JointLimits): ArmLimits;
-  hasElbowPitch(): boolean;
-  clearElbowPitch(): ArmLimits;
-
-  getWristRoll(): JointLimits | undefined;
-  setWristRoll(value?: JointLimits): ArmLimits;
-  hasWristRoll(): boolean;
-  clearWristRoll(): ArmLimits;
-
-  getWristPitch(): JointLimits | undefined;
-  setWristPitch(value?: JointLimits): ArmLimits;
-  hasWristPitch(): boolean;
-  clearWristPitch(): ArmLimits;
-
-  getWristYaw(): JointLimits | undefined;
-  setWristYaw(value?: JointLimits): ArmLimits;
-  hasWristYaw(): boolean;
-  clearWristYaw(): ArmLimits;
+  getWristLimits(): orbita3d_pb.Limits3D | undefined;
+  setWristLimits(value?: orbita3d_pb.Limits3D): ArmLimits;
+  hasWristLimits(): boolean;
+  clearWristLimits(): ArmLimits;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ArmLimits.AsObject;
@@ -506,73 +452,27 @@ export class ArmLimits extends jspb.Message {
 
 export namespace ArmLimits {
   export type AsObject = {
-    shoulderPitch?: JointLimits.AsObject,
-    shoulderRoll?: JointLimits.AsObject,
-    elbowYaw?: JointLimits.AsObject,
-    elbowPitch?: JointLimits.AsObject,
-    wristRoll?: JointLimits.AsObject,
-    wristPitch?: JointLimits.AsObject,
-    wristYaw?: JointLimits.AsObject,
-  }
-}
-
-export class Temperatures extends jspb.Message {
-  getMotor(): number;
-  setMotor(value: number): Temperatures;
-
-  getDriver(): number;
-  setDriver(value: number): Temperatures;
-
-  serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Temperatures.AsObject;
-  static toObject(includeInstance: boolean, msg: Temperatures): Temperatures.AsObject;
-  static serializeBinaryToWriter(message: Temperatures, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): Temperatures;
-  static deserializeBinaryFromReader(message: Temperatures, reader: jspb.BinaryReader): Temperatures;
-}
-
-export namespace Temperatures {
-  export type AsObject = {
-    motor: number,
-    driver: number,
+    shoulderLimits?: orbita2d_pb.Limits2D.AsObject,
+    elbowLimits?: orbita2d_pb.Limits2D.AsObject,
+    wristLimits?: orbita3d_pb.Limits3D.AsObject,
   }
 }
 
 export class ArmTemperatures extends jspb.Message {
-  getShoulderMotor1(): Temperatures | undefined;
-  setShoulderMotor1(value?: Temperatures): ArmTemperatures;
-  hasShoulderMotor1(): boolean;
-  clearShoulderMotor1(): ArmTemperatures;
+  getShoulderTemperature(): orbita2d_pb.Float2D | undefined;
+  setShoulderTemperature(value?: orbita2d_pb.Float2D): ArmTemperatures;
+  hasShoulderTemperature(): boolean;
+  clearShoulderTemperature(): ArmTemperatures;
 
-  getShoulderMotor2(): Temperatures | undefined;
-  setShoulderMotor2(value?: Temperatures): ArmTemperatures;
-  hasShoulderMotor2(): boolean;
-  clearShoulderMotor2(): ArmTemperatures;
+  getElbowTemperature(): orbita2d_pb.Float2D | undefined;
+  setElbowTemperature(value?: orbita2d_pb.Float2D): ArmTemperatures;
+  hasElbowTemperature(): boolean;
+  clearElbowTemperature(): ArmTemperatures;
 
-  getElbowMotor1(): Temperatures | undefined;
-  setElbowMotor1(value?: Temperatures): ArmTemperatures;
-  hasElbowMotor1(): boolean;
-  clearElbowMotor1(): ArmTemperatures;
-
-  getElbowMotor2(): Temperatures | undefined;
-  setElbowMotor2(value?: Temperatures): ArmTemperatures;
-  hasElbowMotor2(): boolean;
-  clearElbowMotor2(): ArmTemperatures;
-
-  getWristMotor1(): Temperatures | undefined;
-  setWristMotor1(value?: Temperatures): ArmTemperatures;
-  hasWristMotor1(): boolean;
-  clearWristMotor1(): ArmTemperatures;
-
-  getWristMotor2(): Temperatures | undefined;
-  setWristMotor2(value?: Temperatures): ArmTemperatures;
-  hasWristMotor2(): boolean;
-  clearWristMotor2(): ArmTemperatures;
-
-  getWristMotor3(): Temperatures | undefined;
-  setWristMotor3(value?: Temperatures): ArmTemperatures;
-  hasWristMotor3(): boolean;
-  clearWristMotor3(): ArmTemperatures;
+  getWristTemperature(): orbita3d_pb.Float3D | undefined;
+  setWristTemperature(value?: orbita3d_pb.Float3D): ArmTemperatures;
+  hasWristTemperature(): boolean;
+  clearWristTemperature(): ArmTemperatures;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ArmTemperatures.AsObject;
@@ -584,13 +484,9 @@ export class ArmTemperatures extends jspb.Message {
 
 export namespace ArmTemperatures {
   export type AsObject = {
-    shoulderMotor1?: Temperatures.AsObject,
-    shoulderMotor2?: Temperatures.AsObject,
-    elbowMotor1?: Temperatures.AsObject,
-    elbowMotor2?: Temperatures.AsObject,
-    wristMotor1?: Temperatures.AsObject,
-    wristMotor2?: Temperatures.AsObject,
-    wristMotor3?: Temperatures.AsObject,
+    shoulderTemperature?: orbita2d_pb.Float2D.AsObject,
+    elbowTemperature?: orbita2d_pb.Float2D.AsObject,
+    wristTemperature?: orbita3d_pb.Float3D.AsObject,
   }
 }
 

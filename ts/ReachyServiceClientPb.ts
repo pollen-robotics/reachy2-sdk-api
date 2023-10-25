@@ -40,49 +40,6 @@ export class ReachyServiceClient {
     this.options_ = options;
   }
 
-  methodDescriptorGetListOfReachy = new grpcWeb.MethodDescriptor(
-    '/reachy.ReachyService/GetListOfReachy',
-    grpcWeb.MethodType.UNARY,
-    google_protobuf_empty_pb.Empty,
-    reachy_pb.ListOfReachy,
-    (request: google_protobuf_empty_pb.Empty) => {
-      return request.serializeBinary();
-    },
-    reachy_pb.ListOfReachy.deserializeBinary
-  );
-
-  getListOfReachy(
-    request: google_protobuf_empty_pb.Empty,
-    metadata: grpcWeb.Metadata | null): Promise<reachy_pb.ListOfReachy>;
-
-  getListOfReachy(
-    request: google_protobuf_empty_pb.Empty,
-    metadata: grpcWeb.Metadata | null,
-    callback: (err: grpcWeb.RpcError,
-               response: reachy_pb.ListOfReachy) => void): grpcWeb.ClientReadableStream<reachy_pb.ListOfReachy>;
-
-  getListOfReachy(
-    request: google_protobuf_empty_pb.Empty,
-    metadata: grpcWeb.Metadata | null,
-    callback?: (err: grpcWeb.RpcError,
-               response: reachy_pb.ListOfReachy) => void) {
-    if (callback !== undefined) {
-      return this.client_.rpcCall(
-        this.hostname_ +
-          '/reachy.ReachyService/GetListOfReachy',
-        request,
-        metadata || {},
-        this.methodDescriptorGetListOfReachy,
-        callback);
-    }
-    return this.client_.unaryCall(
-    this.hostname_ +
-      '/reachy.ReachyService/GetListOfReachy',
-    request,
-    metadata || {},
-    this.methodDescriptorGetListOfReachy);
-  }
-
   methodDescriptorGetReachy = new grpcWeb.MethodDescriptor(
     '/reachy.ReachyService/GetReachy',
     grpcWeb.MethodType.UNARY,

@@ -6,6 +6,7 @@ import * as google_protobuf_timestamp_pb from 'google-protobuf/google/protobuf/t
 import * as part_pb from './part_pb';
 import * as kinematics_pb from './kinematics_pb';
 import * as error_pb from './error_pb';
+import * as component_pb from './component_pb';
 import * as orbita3d_pb from './orbita3d_pb';
 import * as dynamixel_motor_pb from './dynamixel_motor_pb';
 
@@ -43,18 +44,18 @@ export namespace Head {
 }
 
 export class HeadDescription extends jspb.Message {
-  getNeck(): orbita3d_pb.Orbita3DInfo | undefined;
-  setNeck(value?: orbita3d_pb.Orbita3DInfo): HeadDescription;
+  getNeck(): orbita3d_pb.Orbita3D | undefined;
+  setNeck(value?: orbita3d_pb.Orbita3D): HeadDescription;
   hasNeck(): boolean;
   clearNeck(): HeadDescription;
 
-  getLAntenna(): dynamixel_motor_pb.DynamixelMotorInfo | undefined;
-  setLAntenna(value?: dynamixel_motor_pb.DynamixelMotorInfo): HeadDescription;
+  getLAntenna(): dynamixel_motor_pb.DynamixelMotor | undefined;
+  setLAntenna(value?: dynamixel_motor_pb.DynamixelMotor): HeadDescription;
   hasLAntenna(): boolean;
   clearLAntenna(): HeadDescription;
 
-  getRAntenna(): dynamixel_motor_pb.DynamixelMotorInfo | undefined;
-  setRAntenna(value?: dynamixel_motor_pb.DynamixelMotorInfo): HeadDescription;
+  getRAntenna(): dynamixel_motor_pb.DynamixelMotor | undefined;
+  setRAntenna(value?: dynamixel_motor_pb.DynamixelMotor): HeadDescription;
   hasRAntenna(): boolean;
   clearRAntenna(): HeadDescription;
 
@@ -68,9 +69,9 @@ export class HeadDescription extends jspb.Message {
 
 export namespace HeadDescription {
   export type AsObject = {
-    neck?: orbita3d_pb.Orbita3DInfo.AsObject,
-    lAntenna?: dynamixel_motor_pb.DynamixelMotorInfo.AsObject,
-    rAntenna?: dynamixel_motor_pb.DynamixelMotorInfo.AsObject,
+    neck?: orbita3d_pb.Orbita3D.AsObject,
+    lAntenna?: dynamixel_motor_pb.DynamixelMotor.AsObject,
+    rAntenna?: dynamixel_motor_pb.DynamixelMotor.AsObject,
   }
 }
 
@@ -100,11 +101,10 @@ export class HeadState extends jspb.Message {
   hasTimestamp(): boolean;
   clearTimestamp(): HeadState;
 
-  getName(): string;
-  setName(value: string): HeadState;
-
-  getId(): number;
-  setId(value: number): HeadState;
+  getId(): part_pb.PartId | undefined;
+  setId(value?: part_pb.PartId): HeadState;
+  hasId(): boolean;
+  clearId(): HeadState;
 
   getActivated(): boolean;
   setActivated(value: boolean): HeadState;
@@ -135,8 +135,7 @@ export class HeadState extends jspb.Message {
 export namespace HeadState {
   export type AsObject = {
     timestamp?: google_protobuf_timestamp_pb.Timestamp.AsObject,
-    name: string,
-    id: number,
+    id?: part_pb.PartId.AsObject,
     activated: boolean,
     neckState?: orbita3d_pb.Orbita3DState.AsObject,
     lAntennaState?: dynamixel_motor_pb.DynamixelMotorState.AsObject,
@@ -144,35 +143,9 @@ export namespace HeadState {
   }
 }
 
-export class NeckPosition extends jspb.Message {
-  getNeckRoll(): number;
-  setNeckRoll(value: number): NeckPosition;
-
-  getNeckPitch(): number;
-  setNeckPitch(value: number): NeckPosition;
-
-  getNeckYaw(): number;
-  setNeckYaw(value: number): NeckPosition;
-
-  serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): NeckPosition.AsObject;
-  static toObject(includeInstance: boolean, msg: NeckPosition): NeckPosition.AsObject;
-  static serializeBinaryToWriter(message: NeckPosition, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): NeckPosition;
-  static deserializeBinaryFromReader(message: NeckPosition, reader: jspb.BinaryReader): NeckPosition;
-}
-
-export namespace NeckPosition {
-  export type AsObject = {
-    neckRoll: number,
-    neckPitch: number,
-    neckYaw: number,
-  }
-}
-
 export class HeadPosition extends jspb.Message {
-  getNeckPosition(): NeckPosition | undefined;
-  setNeckPosition(value?: NeckPosition): HeadPosition;
+  getNeckPosition(): kinematics_pb.Rotation3D | undefined;
+  setNeckPosition(value?: kinematics_pb.Rotation3D): HeadPosition;
   hasNeckPosition(): boolean;
   clearNeckPosition(): HeadPosition;
 
@@ -196,7 +169,7 @@ export class HeadPosition extends jspb.Message {
 
 export namespace HeadPosition {
   export type AsObject = {
-    neckPosition?: NeckPosition.AsObject,
+    neckPosition?: kinematics_pb.Rotation3D.AsObject,
     lAntennaPosition?: google_protobuf_wrappers_pb.FloatValue.AsObject,
     rAntennaPosition?: google_protobuf_wrappers_pb.FloatValue.AsObject,
   }
@@ -235,10 +208,10 @@ export namespace NeckGoal {
 }
 
 export class NeckOrientation extends jspb.Message {
-  getQ(): kinematics_pb.Quaternion | undefined;
-  setQ(value?: kinematics_pb.Quaternion): NeckOrientation;
-  hasQ(): boolean;
-  clearQ(): NeckOrientation;
+  getRotation(): kinematics_pb.Rotation3D | undefined;
+  setRotation(value?: kinematics_pb.Rotation3D): NeckOrientation;
+  hasRotation(): boolean;
+  clearRotation(): NeckOrientation;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): NeckOrientation.AsObject;
@@ -250,7 +223,7 @@ export class NeckOrientation extends jspb.Message {
 
 export namespace NeckOrientation {
   export type AsObject = {
-    q?: kinematics_pb.Quaternion.AsObject,
+    rotation?: kinematics_pb.Rotation3D.AsObject,
   }
 }
 
@@ -315,8 +288,8 @@ export class NeckIKRequest extends jspb.Message {
   hasTarget(): boolean;
   clearTarget(): NeckIKRequest;
 
-  getQ0(): NeckPosition | undefined;
-  setQ0(value?: NeckPosition): NeckIKRequest;
+  getQ0(): kinematics_pb.Rotation3D | undefined;
+  setQ0(value?: kinematics_pb.Rotation3D): NeckIKRequest;
   hasQ0(): boolean;
   clearQ0(): NeckIKRequest;
 
@@ -332,7 +305,7 @@ export namespace NeckIKRequest {
   export type AsObject = {
     id?: part_pb.PartId.AsObject,
     target?: NeckOrientation.AsObject,
-    q0?: NeckPosition.AsObject,
+    q0?: kinematics_pb.Rotation3D.AsObject,
   }
 }
 
@@ -340,8 +313,8 @@ export class NeckIKSolution extends jspb.Message {
   getSuccess(): boolean;
   setSuccess(value: boolean): NeckIKSolution;
 
-  getPosition(): NeckPosition | undefined;
-  setPosition(value?: NeckPosition): NeckIKSolution;
+  getPosition(): kinematics_pb.Rotation3D | undefined;
+  setPosition(value?: kinematics_pb.Rotation3D): NeckIKSolution;
   hasPosition(): boolean;
   clearPosition(): NeckIKSolution;
 
@@ -361,7 +334,7 @@ export class NeckIKSolution extends jspb.Message {
 export namespace NeckIKSolution {
   export type AsObject = {
     success: boolean,
-    position?: NeckPosition.AsObject,
+    position?: kinematics_pb.Rotation3D.AsObject,
     error?: error_pb.Error.AsObject,
   }
 }
@@ -436,53 +409,21 @@ export namespace SpeedLimitRequest {
   }
 }
 
-export class JointLimits extends jspb.Message {
-  getMin(): number;
-  setMin(value: number): JointLimits;
-
-  getMax(): number;
-  setMax(value: number): JointLimits;
-
-  serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): JointLimits.AsObject;
-  static toObject(includeInstance: boolean, msg: JointLimits): JointLimits.AsObject;
-  static serializeBinaryToWriter(message: JointLimits, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): JointLimits;
-  static deserializeBinaryFromReader(message: JointLimits, reader: jspb.BinaryReader): JointLimits;
-}
-
-export namespace JointLimits {
-  export type AsObject = {
-    min: number,
-    max: number,
-  }
-}
-
 export class JointsLimits extends jspb.Message {
-  getNeckRoll(): JointLimits | undefined;
-  setNeckRoll(value?: JointLimits): JointsLimits;
-  hasNeckRoll(): boolean;
-  clearNeckRoll(): JointsLimits;
+  getNeckLimits(): orbita3d_pb.Limits3D | undefined;
+  setNeckLimits(value?: orbita3d_pb.Limits3D): JointsLimits;
+  hasNeckLimits(): boolean;
+  clearNeckLimits(): JointsLimits;
 
-  getNeckPitch(): JointLimits | undefined;
-  setNeckPitch(value?: JointLimits): JointsLimits;
-  hasNeckPitch(): boolean;
-  clearNeckPitch(): JointsLimits;
+  getLAntennaLimits(): component_pb.JointLimits | undefined;
+  setLAntennaLimits(value?: component_pb.JointLimits): JointsLimits;
+  hasLAntennaLimits(): boolean;
+  clearLAntennaLimits(): JointsLimits;
 
-  getNeckYaw(): JointLimits | undefined;
-  setNeckYaw(value?: JointLimits): JointsLimits;
-  hasNeckYaw(): boolean;
-  clearNeckYaw(): JointsLimits;
-
-  getLAntenna(): JointLimits | undefined;
-  setLAntenna(value?: JointLimits): JointsLimits;
-  hasLAntenna(): boolean;
-  clearLAntenna(): JointsLimits;
-
-  getRAntenna(): JointLimits | undefined;
-  setRAntenna(value?: JointLimits): JointsLimits;
-  hasRAntenna(): boolean;
-  clearRAntenna(): JointsLimits;
+  getRAntennaLimits(): component_pb.JointLimits | undefined;
+  setRAntennaLimits(value?: component_pb.JointLimits): JointsLimits;
+  hasRAntennaLimits(): boolean;
+  clearRAntennaLimits(): JointsLimits;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): JointsLimits.AsObject;
@@ -494,61 +435,23 @@ export class JointsLimits extends jspb.Message {
 
 export namespace JointsLimits {
   export type AsObject = {
-    neckRoll?: JointLimits.AsObject,
-    neckPitch?: JointLimits.AsObject,
-    neckYaw?: JointLimits.AsObject,
-    lAntenna?: JointLimits.AsObject,
-    rAntenna?: JointLimits.AsObject,
-  }
-}
-
-export class Temperatures extends jspb.Message {
-  getMotor(): number;
-  setMotor(value: number): Temperatures;
-
-  getDriver(): number;
-  setDriver(value: number): Temperatures;
-
-  serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Temperatures.AsObject;
-  static toObject(includeInstance: boolean, msg: Temperatures): Temperatures.AsObject;
-  static serializeBinaryToWriter(message: Temperatures, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): Temperatures;
-  static deserializeBinaryFromReader(message: Temperatures, reader: jspb.BinaryReader): Temperatures;
-}
-
-export namespace Temperatures {
-  export type AsObject = {
-    motor: number,
-    driver: number,
+    neckLimits?: orbita3d_pb.Limits3D.AsObject,
+    lAntennaLimits?: component_pb.JointLimits.AsObject,
+    rAntennaLimits?: component_pb.JointLimits.AsObject,
   }
 }
 
 export class HeadTemperatures extends jspb.Message {
-  getNeckMotor1(): Temperatures | undefined;
-  setNeckMotor1(value?: Temperatures): HeadTemperatures;
-  hasNeckMotor1(): boolean;
-  clearNeckMotor1(): HeadTemperatures;
+  getNeckTemperature(): orbita3d_pb.Float3D | undefined;
+  setNeckTemperature(value?: orbita3d_pb.Float3D): HeadTemperatures;
+  hasNeckTemperature(): boolean;
+  clearNeckTemperature(): HeadTemperatures;
 
-  getNeckMotor2(): Temperatures | undefined;
-  setNeckMotor2(value?: Temperatures): HeadTemperatures;
-  hasNeckMotor2(): boolean;
-  clearNeckMotor2(): HeadTemperatures;
+  getLAntennaTemperature(): number;
+  setLAntennaTemperature(value: number): HeadTemperatures;
 
-  getNeckMotor3(): Temperatures | undefined;
-  setNeckMotor3(value?: Temperatures): HeadTemperatures;
-  hasNeckMotor3(): boolean;
-  clearNeckMotor3(): HeadTemperatures;
-
-  getLAntenna(): Temperatures | undefined;
-  setLAntenna(value?: Temperatures): HeadTemperatures;
-  hasLAntenna(): boolean;
-  clearLAntenna(): HeadTemperatures;
-
-  getRAntenna(): Temperatures | undefined;
-  setRAntenna(value?: Temperatures): HeadTemperatures;
-  hasRAntenna(): boolean;
-  clearRAntenna(): HeadTemperatures;
+  getRAntennaTemperature(): number;
+  setRAntennaTemperature(value: number): HeadTemperatures;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): HeadTemperatures.AsObject;
@@ -560,11 +463,9 @@ export class HeadTemperatures extends jspb.Message {
 
 export namespace HeadTemperatures {
   export type AsObject = {
-    neckMotor1?: Temperatures.AsObject,
-    neckMotor2?: Temperatures.AsObject,
-    neckMotor3?: Temperatures.AsObject,
-    lAntenna?: Temperatures.AsObject,
-    rAntenna?: Temperatures.AsObject,
+    neckTemperature?: orbita3d_pb.Float3D.AsObject,
+    lAntennaTemperature: number,
+    rAntennaTemperature: number,
   }
 }
 

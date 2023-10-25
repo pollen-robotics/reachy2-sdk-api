@@ -12,11 +12,10 @@ export class DynamixelMotorState extends jspb.Message {
   hasTimestamp(): boolean;
   clearTimestamp(): DynamixelMotorState;
 
-  getName(): string;
-  setName(value: string): DynamixelMotorState;
-
-  getId(): number;
-  setId(value: number): DynamixelMotorState;
+  getId(): component_pb.ComponentId | undefined;
+  setId(value?: component_pb.ComponentId): DynamixelMotorState;
+  hasId(): boolean;
+  clearId(): DynamixelMotorState;
 
   getPresentPosition(): google_protobuf_wrappers_pb.FloatValue | undefined;
   setPresentPosition(value?: google_protobuf_wrappers_pb.FloatValue): DynamixelMotorState;
@@ -37,6 +36,11 @@ export class DynamixelMotorState extends jspb.Message {
   setTemperature(value?: google_protobuf_wrappers_pb.FloatValue): DynamixelMotorState;
   hasTemperature(): boolean;
   clearTemperature(): DynamixelMotorState;
+
+  getJointLimit(): component_pb.JointLimits | undefined;
+  setJointLimit(value?: component_pb.JointLimits): DynamixelMotorState;
+  hasJointLimit(): boolean;
+  clearJointLimit(): DynamixelMotorState;
 
   getCompliant(): google_protobuf_wrappers_pb.BoolValue | undefined;
   setCompliant(value?: google_protobuf_wrappers_pb.BoolValue): DynamixelMotorState;
@@ -74,12 +78,12 @@ export class DynamixelMotorState extends jspb.Message {
 export namespace DynamixelMotorState {
   export type AsObject = {
     timestamp?: google_protobuf_timestamp_pb.Timestamp.AsObject,
-    name: string,
-    id: number,
+    id?: component_pb.ComponentId.AsObject,
     presentPosition?: google_protobuf_wrappers_pb.FloatValue.AsObject,
     presentSpeed?: google_protobuf_wrappers_pb.FloatValue.AsObject,
     presentLoad?: google_protobuf_wrappers_pb.FloatValue.AsObject,
     temperature?: google_protobuf_wrappers_pb.FloatValue.AsObject,
+    jointLimit?: component_pb.JointLimits.AsObject,
     compliant?: google_protobuf_wrappers_pb.BoolValue.AsObject,
     goalPosition?: google_protobuf_wrappers_pb.FloatValue.AsObject,
     speedLimit?: google_protobuf_wrappers_pb.FloatValue.AsObject,
@@ -144,8 +148,10 @@ export class DynamixelMotorGoal extends jspb.Message {
   hasId(): boolean;
   clearId(): DynamixelMotorGoal;
 
-  getGoalPosition(): number;
-  setGoalPosition(value: number): DynamixelMotorGoal;
+  getGoalPosition(): google_protobuf_wrappers_pb.FloatValue | undefined;
+  setGoalPosition(value?: google_protobuf_wrappers_pb.FloatValue): DynamixelMotorGoal;
+  hasGoalPosition(): boolean;
+  clearGoalPosition(): DynamixelMotorGoal;
 
   getDuration(): google_protobuf_wrappers_pb.FloatValue | undefined;
   setDuration(value?: google_protobuf_wrappers_pb.FloatValue): DynamixelMotorGoal;
@@ -163,7 +169,7 @@ export class DynamixelMotorGoal extends jspb.Message {
 export namespace DynamixelMotorGoal {
   export type AsObject = {
     id?: component_pb.ComponentId.AsObject,
-    goalPosition: number,
+    goalPosition?: google_protobuf_wrappers_pb.FloatValue.AsObject,
     duration?: google_protobuf_wrappers_pb.FloatValue.AsObject,
   }
 }
@@ -212,47 +218,67 @@ export namespace DynamixelMotorCommand {
   }
 }
 
-export class DynamixelMotorInfo extends jspb.Message {
-  getId(): component_pb.ComponentId | undefined;
-  setId(value?: component_pb.ComponentId): DynamixelMotorInfo;
-  hasId(): boolean;
-  clearId(): DynamixelMotorInfo;
-
-  getSerialNumber(): string;
-  setSerialNumber(value: string): DynamixelMotorInfo;
+export class DynamixelMotorsCommand extends jspb.Message {
+  getCmdList(): Array<DynamixelMotorCommand>;
+  setCmdList(value: Array<DynamixelMotorCommand>): DynamixelMotorsCommand;
+  clearCmdList(): DynamixelMotorsCommand;
+  addCmd(value?: DynamixelMotorCommand, index?: number): DynamixelMotorCommand;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): DynamixelMotorInfo.AsObject;
-  static toObject(includeInstance: boolean, msg: DynamixelMotorInfo): DynamixelMotorInfo.AsObject;
-  static serializeBinaryToWriter(message: DynamixelMotorInfo, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): DynamixelMotorInfo;
-  static deserializeBinaryFromReader(message: DynamixelMotorInfo, reader: jspb.BinaryReader): DynamixelMotorInfo;
+  toObject(includeInstance?: boolean): DynamixelMotorsCommand.AsObject;
+  static toObject(includeInstance: boolean, msg: DynamixelMotorsCommand): DynamixelMotorsCommand.AsObject;
+  static serializeBinaryToWriter(message: DynamixelMotorsCommand, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): DynamixelMotorsCommand;
+  static deserializeBinaryFromReader(message: DynamixelMotorsCommand, reader: jspb.BinaryReader): DynamixelMotorsCommand;
 }
 
-export namespace DynamixelMotorInfo {
+export namespace DynamixelMotorsCommand {
+  export type AsObject = {
+    cmdList: Array<DynamixelMotorCommand.AsObject>,
+  }
+}
+
+export class DynamixelMotor extends jspb.Message {
+  getId(): component_pb.ComponentId | undefined;
+  setId(value?: component_pb.ComponentId): DynamixelMotor;
+  hasId(): boolean;
+  clearId(): DynamixelMotor;
+
+  getSerialNumber(): string;
+  setSerialNumber(value: string): DynamixelMotor;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): DynamixelMotor.AsObject;
+  static toObject(includeInstance: boolean, msg: DynamixelMotor): DynamixelMotor.AsObject;
+  static serializeBinaryToWriter(message: DynamixelMotor, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): DynamixelMotor;
+  static deserializeBinaryFromReader(message: DynamixelMotor, reader: jspb.BinaryReader): DynamixelMotor;
+}
+
+export namespace DynamixelMotor {
   export type AsObject = {
     id?: component_pb.ComponentId.AsObject,
     serialNumber: string,
   }
 }
 
-export class ListOfDynamixelMotorInfo extends jspb.Message {
-  getParallelGripperInfoList(): Array<DynamixelMotorInfo>;
-  setParallelGripperInfoList(value: Array<DynamixelMotorInfo>): ListOfDynamixelMotorInfo;
-  clearParallelGripperInfoList(): ListOfDynamixelMotorInfo;
-  addParallelGripperInfo(value?: DynamixelMotorInfo, index?: number): DynamixelMotorInfo;
+export class ListOfDynamixelMotor extends jspb.Message {
+  getInfoList(): Array<DynamixelMotor>;
+  setInfoList(value: Array<DynamixelMotor>): ListOfDynamixelMotor;
+  clearInfoList(): ListOfDynamixelMotor;
+  addInfo(value?: DynamixelMotor, index?: number): DynamixelMotor;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): ListOfDynamixelMotorInfo.AsObject;
-  static toObject(includeInstance: boolean, msg: ListOfDynamixelMotorInfo): ListOfDynamixelMotorInfo.AsObject;
-  static serializeBinaryToWriter(message: ListOfDynamixelMotorInfo, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): ListOfDynamixelMotorInfo;
-  static deserializeBinaryFromReader(message: ListOfDynamixelMotorInfo, reader: jspb.BinaryReader): ListOfDynamixelMotorInfo;
+  toObject(includeInstance?: boolean): ListOfDynamixelMotor.AsObject;
+  static toObject(includeInstance: boolean, msg: ListOfDynamixelMotor): ListOfDynamixelMotor.AsObject;
+  static serializeBinaryToWriter(message: ListOfDynamixelMotor, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ListOfDynamixelMotor;
+  static deserializeBinaryFromReader(message: ListOfDynamixelMotor, reader: jspb.BinaryReader): ListOfDynamixelMotor;
 }
 
-export namespace ListOfDynamixelMotorInfo {
+export namespace ListOfDynamixelMotor {
   export type AsObject = {
-    parallelGripperInfoList: Array<DynamixelMotorInfo.AsObject>,
+    infoList: Array<DynamixelMotor.AsObject>,
   }
 }
 
