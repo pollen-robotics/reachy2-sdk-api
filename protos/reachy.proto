@@ -60,8 +60,14 @@ message ReachyStreamStateRequest {
     float publish_frequency = 2;
 }
 
+message SimpleMessage {
+    string m = 1;
+}
+
 service ReachyService {
     rpc GetReachy (google.protobuf.Empty) returns (Reachy);
+
+    rpc Echo(SimpleMessage) returns (SimpleMessage);
 
     rpc GetReachyState (ReachyId) returns (ReachyState);
     rpc StreamReachyState (ReachyStreamStateRequest) returns (stream ReachyState);

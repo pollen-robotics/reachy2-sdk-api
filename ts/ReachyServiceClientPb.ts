@@ -83,6 +83,49 @@ export class ReachyServiceClient {
     this.methodDescriptorGetReachy);
   }
 
+  methodDescriptorEcho = new grpcWeb.MethodDescriptor(
+    '/reachy.ReachyService/Echo',
+    grpcWeb.MethodType.UNARY,
+    reachy_pb.SimpleMessage,
+    reachy_pb.SimpleMessage,
+    (request: reachy_pb.SimpleMessage) => {
+      return request.serializeBinary();
+    },
+    reachy_pb.SimpleMessage.deserializeBinary
+  );
+
+  echo(
+    request: reachy_pb.SimpleMessage,
+    metadata: grpcWeb.Metadata | null): Promise<reachy_pb.SimpleMessage>;
+
+  echo(
+    request: reachy_pb.SimpleMessage,
+    metadata: grpcWeb.Metadata | null,
+    callback: (err: grpcWeb.RpcError,
+               response: reachy_pb.SimpleMessage) => void): grpcWeb.ClientReadableStream<reachy_pb.SimpleMessage>;
+
+  echo(
+    request: reachy_pb.SimpleMessage,
+    metadata: grpcWeb.Metadata | null,
+    callback?: (err: grpcWeb.RpcError,
+               response: reachy_pb.SimpleMessage) => void) {
+    if (callback !== undefined) {
+      return this.client_.rpcCall(
+        this.hostname_ +
+          '/reachy.ReachyService/Echo',
+        request,
+        metadata || {},
+        this.methodDescriptorEcho,
+        callback);
+    }
+    return this.client_.unaryCall(
+    this.hostname_ +
+      '/reachy.ReachyService/Echo',
+    request,
+    metadata || {},
+    this.methodDescriptorEcho);
+  }
+
   methodDescriptorGetReachyState = new grpcWeb.MethodDescriptor(
     '/reachy.ReachyService/GetReachyState',
     grpcWeb.MethodType.UNARY,

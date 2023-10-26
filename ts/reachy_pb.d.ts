@@ -224,3 +224,21 @@ export namespace ReachyStreamStateRequest {
   }
 }
 
+export class SimpleMessage extends jspb.Message {
+  getM(): string;
+  setM(value: string): SimpleMessage;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): SimpleMessage.AsObject;
+  static toObject(includeInstance: boolean, msg: SimpleMessage): SimpleMessage.AsObject;
+  static serializeBinaryToWriter(message: SimpleMessage, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): SimpleMessage;
+  static deserializeBinaryFromReader(message: SimpleMessage, reader: jspb.BinaryReader): SimpleMessage;
+}
+
+export namespace SimpleMessage {
+  export type AsObject = {
+    m: string,
+  }
+}
+

@@ -20,6 +20,11 @@ class ReachyServiceStub(object):
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=reachy__pb2.Reachy.FromString,
                 )
+        self.Echo = channel.unary_unary(
+                '/reachy.ReachyService/Echo',
+                request_serializer=reachy__pb2.SimpleMessage.SerializeToString,
+                response_deserializer=reachy__pb2.SimpleMessage.FromString,
+                )
         self.GetReachyState = channel.unary_unary(
                 '/reachy.ReachyService/GetReachyState',
                 request_serializer=reachy__pb2.ReachyId.SerializeToString,
@@ -36,6 +41,12 @@ class ReachyServiceServicer(object):
     """Missing associated documentation comment in .proto file."""
 
     def GetReachy(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def Echo(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -60,6 +71,11 @@ def add_ReachyServiceServicer_to_server(servicer, server):
                     servicer.GetReachy,
                     request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                     response_serializer=reachy__pb2.Reachy.SerializeToString,
+            ),
+            'Echo': grpc.unary_unary_rpc_method_handler(
+                    servicer.Echo,
+                    request_deserializer=reachy__pb2.SimpleMessage.FromString,
+                    response_serializer=reachy__pb2.SimpleMessage.SerializeToString,
             ),
             'GetReachyState': grpc.unary_unary_rpc_method_handler(
                     servicer.GetReachyState,
@@ -95,6 +111,23 @@ class ReachyService(object):
         return grpc.experimental.unary_unary(request, target, '/reachy.ReachyService/GetReachy',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             reachy__pb2.Reachy.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def Echo(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/reachy.ReachyService/Echo',
+            reachy__pb2.SimpleMessage.SerializeToString,
+            reachy__pb2.SimpleMessage.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
