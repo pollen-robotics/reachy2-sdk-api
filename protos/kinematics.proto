@@ -34,9 +34,9 @@ message Point {
 }
 
 message ExtEulerAngles {
-    google.protobuf.FloatValue roll = 1;
-    google.protobuf.FloatValue pitch = 2;
-    google.protobuf.FloatValue yaw = 3;
+    double roll = 1;
+    double pitch = 2;
+    double yaw = 3;
 }
 
 message PointDistanceTolerances {
