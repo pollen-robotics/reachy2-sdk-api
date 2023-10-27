@@ -15,7 +15,7 @@ _sym_db = _symbol_database.Default()
 from google.protobuf import wrappers_pb2 as google_dot_protobuf_dot_wrappers__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x10kinematics.proto\x12\x11reachy.kinematics\x1a\x1egoogle/protobuf/wrappers.proto\"\x19\n\tMatrix4x4\x12\x0c\n\x04\x64\x61ta\x18\x01 \x03(\x01\"\x19\n\tMatrix3x3\x12\x0c\n\x04\x64\x61ta\x18\x01 \x03(\x01\"8\n\nQuaternion\x12\t\n\x01w\x18\x01 \x01(\x01\x12\t\n\x01x\x18\x02 \x01(\x01\x12\t\n\x01y\x18\x03 \x01(\x01\x12\t\n\x01z\x18\x04 \x01(\x01\"\xa6\x01\n\nRotation3D\x12*\n\x01q\x18\x01 \x01(\x0b\x32\x1d.reachy.kinematics.QuaternionH\x00\x12\x30\n\x03rpy\x18\x02 \x01(\x0b\x32!.reachy.kinematics.ExtEulerAnglesH\x00\x12.\n\x06matrix\x18\x03 \x01(\x0b\x32\x1c.reachy.kinematics.Matrix3x3H\x00\x42\n\n\x08rotation\"(\n\x05Point\x12\t\n\x01x\x18\x01 \x01(\x01\x12\t\n\x01y\x18\x02 \x01(\x01\x12\t\n\x01z\x18\x03 \x01(\x01\"\x91\x01\n\x0e\x45xtEulerAngles\x12)\n\x04roll\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12*\n\x05pitch\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12(\n\x03yaw\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"F\n\x17PointDistanceTolerances\x12\r\n\x05x_tol\x18\x01 \x01(\x01\x12\r\n\x05y_tol\x18\x02 \x01(\x01\x12\r\n\x05z_tol\x18\x03 \x01(\x01\"P\n\x18\x45xtEulerAnglesTolerances\x12\x10\n\x08roll_tol\x18\x01 \x01(\x01\x12\x11\n\tpitch_tol\x18\x02 \x01(\x01\x12\x0f\n\x07yaw_tol\x18\x03 \x01(\x01\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x10kinematics.proto\x12\x11reachy.kinematics\x1a\x1egoogle/protobuf/wrappers.proto\"\x19\n\tMatrix4x4\x12\x0c\n\x04\x64\x61ta\x18\x01 \x03(\x01\"\x19\n\tMatrix3x3\x12\x0c\n\x04\x64\x61ta\x18\x01 \x03(\x01\"8\n\nQuaternion\x12\t\n\x01w\x18\x01 \x01(\x01\x12\t\n\x01x\x18\x02 \x01(\x01\x12\t\n\x01y\x18\x03 \x01(\x01\x12\t\n\x01z\x18\x04 \x01(\x01\"\xa6\x01\n\nRotation3D\x12*\n\x01q\x18\x01 \x01(\x0b\x32\x1d.reachy.kinematics.QuaternionH\x00\x12\x30\n\x03rpy\x18\x02 \x01(\x0b\x32!.reachy.kinematics.ExtEulerAnglesH\x00\x12.\n\x06matrix\x18\x03 \x01(\x0b\x32\x1c.reachy.kinematics.Matrix3x3H\x00\x42\n\n\x08rotation\"(\n\x05Point\x12\t\n\x01x\x18\x01 \x01(\x01\x12\t\n\x01y\x18\x02 \x01(\x01\x12\t\n\x01z\x18\x03 \x01(\x01\":\n\x0e\x45xtEulerAngles\x12\x0c\n\x04roll\x18\x01 \x01(\x01\x12\r\n\x05pitch\x18\x02 \x01(\x01\x12\x0b\n\x03yaw\x18\x03 \x01(\x01\"F\n\x17PointDistanceTolerances\x12\r\n\x05x_tol\x18\x01 \x01(\x01\x12\r\n\x05y_tol\x18\x02 \x01(\x01\x12\r\n\x05z_tol\x18\x03 \x01(\x01\"P\n\x18\x45xtEulerAnglesTolerances\x12\x10\n\x08roll_tol\x18\x01 \x01(\x01\x12\x11\n\tpitch_tol\x18\x02 \x01(\x01\x12\x0f\n\x07yaw_tol\x18\x03 \x01(\x01\x62\x06proto3')
 
 
 
@@ -96,10 +96,10 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _ROTATION3D._serialized_end=350
   _POINT._serialized_start=352
   _POINT._serialized_end=392
-  _EXTEULERANGLES._serialized_start=395
-  _EXTEULERANGLES._serialized_end=540
-  _POINTDISTANCETOLERANCES._serialized_start=542
-  _POINTDISTANCETOLERANCES._serialized_end=612
-  _EXTEULERANGLESTOLERANCES._serialized_start=614
-  _EXTEULERANGLESTOLERANCES._serialized_end=694
+  _EXTEULERANGLES._serialized_start=394
+  _EXTEULERANGLES._serialized_end=452
+  _POINTDISTANCETOLERANCES._serialized_start=454
+  _POINTDISTANCETOLERANCES._serialized_end=524
+  _EXTEULERANGLESTOLERANCES._serialized_start=526
+  _EXTEULERANGLESTOLERANCES._serialized_end=606
 # @@protoc_insertion_point(module_scope)
