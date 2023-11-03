@@ -23,7 +23,7 @@ message MicrophoneInfo {
 }
 
 message ListOfMicrophoneInfo {
-    repeated MicrophoneInfo stereo_camera_info = 1;
+    repeated MicrophoneInfo microphone_info = 1;
 }
 
 message SoundAck {
@@ -49,7 +49,7 @@ message SpeakerInfo {
 }
 
 message ListOfSpeakerInfo {
-    repeated SpeakerInfo stereo_camera_info = 1;
+    repeated SpeakerInfo speaker_info = 1;
 }
 
 message VolumeRequest {
