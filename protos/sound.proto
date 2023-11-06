@@ -9,27 +9,25 @@ import "error.proto";
 package component.sound;
 
 message Microphone {
-    MicrophoneInfo info = 1;
-}
-
-message Speaker {
-    SpeakerInfo info = 1;
-}
-
-message MicrophoneInfo {
     component.ComponentId id = 1;
 
     float gain = 2;
 }
 
-message ListOfMicrophoneInfo {
-    repeated MicrophoneInfo microphone_info = 1;
+message ListOfMicrophone {
+    repeated Microphone microphone_info = 1;
 }
 
 message SoundAck {
     google.protobuf.BoolValue success = 1;
 
     error.Error error = 2;
+}
+
+message SoundRequest {
+    component.ComponentId speaker = 1;
+    SoundId sound = 2;
+    float volume = 3;
 }
 
 message SoundId {
@@ -41,15 +39,19 @@ message RecordingAck {
     SoundId recording_id = 2;
 }
 
+message RecordingRequest {
+    component.ComponentId micro = 1;
+    SoundId recording_id = 2;
+}
 
-message SpeakerInfo {
+message Speaker {
     component.ComponentId id = 1;
 
     float volume = 2;
 }
 
-message ListOfSpeakerInfo {
-    repeated SpeakerInfo speaker_info = 1;
+message ListOfSpeaker {
+    repeated Speaker speaker_info = 1;
 }
 
 message VolumeRequest {
@@ -57,15 +59,23 @@ message VolumeRequest {
     float volume = 2;
 }
 
+message ListOfSound {
+    repeated SoundId sounds = 1;
+}
+
 
 service SoundService {
-    rpc GetAllMicrophone (google.protobuf.Empty) returns (ListOfMicrophoneInfo);
-    rpc GetAllSpeaker (google.protobuf.Empty) returns (ListOfSpeakerInfo);
+    rpc GetAllMicrophone (google.protobuf.Empty) returns (ListOfMicrophone);
+    rpc GetAllSpeaker (google.protobuf.Empty) returns (ListOfSpeaker);
 
-    rpc StartRecording (component.ComponentId) returns (google.protobuf.Empty);
+    rpc StartRecording (RecordingRequest) returns (google.protobuf.Empty);
     rpc StopRecording (component.ComponentId) returns (RecordingAck);
 
     rpc TestSpeaker (component.ComponentId) returns (google.protobuf.Empty);
     rpc ChangeVolume (VolumeRequest) returns (google.protobuf.Empty);
-    rpc PlaySound (SoundId) returns (google.protobuf.Empty);
+
+    rpc PlaySound (SoundRequest) returns (google.protobuf.Empty);
+    rpc StopSound (component.ComponentId) returns (google.protobuf.Empty);
+
+    rpc GetSoundsList(google.protobuf.Empty) returns (ListOfSound);
 }

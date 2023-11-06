@@ -19,16 +19,16 @@ class SoundServiceStub(object):
         self.GetAllMicrophone = channel.unary_unary(
                 '/component.sound.SoundService/GetAllMicrophone',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-                response_deserializer=sound__pb2.ListOfMicrophoneInfo.FromString,
+                response_deserializer=sound__pb2.ListOfMicrophone.FromString,
                 )
         self.GetAllSpeaker = channel.unary_unary(
                 '/component.sound.SoundService/GetAllSpeaker',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-                response_deserializer=sound__pb2.ListOfSpeakerInfo.FromString,
+                response_deserializer=sound__pb2.ListOfSpeaker.FromString,
                 )
         self.StartRecording = channel.unary_unary(
                 '/component.sound.SoundService/StartRecording',
-                request_serializer=component__pb2.ComponentId.SerializeToString,
+                request_serializer=sound__pb2.RecordingRequest.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.StopRecording = channel.unary_unary(
@@ -48,8 +48,18 @@ class SoundServiceStub(object):
                 )
         self.PlaySound = channel.unary_unary(
                 '/component.sound.SoundService/PlaySound',
-                request_serializer=sound__pb2.SoundId.SerializeToString,
+                request_serializer=sound__pb2.SoundRequest.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                )
+        self.StopSound = channel.unary_unary(
+                '/component.sound.SoundService/StopSound',
+                request_serializer=component__pb2.ComponentId.SerializeToString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                )
+        self.GetSoundsList = channel.unary_unary(
+                '/component.sound.SoundService/GetSoundsList',
+                request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+                response_deserializer=sound__pb2.ListOfSound.FromString,
                 )
 
 
@@ -98,22 +108,34 @@ class SoundServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def StopSound(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def GetSoundsList(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
 
 def add_SoundServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
             'GetAllMicrophone': grpc.unary_unary_rpc_method_handler(
                     servicer.GetAllMicrophone,
                     request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
-                    response_serializer=sound__pb2.ListOfMicrophoneInfo.SerializeToString,
+                    response_serializer=sound__pb2.ListOfMicrophone.SerializeToString,
             ),
             'GetAllSpeaker': grpc.unary_unary_rpc_method_handler(
                     servicer.GetAllSpeaker,
                     request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
-                    response_serializer=sound__pb2.ListOfSpeakerInfo.SerializeToString,
+                    response_serializer=sound__pb2.ListOfSpeaker.SerializeToString,
             ),
             'StartRecording': grpc.unary_unary_rpc_method_handler(
                     servicer.StartRecording,
-                    request_deserializer=component__pb2.ComponentId.FromString,
+                    request_deserializer=sound__pb2.RecordingRequest.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'StopRecording': grpc.unary_unary_rpc_method_handler(
@@ -133,8 +155,18 @@ def add_SoundServiceServicer_to_server(servicer, server):
             ),
             'PlaySound': grpc.unary_unary_rpc_method_handler(
                     servicer.PlaySound,
-                    request_deserializer=sound__pb2.SoundId.FromString,
+                    request_deserializer=sound__pb2.SoundRequest.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            ),
+            'StopSound': grpc.unary_unary_rpc_method_handler(
+                    servicer.StopSound,
+                    request_deserializer=component__pb2.ComponentId.FromString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            ),
+            'GetSoundsList': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetSoundsList,
+                    request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                    response_serializer=sound__pb2.ListOfSound.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -159,7 +191,7 @@ class SoundService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/component.sound.SoundService/GetAllMicrophone',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-            sound__pb2.ListOfMicrophoneInfo.FromString,
+            sound__pb2.ListOfMicrophone.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -176,7 +208,7 @@ class SoundService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/component.sound.SoundService/GetAllSpeaker',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-            sound__pb2.ListOfSpeakerInfo.FromString,
+            sound__pb2.ListOfSpeaker.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -192,7 +224,7 @@ class SoundService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/component.sound.SoundService/StartRecording',
-            component__pb2.ComponentId.SerializeToString,
+            sound__pb2.RecordingRequest.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
@@ -260,7 +292,41 @@ class SoundService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/component.sound.SoundService/PlaySound',
-            sound__pb2.SoundId.SerializeToString,
+            sound__pb2.SoundRequest.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def StopSound(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/component.sound.SoundService/StopSound',
+            component__pb2.ComponentId.SerializeToString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def GetSoundsList(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/component.sound.SoundService/GetSoundsList',
+            google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            sound__pb2.ListOfSound.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
