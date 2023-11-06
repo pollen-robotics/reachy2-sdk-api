@@ -27,6 +27,7 @@ message SoundAck {
 message SoundRequest {
     component.ComponentId speaker = 1;
     SoundId sound = 2;
+    float volume = 3;
 }
 
 message SoundId {
