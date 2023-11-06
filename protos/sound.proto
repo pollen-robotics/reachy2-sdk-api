@@ -41,6 +41,10 @@ message RecordingAck {
     SoundId recording_id = 2;
 }
 
+message RecordingInfo {
+    component.ComponentId micro = 1;
+    SoundId recording_id = 2;
+}
 
 message SpeakerInfo {
     component.ComponentId id = 1;
@@ -66,7 +70,7 @@ service SoundService {
     rpc GetAllMicrophone (google.protobuf.Empty) returns (ListOfMicrophoneInfo);
     rpc GetAllSpeaker (google.protobuf.Empty) returns (ListOfSpeakerInfo);
 
-    rpc StartRecording (component.ComponentId) returns (google.protobuf.Empty);
+    rpc StartRecording (RecordingInfo) returns (google.protobuf.Empty);
     rpc StopRecording (component.ComponentId) returns (RecordingAck);
 
     rpc TestSpeaker (component.ComponentId) returns (google.protobuf.Empty);
