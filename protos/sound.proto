@@ -57,6 +57,10 @@ message VolumeRequest {
     float volume = 2;
 }
 
+message ListOfSound {
+    repeated SoundId sounds = 1;
+}
+
 
 service SoundService {
     rpc GetAllMicrophone (google.protobuf.Empty) returns (ListOfMicrophoneInfo);
@@ -68,4 +72,6 @@ service SoundService {
     rpc TestSpeaker (component.ComponentId) returns (google.protobuf.Empty);
     rpc ChangeVolume (VolumeRequest) returns (google.protobuf.Empty);
     rpc PlaySound (SoundId) returns (google.protobuf.Empty);
+
+    rpc GetSoundsList(google.protobuf.Empty) returns (ListOfSound);
 }
