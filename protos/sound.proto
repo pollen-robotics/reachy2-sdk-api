@@ -72,7 +72,9 @@ service SoundService {
 
     rpc TestSpeaker (component.ComponentId) returns (google.protobuf.Empty);
     rpc ChangeVolume (VolumeRequest) returns (google.protobuf.Empty);
+
     rpc PlaySound (SoundRequest) returns (google.protobuf.Empty);
+    rpc StopSound (component.ComponentId) returns (google.protobuf.Empty);
 
     rpc GetSoundsList(google.protobuf.Empty) returns (ListOfSound);
 }
