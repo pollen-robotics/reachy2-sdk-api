@@ -24,6 +24,11 @@ message SoundAck {
     error.Error error = 2;
 }
 
+message SoundRequest {
+    component.ComponentId speaker = 1;
+    SoundId sound = 2;
+}
+
 message SoundId {
     string id = 1;
 }
@@ -33,7 +38,7 @@ message RecordingAck {
     SoundId recording_id = 2;
 }
 
-message RecordingInfo {
+message RecordingRequest {
     component.ComponentId micro = 1;
     SoundId recording_id = 2;
 }
@@ -62,12 +67,12 @@ service SoundService {
     rpc GetAllMicrophone (google.protobuf.Empty) returns (ListOfMicrophone);
     rpc GetAllSpeaker (google.protobuf.Empty) returns (ListOfSpeaker);
 
-    rpc StartRecording (RecordingInfo) returns (google.protobuf.Empty);
+    rpc StartRecording (RecordingRequest) returns (google.protobuf.Empty);
     rpc StopRecording (component.ComponentId) returns (RecordingAck);
 
     rpc TestSpeaker (component.ComponentId) returns (google.protobuf.Empty);
     rpc ChangeVolume (VolumeRequest) returns (google.protobuf.Empty);
-    rpc PlaySound (SoundId) returns (google.protobuf.Empty);
+    rpc PlaySound (SoundRequest) returns (google.protobuf.Empty);
 
     rpc GetSoundsList(google.protobuf.Empty) returns (ListOfSound);
 }
