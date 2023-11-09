@@ -31,6 +31,11 @@ class Orbita3DServiceStub(object):
                 request_serializer=orbita3d__pb2.Orbita3DStreamStateRequest.SerializeToString,
                 response_deserializer=orbita3d__pb2.Orbita3DState.FromString,
                 )
+        self.GoToOrientation = channel.unary_unary(
+                '/component.orbita3d.Orbita3DService/GoToOrientation',
+                request_serializer=orbita3d__pb2.Orbita3DGoal.SerializeToString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                )
         self.SendCommand = channel.unary_unary(
                 '/component.orbita3d.Orbita3DService/SendCommand',
                 request_serializer=orbita3d__pb2.Orbita3DsCommand.SerializeToString,
@@ -74,6 +79,12 @@ class Orbita3DServiceServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def StreamState(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def GoToOrientation(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -126,6 +137,11 @@ def add_Orbita3DServiceServicer_to_server(servicer, server):
                     servicer.StreamState,
                     request_deserializer=orbita3d__pb2.Orbita3DStreamStateRequest.FromString,
                     response_serializer=orbita3d__pb2.Orbita3DState.SerializeToString,
+            ),
+            'GoToOrientation': grpc.unary_unary_rpc_method_handler(
+                    servicer.GoToOrientation,
+                    request_deserializer=orbita3d__pb2.Orbita3DGoal.FromString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'SendCommand': grpc.unary_unary_rpc_method_handler(
                     servicer.SendCommand,
@@ -210,6 +226,23 @@ class Orbita3DService(object):
         return grpc.experimental.unary_stream(request, target, '/component.orbita3d.Orbita3DService/StreamState',
             orbita3d__pb2.Orbita3DStreamStateRequest.SerializeToString,
             orbita3d__pb2.Orbita3DState.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def GoToOrientation(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/component.orbita3d.Orbita3DService/GoToOrientation',
+            orbita3d__pb2.Orbita3DGoal.SerializeToString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 

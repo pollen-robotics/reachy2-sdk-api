@@ -98,6 +98,12 @@ message Orbita3DsCommand {
     repeated Orbita3DCommand cmd = 1;
 }
 
+message Orbita3DGoal {
+    component.ComponentId id = 1;
+    reachy.kinematics.Rotation3D rotation = 2;
+    google.protobuf.FloatValue duration = 3;
+}
+
 message Orbita3D {
     ComponentId id = 1;
     string serial_number = 2;
@@ -116,6 +122,8 @@ service Orbita3DService {
 
     rpc GetState (Orbita3DStateRequest) returns (Orbita3DState);
     rpc StreamState (Orbita3DStreamStateRequest) returns (stream Orbita3DState);
+
+    rpc GoToOrientation (Orbita3DGoal) returns (google.protobuf.Empty);
 
     rpc SendCommand (Orbita3DsCommand) returns (google.protobuf.Empty);
     rpc StreamCommand (stream Orbita3DsCommand) returns (google.protobuf.Empty);
