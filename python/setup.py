@@ -9,7 +9,7 @@ here = path.abspath(path.dirname(__file__))
 #     long_description = f.read()
 
 setup(
-    name='reachy-sdk-api-v2',
+    name='reachy2-sdk-api',
     version='0.1.0',
     packages=find_packages(exclude=['tests']),    
     install_requires=[
@@ -18,7 +18,7 @@ setup(
         'protobuf>=3.14.0',
     ],    author='Pollen Robotics',
     author_email='contact@pollen-robotics.com',
-    url='https://github.com/pollen-robotics/reachy-sdk-api-v2',    description='gRPC Protobuf API definition for Reachy SDK V2.',
+    url='https://github.com/pollen-robotics/reachy2-sdk-api',    description='gRPC Protobuf API definition for Reachy 2 SDK',
     # long_description=long_description,
     long_description_content_type='text/markdown',
 )
