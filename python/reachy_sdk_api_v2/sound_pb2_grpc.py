@@ -61,6 +61,11 @@ class SoundServiceStub(object):
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=sound__pb2.ListOfSound.FromString,
                 )
+        self.SayText = channel.unary_unary(
+                '/component.sound.SoundService/SayText',
+                request_serializer=sound__pb2.TextRequest.SerializeToString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                )
 
 
 class SoundServiceServicer(object):
@@ -120,6 +125,12 @@ class SoundServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def SayText(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
 
 def add_SoundServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
@@ -167,6 +178,11 @@ def add_SoundServiceServicer_to_server(servicer, server):
                     servicer.GetSoundsList,
                     request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                     response_serializer=sound__pb2.ListOfSound.SerializeToString,
+            ),
+            'SayText': grpc.unary_unary_rpc_method_handler(
+                    servicer.SayText,
+                    request_deserializer=sound__pb2.TextRequest.FromString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -328,5 +344,22 @@ class SoundService(object):
         return grpc.experimental.unary_unary(request, target, '/component.sound.SoundService/GetSoundsList',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             sound__pb2.ListOfSound.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def SayText(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/component.sound.SoundService/SayText',
+            sound__pb2.TextRequest.SerializeToString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
