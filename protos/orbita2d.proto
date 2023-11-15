@@ -8,7 +8,7 @@ import "component.proto";
 
 package component.orbita2d;
 
-enum Orbita2DField {
+enum Orbita2dField {
     NONE = 0;
 
     NAME = 1;
@@ -35,100 +35,100 @@ enum Axis {
     YAW = 2;
 }
 
-message Orbita2DState {
+message Orbita2dState {
     google.protobuf.Timestamp timestamp = 1;
 
     component.ComponentId id = 2;
 
-    Pose2D present_position = 3;
-    Vector2D present_speed = 4;
-    Vector2D present_load = 5;
-    Float2D temperature = 6;
-    Limits2D joint_limit = 7;
+    Pose2d present_position = 3;
+    Vector2d present_speed = 4;
+    Vector2d present_load = 5;
+    Float2d temperature = 6;
+    Limits2d joint_limit = 7;
 
     google.protobuf.BoolValue compliant = 8;
-    Pose2D goal_position = 9;
-    Float2D speed_limit = 10;
-    Float2D torque_limit = 11;
+    Pose2d goal_position = 9;
+    Float2d speed_limit = 10;
+    Float2d torque_limit = 11;
 
-    PID2D pid = 12;
+    PID2d pid = 12;
 }
 
-message Orbita2DStateRequest {
-    repeated Orbita2DField fields = 1;
+message Orbita2dStateRequest {
+    repeated Orbita2dField fields = 1;
     component.ComponentId id = 2;
 }
 
-message Orbita2DStreamStateRequest {
-    Orbita2DStateRequest req = 1;
+message Orbita2dStreamStateRequest {
+    Orbita2dStateRequest req = 1;
     float freq = 2;
 }
 
-message PID2D {
+message PID2d {
     PIDGains motor_1 = 1;
     PIDGains motor_2 = 2;
 }
 
-message Limits2D {
+message Limits2d {
     JointLimits axis_1 = 1;
     JointLimits axis_2 = 2;
 }
 
-message Pose2D {
+message Pose2d {
     google.protobuf.FloatValue axis_1 = 1;
     google.protobuf.FloatValue axis_2 = 2;
 }
 
-message Float2D {
+message Float2d {
     google.protobuf.FloatValue motor_1 = 1;
     google.protobuf.FloatValue motor_2 = 2;
 }
 
-message Vector2D {
+message Vector2d {
     google.protobuf.FloatValue x = 1;
     google.protobuf.FloatValue y = 2;
 }
 
-message Orbita2DCommand {
+message Orbita2dCommand {
     component.ComponentId id = 1;
 
     google.protobuf.BoolValue compliant = 2;
-    Pose2D goal_position = 3;
-    Float2D speed_limit = 4;
-    Float2D torque_limit = 5;
+    Pose2d goal_position = 3;
+    Float2d speed_limit = 4;
+    Float2d torque_limit = 5;
 
-    PID2D pid = 12;
+    PID2d pid = 12;
 }
 
-message Orbita2DsCommand {
-    repeated Orbita2DCommand cmd = 1;
+message Orbita2dsCommand {
+    repeated Orbita2dCommand cmd = 1;
 }
 
-message Orbita2D {
+message Orbita2d {
     component.ComponentId id = 1;
     string serial_number = 2;
     Axis axis_1 = 3;
     Axis axis_2 = 4;
 }
 
-message ListOfOrbita2D {
-    repeated Orbita2D orbita2D = 1;
+message ListOfOrbita2d {
+    repeated Orbita2d orbita2d = 1;
 }
 
-message Orbita2DStatus {
+message Orbita2dStatus {
 
 }
 
-service Orbita2DService {
-    rpc GetAllOrbita2D (google.protobuf.Empty) returns (ListOfOrbita2D);
+service Orbita2dService {
+    rpc GetAllOrbita2d (google.protobuf.Empty) returns (ListOfOrbita2d);
 
-    rpc GetState (Orbita2DStateRequest) returns (Orbita2DState);
-    rpc StreamState (Orbita2DStreamStateRequest) returns (stream Orbita2DState);
+    rpc GetState (Orbita2dStateRequest) returns (Orbita2dState);
+    rpc StreamState (Orbita2dStreamStateRequest) returns (stream Orbita2dState);
 
-    rpc SendCommand (Orbita2DsCommand) returns (google.protobuf.Empty);
-    rpc StreamCommand (stream Orbita2DsCommand) returns (google.protobuf.Empty);
+    rpc SendCommand (Orbita2dsCommand) returns (google.protobuf.Empty);
+    rpc StreamCommand (stream Orbita2dsCommand) returns (google.protobuf.Empty);
 
-    rpc Audit (component.ComponentId) returns (Orbita2DStatus);
+    rpc Audit (component.ComponentId) returns (Orbita2dStatus);
     rpc HeartBeat (component.ComponentId) returns (google.protobuf.Empty);
 
     rpc Restart (component.ComponentId) returns (google.protobuf.Empty);

@@ -17,7 +17,7 @@ message Quaternion {
     double z = 4;
 }
 
-message Rotation3D {
+message Rotation3d {
     oneof rotation {
         Quaternion q = 1;
         ExtEulerAngles rpy = 2;

@@ -45,7 +45,7 @@ class HeadServiceStub(object):
         self.GetOrientation = channel.unary_unary(
                 '/reachy.part.head.HeadService/GetOrientation',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=kinematics__pb2.Rotation3D.FromString,
+                response_deserializer=kinematics__pb2.Rotation3d.FromString,
                 )
         self.LookAt = channel.unary_unary(
                 '/reachy.part.head.HeadService/LookAt',
@@ -95,7 +95,7 @@ class HeadServiceStub(object):
         self.GetJointGoalPosition = channel.unary_unary(
                 '/reachy.part.head.HeadService/GetJointGoalPosition',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=kinematics__pb2.Rotation3D.FromString,
+                response_deserializer=kinematics__pb2.Rotation3d.FromString,
                 )
         self.SetSpeedLimit = channel.unary_unary(
                 '/reachy.part.head.HeadService/SetSpeedLimit',
@@ -240,7 +240,7 @@ def add_HeadServiceServicer_to_server(servicer, server):
             'GetOrientation': grpc.unary_unary_rpc_method_handler(
                     servicer.GetOrientation,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=kinematics__pb2.Rotation3D.SerializeToString,
+                    response_serializer=kinematics__pb2.Rotation3d.SerializeToString,
             ),
             'LookAt': grpc.unary_unary_rpc_method_handler(
                     servicer.LookAt,
@@ -290,7 +290,7 @@ def add_HeadServiceServicer_to_server(servicer, server):
             'GetJointGoalPosition': grpc.unary_unary_rpc_method_handler(
                     servicer.GetJointGoalPosition,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=kinematics__pb2.Rotation3D.SerializeToString,
+                    response_serializer=kinematics__pb2.Rotation3d.SerializeToString,
             ),
             'SetSpeedLimit': grpc.unary_unary_rpc_method_handler(
                     servicer.SetSpeedLimit,
@@ -405,7 +405,7 @@ class HeadService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/GetOrientation',
             part__pb2.PartId.SerializeToString,
-            kinematics__pb2.Rotation3D.FromString,
+            kinematics__pb2.Rotation3d.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -575,7 +575,7 @@ class HeadService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/GetJointGoalPosition',
             part__pb2.PartId.SerializeToString,
-            kinematics__pb2.Rotation3D.FromString,
+            kinematics__pb2.Rotation3d.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 

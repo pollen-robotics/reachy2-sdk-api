@@ -9,7 +9,7 @@ import "kinematics.proto";
 
 package component.orbita3d;
 
-enum Orbita3DField {
+enum Orbita3dField {
     NONE = 0;
 
     NAME = 1;
@@ -30,105 +30,105 @@ enum Orbita3DField {
     ALL = 15;
 }
 
-message Orbita3DState {
+message Orbita3dState {
     google.protobuf.Timestamp timestamp = 1;
 
     component.ComponentId id = 2;
 
-    reachy.kinematics.Rotation3D present_position = 3;
-    Vector3D present_speed = 4;
-    Vector3D present_load = 5;
-    Float3D temperature = 6;
-    Limits3D joint_limit = 7;
+    reachy.kinematics.Rotation3d present_position = 3;
+    Vector3d present_speed = 4;
+    Vector3d present_load = 5;
+    Float3d temperature = 6;
+    Limits3d joint_limit = 7;
 
     google.protobuf.BoolValue compliant = 8;
-    reachy.kinematics.Rotation3D goal_position = 9;
-    Float3D speed_limit = 10;
-    Float3D torque_limit = 11;
+    reachy.kinematics.Rotation3d goal_position = 9;
+    Float3d speed_limit = 10;
+    Float3d torque_limit = 11;
 
-    PID3D pid = 12;
+    PID3d pid = 12;
 }
 
-message Orbita3DStateRequest {
-    repeated Orbita3DField fields = 1;
+message Orbita3dStateRequest {
+    repeated Orbita3dField fields = 1;
     component.ComponentId id = 2;
 }
 
-message Orbita3DStreamStateRequest {
-    Orbita3DStateRequest req = 1;
+message Orbita3dStreamStateRequest {
+    Orbita3dStateRequest req = 1;
     float freq = 2;
 }
 
-message PID3D {
+message PID3d {
     PIDGains motor_1 = 1;
     PIDGains motor_2 = 2;
     PIDGains motor_3 = 3;
 }
 
-message Limits3D {
+message Limits3d {
     JointLimits roll = 1;
     JointLimits pitch = 2;
     JointLimits yaw = 3;
 }
 
-message Float3D {
+message Float3d {
     google.protobuf.FloatValue motor_1 = 1;
     google.protobuf.FloatValue motor_2 = 2;
     google.protobuf.FloatValue motor_3 = 3;
 }
 
-message Vector3D {
+message Vector3d {
     google.protobuf.FloatValue x = 1;
     google.protobuf.FloatValue y = 2;
     google.protobuf.FloatValue z = 3;
 }
 
-message Orbita3DCommand {
+message Orbita3dCommand {
     component.ComponentId id = 1;
 
     google.protobuf.BoolValue compliant = 2;
-    reachy.kinematics.Rotation3D goal_position = 3;
-    Float3D speed_limit = 4;
-    Float3D torque_limit = 5;
+    reachy.kinematics.Rotation3d goal_position = 3;
+    Float3d speed_limit = 4;
+    Float3d torque_limit = 5;
 
-    PID3D pid = 6;
+    PID3d pid = 6;
 }
 
-message Orbita3DsCommand {
-    repeated Orbita3DCommand cmd = 1;
+message Orbita3dsCommand {
+    repeated Orbita3dCommand cmd = 1;
 }
 
-message Orbita3DGoal {
+message Orbita3dGoal {
     component.ComponentId id = 1;
-    reachy.kinematics.Rotation3D rotation = 2;
+    reachy.kinematics.Rotation3d rotation = 2;
     google.protobuf.FloatValue duration = 3;
 }
 
-message Orbita3D {
+message Orbita3d {
     ComponentId id = 1;
     string serial_number = 2;
 }
 
-message ListOfOrbita3D {
-    repeated Orbita3D info = 1;
+message ListOfOrbita3d {
+    repeated Orbita3d info = 1;
 }
 
-message Orbita3DStatus {
+message Orbita3dStatus {
 
 }
 
-service Orbita3DService {
-    rpc GetAllOrbita3D (google.protobuf.Empty) returns (ListOfOrbita3D);
+service Orbita3dService {
+    rpc GetAllOrbita3d (google.protobuf.Empty) returns (ListOfOrbita3d);
 
-    rpc GetState (Orbita3DStateRequest) returns (Orbita3DState);
-    rpc StreamState (Orbita3DStreamStateRequest) returns (stream Orbita3DState);
+    rpc GetState (Orbita3dStateRequest) returns (Orbita3dState);
+    rpc StreamState (Orbita3dStreamStateRequest) returns (stream Orbita3dState);
 
-    rpc GoToOrientation (Orbita3DGoal) returns (google.protobuf.Empty);
+    rpc GoToOrientation (Orbita3dGoal) returns (google.protobuf.Empty);
 
-    rpc SendCommand (Orbita3DsCommand) returns (google.protobuf.Empty);
-    rpc StreamCommand (stream Orbita3DsCommand) returns (google.protobuf.Empty);
+    rpc SendCommand (Orbita3dsCommand) returns (google.protobuf.Empty);
+    rpc StreamCommand (stream Orbita3dsCommand) returns (google.protobuf.Empty);
 
-    rpc Audit (component.ComponentId) returns (Orbita3DStatus);
+    rpc Audit (component.ComponentId) returns (Orbita3dStatus);
     rpc HeartBeat (component.ComponentId) returns (google.protobuf.Empty);
 
     rpc Restart (component.ComponentId) returns (google.protobuf.Empty);

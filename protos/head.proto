@@ -41,7 +41,7 @@ message Head {
 }
 
 message HeadDescription {
-    component.orbita3d.Orbita3D neck = 1;
+    component.orbita3d.Orbita3d neck = 1;
 
     component.dynamixel_motor.DynamixelMotor l_antenna = 2;
     component.dynamixel_motor.DynamixelMotor r_antenna = 3;
@@ -58,25 +58,25 @@ message HeadState {
 
     bool activated = 3;
 
-    component.orbita3d.Orbita3DState neck_state = 4;
+    component.orbita3d.Orbita3dState neck_state = 4;
     component.dynamixel_motor.DynamixelMotorState l_antenna_state = 5;
     component.dynamixel_motor.DynamixelMotorState r_antenna_state = 6;
 }
 
 message HeadPosition {
-    kinematics.Rotation3D neck_position = 1;
+    kinematics.Rotation3d neck_position = 1;
     google.protobuf.FloatValue l_antenna_position = 2;
     google.protobuf.FloatValue r_antenna_position = 3;
 }
 
 message NeckGoal {
     reachy.part.PartId id = 1;
-    kinematics.Rotation3D rotation = 2;
+    kinematics.Rotation3d rotation = 2;
     google.protobuf.FloatValue duration = 3;
 }
 
 message NeckOrientation {
-    kinematics.Rotation3D rotation = 1;
+    kinematics.Rotation3d rotation = 1;
 }
 
 message NeckFKRequest {
@@ -92,12 +92,12 @@ message NeckFKSolution {
 message NeckIKRequest {
     reachy.part.PartId id = 1;
     NeckOrientation target = 2;
-    kinematics.Rotation3D q0 = 3;
+    kinematics.Rotation3d q0 = 3;
 }
 
 message NeckIKSolution {
     bool success = 1;
-    kinematics.Rotation3D position = 2;
+    kinematics.Rotation3d position = 2;
 
     error.Error error = 3;
 }
@@ -125,13 +125,13 @@ message SpeedLimitRequest {
 }
 
 message JointsLimits {
-    component.orbita3d.Limits3D neck_limits = 1;
+    component.orbita3d.Limits3d neck_limits = 1;
     component.JointLimits l_antenna_limits = 2;
     component.JointLimits r_antenna_limits = 3;
 }
 
 message HeadTemperatures {
-    component.orbita3d.Float3D neck_temperature = 1;
+    component.orbita3d.Float3d neck_temperature = 1;
     float l_antenna_temperature = 2;
     float r_antenna_temperature = 3;
 }
@@ -145,7 +145,7 @@ service HeadService {
     rpc ComputeNeckIK (NeckIKRequest) returns (NeckIKSolution);
 
     rpc GoToOrientation (NeckGoal) returns (google.protobuf.Empty);
-    rpc GetOrientation (reachy.part.PartId) returns (kinematics.Rotation3D);
+    rpc GetOrientation (reachy.part.PartId) returns (kinematics.Rotation3d);
 
     rpc LookAt (HeadLookAtGoal) returns (google.protobuf.Empty);
 
@@ -160,7 +160,7 @@ service HeadService {
 
     rpc GetJointsLimits (reachy.part.PartId) returns (JointsLimits);
     rpc GetTemperatures (reachy.part.PartId) returns (HeadTemperatures);
-    rpc GetJointGoalPosition (reachy.part.PartId) returns (kinematics.Rotation3D);
+    rpc GetJointGoalPosition (reachy.part.PartId) returns (kinematics.Rotation3d);
 
     rpc SetSpeedLimit (SpeedLimitRequest) returns (google.protobuf.Empty);
 }
