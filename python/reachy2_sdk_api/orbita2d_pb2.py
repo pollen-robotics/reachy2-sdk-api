@@ -19,10 +19,10 @@ from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 import component_pb2 as component__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0eorbita2d.proto\x12\x12\x63omponent.orbita2d\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a\x0f\x63omponent.proto\"\xd5\x04\n\rOrbita2DState\x12-\n\ttimestamp\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\"\n\x02id\x18\x02 \x01(\x0b\x32\x16.component.ComponentId\x12\x34\n\x10present_position\x18\x03 \x01(\x0b\x32\x1a.component.orbita2d.Pose2D\x12\x33\n\rpresent_speed\x18\x04 \x01(\x0b\x32\x1c.component.orbita2d.Vector2D\x12\x32\n\x0cpresent_load\x18\x05 \x01(\x0b\x32\x1c.component.orbita2d.Vector2D\x12\x30\n\x0btemperature\x18\x06 \x01(\x0b\x32\x1b.component.orbita2d.Float2D\x12\x31\n\x0bjoint_limit\x18\x07 \x01(\x0b\x32\x1c.component.orbita2d.Limits2D\x12-\n\tcompliant\x18\x08 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x31\n\rgoal_position\x18\t \x01(\x0b\x32\x1a.component.orbita2d.Pose2D\x12\x30\n\x0bspeed_limit\x18\n \x01(\x0b\x32\x1b.component.orbita2d.Float2D\x12\x31\n\x0ctorque_limit\x18\x0b \x01(\x0b\x32\x1b.component.orbita2d.Float2D\x12&\n\x03pid\x18\x0c \x01(\x0b\x32\x19.component.orbita2d.PID2D\"m\n\x14Orbita2DStateRequest\x12\x31\n\x06\x66ields\x18\x01 \x03(\x0e\x32!.component.orbita2d.Orbita2DField\x12\"\n\x02id\x18\x02 \x01(\x0b\x32\x16.component.ComponentId\"a\n\x1aOrbita2DStreamStateRequest\x12\x35\n\x03req\x18\x01 \x01(\x0b\x32(.component.orbita2d.Orbita2DStateRequest\x12\x0c\n\x04\x66req\x18\x02 \x01(\x02\"S\n\x05PID2D\x12$\n\x07motor_1\x18\x01 \x01(\x0b\x32\x13.component.PIDGains\x12$\n\x07motor_2\x18\x02 \x01(\x0b\x32\x13.component.PIDGains\"Z\n\x08Limits2D\x12&\n\x06\x61xis_1\x18\x01 \x01(\x0b\x32\x16.component.JointLimits\x12&\n\x06\x61xis_2\x18\x02 \x01(\x0b\x32\x16.component.JointLimits\"b\n\x06Pose2D\x12+\n\x06\x61xis_1\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12+\n\x06\x61xis_2\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"e\n\x07\x46loat2D\x12,\n\x07motor_1\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12,\n\x07motor_2\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"Z\n\x08Vector2D\x12&\n\x01x\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12&\n\x01y\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"\xa4\x02\n\x0fOrbita2DCommand\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12-\n\tcompliant\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x31\n\rgoal_position\x18\x03 \x01(\x0b\x32\x1a.component.orbita2d.Pose2D\x12\x30\n\x0bspeed_limit\x18\x04 \x01(\x0b\x32\x1b.component.orbita2d.Float2D\x12\x31\n\x0ctorque_limit\x18\x05 \x01(\x0b\x32\x1b.component.orbita2d.Float2D\x12&\n\x03pid\x18\x0c \x01(\x0b\x32\x19.component.orbita2d.PID2D\"D\n\x10Orbita2DsCommand\x12\x30\n\x03\x63md\x18\x01 \x03(\x0b\x32#.component.orbita2d.Orbita2DCommand\"\x99\x01\n\x08Orbita2D\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\x15\n\rserial_number\x18\x02 \x01(\t\x12(\n\x06\x61xis_1\x18\x03 \x01(\x0e\x32\x18.component.orbita2d.Axis\x12(\n\x06\x61xis_2\x18\x04 \x01(\x0e\x32\x18.component.orbita2d.Axis\"@\n\x0eListOfOrbita2D\x12.\n\x08orbita2D\x18\x01 \x03(\x0b\x32\x1c.component.orbita2d.Orbita2D\"\x10\n\x0eOrbita2DStatus*\xdf\x01\n\rOrbita2DField\x12\x08\n\x04NONE\x10\x00\x12\x08\n\x04NAME\x10\x01\x12\x06\n\x02ID\x10\x02\x12\x14\n\x10PRESENT_POSITION\x10\x03\x12\x11\n\rPRESENT_SPEED\x10\x04\x12\x10\n\x0cPRESENT_LOAD\x10\x05\x12\x0f\n\x0bTEMPERATURE\x10\x06\x12\x0f\n\x0bJOINT_LIMIT\x10\x07\x12\r\n\tCOMPLIANT\x10\x08\x12\x11\n\rGOAL_POSITION\x10\t\x12\x0f\n\x0bSPEED_LIMIT\x10\n\x12\x10\n\x0cTORQUE_LIMIT\x10\x0b\x12\x07\n\x03PID\x10\x0c\x12\x07\n\x03\x41LL\x10\x0f*$\n\x04\x41xis\x12\x08\n\x04ROLL\x10\x00\x12\t\n\x05PITCH\x10\x01\x12\x07\n\x03YAW\x10\x02\x32\xf7\x04\n\x0fOrbita2DService\x12L\n\x0eGetAllOrbita2D\x12\x16.google.protobuf.Empty\x1a\".component.orbita2d.ListOfOrbita2D\x12W\n\x08GetState\x12(.component.orbita2d.Orbita2DStateRequest\x1a!.component.orbita2d.Orbita2DState\x12\x62\n\x0bStreamState\x12..component.orbita2d.Orbita2DStreamStateRequest\x1a!.component.orbita2d.Orbita2DState0\x01\x12K\n\x0bSendCommand\x12$.component.orbita2d.Orbita2DsCommand\x1a\x16.google.protobuf.Empty\x12O\n\rStreamCommand\x12$.component.orbita2d.Orbita2DsCommand\x1a\x16.google.protobuf.Empty(\x01\x12\x43\n\x05\x41udit\x12\x16.component.ComponentId\x1a\".component.orbita2d.Orbita2DStatus\x12;\n\tHeartBeat\x12\x16.component.ComponentId\x1a\x16.google.protobuf.Empty\x12\x39\n\x07Restart\x12\x16.component.ComponentId\x1a\x16.google.protobuf.Emptyb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0eorbita2d.proto\x12\x12\x63omponent.orbita2d\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a\x0f\x63omponent.proto\"\xd5\x04\n\rOrbita2dState\x12-\n\ttimestamp\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\"\n\x02id\x18\x02 \x01(\x0b\x32\x16.component.ComponentId\x12\x34\n\x10present_position\x18\x03 \x01(\x0b\x32\x1a.component.orbita2d.Pose2d\x12\x33\n\rpresent_speed\x18\x04 \x01(\x0b\x32\x1c.component.orbita2d.Vector2d\x12\x32\n\x0cpresent_load\x18\x05 \x01(\x0b\x32\x1c.component.orbita2d.Vector2d\x12\x30\n\x0btemperature\x18\x06 \x01(\x0b\x32\x1b.component.orbita2d.Float2d\x12\x31\n\x0bjoint_limit\x18\x07 \x01(\x0b\x32\x1c.component.orbita2d.Limits2d\x12-\n\tcompliant\x18\x08 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x31\n\rgoal_position\x18\t \x01(\x0b\x32\x1a.component.orbita2d.Pose2d\x12\x30\n\x0bspeed_limit\x18\n \x01(\x0b\x32\x1b.component.orbita2d.Float2d\x12\x31\n\x0ctorque_limit\x18\x0b \x01(\x0b\x32\x1b.component.orbita2d.Float2d\x12&\n\x03pid\x18\x0c \x01(\x0b\x32\x19.component.orbita2d.PID2d\"m\n\x14Orbita2dStateRequest\x12\x31\n\x06\x66ields\x18\x01 \x03(\x0e\x32!.component.orbita2d.Orbita2dField\x12\"\n\x02id\x18\x02 \x01(\x0b\x32\x16.component.ComponentId\"a\n\x1aOrbita2dStreamStateRequest\x12\x35\n\x03req\x18\x01 \x01(\x0b\x32(.component.orbita2d.Orbita2dStateRequest\x12\x0c\n\x04\x66req\x18\x02 \x01(\x02\"S\n\x05PID2d\x12$\n\x07motor_1\x18\x01 \x01(\x0b\x32\x13.component.PIDGains\x12$\n\x07motor_2\x18\x02 \x01(\x0b\x32\x13.component.PIDGains\"Z\n\x08Limits2d\x12&\n\x06\x61xis_1\x18\x01 \x01(\x0b\x32\x16.component.JointLimits\x12&\n\x06\x61xis_2\x18\x02 \x01(\x0b\x32\x16.component.JointLimits\"b\n\x06Pose2d\x12+\n\x06\x61xis_1\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12+\n\x06\x61xis_2\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"e\n\x07\x46loat2d\x12,\n\x07motor_1\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12,\n\x07motor_2\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"Z\n\x08Vector2d\x12&\n\x01x\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12&\n\x01y\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"\xa4\x02\n\x0fOrbita2dCommand\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12-\n\tcompliant\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x31\n\rgoal_position\x18\x03 \x01(\x0b\x32\x1a.component.orbita2d.Pose2d\x12\x30\n\x0bspeed_limit\x18\x04 \x01(\x0b\x32\x1b.component.orbita2d.Float2d\x12\x31\n\x0ctorque_limit\x18\x05 \x01(\x0b\x32\x1b.component.orbita2d.Float2d\x12&\n\x03pid\x18\x0c \x01(\x0b\x32\x19.component.orbita2d.PID2d\"D\n\x10Orbita2dsCommand\x12\x30\n\x03\x63md\x18\x01 \x03(\x0b\x32#.component.orbita2d.Orbita2dCommand\"\x99\x01\n\x08Orbita2d\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\x15\n\rserial_number\x18\x02 \x01(\t\x12(\n\x06\x61xis_1\x18\x03 \x01(\x0e\x32\x18.component.orbita2d.Axis\x12(\n\x06\x61xis_2\x18\x04 \x01(\x0e\x32\x18.component.orbita2d.Axis\"@\n\x0eListOfOrbita2d\x12.\n\x08orbita2d\x18\x01 \x03(\x0b\x32\x1c.component.orbita2d.Orbita2d\"\x10\n\x0eOrbita2dStatus*\xdf\x01\n\rOrbita2dField\x12\x08\n\x04NONE\x10\x00\x12\x08\n\x04NAME\x10\x01\x12\x06\n\x02ID\x10\x02\x12\x14\n\x10PRESENT_POSITION\x10\x03\x12\x11\n\rPRESENT_SPEED\x10\x04\x12\x10\n\x0cPRESENT_LOAD\x10\x05\x12\x0f\n\x0bTEMPERATURE\x10\x06\x12\x0f\n\x0bJOINT_LIMIT\x10\x07\x12\r\n\tCOMPLIANT\x10\x08\x12\x11\n\rGOAL_POSITION\x10\t\x12\x0f\n\x0bSPEED_LIMIT\x10\n\x12\x10\n\x0cTORQUE_LIMIT\x10\x0b\x12\x07\n\x03PID\x10\x0c\x12\x07\n\x03\x41LL\x10\x0f*$\n\x04\x41xis\x12\x08\n\x04ROLL\x10\x00\x12\t\n\x05PITCH\x10\x01\x12\x07\n\x03YAW\x10\x02\x32\xf7\x04\n\x0fOrbita2dService\x12L\n\x0eGetAllOrbita2d\x12\x16.google.protobuf.Empty\x1a\".component.orbita2d.ListOfOrbita2d\x12W\n\x08GetState\x12(.component.orbita2d.Orbita2dStateRequest\x1a!.component.orbita2d.Orbita2dState\x12\x62\n\x0bStreamState\x12..component.orbita2d.Orbita2dStreamStateRequest\x1a!.component.orbita2d.Orbita2dState0\x01\x12K\n\x0bSendCommand\x12$.component.orbita2d.Orbita2dsCommand\x1a\x16.google.protobuf.Empty\x12O\n\rStreamCommand\x12$.component.orbita2d.Orbita2dsCommand\x1a\x16.google.protobuf.Empty(\x01\x12\x43\n\x05\x41udit\x12\x16.component.ComponentId\x1a\".component.orbita2d.Orbita2dStatus\x12;\n\tHeartBeat\x12\x16.component.ComponentId\x1a\x16.google.protobuf.Empty\x12\x39\n\x07Restart\x12\x16.component.ComponentId\x1a\x16.google.protobuf.Emptyb\x06proto3')
 
-_ORBITA2DFIELD = DESCRIPTOR.enum_types_by_name['Orbita2DField']
-Orbita2DField = enum_type_wrapper.EnumTypeWrapper(_ORBITA2DFIELD)
+_ORBITA2DFIELD = DESCRIPTOR.enum_types_by_name['Orbita2dField']
+Orbita2dField = enum_type_wrapper.EnumTypeWrapper(_ORBITA2DFIELD)
 _AXIS = DESCRIPTOR.enum_types_by_name['Axis']
 Axis = enum_type_wrapper.EnumTypeWrapper(_AXIS)
 NONE = 0
@@ -44,111 +44,111 @@ PITCH = 1
 YAW = 2
 
 
-_ORBITA2DSTATE = DESCRIPTOR.message_types_by_name['Orbita2DState']
-_ORBITA2DSTATEREQUEST = DESCRIPTOR.message_types_by_name['Orbita2DStateRequest']
-_ORBITA2DSTREAMSTATEREQUEST = DESCRIPTOR.message_types_by_name['Orbita2DStreamStateRequest']
-_PID2D = DESCRIPTOR.message_types_by_name['PID2D']
-_LIMITS2D = DESCRIPTOR.message_types_by_name['Limits2D']
-_POSE2D = DESCRIPTOR.message_types_by_name['Pose2D']
-_FLOAT2D = DESCRIPTOR.message_types_by_name['Float2D']
-_VECTOR2D = DESCRIPTOR.message_types_by_name['Vector2D']
-_ORBITA2DCOMMAND = DESCRIPTOR.message_types_by_name['Orbita2DCommand']
-_ORBITA2DSCOMMAND = DESCRIPTOR.message_types_by_name['Orbita2DsCommand']
-_ORBITA2D = DESCRIPTOR.message_types_by_name['Orbita2D']
-_LISTOFORBITA2D = DESCRIPTOR.message_types_by_name['ListOfOrbita2D']
-_ORBITA2DSTATUS = DESCRIPTOR.message_types_by_name['Orbita2DStatus']
-Orbita2DState = _reflection.GeneratedProtocolMessageType('Orbita2DState', (_message.Message,), {
+_ORBITA2DSTATE = DESCRIPTOR.message_types_by_name['Orbita2dState']
+_ORBITA2DSTATEREQUEST = DESCRIPTOR.message_types_by_name['Orbita2dStateRequest']
+_ORBITA2DSTREAMSTATEREQUEST = DESCRIPTOR.message_types_by_name['Orbita2dStreamStateRequest']
+_PID2D = DESCRIPTOR.message_types_by_name['PID2d']
+_LIMITS2D = DESCRIPTOR.message_types_by_name['Limits2d']
+_POSE2D = DESCRIPTOR.message_types_by_name['Pose2d']
+_FLOAT2D = DESCRIPTOR.message_types_by_name['Float2d']
+_VECTOR2D = DESCRIPTOR.message_types_by_name['Vector2d']
+_ORBITA2DCOMMAND = DESCRIPTOR.message_types_by_name['Orbita2dCommand']
+_ORBITA2DSCOMMAND = DESCRIPTOR.message_types_by_name['Orbita2dsCommand']
+_ORBITA2D = DESCRIPTOR.message_types_by_name['Orbita2d']
+_LISTOFORBITA2D = DESCRIPTOR.message_types_by_name['ListOfOrbita2d']
+_ORBITA2DSTATUS = DESCRIPTOR.message_types_by_name['Orbita2dStatus']
+Orbita2dState = _reflection.GeneratedProtocolMessageType('Orbita2dState', (_message.Message,), {
   'DESCRIPTOR' : _ORBITA2DSTATE,
   '__module__' : 'orbita2d_pb2'
-  # @@protoc_insertion_point(class_scope:component.orbita2d.Orbita2DState)
+  # @@protoc_insertion_point(class_scope:component.orbita2d.Orbita2dState)
   })
-_sym_db.RegisterMessage(Orbita2DState)
+_sym_db.RegisterMessage(Orbita2dState)
 
-Orbita2DStateRequest = _reflection.GeneratedProtocolMessageType('Orbita2DStateRequest', (_message.Message,), {
+Orbita2dStateRequest = _reflection.GeneratedProtocolMessageType('Orbita2dStateRequest', (_message.Message,), {
   'DESCRIPTOR' : _ORBITA2DSTATEREQUEST,
   '__module__' : 'orbita2d_pb2'
-  # @@protoc_insertion_point(class_scope:component.orbita2d.Orbita2DStateRequest)
+  # @@protoc_insertion_point(class_scope:component.orbita2d.Orbita2dStateRequest)
   })
-_sym_db.RegisterMessage(Orbita2DStateRequest)
+_sym_db.RegisterMessage(Orbita2dStateRequest)
 
-Orbita2DStreamStateRequest = _reflection.GeneratedProtocolMessageType('Orbita2DStreamStateRequest', (_message.Message,), {
+Orbita2dStreamStateRequest = _reflection.GeneratedProtocolMessageType('Orbita2dStreamStateRequest', (_message.Message,), {
   'DESCRIPTOR' : _ORBITA2DSTREAMSTATEREQUEST,
   '__module__' : 'orbita2d_pb2'
-  # @@protoc_insertion_point(class_scope:component.orbita2d.Orbita2DStreamStateRequest)
+  # @@protoc_insertion_point(class_scope:component.orbita2d.Orbita2dStreamStateRequest)
   })
-_sym_db.RegisterMessage(Orbita2DStreamStateRequest)
+_sym_db.RegisterMessage(Orbita2dStreamStateRequest)
 
-PID2D = _reflection.GeneratedProtocolMessageType('PID2D', (_message.Message,), {
+PID2d = _reflection.GeneratedProtocolMessageType('PID2d', (_message.Message,), {
   'DESCRIPTOR' : _PID2D,
   '__module__' : 'orbita2d_pb2'
-  # @@protoc_insertion_point(class_scope:component.orbita2d.PID2D)
+  # @@protoc_insertion_point(class_scope:component.orbita2d.PID2d)
   })
-_sym_db.RegisterMessage(PID2D)
+_sym_db.RegisterMessage(PID2d)
 
-Limits2D = _reflection.GeneratedProtocolMessageType('Limits2D', (_message.Message,), {
+Limits2d = _reflection.GeneratedProtocolMessageType('Limits2d', (_message.Message,), {
   'DESCRIPTOR' : _LIMITS2D,
   '__module__' : 'orbita2d_pb2'
-  # @@protoc_insertion_point(class_scope:component.orbita2d.Limits2D)
+  # @@protoc_insertion_point(class_scope:component.orbita2d.Limits2d)
   })
-_sym_db.RegisterMessage(Limits2D)
+_sym_db.RegisterMessage(Limits2d)
 
-Pose2D = _reflection.GeneratedProtocolMessageType('Pose2D', (_message.Message,), {
+Pose2d = _reflection.GeneratedProtocolMessageType('Pose2d', (_message.Message,), {
   'DESCRIPTOR' : _POSE2D,
   '__module__' : 'orbita2d_pb2'
-  # @@protoc_insertion_point(class_scope:component.orbita2d.Pose2D)
+  # @@protoc_insertion_point(class_scope:component.orbita2d.Pose2d)
   })
-_sym_db.RegisterMessage(Pose2D)
+_sym_db.RegisterMessage(Pose2d)
 
-Float2D = _reflection.GeneratedProtocolMessageType('Float2D', (_message.Message,), {
+Float2d = _reflection.GeneratedProtocolMessageType('Float2d', (_message.Message,), {
   'DESCRIPTOR' : _FLOAT2D,
   '__module__' : 'orbita2d_pb2'
-  # @@protoc_insertion_point(class_scope:component.orbita2d.Float2D)
+  # @@protoc_insertion_point(class_scope:component.orbita2d.Float2d)
   })
-_sym_db.RegisterMessage(Float2D)
+_sym_db.RegisterMessage(Float2d)
 
-Vector2D = _reflection.GeneratedProtocolMessageType('Vector2D', (_message.Message,), {
+Vector2d = _reflection.GeneratedProtocolMessageType('Vector2d', (_message.Message,), {
   'DESCRIPTOR' : _VECTOR2D,
   '__module__' : 'orbita2d_pb2'
-  # @@protoc_insertion_point(class_scope:component.orbita2d.Vector2D)
+  # @@protoc_insertion_point(class_scope:component.orbita2d.Vector2d)
   })
-_sym_db.RegisterMessage(Vector2D)
+_sym_db.RegisterMessage(Vector2d)
 
-Orbita2DCommand = _reflection.GeneratedProtocolMessageType('Orbita2DCommand', (_message.Message,), {
+Orbita2dCommand = _reflection.GeneratedProtocolMessageType('Orbita2dCommand', (_message.Message,), {
   'DESCRIPTOR' : _ORBITA2DCOMMAND,
   '__module__' : 'orbita2d_pb2'
-  # @@protoc_insertion_point(class_scope:component.orbita2d.Orbita2DCommand)
+  # @@protoc_insertion_point(class_scope:component.orbita2d.Orbita2dCommand)
   })
-_sym_db.RegisterMessage(Orbita2DCommand)
+_sym_db.RegisterMessage(Orbita2dCommand)
 
-Orbita2DsCommand = _reflection.GeneratedProtocolMessageType('Orbita2DsCommand', (_message.Message,), {
+Orbita2dsCommand = _reflection.GeneratedProtocolMessageType('Orbita2dsCommand', (_message.Message,), {
   'DESCRIPTOR' : _ORBITA2DSCOMMAND,
   '__module__' : 'orbita2d_pb2'
-  # @@protoc_insertion_point(class_scope:component.orbita2d.Orbita2DsCommand)
+  # @@protoc_insertion_point(class_scope:component.orbita2d.Orbita2dsCommand)
   })
-_sym_db.RegisterMessage(Orbita2DsCommand)
+_sym_db.RegisterMessage(Orbita2dsCommand)
 
-Orbita2D = _reflection.GeneratedProtocolMessageType('Orbita2D', (_message.Message,), {
+Orbita2d = _reflection.GeneratedProtocolMessageType('Orbita2d', (_message.Message,), {
   'DESCRIPTOR' : _ORBITA2D,
   '__module__' : 'orbita2d_pb2'
-  # @@protoc_insertion_point(class_scope:component.orbita2d.Orbita2D)
+  # @@protoc_insertion_point(class_scope:component.orbita2d.Orbita2d)
   })
-_sym_db.RegisterMessage(Orbita2D)
+_sym_db.RegisterMessage(Orbita2d)
 
-ListOfOrbita2D = _reflection.GeneratedProtocolMessageType('ListOfOrbita2D', (_message.Message,), {
+ListOfOrbita2d = _reflection.GeneratedProtocolMessageType('ListOfOrbita2d', (_message.Message,), {
   'DESCRIPTOR' : _LISTOFORBITA2D,
   '__module__' : 'orbita2d_pb2'
-  # @@protoc_insertion_point(class_scope:component.orbita2d.ListOfOrbita2D)
+  # @@protoc_insertion_point(class_scope:component.orbita2d.ListOfOrbita2d)
   })
-_sym_db.RegisterMessage(ListOfOrbita2D)
+_sym_db.RegisterMessage(ListOfOrbita2d)
 
-Orbita2DStatus = _reflection.GeneratedProtocolMessageType('Orbita2DStatus', (_message.Message,), {
+Orbita2dStatus = _reflection.GeneratedProtocolMessageType('Orbita2dStatus', (_message.Message,), {
   'DESCRIPTOR' : _ORBITA2DSTATUS,
   '__module__' : 'orbita2d_pb2'
-  # @@protoc_insertion_point(class_scope:component.orbita2d.Orbita2DStatus)
+  # @@protoc_insertion_point(class_scope:component.orbita2d.Orbita2dStatus)
   })
-_sym_db.RegisterMessage(Orbita2DStatus)
+_sym_db.RegisterMessage(Orbita2dStatus)
 
-_ORBITA2DSERVICE = DESCRIPTOR.services_by_name['Orbita2DService']
+_ORBITA2DSERVICE = DESCRIPTOR.services_by_name['Orbita2dService']
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None

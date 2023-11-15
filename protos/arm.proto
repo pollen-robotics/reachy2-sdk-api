@@ -40,15 +40,15 @@ message ArmState {
 
     bool activated = 3;
 
-    component.orbita2d.Orbita2DState shoulder_state = 4;
-    component.orbita2d.Orbita2DState elbow_state = 5;
-    component.orbita3d.Orbita3DState wrist_state = 6;
+    component.orbita2d.Orbita2dState shoulder_state = 4;
+    component.orbita2d.Orbita2dState elbow_state = 5;
+    component.orbita3d.Orbita3dState wrist_state = 6;
 }
 
 message ArmDescription {
-    component.orbita2d.Orbita2D shoulder = 1;
-    component.orbita2d.Orbita2D elbow = 2;
-    component.orbita3d.Orbita3D wrist = 3;
+    component.orbita2d.Orbita2d shoulder = 1;
+    component.orbita2d.Orbita2d elbow = 2;
+    component.orbita3d.Orbita3d wrist = 3;
 }
 
 message Arm {
@@ -62,16 +62,16 @@ message ListOfArm {
 }
 
 message ArmPosition {
-    component.orbita2d.Pose2D shoulder_position = 1;
-    component.orbita2d.Pose2D elbow_position = 2;
-    kinematics.Rotation3D wrist_position = 3;
+    component.orbita2d.Pose2d shoulder_position = 1;
+    component.orbita2d.Pose2d elbow_position = 2;
+    kinematics.Rotation3d wrist_position = 3;
 }
 
 message ArmCartesianGoal {
     reachy.part.PartId id = 1;
 
     kinematics.Point target_position = 2;
-    kinematics.Rotation3D target_orientation = 3;
+    kinematics.Rotation3d target_orientation = 3;
     
     kinematics.PointDistanceTolerances position_tolerance = 4;
     kinematics.ExtEulerAnglesTolerances orientation_tolerance = 5;
@@ -129,15 +129,15 @@ message SpeedLimitRequest {
 }
 
 message ArmLimits {
-    component.orbita2d.Limits2D shoulder_limits = 1;
-    component.orbita2d.Limits2D elbow_limits = 2;
-    component.orbita3d.Limits3D wrist_limits = 3;
+    component.orbita2d.Limits2d shoulder_limits = 1;
+    component.orbita2d.Limits2d elbow_limits = 2;
+    component.orbita3d.Limits3d wrist_limits = 3;
 }
 
 message ArmTemperatures {
-    component.orbita2d.Float2D shoulder_temperature = 1;
-    component.orbita2d.Float2D elbow_temperature = 2;
-    component.orbita3d.Float3D wrist_temperature = 3;
+    component.orbita2d.Float2d shoulder_temperature = 1;
+    component.orbita2d.Float2d elbow_temperature = 2;
+    component.orbita3d.Float3d wrist_temperature = 3;
 }
 
 service ArmService {
