@@ -68,7 +68,7 @@ service SoundService {
     rpc GetAllMicrophone (google.protobuf.Empty) returns (ListOfMicrophone);
     rpc GetAllSpeaker (google.protobuf.Empty) returns (ListOfSpeaker);
 
-    rpc StartRecording (RecordingRequest) returns (google.protobuf.Empty);
+    rpc StartRecording (RecordingRequest) returns (RecordingAck);
     rpc StopRecording (component.ComponentId) returns (RecordingAck);
 
     rpc TestSpeaker (component.ComponentId) returns (google.protobuf.Empty);

@@ -29,7 +29,7 @@ class SoundServiceStub(object):
         self.StartRecording = channel.unary_unary(
                 '/component.sound.SoundService/StartRecording',
                 request_serializer=sound__pb2.RecordingRequest.SerializeToString,
-                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                response_deserializer=sound__pb2.RecordingAck.FromString,
                 )
         self.StopRecording = channel.unary_unary(
                 '/component.sound.SoundService/StopRecording',
@@ -136,7 +136,7 @@ def add_SoundServiceServicer_to_server(servicer, server):
             'StartRecording': grpc.unary_unary_rpc_method_handler(
                     servicer.StartRecording,
                     request_deserializer=sound__pb2.RecordingRequest.FromString,
-                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+                    response_serializer=sound__pb2.RecordingAck.SerializeToString,
             ),
             'StopRecording': grpc.unary_unary_rpc_method_handler(
                     servicer.StopRecording,
@@ -225,7 +225,7 @@ class SoundService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/component.sound.SoundService/StartRecording',
             sound__pb2.RecordingRequest.SerializeToString,
-            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+            sound__pb2.RecordingAck.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
