@@ -22,6 +22,10 @@ message HandState {
     google.protobuf.FloatValue force = 2;
 
     google.protobuf.BoolValue holding_object = 3;
+    JointsLimits joints_limits = 4;
+    HandTemperatures temperatures = 5;
+    HandPosition present_position = 6;
+    HandPosition goal_position = 7;
 }
 
 message HandStatus {
@@ -105,6 +109,7 @@ service HandService {
     rpc GetHandGoalPosition (reachy.part.PartId) returns (HandPosition);
 
     rpc SetSpeedLimit (SpeedLimitRequest) returns (google.protobuf.Empty);
+    rpc SetHandPosition (HandPosition) returns (google.protobuf.Empty);
 
     rpc GetForce (part.PartId) returns (Force);
 }
