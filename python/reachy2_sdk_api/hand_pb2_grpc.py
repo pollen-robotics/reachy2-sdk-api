@@ -88,7 +88,7 @@ class HandServiceStub(object):
                 )
         self.SetHandPosition = channel.unary_unary(
                 '/reachy.part.hand.HandService/SetHandPosition',
-                request_serializer=hand__pb2.HandPosition.SerializeToString,
+                request_serializer=hand__pb2.HandPositionRequest.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.GetForce = channel.unary_unary(
@@ -272,7 +272,7 @@ def add_HandServiceServicer_to_server(servicer, server):
             ),
             'SetHandPosition': grpc.unary_unary_rpc_method_handler(
                     servicer.SetHandPosition,
-                    request_deserializer=hand__pb2.HandPosition.FromString,
+                    request_deserializer=hand__pb2.HandPositionRequest.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'GetForce': grpc.unary_unary_rpc_method_handler(
@@ -540,7 +540,7 @@ class HandService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/SetHandPosition',
-            hand__pb2.HandPosition.SerializeToString,
+            hand__pb2.HandPositionRequest.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

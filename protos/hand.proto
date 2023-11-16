@@ -61,6 +61,11 @@ message HandPosition {
     }
 }
 
+message HandPositionRequest {
+    reachy.part.PartId id = 1;
+    HandPosition position = 2;
+}
+
 message Temperatures {
     float motor = 1;
     float driver = 2;
@@ -109,7 +114,7 @@ service HandService {
     rpc GetHandGoalPosition (reachy.part.PartId) returns (HandPosition);
 
     rpc SetSpeedLimit (SpeedLimitRequest) returns (google.protobuf.Empty);
-    rpc SetHandPosition (HandPosition) returns (google.protobuf.Empty);
+    rpc SetHandPosition (HandPositionRequest) returns (google.protobuf.Empty);
 
     rpc GetForce (part.PartId) returns (Force);
 }
