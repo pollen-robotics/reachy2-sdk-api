@@ -18,7 +18,7 @@ import component_pb2 as component__pb2
 import error_pb2 as error__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0bsound.proto\x12\x0f\x63omponent.sound\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a\x0f\x63omponent.proto\x1a\x0b\x65rror.proto\">\n\nMicrophone\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\x0c\n\x04gain\x18\x02 \x01(\x02\"H\n\x10ListOfMicrophone\x12\x34\n\x0fmicrophone_info\x18\x01 \x03(\x0b\x32\x1b.component.sound.Microphone\"T\n\x08SoundAck\x12+\n\x07success\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x1b\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x0c.error.Error\"p\n\x0cSoundRequest\x12\'\n\x07speaker\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\'\n\x05sound\x18\x02 \x01(\x0b\x32\x18.component.sound.SoundId\x12\x0e\n\x06volume\x18\x03 \x01(\x02\"\x15\n\x07SoundId\x12\n\n\x02id\x18\x01 \x01(\t\"f\n\x0cRecordingAck\x12&\n\x03\x61\x63k\x18\x01 \x01(\x0b\x32\x19.component.sound.SoundAck\x12.\n\x0crecording_id\x18\x02 \x01(\x0b\x32\x18.component.sound.SoundId\"i\n\x10RecordingRequest\x12%\n\x05micro\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12.\n\x0crecording_id\x18\x02 \x01(\x0b\x32\x18.component.sound.SoundId\"=\n\x07Speaker\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\x0e\n\x06volume\x18\x02 \x01(\x02\"?\n\rListOfSpeaker\x12.\n\x0cspeaker_info\x18\x01 \x03(\x0b\x32\x18.component.sound.Speaker\"C\n\rVolumeRequest\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\x0e\n\x06volume\x18\x02 \x01(\x02\"7\n\x0bListOfSound\x12(\n\x06sounds\x18\x01 \x03(\x0b\x32\x18.component.sound.SoundId2\x91\x05\n\x0cSoundService\x12M\n\x10GetAllMicrophone\x12\x16.google.protobuf.Empty\x1a!.component.sound.ListOfMicrophone\x12G\n\rGetAllSpeaker\x12\x16.google.protobuf.Empty\x1a\x1e.component.sound.ListOfSpeaker\x12R\n\x0eStartRecording\x12!.component.sound.RecordingRequest\x1a\x1d.component.sound.RecordingAck\x12\x46\n\rStopRecording\x12\x16.component.ComponentId\x1a\x1d.component.sound.RecordingAck\x12=\n\x0bTestSpeaker\x12\x16.component.ComponentId\x1a\x16.google.protobuf.Empty\x12\x46\n\x0c\x43hangeVolume\x12\x1e.component.sound.VolumeRequest\x1a\x16.google.protobuf.Empty\x12\x42\n\tPlaySound\x12\x1d.component.sound.SoundRequest\x1a\x16.google.protobuf.Empty\x12;\n\tStopSound\x12\x16.component.ComponentId\x1a\x16.google.protobuf.Empty\x12\x45\n\rGetSoundsList\x12\x16.google.protobuf.Empty\x1a\x1c.component.sound.ListOfSoundb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0bsound.proto\x12\x0f\x63omponent.sound\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a\x0f\x63omponent.proto\x1a\x0b\x65rror.proto\">\n\nMicrophone\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\x0c\n\x04gain\x18\x02 \x01(\x02\"H\n\x10ListOfMicrophone\x12\x34\n\x0fmicrophone_info\x18\x01 \x03(\x0b\x32\x1b.component.sound.Microphone\"T\n\x08SoundAck\x12+\n\x07success\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x1b\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x0c.error.Error\"p\n\x0cSoundRequest\x12\'\n\x07speaker\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\'\n\x05sound\x18\x02 \x01(\x0b\x32\x18.component.sound.SoundId\x12\x0e\n\x06volume\x18\x03 \x01(\x02\"\x15\n\x07SoundId\x12\n\n\x02id\x18\x01 \x01(\t\"\x1b\n\x0bTextRequest\x12\x0c\n\x04text\x18\x01 \x01(\t\"f\n\x0cRecordingAck\x12&\n\x03\x61\x63k\x18\x01 \x01(\x0b\x32\x19.component.sound.SoundAck\x12.\n\x0crecording_id\x18\x02 \x01(\x0b\x32\x18.component.sound.SoundId\"i\n\x10RecordingRequest\x12%\n\x05micro\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12.\n\x0crecording_id\x18\x02 \x01(\x0b\x32\x18.component.sound.SoundId\"=\n\x07Speaker\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\x0e\n\x06volume\x18\x02 \x01(\x02\"?\n\rListOfSpeaker\x12.\n\x0cspeaker_info\x18\x01 \x03(\x0b\x32\x18.component.sound.Speaker\"C\n\rVolumeRequest\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\x0e\n\x06volume\x18\x02 \x01(\x02\"7\n\x0bListOfSound\x12(\n\x06sounds\x18\x01 \x03(\x0b\x32\x18.component.sound.SoundId2\xd2\x05\n\x0cSoundService\x12M\n\x10GetAllMicrophone\x12\x16.google.protobuf.Empty\x1a!.component.sound.ListOfMicrophone\x12G\n\rGetAllSpeaker\x12\x16.google.protobuf.Empty\x1a\x1e.component.sound.ListOfSpeaker\x12R\n\x0eStartRecording\x12!.component.sound.RecordingRequest\x1a\x1d.component.sound.RecordingAck\x12\x46\n\rStopRecording\x12\x16.component.ComponentId\x1a\x1d.component.sound.RecordingAck\x12=\n\x0bTestSpeaker\x12\x16.component.ComponentId\x1a\x16.google.protobuf.Empty\x12\x46\n\x0c\x43hangeVolume\x12\x1e.component.sound.VolumeRequest\x1a\x16.google.protobuf.Empty\x12\x42\n\tPlaySound\x12\x1d.component.sound.SoundRequest\x1a\x16.google.protobuf.Empty\x12;\n\tStopSound\x12\x16.component.ComponentId\x1a\x16.google.protobuf.Empty\x12\x45\n\rGetSoundsList\x12\x16.google.protobuf.Empty\x1a\x1c.component.sound.ListOfSound\x12?\n\x07SayText\x12\x1c.component.sound.TextRequest\x1a\x16.google.protobuf.Emptyb\x06proto3')
 
 
 
@@ -27,6 +27,7 @@ _LISTOFMICROPHONE = DESCRIPTOR.message_types_by_name['ListOfMicrophone']
 _SOUNDACK = DESCRIPTOR.message_types_by_name['SoundAck']
 _SOUNDREQUEST = DESCRIPTOR.message_types_by_name['SoundRequest']
 _SOUNDID = DESCRIPTOR.message_types_by_name['SoundId']
+_TEXTREQUEST = DESCRIPTOR.message_types_by_name['TextRequest']
 _RECORDINGACK = DESCRIPTOR.message_types_by_name['RecordingAck']
 _RECORDINGREQUEST = DESCRIPTOR.message_types_by_name['RecordingRequest']
 _SPEAKER = DESCRIPTOR.message_types_by_name['Speaker']
@@ -67,6 +68,13 @@ SoundId = _reflection.GeneratedProtocolMessageType('SoundId', (_message.Message,
   # @@protoc_insertion_point(class_scope:component.sound.SoundId)
   })
 _sym_db.RegisterMessage(SoundId)
+
+TextRequest = _reflection.GeneratedProtocolMessageType('TextRequest', (_message.Message,), {
+  'DESCRIPTOR' : _TEXTREQUEST,
+  '__module__' : 'sound_pb2'
+  # @@protoc_insertion_point(class_scope:component.sound.TextRequest)
+  })
+_sym_db.RegisterMessage(TextRequest)
 
 RecordingAck = _reflection.GeneratedProtocolMessageType('RecordingAck', (_message.Message,), {
   'DESCRIPTOR' : _RECORDINGACK,
@@ -124,18 +132,20 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _SOUNDREQUEST._serialized_end=459
   _SOUNDID._serialized_start=461
   _SOUNDID._serialized_end=482
-  _RECORDINGACK._serialized_start=484
-  _RECORDINGACK._serialized_end=586
-  _RECORDINGREQUEST._serialized_start=588
-  _RECORDINGREQUEST._serialized_end=693
-  _SPEAKER._serialized_start=695
-  _SPEAKER._serialized_end=756
-  _LISTOFSPEAKER._serialized_start=758
-  _LISTOFSPEAKER._serialized_end=821
-  _VOLUMEREQUEST._serialized_start=823
-  _VOLUMEREQUEST._serialized_end=890
-  _LISTOFSOUND._serialized_start=892
-  _LISTOFSOUND._serialized_end=947
-  _SOUNDSERVICE._serialized_start=950
-  _SOUNDSERVICE._serialized_end=1607
+  _TEXTREQUEST._serialized_start=484
+  _TEXTREQUEST._serialized_end=511
+  _RECORDINGACK._serialized_start=513
+  _RECORDINGACK._serialized_end=615
+  _RECORDINGREQUEST._serialized_start=617
+  _RECORDINGREQUEST._serialized_end=722
+  _SPEAKER._serialized_start=724
+  _SPEAKER._serialized_end=785
+  _LISTOFSPEAKER._serialized_start=787
+  _LISTOFSPEAKER._serialized_end=850
+  _VOLUMEREQUEST._serialized_start=852
+  _VOLUMEREQUEST._serialized_end=919
+  _LISTOFSOUND._serialized_start=921
+  _LISTOFSOUND._serialized_end=976
+  _SOUNDSERVICE._serialized_start=979
+  _SOUNDSERVICE._serialized_end=1701
 # @@protoc_insertion_point(module_scope)

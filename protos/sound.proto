@@ -34,6 +34,10 @@ message SoundId {
     string id = 1;
 }
 
+message TextRequest {
+    string text = 1;
+}
+
 message RecordingAck {
     SoundAck ack = 1;
     SoundId recording_id = 2;
@@ -78,4 +82,6 @@ service SoundService {
     rpc StopSound (component.ComponentId) returns (google.protobuf.Empty);
 
     rpc GetSoundsList(google.protobuf.Empty) returns (ListOfSound);
+
+    rpc SayText (TextRequest) returns (google.protobuf.Empty);
 }
