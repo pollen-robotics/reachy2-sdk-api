@@ -21,8 +21,8 @@ class HandServiceStub(object):
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=hand__pb2.ListOfHand.FromString,
                 )
-        self.GetHandState = channel.unary_unary(
-                '/reachy.part.hand.HandService/GetHandState',
+        self.GetState = channel.unary_unary(
+                '/reachy.part.hand.HandService/GetState',
                 request_serializer=part__pb2.PartId.SerializeToString,
                 response_deserializer=hand__pb2.HandState.FromString,
                 )
@@ -107,7 +107,7 @@ class HandServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
-    def GetHandState(self, request, context):
+    def GetState(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -205,8 +205,8 @@ def add_HandServiceServicer_to_server(servicer, server):
                     request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                     response_serializer=hand__pb2.ListOfHand.SerializeToString,
             ),
-            'GetHandState': grpc.unary_unary_rpc_method_handler(
-                    servicer.GetHandState,
+            'GetState': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetState,
                     request_deserializer=part__pb2.PartId.FromString,
                     response_serializer=hand__pb2.HandState.SerializeToString,
             ),
@@ -308,7 +308,7 @@ class HandService(object):
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
-    def GetHandState(request,
+    def GetState(request,
             target,
             options=(),
             channel_credentials=None,
@@ -318,7 +318,7 @@ class HandService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/GetHandState',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/GetState',
             part__pb2.PartId.SerializeToString,
             hand__pb2.HandState.FromString,
             options, channel_credentials,

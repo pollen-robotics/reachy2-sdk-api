@@ -95,7 +95,8 @@ message SpeedLimitRequest {
 
 service HandService {
     rpc GetAllHands (google.protobuf.Empty) returns (ListOfHand);
-    rpc GetHandState (reachy.part.PartId) returns (HandState);
+
+    rpc GetState (reachy.part.PartId) returns (HandState);
 
     rpc OpenHand (reachy.part.PartId) returns (google.protobuf.Empty);
     rpc CloseHand (reachy.part.PartId) returns (google.protobuf.Empty);
