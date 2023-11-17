@@ -21,8 +21,8 @@ class HandServiceStub(object):
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=hand__pb2.ListOfHand.FromString,
                 )
-        self.GetHandState = channel.unary_unary(
-                '/reachy.part.hand.HandService/GetHandState',
+        self.GetState = channel.unary_unary(
+                '/reachy.part.hand.HandService/GetState',
                 request_serializer=part__pb2.PartId.SerializeToString,
                 response_deserializer=hand__pb2.HandState.FromString,
                 )
@@ -86,6 +86,11 @@ class HandServiceStub(object):
                 request_serializer=hand__pb2.SpeedLimitRequest.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
+        self.SetHandPosition = channel.unary_unary(
+                '/reachy.part.hand.HandService/SetHandPosition',
+                request_serializer=hand__pb2.HandPositionRequest.SerializeToString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                )
         self.GetForce = channel.unary_unary(
                 '/reachy.part.hand.HandService/GetForce',
                 request_serializer=part__pb2.PartId.SerializeToString,
@@ -102,7 +107,7 @@ class HandServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
-    def GetHandState(self, request, context):
+    def GetState(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -180,6 +185,12 @@ class HandServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def SetHandPosition(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
     def GetForce(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
@@ -194,8 +205,8 @@ def add_HandServiceServicer_to_server(servicer, server):
                     request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                     response_serializer=hand__pb2.ListOfHand.SerializeToString,
             ),
-            'GetHandState': grpc.unary_unary_rpc_method_handler(
-                    servicer.GetHandState,
+            'GetState': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetState,
                     request_deserializer=part__pb2.PartId.FromString,
                     response_serializer=hand__pb2.HandState.SerializeToString,
             ),
@@ -259,6 +270,11 @@ def add_HandServiceServicer_to_server(servicer, server):
                     request_deserializer=hand__pb2.SpeedLimitRequest.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
+            'SetHandPosition': grpc.unary_unary_rpc_method_handler(
+                    servicer.SetHandPosition,
+                    request_deserializer=hand__pb2.HandPositionRequest.FromString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            ),
             'GetForce': grpc.unary_unary_rpc_method_handler(
                     servicer.GetForce,
                     request_deserializer=part__pb2.PartId.FromString,
@@ -292,7 +308,7 @@ class HandService(object):
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
-    def GetHandState(request,
+    def GetState(request,
             target,
             options=(),
             channel_credentials=None,
@@ -302,7 +318,7 @@ class HandService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/GetHandState',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/GetState',
             part__pb2.PartId.SerializeToString,
             hand__pb2.HandState.FromString,
             options, channel_credentials,
@@ -508,6 +524,23 @@ class HandService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/SetSpeedLimit',
             hand__pb2.SpeedLimitRequest.SerializeToString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def SetHandPosition(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/SetHandPosition',
+            hand__pb2.HandPositionRequest.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
