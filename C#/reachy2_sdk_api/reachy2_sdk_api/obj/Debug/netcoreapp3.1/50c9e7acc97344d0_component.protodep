@@ -1,0 +1,2 @@
+..\..\..\protos\../c#/Component.cs: C:/Users/Demo/.nuget/packages/grpc.tools/2.34.1/build/native/include/google/protobuf/wrappers.proto\
+ ../../../protos/component.proto

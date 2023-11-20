@@ -1,0 +1,6 @@
+..\..\..\protos\../c#/Sound.cs \
+..\..\..\protos\../c#/SoundGrpc.cs: C:/Users/Demo/.nuget/packages/grpc.tools/2.34.1/build/native/include/google/protobuf/wrappers.proto\
+ C:/Users/Demo/.nuget/packages/grpc.tools/2.34.1/build/native/include/google/protobuf/empty.proto\
+ ../../../protos/component.proto\
+ ../../../protos/error.proto\
+ ../../../protos/sound.proto

@@ -1,0 +1,5 @@
+..\..\..\protos\../c#/Hand.cs \
+..\..\..\protos\../c#/HandGrpc.cs: C:/Users/Demo/.nuget/packages/grpc.tools/2.34.1/build/native/include/google/protobuf/wrappers.proto\
+ C:/Users/Demo/.nuget/packages/grpc.tools/2.34.1/build/native/include/google/protobuf/empty.proto\
+ ../../../protos/part.proto\
+ ../../../protos/hand.proto
