@@ -20,7 +20,7 @@ message Reachy {
     reachy.part.hand.Hand l_hand= 5;
     reachy.part.hand.Hand r_hand= 6;
 
-    reachy.part.mobile_base.MobileBase mobile_base= 7;
+    mobile.base.sdk.MobileBase mobile_base= 7;
 
     component.sound.Microphone microphone = 8;
     component.sound.Speaker speaker = 9;
@@ -52,7 +52,7 @@ message ReachyState {
     reachy.part.head.HeadState head_state = 5;
     reachy.part.hand.HandState l_hand_state = 6;
     reachy.part.hand.HandState r_hand_state = 7;
-    reachy.part.mobile_base.MobileBaseState mobile_base_state = 8;
+    mobile.base.sdk.MobileBaseState mobile_base_state = 8;
 }
 
 message ReachyStreamStateRequest {

@@ -1,12 +1,140 @@
 syntax = "proto3";
 
-package reachy.part.mobile_base;
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
 
+import "part.proto";
+
+package mobile.base.sdk;
+
+// Speed commands in SI units (m/s and rad/s)
+message DirectionVector {
+    // use FloatValue instead of double to avoid 0.0 default value being ignored
+    google.protobuf.FloatValue x = 1;
+    google.protobuf.FloatValue y = 2;
+    google.protobuf.FloatValue theta = 3;
+}
 
 message MobileBase {
-    
+    reachy.part.PartId part_id = 1;
+    MobileBaseVersion version = 2;
+    reachy.part.PartInfo info = 5;
+}
+
+message TargetDirectionCommand {
+    DirectionVector direction = 1;
 }
 
 message MobileBaseState {
-    
+    google.protobuf.Timestamp timestamp = 1;
+
+    reachy.part.PartId id = 2;
+}
+
+message GoToVector {
+    google.protobuf.FloatValue x_goal = 1;
+    google.protobuf.FloatValue y_goal = 2;
+    google.protobuf.FloatValue theta_goal = 3;
+}
+
+message SetSpeedVector {
+    google.protobuf.FloatValue x_vel = 1;
+    google.protobuf.FloatValue y_vel = 2;
+    google.protobuf.FloatValue rot_vel = 3;
+    google.protobuf.FloatValue duration = 4;
+}
+
+message OdometryVector {
+    google.protobuf.FloatValue x = 1;
+    google.protobuf.FloatValue y = 2;
+    google.protobuf.FloatValue theta = 3;
+}
+
+message DistanceToGoalVector {
+    google.protobuf.FloatValue delta_x = 1;
+    google.protobuf.FloatValue delta_y = 2;
+    google.protobuf.FloatValue delta_theta = 3;
+    google.protobuf.FloatValue distance = 4;
+}
+
+enum ControlModePossiblities {
+    NONE_CONTROL_MODE = 0;
+    OPEN_LOOP = 1;
+    PID = 2;
+}
+
+message ControlModeCommand {
+    ControlModePossiblities mode = 1;
+}
+
+enum ZuuuModePossiblities {
+    NONE_ZUUU_MODE = 0;
+    CMD_VEL = 1;
+    BRAKE = 2;
+    FREE_WHEEL = 3;
+    SPEED = 4;
+    GOTO = 5;
+    EMERGENCY_STOP = 6;
+}
+
+message ZuuuModeCommand {
+    ZuuuModePossiblities mode = 1;
+}
+
+message BatteryLevel {
+    google.protobuf.FloatValue level = 1;
+}
+
+message MobileBasePresence {
+    google.protobuf.BoolValue presence = 1;
+    google.protobuf.FloatValue model_version = 2;
+}
+
+message MobileBaseVersion {
+    google.protobuf.FloatValue model_version = 1;
+}
+
+message LidarSafety {
+    google.protobuf.BoolValue safety_on = 1;
+    google.protobuf.FloatValue safety_distance = 2;
+    google.protobuf.FloatValue critical_distance = 3;
+}
+
+message MobilityServiceAck {
+    google.protobuf.BoolValue success = 1;
+}
+
+message LidarMap {
+    bytes data = 1;
+}
+
+service MobilityService {
+    // Mobility commands
+    rpc SendDirection(TargetDirectionCommand) returns (MobilityServiceAck);
+    rpc SendSetSpeed(SetSpeedVector) returns (MobilityServiceAck);
+    rpc SendGoTo(GoToVector) returns (MobilityServiceAck);
+
+    // GoTo management
+    rpc DistanceToGoal(google.protobuf.Empty) returns (DistanceToGoalVector);
+
+    // Utility
+    rpc SetControlMode(ControlModeCommand) returns (MobilityServiceAck);
+    rpc GetControlMode(google.protobuf.Empty) returns (ControlModeCommand);
+    rpc SetZuuuMode(ZuuuModeCommand) returns (MobilityServiceAck);
+    rpc GetZuuuMode(google.protobuf.Empty) returns (ZuuuModeCommand);
+    rpc GetBatteryLevel(google.protobuf.Empty) returns (BatteryLevel);
+    rpc GetOdometry(google.protobuf.Empty) returns (OdometryVector);
+    rpc ResetOdometry(google.protobuf.Empty) returns (MobilityServiceAck);
+
+    rpc SetZuuuSafety(LidarSafety) returns (MobilityServiceAck);
+    rpc GetZuuuSafety(google.protobuf.Empty) returns (LidarSafety);
+
+    rpc GetLidarMap(google.protobuf.Empty) returns (LidarMap);
+
+    rpc GetMobileBaseVersion(google.protobuf.Empty) returns (MobileBaseVersion);
+}
+
+service MobileBasePresenceService {
+    rpc GetMobileBasePresence(google.protobuf.Empty) returns (MobileBasePresence);
 }
