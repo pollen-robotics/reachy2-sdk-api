@@ -18,7 +18,7 @@ import part_pb2 as part__pb2
 import reachy_pb2 as reachy__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x13webrtc_bridge.proto\x1a\tarm.proto\x1a\nhand.proto\x1a\nhead.proto\x1a\npart.proto\x1a\x0creachy.proto\"\x0b\n\tGetReachy\"H\n\x07\x43onnect\x12#\n\treachy_id\x18\x01 \x01(\x0b\x32\x10.reachy.ReachyId\x12\x18\n\x10update_frequency\x18\x02 \x01(\x02\"1\n\nDisconnect\x12#\n\treachy_id\x18\x01 \x01(\x0b\x32\x10.reachy.ReachyId\"}\n\x0eServiceRequest\x12 \n\nget_reachy\x18\x01 \x01(\x0b\x32\n.GetReachyH\x00\x12\x1b\n\x07\x63onnect\x18\x02 \x01(\x0b\x32\x08.ConnectH\x00\x12!\n\ndisconnect\x18\x03 \x01(\x0b\x32\x0b.DisconnectH\x00\x42\t\n\x07request\"u\n\x10\x43onnectionStatus\x12\x11\n\tconnected\x18\x01 \x01(\x08\x12\x15\n\rstate_channel\x18\x02 \x01(\t\x12\x17\n\x0f\x63ommand_channel\x18\x03 \x01(\t\x12\x1e\n\x06reachy\x18\x04 \x01(\x0b\x32\x0e.reachy.Reachy\"\x18\n\x05\x45rror\x12\x0f\n\x07message\x18\x01 \x01(\t\"f\n\x0fServiceResponse\x12.\n\x11\x63onnection_status\x18\x01 \x01(\x0b\x32\x11.ConnectionStatusH\x00\x12\x17\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x06.ErrorH\x00\x42\n\n\x08response\"\xa2\x02\n\nAnyCommand\x12?\n\x12\x61rm_cartesian_goal\x18\x01 \x01(\x0b\x32!.reachy.part.arm.ArmCartesianGoalH\x00\x12/\n\tneck_goal\x18\x02 \x01(\x0b\x32\x1a.reachy.part.head.NeckGoalH\x00\x12\x46\n\x15hand_position_request\x18\x03 \x01(\x0b\x32%.reachy.part.hand.HandPositionRequestH\x00\x12&\n\x07turn_on\x18\x04 \x01(\x0b\x32\x13.reachy.part.PartIdH\x00\x12\'\n\x08turn_off\x18\x05 \x01(\x0b\x32\x13.reachy.part.PartIdH\x00\x42\t\n\x07\x63ommand\",\n\x0b\x41nyCommands\x12\x1d\n\x08\x63ommands\x18\x01 \x03(\x0b\x32\x0b.AnyCommandb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x13webrtc_bridge.proto\x1a\tarm.proto\x1a\nhand.proto\x1a\nhead.proto\x1a\npart.proto\x1a\x0creachy.proto\"\x0b\n\tGetReachy\"H\n\x07\x43onnect\x12#\n\treachy_id\x18\x01 \x01(\x0b\x32\x10.reachy.ReachyId\x12\x18\n\x10update_frequency\x18\x02 \x01(\x02\"1\n\nDisconnect\x12#\n\treachy_id\x18\x01 \x01(\x0b\x32\x10.reachy.ReachyId\"}\n\x0eServiceRequest\x12 \n\nget_reachy\x18\x01 \x01(\x0b\x32\n.GetReachyH\x00\x12\x1b\n\x07\x63onnect\x18\x02 \x01(\x0b\x32\x08.ConnectH\x00\x12!\n\ndisconnect\x18\x03 \x01(\x0b\x32\x0b.DisconnectH\x00\x42\t\n\x07request\"u\n\x10\x43onnectionStatus\x12\x11\n\tconnected\x18\x01 \x01(\x08\x12\x15\n\rstate_channel\x18\x02 \x01(\t\x12\x17\n\x0f\x63ommand_channel\x18\x03 \x01(\t\x12\x1e\n\x06reachy\x18\x04 \x01(\x0b\x32\x0e.reachy.Reachy\"\x18\n\x05\x45rror\x12\x0f\n\x07message\x18\x01 \x01(\t\"f\n\x0fServiceResponse\x12.\n\x11\x63onnection_status\x18\x01 \x01(\x0b\x32\x11.ConnectionStatusH\x00\x12\x17\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x06.ErrorH\x00\x42\n\n\x08response\"\x87\x01\n\nAnyCommand\x12\"\n\x0b\x61rm_command\x18\x01 \x01(\x0b\x32\x0b.ArmCommandH\x00\x12$\n\x0chand_command\x18\x02 \x01(\x0b\x32\x0c.HandCommandH\x00\x12$\n\x0cneck_command\x18\x03 \x01(\x0b\x32\x0c.NeckCommandH\x00\x42\t\n\x07\x63ommand\"\x98\x01\n\nArmCommand\x12=\n\x12\x61rm_cartesian_goal\x18\x01 \x01(\x0b\x32!.reachy.part.arm.ArmCartesianGoal\x12$\n\x07turn_on\x18\x02 \x01(\x0b\x32\x13.reachy.part.PartId\x12%\n\x08turn_off\x18\x03 \x01(\x0b\x32\x13.reachy.part.PartId\"\x94\x01\n\x0bHandCommand\x12\x38\n\thand_goal\x18\x01 \x01(\x0b\x32%.reachy.part.hand.HandPositionRequest\x12$\n\x07turn_on\x18\x02 \x01(\x0b\x32\x13.reachy.part.PartId\x12%\n\x08turn_off\x18\x03 \x01(\x0b\x32\x13.reachy.part.PartId\"\x89\x01\n\x0bNeckCommand\x12-\n\tneck_goal\x18\x01 \x01(\x0b\x32\x1a.reachy.part.head.NeckGoal\x12$\n\x07turn_on\x18\x02 \x01(\x0b\x32\x13.reachy.part.PartId\x12%\n\x08turn_off\x18\x03 \x01(\x0b\x32\x13.reachy.part.PartId\",\n\x0b\x41nyCommands\x12\x1d\n\x08\x63ommands\x18\x01 \x03(\x0b\x32\x0b.AnyCommandb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -40,7 +40,13 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _globals['_SERVICERESPONSE']._serialized_start=494
   _globals['_SERVICERESPONSE']._serialized_end=596
   _globals['_ANYCOMMAND']._serialized_start=599
-  _globals['_ANYCOMMAND']._serialized_end=889
-  _globals['_ANYCOMMANDS']._serialized_start=891
-  _globals['_ANYCOMMANDS']._serialized_end=935
+  _globals['_ANYCOMMAND']._serialized_end=734
+  _globals['_ARMCOMMAND']._serialized_start=737
+  _globals['_ARMCOMMAND']._serialized_end=889
+  _globals['_HANDCOMMAND']._serialized_start=892
+  _globals['_HANDCOMMAND']._serialized_end=1040
+  _globals['_NECKCOMMAND']._serialized_start=1043
+  _globals['_NECKCOMMAND']._serialized_end=1180
+  _globals['_ANYCOMMANDS']._serialized_start=1182
+  _globals['_ANYCOMMANDS']._serialized_end=1226
 # @@protoc_insertion_point(module_scope)
