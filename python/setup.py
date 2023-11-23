@@ -11,11 +11,11 @@ here = path.abspath(path.dirname(__file__))
 setup(
     name='reachy2-sdk-api',
     version='0.1.0',
-    packages=find_packages(exclude=['tests']),    
+    packages=find_packages(exclude=['tests']),
     install_requires=[
-        'grpcio',
-        'grpcio-tools',
-        'protobuf>=3.14.0',
+        'grpcio==1.59.3',
+        'grpcio-tools==1.59.3',
+        'protobuf==4.25.1',
     ],    author='Pollen Robotics',
     author_email='contact@pollen-robotics.com',
     url='https://github.com/pollen-robotics/reachy2-sdk-api',    description='gRPC Protobuf API definition for Reachy 2 SDK',
