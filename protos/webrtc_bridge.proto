@@ -5,8 +5,9 @@ import "hand.proto";
 import "head.proto";
 import "part.proto";
 import "reachy.proto";
+import "error.proto";
 
-package reachy;
+package bridge;
 
 message GetReachy {}
 message Connect {
@@ -32,14 +33,11 @@ message ConnectionStatus {
 
     reachy.Reachy reachy = 4;
 }
-message Error {
-    string message = 1;
-}
 
 message ServiceResponse {
     oneof response {
         ConnectionStatus connection_status = 1;
-        Error error = 2;
+        error.Error error = 2;
     }
 }
 

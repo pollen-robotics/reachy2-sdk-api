@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Reachy {
+namespace Bridge {
 
   /// <summary>Holder for reflection information generated from webrtc_bridge.proto</summary>
   public static partial class WebrtcBridgeReflection {
@@ -24,51 +24,49 @@ namespace Reachy {
     static WebrtcBridgeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChN3ZWJydGNfYnJpZGdlLnByb3RvEgZyZWFjaHkaCWFybS5wcm90bxoKaGFu",
+            "ChN3ZWJydGNfYnJpZGdlLnByb3RvEgZicmlkZ2UaCWFybS5wcm90bxoKaGFu",
             "ZC5wcm90bxoKaGVhZC5wcm90bxoKcGFydC5wcm90bxoMcmVhY2h5LnByb3Rv",
-            "IgsKCUdldFJlYWNoeSJICgdDb25uZWN0EiMKCXJlYWNoeV9pZBgBIAEoCzIQ",
-            "LnJlYWNoeS5SZWFjaHlJZBIYChB1cGRhdGVfZnJlcXVlbmN5GAIgASgCIjEK",
-            "CkRpc2Nvbm5lY3QSIwoJcmVhY2h5X2lkGAEgASgLMhAucmVhY2h5LlJlYWNo",
-            "eUlkIpIBCg5TZXJ2aWNlUmVxdWVzdBInCgpnZXRfcmVhY2h5GAEgASgLMhEu",
-            "cmVhY2h5LkdldFJlYWNoeUgAEiIKB2Nvbm5lY3QYAiABKAsyDy5yZWFjaHku",
-            "Q29ubmVjdEgAEigKCmRpc2Nvbm5lY3QYAyABKAsyEi5yZWFjaHkuRGlzY29u",
-            "bmVjdEgAQgkKB3JlcXVlc3QidQoQQ29ubmVjdGlvblN0YXR1cxIRCgljb25u",
-            "ZWN0ZWQYASABKAgSFQoNc3RhdGVfY2hhbm5lbBgCIAEoCRIXCg9jb21tYW5k",
-            "X2NoYW5uZWwYAyABKAkSHgoGcmVhY2h5GAQgASgLMg4ucmVhY2h5LlJlYWNo",
-            "eSIYCgVFcnJvchIPCgdtZXNzYWdlGAEgASgJInQKD1NlcnZpY2VSZXNwb25z",
-            "ZRI1ChFjb25uZWN0aW9uX3N0YXR1cxgBIAEoCzIYLnJlYWNoeS5Db25uZWN0",
-            "aW9uU3RhdHVzSAASHgoFZXJyb3IYAiABKAsyDS5yZWFjaHkuRXJyb3JIAEIK",
-            "CghyZXNwb25zZSKcAQoKQW55Q29tbWFuZBIpCgthcm1fY29tbWFuZBgBIAEo",
-            "CzISLnJlYWNoeS5Bcm1Db21tYW5kSAASKwoMaGFuZF9jb21tYW5kGAIgASgL",
-            "MhMucmVhY2h5LkhhbmRDb21tYW5kSAASKwoMbmVja19jb21tYW5kGAMgASgL",
-            "MhMucmVhY2h5Lk5lY2tDb21tYW5kSABCCQoHY29tbWFuZCKYAQoKQXJtQ29t",
-            "bWFuZBI9ChJhcm1fY2FydGVzaWFuX2dvYWwYASABKAsyIS5yZWFjaHkucGFy",
-            "dC5hcm0uQXJtQ2FydGVzaWFuR29hbBIkCgd0dXJuX29uGAIgASgLMhMucmVh",
-            "Y2h5LnBhcnQuUGFydElkEiUKCHR1cm5fb2ZmGAMgASgLMhMucmVhY2h5LnBh",
-            "cnQuUGFydElkIpQBCgtIYW5kQ29tbWFuZBI4CgloYW5kX2dvYWwYASABKAsy",
-            "JS5yZWFjaHkucGFydC5oYW5kLkhhbmRQb3NpdGlvblJlcXVlc3QSJAoHdHVy",
-            "bl9vbhgCIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBIlCgh0dXJuX29mZhgD",
-            "IAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZCKJAQoLTmVja0NvbW1hbmQSLQoJ",
-            "bmVja19nb2FsGAEgASgLMhoucmVhY2h5LnBhcnQuaGVhZC5OZWNrR29hbBIk",
-            "Cgd0dXJuX29uGAIgASgLMhMucmVhY2h5LnBhcnQuUGFydElkEiUKCHR1cm5f",
-            "b2ZmGAMgASgLMhMucmVhY2h5LnBhcnQuUGFydElkIjMKC0FueUNvbW1hbmRz",
-            "EiQKCGNvbW1hbmRzGAEgAygLMhIucmVhY2h5LkFueUNvbW1hbmRiBnByb3Rv",
-            "Mw=="));
+            "GgtlcnJvci5wcm90byILCglHZXRSZWFjaHkiSAoHQ29ubmVjdBIjCglyZWFj",
+            "aHlfaWQYASABKAsyEC5yZWFjaHkuUmVhY2h5SWQSGAoQdXBkYXRlX2ZyZXF1",
+            "ZW5jeRgCIAEoAiIxCgpEaXNjb25uZWN0EiMKCXJlYWNoeV9pZBgBIAEoCzIQ",
+            "LnJlYWNoeS5SZWFjaHlJZCKSAQoOU2VydmljZVJlcXVlc3QSJwoKZ2V0X3Jl",
+            "YWNoeRgBIAEoCzIRLmJyaWRnZS5HZXRSZWFjaHlIABIiCgdjb25uZWN0GAIg",
+            "ASgLMg8uYnJpZGdlLkNvbm5lY3RIABIoCgpkaXNjb25uZWN0GAMgASgLMhIu",
+            "YnJpZGdlLkRpc2Nvbm5lY3RIAEIJCgdyZXF1ZXN0InUKEENvbm5lY3Rpb25T",
+            "dGF0dXMSEQoJY29ubmVjdGVkGAEgASgIEhUKDXN0YXRlX2NoYW5uZWwYAiAB",
+            "KAkSFwoPY29tbWFuZF9jaGFubmVsGAMgASgJEh4KBnJlYWNoeRgEIAEoCzIO",
+            "LnJlYWNoeS5SZWFjaHkicwoPU2VydmljZVJlc3BvbnNlEjUKEWNvbm5lY3Rp",
+            "b25fc3RhdHVzGAEgASgLMhguYnJpZGdlLkNvbm5lY3Rpb25TdGF0dXNIABId",
+            "CgVlcnJvchgCIAEoCzIMLmVycm9yLkVycm9ySABCCgoIcmVzcG9uc2UinAEK",
+            "CkFueUNvbW1hbmQSKQoLYXJtX2NvbW1hbmQYASABKAsyEi5icmlkZ2UuQXJt",
+            "Q29tbWFuZEgAEisKDGhhbmRfY29tbWFuZBgCIAEoCzITLmJyaWRnZS5IYW5k",
+            "Q29tbWFuZEgAEisKDG5lY2tfY29tbWFuZBgDIAEoCzITLmJyaWRnZS5OZWNr",
+            "Q29tbWFuZEgAQgkKB2NvbW1hbmQimAEKCkFybUNvbW1hbmQSPQoSYXJtX2Nh",
+            "cnRlc2lhbl9nb2FsGAEgASgLMiEucmVhY2h5LnBhcnQuYXJtLkFybUNhcnRl",
+            "c2lhbkdvYWwSJAoHdHVybl9vbhgCIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJ",
+            "ZBIlCgh0dXJuX29mZhgDIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZCKUAQoL",
+            "SGFuZENvbW1hbmQSOAoJaGFuZF9nb2FsGAEgASgLMiUucmVhY2h5LnBhcnQu",
+            "aGFuZC5IYW5kUG9zaXRpb25SZXF1ZXN0EiQKB3R1cm5fb24YAiABKAsyEy5y",
+            "ZWFjaHkucGFydC5QYXJ0SWQSJQoIdHVybl9vZmYYAyABKAsyEy5yZWFjaHku",
+            "cGFydC5QYXJ0SWQiiQEKC05lY2tDb21tYW5kEi0KCW5lY2tfZ29hbBgBIAEo",
+            "CzIaLnJlYWNoeS5wYXJ0LmhlYWQuTmVja0dvYWwSJAoHdHVybl9vbhgCIAEo",
+            "CzITLnJlYWNoeS5wYXJ0LlBhcnRJZBIlCgh0dXJuX29mZhgDIAEoCzITLnJl",
+            "YWNoeS5wYXJ0LlBhcnRJZCIzCgtBbnlDb21tYW5kcxIkCghjb21tYW5kcxgB",
+            "IAMoCzISLmJyaWRnZS5BbnlDb21tYW5kYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, global::Reachy.ReachyReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, global::Reachy.ReachyReflection.Descriptor, global::Error.ErrorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.GetReachy), global::Reachy.GetReachy.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Connect), global::Reachy.Connect.Parser, new[]{ "ReachyId", "UpdateFrequency" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Disconnect), global::Reachy.Disconnect.Parser, new[]{ "ReachyId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ServiceRequest), global::Reachy.ServiceRequest.Parser, new[]{ "GetReachy", "Connect", "Disconnect" }, new[]{ "Request" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ConnectionStatus), global::Reachy.ConnectionStatus.Parser, new[]{ "Connected", "StateChannel", "CommandChannel", "Reachy" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Error), global::Reachy.Error.Parser, new[]{ "Message" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ServiceResponse), global::Reachy.ServiceResponse.Parser, new[]{ "ConnectionStatus", "Error" }, new[]{ "Response" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.AnyCommand), global::Reachy.AnyCommand.Parser, new[]{ "ArmCommand", "HandCommand", "NeckCommand" }, new[]{ "Command" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ArmCommand), global::Reachy.ArmCommand.Parser, new[]{ "ArmCartesianGoal", "TurnOn", "TurnOff" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.HandCommand), global::Reachy.HandCommand.Parser, new[]{ "HandGoal", "TurnOn", "TurnOff" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.NeckCommand), global::Reachy.NeckCommand.Parser, new[]{ "NeckGoal", "TurnOn", "TurnOff" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.AnyCommands), global::Reachy.AnyCommands.Parser, new[]{ "Commands" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.GetReachy), global::Bridge.GetReachy.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.Connect), global::Bridge.Connect.Parser, new[]{ "ReachyId", "UpdateFrequency" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.Disconnect), global::Bridge.Disconnect.Parser, new[]{ "ReachyId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.ServiceRequest), global::Bridge.ServiceRequest.Parser, new[]{ "GetReachy", "Connect", "Disconnect" }, new[]{ "Request" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.ConnectionStatus), global::Bridge.ConnectionStatus.Parser, new[]{ "Connected", "StateChannel", "CommandChannel", "Reachy" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.ServiceResponse), global::Bridge.ServiceResponse.Parser, new[]{ "ConnectionStatus", "Error" }, new[]{ "Response" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.AnyCommand), global::Bridge.AnyCommand.Parser, new[]{ "ArmCommand", "HandCommand", "NeckCommand" }, new[]{ "Command" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.ArmCommand), global::Bridge.ArmCommand.Parser, new[]{ "ArmCartesianGoal", "TurnOn", "TurnOff" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.HandCommand), global::Bridge.HandCommand.Parser, new[]{ "HandGoal", "TurnOn", "TurnOff" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.NeckCommand), global::Bridge.NeckCommand.Parser, new[]{ "NeckGoal", "TurnOn", "TurnOff" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.AnyCommands), global::Bridge.AnyCommands.Parser, new[]{ "Commands" }, null, null, null, null)
           }));
     }
     #endregion
@@ -89,7 +87,7 @@ namespace Reachy {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.WebrtcBridgeReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bridge.WebrtcBridgeReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -241,7 +239,7 @@ namespace Reachy {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.WebrtcBridgeReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bridge.WebrtcBridgeReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -476,7 +474,7 @@ namespace Reachy {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.WebrtcBridgeReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bridge.WebrtcBridgeReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -674,7 +672,7 @@ namespace Reachy {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.WebrtcBridgeReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Bridge.WebrtcBridgeReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -719,8 +717,8 @@ namespace Reachy {
     public const int GetReachyFieldNumber = 1;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Reachy.GetReachy GetReachy {
-      get { return requestCase_ == RequestOneofCase.GetReachy ? (global::Reachy.GetReachy) request_ : null; }
+    public global::Bridge.GetReachy GetReachy {
+      get { return requestCase_ == RequestOneofCase.GetReachy ? (global::Bridge.GetReachy) request_ : null; }
       set {
         request_ = value;
         requestCase_ = value == null ? RequestOneofCase.None : RequestOneofCase.GetReachy;
@@ -731,8 +729,8 @@ namespace Reachy {
     public const int ConnectFieldNumber = 2;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Reachy.Connect Connect {
-      get { return requestCase_ == RequestOneofCase.Connect ? (global::Reachy.Connect) request_ : null; }
+    public global::Bridge.Connect Connect {
+      get { return requestCase_ == RequestOneofCase.Connect ? (global::Bridge.Connect) request_ : null; }
       set {
         request_ = value;
         requestCase_ = value == null ? RequestOneofCase.None : RequestOneofCase.Connect;
@@ -743,8 +741,8 @@ namespace Reachy {
     public const int DisconnectFieldNumber = 3;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Reachy.Disconnect Disconnect {
-      get { return requestCase_ == RequestOneofCase.Disconnect ? (global::Reachy.Disconnect) request_ : null; }
+    public global::Bridge.Disconnect Disconnect {
+      get { return requestCase_ == RequestOneofCase.Disconnect ? (global::Bridge.Disconnect) request_ : null; }
       set {
         request_ = value;
         requestCase_ = value == null ? RequestOneofCase.None : RequestOneofCase.Disconnect;
@@ -889,19 +887,19 @@ namespace Reachy {
       switch (other.RequestCase) {
         case RequestOneofCase.GetReachy:
           if (GetReachy == null) {
-            GetReachy = new global::Reachy.GetReachy();
+            GetReachy = new global::Bridge.GetReachy();
           }
           GetReachy.MergeFrom(other.GetReachy);
           break;
         case RequestOneofCase.Connect:
           if (Connect == null) {
-            Connect = new global::Reachy.Connect();
+            Connect = new global::Bridge.Connect();
           }
           Connect.MergeFrom(other.Connect);
           break;
         case RequestOneofCase.Disconnect:
           if (Disconnect == null) {
-            Disconnect = new global::Reachy.Disconnect();
+            Disconnect = new global::Bridge.Disconnect();
           }
           Disconnect.MergeFrom(other.Disconnect);
           break;
@@ -923,7 +921,7 @@ namespace Reachy {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            global::Reachy.GetReachy subBuilder = new global::Reachy.GetReachy();
+            global::Bridge.GetReachy subBuilder = new global::Bridge.GetReachy();
             if (requestCase_ == RequestOneofCase.GetReachy) {
               subBuilder.MergeFrom(GetReachy);
             }
@@ -932,7 +930,7 @@ namespace Reachy {
             break;
           }
           case 18: {
-            global::Reachy.Connect subBuilder = new global::Reachy.Connect();
+            global::Bridge.Connect subBuilder = new global::Bridge.Connect();
             if (requestCase_ == RequestOneofCase.Connect) {
               subBuilder.MergeFrom(Connect);
             }
@@ -941,7 +939,7 @@ namespace Reachy {
             break;
           }
           case 26: {
-            global::Reachy.Disconnect subBuilder = new global::Reachy.Disconnect();
+            global::Bridge.Disconnect subBuilder = new global::Bridge.Disconnect();
             if (requestCase_ == RequestOneofCase.Disconnect) {
               subBuilder.MergeFrom(Disconnect);
             }
@@ -965,7 +963,7 @@ namespace Reachy {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            global::Reachy.GetReachy subBuilder = new global::Reachy.GetReachy();
+            global::Bridge.GetReachy subBuilder = new global::Bridge.GetReachy();
             if (requestCase_ == RequestOneofCase.GetReachy) {
               subBuilder.MergeFrom(GetReachy);
             }
@@ -974,7 +972,7 @@ namespace Reachy {
             break;
           }
           case 18: {
-            global::Reachy.Connect subBuilder = new global::Reachy.Connect();
+            global::Bridge.Connect subBuilder = new global::Bridge.Connect();
             if (requestCase_ == RequestOneofCase.Connect) {
               subBuilder.MergeFrom(Connect);
             }
@@ -983,7 +981,7 @@ namespace Reachy {
             break;
           }
           case 26: {
-            global::Reachy.Disconnect subBuilder = new global::Reachy.Disconnect();
+            global::Bridge.Disconnect subBuilder = new global::Bridge.Disconnect();
             if (requestCase_ == RequestOneofCase.Disconnect) {
               subBuilder.MergeFrom(Disconnect);
             }
@@ -1012,7 +1010,7 @@ namespace Reachy {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.WebrtcBridgeReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Bridge.WebrtcBridgeReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1307,195 +1305,6 @@ namespace Reachy {
 
   }
 
-  public sealed partial class Error : pb::IMessage<Error>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<Error> _parser = new pb::MessageParser<Error>(() => new Error());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<Error> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.WebrtcBridgeReflection.Descriptor.MessageTypes[5]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Error() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Error(Error other) : this() {
-      message_ = other.message_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Error Clone() {
-      return new Error(this);
-    }
-
-    /// <summary>Field number for the "message" field.</summary>
-    public const int MessageFieldNumber = 1;
-    private string message_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Message {
-      get { return message_; }
-      set {
-        message_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as Error);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(Error other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Message != other.Message) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Message.Length != 0) hash ^= Message.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Message.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Message);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Message.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Message);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (Message.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Message);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(Error other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Message.Length != 0) {
-        Message = other.Message;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            Message = input.ReadString();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Message = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
   public sealed partial class ServiceResponse : pb::IMessage<ServiceResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1510,7 +1319,7 @@ namespace Reachy {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.WebrtcBridgeReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Bridge.WebrtcBridgeReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1552,8 +1361,8 @@ namespace Reachy {
     public const int ConnectionStatusFieldNumber = 1;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Reachy.ConnectionStatus ConnectionStatus {
-      get { return responseCase_ == ResponseOneofCase.ConnectionStatus ? (global::Reachy.ConnectionStatus) response_ : null; }
+    public global::Bridge.ConnectionStatus ConnectionStatus {
+      get { return responseCase_ == ResponseOneofCase.ConnectionStatus ? (global::Bridge.ConnectionStatus) response_ : null; }
       set {
         response_ = value;
         responseCase_ = value == null ? ResponseOneofCase.None : ResponseOneofCase.ConnectionStatus;
@@ -1564,8 +1373,8 @@ namespace Reachy {
     public const int ErrorFieldNumber = 2;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Reachy.Error Error {
-      get { return responseCase_ == ResponseOneofCase.Error ? (global::Reachy.Error) response_ : null; }
+    public global::Error.Error Error {
+      get { return responseCase_ == ResponseOneofCase.Error ? (global::Error.Error) response_ : null; }
       set {
         response_ = value;
         responseCase_ = value == null ? ResponseOneofCase.None : ResponseOneofCase.Error;
@@ -1696,13 +1505,13 @@ namespace Reachy {
       switch (other.ResponseCase) {
         case ResponseOneofCase.ConnectionStatus:
           if (ConnectionStatus == null) {
-            ConnectionStatus = new global::Reachy.ConnectionStatus();
+            ConnectionStatus = new global::Bridge.ConnectionStatus();
           }
           ConnectionStatus.MergeFrom(other.ConnectionStatus);
           break;
         case ResponseOneofCase.Error:
           if (Error == null) {
-            Error = new global::Reachy.Error();
+            Error = new global::Error.Error();
           }
           Error.MergeFrom(other.Error);
           break;
@@ -1724,7 +1533,7 @@ namespace Reachy {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            global::Reachy.ConnectionStatus subBuilder = new global::Reachy.ConnectionStatus();
+            global::Bridge.ConnectionStatus subBuilder = new global::Bridge.ConnectionStatus();
             if (responseCase_ == ResponseOneofCase.ConnectionStatus) {
               subBuilder.MergeFrom(ConnectionStatus);
             }
@@ -1733,7 +1542,7 @@ namespace Reachy {
             break;
           }
           case 18: {
-            global::Reachy.Error subBuilder = new global::Reachy.Error();
+            global::Error.Error subBuilder = new global::Error.Error();
             if (responseCase_ == ResponseOneofCase.Error) {
               subBuilder.MergeFrom(Error);
             }
@@ -1757,7 +1566,7 @@ namespace Reachy {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            global::Reachy.ConnectionStatus subBuilder = new global::Reachy.ConnectionStatus();
+            global::Bridge.ConnectionStatus subBuilder = new global::Bridge.ConnectionStatus();
             if (responseCase_ == ResponseOneofCase.ConnectionStatus) {
               subBuilder.MergeFrom(ConnectionStatus);
             }
@@ -1766,7 +1575,7 @@ namespace Reachy {
             break;
           }
           case 18: {
-            global::Reachy.Error subBuilder = new global::Reachy.Error();
+            global::Error.Error subBuilder = new global::Error.Error();
             if (responseCase_ == ResponseOneofCase.Error) {
               subBuilder.MergeFrom(Error);
             }
@@ -1795,7 +1604,7 @@ namespace Reachy {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.WebrtcBridgeReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Bridge.WebrtcBridgeReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1840,8 +1649,8 @@ namespace Reachy {
     public const int ArmCommandFieldNumber = 1;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Reachy.ArmCommand ArmCommand {
-      get { return commandCase_ == CommandOneofCase.ArmCommand ? (global::Reachy.ArmCommand) command_ : null; }
+    public global::Bridge.ArmCommand ArmCommand {
+      get { return commandCase_ == CommandOneofCase.ArmCommand ? (global::Bridge.ArmCommand) command_ : null; }
       set {
         command_ = value;
         commandCase_ = value == null ? CommandOneofCase.None : CommandOneofCase.ArmCommand;
@@ -1852,8 +1661,8 @@ namespace Reachy {
     public const int HandCommandFieldNumber = 2;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Reachy.HandCommand HandCommand {
-      get { return commandCase_ == CommandOneofCase.HandCommand ? (global::Reachy.HandCommand) command_ : null; }
+    public global::Bridge.HandCommand HandCommand {
+      get { return commandCase_ == CommandOneofCase.HandCommand ? (global::Bridge.HandCommand) command_ : null; }
       set {
         command_ = value;
         commandCase_ = value == null ? CommandOneofCase.None : CommandOneofCase.HandCommand;
@@ -1864,8 +1673,8 @@ namespace Reachy {
     public const int NeckCommandFieldNumber = 3;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Reachy.NeckCommand NeckCommand {
-      get { return commandCase_ == CommandOneofCase.NeckCommand ? (global::Reachy.NeckCommand) command_ : null; }
+    public global::Bridge.NeckCommand NeckCommand {
+      get { return commandCase_ == CommandOneofCase.NeckCommand ? (global::Bridge.NeckCommand) command_ : null; }
       set {
         command_ = value;
         commandCase_ = value == null ? CommandOneofCase.None : CommandOneofCase.NeckCommand;
@@ -2010,19 +1819,19 @@ namespace Reachy {
       switch (other.CommandCase) {
         case CommandOneofCase.ArmCommand:
           if (ArmCommand == null) {
-            ArmCommand = new global::Reachy.ArmCommand();
+            ArmCommand = new global::Bridge.ArmCommand();
           }
           ArmCommand.MergeFrom(other.ArmCommand);
           break;
         case CommandOneofCase.HandCommand:
           if (HandCommand == null) {
-            HandCommand = new global::Reachy.HandCommand();
+            HandCommand = new global::Bridge.HandCommand();
           }
           HandCommand.MergeFrom(other.HandCommand);
           break;
         case CommandOneofCase.NeckCommand:
           if (NeckCommand == null) {
-            NeckCommand = new global::Reachy.NeckCommand();
+            NeckCommand = new global::Bridge.NeckCommand();
           }
           NeckCommand.MergeFrom(other.NeckCommand);
           break;
@@ -2044,7 +1853,7 @@ namespace Reachy {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            global::Reachy.ArmCommand subBuilder = new global::Reachy.ArmCommand();
+            global::Bridge.ArmCommand subBuilder = new global::Bridge.ArmCommand();
             if (commandCase_ == CommandOneofCase.ArmCommand) {
               subBuilder.MergeFrom(ArmCommand);
             }
@@ -2053,7 +1862,7 @@ namespace Reachy {
             break;
           }
           case 18: {
-            global::Reachy.HandCommand subBuilder = new global::Reachy.HandCommand();
+            global::Bridge.HandCommand subBuilder = new global::Bridge.HandCommand();
             if (commandCase_ == CommandOneofCase.HandCommand) {
               subBuilder.MergeFrom(HandCommand);
             }
@@ -2062,7 +1871,7 @@ namespace Reachy {
             break;
           }
           case 26: {
-            global::Reachy.NeckCommand subBuilder = new global::Reachy.NeckCommand();
+            global::Bridge.NeckCommand subBuilder = new global::Bridge.NeckCommand();
             if (commandCase_ == CommandOneofCase.NeckCommand) {
               subBuilder.MergeFrom(NeckCommand);
             }
@@ -2086,7 +1895,7 @@ namespace Reachy {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            global::Reachy.ArmCommand subBuilder = new global::Reachy.ArmCommand();
+            global::Bridge.ArmCommand subBuilder = new global::Bridge.ArmCommand();
             if (commandCase_ == CommandOneofCase.ArmCommand) {
               subBuilder.MergeFrom(ArmCommand);
             }
@@ -2095,7 +1904,7 @@ namespace Reachy {
             break;
           }
           case 18: {
-            global::Reachy.HandCommand subBuilder = new global::Reachy.HandCommand();
+            global::Bridge.HandCommand subBuilder = new global::Bridge.HandCommand();
             if (commandCase_ == CommandOneofCase.HandCommand) {
               subBuilder.MergeFrom(HandCommand);
             }
@@ -2104,7 +1913,7 @@ namespace Reachy {
             break;
           }
           case 26: {
-            global::Reachy.NeckCommand subBuilder = new global::Reachy.NeckCommand();
+            global::Bridge.NeckCommand subBuilder = new global::Bridge.NeckCommand();
             if (commandCase_ == CommandOneofCase.NeckCommand) {
               subBuilder.MergeFrom(NeckCommand);
             }
@@ -2133,7 +1942,7 @@ namespace Reachy {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.WebrtcBridgeReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Bridge.WebrtcBridgeReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2423,7 +2232,7 @@ namespace Reachy {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.WebrtcBridgeReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Bridge.WebrtcBridgeReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2713,7 +2522,7 @@ namespace Reachy {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.WebrtcBridgeReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Bridge.WebrtcBridgeReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3003,7 +2812,7 @@ namespace Reachy {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.WebrtcBridgeReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Bridge.WebrtcBridgeReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3035,12 +2844,12 @@ namespace Reachy {
 
     /// <summary>Field number for the "commands" field.</summary>
     public const int CommandsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Reachy.AnyCommand> _repeated_commands_codec
-        = pb::FieldCodec.ForMessage(10, global::Reachy.AnyCommand.Parser);
-    private readonly pbc::RepeatedField<global::Reachy.AnyCommand> commands_ = new pbc::RepeatedField<global::Reachy.AnyCommand>();
+    private static readonly pb::FieldCodec<global::Bridge.AnyCommand> _repeated_commands_codec
+        = pb::FieldCodec.ForMessage(10, global::Bridge.AnyCommand.Parser);
+    private readonly pbc::RepeatedField<global::Bridge.AnyCommand> commands_ = new pbc::RepeatedField<global::Bridge.AnyCommand>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Reachy.AnyCommand> Commands {
+    public pbc::RepeatedField<global::Bridge.AnyCommand> Commands {
       get { return commands_; }
     }
 
