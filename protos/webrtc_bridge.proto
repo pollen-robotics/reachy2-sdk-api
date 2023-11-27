@@ -6,6 +6,8 @@ import "head.proto";
 import "part.proto";
 import "reachy.proto";
 
+package reachy;
+
 message GetReachy {}
 message Connect {
     reachy.ReachyId reachy_id = 1;
