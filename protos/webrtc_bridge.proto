@@ -1,0 +1,72 @@
+syntax = "proto3";
+
+import "arm.proto";
+import "hand.proto";
+import "head.proto";
+import "part.proto";
+import "reachy.proto";
+
+message GetReachy {}
+message Connect {
+    reachy.ReachyId reachy_id = 1;
+    float update_frequency = 2;
+}
+message Disconnect {
+    reachy.ReachyId reachy_id = 1;
+}
+message ServiceRequest {
+    oneof request {
+        GetReachy get_reachy = 1;
+        Connect connect = 2;
+        Disconnect disconnect = 3;
+    }
+}
+
+
+message ConnectionStatus {
+    bool connected = 1;
+    string state_channel = 2;
+    string command_channel = 3;
+
+    reachy.Reachy reachy = 4;
+}
+message Error {
+    string message = 1;
+}
+
+message ServiceResponse {
+    oneof response {
+        ConnectionStatus connection_status = 1;
+        Error error = 2;
+    }
+}
+
+message AnyCommand {
+    oneof command {
+        ArmCommand arm_command = 1;
+        HandCommand hand_command = 2;
+        NeckCommand neck_command = 3;
+    }
+}
+
+message ArmCommand {
+    reachy.part.arm.ArmCartesianGoal arm_cartesian_goal = 1;
+    reachy.part.PartId turn_on = 2;
+    reachy.part.PartId turn_off = 3;
+}
+
+message HandCommand {
+    reachy.part.hand.HandPositionRequest hand_goal = 1;
+    reachy.part.PartId turn_on = 2;
+    reachy.part.PartId turn_off = 3;
+}
+
+message NeckCommand {
+    reachy.part.head.NeckGoal neck_goal = 1;
+    reachy.part.PartId turn_on = 2;
+    reachy.part.PartId turn_off = 3;
+}
+
+message AnyCommands {
+    repeated AnyCommand commands = 1;
+}
