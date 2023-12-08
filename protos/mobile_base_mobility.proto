@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+
+package mobile.base.mobility;
+
+// Speed commands in SI units (m/s and rad/s)
+message DirectionVector {
+    // use FloatValue instead of double to avoid 0.0 default value being ignored
+    google.protobuf.FloatValue x = 1;
+    google.protobuf.FloatValue y = 2;
+    google.protobuf.FloatValue theta = 3;
+}
+
+message TargetDirectionCommand {
+    DirectionVector direction = 1;
+}
+
+message GoToVector {
+    google.protobuf.FloatValue x_goal = 1;
+    google.protobuf.FloatValue y_goal = 2;
+    google.protobuf.FloatValue theta_goal = 3;
+}
+
+message SetSpeedVector {
+    google.protobuf.FloatValue x_vel = 1;
+    google.protobuf.FloatValue y_vel = 2;
+    google.protobuf.FloatValue rot_vel = 3;
+    google.protobuf.FloatValue duration = 4;
+}
+
+message DistanceToGoalVector {
+    google.protobuf.FloatValue delta_x = 1;
+    google.protobuf.FloatValue delta_y = 2;
+    google.protobuf.FloatValue delta_theta = 3;
+    google.protobuf.FloatValue distance = 4;
+}
+
+message MobilityServiceAck {
+    google.protobuf.BoolValue success = 1;
+}
+
+service MobileBaseMobilityService {
+    // Mobility commands
+    rpc SendDirection(TargetDirectionCommand) returns (MobilityServiceAck);
+    rpc SendSetSpeed(SetSpeedVector) returns (MobilityServiceAck);
+    rpc SendGoTo(GoToVector) returns (MobilityServiceAck);
+    rpc DistanceToGoal(google.protobuf.Empty) returns (DistanceToGoalVector);
+}

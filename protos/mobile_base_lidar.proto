@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+import "mobile_base_mobility.proto";
+
+package mobile.base.lidar;
+
+enum LidarObstacleDetectionEnum {
+    NO_OBJECT_DETECTED = 0;
+    OBJECT_DETECTED_SLOWDOWN = 1;
+    OBJECT_DETECTED_STOP = 2;
+}
+
+message LidarObstacleDetectionStatus {
+    LidarObstacleDetectionEnum status = 1;
+}
+
+message LidarSafety {
+    google.protobuf.BoolValue safety_on = 1;
+    google.protobuf.FloatValue safety_distance = 2;
+    google.protobuf.FloatValue critical_distance = 3;
+    LidarObstacleDetectionStatus obstacle_detection_status = 4;
+}
+
+message LidarMap {
+    bytes data = 1;
+}
+
+service MobileBaseLidarService {
+    rpc SetZuuuSafety(LidarSafety) returns (mobile.base.mobility.MobilityServiceAck);
+    rpc GetZuuuSafety(google.protobuf.Empty) returns (LidarSafety);
+
+    rpc GetLidarMap(google.protobuf.Empty) returns (LidarMap);
+    rpc GetLidarObstacleDetectionStatus(google.protobuf.Empty) returns (LidarObstacleDetectionStatus);
+}
