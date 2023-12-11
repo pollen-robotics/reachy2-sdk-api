@@ -7,9 +7,10 @@ import "mobile_base_mobility.proto";
 package mobile.base.lidar;
 
 enum LidarObstacleDetectionEnum {
-    NO_OBJECT_DETECTED = 0;
-    OBJECT_DETECTED_SLOWDOWN = 1;
-    OBJECT_DETECTED_STOP = 2;
+    DETECTION_ERROR=0;
+    NO_OBJECT_DETECTED = 1;
+    OBJECT_DETECTED_SLOWDOWN = 2;
+    OBJECT_DETECTED_STOP = 3;
 }
 
 message LidarObstacleDetectionStatus {
