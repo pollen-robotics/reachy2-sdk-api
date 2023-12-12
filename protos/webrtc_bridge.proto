@@ -35,9 +35,6 @@ message ConnectionStatus {
 
     reachy.Reachy reachy = 4;
 }
-message Error {
-    string message = 1;
-}
 
 message ServiceResponse {
     oneof response {
