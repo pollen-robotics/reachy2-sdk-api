@@ -5,6 +5,8 @@ import "hand.proto";
 import "head.proto";
 import "part.proto";
 import "reachy.proto";
+import "mobile_base_mobility.proto";
+import "mobile_base_utility.proto";
 
 message GetReachy {}
 message Connect {
@@ -46,6 +48,7 @@ message AnyCommand {
         ArmCommand arm_command = 1;
         HandCommand hand_command = 2;
         NeckCommand neck_command = 3;
+        MobileBaseCommand mobile_base_command = 4;
     }
 }
 
@@ -65,6 +68,11 @@ message NeckCommand {
     reachy.part.head.NeckGoal neck_goal = 1;
     reachy.part.PartId turn_on = 2;
     reachy.part.PartId turn_off = 3;
+}
+
+message MobileBaseCommand {
+    mobile.base.mobility.TargetDirectionCommand target_direction = 1;
+    mobile.base.utility.ZuuuModeCommand mobile_base_mode = 2;
 }
 
 message AnyCommands {
