@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+csharp/reachy_sdk/.vs
+csharp/reachy_sdk/reachy_sdk/bin
+csharp/reachy_sdk/reachy_sdk/obj
