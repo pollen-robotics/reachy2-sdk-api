@@ -116,6 +116,7 @@ service HandService {
 
     rpc SetSpeedLimit (SpeedLimitRequest) returns (google.protobuf.Empty);
     rpc SetHandPosition (HandPositionRequest) returns (google.protobuf.Empty);
+    rpc SetHandPositions (stream HandPositionRequest) returns (google.protobuf.Empty);
 
     rpc GetForce (part.PartId) returns (Force);
 }

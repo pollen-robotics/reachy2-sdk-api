@@ -145,6 +145,7 @@ service HeadService {
     rpc ComputeNeckIK (NeckIKRequest) returns (NeckIKSolution);
 
     rpc GoToOrientation (NeckGoal) returns (google.protobuf.Empty);
+    rpc GoToOrientations (stream NeckGoal) returns (google.protobuf.Empty);
     rpc GetOrientation (reachy.part.PartId) returns (kinematics.Rotation3d);
 
     rpc LookAt (HeadLookAtGoal) returns (google.protobuf.Empty);

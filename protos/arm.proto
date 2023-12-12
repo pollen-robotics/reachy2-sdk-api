@@ -149,6 +149,7 @@ service ArmService {
     rpc ComputeArmIK(ArmIKRequest) returns (ArmIKSolution);
 
     rpc GoToCartesianPosition (ArmCartesianGoal) returns (google.protobuf.Empty);
+    rpc GoToCartesianPositions (stream ArmCartesianGoal) returns (google.protobuf.Empty);
     rpc GoToJointPosition (ArmJointGoal) returns (google.protobuf.Empty);
 
     rpc GetCartesianPosition (reachy.part.PartId) returns (kinematics.Matrix4x4);

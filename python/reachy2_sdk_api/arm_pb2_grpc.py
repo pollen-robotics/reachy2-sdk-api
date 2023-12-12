@@ -42,6 +42,11 @@ class ArmServiceStub(object):
                 request_serializer=arm__pb2.ArmCartesianGoal.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
+        self.GoToCartesianPositions = channel.stream_unary(
+                '/reachy.part.arm.ArmService/GoToCartesianPositions',
+                request_serializer=arm__pb2.ArmCartesianGoal.SerializeToString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                )
         self.GoToJointPosition = channel.unary_unary(
                 '/reachy.part.arm.ArmService/GoToJointPosition',
                 request_serializer=arm__pb2.ArmJointGoal.SerializeToString,
@@ -137,6 +142,12 @@ class ArmServiceServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def GoToCartesianPosition(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def GoToCartesianPositions(self, request_iterator, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -245,6 +256,11 @@ def add_ArmServiceServicer_to_server(servicer, server):
             ),
             'GoToCartesianPosition': grpc.unary_unary_rpc_method_handler(
                     servicer.GoToCartesianPosition,
+                    request_deserializer=arm__pb2.ArmCartesianGoal.FromString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            ),
+            'GoToCartesianPositions': grpc.stream_unary_rpc_method_handler(
+                    servicer.GoToCartesianPositions,
                     request_deserializer=arm__pb2.ArmCartesianGoal.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
@@ -403,6 +419,23 @@ class ArmService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/GoToCartesianPosition',
+            arm__pb2.ArmCartesianGoal.SerializeToString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def GoToCartesianPositions(request_iterator,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.stream_unary(request_iterator, target, '/reachy.part.arm.ArmService/GoToCartesianPositions',
             arm__pb2.ArmCartesianGoal.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,

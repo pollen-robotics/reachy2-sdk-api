@@ -91,6 +91,11 @@ class HandServiceStub(object):
                 request_serializer=hand__pb2.HandPositionRequest.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
+        self.SetHandPositions = channel.stream_unary(
+                '/reachy.part.hand.HandService/SetHandPositions',
+                request_serializer=hand__pb2.HandPositionRequest.SerializeToString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                )
         self.GetForce = channel.unary_unary(
                 '/reachy.part.hand.HandService/GetForce',
                 request_serializer=part__pb2.PartId.SerializeToString,
@@ -191,6 +196,12 @@ class HandServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def SetHandPositions(self, request_iterator, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
     def GetForce(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
@@ -272,6 +283,11 @@ def add_HandServiceServicer_to_server(servicer, server):
             ),
             'SetHandPosition': grpc.unary_unary_rpc_method_handler(
                     servicer.SetHandPosition,
+                    request_deserializer=hand__pb2.HandPositionRequest.FromString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            ),
+            'SetHandPositions': grpc.stream_unary_rpc_method_handler(
+                    servicer.SetHandPositions,
                     request_deserializer=hand__pb2.HandPositionRequest.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
@@ -540,6 +556,23 @@ class HandService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.hand.HandService/SetHandPosition',
+            hand__pb2.HandPositionRequest.SerializeToString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def SetHandPositions(request_iterator,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.stream_unary(request_iterator, target, '/reachy.part.hand.HandService/SetHandPositions',
             hand__pb2.HandPositionRequest.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,

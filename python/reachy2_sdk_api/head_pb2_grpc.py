@@ -42,6 +42,11 @@ class HeadServiceStub(object):
                 request_serializer=head__pb2.NeckGoal.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
+        self.GoToOrientations = channel.stream_unary(
+                '/reachy.part.head.HeadService/GoToOrientations',
+                request_serializer=head__pb2.NeckGoal.SerializeToString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                )
         self.GetOrientation = channel.unary_unary(
                 '/reachy.part.head.HeadService/GetOrientation',
                 request_serializer=part__pb2.PartId.SerializeToString,
@@ -132,6 +137,12 @@ class HeadServiceServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def GoToOrientation(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def GoToOrientations(self, request_iterator, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -234,6 +245,11 @@ def add_HeadServiceServicer_to_server(servicer, server):
             ),
             'GoToOrientation': grpc.unary_unary_rpc_method_handler(
                     servicer.GoToOrientation,
+                    request_deserializer=head__pb2.NeckGoal.FromString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            ),
+            'GoToOrientations': grpc.stream_unary_rpc_method_handler(
+                    servicer.GoToOrientations,
                     request_deserializer=head__pb2.NeckGoal.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
@@ -387,6 +403,23 @@ class HeadService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/GoToOrientation',
+            head__pb2.NeckGoal.SerializeToString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def GoToOrientations(request_iterator,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.stream_unary(request_iterator, target, '/reachy.part.head.HeadService/GoToOrientations',
             head__pb2.NeckGoal.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
