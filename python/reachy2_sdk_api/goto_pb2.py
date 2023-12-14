@@ -11,25 +11,26 @@ from google.protobuf.internal import builder as _builder
 _sym_db = _symbol_database.Default()
 
 
+from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 import arm_pb2 as arm__pb2
 import head_pb2 as head__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\ngoto.proto\x1a\tarm.proto\x1a\nhead.proto\"\x14\n\x06GoToId\x12\n\n\x02id\x18\x01 \x01(\x05\"\x16\n\x07GoToAck\x12\x0b\n\x03\x61\x63k\x18\x01 \x01(\x08\"\xa6\x01\n\rCartesianGoal\x12?\n\x12\x61rm_cartesian_goal\x18\x01 \x01(\x0b\x32!.reachy.part.arm.ArmCartesianGoalH\x00\x12\x42\n\x13neck_cartesian_goal\x18\x02 \x01(\x0b\x32#.reachy.part.head.NeckCartesianGoalH\x00\x42\x10\n\x0e\x63\x61rtesian_goal\"\x8b\x01\n\nJointsGoal\x12\x37\n\x0e\x61rm_joint_goal\x18\x01 \x01(\x0b\x32\x1d.reachy.part.arm.ArmJointGoalH\x00\x12\x35\n\x0fneck_joint_goal\x18\x02 \x01(\x0b\x32\x1a.reachy.part.head.NeckGoalH\x00\x42\r\n\x0bjoints_goal2\xa0\x01\n\x0bGoToService\x12(\n\rGoToCartesian\x12\x0e.CartesianGoal\x1a\x07.GoToId\x12\"\n\nGoToJoints\x12\x0b.JointsGoal\x1a\x07.GoToId\x12\x1f\n\nCancelGoTo\x12\x07.GoToId\x1a\x08.GoToAck\x12\"\n\rCancelAllGoTo\x12\x07.GoToId\x1a\x08.GoToAckb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\ngoto.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a\tarm.proto\x1a\nhead.proto\"\x14\n\x06GoToId\x12\n\n\x02id\x18\x01 \x01(\x05\"\x16\n\x07GoToAck\x12\x0b\n\x03\x61\x63k\x18\x01 \x01(\x08\"\xa6\x01\n\rCartesianGoal\x12?\n\x12\x61rm_cartesian_goal\x18\x01 \x01(\x0b\x32!.reachy.part.arm.ArmCartesianGoalH\x00\x12\x42\n\x13neck_cartesian_goal\x18\x02 \x01(\x0b\x32#.reachy.part.head.NeckCartesianGoalH\x00\x42\x10\n\x0e\x63\x61rtesian_goal\"\x8b\x01\n\nJointsGoal\x12\x37\n\x0e\x61rm_joint_goal\x18\x01 \x01(\x0b\x32\x1d.reachy.part.arm.ArmJointGoalH\x00\x12\x35\n\x0fneck_joint_goal\x18\x02 \x01(\x0b\x32\x1a.reachy.part.head.NeckGoalH\x00\x42\r\n\x0bjoints_goal2\xaf\x01\n\x0bGoToService\x12(\n\rGoToCartesian\x12\x0e.CartesianGoal\x1a\x07.GoToId\x12\"\n\nGoToJoints\x12\x0b.JointsGoal\x1a\x07.GoToId\x12\x1f\n\nCancelGoTo\x12\x07.GoToId\x1a\x08.GoToAck\x12\x31\n\rCancelAllGoTo\x12\x16.google.protobuf.Empty\x1a\x08.GoToAckb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'goto_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   DESCRIPTOR._options = None
-  _globals['_GOTOID']._serialized_start=37
-  _globals['_GOTOID']._serialized_end=57
-  _globals['_GOTOACK']._serialized_start=59
-  _globals['_GOTOACK']._serialized_end=81
-  _globals['_CARTESIANGOAL']._serialized_start=84
-  _globals['_CARTESIANGOAL']._serialized_end=250
-  _globals['_JOINTSGOAL']._serialized_start=253
-  _globals['_JOINTSGOAL']._serialized_end=392
-  _globals['_GOTOSERVICE']._serialized_start=395
-  _globals['_GOTOSERVICE']._serialized_end=555
+  _globals['_GOTOID']._serialized_start=66
+  _globals['_GOTOID']._serialized_end=86
+  _globals['_GOTOACK']._serialized_start=88
+  _globals['_GOTOACK']._serialized_end=110
+  _globals['_CARTESIANGOAL']._serialized_start=113
+  _globals['_CARTESIANGOAL']._serialized_end=279
+  _globals['_JOINTSGOAL']._serialized_start=282
+  _globals['_JOINTSGOAL']._serialized_end=421
+  _globals['_GOTOSERVICE']._serialized_start=424
+  _globals['_GOTOSERVICE']._serialized_end=599
 # @@protoc_insertion_point(module_scope)

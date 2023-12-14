@@ -2,6 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
+from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 import goto_pb2 as goto__pb2
 
 
@@ -31,7 +32,7 @@ class GoToServiceStub(object):
                 )
         self.CancelAllGoTo = channel.unary_unary(
                 '/GoToService/CancelAllGoTo',
-                request_serializer=goto__pb2.GoToId.SerializeToString,
+                request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=goto__pb2.GoToAck.FromString,
                 )
 
@@ -83,7 +84,7 @@ def add_GoToServiceServicer_to_server(servicer, server):
             ),
             'CancelAllGoTo': grpc.unary_unary_rpc_method_handler(
                     servicer.CancelAllGoTo,
-                    request_deserializer=goto__pb2.GoToId.FromString,
+                    request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                     response_serializer=goto__pb2.GoToAck.SerializeToString,
             ),
     }
@@ -159,7 +160,7 @@ class GoToService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/GoToService/CancelAllGoTo',
-            goto__pb2.GoToId.SerializeToString,
+            google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             goto__pb2.GoToAck.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

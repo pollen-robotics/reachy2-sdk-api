@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+import "google/protobuf/empty.proto";
+
 import "arm.proto";
 import "head.proto";
 
@@ -30,5 +32,5 @@ service GoToService {
     rpc GoToCartesian (CartesianGoal) returns (GoToId);
     rpc GoToJoints (JointsGoal) returns (GoToId);
     rpc CancelGoTo (GoToId) returns (GoToAck);
-    rpc CancelAllGoTo (GoToId) returns (GoToAck);
+    rpc CancelAllGoTo (google.protobuf.Empty) returns (GoToAck);
 }
