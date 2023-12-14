@@ -25,6 +25,11 @@ class GoToServiceStub(object):
                 request_serializer=goto__pb2.JointsGoal.SerializeToString,
                 response_deserializer=goto__pb2.GoToId.FromString,
                 )
+        self.GetGoToState = channel.unary_unary(
+                '/GoToService/GetGoToState',
+                request_serializer=goto__pb2.GoToId.SerializeToString,
+                response_deserializer=goto__pb2.GoToGoalStatus.FromString,
+                )
         self.CancelGoTo = channel.unary_unary(
                 '/GoToService/CancelGoTo',
                 request_serializer=goto__pb2.GoToId.SerializeToString,
@@ -47,6 +52,12 @@ class GoToServiceServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def GoToJoints(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def GetGoToState(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -76,6 +87,11 @@ def add_GoToServiceServicer_to_server(servicer, server):
                     servicer.GoToJoints,
                     request_deserializer=goto__pb2.JointsGoal.FromString,
                     response_serializer=goto__pb2.GoToId.SerializeToString,
+            ),
+            'GetGoToState': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetGoToState,
+                    request_deserializer=goto__pb2.GoToId.FromString,
+                    response_serializer=goto__pb2.GoToGoalStatus.SerializeToString,
             ),
             'CancelGoTo': grpc.unary_unary_rpc_method_handler(
                     servicer.CancelGoTo,
@@ -128,6 +144,23 @@ class GoToService(object):
         return grpc.experimental.unary_unary(request, target, '/GoToService/GoToJoints',
             goto__pb2.JointsGoal.SerializeToString,
             goto__pb2.GoToId.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def GetGoToState(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/GoToService/GetGoToState',
+            goto__pb2.GoToId.SerializeToString,
+            goto__pb2.GoToGoalStatus.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 

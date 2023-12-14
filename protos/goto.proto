@@ -5,12 +5,25 @@ import "google/protobuf/empty.proto";
 import "arm.proto";
 import "head.proto";
 
+enum GoalStatus {
+    UNKNOWN = 0;
+    STATUS_ACCEPTED = 1;
+    STATUS_EXECUTING = 2;
+    STATUS_SUCCEEDED = 3;
+    STATUS_CANCELED = 4;
+    STATUS_ABORTED = 5;
+}
+
 message GoToId {
     int32 id = 1;
 }
 
 message GoToAck {
     bool ack = 1;
+}
+
+message GoToGoalStatus {
+    GoalStatus goal_status = 1;
 }
 
 message CartesianGoal {
@@ -31,6 +44,7 @@ message JointsGoal {
 service GoToService {
     rpc GoToCartesian (CartesianGoal) returns (GoToId);
     rpc GoToJoints (JointsGoal) returns (GoToId);
+    rpc GetGoToState (GoToId) returns (GoToGoalStatus);
     rpc CancelGoTo (GoToId) returns (GoToAck);
     rpc CancelAllGoTo (google.protobuf.Empty) returns (GoToAck);
 }
