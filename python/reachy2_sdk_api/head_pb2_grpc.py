@@ -37,11 +37,6 @@ class HeadServiceStub(object):
                 request_serializer=head__pb2.NeckIKRequest.SerializeToString,
                 response_deserializer=head__pb2.NeckIKSolution.FromString,
                 )
-        self.GoToOrientation = channel.unary_unary(
-                '/reachy.part.head.HeadService/GoToOrientation',
-                request_serializer=head__pb2.NeckGoal.SerializeToString,
-                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
-                )
         self.GetOrientation = channel.unary_unary(
                 '/reachy.part.head.HeadService/GetOrientation',
                 request_serializer=part__pb2.PartId.SerializeToString,
@@ -126,12 +121,6 @@ class HeadServiceServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def ComputeNeckIK(self, request, context):
-        """Missing associated documentation comment in .proto file."""
-        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
-        context.set_details('Method not implemented!')
-        raise NotImplementedError('Method not implemented!')
-
-    def GoToOrientation(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -231,11 +220,6 @@ def add_HeadServiceServicer_to_server(servicer, server):
                     servicer.ComputeNeckIK,
                     request_deserializer=head__pb2.NeckIKRequest.FromString,
                     response_serializer=head__pb2.NeckIKSolution.SerializeToString,
-            ),
-            'GoToOrientation': grpc.unary_unary_rpc_method_handler(
-                    servicer.GoToOrientation,
-                    request_deserializer=head__pb2.NeckGoal.FromString,
-                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'GetOrientation': grpc.unary_unary_rpc_method_handler(
                     servicer.GetOrientation,
@@ -372,23 +356,6 @@ class HeadService(object):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/ComputeNeckIK',
             head__pb2.NeckIKRequest.SerializeToString,
             head__pb2.NeckIKSolution.FromString,
-            options, channel_credentials,
-            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
-
-    @staticmethod
-    def GoToOrientation(request,
-            target,
-            options=(),
-            channel_credentials=None,
-            call_credentials=None,
-            insecure=False,
-            compression=None,
-            wait_for_ready=None,
-            timeout=None,
-            metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/GoToOrientation',
-            head__pb2.NeckGoal.SerializeToString,
-            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 

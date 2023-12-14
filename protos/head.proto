@@ -69,11 +69,18 @@ message HeadPosition {
     google.protobuf.FloatValue r_antenna_position = 3;
 }
 
-message NeckGoal {
+message NeckCartesianGoal {
     reachy.part.PartId id = 1;
-    kinematics.Rotation3d rotation = 2;
+    kinematics.Matrix4x4 goal_pose = 2;
     google.protobuf.FloatValue duration = 3;
 }
+
+message NeckGoal {
+    reachy.part.PartId id = 1;
+    NeckOrientation joints_goal = 2;
+    google.protobuf.FloatValue duration = 3;
+}
+
 
 message NeckOrientation {
     kinematics.Rotation3d rotation = 1;
@@ -144,7 +151,6 @@ service HeadService {
     rpc ComputeNeckFK (NeckFKRequest) returns (NeckFKSolution);
     rpc ComputeNeckIK (NeckIKRequest) returns (NeckIKSolution);
 
-    rpc GoToOrientation (NeckGoal) returns (google.protobuf.Empty);
     rpc GetOrientation (reachy.part.PartId) returns (kinematics.Rotation3d);
 
     rpc LookAt (HeadLookAtGoal) returns (google.protobuf.Empty);

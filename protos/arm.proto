@@ -70,18 +70,17 @@ message ArmPosition {
 message ArmCartesianGoal {
     reachy.part.PartId id = 1;
 
-    kinematics.Point target_position = 2;
-    kinematics.Rotation3d target_orientation = 3;
+    kinematics.Matrix4x4 goal_pose = 2;
     
-    kinematics.PointDistanceTolerances position_tolerance = 4;
-    kinematics.ExtEulerAnglesTolerances orientation_tolerance = 5;
+    kinematics.PointDistanceTolerances position_tolerance = 3;
+    kinematics.ExtEulerAnglesTolerances orientation_tolerance = 4;
 
     google.protobuf.FloatValue duration = 10;
 }
 
 message ArmJointGoal {
     reachy.part.PartId id = 1;
-    ArmPosition position = 2;
+    ArmPosition joints_goal = 2;
     google.protobuf.FloatValue duration = 3;
 }
 
@@ -147,9 +146,6 @@ service ArmService {
 
     rpc ComputeArmFK(ArmFKRequest) returns (ArmFKSolution);
     rpc ComputeArmIK(ArmIKRequest) returns (ArmIKSolution);
-
-    rpc GoToCartesianPosition (ArmCartesianGoal) returns (google.protobuf.Empty);
-    rpc GoToJointPosition (ArmJointGoal) returns (google.protobuf.Empty);
 
     rpc GetCartesianPosition (reachy.part.PartId) returns (kinematics.Matrix4x4);
     rpc GetJointPosition (reachy.part.PartId) returns (ArmPosition);

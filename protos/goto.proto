@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+import "arm.proto";
+import "head.proto";
+
+message GoToId {
+    int32 id = 1;
+}
+
+message GoToAck {
+    bool ack = 1;
+}
+
+message CartesianGoal {
+    oneof cartesian_goal {
+        reachy.part.arm.ArmCartesianGoal arm_cartesian_goal=1;
+        reachy.part.head.NeckCartesianGoal neck_cartesian_goal=2;
+    }
+}
+
+message JointsGoal {
+    oneof joints_goal {
+        reachy.part.arm.ArmJointGoal arm_joint_goal=1;
+        reachy.part.head.NeckGoal neck_joint_goal=2;
+    }
+}
+
+
+service GoToService {
+    rpc GoToCartesian (CartesianGoal) returns (GoToId);
+    rpc GoToJoints (JointsGoal) returns (GoToId);
+    rpc CancelGoTo (GoToId) returns (GoToAck);
+    rpc CancelAllGoTo (GoToId) returns (GoToAck);
+}
