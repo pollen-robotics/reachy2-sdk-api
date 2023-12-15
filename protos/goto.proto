@@ -6,13 +6,14 @@ import "arm.proto";
 import "head.proto";
 
 enum GoalStatus {
-    STATUS_UNKNOWN = 0;
-    STATUS_ACCEPTED = 1;
-    STATUS_EXECUTING = 2;
-    STATUS_CANCELING = 3;
-    STATUS_SUCCEEDED = 4;
-    STATUS_CANCELED = 5;
-    STATUS_ABORTED = 6;
+    NONE = 0;
+    STATUS_UNKNOWN = 1;
+    STATUS_ACCEPTED = 2;
+    STATUS_EXECUTING = 3;
+    STATUS_CANCELING = 4;
+    STATUS_SUCCEEDED = 5;
+    STATUS_CANCELED = 6;
+    STATUS_ABORTED = 7;
 }
 
 message GoToId {
