@@ -62,8 +62,6 @@ namespace Reachy.Part.Head {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Reachy.Part.Head.NeckIKSolution> __Marshaller_reachy_part_head_NeckIKSolution = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Head.NeckIKSolution.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Reachy.Part.Head.NeckGoal> __Marshaller_reachy_part_head_NeckGoal = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Head.NeckGoal.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Reachy.Kinematics.Rotation3d> __Marshaller_reachy_kinematics_Rotation3d = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Kinematics.Rotation3d.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Reachy.Part.Head.HeadLookAtGoal> __Marshaller_reachy_part_head_HeadLookAtGoal = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Head.HeadLookAtGoal.Parser));
@@ -107,14 +105,6 @@ namespace Reachy.Part.Head {
         "ComputeNeckIK",
         __Marshaller_reachy_part_head_NeckIKRequest,
         __Marshaller_reachy_part_head_NeckIKSolution);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Reachy.Part.Head.NeckGoal, global::Google.Protobuf.WellKnownTypes.Empty> __Method_GoToOrientation = new grpc::Method<global::Reachy.Part.Head.NeckGoal, global::Google.Protobuf.WellKnownTypes.Empty>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GoToOrientation",
-        __Marshaller_reachy_part_head_NeckGoal,
-        __Marshaller_google_protobuf_Empty);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Reachy.Part.PartId, global::Reachy.Kinematics.Rotation3d> __Method_GetOrientation = new grpc::Method<global::Reachy.Part.PartId, global::Reachy.Kinematics.Rotation3d>(
@@ -242,12 +232,6 @@ namespace Reachy.Part.Head {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Reachy.Part.Head.NeckIKSolution> ComputeNeckIK(global::Reachy.Part.Head.NeckIKRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> GoToOrientation(global::Reachy.Part.Head.NeckGoal request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -432,26 +416,6 @@ namespace Reachy.Part.Head {
       public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Head.NeckIKSolution> ComputeNeckIKAsync(global::Reachy.Part.Head.NeckIKRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_ComputeNeckIK, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty GoToOrientation(global::Reachy.Part.Head.NeckGoal request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GoToOrientation(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty GoToOrientation(global::Reachy.Part.Head.NeckGoal request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GoToOrientation, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> GoToOrientationAsync(global::Reachy.Part.Head.NeckGoal request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GoToOrientationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> GoToOrientationAsync(global::Reachy.Part.Head.NeckGoal request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GoToOrientation, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Reachy.Kinematics.Rotation3d GetOrientation(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
@@ -711,7 +675,6 @@ namespace Reachy.Part.Head {
           .AddMethod(__Method_GetState, serviceImpl.GetState)
           .AddMethod(__Method_ComputeNeckFK, serviceImpl.ComputeNeckFK)
           .AddMethod(__Method_ComputeNeckIK, serviceImpl.ComputeNeckIK)
-          .AddMethod(__Method_GoToOrientation, serviceImpl.GoToOrientation)
           .AddMethod(__Method_GetOrientation, serviceImpl.GetOrientation)
           .AddMethod(__Method_LookAt, serviceImpl.LookAt)
           .AddMethod(__Method_Audit, serviceImpl.Audit)
@@ -737,7 +700,6 @@ namespace Reachy.Part.Head {
       serviceBinder.AddMethod(__Method_GetState, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Head.HeadState>(serviceImpl.GetState));
       serviceBinder.AddMethod(__Method_ComputeNeckFK, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Head.NeckFKRequest, global::Reachy.Part.Head.NeckFKSolution>(serviceImpl.ComputeNeckFK));
       serviceBinder.AddMethod(__Method_ComputeNeckIK, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Head.NeckIKRequest, global::Reachy.Part.Head.NeckIKSolution>(serviceImpl.ComputeNeckIK));
-      serviceBinder.AddMethod(__Method_GoToOrientation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Head.NeckGoal, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.GoToOrientation));
       serviceBinder.AddMethod(__Method_GetOrientation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Kinematics.Rotation3d>(serviceImpl.GetOrientation));
       serviceBinder.AddMethod(__Method_LookAt, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Head.HeadLookAtGoal, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.LookAt));
       serviceBinder.AddMethod(__Method_Audit, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Head.HeadStatus>(serviceImpl.Audit));
