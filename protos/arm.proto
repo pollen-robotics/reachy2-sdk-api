@@ -164,4 +164,5 @@ service ArmService {
     rpc GetJointGoalPosition (reachy.part.PartId) returns (ArmPosition);
 
     rpc SetSpeedLimit (SpeedLimitRequest) returns (google.protobuf.Empty);
+    rpc SendArmCartesianGoal (ArmCartesianGoal) returns (google.protobuf.Empty);
 }
