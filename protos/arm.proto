@@ -75,6 +75,7 @@ message ArmCartesianGoal {
     kinematics.PointDistanceTolerances position_tolerance = 3;
     kinematics.ExtEulerAnglesTolerances orientation_tolerance = 4;
 
+    ArmPosition q0 = 5;
     google.protobuf.FloatValue duration = 10;
 }
 
