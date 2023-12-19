@@ -42,10 +42,28 @@ message JointsGoal {
     }
 }
 
+enum InterpolationMode {
+    NONE_INTERPOLATION = 0;
+    LINEAR = 1;
+    MINIMUM_JERK = 2;
+}
+
+message GoToInterpolation {
+    InterpolationMode interpolation_type = 1;
+}
+
+message GoToRequest {
+    oneof goal {
+        CartesianGoal cartesian_goal=1;
+        JointsGoal joints_goal=2;
+    }
+    GoToInterpolation interpolation_mode = 3;
+}
+
 
 service GoToService {
-    rpc GoToCartesian (CartesianGoal) returns (GoToId);
-    rpc GoToJoints (JointsGoal) returns (GoToId);
+    rpc GoToCartesian (GoToRequest) returns (GoToId);
+    rpc GoToJoints (GoToRequest) returns (GoToId);
     rpc GetGoToState (GoToId) returns (GoToGoalStatus);
     rpc CancelGoTo (GoToId) returns (GoToAck);
     rpc CancelAllGoTo (google.protobuf.Empty) returns (GoToAck);

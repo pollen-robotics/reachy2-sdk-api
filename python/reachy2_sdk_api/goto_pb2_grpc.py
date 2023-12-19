@@ -17,12 +17,12 @@ class GoToServiceStub(object):
         """
         self.GoToCartesian = channel.unary_unary(
                 '/GoToService/GoToCartesian',
-                request_serializer=goto__pb2.CartesianGoal.SerializeToString,
+                request_serializer=goto__pb2.GoToRequest.SerializeToString,
                 response_deserializer=goto__pb2.GoToId.FromString,
                 )
         self.GoToJoints = channel.unary_unary(
                 '/GoToService/GoToJoints',
-                request_serializer=goto__pb2.JointsGoal.SerializeToString,
+                request_serializer=goto__pb2.GoToRequest.SerializeToString,
                 response_deserializer=goto__pb2.GoToId.FromString,
                 )
         self.GetGoToState = channel.unary_unary(
@@ -80,12 +80,12 @@ def add_GoToServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
             'GoToCartesian': grpc.unary_unary_rpc_method_handler(
                     servicer.GoToCartesian,
-                    request_deserializer=goto__pb2.CartesianGoal.FromString,
+                    request_deserializer=goto__pb2.GoToRequest.FromString,
                     response_serializer=goto__pb2.GoToId.SerializeToString,
             ),
             'GoToJoints': grpc.unary_unary_rpc_method_handler(
                     servicer.GoToJoints,
-                    request_deserializer=goto__pb2.JointsGoal.FromString,
+                    request_deserializer=goto__pb2.GoToRequest.FromString,
                     response_serializer=goto__pb2.GoToId.SerializeToString,
             ),
             'GetGoToState': grpc.unary_unary_rpc_method_handler(
@@ -125,7 +125,7 @@ class GoToService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/GoToService/GoToCartesian',
-            goto__pb2.CartesianGoal.SerializeToString,
+            goto__pb2.GoToRequest.SerializeToString,
             goto__pb2.GoToId.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
@@ -142,7 +142,7 @@ class GoToService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/GoToService/GoToJoints',
-            goto__pb2.JointsGoal.SerializeToString,
+            goto__pb2.GoToRequest.SerializeToString,
             goto__pb2.GoToId.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
