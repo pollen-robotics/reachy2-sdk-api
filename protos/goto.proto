@@ -38,7 +38,7 @@ message CartesianGoal {
 message JointsGoal {
     oneof joints_goal {
         reachy.part.arm.ArmJointGoal arm_joint_goal=1;
-        reachy.part.head.NeckGoal neck_joint_goal=2;
+        reachy.part.head.NeckJointGoal neck_joint_goal=2;
     }
 }
 

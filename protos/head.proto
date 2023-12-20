@@ -71,11 +71,11 @@ message HeadPosition {
 
 message NeckCartesianGoal {
     reachy.part.PartId id = 1;
-    kinematics.Matrix4x4 goal_pose = 2;
+    reachy.kinematics.Point point = 2;
     google.protobuf.FloatValue duration = 3;
 }
 
-message NeckGoal {
+message NeckJointGoal {
     reachy.part.PartId id = 1;
     NeckOrientation joints_goal = 2;
     google.protobuf.FloatValue duration = 3;
@@ -113,12 +113,6 @@ message HeadStatus {
 
 }
 
-message HeadLookAtGoal {
-    reachy.part.PartId id = 1;
-    reachy.kinematics.Point point = 2;
-    google.protobuf.FloatValue duration = 3;
-}
-
 enum SpeedLimit {
     NO_LIMIT = 0;
     FAST = 1;
@@ -152,8 +146,6 @@ service HeadService {
     rpc ComputeNeckIK (NeckIKRequest) returns (NeckIKSolution);
 
     rpc GetOrientation (reachy.part.PartId) returns (kinematics.Rotation3d);
-
-    rpc LookAt (HeadLookAtGoal) returns (google.protobuf.Empty);
 
     rpc Audit (reachy.part.PartId) returns (HeadStatus);
     rpc HeartBeat (reachy.part.PartId) returns (google.protobuf.Empty);
