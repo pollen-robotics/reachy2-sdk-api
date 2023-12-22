@@ -26,35 +26,41 @@ namespace Bridge {
           string.Concat(
             "ChN3ZWJydGNfYnJpZGdlLnByb3RvEgZicmlkZ2UaCWFybS5wcm90bxoKaGFu",
             "ZC5wcm90bxoKaGVhZC5wcm90bxoKcGFydC5wcm90bxoMcmVhY2h5LnByb3Rv",
-            "GgtlcnJvci5wcm90byILCglHZXRSZWFjaHkiSAoHQ29ubmVjdBIjCglyZWFj",
-            "aHlfaWQYASABKAsyEC5yZWFjaHkuUmVhY2h5SWQSGAoQdXBkYXRlX2ZyZXF1",
-            "ZW5jeRgCIAEoAiIxCgpEaXNjb25uZWN0EiMKCXJlYWNoeV9pZBgBIAEoCzIQ",
-            "LnJlYWNoeS5SZWFjaHlJZCKSAQoOU2VydmljZVJlcXVlc3QSJwoKZ2V0X3Jl",
-            "YWNoeRgBIAEoCzIRLmJyaWRnZS5HZXRSZWFjaHlIABIiCgdjb25uZWN0GAIg",
-            "ASgLMg8uYnJpZGdlLkNvbm5lY3RIABIoCgpkaXNjb25uZWN0GAMgASgLMhIu",
-            "YnJpZGdlLkRpc2Nvbm5lY3RIAEIJCgdyZXF1ZXN0InUKEENvbm5lY3Rpb25T",
-            "dGF0dXMSEQoJY29ubmVjdGVkGAEgASgIEhUKDXN0YXRlX2NoYW5uZWwYAiAB",
-            "KAkSFwoPY29tbWFuZF9jaGFubmVsGAMgASgJEh4KBnJlYWNoeRgEIAEoCzIO",
-            "LnJlYWNoeS5SZWFjaHkicwoPU2VydmljZVJlc3BvbnNlEjUKEWNvbm5lY3Rp",
-            "b25fc3RhdHVzGAEgASgLMhguYnJpZGdlLkNvbm5lY3Rpb25TdGF0dXNIABId",
-            "CgVlcnJvchgCIAEoCzIMLmVycm9yLkVycm9ySABCCgoIcmVzcG9uc2UinAEK",
-            "CkFueUNvbW1hbmQSKQoLYXJtX2NvbW1hbmQYASABKAsyEi5icmlkZ2UuQXJt",
-            "Q29tbWFuZEgAEisKDGhhbmRfY29tbWFuZBgCIAEoCzITLmJyaWRnZS5IYW5k",
-            "Q29tbWFuZEgAEisKDG5lY2tfY29tbWFuZBgDIAEoCzITLmJyaWRnZS5OZWNr",
-            "Q29tbWFuZEgAQgkKB2NvbW1hbmQimAEKCkFybUNvbW1hbmQSPQoSYXJtX2Nh",
-            "cnRlc2lhbl9nb2FsGAEgASgLMiEucmVhY2h5LnBhcnQuYXJtLkFybUNhcnRl",
-            "c2lhbkdvYWwSJAoHdHVybl9vbhgCIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJ",
-            "ZBIlCgh0dXJuX29mZhgDIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZCKUAQoL",
-            "SGFuZENvbW1hbmQSOAoJaGFuZF9nb2FsGAEgASgLMiUucmVhY2h5LnBhcnQu",
-            "aGFuZC5IYW5kUG9zaXRpb25SZXF1ZXN0EiQKB3R1cm5fb24YAiABKAsyEy5y",
-            "ZWFjaHkucGFydC5QYXJ0SWQSJQoIdHVybl9vZmYYAyABKAsyEy5yZWFjaHku",
-            "cGFydC5QYXJ0SWQiiQEKC05lY2tDb21tYW5kEi0KCW5lY2tfZ29hbBgBIAEo",
-            "CzIaLnJlYWNoeS5wYXJ0LmhlYWQuTmVja0dvYWwSJAoHdHVybl9vbhgCIAEo",
-            "CzITLnJlYWNoeS5wYXJ0LlBhcnRJZBIlCgh0dXJuX29mZhgDIAEoCzITLnJl",
-            "YWNoeS5wYXJ0LlBhcnRJZCIzCgtBbnlDb21tYW5kcxIkCghjb21tYW5kcxgB",
-            "IAMoCzISLmJyaWRnZS5BbnlDb21tYW5kYgZwcm90bzM="));
+            "GgtlcnJvci5wcm90bxoabW9iaWxlX2Jhc2VfbW9iaWxpdHkucHJvdG8aGW1v",
+            "YmlsZV9iYXNlX3V0aWxpdHkucHJvdG8iCwoJR2V0UmVhY2h5IkgKB0Nvbm5l",
+            "Y3QSIwoJcmVhY2h5X2lkGAEgASgLMhAucmVhY2h5LlJlYWNoeUlkEhgKEHVw",
+            "ZGF0ZV9mcmVxdWVuY3kYAiABKAIiMQoKRGlzY29ubmVjdBIjCglyZWFjaHlf",
+            "aWQYASABKAsyEC5yZWFjaHkuUmVhY2h5SWQikgEKDlNlcnZpY2VSZXF1ZXN0",
+            "EicKCmdldF9yZWFjaHkYASABKAsyES5icmlkZ2UuR2V0UmVhY2h5SAASIgoH",
+            "Y29ubmVjdBgCIAEoCzIPLmJyaWRnZS5Db25uZWN0SAASKAoKZGlzY29ubmVj",
+            "dBgDIAEoCzISLmJyaWRnZS5EaXNjb25uZWN0SABCCQoHcmVxdWVzdCJ1ChBD",
+            "b25uZWN0aW9uU3RhdHVzEhEKCWNvbm5lY3RlZBgBIAEoCBIVCg1zdGF0ZV9j",
+            "aGFubmVsGAIgASgJEhcKD2NvbW1hbmRfY2hhbm5lbBgDIAEoCRIeCgZyZWFj",
+            "aHkYBCABKAsyDi5yZWFjaHkuUmVhY2h5InMKD1NlcnZpY2VSZXNwb25zZRI1",
+            "ChFjb25uZWN0aW9uX3N0YXR1cxgBIAEoCzIYLmJyaWRnZS5Db25uZWN0aW9u",
+            "U3RhdHVzSAASHQoFZXJyb3IYAiABKAsyDC5lcnJvci5FcnJvckgAQgoKCHJl",
+            "c3BvbnNlItYBCgpBbnlDb21tYW5kEikKC2FybV9jb21tYW5kGAEgASgLMhIu",
+            "YnJpZGdlLkFybUNvbW1hbmRIABIrCgxoYW5kX2NvbW1hbmQYAiABKAsyEy5i",
+            "cmlkZ2UuSGFuZENvbW1hbmRIABIrCgxuZWNrX2NvbW1hbmQYAyABKAsyEy5i",
+            "cmlkZ2UuTmVja0NvbW1hbmRIABI4ChNtb2JpbGVfYmFzZV9jb21tYW5kGAQg",
+            "ASgLMhkuYnJpZGdlLk1vYmlsZUJhc2VDb21tYW5kSABCCQoHY29tbWFuZCKY",
+            "AQoKQXJtQ29tbWFuZBI9ChJhcm1fY2FydGVzaWFuX2dvYWwYASABKAsyIS5y",
+            "ZWFjaHkucGFydC5hcm0uQXJtQ2FydGVzaWFuR29hbBIkCgd0dXJuX29uGAIg",
+            "ASgLMhMucmVhY2h5LnBhcnQuUGFydElkEiUKCHR1cm5fb2ZmGAMgASgLMhMu",
+            "cmVhY2h5LnBhcnQuUGFydElkIpQBCgtIYW5kQ29tbWFuZBI4CgloYW5kX2dv",
+            "YWwYASABKAsyJS5yZWFjaHkucGFydC5oYW5kLkhhbmRQb3NpdGlvblJlcXVl",
+            "c3QSJAoHdHVybl9vbhgCIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBIlCgh0",
+            "dXJuX29mZhgDIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZCKJAQoLTmVja0Nv",
+            "bW1hbmQSLQoJbmVja19nb2FsGAEgASgLMhoucmVhY2h5LnBhcnQuaGVhZC5O",
+            "ZWNrR29hbBIkCgd0dXJuX29uGAIgASgLMhMucmVhY2h5LnBhcnQuUGFydElk",
+            "EiUKCHR1cm5fb2ZmGAMgASgLMhMucmVhY2h5LnBhcnQuUGFydElkIpsBChFN",
+            "b2JpbGVCYXNlQ29tbWFuZBJGChB0YXJnZXRfZGlyZWN0aW9uGAEgASgLMiwu",
+            "bW9iaWxlLmJhc2UubW9iaWxpdHkuVGFyZ2V0RGlyZWN0aW9uQ29tbWFuZBI+",
+            "ChBtb2JpbGVfYmFzZV9tb2RlGAIgASgLMiQubW9iaWxlLmJhc2UudXRpbGl0",
+            "eS5adXV1TW9kZUNvbW1hbmQiMwoLQW55Q29tbWFuZHMSJAoIY29tbWFuZHMY",
+            "ASADKAsyEi5icmlkZ2UuQW55Q29tbWFuZGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, global::Reachy.ReachyReflection.Descriptor, global::Error.ErrorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, global::Reachy.ReachyReflection.Descriptor, global::Error.ErrorReflection.Descriptor, global::Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor, global::Mobile.Base.Utility.MobileBaseUtilityReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.GetReachy), global::Bridge.GetReachy.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.Connect), global::Bridge.Connect.Parser, new[]{ "ReachyId", "UpdateFrequency" }, null, null, null, null),
@@ -62,10 +68,11 @@ namespace Bridge {
             new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.ServiceRequest), global::Bridge.ServiceRequest.Parser, new[]{ "GetReachy", "Connect", "Disconnect" }, new[]{ "Request" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.ConnectionStatus), global::Bridge.ConnectionStatus.Parser, new[]{ "Connected", "StateChannel", "CommandChannel", "Reachy" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.ServiceResponse), global::Bridge.ServiceResponse.Parser, new[]{ "ConnectionStatus", "Error" }, new[]{ "Response" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.AnyCommand), global::Bridge.AnyCommand.Parser, new[]{ "ArmCommand", "HandCommand", "NeckCommand" }, new[]{ "Command" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.AnyCommand), global::Bridge.AnyCommand.Parser, new[]{ "ArmCommand", "HandCommand", "NeckCommand", "MobileBaseCommand" }, new[]{ "Command" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.ArmCommand), global::Bridge.ArmCommand.Parser, new[]{ "ArmCartesianGoal", "TurnOn", "TurnOff" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.HandCommand), global::Bridge.HandCommand.Parser, new[]{ "HandGoal", "TurnOn", "TurnOff" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.NeckCommand), global::Bridge.NeckCommand.Parser, new[]{ "NeckGoal", "TurnOn", "TurnOff" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.MobileBaseCommand), global::Bridge.MobileBaseCommand.Parser, new[]{ "TargetDirection", "MobileBaseMode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.AnyCommands), global::Bridge.AnyCommands.Parser, new[]{ "Commands" }, null, null, null, null)
           }));
     }
@@ -1634,6 +1641,9 @@ namespace Bridge {
         case CommandOneofCase.NeckCommand:
           NeckCommand = other.NeckCommand.Clone();
           break;
+        case CommandOneofCase.MobileBaseCommand:
+          MobileBaseCommand = other.MobileBaseCommand.Clone();
+          break;
       }
 
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1681,6 +1691,18 @@ namespace Bridge {
       }
     }
 
+    /// <summary>Field number for the "mobile_base_command" field.</summary>
+    public const int MobileBaseCommandFieldNumber = 4;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Bridge.MobileBaseCommand MobileBaseCommand {
+      get { return commandCase_ == CommandOneofCase.MobileBaseCommand ? (global::Bridge.MobileBaseCommand) command_ : null; }
+      set {
+        command_ = value;
+        commandCase_ = value == null ? CommandOneofCase.None : CommandOneofCase.MobileBaseCommand;
+      }
+    }
+
     private object command_;
     /// <summary>Enum of possible cases for the "command" oneof.</summary>
     public enum CommandOneofCase {
@@ -1688,6 +1710,7 @@ namespace Bridge {
       ArmCommand = 1,
       HandCommand = 2,
       NeckCommand = 3,
+      MobileBaseCommand = 4,
     }
     private CommandOneofCase commandCase_ = CommandOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1721,6 +1744,7 @@ namespace Bridge {
       if (!object.Equals(ArmCommand, other.ArmCommand)) return false;
       if (!object.Equals(HandCommand, other.HandCommand)) return false;
       if (!object.Equals(NeckCommand, other.NeckCommand)) return false;
+      if (!object.Equals(MobileBaseCommand, other.MobileBaseCommand)) return false;
       if (CommandCase != other.CommandCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1732,6 +1756,7 @@ namespace Bridge {
       if (commandCase_ == CommandOneofCase.ArmCommand) hash ^= ArmCommand.GetHashCode();
       if (commandCase_ == CommandOneofCase.HandCommand) hash ^= HandCommand.GetHashCode();
       if (commandCase_ == CommandOneofCase.NeckCommand) hash ^= NeckCommand.GetHashCode();
+      if (commandCase_ == CommandOneofCase.MobileBaseCommand) hash ^= MobileBaseCommand.GetHashCode();
       hash ^= (int) commandCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1763,6 +1788,10 @@ namespace Bridge {
         output.WriteRawTag(26);
         output.WriteMessage(NeckCommand);
       }
+      if (commandCase_ == CommandOneofCase.MobileBaseCommand) {
+        output.WriteRawTag(34);
+        output.WriteMessage(MobileBaseCommand);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1785,6 +1814,10 @@ namespace Bridge {
         output.WriteRawTag(26);
         output.WriteMessage(NeckCommand);
       }
+      if (commandCase_ == CommandOneofCase.MobileBaseCommand) {
+        output.WriteRawTag(34);
+        output.WriteMessage(MobileBaseCommand);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1803,6 +1836,9 @@ namespace Bridge {
       }
       if (commandCase_ == CommandOneofCase.NeckCommand) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(NeckCommand);
+      }
+      if (commandCase_ == CommandOneofCase.MobileBaseCommand) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MobileBaseCommand);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1834,6 +1870,12 @@ namespace Bridge {
             NeckCommand = new global::Bridge.NeckCommand();
           }
           NeckCommand.MergeFrom(other.NeckCommand);
+          break;
+        case CommandOneofCase.MobileBaseCommand:
+          if (MobileBaseCommand == null) {
+            MobileBaseCommand = new global::Bridge.MobileBaseCommand();
+          }
+          MobileBaseCommand.MergeFrom(other.MobileBaseCommand);
           break;
       }
 
@@ -1879,6 +1921,15 @@ namespace Bridge {
             NeckCommand = subBuilder;
             break;
           }
+          case 34: {
+            global::Bridge.MobileBaseCommand subBuilder = new global::Bridge.MobileBaseCommand();
+            if (commandCase_ == CommandOneofCase.MobileBaseCommand) {
+              subBuilder.MergeFrom(MobileBaseCommand);
+            }
+            input.ReadMessage(subBuilder);
+            MobileBaseCommand = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -1919,6 +1970,15 @@ namespace Bridge {
             }
             input.ReadMessage(subBuilder);
             NeckCommand = subBuilder;
+            break;
+          }
+          case 34: {
+            global::Bridge.MobileBaseCommand subBuilder = new global::Bridge.MobileBaseCommand();
+            if (commandCase_ == CommandOneofCase.MobileBaseCommand) {
+              subBuilder.MergeFrom(MobileBaseCommand);
+            }
+            input.ReadMessage(subBuilder);
+            MobileBaseCommand = subBuilder;
             break;
           }
         }
@@ -2798,6 +2858,250 @@ namespace Bridge {
 
   }
 
+  public sealed partial class MobileBaseCommand : pb::IMessage<MobileBaseCommand>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<MobileBaseCommand> _parser = new pb::MessageParser<MobileBaseCommand>(() => new MobileBaseCommand());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<MobileBaseCommand> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Bridge.WebrtcBridgeReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MobileBaseCommand() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MobileBaseCommand(MobileBaseCommand other) : this() {
+      targetDirection_ = other.targetDirection_ != null ? other.targetDirection_.Clone() : null;
+      mobileBaseMode_ = other.mobileBaseMode_ != null ? other.mobileBaseMode_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MobileBaseCommand Clone() {
+      return new MobileBaseCommand(this);
+    }
+
+    /// <summary>Field number for the "target_direction" field.</summary>
+    public const int TargetDirectionFieldNumber = 1;
+    private global::Mobile.Base.Mobility.TargetDirectionCommand targetDirection_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Mobile.Base.Mobility.TargetDirectionCommand TargetDirection {
+      get { return targetDirection_; }
+      set {
+        targetDirection_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "mobile_base_mode" field.</summary>
+    public const int MobileBaseModeFieldNumber = 2;
+    private global::Mobile.Base.Utility.ZuuuModeCommand mobileBaseMode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Mobile.Base.Utility.ZuuuModeCommand MobileBaseMode {
+      get { return mobileBaseMode_; }
+      set {
+        mobileBaseMode_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as MobileBaseCommand);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(MobileBaseCommand other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(TargetDirection, other.TargetDirection)) return false;
+      if (!object.Equals(MobileBaseMode, other.MobileBaseMode)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (targetDirection_ != null) hash ^= TargetDirection.GetHashCode();
+      if (mobileBaseMode_ != null) hash ^= MobileBaseMode.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (targetDirection_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(TargetDirection);
+      }
+      if (mobileBaseMode_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(MobileBaseMode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (targetDirection_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(TargetDirection);
+      }
+      if (mobileBaseMode_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(MobileBaseMode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (targetDirection_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TargetDirection);
+      }
+      if (mobileBaseMode_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MobileBaseMode);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(MobileBaseCommand other) {
+      if (other == null) {
+        return;
+      }
+      if (other.targetDirection_ != null) {
+        if (targetDirection_ == null) {
+          TargetDirection = new global::Mobile.Base.Mobility.TargetDirectionCommand();
+        }
+        TargetDirection.MergeFrom(other.TargetDirection);
+      }
+      if (other.mobileBaseMode_ != null) {
+        if (mobileBaseMode_ == null) {
+          MobileBaseMode = new global::Mobile.Base.Utility.ZuuuModeCommand();
+        }
+        MobileBaseMode.MergeFrom(other.MobileBaseMode);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (targetDirection_ == null) {
+              TargetDirection = new global::Mobile.Base.Mobility.TargetDirectionCommand();
+            }
+            input.ReadMessage(TargetDirection);
+            break;
+          }
+          case 18: {
+            if (mobileBaseMode_ == null) {
+              MobileBaseMode = new global::Mobile.Base.Utility.ZuuuModeCommand();
+            }
+            input.ReadMessage(MobileBaseMode);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (targetDirection_ == null) {
+              TargetDirection = new global::Mobile.Base.Mobility.TargetDirectionCommand();
+            }
+            input.ReadMessage(TargetDirection);
+            break;
+          }
+          case 18: {
+            if (mobileBaseMode_ == null) {
+              MobileBaseMode = new global::Mobile.Base.Utility.ZuuuModeCommand();
+            }
+            input.ReadMessage(MobileBaseMode);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class AnyCommands : pb::IMessage<AnyCommands>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2812,7 +3116,7 @@ namespace Bridge {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bridge.WebrtcBridgeReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Bridge.WebrtcBridgeReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
