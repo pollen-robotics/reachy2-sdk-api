@@ -46,71 +46,72 @@ namespace Reachy.Part.Arm {
             "dGlvbhgBIAEoCzIaLmNvbXBvbmVudC5vcmJpdGEyZC5Qb3NlMmQSMgoOZWxi",
             "b3dfcG9zaXRpb24YAiABKAsyGi5jb21wb25lbnQub3JiaXRhMmQuUG9zZTJk",
             "EjUKDndyaXN0X3Bvc2l0aW9uGAMgASgLMh0ucmVhY2h5LmtpbmVtYXRpY3Mu",
-            "Um90YXRpb24zZCKnAgoQQXJtQ2FydGVzaWFuR29hbBIfCgJpZBgBIAEoCzIT",
+            "Um90YXRpb24zZCLRAgoQQXJtQ2FydGVzaWFuR29hbBIfCgJpZBgBIAEoCzIT",
             "LnJlYWNoeS5wYXJ0LlBhcnRJZBIvCglnb2FsX3Bvc2UYAiABKAsyHC5yZWFj",
             "aHkua2luZW1hdGljcy5NYXRyaXg0eDQSRgoScG9zaXRpb25fdG9sZXJhbmNl",
             "GAMgASgLMioucmVhY2h5LmtpbmVtYXRpY3MuUG9pbnREaXN0YW5jZVRvbGVy",
             "YW5jZXMSSgoVb3JpZW50YXRpb25fdG9sZXJhbmNlGAQgASgLMisucmVhY2h5",
-            "LmtpbmVtYXRpY3MuRXh0RXVsZXJBbmdsZXNUb2xlcmFuY2VzEi0KCGR1cmF0",
-            "aW9uGAogASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUikQEKDEFy",
-            "bUpvaW50R29hbBIfCgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBIx",
-            "Cgtqb2ludHNfZ29hbBgCIAEoCzIcLnJlYWNoeS5wYXJ0LmFybS5Bcm1Qb3Np",
-            "dGlvbhItCghkdXJhdGlvbhgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9h",
-            "dFZhbHVlIjwKDkFybUVuZEVmZmVjdG9yEioKBHBvc2UYASABKAsyHC5yZWFj",
-            "aHkua2luZW1hdGljcy5NYXRyaXg0eDQiXwoMQXJtRktSZXF1ZXN0Eh8KAmlk",
-            "GAEgASgLMhMucmVhY2h5LnBhcnQuUGFydElkEi4KCHBvc2l0aW9uGAIgASgL",
-            "MhwucmVhY2h5LnBhcnQuYXJtLkFybVBvc2l0aW9uIlcKDUFybUZLU29sdXRp",
-            "b24SDwoHc3VjY2VzcxgBIAEoCBI1CgxlbmRfZWZmZWN0b3IYAiABKAsyHy5y",
-            "ZWFjaHkucGFydC5hcm0uQXJtRW5kRWZmZWN0b3IiigEKDEFybUlLUmVxdWVz",
-            "dBIfCgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBIvCgZ0YXJnZXQY",
-            "AiABKAsyHy5yZWFjaHkucGFydC5hcm0uQXJtRW5kRWZmZWN0b3ISKAoCcTAY",
-            "AyABKAsyHC5yZWFjaHkucGFydC5hcm0uQXJtUG9zaXRpb24icQoNQXJtSUtT",
-            "b2x1dGlvbhIPCgdzdWNjZXNzGAEgASgIEjIKDGFybV9wb3NpdGlvbhgCIAEo",
-            "CzIcLnJlYWNoeS5wYXJ0LmFybS5Bcm1Qb3NpdGlvbhIbCgVlcnJvchgDIAEo",
-            "CzIMLmVycm9yLkVycm9yIgsKCUFybVN0YXR1cyJgChFTcGVlZExpbWl0UmVx",
-            "dWVzdBIfCgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBIqCgVsaW1p",
-            "dBgCIAEoDjIbLnJlYWNoeS5wYXJ0LmFybS5TcGVlZExpbWl0IqoBCglBcm1M",
-            "aW1pdHMSNQoPc2hvdWxkZXJfbGltaXRzGAEgASgLMhwuY29tcG9uZW50Lm9y",
-            "Yml0YTJkLkxpbWl0czJkEjIKDGVsYm93X2xpbWl0cxgCIAEoCzIcLmNvbXBv",
-            "bmVudC5vcmJpdGEyZC5MaW1pdHMyZBIyCgx3cmlzdF9saW1pdHMYAyABKAsy",
-            "HC5jb21wb25lbnQub3JiaXRhM2QuTGltaXRzM2QivAEKD0FybVRlbXBlcmF0",
-            "dXJlcxI5ChRzaG91bGRlcl90ZW1wZXJhdHVyZRgBIAEoCzIbLmNvbXBvbmVu",
-            "dC5vcmJpdGEyZC5GbG9hdDJkEjYKEWVsYm93X3RlbXBlcmF0dXJlGAIgASgL",
-            "MhsuY29tcG9uZW50Lm9yYml0YTJkLkZsb2F0MmQSNgoRd3Jpc3RfdGVtcGVy",
-            "YXR1cmUYAyABKAsyGy5jb21wb25lbnQub3JiaXRhM2QuRmxvYXQzZCraAQoI",
-            "QXJtRmllbGQSCAoETk9ORRAAEggKBE5BTUUQARIGCgJJRBACEhQKEFBSRVNF",
-            "TlRfUE9TSVRJT04QAxIRCg1QUkVTRU5UX1NQRUVEEAQSEAoMUFJFU0VOVF9M",
-            "T0FEEAUSDwoLVEVNUEVSQVRVUkUQBhIPCgtKT0lOVF9MSU1JVBAHEg0KCUNP",
-            "TVBMSUFOVBAIEhEKDUdPQUxfUE9TSVRJT04QCRIPCgtTUEVFRF9MSU1JVBAK",
-            "EhAKDFRPUlFVRV9MSU1JVBALEgcKA1BJRBAMEgcKA0FMTBAPKjoKClNwZWVk",
-            "TGltaXQSDAoITk9fTElNSVQQABIICgRGQVNUEAESCgoGTk9STUFMEAISCAoE",
-            "U0xPVxADMpEJCgpBcm1TZXJ2aWNlEkAKCkdldEFsbEFybXMSFi5nb29nbGUu",
-            "cHJvdG9idWYuRW1wdHkaGi5yZWFjaHkucGFydC5hcm0uTGlzdE9mQXJtEjoK",
-            "CEdldFN0YXRlEhMucmVhY2h5LnBhcnQuUGFydElkGhkucmVhY2h5LnBhcnQu",
-            "YXJtLkFybVN0YXRlEk0KDENvbXB1dGVBcm1GSxIdLnJlYWNoeS5wYXJ0LmFy",
-            "bS5Bcm1GS1JlcXVlc3QaHi5yZWFjaHkucGFydC5hcm0uQXJtRktTb2x1dGlv",
-            "bhJNCgxDb21wdXRlQXJtSUsSHS5yZWFjaHkucGFydC5hcm0uQXJtSUtSZXF1",
-            "ZXN0Gh4ucmVhY2h5LnBhcnQuYXJtLkFybUlLU29sdXRpb24SSQoUR2V0Q2Fy",
-            "dGVzaWFuUG9zaXRpb24SEy5yZWFjaHkucGFydC5QYXJ0SWQaHC5yZWFjaHku",
-            "a2luZW1hdGljcy5NYXRyaXg0eDQSRQoQR2V0Sm9pbnRQb3NpdGlvbhITLnJl",
-            "YWNoeS5wYXJ0LlBhcnRJZBocLnJlYWNoeS5wYXJ0LmFybS5Bcm1Qb3NpdGlv",
-            "bhI4CgVBdWRpdBITLnJlYWNoeS5wYXJ0LlBhcnRJZBoaLnJlYWNoeS5wYXJ0",
-            "LmFybS5Bcm1TdGF0dXMSOAoJSGVhcnRCZWF0EhMucmVhY2h5LnBhcnQuUGFy",
-            "dElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EjYKB1Jlc3RhcnQSEy5yZWFj",
-            "aHkucGFydC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSQQoSUmVz",
-            "ZXREZWZhdWx0VmFsdWVzEhMucmVhY2h5LnBhcnQuUGFydElkGhYuZ29vZ2xl",
-            "LnByb3RvYnVmLkVtcHR5EjUKBlR1cm5PbhITLnJlYWNoeS5wYXJ0LlBhcnRJ",
-            "ZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRI2CgdUdXJuT2ZmEhMucmVhY2h5",
-            "LnBhcnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EkIKD0dldEpv",
-            "aW50c0xpbWl0cxITLnJlYWNoeS5wYXJ0LlBhcnRJZBoaLnJlYWNoeS5wYXJ0",
-            "LmFybS5Bcm1MaW1pdHMSSAoPR2V0VGVtcGVyYXR1cmVzEhMucmVhY2h5LnBh",
-            "cnQuUGFydElkGiAucmVhY2h5LnBhcnQuYXJtLkFybVRlbXBlcmF0dXJlcxJJ",
-            "ChRHZXRKb2ludEdvYWxQb3NpdGlvbhITLnJlYWNoeS5wYXJ0LlBhcnRJZBoc",
-            "LnJlYWNoeS5wYXJ0LmFybS5Bcm1Qb3NpdGlvbhJLCg1TZXRTcGVlZExpbWl0",
-            "EiIucmVhY2h5LnBhcnQuYXJtLlNwZWVkTGltaXRSZXF1ZXN0GhYuZ29vZ2xl",
-            "LnByb3RvYnVmLkVtcHR5ElEKFFNlbmRBcm1DYXJ0ZXNpYW5Hb2FsEiEucmVh",
-            "Y2h5LnBhcnQuYXJtLkFybUNhcnRlc2lhbkdvYWwaFi5nb29nbGUucHJvdG9i",
-            "dWYuRW1wdHliBnByb3RvMw=="));
+            "LmtpbmVtYXRpY3MuRXh0RXVsZXJBbmdsZXNUb2xlcmFuY2VzEigKAnEwGAUg",
+            "ASgLMhwucmVhY2h5LnBhcnQuYXJtLkFybVBvc2l0aW9uEi0KCGR1cmF0aW9u",
+            "GAogASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUikQEKDEFybUpv",
+            "aW50R29hbBIfCgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBIxCgtq",
+            "b2ludHNfZ29hbBgCIAEoCzIcLnJlYWNoeS5wYXJ0LmFybS5Bcm1Qb3NpdGlv",
+            "bhItCghkdXJhdGlvbhgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZh",
+            "bHVlIjwKDkFybUVuZEVmZmVjdG9yEioKBHBvc2UYASABKAsyHC5yZWFjaHku",
+            "a2luZW1hdGljcy5NYXRyaXg0eDQiXwoMQXJtRktSZXF1ZXN0Eh8KAmlkGAEg",
+            "ASgLMhMucmVhY2h5LnBhcnQuUGFydElkEi4KCHBvc2l0aW9uGAIgASgLMhwu",
+            "cmVhY2h5LnBhcnQuYXJtLkFybVBvc2l0aW9uIlcKDUFybUZLU29sdXRpb24S",
+            "DwoHc3VjY2VzcxgBIAEoCBI1CgxlbmRfZWZmZWN0b3IYAiABKAsyHy5yZWFj",
+            "aHkucGFydC5hcm0uQXJtRW5kRWZmZWN0b3IiigEKDEFybUlLUmVxdWVzdBIf",
+            "CgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBIvCgZ0YXJnZXQYAiAB",
+            "KAsyHy5yZWFjaHkucGFydC5hcm0uQXJtRW5kRWZmZWN0b3ISKAoCcTAYAyAB",
+            "KAsyHC5yZWFjaHkucGFydC5hcm0uQXJtUG9zaXRpb24icQoNQXJtSUtTb2x1",
+            "dGlvbhIPCgdzdWNjZXNzGAEgASgIEjIKDGFybV9wb3NpdGlvbhgCIAEoCzIc",
+            "LnJlYWNoeS5wYXJ0LmFybS5Bcm1Qb3NpdGlvbhIbCgVlcnJvchgDIAEoCzIM",
+            "LmVycm9yLkVycm9yIgsKCUFybVN0YXR1cyJgChFTcGVlZExpbWl0UmVxdWVz",
+            "dBIfCgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBIqCgVsaW1pdBgC",
+            "IAEoDjIbLnJlYWNoeS5wYXJ0LmFybS5TcGVlZExpbWl0IqoBCglBcm1MaW1p",
+            "dHMSNQoPc2hvdWxkZXJfbGltaXRzGAEgASgLMhwuY29tcG9uZW50Lm9yYml0",
+            "YTJkLkxpbWl0czJkEjIKDGVsYm93X2xpbWl0cxgCIAEoCzIcLmNvbXBvbmVu",
+            "dC5vcmJpdGEyZC5MaW1pdHMyZBIyCgx3cmlzdF9saW1pdHMYAyABKAsyHC5j",
+            "b21wb25lbnQub3JiaXRhM2QuTGltaXRzM2QivAEKD0FybVRlbXBlcmF0dXJl",
+            "cxI5ChRzaG91bGRlcl90ZW1wZXJhdHVyZRgBIAEoCzIbLmNvbXBvbmVudC5v",
+            "cmJpdGEyZC5GbG9hdDJkEjYKEWVsYm93X3RlbXBlcmF0dXJlGAIgASgLMhsu",
+            "Y29tcG9uZW50Lm9yYml0YTJkLkZsb2F0MmQSNgoRd3Jpc3RfdGVtcGVyYXR1",
+            "cmUYAyABKAsyGy5jb21wb25lbnQub3JiaXRhM2QuRmxvYXQzZCraAQoIQXJt",
+            "RmllbGQSCAoETk9ORRAAEggKBE5BTUUQARIGCgJJRBACEhQKEFBSRVNFTlRf",
+            "UE9TSVRJT04QAxIRCg1QUkVTRU5UX1NQRUVEEAQSEAoMUFJFU0VOVF9MT0FE",
+            "EAUSDwoLVEVNUEVSQVRVUkUQBhIPCgtKT0lOVF9MSU1JVBAHEg0KCUNPTVBM",
+            "SUFOVBAIEhEKDUdPQUxfUE9TSVRJT04QCRIPCgtTUEVFRF9MSU1JVBAKEhAK",
+            "DFRPUlFVRV9MSU1JVBALEgcKA1BJRBAMEgcKA0FMTBAPKjoKClNwZWVkTGlt",
+            "aXQSDAoITk9fTElNSVQQABIICgRGQVNUEAESCgoGTk9STUFMEAISCAoEU0xP",
+            "VxADMpEJCgpBcm1TZXJ2aWNlEkAKCkdldEFsbEFybXMSFi5nb29nbGUucHJv",
+            "dG9idWYuRW1wdHkaGi5yZWFjaHkucGFydC5hcm0uTGlzdE9mQXJtEjoKCEdl",
+            "dFN0YXRlEhMucmVhY2h5LnBhcnQuUGFydElkGhkucmVhY2h5LnBhcnQuYXJt",
+            "LkFybVN0YXRlEk0KDENvbXB1dGVBcm1GSxIdLnJlYWNoeS5wYXJ0LmFybS5B",
+            "cm1GS1JlcXVlc3QaHi5yZWFjaHkucGFydC5hcm0uQXJtRktTb2x1dGlvbhJN",
+            "CgxDb21wdXRlQXJtSUsSHS5yZWFjaHkucGFydC5hcm0uQXJtSUtSZXF1ZXN0",
+            "Gh4ucmVhY2h5LnBhcnQuYXJtLkFybUlLU29sdXRpb24SSQoUR2V0Q2FydGVz",
+            "aWFuUG9zaXRpb24SEy5yZWFjaHkucGFydC5QYXJ0SWQaHC5yZWFjaHkua2lu",
+            "ZW1hdGljcy5NYXRyaXg0eDQSRQoQR2V0Sm9pbnRQb3NpdGlvbhITLnJlYWNo",
+            "eS5wYXJ0LlBhcnRJZBocLnJlYWNoeS5wYXJ0LmFybS5Bcm1Qb3NpdGlvbhI4",
+            "CgVBdWRpdBITLnJlYWNoeS5wYXJ0LlBhcnRJZBoaLnJlYWNoeS5wYXJ0LmFy",
+            "bS5Bcm1TdGF0dXMSOAoJSGVhcnRCZWF0EhMucmVhY2h5LnBhcnQuUGFydElk",
+            "GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EjYKB1Jlc3RhcnQSEy5yZWFjaHku",
+            "cGFydC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSQQoSUmVzZXRE",
+            "ZWZhdWx0VmFsdWVzEhMucmVhY2h5LnBhcnQuUGFydElkGhYuZ29vZ2xlLnBy",
+            "b3RvYnVmLkVtcHR5EjUKBlR1cm5PbhITLnJlYWNoeS5wYXJ0LlBhcnRJZBoW",
+            "Lmdvb2dsZS5wcm90b2J1Zi5FbXB0eRI2CgdUdXJuT2ZmEhMucmVhY2h5LnBh",
+            "cnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EkIKD0dldEpvaW50",
+            "c0xpbWl0cxITLnJlYWNoeS5wYXJ0LlBhcnRJZBoaLnJlYWNoeS5wYXJ0LmFy",
+            "bS5Bcm1MaW1pdHMSSAoPR2V0VGVtcGVyYXR1cmVzEhMucmVhY2h5LnBhcnQu",
+            "UGFydElkGiAucmVhY2h5LnBhcnQuYXJtLkFybVRlbXBlcmF0dXJlcxJJChRH",
+            "ZXRKb2ludEdvYWxQb3NpdGlvbhITLnJlYWNoeS5wYXJ0LlBhcnRJZBocLnJl",
+            "YWNoeS5wYXJ0LmFybS5Bcm1Qb3NpdGlvbhJLCg1TZXRTcGVlZExpbWl0EiIu",
+            "cmVhY2h5LnBhcnQuYXJtLlNwZWVkTGltaXRSZXF1ZXN0GhYuZ29vZ2xlLnBy",
+            "b3RvYnVmLkVtcHR5ElEKFFNlbmRBcm1DYXJ0ZXNpYW5Hb2FsEiEucmVhY2h5",
+            "LnBhcnQuYXJtLkFybUNhcnRlc2lhbkdvYWwaFi5nb29nbGUucHJvdG9idWYu",
+            "RW1wdHliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, global::Reachy.Kinematics.KinematicsReflection.Descriptor, global::Error.ErrorReflection.Descriptor, global::Component.Orbita2D.Orbita2DReflection.Descriptor, global::Component.Orbita3D.Orbita3DReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.Part.Arm.ArmField), typeof(global::Reachy.Part.Arm.SpeedLimit), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -119,7 +120,7 @@ namespace Reachy.Part.Arm {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.Arm), global::Reachy.Part.Arm.Arm.Parser, new[]{ "PartId", "Description", "Info" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.ListOfArm), global::Reachy.Part.Arm.ListOfArm.Parser, new[]{ "Arm" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.ArmPosition), global::Reachy.Part.Arm.ArmPosition.Parser, new[]{ "ShoulderPosition", "ElbowPosition", "WristPosition" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.ArmCartesianGoal), global::Reachy.Part.Arm.ArmCartesianGoal.Parser, new[]{ "Id", "GoalPose", "PositionTolerance", "OrientationTolerance", "Duration" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.ArmCartesianGoal), global::Reachy.Part.Arm.ArmCartesianGoal.Parser, new[]{ "Id", "GoalPose", "PositionTolerance", "OrientationTolerance", "Q0", "Duration" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.ArmJointGoal), global::Reachy.Part.Arm.ArmJointGoal.Parser, new[]{ "Id", "JointsGoal", "Duration" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.ArmEndEffector), global::Reachy.Part.Arm.ArmEndEffector.Parser, new[]{ "Pose" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.ArmFKRequest), global::Reachy.Part.Arm.ArmFKRequest.Parser, new[]{ "Id", "Position" }, null, null, null, null),
@@ -1668,6 +1669,7 @@ namespace Reachy.Part.Arm {
       goalPose_ = other.goalPose_ != null ? other.goalPose_.Clone() : null;
       positionTolerance_ = other.positionTolerance_ != null ? other.positionTolerance_.Clone() : null;
       orientationTolerance_ = other.orientationTolerance_ != null ? other.orientationTolerance_.Clone() : null;
+      q0_ = other.q0_ != null ? other.q0_.Clone() : null;
       Duration = other.Duration;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1726,6 +1728,18 @@ namespace Reachy.Part.Arm {
       }
     }
 
+    /// <summary>Field number for the "q0" field.</summary>
+    public const int Q0FieldNumber = 5;
+    private global::Reachy.Part.Arm.ArmPosition q0_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Arm.ArmPosition Q0 {
+      get { return q0_; }
+      set {
+        q0_ = value;
+      }
+    }
+
     /// <summary>Field number for the "duration" field.</summary>
     public const int DurationFieldNumber = 10;
     private static readonly pb::FieldCodec<float?> _single_duration_codec = pb::FieldCodec.ForStructWrapper<float>(82);
@@ -1759,6 +1773,7 @@ namespace Reachy.Part.Arm {
       if (!object.Equals(GoalPose, other.GoalPose)) return false;
       if (!object.Equals(PositionTolerance, other.PositionTolerance)) return false;
       if (!object.Equals(OrientationTolerance, other.OrientationTolerance)) return false;
+      if (!object.Equals(Q0, other.Q0)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(Duration, other.Duration)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1771,6 +1786,7 @@ namespace Reachy.Part.Arm {
       if (goalPose_ != null) hash ^= GoalPose.GetHashCode();
       if (positionTolerance_ != null) hash ^= PositionTolerance.GetHashCode();
       if (orientationTolerance_ != null) hash ^= OrientationTolerance.GetHashCode();
+      if (q0_ != null) hash ^= Q0.GetHashCode();
       if (duration_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Duration);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1806,6 +1822,10 @@ namespace Reachy.Part.Arm {
         output.WriteRawTag(34);
         output.WriteMessage(OrientationTolerance);
       }
+      if (q0_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Q0);
+      }
       if (duration_ != null) {
         _single_duration_codec.WriteTagAndValue(output, Duration);
       }
@@ -1835,6 +1855,10 @@ namespace Reachy.Part.Arm {
         output.WriteRawTag(34);
         output.WriteMessage(OrientationTolerance);
       }
+      if (q0_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Q0);
+      }
       if (duration_ != null) {
         _single_duration_codec.WriteTagAndValue(ref output, Duration);
       }
@@ -1859,6 +1883,9 @@ namespace Reachy.Part.Arm {
       }
       if (orientationTolerance_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(OrientationTolerance);
+      }
+      if (q0_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Q0);
       }
       if (duration_ != null) {
         size += _single_duration_codec.CalculateSizeWithTag(Duration);
@@ -1898,6 +1925,12 @@ namespace Reachy.Part.Arm {
           OrientationTolerance = new global::Reachy.Kinematics.ExtEulerAnglesTolerances();
         }
         OrientationTolerance.MergeFrom(other.OrientationTolerance);
+      }
+      if (other.q0_ != null) {
+        if (q0_ == null) {
+          Q0 = new global::Reachy.Part.Arm.ArmPosition();
+        }
+        Q0.MergeFrom(other.Q0);
       }
       if (other.duration_ != null) {
         if (duration_ == null || other.Duration != 0F) {
@@ -1945,6 +1978,13 @@ namespace Reachy.Part.Arm {
               OrientationTolerance = new global::Reachy.Kinematics.ExtEulerAnglesTolerances();
             }
             input.ReadMessage(OrientationTolerance);
+            break;
+          }
+          case 42: {
+            if (q0_ == null) {
+              Q0 = new global::Reachy.Part.Arm.ArmPosition();
+            }
+            input.ReadMessage(Q0);
             break;
           }
           case 82: {
@@ -1995,6 +2035,13 @@ namespace Reachy.Part.Arm {
               OrientationTolerance = new global::Reachy.Kinematics.ExtEulerAnglesTolerances();
             }
             input.ReadMessage(OrientationTolerance);
+            break;
+          }
+          case 42: {
+            if (q0_ == null) {
+              Q0 = new global::Reachy.Part.Arm.ArmPosition();
+            }
+            input.ReadMessage(Q0);
             break;
           }
           case 82: {

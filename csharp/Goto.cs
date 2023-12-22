@@ -29,27 +29,36 @@ public static partial class GotoReflection {
           "Ej8KEmFybV9jYXJ0ZXNpYW5fZ29hbBgBIAEoCzIhLnJlYWNoeS5wYXJ0LmFy",
           "bS5Bcm1DYXJ0ZXNpYW5Hb2FsSAASQgoTbmVja19jYXJ0ZXNpYW5fZ29hbBgC",
           "IAEoCzIjLnJlYWNoeS5wYXJ0LmhlYWQuTmVja0NhcnRlc2lhbkdvYWxIAEIQ",
-          "Cg5jYXJ0ZXNpYW5fZ29hbCKLAQoKSm9pbnRzR29hbBI3Cg5hcm1fam9pbnRf",
-          "Z29hbBgBIAEoCzIdLnJlYWNoeS5wYXJ0LmFybS5Bcm1Kb2ludEdvYWxIABI1",
-          "Cg9uZWNrX2pvaW50X2dvYWwYAiABKAsyGi5yZWFjaHkucGFydC5oZWFkLk5l",
-          "Y2tHb2FsSABCDQoLam9pbnRzX2dvYWwqqgEKCkdvYWxTdGF0dXMSCAoETk9O",
-          "RRAAEhIKDlNUQVRVU19VTktOT1dOEAESEwoPU1RBVFVTX0FDQ0VQVEVEEAIS",
-          "FAoQU1RBVFVTX0VYRUNVVElORxADEhQKEFNUQVRVU19DQU5DRUxJTkcQBBIU",
-          "ChBTVEFUVVNfU1VDQ0VFREVEEAUSEwoPU1RBVFVTX0NBTkNFTEVEEAYSEgoO",
-          "U1RBVFVTX0FCT1JURUQQBzLZAQoLR29Ub1NlcnZpY2USKAoNR29Ub0NhcnRl",
-          "c2lhbhIOLkNhcnRlc2lhbkdvYWwaBy5Hb1RvSWQSIgoKR29Ub0pvaW50cxIL",
-          "LkpvaW50c0dvYWwaBy5Hb1RvSWQSKAoMR2V0R29Ub1N0YXRlEgcuR29Ub0lk",
-          "Gg8uR29Ub0dvYWxTdGF0dXMSHwoKQ2FuY2VsR29UbxIHLkdvVG9JZBoILkdv",
-          "VG9BY2sSMQoNQ2FuY2VsQWxsR29UbxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0",
-          "eRoILkdvVG9BY2tiBnByb3RvMw=="));
+          "Cg5jYXJ0ZXNpYW5fZ29hbCKQAQoKSm9pbnRzR29hbBI3Cg5hcm1fam9pbnRf",
+          "Z29hbBgBIAEoCzIdLnJlYWNoeS5wYXJ0LmFybS5Bcm1Kb2ludEdvYWxIABI6",
+          "Cg9uZWNrX2pvaW50X2dvYWwYAiABKAsyHy5yZWFjaHkucGFydC5oZWFkLk5l",
+          "Y2tKb2ludEdvYWxIAEINCgtqb2ludHNfZ29hbCJDChFHb1RvSW50ZXJwb2xh",
+          "dGlvbhIuChJpbnRlcnBvbGF0aW9uX3R5cGUYASABKA4yEi5JbnRlcnBvbGF0",
+          "aW9uTW9kZSKTAQoLR29Ub1JlcXVlc3QSKAoOY2FydGVzaWFuX2dvYWwYASAB",
+          "KAsyDi5DYXJ0ZXNpYW5Hb2FsSAASIgoLam9pbnRzX2dvYWwYAiABKAsyCy5K",
+          "b2ludHNHb2FsSAASLgoSaW50ZXJwb2xhdGlvbl9tb2RlGAMgASgLMhIuR29U",
+          "b0ludGVycG9sYXRpb25CBgoEZ29hbCqqAQoKR29hbFN0YXR1cxIICgROT05F",
+          "EAASEgoOU1RBVFVTX1VOS05PV04QARITCg9TVEFUVVNfQUNDRVBURUQQAhIU",
+          "ChBTVEFUVVNfRVhFQ1VUSU5HEAMSFAoQU1RBVFVTX0NBTkNFTElORxAEEhQK",
+          "EFNUQVRVU19TVUNDRUVERUQQBRITCg9TVEFUVVNfQ0FOQ0VMRUQQBhISCg5T",
+          "VEFUVVNfQUJPUlRFRBAHKkkKEUludGVycG9sYXRpb25Nb2RlEhYKEk5PTkVf",
+          "SU5URVJQT0xBVElPThAAEgoKBkxJTkVBUhABEhAKDE1JTklNVU1fSkVSSxAC",
+          "MtgBCgtHb1RvU2VydmljZRImCg1Hb1RvQ2FydGVzaWFuEgwuR29Ub1JlcXVl",
+          "c3QaBy5Hb1RvSWQSIwoKR29Ub0pvaW50cxIMLkdvVG9SZXF1ZXN0GgcuR29U",
+          "b0lkEigKDEdldEdvVG9TdGF0ZRIHLkdvVG9JZBoPLkdvVG9Hb2FsU3RhdHVz",
+          "Eh8KCkNhbmNlbEdvVG8SBy5Hb1RvSWQaCC5Hb1RvQWNrEjEKDUNhbmNlbEFs",
+          "bEdvVG8SFi5nb29nbGUucHJvdG9idWYuRW1wdHkaCC5Hb1RvQWNrYgZwcm90",
+          "bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, },
-        new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GoalStatus), }, null, new pbr::GeneratedClrTypeInfo[] {
+        new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GoalStatus), typeof(global::InterpolationMode), }, null, new pbr::GeneratedClrTypeInfo[] {
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToId), global::GoToId.Parser, new[]{ "Id" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToAck), global::GoToAck.Parser, new[]{ "Ack" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToGoalStatus), global::GoToGoalStatus.Parser, new[]{ "GoalStatus" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::CartesianGoal), global::CartesianGoal.Parser, new[]{ "ArmCartesianGoal", "NeckCartesianGoal" }, new[]{ "CartesianGoal" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::JointsGoal), global::JointsGoal.Parser, new[]{ "ArmJointGoal", "NeckJointGoal" }, new[]{ "JointsGoal" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::JointsGoal), global::JointsGoal.Parser, new[]{ "ArmJointGoal", "NeckJointGoal" }, new[]{ "JointsGoal" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GoToInterpolation), global::GoToInterpolation.Parser, new[]{ "InterpolationType" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GoToRequest), global::GoToRequest.Parser, new[]{ "CartesianGoal", "JointsGoal", "InterpolationMode" }, new[]{ "Goal" }, null, null, null)
         }));
   }
   #endregion
@@ -65,6 +74,12 @@ public enum GoalStatus {
   [pbr::OriginalName("STATUS_SUCCEEDED")] StatusSucceeded = 5,
   [pbr::OriginalName("STATUS_CANCELED")] StatusCanceled = 6,
   [pbr::OriginalName("STATUS_ABORTED")] StatusAborted = 7,
+}
+
+public enum InterpolationMode {
+  [pbr::OriginalName("NONE_INTERPOLATION")] NoneInterpolation = 0,
+  [pbr::OriginalName("LINEAR")] Linear = 1,
+  [pbr::OriginalName("MINIMUM_JERK")] MinimumJerk = 2,
 }
 
 #endregion
@@ -990,8 +1005,8 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
   public const int NeckJointGoalFieldNumber = 2;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-  public global::Reachy.Part.Head.NeckGoal NeckJointGoal {
-    get { return jointsGoalCase_ == JointsGoalOneofCase.NeckJointGoal ? (global::Reachy.Part.Head.NeckGoal) jointsGoal_ : null; }
+  public global::Reachy.Part.Head.NeckJointGoal NeckJointGoal {
+    get { return jointsGoalCase_ == JointsGoalOneofCase.NeckJointGoal ? (global::Reachy.Part.Head.NeckJointGoal) jointsGoal_ : null; }
     set {
       jointsGoal_ = value;
       jointsGoalCase_ = value == null ? JointsGoalOneofCase.None : JointsGoalOneofCase.NeckJointGoal;
@@ -1128,7 +1143,7 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
         break;
       case JointsGoalOneofCase.NeckJointGoal:
         if (NeckJointGoal == null) {
-          NeckJointGoal = new global::Reachy.Part.Head.NeckGoal();
+          NeckJointGoal = new global::Reachy.Part.Head.NeckJointGoal();
         }
         NeckJointGoal.MergeFrom(other.NeckJointGoal);
         break;
@@ -1159,7 +1174,7 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
           break;
         }
         case 18: {
-          global::Reachy.Part.Head.NeckGoal subBuilder = new global::Reachy.Part.Head.NeckGoal();
+          global::Reachy.Part.Head.NeckJointGoal subBuilder = new global::Reachy.Part.Head.NeckJointGoal();
           if (jointsGoalCase_ == JointsGoalOneofCase.NeckJointGoal) {
             subBuilder.MergeFrom(NeckJointGoal);
           }
@@ -1192,12 +1207,532 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
           break;
         }
         case 18: {
-          global::Reachy.Part.Head.NeckGoal subBuilder = new global::Reachy.Part.Head.NeckGoal();
+          global::Reachy.Part.Head.NeckJointGoal subBuilder = new global::Reachy.Part.Head.NeckJointGoal();
           if (jointsGoalCase_ == JointsGoalOneofCase.NeckJointGoal) {
             subBuilder.MergeFrom(NeckJointGoal);
           }
           input.ReadMessage(subBuilder);
           NeckJointGoal = subBuilder;
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class GoToInterpolation : pb::IMessage<GoToInterpolation>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<GoToInterpolation> _parser = new pb::MessageParser<GoToInterpolation>(() => new GoToInterpolation());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public static pb::MessageParser<GoToInterpolation> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GotoReflection.Descriptor.MessageTypes[5]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public GoToInterpolation() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public GoToInterpolation(GoToInterpolation other) : this() {
+    interpolationType_ = other.interpolationType_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public GoToInterpolation Clone() {
+    return new GoToInterpolation(this);
+  }
+
+  /// <summary>Field number for the "interpolation_type" field.</summary>
+  public const int InterpolationTypeFieldNumber = 1;
+  private global::InterpolationMode interpolationType_ = global::InterpolationMode.NoneInterpolation;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public global::InterpolationMode InterpolationType {
+    get { return interpolationType_; }
+    set {
+      interpolationType_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override bool Equals(object other) {
+    return Equals(other as GoToInterpolation);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public bool Equals(GoToInterpolation other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (InterpolationType != other.InterpolationType) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (InterpolationType != global::InterpolationMode.NoneInterpolation) hash ^= InterpolationType.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (InterpolationType != global::InterpolationMode.NoneInterpolation) {
+      output.WriteRawTag(8);
+      output.WriteEnum((int) InterpolationType);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (InterpolationType != global::InterpolationMode.NoneInterpolation) {
+      output.WriteRawTag(8);
+      output.WriteEnum((int) InterpolationType);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public int CalculateSize() {
+    int size = 0;
+    if (InterpolationType != global::InterpolationMode.NoneInterpolation) {
+      size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) InterpolationType);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void MergeFrom(GoToInterpolation other) {
+    if (other == null) {
+      return;
+    }
+    if (other.InterpolationType != global::InterpolationMode.NoneInterpolation) {
+      InterpolationType = other.InterpolationType;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          InterpolationType = (global::InterpolationMode) input.ReadEnum();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          InterpolationType = (global::InterpolationMode) input.ReadEnum();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<GoToRequest> _parser = new pb::MessageParser<GoToRequest>(() => new GoToRequest());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public static pb::MessageParser<GoToRequest> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GotoReflection.Descriptor.MessageTypes[6]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public GoToRequest() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public GoToRequest(GoToRequest other) : this() {
+    interpolationMode_ = other.interpolationMode_ != null ? other.interpolationMode_.Clone() : null;
+    switch (other.GoalCase) {
+      case GoalOneofCase.CartesianGoal:
+        CartesianGoal = other.CartesianGoal.Clone();
+        break;
+      case GoalOneofCase.JointsGoal:
+        JointsGoal = other.JointsGoal.Clone();
+        break;
+    }
+
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public GoToRequest Clone() {
+    return new GoToRequest(this);
+  }
+
+  /// <summary>Field number for the "cartesian_goal" field.</summary>
+  public const int CartesianGoalFieldNumber = 1;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public global::CartesianGoal CartesianGoal {
+    get { return goalCase_ == GoalOneofCase.CartesianGoal ? (global::CartesianGoal) goal_ : null; }
+    set {
+      goal_ = value;
+      goalCase_ = value == null ? GoalOneofCase.None : GoalOneofCase.CartesianGoal;
+    }
+  }
+
+  /// <summary>Field number for the "joints_goal" field.</summary>
+  public const int JointsGoalFieldNumber = 2;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public global::JointsGoal JointsGoal {
+    get { return goalCase_ == GoalOneofCase.JointsGoal ? (global::JointsGoal) goal_ : null; }
+    set {
+      goal_ = value;
+      goalCase_ = value == null ? GoalOneofCase.None : GoalOneofCase.JointsGoal;
+    }
+  }
+
+  /// <summary>Field number for the "interpolation_mode" field.</summary>
+  public const int InterpolationModeFieldNumber = 3;
+  private global::GoToInterpolation interpolationMode_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public global::GoToInterpolation InterpolationMode {
+    get { return interpolationMode_; }
+    set {
+      interpolationMode_ = value;
+    }
+  }
+
+  private object goal_;
+  /// <summary>Enum of possible cases for the "goal" oneof.</summary>
+  public enum GoalOneofCase {
+    None = 0,
+    CartesianGoal = 1,
+    JointsGoal = 2,
+  }
+  private GoalOneofCase goalCase_ = GoalOneofCase.None;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public GoalOneofCase GoalCase {
+    get { return goalCase_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void ClearGoal() {
+    goalCase_ = GoalOneofCase.None;
+    goal_ = null;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override bool Equals(object other) {
+    return Equals(other as GoToRequest);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public bool Equals(GoToRequest other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (!object.Equals(CartesianGoal, other.CartesianGoal)) return false;
+    if (!object.Equals(JointsGoal, other.JointsGoal)) return false;
+    if (!object.Equals(InterpolationMode, other.InterpolationMode)) return false;
+    if (GoalCase != other.GoalCase) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (goalCase_ == GoalOneofCase.CartesianGoal) hash ^= CartesianGoal.GetHashCode();
+    if (goalCase_ == GoalOneofCase.JointsGoal) hash ^= JointsGoal.GetHashCode();
+    if (interpolationMode_ != null) hash ^= InterpolationMode.GetHashCode();
+    hash ^= (int) goalCase_;
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (goalCase_ == GoalOneofCase.CartesianGoal) {
+      output.WriteRawTag(10);
+      output.WriteMessage(CartesianGoal);
+    }
+    if (goalCase_ == GoalOneofCase.JointsGoal) {
+      output.WriteRawTag(18);
+      output.WriteMessage(JointsGoal);
+    }
+    if (interpolationMode_ != null) {
+      output.WriteRawTag(26);
+      output.WriteMessage(InterpolationMode);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (goalCase_ == GoalOneofCase.CartesianGoal) {
+      output.WriteRawTag(10);
+      output.WriteMessage(CartesianGoal);
+    }
+    if (goalCase_ == GoalOneofCase.JointsGoal) {
+      output.WriteRawTag(18);
+      output.WriteMessage(JointsGoal);
+    }
+    if (interpolationMode_ != null) {
+      output.WriteRawTag(26);
+      output.WriteMessage(InterpolationMode);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public int CalculateSize() {
+    int size = 0;
+    if (goalCase_ == GoalOneofCase.CartesianGoal) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(CartesianGoal);
+    }
+    if (goalCase_ == GoalOneofCase.JointsGoal) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(JointsGoal);
+    }
+    if (interpolationMode_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(InterpolationMode);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void MergeFrom(GoToRequest other) {
+    if (other == null) {
+      return;
+    }
+    if (other.interpolationMode_ != null) {
+      if (interpolationMode_ == null) {
+        InterpolationMode = new global::GoToInterpolation();
+      }
+      InterpolationMode.MergeFrom(other.InterpolationMode);
+    }
+    switch (other.GoalCase) {
+      case GoalOneofCase.CartesianGoal:
+        if (CartesianGoal == null) {
+          CartesianGoal = new global::CartesianGoal();
+        }
+        CartesianGoal.MergeFrom(other.CartesianGoal);
+        break;
+      case GoalOneofCase.JointsGoal:
+        if (JointsGoal == null) {
+          JointsGoal = new global::JointsGoal();
+        }
+        JointsGoal.MergeFrom(other.JointsGoal);
+        break;
+    }
+
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10: {
+          global::CartesianGoal subBuilder = new global::CartesianGoal();
+          if (goalCase_ == GoalOneofCase.CartesianGoal) {
+            subBuilder.MergeFrom(CartesianGoal);
+          }
+          input.ReadMessage(subBuilder);
+          CartesianGoal = subBuilder;
+          break;
+        }
+        case 18: {
+          global::JointsGoal subBuilder = new global::JointsGoal();
+          if (goalCase_ == GoalOneofCase.JointsGoal) {
+            subBuilder.MergeFrom(JointsGoal);
+          }
+          input.ReadMessage(subBuilder);
+          JointsGoal = subBuilder;
+          break;
+        }
+        case 26: {
+          if (interpolationMode_ == null) {
+            InterpolationMode = new global::GoToInterpolation();
+          }
+          input.ReadMessage(InterpolationMode);
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10: {
+          global::CartesianGoal subBuilder = new global::CartesianGoal();
+          if (goalCase_ == GoalOneofCase.CartesianGoal) {
+            subBuilder.MergeFrom(CartesianGoal);
+          }
+          input.ReadMessage(subBuilder);
+          CartesianGoal = subBuilder;
+          break;
+        }
+        case 18: {
+          global::JointsGoal subBuilder = new global::JointsGoal();
+          if (goalCase_ == GoalOneofCase.JointsGoal) {
+            subBuilder.MergeFrom(JointsGoal);
+          }
+          input.ReadMessage(subBuilder);
+          JointsGoal = subBuilder;
+          break;
+        }
+        case 26: {
+          if (interpolationMode_ == null) {
+            InterpolationMode = new global::GoToInterpolation();
+          }
+          input.ReadMessage(InterpolationMode);
           break;
         }
       }
