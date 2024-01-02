@@ -161,4 +161,5 @@ service HeadService {
     rpc GetJointGoalPosition (reachy.part.PartId) returns (kinematics.Rotation3d);
 
     rpc SetSpeedLimit (SpeedLimitRequest) returns (google.protobuf.Empty);
+    rpc SendNeckJointGoal (NeckJointGoal) returns (google.protobuf.Empty);
 }
