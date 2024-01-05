@@ -37,20 +37,10 @@ class HeadServiceStub(object):
                 request_serializer=head__pb2.NeckIKRequest.SerializeToString,
                 response_deserializer=head__pb2.NeckIKSolution.FromString,
                 )
-        self.GoToOrientation = channel.unary_unary(
-                '/reachy.part.head.HeadService/GoToOrientation',
-                request_serializer=head__pb2.NeckGoal.SerializeToString,
-                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
-                )
         self.GetOrientation = channel.unary_unary(
                 '/reachy.part.head.HeadService/GetOrientation',
                 request_serializer=part__pb2.PartId.SerializeToString,
                 response_deserializer=kinematics__pb2.Rotation3d.FromString,
-                )
-        self.LookAt = channel.unary_unary(
-                '/reachy.part.head.HeadService/LookAt',
-                request_serializer=head__pb2.HeadLookAtGoal.SerializeToString,
-                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
         self.Audit = channel.unary_unary(
                 '/reachy.part.head.HeadService/Audit',
@@ -102,6 +92,11 @@ class HeadServiceStub(object):
                 request_serializer=head__pb2.SpeedLimitRequest.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
+        self.SendNeckJointGoal = channel.unary_unary(
+                '/reachy.part.head.HeadService/SendNeckJointGoal',
+                request_serializer=head__pb2.NeckJointGoal.SerializeToString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                )
 
 
 class HeadServiceServicer(object):
@@ -131,19 +126,7 @@ class HeadServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
-    def GoToOrientation(self, request, context):
-        """Missing associated documentation comment in .proto file."""
-        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
-        context.set_details('Method not implemented!')
-        raise NotImplementedError('Method not implemented!')
-
     def GetOrientation(self, request, context):
-        """Missing associated documentation comment in .proto file."""
-        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
-        context.set_details('Method not implemented!')
-        raise NotImplementedError('Method not implemented!')
-
-    def LookAt(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -209,6 +192,12 @@ class HeadServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def SendNeckJointGoal(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
 
 def add_HeadServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
@@ -232,20 +221,10 @@ def add_HeadServiceServicer_to_server(servicer, server):
                     request_deserializer=head__pb2.NeckIKRequest.FromString,
                     response_serializer=head__pb2.NeckIKSolution.SerializeToString,
             ),
-            'GoToOrientation': grpc.unary_unary_rpc_method_handler(
-                    servicer.GoToOrientation,
-                    request_deserializer=head__pb2.NeckGoal.FromString,
-                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-            ),
             'GetOrientation': grpc.unary_unary_rpc_method_handler(
                     servicer.GetOrientation,
                     request_deserializer=part__pb2.PartId.FromString,
                     response_serializer=kinematics__pb2.Rotation3d.SerializeToString,
-            ),
-            'LookAt': grpc.unary_unary_rpc_method_handler(
-                    servicer.LookAt,
-                    request_deserializer=head__pb2.HeadLookAtGoal.FromString,
-                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'Audit': grpc.unary_unary_rpc_method_handler(
                     servicer.Audit,
@@ -295,6 +274,11 @@ def add_HeadServiceServicer_to_server(servicer, server):
             'SetSpeedLimit': grpc.unary_unary_rpc_method_handler(
                     servicer.SetSpeedLimit,
                     request_deserializer=head__pb2.SpeedLimitRequest.FromString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            ),
+            'SendNeckJointGoal': grpc.unary_unary_rpc_method_handler(
+                    servicer.SendNeckJointGoal,
+                    request_deserializer=head__pb2.NeckJointGoal.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
     }
@@ -376,23 +360,6 @@ class HeadService(object):
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
-    def GoToOrientation(request,
-            target,
-            options=(),
-            channel_credentials=None,
-            call_credentials=None,
-            insecure=False,
-            compression=None,
-            wait_for_ready=None,
-            timeout=None,
-            metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/GoToOrientation',
-            head__pb2.NeckGoal.SerializeToString,
-            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
-            options, channel_credentials,
-            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
-
-    @staticmethod
     def GetOrientation(request,
             target,
             options=(),
@@ -406,23 +373,6 @@ class HeadService(object):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/GetOrientation',
             part__pb2.PartId.SerializeToString,
             kinematics__pb2.Rotation3d.FromString,
-            options, channel_credentials,
-            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
-
-    @staticmethod
-    def LookAt(request,
-            target,
-            options=(),
-            channel_credentials=None,
-            call_credentials=None,
-            insecure=False,
-            compression=None,
-            wait_for_ready=None,
-            timeout=None,
-            metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/LookAt',
-            head__pb2.HeadLookAtGoal.SerializeToString,
-            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -592,6 +542,23 @@ class HeadService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/SetSpeedLimit',
             head__pb2.SpeedLimitRequest.SerializeToString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def SendNeckJointGoal(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/SendNeckJointGoal',
+            head__pb2.NeckJointGoal.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

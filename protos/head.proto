@@ -69,11 +69,18 @@ message HeadPosition {
     google.protobuf.FloatValue r_antenna_position = 3;
 }
 
-message NeckGoal {
+message NeckCartesianGoal {
     reachy.part.PartId id = 1;
-    kinematics.Rotation3d rotation = 2;
+    reachy.kinematics.Point point = 2;
     google.protobuf.FloatValue duration = 3;
 }
+
+message NeckJointGoal {
+    reachy.part.PartId id = 1;
+    NeckOrientation joints_goal = 2;
+    google.protobuf.FloatValue duration = 3;
+}
+
 
 message NeckOrientation {
     kinematics.Rotation3d rotation = 1;
@@ -104,12 +111,6 @@ message NeckIKSolution {
 
 message HeadStatus {
 
-}
-
-message HeadLookAtGoal {
-    reachy.part.PartId id = 1;
-    reachy.kinematics.Point point = 2;
-    google.protobuf.FloatValue duration = 3;
 }
 
 enum SpeedLimit {
@@ -144,10 +145,7 @@ service HeadService {
     rpc ComputeNeckFK (NeckFKRequest) returns (NeckFKSolution);
     rpc ComputeNeckIK (NeckIKRequest) returns (NeckIKSolution);
 
-    rpc GoToOrientation (NeckGoal) returns (google.protobuf.Empty);
     rpc GetOrientation (reachy.part.PartId) returns (kinematics.Rotation3d);
-
-    rpc LookAt (HeadLookAtGoal) returns (google.protobuf.Empty);
 
     rpc Audit (reachy.part.PartId) returns (HeadStatus);
     rpc HeartBeat (reachy.part.PartId) returns (google.protobuf.Empty);
@@ -163,4 +161,5 @@ service HeadService {
     rpc GetJointGoalPosition (reachy.part.PartId) returns (kinematics.Rotation3d);
 
     rpc SetSpeedLimit (SpeedLimitRequest) returns (google.protobuf.Empty);
+    rpc SendNeckJointGoal (NeckJointGoal) returns (google.protobuf.Empty);
 }

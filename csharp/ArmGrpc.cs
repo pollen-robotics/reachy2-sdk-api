@@ -62,10 +62,6 @@ namespace Reachy.Part.Arm {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Reachy.Part.Arm.ArmIKSolution> __Marshaller_reachy_part_arm_ArmIKSolution = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Arm.ArmIKSolution.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Reachy.Part.Arm.ArmCartesianGoal> __Marshaller_reachy_part_arm_ArmCartesianGoal = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Arm.ArmCartesianGoal.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Reachy.Part.Arm.ArmJointGoal> __Marshaller_reachy_part_arm_ArmJointGoal = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Arm.ArmJointGoal.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Reachy.Kinematics.Matrix4x4> __Marshaller_reachy_kinematics_Matrix4x4 = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Kinematics.Matrix4x4.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Reachy.Part.Arm.ArmPosition> __Marshaller_reachy_part_arm_ArmPosition = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Arm.ArmPosition.Parser));
@@ -77,6 +73,8 @@ namespace Reachy.Part.Arm {
     static readonly grpc::Marshaller<global::Reachy.Part.Arm.ArmTemperatures> __Marshaller_reachy_part_arm_ArmTemperatures = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Arm.ArmTemperatures.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Reachy.Part.Arm.SpeedLimitRequest> __Marshaller_reachy_part_arm_SpeedLimitRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Arm.SpeedLimitRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Reachy.Part.Arm.ArmCartesianGoal> __Marshaller_reachy_part_arm_ArmCartesianGoal = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Arm.ArmCartesianGoal.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Reachy.Part.Arm.ListOfArm> __Method_GetAllArms = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Reachy.Part.Arm.ListOfArm>(
@@ -109,22 +107,6 @@ namespace Reachy.Part.Arm {
         "ComputeArmIK",
         __Marshaller_reachy_part_arm_ArmIKRequest,
         __Marshaller_reachy_part_arm_ArmIKSolution);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Reachy.Part.Arm.ArmCartesianGoal, global::Google.Protobuf.WellKnownTypes.Empty> __Method_GoToCartesianPosition = new grpc::Method<global::Reachy.Part.Arm.ArmCartesianGoal, global::Google.Protobuf.WellKnownTypes.Empty>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GoToCartesianPosition",
-        __Marshaller_reachy_part_arm_ArmCartesianGoal,
-        __Marshaller_google_protobuf_Empty);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Reachy.Part.Arm.ArmJointGoal, global::Google.Protobuf.WellKnownTypes.Empty> __Method_GoToJointPosition = new grpc::Method<global::Reachy.Part.Arm.ArmJointGoal, global::Google.Protobuf.WellKnownTypes.Empty>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GoToJointPosition",
-        __Marshaller_reachy_part_arm_ArmJointGoal,
-        __Marshaller_google_protobuf_Empty);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Reachy.Part.PartId, global::Reachy.Kinematics.Matrix4x4> __Method_GetCartesianPosition = new grpc::Method<global::Reachy.Part.PartId, global::Reachy.Kinematics.Matrix4x4>(
@@ -222,6 +204,14 @@ namespace Reachy.Part.Arm {
         __Marshaller_reachy_part_arm_SpeedLimitRequest,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.Part.Arm.ArmCartesianGoal, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SendArmCartesianGoal = new grpc::Method<global::Reachy.Part.Arm.ArmCartesianGoal, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SendArmCartesianGoal",
+        __Marshaller_reachy_part_arm_ArmCartesianGoal,
+        __Marshaller_google_protobuf_Empty);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -252,18 +242,6 @@ namespace Reachy.Part.Arm {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Reachy.Part.Arm.ArmIKSolution> ComputeArmIK(global::Reachy.Part.Arm.ArmIKRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> GoToCartesianPosition(global::Reachy.Part.Arm.ArmCartesianGoal request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> GoToJointPosition(global::Reachy.Part.Arm.ArmJointGoal request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -336,6 +314,12 @@ namespace Reachy.Part.Arm {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SetSpeedLimit(global::Reachy.Part.Arm.SpeedLimitRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SendArmCartesianGoal(global::Reachy.Part.Arm.ArmCartesianGoal request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -448,46 +432,6 @@ namespace Reachy.Part.Arm {
       public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Arm.ArmIKSolution> ComputeArmIKAsync(global::Reachy.Part.Arm.ArmIKRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_ComputeArmIK, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty GoToCartesianPosition(global::Reachy.Part.Arm.ArmCartesianGoal request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GoToCartesianPosition(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty GoToCartesianPosition(global::Reachy.Part.Arm.ArmCartesianGoal request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GoToCartesianPosition, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> GoToCartesianPositionAsync(global::Reachy.Part.Arm.ArmCartesianGoal request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GoToCartesianPositionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> GoToCartesianPositionAsync(global::Reachy.Part.Arm.ArmCartesianGoal request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GoToCartesianPosition, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty GoToJointPosition(global::Reachy.Part.Arm.ArmJointGoal request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GoToJointPosition(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Google.Protobuf.WellKnownTypes.Empty GoToJointPosition(global::Reachy.Part.Arm.ArmJointGoal request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GoToJointPosition, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> GoToJointPositionAsync(global::Reachy.Part.Arm.ArmJointGoal request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GoToJointPositionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> GoToJointPositionAsync(global::Reachy.Part.Arm.ArmJointGoal request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GoToJointPosition, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Reachy.Kinematics.Matrix4x4 GetCartesianPosition(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
@@ -729,6 +673,26 @@ namespace Reachy.Part.Arm {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetSpeedLimit, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SendArmCartesianGoal(global::Reachy.Part.Arm.ArmCartesianGoal request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SendArmCartesianGoal(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SendArmCartesianGoal(global::Reachy.Part.Arm.ArmCartesianGoal request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SendArmCartesianGoal, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendArmCartesianGoalAsync(global::Reachy.Part.Arm.ArmCartesianGoal request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SendArmCartesianGoalAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendArmCartesianGoalAsync(global::Reachy.Part.Arm.ArmCartesianGoal request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SendArmCartesianGoal, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ArmServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -747,8 +711,6 @@ namespace Reachy.Part.Arm {
           .AddMethod(__Method_GetState, serviceImpl.GetState)
           .AddMethod(__Method_ComputeArmFK, serviceImpl.ComputeArmFK)
           .AddMethod(__Method_ComputeArmIK, serviceImpl.ComputeArmIK)
-          .AddMethod(__Method_GoToCartesianPosition, serviceImpl.GoToCartesianPosition)
-          .AddMethod(__Method_GoToJointPosition, serviceImpl.GoToJointPosition)
           .AddMethod(__Method_GetCartesianPosition, serviceImpl.GetCartesianPosition)
           .AddMethod(__Method_GetJointPosition, serviceImpl.GetJointPosition)
           .AddMethod(__Method_Audit, serviceImpl.Audit)
@@ -760,7 +722,8 @@ namespace Reachy.Part.Arm {
           .AddMethod(__Method_GetJointsLimits, serviceImpl.GetJointsLimits)
           .AddMethod(__Method_GetTemperatures, serviceImpl.GetTemperatures)
           .AddMethod(__Method_GetJointGoalPosition, serviceImpl.GetJointGoalPosition)
-          .AddMethod(__Method_SetSpeedLimit, serviceImpl.SetSpeedLimit).Build();
+          .AddMethod(__Method_SetSpeedLimit, serviceImpl.SetSpeedLimit)
+          .AddMethod(__Method_SendArmCartesianGoal, serviceImpl.SendArmCartesianGoal).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -774,8 +737,6 @@ namespace Reachy.Part.Arm {
       serviceBinder.AddMethod(__Method_GetState, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Arm.ArmState>(serviceImpl.GetState));
       serviceBinder.AddMethod(__Method_ComputeArmFK, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Arm.ArmFKRequest, global::Reachy.Part.Arm.ArmFKSolution>(serviceImpl.ComputeArmFK));
       serviceBinder.AddMethod(__Method_ComputeArmIK, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Arm.ArmIKRequest, global::Reachy.Part.Arm.ArmIKSolution>(serviceImpl.ComputeArmIK));
-      serviceBinder.AddMethod(__Method_GoToCartesianPosition, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Arm.ArmCartesianGoal, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.GoToCartesianPosition));
-      serviceBinder.AddMethod(__Method_GoToJointPosition, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Arm.ArmJointGoal, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.GoToJointPosition));
       serviceBinder.AddMethod(__Method_GetCartesianPosition, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Kinematics.Matrix4x4>(serviceImpl.GetCartesianPosition));
       serviceBinder.AddMethod(__Method_GetJointPosition, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Arm.ArmPosition>(serviceImpl.GetJointPosition));
       serviceBinder.AddMethod(__Method_Audit, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Arm.ArmStatus>(serviceImpl.Audit));
@@ -788,6 +749,7 @@ namespace Reachy.Part.Arm {
       serviceBinder.AddMethod(__Method_GetTemperatures, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Arm.ArmTemperatures>(serviceImpl.GetTemperatures));
       serviceBinder.AddMethod(__Method_GetJointGoalPosition, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Arm.ArmPosition>(serviceImpl.GetJointGoalPosition));
       serviceBinder.AddMethod(__Method_SetSpeedLimit, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Arm.SpeedLimitRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.SetSpeedLimit));
+      serviceBinder.AddMethod(__Method_SendArmCartesianGoal, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Arm.ArmCartesianGoal, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.SendArmCartesianGoal));
     }
 
   }

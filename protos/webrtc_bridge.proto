@@ -65,7 +65,7 @@ message HandCommand {
 }
 
 message NeckCommand {
-    reachy.part.head.NeckGoal neck_goal = 1;
+    reachy.part.head.NeckJointGoal neck_goal = 1;
     reachy.part.PartId turn_on = 2;
     reachy.part.PartId turn_off = 3;
 }

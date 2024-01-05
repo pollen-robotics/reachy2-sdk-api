@@ -37,16 +37,6 @@ class ArmServiceStub(object):
                 request_serializer=arm__pb2.ArmIKRequest.SerializeToString,
                 response_deserializer=arm__pb2.ArmIKSolution.FromString,
                 )
-        self.GoToCartesianPosition = channel.unary_unary(
-                '/reachy.part.arm.ArmService/GoToCartesianPosition',
-                request_serializer=arm__pb2.ArmCartesianGoal.SerializeToString,
-                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
-                )
-        self.GoToJointPosition = channel.unary_unary(
-                '/reachy.part.arm.ArmService/GoToJointPosition',
-                request_serializer=arm__pb2.ArmJointGoal.SerializeToString,
-                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
-                )
         self.GetCartesianPosition = channel.unary_unary(
                 '/reachy.part.arm.ArmService/GetCartesianPosition',
                 request_serializer=part__pb2.PartId.SerializeToString,
@@ -107,6 +97,11 @@ class ArmServiceStub(object):
                 request_serializer=arm__pb2.SpeedLimitRequest.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
+        self.SendArmCartesianGoal = channel.unary_unary(
+                '/reachy.part.arm.ArmService/SendArmCartesianGoal',
+                request_serializer=arm__pb2.ArmCartesianGoal.SerializeToString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                )
 
 
 class ArmServiceServicer(object):
@@ -131,18 +126,6 @@ class ArmServiceServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def ComputeArmIK(self, request, context):
-        """Missing associated documentation comment in .proto file."""
-        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
-        context.set_details('Method not implemented!')
-        raise NotImplementedError('Method not implemented!')
-
-    def GoToCartesianPosition(self, request, context):
-        """Missing associated documentation comment in .proto file."""
-        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
-        context.set_details('Method not implemented!')
-        raise NotImplementedError('Method not implemented!')
-
-    def GoToJointPosition(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -220,6 +203,12 @@ class ArmServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def SendArmCartesianGoal(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
 
 def add_ArmServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
@@ -242,16 +231,6 @@ def add_ArmServiceServicer_to_server(servicer, server):
                     servicer.ComputeArmIK,
                     request_deserializer=arm__pb2.ArmIKRequest.FromString,
                     response_serializer=arm__pb2.ArmIKSolution.SerializeToString,
-            ),
-            'GoToCartesianPosition': grpc.unary_unary_rpc_method_handler(
-                    servicer.GoToCartesianPosition,
-                    request_deserializer=arm__pb2.ArmCartesianGoal.FromString,
-                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-            ),
-            'GoToJointPosition': grpc.unary_unary_rpc_method_handler(
-                    servicer.GoToJointPosition,
-                    request_deserializer=arm__pb2.ArmJointGoal.FromString,
-                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'GetCartesianPosition': grpc.unary_unary_rpc_method_handler(
                     servicer.GetCartesianPosition,
@@ -311,6 +290,11 @@ def add_ArmServiceServicer_to_server(servicer, server):
             'SetSpeedLimit': grpc.unary_unary_rpc_method_handler(
                     servicer.SetSpeedLimit,
                     request_deserializer=arm__pb2.SpeedLimitRequest.FromString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            ),
+            'SendArmCartesianGoal': grpc.unary_unary_rpc_method_handler(
+                    servicer.SendArmCartesianGoal,
+                    request_deserializer=arm__pb2.ArmCartesianGoal.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
     }
@@ -388,40 +372,6 @@ class ArmService(object):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/ComputeArmIK',
             arm__pb2.ArmIKRequest.SerializeToString,
             arm__pb2.ArmIKSolution.FromString,
-            options, channel_credentials,
-            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
-
-    @staticmethod
-    def GoToCartesianPosition(request,
-            target,
-            options=(),
-            channel_credentials=None,
-            call_credentials=None,
-            insecure=False,
-            compression=None,
-            wait_for_ready=None,
-            timeout=None,
-            metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/GoToCartesianPosition',
-            arm__pb2.ArmCartesianGoal.SerializeToString,
-            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
-            options, channel_credentials,
-            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
-
-    @staticmethod
-    def GoToJointPosition(request,
-            target,
-            options=(),
-            channel_credentials=None,
-            call_credentials=None,
-            insecure=False,
-            compression=None,
-            wait_for_ready=None,
-            timeout=None,
-            metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/GoToJointPosition',
-            arm__pb2.ArmJointGoal.SerializeToString,
-            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -625,6 +575,23 @@ class ArmService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/SetSpeedLimit',
             arm__pb2.SpeedLimitRequest.SerializeToString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def SendArmCartesianGoal(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/SendArmCartesianGoal',
+            arm__pb2.ArmCartesianGoal.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

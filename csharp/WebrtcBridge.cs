@@ -50,15 +50,15 @@ namespace Bridge {
             "cmVhY2h5LnBhcnQuUGFydElkIpQBCgtIYW5kQ29tbWFuZBI4CgloYW5kX2dv",
             "YWwYASABKAsyJS5yZWFjaHkucGFydC5oYW5kLkhhbmRQb3NpdGlvblJlcXVl",
             "c3QSJAoHdHVybl9vbhgCIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBIlCgh0",
-            "dXJuX29mZhgDIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZCKJAQoLTmVja0Nv",
-            "bW1hbmQSLQoJbmVja19nb2FsGAEgASgLMhoucmVhY2h5LnBhcnQuaGVhZC5O",
-            "ZWNrR29hbBIkCgd0dXJuX29uGAIgASgLMhMucmVhY2h5LnBhcnQuUGFydElk",
-            "EiUKCHR1cm5fb2ZmGAMgASgLMhMucmVhY2h5LnBhcnQuUGFydElkIpsBChFN",
-            "b2JpbGVCYXNlQ29tbWFuZBJGChB0YXJnZXRfZGlyZWN0aW9uGAEgASgLMiwu",
-            "bW9iaWxlLmJhc2UubW9iaWxpdHkuVGFyZ2V0RGlyZWN0aW9uQ29tbWFuZBI+",
-            "ChBtb2JpbGVfYmFzZV9tb2RlGAIgASgLMiQubW9iaWxlLmJhc2UudXRpbGl0",
-            "eS5adXV1TW9kZUNvbW1hbmQiMwoLQW55Q29tbWFuZHMSJAoIY29tbWFuZHMY",
-            "ASADKAsyEi5icmlkZ2UuQW55Q29tbWFuZGIGcHJvdG8z"));
+            "dXJuX29mZhgDIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZCKOAQoLTmVja0Nv",
+            "bW1hbmQSMgoJbmVja19nb2FsGAEgASgLMh8ucmVhY2h5LnBhcnQuaGVhZC5O",
+            "ZWNrSm9pbnRHb2FsEiQKB3R1cm5fb24YAiABKAsyEy5yZWFjaHkucGFydC5Q",
+            "YXJ0SWQSJQoIdHVybl9vZmYYAyABKAsyEy5yZWFjaHkucGFydC5QYXJ0SWQi",
+            "mwEKEU1vYmlsZUJhc2VDb21tYW5kEkYKEHRhcmdldF9kaXJlY3Rpb24YASAB",
+            "KAsyLC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5UYXJnZXREaXJlY3Rpb25Db21t",
+            "YW5kEj4KEG1vYmlsZV9iYXNlX21vZGUYAiABKAsyJC5tb2JpbGUuYmFzZS51",
+            "dGlsaXR5Llp1dXVNb2RlQ29tbWFuZCIzCgtBbnlDb21tYW5kcxIkCghjb21t",
+            "YW5kcxgBIAMoCzISLmJyaWRnZS5BbnlDb21tYW5kYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, global::Reachy.ReachyReflection.Descriptor, global::Error.ErrorReflection.Descriptor, global::Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor, global::Mobile.Base.Utility.MobileBaseUtilityReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -2616,10 +2616,10 @@ namespace Bridge {
 
     /// <summary>Field number for the "neck_goal" field.</summary>
     public const int NeckGoalFieldNumber = 1;
-    private global::Reachy.Part.Head.NeckGoal neckGoal_;
+    private global::Reachy.Part.Head.NeckJointGoal neckGoal_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Reachy.Part.Head.NeckGoal NeckGoal {
+    public global::Reachy.Part.Head.NeckJointGoal NeckGoal {
       get { return neckGoal_; }
       set {
         neckGoal_ = value;
@@ -2763,7 +2763,7 @@ namespace Bridge {
       }
       if (other.neckGoal_ != null) {
         if (neckGoal_ == null) {
-          NeckGoal = new global::Reachy.Part.Head.NeckGoal();
+          NeckGoal = new global::Reachy.Part.Head.NeckJointGoal();
         }
         NeckGoal.MergeFrom(other.NeckGoal);
       }
@@ -2796,7 +2796,7 @@ namespace Bridge {
             break;
           case 10: {
             if (neckGoal_ == null) {
-              NeckGoal = new global::Reachy.Part.Head.NeckGoal();
+              NeckGoal = new global::Reachy.Part.Head.NeckJointGoal();
             }
             input.ReadMessage(NeckGoal);
             break;
@@ -2832,7 +2832,7 @@ namespace Bridge {
             break;
           case 10: {
             if (neckGoal_ == null) {
-              NeckGoal = new global::Reachy.Part.Head.NeckGoal();
+              NeckGoal = new global::Reachy.Part.Head.NeckJointGoal();
             }
             input.ReadMessage(NeckGoal);
             break;

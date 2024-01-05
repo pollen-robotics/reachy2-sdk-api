@@ -1,0 +1,70 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+import "arm.proto";
+import "head.proto";
+
+enum GoalStatus {
+    NONE = 0;
+    STATUS_UNKNOWN = 1;
+    STATUS_ACCEPTED = 2;
+    STATUS_EXECUTING = 3;
+    STATUS_CANCELING = 4;
+    STATUS_SUCCEEDED = 5;
+    STATUS_CANCELED = 6;
+    STATUS_ABORTED = 7;
+}
+
+message GoToId {
+    int32 id = 1;
+}
+
+message GoToAck {
+    bool ack = 1;
+}
+
+message GoToGoalStatus {
+    GoalStatus goal_status = 1;
+}
+
+message CartesianGoal {
+    oneof cartesian_goal {
+        reachy.part.arm.ArmCartesianGoal arm_cartesian_goal=1;
+        reachy.part.head.NeckCartesianGoal neck_cartesian_goal=2;
+    }
+}
+
+message JointsGoal {
+    oneof joints_goal {
+        reachy.part.arm.ArmJointGoal arm_joint_goal=1;
+        reachy.part.head.NeckJointGoal neck_joint_goal=2;
+    }
+}
+
+enum InterpolationMode {
+    NONE_INTERPOLATION = 0;
+    LINEAR = 1;
+    MINIMUM_JERK = 2;
+}
+
+message GoToInterpolation {
+    InterpolationMode interpolation_type = 1;
+}
+
+message GoToRequest {
+    oneof goal {
+        CartesianGoal cartesian_goal=1;
+        JointsGoal joints_goal=2;
+    }
+    GoToInterpolation interpolation_mode = 3;
+}
+
+
+service GoToService {
+    rpc GoToCartesian (GoToRequest) returns (GoToId);
+    rpc GoToJoints (GoToRequest) returns (GoToId);
+    rpc GetGoToState (GoToId) returns (GoToGoalStatus);
+    rpc CancelGoTo (GoToId) returns (GoToAck);
+    rpc CancelAllGoTo (google.protobuf.Empty) returns (GoToAck);
+}
