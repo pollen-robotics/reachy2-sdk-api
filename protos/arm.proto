@@ -22,7 +22,7 @@ enum ArmField {
     PRESENT_SPEED = 4;
     PRESENT_LOAD = 5;
     TEMPERATURE = 6;
-    JOINT_LIMIT = 7;
+    JOINT_LIMITS = 7;
 
     COMPLIANT = 8;
     GOAL_POSITION = 9;

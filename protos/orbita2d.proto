@@ -18,7 +18,7 @@ enum Orbita2dField {
     PRESENT_SPEED = 4;
     PRESENT_LOAD = 5;
     TEMPERATURE = 6;
-    JOINT_LIMIT = 7;
+    JOINT_LIMITS = 7;
 
     COMPLIANT = 8;
     GOAL_POSITION = 9;
@@ -44,7 +44,7 @@ message Orbita2dState {
     Vector2d present_speed = 4;
     Vector2d present_load = 5;
     Float2d temperature = 6;
-    Limits2d joint_limit = 7;
+    Limits2d joint_limits = 7;
 
     google.protobuf.BoolValue compliant = 8;
     Pose2d goal_position = 9;

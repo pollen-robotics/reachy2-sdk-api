@@ -18,7 +18,7 @@ enum DynamixelMotorField {
     PRESENT_SPEED = 4;
     PRESENT_LOAD = 5;
     TEMPERATURE = 6;
-    JOINT_LIMIT = 7;
+    JOINT_LIMITS = 7;
 
     COMPLIANT = 8;
     GOAL_POSITION = 9;
@@ -38,7 +38,7 @@ message DynamixelMotorState {
     google.protobuf.FloatValue present_speed = 4;
     google.protobuf.FloatValue present_load = 5;
     google.protobuf.FloatValue temperature = 6;
-    JointLimits joint_limit = 7;
+    JointLimits joint_limits = 7;
 
     google.protobuf.BoolValue compliant = 8;
     google.protobuf.FloatValue goal_position = 9;

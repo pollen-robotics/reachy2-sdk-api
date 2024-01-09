@@ -19,7 +19,7 @@ enum Orbita3dField {
     PRESENT_SPEED = 4;
     PRESENT_LOAD = 5;
     TEMPERATURE = 6;
-    JOINT_LIMIT = 7;
+    JOINT_LIMITS = 7;
 
     COMPLIANT = 8;
     GOAL_POSITION = 9;
@@ -39,7 +39,7 @@ message Orbita3dState {
     Vector3d present_speed = 4;
     Vector3d present_load = 5;
     Float3d temperature = 6;
-    Limits3d joint_limit = 7;
+    Limits3d joint_limits = 7;
 
     google.protobuf.BoolValue compliant = 8;
     reachy.kinematics.Rotation3d goal_position = 9;
