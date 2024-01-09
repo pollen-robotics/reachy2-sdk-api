@@ -39,7 +39,7 @@ class _HeadFieldEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._Enum
     PRESENT_SPEED: _HeadField.ValueType  # 4
     PRESENT_LOAD: _HeadField.ValueType  # 5
     TEMPERATURE: _HeadField.ValueType  # 6
-    JOINT_LIMIT: _HeadField.ValueType  # 7
+    JOINT_LIMITS: _HeadField.ValueType  # 7
     COMPLIANT: _HeadField.ValueType  # 8
     GOAL_POSITION: _HeadField.ValueType  # 9
     SPEED_LIMIT: _HeadField.ValueType  # 10
@@ -56,7 +56,7 @@ PRESENT_POSITION: HeadField.ValueType  # 3
 PRESENT_SPEED: HeadField.ValueType  # 4
 PRESENT_LOAD: HeadField.ValueType  # 5
 TEMPERATURE: HeadField.ValueType  # 6
-JOINT_LIMIT: HeadField.ValueType  # 7
+JOINT_LIMITS: HeadField.ValueType  # 7
 COMPLIANT: HeadField.ValueType  # 8
 GOAL_POSITION: HeadField.ValueType  # 9
 SPEED_LIMIT: HeadField.ValueType  # 10

@@ -38,7 +38,7 @@ class _ArmFieldEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumT
     PRESENT_SPEED: _ArmField.ValueType  # 4
     PRESENT_LOAD: _ArmField.ValueType  # 5
     TEMPERATURE: _ArmField.ValueType  # 6
-    JOINT_LIMIT: _ArmField.ValueType  # 7
+    JOINT_LIMITS: _ArmField.ValueType  # 7
     COMPLIANT: _ArmField.ValueType  # 8
     GOAL_POSITION: _ArmField.ValueType  # 9
     SPEED_LIMIT: _ArmField.ValueType  # 10
@@ -55,7 +55,7 @@ PRESENT_POSITION: ArmField.ValueType  # 3
 PRESENT_SPEED: ArmField.ValueType  # 4
 PRESENT_LOAD: ArmField.ValueType  # 5
 TEMPERATURE: ArmField.ValueType  # 6
-JOINT_LIMIT: ArmField.ValueType  # 7
+JOINT_LIMITS: ArmField.ValueType  # 7
 COMPLIANT: ArmField.ValueType  # 8
 GOAL_POSITION: ArmField.ValueType  # 9
 SPEED_LIMIT: ArmField.ValueType  # 10

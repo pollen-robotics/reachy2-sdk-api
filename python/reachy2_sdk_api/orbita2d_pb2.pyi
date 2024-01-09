@@ -34,7 +34,7 @@ class _Orbita2dFieldEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._
     PRESENT_SPEED: _Orbita2dField.ValueType  # 4
     PRESENT_LOAD: _Orbita2dField.ValueType  # 5
     TEMPERATURE: _Orbita2dField.ValueType  # 6
-    JOINT_LIMIT: _Orbita2dField.ValueType  # 7
+    JOINT_LIMITS: _Orbita2dField.ValueType  # 7
     COMPLIANT: _Orbita2dField.ValueType  # 8
     GOAL_POSITION: _Orbita2dField.ValueType  # 9
     SPEED_LIMIT: _Orbita2dField.ValueType  # 10
@@ -51,7 +51,7 @@ PRESENT_POSITION: Orbita2dField.ValueType  # 3
 PRESENT_SPEED: Orbita2dField.ValueType  # 4
 PRESENT_LOAD: Orbita2dField.ValueType  # 5
 TEMPERATURE: Orbita2dField.ValueType  # 6
-JOINT_LIMIT: Orbita2dField.ValueType  # 7
+JOINT_LIMITS: Orbita2dField.ValueType  # 7
 COMPLIANT: Orbita2dField.ValueType  # 8
 GOAL_POSITION: Orbita2dField.ValueType  # 9
 SPEED_LIMIT: Orbita2dField.ValueType  # 10
@@ -87,7 +87,7 @@ class Orbita2dState(google.protobuf.message.Message):
     PRESENT_SPEED_FIELD_NUMBER: builtins.int
     PRESENT_LOAD_FIELD_NUMBER: builtins.int
     TEMPERATURE_FIELD_NUMBER: builtins.int
-    JOINT_LIMIT_FIELD_NUMBER: builtins.int
+    JOINT_LIMITS_FIELD_NUMBER: builtins.int
     COMPLIANT_FIELD_NUMBER: builtins.int
     GOAL_POSITION_FIELD_NUMBER: builtins.int
     SPEED_LIMIT_FIELD_NUMBER: builtins.int
@@ -106,7 +106,7 @@ class Orbita2dState(google.protobuf.message.Message):
     @property
     def temperature(self) -> global___Float2d: ...
     @property
-    def joint_limit(self) -> global___Limits2d: ...
+    def joint_limits(self) -> global___Limits2d: ...
     @property
     def compliant(self) -> google.protobuf.wrappers_pb2.BoolValue: ...
     @property
@@ -126,15 +126,15 @@ class Orbita2dState(google.protobuf.message.Message):
         present_speed: global___Vector2d | None = ...,
         present_load: global___Vector2d | None = ...,
         temperature: global___Float2d | None = ...,
-        joint_limit: global___Limits2d | None = ...,
+        joint_limits: global___Limits2d | None = ...,
         compliant: google.protobuf.wrappers_pb2.BoolValue | None = ...,
         goal_position: global___Pose2d | None = ...,
         speed_limit: global___Float2d | None = ...,
         torque_limit: global___Float2d | None = ...,
         pid: global___PID2d | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["compliant", b"compliant", "goal_position", b"goal_position", "id", b"id", "joint_limit", b"joint_limit", "pid", b"pid", "present_load", b"present_load", "present_position", b"present_position", "present_speed", b"present_speed", "speed_limit", b"speed_limit", "temperature", b"temperature", "timestamp", b"timestamp", "torque_limit", b"torque_limit"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["compliant", b"compliant", "goal_position", b"goal_position", "id", b"id", "joint_limit", b"joint_limit", "pid", b"pid", "present_load", b"present_load", "present_position", b"present_position", "present_speed", b"present_speed", "speed_limit", b"speed_limit", "temperature", b"temperature", "timestamp", b"timestamp", "torque_limit", b"torque_limit"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["compliant", b"compliant", "goal_position", b"goal_position", "id", b"id", "joint_limits", b"joint_limits", "pid", b"pid", "present_load", b"present_load", "present_position", b"present_position", "present_speed", b"present_speed", "speed_limit", b"speed_limit", "temperature", b"temperature", "timestamp", b"timestamp", "torque_limit", b"torque_limit"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["compliant", b"compliant", "goal_position", b"goal_position", "id", b"id", "joint_limits", b"joint_limits", "pid", b"pid", "present_load", b"present_load", "present_position", b"present_position", "present_speed", b"present_speed", "speed_limit", b"speed_limit", "temperature", b"temperature", "timestamp", b"timestamp", "torque_limit", b"torque_limit"]) -> None: ...
 
 global___Orbita2dState = Orbita2dState
 

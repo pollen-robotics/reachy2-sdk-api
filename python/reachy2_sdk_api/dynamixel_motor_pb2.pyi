@@ -34,7 +34,7 @@ class _DynamixelMotorFieldEnumTypeWrapper(google.protobuf.internal.enum_type_wra
     PRESENT_SPEED: _DynamixelMotorField.ValueType  # 4
     PRESENT_LOAD: _DynamixelMotorField.ValueType  # 5
     TEMPERATURE: _DynamixelMotorField.ValueType  # 6
-    JOINT_LIMIT: _DynamixelMotorField.ValueType  # 7
+    JOINT_LIMITS: _DynamixelMotorField.ValueType  # 7
     COMPLIANT: _DynamixelMotorField.ValueType  # 8
     GOAL_POSITION: _DynamixelMotorField.ValueType  # 9
     SPEED_LIMIT: _DynamixelMotorField.ValueType  # 10
@@ -51,7 +51,7 @@ PRESENT_POSITION: DynamixelMotorField.ValueType  # 3
 PRESENT_SPEED: DynamixelMotorField.ValueType  # 4
 PRESENT_LOAD: DynamixelMotorField.ValueType  # 5
 TEMPERATURE: DynamixelMotorField.ValueType  # 6
-JOINT_LIMIT: DynamixelMotorField.ValueType  # 7
+JOINT_LIMITS: DynamixelMotorField.ValueType  # 7
 COMPLIANT: DynamixelMotorField.ValueType  # 8
 GOAL_POSITION: DynamixelMotorField.ValueType  # 9
 SPEED_LIMIT: DynamixelMotorField.ValueType  # 10
@@ -70,7 +70,7 @@ class DynamixelMotorState(google.protobuf.message.Message):
     PRESENT_SPEED_FIELD_NUMBER: builtins.int
     PRESENT_LOAD_FIELD_NUMBER: builtins.int
     TEMPERATURE_FIELD_NUMBER: builtins.int
-    JOINT_LIMIT_FIELD_NUMBER: builtins.int
+    JOINT_LIMITS_FIELD_NUMBER: builtins.int
     COMPLIANT_FIELD_NUMBER: builtins.int
     GOAL_POSITION_FIELD_NUMBER: builtins.int
     SPEED_LIMIT_FIELD_NUMBER: builtins.int
@@ -89,7 +89,7 @@ class DynamixelMotorState(google.protobuf.message.Message):
     @property
     def temperature(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
     @property
-    def joint_limit(self) -> component_pb2.JointLimits: ...
+    def joint_limits(self) -> component_pb2.JointLimits: ...
     @property
     def compliant(self) -> google.protobuf.wrappers_pb2.BoolValue: ...
     @property
@@ -109,15 +109,15 @@ class DynamixelMotorState(google.protobuf.message.Message):
         present_speed: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         present_load: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         temperature: google.protobuf.wrappers_pb2.FloatValue | None = ...,
-        joint_limit: component_pb2.JointLimits | None = ...,
+        joint_limits: component_pb2.JointLimits | None = ...,
         compliant: google.protobuf.wrappers_pb2.BoolValue | None = ...,
         goal_position: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         speed_limit: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         torque_limit: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         pid: component_pb2.PIDGains | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["compliant", b"compliant", "goal_position", b"goal_position", "id", b"id", "joint_limit", b"joint_limit", "pid", b"pid", "present_load", b"present_load", "present_position", b"present_position", "present_speed", b"present_speed", "speed_limit", b"speed_limit", "temperature", b"temperature", "timestamp", b"timestamp", "torque_limit", b"torque_limit"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["compliant", b"compliant", "goal_position", b"goal_position", "id", b"id", "joint_limit", b"joint_limit", "pid", b"pid", "present_load", b"present_load", "present_position", b"present_position", "present_speed", b"present_speed", "speed_limit", b"speed_limit", "temperature", b"temperature", "timestamp", b"timestamp", "torque_limit", b"torque_limit"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["compliant", b"compliant", "goal_position", b"goal_position", "id", b"id", "joint_limits", b"joint_limits", "pid", b"pid", "present_load", b"present_load", "present_position", b"present_position", "present_speed", b"present_speed", "speed_limit", b"speed_limit", "temperature", b"temperature", "timestamp", b"timestamp", "torque_limit", b"torque_limit"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["compliant", b"compliant", "goal_position", b"goal_position", "id", b"id", "joint_limits", b"joint_limits", "pid", b"pid", "present_load", b"present_load", "present_position", b"present_position", "present_speed", b"present_speed", "speed_limit", b"speed_limit", "temperature", b"temperature", "timestamp", b"timestamp", "torque_limit", b"torque_limit"]) -> None: ...
 
 global___DynamixelMotorState = DynamixelMotorState
 
