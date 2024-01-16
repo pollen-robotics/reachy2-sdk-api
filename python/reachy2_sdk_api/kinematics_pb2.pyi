@@ -7,6 +7,7 @@ import collections.abc
 import google.protobuf.descriptor
 import google.protobuf.internal.containers
 import google.protobuf.message
+import google.protobuf.wrappers_pb2
 import sys
 
 if sys.version_info >= (3, 8):
@@ -126,16 +127,20 @@ class ExtEulerAngles(google.protobuf.message.Message):
     ROLL_FIELD_NUMBER: builtins.int
     PITCH_FIELD_NUMBER: builtins.int
     YAW_FIELD_NUMBER: builtins.int
-    roll: builtins.float
-    pitch: builtins.float
-    yaw: builtins.float
+    @property
+    def roll(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    @property
+    def pitch(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    @property
+    def yaw(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
     def __init__(
         self,
         *,
-        roll: builtins.float = ...,
-        pitch: builtins.float = ...,
-        yaw: builtins.float = ...,
+        roll: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        pitch: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        yaw: google.protobuf.wrappers_pb2.FloatValue | None = ...,
     ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["pitch", b"pitch", "roll", b"roll", "yaw", b"yaw"]) -> builtins.bool: ...
     def ClearField(self, field_name: typing_extensions.Literal["pitch", b"pitch", "roll", b"roll", "yaw", b"yaw"]) -> None: ...
 
 global___ExtEulerAngles = ExtEulerAngles
