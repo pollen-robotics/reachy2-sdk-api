@@ -6,32 +6,14 @@ import "component.proto";
 
 package component.video;
 
-message StereoCamera {
-    
-}
-
-message DepthCamera {
-    
-}
-
-message StereoCameraInfo {
+message CameraInfo {
     component.ComponentId id = 1;
-
-    repeated float intrinsic_parameters = 2;
+    bool stereo = 2;
+    bool depth = 3;
 }
 
-message ListOfStereoCameraInfo {
-    repeated StereoCameraInfo stereo_camera_info = 1;
-}
-
-message DepthCameraInfo {
-    component.ComponentId id = 1;
-
-    repeated float intrinsic_parameters = 2;
-}
-
-message ListOfDepthCameraInfo {
-    repeated DepthCameraInfo stereo_camera_info = 1;
+message ListOfCameraInfo {
+    repeated CameraInfo camera_info = 1;
 }
 
 message Frame {
@@ -39,8 +21,7 @@ message Frame {
 }
 
 service VideoService {
-    rpc GetAllStereoCamera (google.protobuf.Empty) returns (ListOfStereoCameraInfo);
-    rpc GetAllDepthCamera (google.protobuf.Empty) returns (ListOfDepthCameraInfo);
+    rpc GetAllCameras(google.protobuf.Empty) returns (ListOfCameraInfo);
 
     rpc GetFrame (component.ComponentId) returns (Frame);
 }

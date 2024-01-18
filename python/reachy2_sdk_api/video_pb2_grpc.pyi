@@ -21,13 +21,9 @@ class _ServicerContext(grpc.ServicerContext, grpc.aio.ServicerContext):  # type:
 
 class VideoServiceStub:
     def __init__(self, channel: typing.Union[grpc.Channel, grpc.aio.Channel]) -> None: ...
-    GetAllStereoCamera: grpc.UnaryUnaryMultiCallable[
+    GetAllCameras: grpc.UnaryUnaryMultiCallable[
         google.protobuf.empty_pb2.Empty,
-        video_pb2.ListOfStereoCameraInfo,
-    ]
-    GetAllDepthCamera: grpc.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
-        video_pb2.ListOfDepthCameraInfo,
+        video_pb2.ListOfCameraInfo,
     ]
     GetFrame: grpc.UnaryUnaryMultiCallable[
         component_pb2.ComponentId,
@@ -35,13 +31,9 @@ class VideoServiceStub:
     ]
 
 class VideoServiceAsyncStub:
-    GetAllStereoCamera: grpc.aio.UnaryUnaryMultiCallable[
+    GetAllCameras: grpc.aio.UnaryUnaryMultiCallable[
         google.protobuf.empty_pb2.Empty,
-        video_pb2.ListOfStereoCameraInfo,
-    ]
-    GetAllDepthCamera: grpc.aio.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
-        video_pb2.ListOfDepthCameraInfo,
+        video_pb2.ListOfCameraInfo,
     ]
     GetFrame: grpc.aio.UnaryUnaryMultiCallable[
         component_pb2.ComponentId,
@@ -50,17 +42,11 @@ class VideoServiceAsyncStub:
 
 class VideoServiceServicer(metaclass=abc.ABCMeta):
     @abc.abstractmethod
-    def GetAllStereoCamera(
+    def GetAllCameras(
         self,
         request: google.protobuf.empty_pb2.Empty,
         context: _ServicerContext,
-    ) -> typing.Union[video_pb2.ListOfStereoCameraInfo, collections.abc.Awaitable[video_pb2.ListOfStereoCameraInfo]]: ...
-    @abc.abstractmethod
-    def GetAllDepthCamera(
-        self,
-        request: google.protobuf.empty_pb2.Empty,
-        context: _ServicerContext,
-    ) -> typing.Union[video_pb2.ListOfDepthCameraInfo, collections.abc.Awaitable[video_pb2.ListOfDepthCameraInfo]]: ...
+    ) -> typing.Union[video_pb2.ListOfCameraInfo, collections.abc.Awaitable[video_pb2.ListOfCameraInfo]]: ...
     @abc.abstractmethod
     def GetFrame(
         self,

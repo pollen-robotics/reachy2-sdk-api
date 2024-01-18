@@ -18,98 +18,43 @@ else:
 DESCRIPTOR: google.protobuf.descriptor.FileDescriptor
 
 @typing_extensions.final
-class StereoCamera(google.protobuf.message.Message):
-    DESCRIPTOR: google.protobuf.descriptor.Descriptor
-
-    def __init__(
-        self,
-    ) -> None: ...
-
-global___StereoCamera = StereoCamera
-
-@typing_extensions.final
-class DepthCamera(google.protobuf.message.Message):
-    DESCRIPTOR: google.protobuf.descriptor.Descriptor
-
-    def __init__(
-        self,
-    ) -> None: ...
-
-global___DepthCamera = DepthCamera
-
-@typing_extensions.final
-class StereoCameraInfo(google.protobuf.message.Message):
+class CameraInfo(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
     ID_FIELD_NUMBER: builtins.int
-    INTRINSIC_PARAMETERS_FIELD_NUMBER: builtins.int
+    STEREO_FIELD_NUMBER: builtins.int
+    DEPTH_FIELD_NUMBER: builtins.int
     @property
     def id(self) -> component_pb2.ComponentId: ...
-    @property
-    def intrinsic_parameters(self) -> google.protobuf.internal.containers.RepeatedScalarFieldContainer[builtins.float]: ...
+    stereo: builtins.bool
+    depth: builtins.bool
     def __init__(
         self,
         *,
         id: component_pb2.ComponentId | None = ...,
-        intrinsic_parameters: collections.abc.Iterable[builtins.float] | None = ...,
+        stereo: builtins.bool = ...,
+        depth: builtins.bool = ...,
     ) -> None: ...
     def HasField(self, field_name: typing_extensions.Literal["id", b"id"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["id", b"id", "intrinsic_parameters", b"intrinsic_parameters"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["depth", b"depth", "id", b"id", "stereo", b"stereo"]) -> None: ...
 
-global___StereoCameraInfo = StereoCameraInfo
+global___CameraInfo = CameraInfo
 
 @typing_extensions.final
-class ListOfStereoCameraInfo(google.protobuf.message.Message):
+class ListOfCameraInfo(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
-    STEREO_CAMERA_INFO_FIELD_NUMBER: builtins.int
+    CAMERA_INFO_FIELD_NUMBER: builtins.int
     @property
-    def stereo_camera_info(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___StereoCameraInfo]: ...
+    def camera_info(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___CameraInfo]: ...
     def __init__(
         self,
         *,
-        stereo_camera_info: collections.abc.Iterable[global___StereoCameraInfo] | None = ...,
+        camera_info: collections.abc.Iterable[global___CameraInfo] | None = ...,
     ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["stereo_camera_info", b"stereo_camera_info"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["camera_info", b"camera_info"]) -> None: ...
 
-global___ListOfStereoCameraInfo = ListOfStereoCameraInfo
-
-@typing_extensions.final
-class DepthCameraInfo(google.protobuf.message.Message):
-    DESCRIPTOR: google.protobuf.descriptor.Descriptor
-
-    ID_FIELD_NUMBER: builtins.int
-    INTRINSIC_PARAMETERS_FIELD_NUMBER: builtins.int
-    @property
-    def id(self) -> component_pb2.ComponentId: ...
-    @property
-    def intrinsic_parameters(self) -> google.protobuf.internal.containers.RepeatedScalarFieldContainer[builtins.float]: ...
-    def __init__(
-        self,
-        *,
-        id: component_pb2.ComponentId | None = ...,
-        intrinsic_parameters: collections.abc.Iterable[builtins.float] | None = ...,
-    ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["id", b"id"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["id", b"id", "intrinsic_parameters", b"intrinsic_parameters"]) -> None: ...
-
-global___DepthCameraInfo = DepthCameraInfo
-
-@typing_extensions.final
-class ListOfDepthCameraInfo(google.protobuf.message.Message):
-    DESCRIPTOR: google.protobuf.descriptor.Descriptor
-
-    STEREO_CAMERA_INFO_FIELD_NUMBER: builtins.int
-    @property
-    def stereo_camera_info(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___DepthCameraInfo]: ...
-    def __init__(
-        self,
-        *,
-        stereo_camera_info: collections.abc.Iterable[global___DepthCameraInfo] | None = ...,
-    ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["stereo_camera_info", b"stereo_camera_info"]) -> None: ...
-
-global___ListOfDepthCameraInfo = ListOfDepthCameraInfo
+global___ListOfCameraInfo = ListOfCameraInfo
 
 @typing_extensions.final
 class Frame(google.protobuf.message.Message):
