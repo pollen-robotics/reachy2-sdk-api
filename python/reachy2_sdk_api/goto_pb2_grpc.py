@@ -4,6 +4,7 @@ import grpc
 
 from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 import goto_pb2 as goto__pb2
+import part_pb2 as part__pb2
 
 
 class GoToServiceStub(object):
@@ -30,6 +31,21 @@ class GoToServiceStub(object):
                 request_serializer=goto__pb2.GoToId.SerializeToString,
                 response_deserializer=goto__pb2.GoToGoalStatus.FromString,
                 )
+        self.GetGoToRequest = channel.unary_unary(
+                '/GoToService/GetGoToRequest',
+                request_serializer=goto__pb2.GoToId.SerializeToString,
+                response_deserializer=goto__pb2.GoToRequest.FromString,
+                )
+        self.GetPartGoToPlaying = channel.unary_unary(
+                '/GoToService/GetPartGoToPlaying',
+                request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+                response_deserializer=goto__pb2.GoToId.FromString,
+                )
+        self.GetPartGoToQueue = channel.unary_unary(
+                '/GoToService/GetPartGoToQueue',
+                request_serializer=part__pb2.PartId.SerializeToString,
+                response_deserializer=goto__pb2.GoToQueue.FromString,
+                )
         self.CancelGoTo = channel.unary_unary(
                 '/GoToService/CancelGoTo',
                 request_serializer=goto__pb2.GoToId.SerializeToString,
@@ -38,6 +54,11 @@ class GoToServiceStub(object):
         self.CancelAllGoTo = channel.unary_unary(
                 '/GoToService/CancelAllGoTo',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+                response_deserializer=goto__pb2.GoToAck.FromString,
+                )
+        self.CancelPartAllGoTo = channel.unary_unary(
+                '/GoToService/CancelPartAllGoTo',
+                request_serializer=part__pb2.PartId.SerializeToString,
                 response_deserializer=goto__pb2.GoToAck.FromString,
                 )
 
@@ -63,6 +84,24 @@ class GoToServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def GetGoToRequest(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def GetPartGoToPlaying(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def GetPartGoToQueue(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
     def CancelGoTo(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
@@ -70,6 +109,12 @@ class GoToServiceServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def CancelAllGoTo(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def CancelPartAllGoTo(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -93,6 +138,21 @@ def add_GoToServiceServicer_to_server(servicer, server):
                     request_deserializer=goto__pb2.GoToId.FromString,
                     response_serializer=goto__pb2.GoToGoalStatus.SerializeToString,
             ),
+            'GetGoToRequest': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetGoToRequest,
+                    request_deserializer=goto__pb2.GoToId.FromString,
+                    response_serializer=goto__pb2.GoToRequest.SerializeToString,
+            ),
+            'GetPartGoToPlaying': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetPartGoToPlaying,
+                    request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                    response_serializer=goto__pb2.GoToId.SerializeToString,
+            ),
+            'GetPartGoToQueue': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetPartGoToQueue,
+                    request_deserializer=part__pb2.PartId.FromString,
+                    response_serializer=goto__pb2.GoToQueue.SerializeToString,
+            ),
             'CancelGoTo': grpc.unary_unary_rpc_method_handler(
                     servicer.CancelGoTo,
                     request_deserializer=goto__pb2.GoToId.FromString,
@@ -101,6 +161,11 @@ def add_GoToServiceServicer_to_server(servicer, server):
             'CancelAllGoTo': grpc.unary_unary_rpc_method_handler(
                     servicer.CancelAllGoTo,
                     request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                    response_serializer=goto__pb2.GoToAck.SerializeToString,
+            ),
+            'CancelPartAllGoTo': grpc.unary_unary_rpc_method_handler(
+                    servicer.CancelPartAllGoTo,
+                    request_deserializer=part__pb2.PartId.FromString,
                     response_serializer=goto__pb2.GoToAck.SerializeToString,
             ),
     }
@@ -165,6 +230,57 @@ class GoToService(object):
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
+    def GetGoToRequest(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/GoToService/GetGoToRequest',
+            goto__pb2.GoToId.SerializeToString,
+            goto__pb2.GoToRequest.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def GetPartGoToPlaying(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/GoToService/GetPartGoToPlaying',
+            google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            goto__pb2.GoToId.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def GetPartGoToQueue(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/GoToService/GetPartGoToQueue',
+            part__pb2.PartId.SerializeToString,
+            goto__pb2.GoToQueue.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
     def CancelGoTo(request,
             target,
             options=(),
@@ -194,6 +310,23 @@ class GoToService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/GoToService/CancelAllGoTo',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            goto__pb2.GoToAck.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def CancelPartAllGoTo(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/GoToService/CancelPartAllGoTo',
+            part__pb2.PartId.SerializeToString,
             goto__pb2.GoToAck.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

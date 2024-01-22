@@ -4,7 +4,9 @@ isort:skip_file
 """
 import arm_pb2
 import builtins
+import collections.abc
 import google.protobuf.descriptor
+import google.protobuf.internal.containers
 import google.protobuf.internal.enum_type_wrapper
 import google.protobuf.message
 import head_pb2
@@ -191,3 +193,19 @@ class GoToRequest(google.protobuf.message.Message):
     def WhichOneof(self, oneof_group: typing_extensions.Literal["goal", b"goal"]) -> typing_extensions.Literal["cartesian_goal", "joints_goal"] | None: ...
 
 global___GoToRequest = GoToRequest
+
+@typing_extensions.final
+class GoToQueue(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    GOTO_IDS_FIELD_NUMBER: builtins.int
+    @property
+    def goto_ids(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___GoToId]: ...
+    def __init__(
+        self,
+        *,
+        goto_ids: collections.abc.Iterable[global___GoToId] | None = ...,
+    ) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["goto_ids", b"goto_ids"]) -> None: ...
+
+global___GoToQueue = GoToQueue
