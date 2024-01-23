@@ -1,15 +1,27 @@
 syntax = "proto3";
 
 import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
 
-import "component.proto";
+import "error.proto";
 
 package component.video;
 
+enum View {
+    LEFT = 0;
+    RIGHT = 1;
+}
+
+message VideoAck {
+    google.protobuf.BoolValue success = 1;
+    error.Error error = 2;
+}
+
 message CameraInfo {
-    component.ComponentId id = 1;
-    bool stereo = 2;
-    bool depth = 3;
+    string mxid = 1;
+    string name = 2;
+    bool stereo = 3;
+    bool depth = 4;
 }
 
 message ListOfCameraInfo {
@@ -17,11 +29,21 @@ message ListOfCameraInfo {
 }
 
 message Frame {
+    bytes data = 1;
+}
 
+message ViewRequest {
+    CameraInfo camera_info = 1;
+    optional View view = 2;
 }
 
 service VideoService {
     rpc GetAllCameras(google.protobuf.Empty) returns (ListOfCameraInfo);
-
-    rpc GetFrame (component.ComponentId) returns (Frame);
+    rpc InitCamera(CameraInfo) returns (VideoAck);
+    rpc CloseCamera(CameraInfo) returns (VideoAck);
+    rpc GetFrame (ViewRequest) returns (Frame);
+    rpc GetDepthFrame (ViewRequest) returns (Frame);
+    rpc GetDepthMap (CameraInfo) returns (Frame);
+    rpc GetDisparity (CameraInfo) returns (Frame);
+    rpc Capture(CameraInfo) returns (VideoAck);
 }
