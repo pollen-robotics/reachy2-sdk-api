@@ -71,7 +71,7 @@ service GoToService {
     rpc GoToJoints (GoToRequest) returns (GoToId);
     rpc GetGoToState (GoToId) returns (GoToGoalStatus);
     rpc GetGoToRequest (GoToId) returns (GoToRequest);
-    rpc GetPartGoToPlaying (google.protobuf.Empty) returns (GoToId);
+    rpc GetPartGoToPlaying (reachy.part.PartId) returns (GoToId);
     rpc GetPartGoToQueue (reachy.part.PartId) returns (GoToQueue);
     rpc CancelGoTo (GoToId) returns (GoToAck);
     rpc CancelAllGoTo (google.protobuf.Empty) returns (GoToAck);

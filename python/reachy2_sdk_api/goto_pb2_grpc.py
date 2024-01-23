@@ -38,7 +38,7 @@ class GoToServiceStub(object):
                 )
         self.GetPartGoToPlaying = channel.unary_unary(
                 '/GoToService/GetPartGoToPlaying',
-                request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+                request_serializer=part__pb2.PartId.SerializeToString,
                 response_deserializer=goto__pb2.GoToId.FromString,
                 )
         self.GetPartGoToQueue = channel.unary_unary(
@@ -145,7 +145,7 @@ def add_GoToServiceServicer_to_server(servicer, server):
             ),
             'GetPartGoToPlaying': grpc.unary_unary_rpc_method_handler(
                     servicer.GetPartGoToPlaying,
-                    request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                    request_deserializer=part__pb2.PartId.FromString,
                     response_serializer=goto__pb2.GoToId.SerializeToString,
             ),
             'GetPartGoToQueue': grpc.unary_unary_rpc_method_handler(
@@ -258,7 +258,7 @@ class GoToService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/GoToService/GetPartGoToPlaying',
-            google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            part__pb2.PartId.SerializeToString,
             goto__pb2.GoToId.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

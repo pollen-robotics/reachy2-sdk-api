@@ -38,7 +38,7 @@ class GoToServiceStub:
         goto_pb2.GoToRequest,
     ]
     GetPartGoToPlaying: grpc.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
+        part_pb2.PartId,
         goto_pb2.GoToId,
     ]
     GetPartGoToQueue: grpc.UnaryUnaryMultiCallable[
@@ -76,7 +76,7 @@ class GoToServiceAsyncStub:
         goto_pb2.GoToRequest,
     ]
     GetPartGoToPlaying: grpc.aio.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
+        part_pb2.PartId,
         goto_pb2.GoToId,
     ]
     GetPartGoToQueue: grpc.aio.UnaryUnaryMultiCallable[
@@ -124,7 +124,7 @@ class GoToServiceServicer(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def GetPartGoToPlaying(
         self,
-        request: google.protobuf.empty_pb2.Empty,
+        request: part_pb2.PartId,
         context: _ServicerContext,
     ) -> typing.Union[goto_pb2.GoToId, collections.abc.Awaitable[goto_pb2.GoToId]]: ...
     @abc.abstractmethod
