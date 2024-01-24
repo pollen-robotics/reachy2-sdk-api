@@ -4,6 +4,7 @@ import "google/protobuf/empty.proto";
 
 import "arm.proto";
 import "head.proto";
+import "part.proto";
 
 enum GoalStatus {
     NONE = 0;
@@ -60,11 +61,19 @@ message GoToRequest {
     GoToInterpolation interpolation_mode = 3;
 }
 
+message GoToQueue {
+    repeated GoToId goto_ids = 1;
+}
+
 
 service GoToService {
     rpc GoToCartesian (GoToRequest) returns (GoToId);
     rpc GoToJoints (GoToRequest) returns (GoToId);
     rpc GetGoToState (GoToId) returns (GoToGoalStatus);
+    rpc GetGoToRequest (GoToId) returns (GoToRequest);
+    rpc GetPartGoToPlaying (reachy.part.PartId) returns (GoToId);
+    rpc GetPartGoToQueue (reachy.part.PartId) returns (GoToQueue);
     rpc CancelGoTo (GoToId) returns (GoToAck);
     rpc CancelAllGoTo (google.protobuf.Empty) returns (GoToAck);
+    rpc CancelPartAllGoTo (reachy.part.PartId) returns (GoToAck);
 }
