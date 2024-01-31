@@ -26,6 +26,7 @@ message HandState {
     HandTemperatures temperatures = 5;
     HandPosition present_position = 6;
     HandPosition goal_position = 7;
+    google.protobuf.BoolValue compliant = 8;
 }
 
 message HandStatus {
