@@ -87,6 +87,7 @@ class HandState(google.protobuf.message.Message):
     TEMPERATURES_FIELD_NUMBER: builtins.int
     PRESENT_POSITION_FIELD_NUMBER: builtins.int
     GOAL_POSITION_FIELD_NUMBER: builtins.int
+    COMPLIANT_FIELD_NUMBER: builtins.int
     @property
     def opening(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
     @property
@@ -101,6 +102,8 @@ class HandState(google.protobuf.message.Message):
     def present_position(self) -> global___HandPosition: ...
     @property
     def goal_position(self) -> global___HandPosition: ...
+    @property
+    def compliant(self) -> google.protobuf.wrappers_pb2.BoolValue: ...
     def __init__(
         self,
         *,
@@ -111,9 +114,10 @@ class HandState(google.protobuf.message.Message):
         temperatures: global___HandTemperatures | None = ...,
         present_position: global___HandPosition | None = ...,
         goal_position: global___HandPosition | None = ...,
+        compliant: google.protobuf.wrappers_pb2.BoolValue | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["force", b"force", "goal_position", b"goal_position", "holding_object", b"holding_object", "joints_limits", b"joints_limits", "opening", b"opening", "present_position", b"present_position", "temperatures", b"temperatures"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["force", b"force", "goal_position", b"goal_position", "holding_object", b"holding_object", "joints_limits", b"joints_limits", "opening", b"opening", "present_position", b"present_position", "temperatures", b"temperatures"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["compliant", b"compliant", "force", b"force", "goal_position", b"goal_position", "holding_object", b"holding_object", "joints_limits", b"joints_limits", "opening", b"opening", "present_position", b"present_position", "temperatures", b"temperatures"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["compliant", b"compliant", "force", b"force", "goal_position", b"goal_position", "holding_object", b"holding_object", "joints_limits", b"joints_limits", "opening", b"opening", "present_position", b"present_position", "temperatures", b"temperatures"]) -> None: ...
 
 global___HandState = HandState
 

@@ -16,45 +16,45 @@ from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 import part_pb2 as part__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\nhand.proto\x12\x10reachy.part.hand\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a\npart.proto\"Q\n\x04Hand\x12$\n\x07part_id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12#\n\x04info\x18\x05 \x01(\x0b\x32\x15.reachy.part.PartInfo\"2\n\nListOfHand\x12$\n\x04hand\x18\x01 \x03(\x0b\x32\x16.reachy.part.hand.Hand\"\xfb\x02\n\tHandState\x12,\n\x07opening\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12*\n\x05\x66orce\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x32\n\x0eholding_object\x18\x03 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x35\n\rjoints_limits\x18\x04 \x01(\x0b\x32\x1e.reachy.part.hand.JointsLimits\x12\x38\n\x0ctemperatures\x18\x05 \x01(\x0b\x32\".reachy.part.hand.HandTemperatures\x12\x38\n\x10present_position\x18\x06 \x01(\x0b\x32\x1e.reachy.part.hand.HandPosition\x12\x35\n\rgoal_position\x18\x07 \x01(\x0b\x32\x1e.reachy.part.hand.HandPosition\"\x0c\n\nHandStatus\"\x07\n\x05\x46orce\"\'\n\x0bJointLimits\x12\x0b\n\x03min\x18\x01 \x01(\x02\x12\x0b\n\x03max\x18\x02 \x01(\x02\"F\n\x15ParallelGripperLimits\x12-\n\x06limits\x18\x01 \x01(\x0b\x32\x1d.reachy.part.hand.JointLimits\"]\n\x0cJointsLimits\x12\x43\n\x10parallel_gripper\x18\x01 \x01(\x0b\x32\'.reachy.part.hand.ParallelGripperLimitsH\x00\x42\x08\n\x06limits\"+\n\x17ParallelGripperPosition\x12\x10\n\x08position\x18\x01 \x01(\x02\"a\n\x0cHandPosition\x12\x45\n\x10parallel_gripper\x18\x01 \x01(\x0b\x32).reachy.part.hand.ParallelGripperPositionH\x00\x42\n\n\x08position\"h\n\x13HandPositionRequest\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x30\n\x08position\x18\x02 \x01(\x0b\x32\x1e.reachy.part.hand.HandPosition\"-\n\x0cTemperatures\x12\r\n\x05motor\x18\x01 \x01(\x02\x12\x0e\n\x06\x64river\x18\x02 \x01(\x02\"Q\n\x1aParallelGripperTemperature\x12\x33\n\x0btemperature\x18\x01 \x01(\x0b\x32\x1e.reachy.part.hand.Temperatures\"^\n\x10HandTemperatures\x12:\n\x10parallel_gripper\x18\x01 \x01(\x0b\x32\x1e.reachy.part.hand.TemperaturesH\x00\x42\x0e\n\x0ctemperatures\"a\n\x11SpeedLimitRequest\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12+\n\x05limit\x18\x02 \x01(\x0e\x32\x1c.reachy.part.hand.SpeedLimit*:\n\nSpeedLimit\x12\x0c\n\x08NO_LIMIT\x10\x00\x12\x08\n\x04\x46\x41ST\x10\x01\x12\n\n\x06NORMAL\x10\x02\x12\x08\n\x04SLOW\x10\x03\x32\x9a\x08\n\x0bHandService\x12\x43\n\x0bGetAllHands\x12\x16.google.protobuf.Empty\x1a\x1c.reachy.part.hand.ListOfHand\x12<\n\x08GetState\x12\x13.reachy.part.PartId\x1a\x1b.reachy.part.hand.HandState\x12\x37\n\x08OpenHand\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x38\n\tCloseHand\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12:\n\x05\x41udit\x12\x13.reachy.part.PartId\x1a\x1c.reachy.part.hand.HandStatus\x12\x38\n\tHeartBeat\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x36\n\x07Restart\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x41\n\x12ResetDefaultValues\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x35\n\x06TurnOn\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x36\n\x07TurnOff\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x44\n\rGetJointLimit\x12\x13.reachy.part.PartId\x1a\x1e.reachy.part.hand.JointsLimits\x12I\n\x0eGetTemperature\x12\x13.reachy.part.PartId\x1a\".reachy.part.hand.HandTemperatures\x12J\n\x13GetHandGoalPosition\x12\x13.reachy.part.PartId\x1a\x1e.reachy.part.hand.HandPosition\x12L\n\rSetSpeedLimit\x12#.reachy.part.hand.SpeedLimitRequest\x1a\x16.google.protobuf.Empty\x12P\n\x0fSetHandPosition\x12%.reachy.part.hand.HandPositionRequest\x1a\x16.google.protobuf.Empty\x12\x38\n\x08GetForce\x12\x13.reachy.part.PartId\x1a\x17.reachy.part.hand.Forceb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\nhand.proto\x12\x10reachy.part.hand\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a\npart.proto\"Q\n\x04Hand\x12$\n\x07part_id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12#\n\x04info\x18\x05 \x01(\x0b\x32\x15.reachy.part.PartInfo\"2\n\nListOfHand\x12$\n\x04hand\x18\x01 \x03(\x0b\x32\x16.reachy.part.hand.Hand\"\xaa\x03\n\tHandState\x12,\n\x07opening\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12*\n\x05\x66orce\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x32\n\x0eholding_object\x18\x03 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x35\n\rjoints_limits\x18\x04 \x01(\x0b\x32\x1e.reachy.part.hand.JointsLimits\x12\x38\n\x0ctemperatures\x18\x05 \x01(\x0b\x32\".reachy.part.hand.HandTemperatures\x12\x38\n\x10present_position\x18\x06 \x01(\x0b\x32\x1e.reachy.part.hand.HandPosition\x12\x35\n\rgoal_position\x18\x07 \x01(\x0b\x32\x1e.reachy.part.hand.HandPosition\x12-\n\tcompliant\x18\x08 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\"\x0c\n\nHandStatus\"\x07\n\x05\x46orce\"\'\n\x0bJointLimits\x12\x0b\n\x03min\x18\x01 \x01(\x02\x12\x0b\n\x03max\x18\x02 \x01(\x02\"F\n\x15ParallelGripperLimits\x12-\n\x06limits\x18\x01 \x01(\x0b\x32\x1d.reachy.part.hand.JointLimits\"]\n\x0cJointsLimits\x12\x43\n\x10parallel_gripper\x18\x01 \x01(\x0b\x32\'.reachy.part.hand.ParallelGripperLimitsH\x00\x42\x08\n\x06limits\"+\n\x17ParallelGripperPosition\x12\x10\n\x08position\x18\x01 \x01(\x02\"a\n\x0cHandPosition\x12\x45\n\x10parallel_gripper\x18\x01 \x01(\x0b\x32).reachy.part.hand.ParallelGripperPositionH\x00\x42\n\n\x08position\"h\n\x13HandPositionRequest\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x30\n\x08position\x18\x02 \x01(\x0b\x32\x1e.reachy.part.hand.HandPosition\"-\n\x0cTemperatures\x12\r\n\x05motor\x18\x01 \x01(\x02\x12\x0e\n\x06\x64river\x18\x02 \x01(\x02\"Q\n\x1aParallelGripperTemperature\x12\x33\n\x0btemperature\x18\x01 \x01(\x0b\x32\x1e.reachy.part.hand.Temperatures\"^\n\x10HandTemperatures\x12:\n\x10parallel_gripper\x18\x01 \x01(\x0b\x32\x1e.reachy.part.hand.TemperaturesH\x00\x42\x0e\n\x0ctemperatures\"a\n\x11SpeedLimitRequest\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12+\n\x05limit\x18\x02 \x01(\x0e\x32\x1c.reachy.part.hand.SpeedLimit*:\n\nSpeedLimit\x12\x0c\n\x08NO_LIMIT\x10\x00\x12\x08\n\x04\x46\x41ST\x10\x01\x12\n\n\x06NORMAL\x10\x02\x12\x08\n\x04SLOW\x10\x03\x32\x9a\x08\n\x0bHandService\x12\x43\n\x0bGetAllHands\x12\x16.google.protobuf.Empty\x1a\x1c.reachy.part.hand.ListOfHand\x12<\n\x08GetState\x12\x13.reachy.part.PartId\x1a\x1b.reachy.part.hand.HandState\x12\x37\n\x08OpenHand\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x38\n\tCloseHand\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12:\n\x05\x41udit\x12\x13.reachy.part.PartId\x1a\x1c.reachy.part.hand.HandStatus\x12\x38\n\tHeartBeat\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x36\n\x07Restart\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x41\n\x12ResetDefaultValues\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x35\n\x06TurnOn\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x36\n\x07TurnOff\x12\x13.reachy.part.PartId\x1a\x16.google.protobuf.Empty\x12\x44\n\rGetJointLimit\x12\x13.reachy.part.PartId\x1a\x1e.reachy.part.hand.JointsLimits\x12I\n\x0eGetTemperature\x12\x13.reachy.part.PartId\x1a\".reachy.part.hand.HandTemperatures\x12J\n\x13GetHandGoalPosition\x12\x13.reachy.part.PartId\x1a\x1e.reachy.part.hand.HandPosition\x12L\n\rSetSpeedLimit\x12#.reachy.part.hand.SpeedLimitRequest\x1a\x16.google.protobuf.Empty\x12P\n\x0fSetHandPosition\x12%.reachy.part.hand.HandPositionRequest\x1a\x16.google.protobuf.Empty\x12\x38\n\x08GetForce\x12\x13.reachy.part.PartId\x1a\x17.reachy.part.hand.Forceb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'hand_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   DESCRIPTOR._options = None
-  _globals['_SPEEDLIMIT']._serialized_start=1428
-  _globals['_SPEEDLIMIT']._serialized_end=1486
+  _globals['_SPEEDLIMIT']._serialized_start=1475
+  _globals['_SPEEDLIMIT']._serialized_end=1533
   _globals['_HAND']._serialized_start=105
   _globals['_HAND']._serialized_end=186
   _globals['_LISTOFHAND']._serialized_start=188
   _globals['_LISTOFHAND']._serialized_end=238
   _globals['_HANDSTATE']._serialized_start=241
-  _globals['_HANDSTATE']._serialized_end=620
-  _globals['_HANDSTATUS']._serialized_start=622
-  _globals['_HANDSTATUS']._serialized_end=634
-  _globals['_FORCE']._serialized_start=636
-  _globals['_FORCE']._serialized_end=643
-  _globals['_JOINTLIMITS']._serialized_start=645
-  _globals['_JOINTLIMITS']._serialized_end=684
-  _globals['_PARALLELGRIPPERLIMITS']._serialized_start=686
-  _globals['_PARALLELGRIPPERLIMITS']._serialized_end=756
-  _globals['_JOINTSLIMITS']._serialized_start=758
-  _globals['_JOINTSLIMITS']._serialized_end=851
-  _globals['_PARALLELGRIPPERPOSITION']._serialized_start=853
-  _globals['_PARALLELGRIPPERPOSITION']._serialized_end=896
-  _globals['_HANDPOSITION']._serialized_start=898
-  _globals['_HANDPOSITION']._serialized_end=995
-  _globals['_HANDPOSITIONREQUEST']._serialized_start=997
-  _globals['_HANDPOSITIONREQUEST']._serialized_end=1101
-  _globals['_TEMPERATURES']._serialized_start=1103
-  _globals['_TEMPERATURES']._serialized_end=1148
-  _globals['_PARALLELGRIPPERTEMPERATURE']._serialized_start=1150
-  _globals['_PARALLELGRIPPERTEMPERATURE']._serialized_end=1231
-  _globals['_HANDTEMPERATURES']._serialized_start=1233
-  _globals['_HANDTEMPERATURES']._serialized_end=1327
-  _globals['_SPEEDLIMITREQUEST']._serialized_start=1329
-  _globals['_SPEEDLIMITREQUEST']._serialized_end=1426
-  _globals['_HANDSERVICE']._serialized_start=1489
-  _globals['_HANDSERVICE']._serialized_end=2539
+  _globals['_HANDSTATE']._serialized_end=667
+  _globals['_HANDSTATUS']._serialized_start=669
+  _globals['_HANDSTATUS']._serialized_end=681
+  _globals['_FORCE']._serialized_start=683
+  _globals['_FORCE']._serialized_end=690
+  _globals['_JOINTLIMITS']._serialized_start=692
+  _globals['_JOINTLIMITS']._serialized_end=731
+  _globals['_PARALLELGRIPPERLIMITS']._serialized_start=733
+  _globals['_PARALLELGRIPPERLIMITS']._serialized_end=803
+  _globals['_JOINTSLIMITS']._serialized_start=805
+  _globals['_JOINTSLIMITS']._serialized_end=898
+  _globals['_PARALLELGRIPPERPOSITION']._serialized_start=900
+  _globals['_PARALLELGRIPPERPOSITION']._serialized_end=943
+  _globals['_HANDPOSITION']._serialized_start=945
+  _globals['_HANDPOSITION']._serialized_end=1042
+  _globals['_HANDPOSITIONREQUEST']._serialized_start=1044
+  _globals['_HANDPOSITIONREQUEST']._serialized_end=1148
+  _globals['_TEMPERATURES']._serialized_start=1150
+  _globals['_TEMPERATURES']._serialized_end=1195
+  _globals['_PARALLELGRIPPERTEMPERATURE']._serialized_start=1197
+  _globals['_PARALLELGRIPPERTEMPERATURE']._serialized_end=1278
+  _globals['_HANDTEMPERATURES']._serialized_start=1280
+  _globals['_HANDTEMPERATURES']._serialized_end=1374
+  _globals['_SPEEDLIMITREQUEST']._serialized_start=1376
+  _globals['_SPEEDLIMITREQUEST']._serialized_end=1473
+  _globals['_HANDSERVICE']._serialized_start=1536
+  _globals['_HANDSERVICE']._serialized_end=2586
 # @@protoc_insertion_point(module_scope)
