@@ -20,17 +20,9 @@ class _ServicerContext(grpc.ServicerContext, grpc.aio.ServicerContext):  # type:
 
 class VideoServiceStub:
     def __init__(self, channel: typing.Union[grpc.Channel, grpc.aio.Channel]) -> None: ...
-    GetAllCameras: grpc.UnaryUnaryMultiCallable[
+    InitAllCameras: grpc.UnaryUnaryMultiCallable[
         google.protobuf.empty_pb2.Empty,
         video_pb2.ListOfCameraInfo,
-    ]
-    InitCamera: grpc.UnaryUnaryMultiCallable[
-        video_pb2.CameraInfo,
-        video_pb2.VideoAck,
-    ]
-    CloseCamera: grpc.UnaryUnaryMultiCallable[
-        video_pb2.CameraInfo,
-        video_pb2.VideoAck,
     ]
     GetFrame: grpc.UnaryUnaryMultiCallable[
         video_pb2.ViewRequest,
@@ -52,19 +44,15 @@ class VideoServiceStub:
         video_pb2.CameraInfo,
         video_pb2.VideoAck,
     ]
+    GoodBye: grpc.UnaryUnaryMultiCallable[
+        google.protobuf.empty_pb2.Empty,
+        google.protobuf.empty_pb2.Empty,
+    ]
 
 class VideoServiceAsyncStub:
-    GetAllCameras: grpc.aio.UnaryUnaryMultiCallable[
+    InitAllCameras: grpc.aio.UnaryUnaryMultiCallable[
         google.protobuf.empty_pb2.Empty,
         video_pb2.ListOfCameraInfo,
-    ]
-    InitCamera: grpc.aio.UnaryUnaryMultiCallable[
-        video_pb2.CameraInfo,
-        video_pb2.VideoAck,
-    ]
-    CloseCamera: grpc.aio.UnaryUnaryMultiCallable[
-        video_pb2.CameraInfo,
-        video_pb2.VideoAck,
     ]
     GetFrame: grpc.aio.UnaryUnaryMultiCallable[
         video_pb2.ViewRequest,
@@ -86,26 +74,18 @@ class VideoServiceAsyncStub:
         video_pb2.CameraInfo,
         video_pb2.VideoAck,
     ]
+    GoodBye: grpc.aio.UnaryUnaryMultiCallable[
+        google.protobuf.empty_pb2.Empty,
+        google.protobuf.empty_pb2.Empty,
+    ]
 
 class VideoServiceServicer(metaclass=abc.ABCMeta):
     @abc.abstractmethod
-    def GetAllCameras(
+    def InitAllCameras(
         self,
         request: google.protobuf.empty_pb2.Empty,
         context: _ServicerContext,
     ) -> typing.Union[video_pb2.ListOfCameraInfo, collections.abc.Awaitable[video_pb2.ListOfCameraInfo]]: ...
-    @abc.abstractmethod
-    def InitCamera(
-        self,
-        request: video_pb2.CameraInfo,
-        context: _ServicerContext,
-    ) -> typing.Union[video_pb2.VideoAck, collections.abc.Awaitable[video_pb2.VideoAck]]: ...
-    @abc.abstractmethod
-    def CloseCamera(
-        self,
-        request: video_pb2.CameraInfo,
-        context: _ServicerContext,
-    ) -> typing.Union[video_pb2.VideoAck, collections.abc.Awaitable[video_pb2.VideoAck]]: ...
     @abc.abstractmethod
     def GetFrame(
         self,
@@ -136,5 +116,11 @@ class VideoServiceServicer(metaclass=abc.ABCMeta):
         request: video_pb2.CameraInfo,
         context: _ServicerContext,
     ) -> typing.Union[video_pb2.VideoAck, collections.abc.Awaitable[video_pb2.VideoAck]]: ...
+    @abc.abstractmethod
+    def GoodBye(
+        self,
+        request: google.protobuf.empty_pb2.Empty,
+        context: _ServicerContext,
+    ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
 
 def add_VideoServiceServicer_to_server(servicer: VideoServiceServicer, server: typing.Union[grpc.Server, grpc.aio.Server]) -> None: ...

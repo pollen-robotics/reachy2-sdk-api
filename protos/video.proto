@@ -38,12 +38,11 @@ message ViewRequest {
 }
 
 service VideoService {
-    rpc GetAllCameras(google.protobuf.Empty) returns (ListOfCameraInfo);
-    rpc InitCamera(CameraInfo) returns (VideoAck);
-    rpc CloseCamera(CameraInfo) returns (VideoAck);
+    rpc InitAllCameras(google.protobuf.Empty) returns (ListOfCameraInfo);
     rpc GetFrame (ViewRequest) returns (Frame);
     rpc GetDepthFrame (ViewRequest) returns (Frame);
     rpc GetDepthMap (CameraInfo) returns (Frame);
     rpc GetDisparity (CameraInfo) returns (Frame);
     rpc Capture(CameraInfo) returns (VideoAck);
+    rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
 }
