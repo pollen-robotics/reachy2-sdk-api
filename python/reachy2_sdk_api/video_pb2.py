@@ -12,30 +12,29 @@ _sym_db = _symbol_database.Default()
 
 
 from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
-import component_pb2 as component__pb2
+from google.protobuf import wrappers_pb2 as google_dot_protobuf_dot_wrappers__pb2
+import error_pb2 as error__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0bvideo.proto\x12\x0f\x63omponent.video\x1a\x1bgoogle/protobuf/empty.proto\x1a\x0f\x63omponent.proto\"\x0e\n\x0cStereoCamera\"\r\n\x0b\x44\x65pthCamera\"T\n\x10StereoCameraInfo\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\x1c\n\x14intrinsic_parameters\x18\x02 \x03(\x02\"W\n\x16ListOfStereoCameraInfo\x12=\n\x12stereo_camera_info\x18\x01 \x03(\x0b\x32!.component.video.StereoCameraInfo\"S\n\x0f\x44\x65pthCameraInfo\x12\"\n\x02id\x18\x01 \x01(\x0b\x32\x16.component.ComponentId\x12\x1c\n\x14intrinsic_parameters\x18\x02 \x03(\x02\"U\n\x15ListOfDepthCameraInfo\x12<\n\x12stereo_camera_info\x18\x01 \x03(\x0b\x32 .component.video.DepthCameraInfo\"\x07\n\x05\x46rame2\xf6\x01\n\x0cVideoService\x12U\n\x12GetAllStereoCamera\x12\x16.google.protobuf.Empty\x1a\'.component.video.ListOfStereoCameraInfo\x12S\n\x11GetAllDepthCamera\x12\x16.google.protobuf.Empty\x1a&.component.video.ListOfDepthCameraInfo\x12:\n\x08GetFrame\x12\x16.component.ComponentId\x1a\x16.component.video.Frameb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0bvideo.proto\x12\x0f\x63omponent.video\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x0b\x65rror.proto\"T\n\x08VideoAck\x12+\n\x07success\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x1b\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x0c.error.Error\"G\n\nCameraInfo\x12\x0c\n\x04mxid\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0e\n\x06stereo\x18\x03 \x01(\x08\x12\r\n\x05\x64\x65pth\x18\x04 \x01(\x08\"D\n\x10ListOfCameraInfo\x12\x30\n\x0b\x63\x61mera_info\x18\x01 \x03(\x0b\x32\x1b.component.video.CameraInfo\"\x15\n\x05\x46rame\x12\x0c\n\x04\x64\x61ta\x18\x01 \x01(\x0c\"r\n\x0bViewRequest\x12\x30\n\x0b\x63\x61mera_info\x18\x01 \x01(\x0b\x32\x1b.component.video.CameraInfo\x12(\n\x04view\x18\x02 \x01(\x0e\x32\x15.component.video.ViewH\x00\x88\x01\x01\x42\x07\n\x05_view*\x1b\n\x04View\x12\x08\n\x04LEFT\x10\x00\x12\t\n\x05RIGHT\x10\x01\x32\xeb\x03\n\x0cVideoService\x12K\n\x0eInitAllCameras\x12\x16.google.protobuf.Empty\x1a!.component.video.ListOfCameraInfo\x12@\n\x08GetFrame\x12\x1c.component.video.ViewRequest\x1a\x16.component.video.Frame\x12\x45\n\rGetDepthFrame\x12\x1c.component.video.ViewRequest\x1a\x16.component.video.Frame\x12\x42\n\x0bGetDepthMap\x12\x1b.component.video.CameraInfo\x1a\x16.component.video.Frame\x12\x43\n\x0cGetDisparity\x12\x1b.component.video.CameraInfo\x1a\x16.component.video.Frame\x12\x41\n\x07\x43\x61pture\x12\x1b.component.video.CameraInfo\x1a\x19.component.video.VideoAck\x12\x39\n\x07GoodBye\x12\x16.google.protobuf.Empty\x1a\x16.google.protobuf.Emptyb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'video_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   DESCRIPTOR._options = None
-  _globals['_STEREOCAMERA']._serialized_start=78
-  _globals['_STEREOCAMERA']._serialized_end=92
-  _globals['_DEPTHCAMERA']._serialized_start=94
-  _globals['_DEPTHCAMERA']._serialized_end=107
-  _globals['_STEREOCAMERAINFO']._serialized_start=109
-  _globals['_STEREOCAMERAINFO']._serialized_end=193
-  _globals['_LISTOFSTEREOCAMERAINFO']._serialized_start=195
-  _globals['_LISTOFSTEREOCAMERAINFO']._serialized_end=282
-  _globals['_DEPTHCAMERAINFO']._serialized_start=284
-  _globals['_DEPTHCAMERAINFO']._serialized_end=367
-  _globals['_LISTOFDEPTHCAMERAINFO']._serialized_start=369
-  _globals['_LISTOFDEPTHCAMERAINFO']._serialized_end=454
-  _globals['_FRAME']._serialized_start=456
-  _globals['_FRAME']._serialized_end=463
-  _globals['_VIDEOSERVICE']._serialized_start=466
-  _globals['_VIDEOSERVICE']._serialized_end=712
+  _globals['_VIEW']._serialized_start=474
+  _globals['_VIEW']._serialized_end=501
+  _globals['_VIDEOACK']._serialized_start=106
+  _globals['_VIDEOACK']._serialized_end=190
+  _globals['_CAMERAINFO']._serialized_start=192
+  _globals['_CAMERAINFO']._serialized_end=263
+  _globals['_LISTOFCAMERAINFO']._serialized_start=265
+  _globals['_LISTOFCAMERAINFO']._serialized_end=333
+  _globals['_FRAME']._serialized_start=335
+  _globals['_FRAME']._serialized_end=356
+  _globals['_VIEWREQUEST']._serialized_start=358
+  _globals['_VIEWREQUEST']._serialized_end=472
+  _globals['_VIDEOSERVICE']._serialized_start=504
+  _globals['_VIDEOSERVICE']._serialized_end=995
 # @@protoc_insertion_point(module_scope)

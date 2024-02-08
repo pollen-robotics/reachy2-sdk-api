@@ -1,46 +1,48 @@
 syntax = "proto3";
 
 import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
 
-import "component.proto";
+import "error.proto";
 
 package component.video;
 
-message StereoCamera {
-    
+enum View {
+    LEFT = 0;
+    RIGHT = 1;
 }
 
-message DepthCamera {
-    
+message VideoAck {
+    google.protobuf.BoolValue success = 1;
+    error.Error error = 2;
 }
 
-message StereoCameraInfo {
-    component.ComponentId id = 1;
-
-    repeated float intrinsic_parameters = 2;
+message CameraInfo {
+    string mxid = 1;
+    string name = 2;
+    bool stereo = 3;
+    bool depth = 4;
 }
 
-message ListOfStereoCameraInfo {
-    repeated StereoCameraInfo stereo_camera_info = 1;
-}
-
-message DepthCameraInfo {
-    component.ComponentId id = 1;
-
-    repeated float intrinsic_parameters = 2;
-}
-
-message ListOfDepthCameraInfo {
-    repeated DepthCameraInfo stereo_camera_info = 1;
+message ListOfCameraInfo {
+    repeated CameraInfo camera_info = 1;
 }
 
 message Frame {
+    bytes data = 1;
+}
 
+message ViewRequest {
+    CameraInfo camera_info = 1;
+    optional View view = 2;
 }
 
 service VideoService {
-    rpc GetAllStereoCamera (google.protobuf.Empty) returns (ListOfStereoCameraInfo);
-    rpc GetAllDepthCamera (google.protobuf.Empty) returns (ListOfDepthCameraInfo);
-
-    rpc GetFrame (component.ComponentId) returns (Frame);
+    rpc InitAllCameras(google.protobuf.Empty) returns (ListOfCameraInfo);
+    rpc GetFrame (ViewRequest) returns (Frame);
+    rpc GetDepthFrame (ViewRequest) returns (Frame);
+    rpc GetDepthMap (CameraInfo) returns (Frame);
+    rpc GetDisparity (CameraInfo) returns (Frame);
+    rpc Capture(CameraInfo) returns (VideoAck);
+    rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
 }

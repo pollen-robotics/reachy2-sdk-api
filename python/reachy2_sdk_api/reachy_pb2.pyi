@@ -12,7 +12,6 @@ import head_pb2
 import mobile_base_utility_pb2
 import sound_pb2
 import sys
-import video_pb2
 
 if sys.version_info >= (3, 8):
     import typing as typing_extensions
@@ -34,7 +33,6 @@ class Reachy(google.protobuf.message.Message):
     MOBILE_BASE_FIELD_NUMBER: builtins.int
     MICROPHONE_FIELD_NUMBER: builtins.int
     SPEAKER_FIELD_NUMBER: builtins.int
-    STEREO_CAMERA_FIELD_NUMBER: builtins.int
     INFO_FIELD_NUMBER: builtins.int
     @property
     def id(self) -> global___ReachyId: ...
@@ -55,10 +53,10 @@ class Reachy(google.protobuf.message.Message):
     @property
     def speaker(self) -> sound_pb2.Speaker: ...
     @property
-    def stereo_camera(self) -> video_pb2.StereoCamera:
-        """component.video.DepthCamera depth_camera = 11;"""
-    @property
-    def info(self) -> global___ReachyInfo: ...
+    def info(self) -> global___ReachyInfo:
+        """component.video.StereoCamera stereo_camera = 10;
+        component.video.DepthCamera depth_camera = 11;
+        """
     def __init__(
         self,
         *,
@@ -71,11 +69,10 @@ class Reachy(google.protobuf.message.Message):
         mobile_base: mobile_base_utility_pb2.MobileBase | None = ...,
         microphone: sound_pb2.Microphone | None = ...,
         speaker: sound_pb2.Speaker | None = ...,
-        stereo_camera: video_pb2.StereoCamera | None = ...,
         info: global___ReachyInfo | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["head", b"head", "id", b"id", "info", b"info", "l_arm", b"l_arm", "l_hand", b"l_hand", "microphone", b"microphone", "mobile_base", b"mobile_base", "r_arm", b"r_arm", "r_hand", b"r_hand", "speaker", b"speaker", "stereo_camera", b"stereo_camera"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["head", b"head", "id", b"id", "info", b"info", "l_arm", b"l_arm", "l_hand", b"l_hand", "microphone", b"microphone", "mobile_base", b"mobile_base", "r_arm", b"r_arm", "r_hand", b"r_hand", "speaker", b"speaker", "stereo_camera", b"stereo_camera"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["head", b"head", "id", b"id", "info", b"info", "l_arm", b"l_arm", "l_hand", b"l_hand", "microphone", b"microphone", "mobile_base", b"mobile_base", "r_arm", b"r_arm", "r_hand", b"r_hand", "speaker", b"speaker"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["head", b"head", "id", b"id", "info", b"info", "l_arm", b"l_arm", "l_hand", b"l_hand", "microphone", b"microphone", "mobile_base", b"mobile_base", "r_arm", b"r_arm", "r_hand", b"r_hand", "speaker", b"speaker"]) -> None: ...
 
 global___Reachy = Reachy
 

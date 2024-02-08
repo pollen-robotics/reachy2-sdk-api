@@ -4,7 +4,6 @@ isort:skip_file
 """
 import abc
 import collections.abc
-import component_pb2
 import google.protobuf.empty_pb2
 import grpc
 import grpc.aio
@@ -21,51 +20,107 @@ class _ServicerContext(grpc.ServicerContext, grpc.aio.ServicerContext):  # type:
 
 class VideoServiceStub:
     def __init__(self, channel: typing.Union[grpc.Channel, grpc.aio.Channel]) -> None: ...
-    GetAllStereoCamera: grpc.UnaryUnaryMultiCallable[
+    InitAllCameras: grpc.UnaryUnaryMultiCallable[
         google.protobuf.empty_pb2.Empty,
-        video_pb2.ListOfStereoCameraInfo,
-    ]
-    GetAllDepthCamera: grpc.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
-        video_pb2.ListOfDepthCameraInfo,
+        video_pb2.ListOfCameraInfo,
     ]
     GetFrame: grpc.UnaryUnaryMultiCallable[
-        component_pb2.ComponentId,
+        video_pb2.ViewRequest,
         video_pb2.Frame,
+    ]
+    GetDepthFrame: grpc.UnaryUnaryMultiCallable[
+        video_pb2.ViewRequest,
+        video_pb2.Frame,
+    ]
+    GetDepthMap: grpc.UnaryUnaryMultiCallable[
+        video_pb2.CameraInfo,
+        video_pb2.Frame,
+    ]
+    GetDisparity: grpc.UnaryUnaryMultiCallable[
+        video_pb2.CameraInfo,
+        video_pb2.Frame,
+    ]
+    Capture: grpc.UnaryUnaryMultiCallable[
+        video_pb2.CameraInfo,
+        video_pb2.VideoAck,
+    ]
+    GoodBye: grpc.UnaryUnaryMultiCallable[
+        google.protobuf.empty_pb2.Empty,
+        google.protobuf.empty_pb2.Empty,
     ]
 
 class VideoServiceAsyncStub:
-    GetAllStereoCamera: grpc.aio.UnaryUnaryMultiCallable[
+    InitAllCameras: grpc.aio.UnaryUnaryMultiCallable[
         google.protobuf.empty_pb2.Empty,
-        video_pb2.ListOfStereoCameraInfo,
-    ]
-    GetAllDepthCamera: grpc.aio.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
-        video_pb2.ListOfDepthCameraInfo,
+        video_pb2.ListOfCameraInfo,
     ]
     GetFrame: grpc.aio.UnaryUnaryMultiCallable[
-        component_pb2.ComponentId,
+        video_pb2.ViewRequest,
         video_pb2.Frame,
+    ]
+    GetDepthFrame: grpc.aio.UnaryUnaryMultiCallable[
+        video_pb2.ViewRequest,
+        video_pb2.Frame,
+    ]
+    GetDepthMap: grpc.aio.UnaryUnaryMultiCallable[
+        video_pb2.CameraInfo,
+        video_pb2.Frame,
+    ]
+    GetDisparity: grpc.aio.UnaryUnaryMultiCallable[
+        video_pb2.CameraInfo,
+        video_pb2.Frame,
+    ]
+    Capture: grpc.aio.UnaryUnaryMultiCallable[
+        video_pb2.CameraInfo,
+        video_pb2.VideoAck,
+    ]
+    GoodBye: grpc.aio.UnaryUnaryMultiCallable[
+        google.protobuf.empty_pb2.Empty,
+        google.protobuf.empty_pb2.Empty,
     ]
 
 class VideoServiceServicer(metaclass=abc.ABCMeta):
     @abc.abstractmethod
-    def GetAllStereoCamera(
+    def InitAllCameras(
         self,
         request: google.protobuf.empty_pb2.Empty,
         context: _ServicerContext,
-    ) -> typing.Union[video_pb2.ListOfStereoCameraInfo, collections.abc.Awaitable[video_pb2.ListOfStereoCameraInfo]]: ...
-    @abc.abstractmethod
-    def GetAllDepthCamera(
-        self,
-        request: google.protobuf.empty_pb2.Empty,
-        context: _ServicerContext,
-    ) -> typing.Union[video_pb2.ListOfDepthCameraInfo, collections.abc.Awaitable[video_pb2.ListOfDepthCameraInfo]]: ...
+    ) -> typing.Union[video_pb2.ListOfCameraInfo, collections.abc.Awaitable[video_pb2.ListOfCameraInfo]]: ...
     @abc.abstractmethod
     def GetFrame(
         self,
-        request: component_pb2.ComponentId,
+        request: video_pb2.ViewRequest,
         context: _ServicerContext,
     ) -> typing.Union[video_pb2.Frame, collections.abc.Awaitable[video_pb2.Frame]]: ...
+    @abc.abstractmethod
+    def GetDepthFrame(
+        self,
+        request: video_pb2.ViewRequest,
+        context: _ServicerContext,
+    ) -> typing.Union[video_pb2.Frame, collections.abc.Awaitable[video_pb2.Frame]]: ...
+    @abc.abstractmethod
+    def GetDepthMap(
+        self,
+        request: video_pb2.CameraInfo,
+        context: _ServicerContext,
+    ) -> typing.Union[video_pb2.Frame, collections.abc.Awaitable[video_pb2.Frame]]: ...
+    @abc.abstractmethod
+    def GetDisparity(
+        self,
+        request: video_pb2.CameraInfo,
+        context: _ServicerContext,
+    ) -> typing.Union[video_pb2.Frame, collections.abc.Awaitable[video_pb2.Frame]]: ...
+    @abc.abstractmethod
+    def Capture(
+        self,
+        request: video_pb2.CameraInfo,
+        context: _ServicerContext,
+    ) -> typing.Union[video_pb2.VideoAck, collections.abc.Awaitable[video_pb2.VideoAck]]: ...
+    @abc.abstractmethod
+    def GoodBye(
+        self,
+        request: google.protobuf.empty_pb2.Empty,
+        context: _ServicerContext,
+    ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
 
 def add_VideoServiceServicer_to_server(servicer: VideoServiceServicer, server: typing.Union[grpc.Server, grpc.aio.Server]) -> None: ...

@@ -4,119 +4,130 @@ isort:skip_file
 """
 import builtins
 import collections.abc
-import component_pb2
+import error_pb2
 import google.protobuf.descriptor
 import google.protobuf.internal.containers
+import google.protobuf.internal.enum_type_wrapper
 import google.protobuf.message
+import google.protobuf.wrappers_pb2
 import sys
+import typing
 
-if sys.version_info >= (3, 8):
+if sys.version_info >= (3, 10):
     import typing as typing_extensions
 else:
     import typing_extensions
 
 DESCRIPTOR: google.protobuf.descriptor.FileDescriptor
 
-@typing_extensions.final
-class StereoCamera(google.protobuf.message.Message):
-    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+class _View:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
 
-    def __init__(
-        self,
-    ) -> None: ...
+class _ViewEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_View.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    LEFT: _View.ValueType  # 0
+    RIGHT: _View.ValueType  # 1
 
-global___StereoCamera = StereoCamera
+class View(_View, metaclass=_ViewEnumTypeWrapper): ...
 
-@typing_extensions.final
-class DepthCamera(google.protobuf.message.Message):
-    DESCRIPTOR: google.protobuf.descriptor.Descriptor
-
-    def __init__(
-        self,
-    ) -> None: ...
-
-global___DepthCamera = DepthCamera
+LEFT: View.ValueType  # 0
+RIGHT: View.ValueType  # 1
+global___View = View
 
 @typing_extensions.final
-class StereoCameraInfo(google.protobuf.message.Message):
+class VideoAck(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
-    ID_FIELD_NUMBER: builtins.int
-    INTRINSIC_PARAMETERS_FIELD_NUMBER: builtins.int
+    SUCCESS_FIELD_NUMBER: builtins.int
+    ERROR_FIELD_NUMBER: builtins.int
     @property
-    def id(self) -> component_pb2.ComponentId: ...
+    def success(self) -> google.protobuf.wrappers_pb2.BoolValue: ...
     @property
-    def intrinsic_parameters(self) -> google.protobuf.internal.containers.RepeatedScalarFieldContainer[builtins.float]: ...
+    def error(self) -> error_pb2.Error: ...
     def __init__(
         self,
         *,
-        id: component_pb2.ComponentId | None = ...,
-        intrinsic_parameters: collections.abc.Iterable[builtins.float] | None = ...,
+        success: google.protobuf.wrappers_pb2.BoolValue | None = ...,
+        error: error_pb2.Error | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["id", b"id"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["id", b"id", "intrinsic_parameters", b"intrinsic_parameters"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["error", b"error", "success", b"success"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["error", b"error", "success", b"success"]) -> None: ...
 
-global___StereoCameraInfo = StereoCameraInfo
+global___VideoAck = VideoAck
 
 @typing_extensions.final
-class ListOfStereoCameraInfo(google.protobuf.message.Message):
+class CameraInfo(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
-    STEREO_CAMERA_INFO_FIELD_NUMBER: builtins.int
-    @property
-    def stereo_camera_info(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___StereoCameraInfo]: ...
+    MXID_FIELD_NUMBER: builtins.int
+    NAME_FIELD_NUMBER: builtins.int
+    STEREO_FIELD_NUMBER: builtins.int
+    DEPTH_FIELD_NUMBER: builtins.int
+    mxid: builtins.str
+    name: builtins.str
+    stereo: builtins.bool
+    depth: builtins.bool
     def __init__(
         self,
         *,
-        stereo_camera_info: collections.abc.Iterable[global___StereoCameraInfo] | None = ...,
+        mxid: builtins.str = ...,
+        name: builtins.str = ...,
+        stereo: builtins.bool = ...,
+        depth: builtins.bool = ...,
     ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["stereo_camera_info", b"stereo_camera_info"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["depth", b"depth", "mxid", b"mxid", "name", b"name", "stereo", b"stereo"]) -> None: ...
 
-global___ListOfStereoCameraInfo = ListOfStereoCameraInfo
+global___CameraInfo = CameraInfo
 
 @typing_extensions.final
-class DepthCameraInfo(google.protobuf.message.Message):
+class ListOfCameraInfo(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
-    ID_FIELD_NUMBER: builtins.int
-    INTRINSIC_PARAMETERS_FIELD_NUMBER: builtins.int
+    CAMERA_INFO_FIELD_NUMBER: builtins.int
     @property
-    def id(self) -> component_pb2.ComponentId: ...
-    @property
-    def intrinsic_parameters(self) -> google.protobuf.internal.containers.RepeatedScalarFieldContainer[builtins.float]: ...
+    def camera_info(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___CameraInfo]: ...
     def __init__(
         self,
         *,
-        id: component_pb2.ComponentId | None = ...,
-        intrinsic_parameters: collections.abc.Iterable[builtins.float] | None = ...,
+        camera_info: collections.abc.Iterable[global___CameraInfo] | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["id", b"id"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["id", b"id", "intrinsic_parameters", b"intrinsic_parameters"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["camera_info", b"camera_info"]) -> None: ...
 
-global___DepthCameraInfo = DepthCameraInfo
-
-@typing_extensions.final
-class ListOfDepthCameraInfo(google.protobuf.message.Message):
-    DESCRIPTOR: google.protobuf.descriptor.Descriptor
-
-    STEREO_CAMERA_INFO_FIELD_NUMBER: builtins.int
-    @property
-    def stereo_camera_info(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___DepthCameraInfo]: ...
-    def __init__(
-        self,
-        *,
-        stereo_camera_info: collections.abc.Iterable[global___DepthCameraInfo] | None = ...,
-    ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["stereo_camera_info", b"stereo_camera_info"]) -> None: ...
-
-global___ListOfDepthCameraInfo = ListOfDepthCameraInfo
+global___ListOfCameraInfo = ListOfCameraInfo
 
 @typing_extensions.final
 class Frame(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
+    DATA_FIELD_NUMBER: builtins.int
+    data: builtins.bytes
     def __init__(
         self,
+        *,
+        data: builtins.bytes = ...,
     ) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["data", b"data"]) -> None: ...
 
 global___Frame = Frame
+
+@typing_extensions.final
+class ViewRequest(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    CAMERA_INFO_FIELD_NUMBER: builtins.int
+    VIEW_FIELD_NUMBER: builtins.int
+    @property
+    def camera_info(self) -> global___CameraInfo: ...
+    view: global___View.ValueType
+    def __init__(
+        self,
+        *,
+        camera_info: global___CameraInfo | None = ...,
+        view: global___View.ValueType | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["_view", b"_view", "camera_info", b"camera_info", "view", b"view"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["_view", b"_view", "camera_info", b"camera_info", "view", b"view"]) -> None: ...
+    def WhichOneof(self, oneof_group: typing_extensions.Literal["_view", b"_view"]) -> typing_extensions.Literal["view"] | None: ...
+
+global___ViewRequest = ViewRequest

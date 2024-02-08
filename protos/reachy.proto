@@ -25,7 +25,7 @@ message Reachy {
     component.sound.Microphone microphone = 8;
     component.sound.Speaker speaker = 9;
 
-    component.video.StereoCamera stereo_camera = 10;
+    // component.video.StereoCamera stereo_camera = 10;
     // component.video.DepthCamera depth_camera = 11;
     
     ReachyInfo info = 20;
