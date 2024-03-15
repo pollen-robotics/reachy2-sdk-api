@@ -118,12 +118,12 @@ message ArmStatus {
 
 message SpeedLimitRequest {
     reachy.part.PartId id = 1;
-    int limit = 2;
+    uint32 limit = 2;
 }
 
 message TorqueLimitRequest {
     reachy.part.PartId id = 1;
-    int limit = 2;
+    uint32 limit = 2;
 }
 
 message ArmLimits {

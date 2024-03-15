@@ -51,6 +51,10 @@ public static partial class GoToService
   [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
   static readonly grpc::Marshaller<global::GoToGoalStatus> __Marshaller_GoToGoalStatus = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GoToGoalStatus.Parser));
   [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+  static readonly grpc::Marshaller<global::Reachy.Part.PartId> __Marshaller_reachy_part_PartId = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.PartId.Parser));
+  [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+  static readonly grpc::Marshaller<global::GoToQueue> __Marshaller_GoToQueue = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GoToQueue.Parser));
+  [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
   static readonly grpc::Marshaller<global::GoToAck> __Marshaller_GoToAck = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::GoToAck.Parser));
   [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
   static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
@@ -80,6 +84,30 @@ public static partial class GoToService
       __Marshaller_GoToGoalStatus);
 
   [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+  static readonly grpc::Method<global::GoToId, global::GoToRequest> __Method_GetGoToRequest = new grpc::Method<global::GoToId, global::GoToRequest>(
+      grpc::MethodType.Unary,
+      __ServiceName,
+      "GetGoToRequest",
+      __Marshaller_GoToId,
+      __Marshaller_GoToRequest);
+
+  [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+  static readonly grpc::Method<global::Reachy.Part.PartId, global::GoToId> __Method_GetPartGoToPlaying = new grpc::Method<global::Reachy.Part.PartId, global::GoToId>(
+      grpc::MethodType.Unary,
+      __ServiceName,
+      "GetPartGoToPlaying",
+      __Marshaller_reachy_part_PartId,
+      __Marshaller_GoToId);
+
+  [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+  static readonly grpc::Method<global::Reachy.Part.PartId, global::GoToQueue> __Method_GetPartGoToQueue = new grpc::Method<global::Reachy.Part.PartId, global::GoToQueue>(
+      grpc::MethodType.Unary,
+      __ServiceName,
+      "GetPartGoToQueue",
+      __Marshaller_reachy_part_PartId,
+      __Marshaller_GoToQueue);
+
+  [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
   static readonly grpc::Method<global::GoToId, global::GoToAck> __Method_CancelGoTo = new grpc::Method<global::GoToId, global::GoToAck>(
       grpc::MethodType.Unary,
       __ServiceName,
@@ -93,6 +121,14 @@ public static partial class GoToService
       __ServiceName,
       "CancelAllGoTo",
       __Marshaller_google_protobuf_Empty,
+      __Marshaller_GoToAck);
+
+  [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+  static readonly grpc::Method<global::Reachy.Part.PartId, global::GoToAck> __Method_CancelPartAllGoTo = new grpc::Method<global::Reachy.Part.PartId, global::GoToAck>(
+      grpc::MethodType.Unary,
+      __ServiceName,
+      "CancelPartAllGoTo",
+      __Marshaller_reachy_part_PartId,
       __Marshaller_GoToAck);
 
   /// <summary>Service descriptor</summary>
@@ -124,6 +160,24 @@ public static partial class GoToService
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual global::System.Threading.Tasks.Task<global::GoToRequest> GetGoToRequest(global::GoToId request, grpc::ServerCallContext context)
+    {
+      throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual global::System.Threading.Tasks.Task<global::GoToId> GetPartGoToPlaying(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
+    {
+      throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual global::System.Threading.Tasks.Task<global::GoToQueue> GetPartGoToQueue(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
+    {
+      throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public virtual global::System.Threading.Tasks.Task<global::GoToAck> CancelGoTo(global::GoToId request, grpc::ServerCallContext context)
     {
       throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
@@ -131,6 +185,12 @@ public static partial class GoToService
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public virtual global::System.Threading.Tasks.Task<global::GoToAck> CancelAllGoTo(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+    {
+      throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual global::System.Threading.Tasks.Task<global::GoToAck> CancelPartAllGoTo(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
     {
       throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
     }
@@ -225,6 +285,66 @@ public static partial class GoToService
       return CallInvoker.AsyncUnaryCall(__Method_GetGoToState, null, options, request);
     }
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual global::GoToRequest GetGoToRequest(global::GoToId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return GetGoToRequest(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual global::GoToRequest GetGoToRequest(global::GoToId request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_GetGoToRequest, null, options, request);
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual grpc::AsyncUnaryCall<global::GoToRequest> GetGoToRequestAsync(global::GoToId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return GetGoToRequestAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual grpc::AsyncUnaryCall<global::GoToRequest> GetGoToRequestAsync(global::GoToId request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_GetGoToRequest, null, options, request);
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual global::GoToId GetPartGoToPlaying(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return GetPartGoToPlaying(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual global::GoToId GetPartGoToPlaying(global::Reachy.Part.PartId request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_GetPartGoToPlaying, null, options, request);
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual grpc::AsyncUnaryCall<global::GoToId> GetPartGoToPlayingAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return GetPartGoToPlayingAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual grpc::AsyncUnaryCall<global::GoToId> GetPartGoToPlayingAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_GetPartGoToPlaying, null, options, request);
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual global::GoToQueue GetPartGoToQueue(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return GetPartGoToQueue(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual global::GoToQueue GetPartGoToQueue(global::Reachy.Part.PartId request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_GetPartGoToQueue, null, options, request);
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual grpc::AsyncUnaryCall<global::GoToQueue> GetPartGoToQueueAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return GetPartGoToQueueAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual grpc::AsyncUnaryCall<global::GoToQueue> GetPartGoToQueueAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_GetPartGoToQueue, null, options, request);
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public virtual global::GoToAck CancelGoTo(global::GoToId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
     {
       return CancelGoTo(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -264,6 +384,26 @@ public static partial class GoToService
     {
       return CallInvoker.AsyncUnaryCall(__Method_CancelAllGoTo, null, options, request);
     }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual global::GoToAck CancelPartAllGoTo(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return CancelPartAllGoTo(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual global::GoToAck CancelPartAllGoTo(global::Reachy.Part.PartId request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_CancelPartAllGoTo, null, options, request);
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual grpc::AsyncUnaryCall<global::GoToAck> CancelPartAllGoToAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return CancelPartAllGoToAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual grpc::AsyncUnaryCall<global::GoToAck> CancelPartAllGoToAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_CancelPartAllGoTo, null, options, request);
+    }
     /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     protected override GoToServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -281,8 +421,12 @@ public static partial class GoToService
         .AddMethod(__Method_GoToCartesian, serviceImpl.GoToCartesian)
         .AddMethod(__Method_GoToJoints, serviceImpl.GoToJoints)
         .AddMethod(__Method_GetGoToState, serviceImpl.GetGoToState)
+        .AddMethod(__Method_GetGoToRequest, serviceImpl.GetGoToRequest)
+        .AddMethod(__Method_GetPartGoToPlaying, serviceImpl.GetPartGoToPlaying)
+        .AddMethod(__Method_GetPartGoToQueue, serviceImpl.GetPartGoToQueue)
         .AddMethod(__Method_CancelGoTo, serviceImpl.CancelGoTo)
-        .AddMethod(__Method_CancelAllGoTo, serviceImpl.CancelAllGoTo).Build();
+        .AddMethod(__Method_CancelAllGoTo, serviceImpl.CancelAllGoTo)
+        .AddMethod(__Method_CancelPartAllGoTo, serviceImpl.CancelPartAllGoTo).Build();
   }
 
   /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -295,8 +439,12 @@ public static partial class GoToService
     serviceBinder.AddMethod(__Method_GoToCartesian, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GoToRequest, global::GoToId>(serviceImpl.GoToCartesian));
     serviceBinder.AddMethod(__Method_GoToJoints, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GoToRequest, global::GoToId>(serviceImpl.GoToJoints));
     serviceBinder.AddMethod(__Method_GetGoToState, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GoToId, global::GoToGoalStatus>(serviceImpl.GetGoToState));
+    serviceBinder.AddMethod(__Method_GetGoToRequest, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GoToId, global::GoToRequest>(serviceImpl.GetGoToRequest));
+    serviceBinder.AddMethod(__Method_GetPartGoToPlaying, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::GoToId>(serviceImpl.GetPartGoToPlaying));
+    serviceBinder.AddMethod(__Method_GetPartGoToQueue, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::GoToQueue>(serviceImpl.GetPartGoToQueue));
     serviceBinder.AddMethod(__Method_CancelGoTo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GoToId, global::GoToAck>(serviceImpl.CancelGoTo));
     serviceBinder.AddMethod(__Method_CancelAllGoTo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::GoToAck>(serviceImpl.CancelAllGoTo));
+    serviceBinder.AddMethod(__Method_CancelPartAllGoTo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::GoToAck>(serviceImpl.CancelPartAllGoTo));
   }
 
 }
