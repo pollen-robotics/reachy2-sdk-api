@@ -56,6 +56,8 @@ message ArmCommand {
     reachy.part.arm.ArmCartesianGoal arm_cartesian_goal = 1;
     reachy.part.PartId turn_on = 2;
     reachy.part.PartId turn_off = 3;
+    reachy.part.arm.SpeedLimitRequest speed_limit = 4;
+    reachy.part.arm.TorqueLimitRequest torque_limit = 5;
 }
 
 message HandCommand {
@@ -68,6 +70,8 @@ message NeckCommand {
     reachy.part.head.NeckJointGoal neck_goal = 1;
     reachy.part.PartId turn_on = 2;
     reachy.part.PartId turn_off = 3;
+    reachy.part.head.SpeedLimitRequest speed_limit = 4;
+    reachy.part.head.TorqueLimitRequest torque_limit = 5;
 }
 
 message MobileBaseCommand {
