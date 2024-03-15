@@ -92,6 +92,11 @@ class HeadServiceStub(object):
                 request_serializer=head__pb2.SpeedLimitRequest.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
+        self.SetTorqueLimit = channel.unary_unary(
+                '/reachy.part.head.HeadService/SetTorqueLimit',
+                request_serializer=head__pb2.TorqueLimitRequest.SerializeToString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                )
         self.SendNeckJointGoal = channel.unary_unary(
                 '/reachy.part.head.HeadService/SendNeckJointGoal',
                 request_serializer=head__pb2.NeckJointGoal.SerializeToString,
@@ -192,6 +197,12 @@ class HeadServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def SetTorqueLimit(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
     def SendNeckJointGoal(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
@@ -274,6 +285,11 @@ def add_HeadServiceServicer_to_server(servicer, server):
             'SetSpeedLimit': grpc.unary_unary_rpc_method_handler(
                     servicer.SetSpeedLimit,
                     request_deserializer=head__pb2.SpeedLimitRequest.FromString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            ),
+            'SetTorqueLimit': grpc.unary_unary_rpc_method_handler(
+                    servicer.SetTorqueLimit,
+                    request_deserializer=head__pb2.TorqueLimitRequest.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'SendNeckJointGoal': grpc.unary_unary_rpc_method_handler(
@@ -542,6 +558,23 @@ class HeadService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/SetSpeedLimit',
             head__pb2.SpeedLimitRequest.SerializeToString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def SetTorqueLimit(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.head.HeadService/SetTorqueLimit',
+            head__pb2.TorqueLimitRequest.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
