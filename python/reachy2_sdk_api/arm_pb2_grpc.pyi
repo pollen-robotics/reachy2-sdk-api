@@ -86,6 +86,10 @@ class ArmServiceStub:
         arm_pb2.SpeedLimitRequest,
         google.protobuf.empty_pb2.Empty,
     ]
+    SetTorqueLimit: grpc.UnaryUnaryMultiCallable[
+        arm_pb2.TorqueLimitRequest,
+        google.protobuf.empty_pb2.Empty,
+    ]
     SendArmCartesianGoal: grpc.UnaryUnaryMultiCallable[
         arm_pb2.ArmCartesianGoal,
         google.protobuf.empty_pb2.Empty,
@@ -154,6 +158,10 @@ class ArmServiceAsyncStub:
     ]
     SetSpeedLimit: grpc.aio.UnaryUnaryMultiCallable[
         arm_pb2.SpeedLimitRequest,
+        google.protobuf.empty_pb2.Empty,
+    ]
+    SetTorqueLimit: grpc.aio.UnaryUnaryMultiCallable[
+        arm_pb2.TorqueLimitRequest,
         google.protobuf.empty_pb2.Empty,
     ]
     SendArmCartesianGoal: grpc.aio.UnaryUnaryMultiCallable[
@@ -256,6 +264,12 @@ class ArmServiceServicer(metaclass=abc.ABCMeta):
     def SetSpeedLimit(
         self,
         request: arm_pb2.SpeedLimitRequest,
+        context: _ServicerContext,
+    ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
+    @abc.abstractmethod
+    def SetTorqueLimit(
+        self,
+        request: arm_pb2.TorqueLimitRequest,
         context: _ServicerContext,
     ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
     @abc.abstractmethod
