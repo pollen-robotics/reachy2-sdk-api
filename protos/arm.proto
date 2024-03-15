@@ -116,16 +116,14 @@ message ArmStatus {
 
 }
 
-enum SpeedLimit {
-    NO_LIMIT = 0;
-    FAST = 1;
-    NORMAL = 2;
-    SLOW = 3;
-}
-
 message SpeedLimitRequest {
     reachy.part.PartId id = 1;
-    SpeedLimit limit = 2;
+    int limit = 2;
+}
+
+message TorqueLimitRequest {
+    reachy.part.PartId id = 1;
+    int limit = 2;
 }
 
 message ArmLimits {
@@ -165,5 +163,6 @@ service ArmService {
     rpc GetJointGoalPosition (reachy.part.PartId) returns (ArmPosition);
 
     rpc SetSpeedLimit (SpeedLimitRequest) returns (google.protobuf.Empty);
+    rpc SetTorqueLimit (TorqueLimitRequest) returns (google.protobuf.Empty);
     rpc SendArmCartesianGoal (ArmCartesianGoal) returns (google.protobuf.Empty);
 }
