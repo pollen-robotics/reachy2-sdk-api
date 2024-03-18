@@ -5,6 +5,7 @@ import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
 
 import "component.proto";
+import "error.proto";
 import "kinematics.proto";
 
 package component.orbita3d;
@@ -114,7 +115,7 @@ message ListOfOrbita3d {
 }
 
 message Orbita3dStatus {
-
+    repeated error.Error errors = 1;
 }
 
 service Orbita3dService {
