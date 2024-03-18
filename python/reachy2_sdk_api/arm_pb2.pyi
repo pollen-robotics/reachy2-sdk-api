@@ -364,9 +364,15 @@ global___ArmIKSolution = ArmIKSolution
 class ArmStatus(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
+    ERRORS_FIELD_NUMBER: builtins.int
+    @property
+    def errors(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[error_pb2.Error]: ...
     def __init__(
         self,
+        *,
+        errors: collections.abc.Iterable[error_pb2.Error] | None = ...,
     ) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["errors", b"errors"]) -> None: ...
 
 global___ArmStatus = ArmStatus
 
