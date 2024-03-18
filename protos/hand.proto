@@ -3,6 +3,7 @@ syntax = "proto3";
 import "google/protobuf/wrappers.proto";
 import "google/protobuf/empty.proto";
 
+import "error.proto";
 import "part.proto";
 
 package reachy.part.hand;
@@ -30,7 +31,7 @@ message HandState {
 }
 
 message HandStatus {
-
+    repeated error.Error errors = 1;
 }
 
 message Force {

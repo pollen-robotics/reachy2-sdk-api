@@ -113,7 +113,7 @@ message ArmIKSolution {
 }
 
 message ArmStatus {
-
+    repeated error.Error errors = 1;
 }
 
 message SpeedLimitRequest {

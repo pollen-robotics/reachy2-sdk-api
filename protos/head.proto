@@ -110,7 +110,7 @@ message NeckIKSolution {
 }
 
 message HeadStatus {
-
+    repeated error.Error errors = 1;
 }
 
 message SpeedLimitRequest {
