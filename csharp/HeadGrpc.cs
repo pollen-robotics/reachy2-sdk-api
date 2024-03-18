@@ -71,6 +71,10 @@ namespace Reachy.Part.Head {
     static readonly grpc::Marshaller<global::Reachy.Part.Head.HeadTemperatures> __Marshaller_reachy_part_head_HeadTemperatures = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Head.HeadTemperatures.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Reachy.Part.Head.SpeedLimitRequest> __Marshaller_reachy_part_head_SpeedLimitRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Head.SpeedLimitRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Reachy.Part.Head.TorqueLimitRequest> __Marshaller_reachy_part_head_TorqueLimitRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Head.TorqueLimitRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Reachy.Part.Head.NeckJointGoal> __Marshaller_reachy_part_head_NeckJointGoal = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Head.NeckJointGoal.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Reachy.Part.Head.ListOfHead> __Method_GetAllHeads = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Reachy.Part.Head.ListOfHead>(
@@ -192,6 +196,22 @@ namespace Reachy.Part.Head {
         __Marshaller_reachy_part_head_SpeedLimitRequest,
         __Marshaller_google_protobuf_Empty);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.Part.Head.TorqueLimitRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SetTorqueLimit = new grpc::Method<global::Reachy.Part.Head.TorqueLimitRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SetTorqueLimit",
+        __Marshaller_reachy_part_head_TorqueLimitRequest,
+        __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.Part.Head.NeckJointGoal, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SendNeckJointGoal = new grpc::Method<global::Reachy.Part.Head.NeckJointGoal, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SendNeckJointGoal",
+        __Marshaller_reachy_part_head_NeckJointGoal,
+        __Marshaller_google_protobuf_Empty);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -288,6 +308,18 @@ namespace Reachy.Part.Head {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SetSpeedLimit(global::Reachy.Part.Head.SpeedLimitRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SetTorqueLimit(global::Reachy.Part.Head.TorqueLimitRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> SendNeckJointGoal(global::Reachy.Part.Head.NeckJointGoal request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -621,6 +653,46 @@ namespace Reachy.Part.Head {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetSpeedLimit, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetTorqueLimit(global::Reachy.Part.Head.TorqueLimitRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SetTorqueLimit(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetTorqueLimit(global::Reachy.Part.Head.TorqueLimitRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SetTorqueLimit, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetTorqueLimitAsync(global::Reachy.Part.Head.TorqueLimitRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SetTorqueLimitAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetTorqueLimitAsync(global::Reachy.Part.Head.TorqueLimitRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SetTorqueLimit, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SendNeckJointGoal(global::Reachy.Part.Head.NeckJointGoal request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SendNeckJointGoal(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SendNeckJointGoal(global::Reachy.Part.Head.NeckJointGoal request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SendNeckJointGoal, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendNeckJointGoalAsync(global::Reachy.Part.Head.NeckJointGoal request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SendNeckJointGoalAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SendNeckJointGoalAsync(global::Reachy.Part.Head.NeckJointGoal request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SendNeckJointGoal, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override HeadServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -649,7 +721,9 @@ namespace Reachy.Part.Head {
           .AddMethod(__Method_GetJointsLimits, serviceImpl.GetJointsLimits)
           .AddMethod(__Method_GetTemperatures, serviceImpl.GetTemperatures)
           .AddMethod(__Method_GetJointGoalPosition, serviceImpl.GetJointGoalPosition)
-          .AddMethod(__Method_SetSpeedLimit, serviceImpl.SetSpeedLimit).Build();
+          .AddMethod(__Method_SetSpeedLimit, serviceImpl.SetSpeedLimit)
+          .AddMethod(__Method_SetTorqueLimit, serviceImpl.SetTorqueLimit)
+          .AddMethod(__Method_SendNeckJointGoal, serviceImpl.SendNeckJointGoal).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -674,6 +748,8 @@ namespace Reachy.Part.Head {
       serviceBinder.AddMethod(__Method_GetTemperatures, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Head.HeadTemperatures>(serviceImpl.GetTemperatures));
       serviceBinder.AddMethod(__Method_GetJointGoalPosition, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Kinematics.Rotation3d>(serviceImpl.GetJointGoalPosition));
       serviceBinder.AddMethod(__Method_SetSpeedLimit, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Head.SpeedLimitRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.SetSpeedLimit));
+      serviceBinder.AddMethod(__Method_SetTorqueLimit, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Head.TorqueLimitRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.SetTorqueLimit));
+      serviceBinder.AddMethod(__Method_SendNeckJointGoal, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Head.NeckJointGoal, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.SendNeckJointGoal));
     }
 
   }

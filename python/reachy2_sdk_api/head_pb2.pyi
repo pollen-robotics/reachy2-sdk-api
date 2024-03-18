@@ -65,25 +65,6 @@ PID: HeadField.ValueType  # 12
 ALL: HeadField.ValueType  # 15
 global___HeadField = HeadField
 
-class _SpeedLimit:
-    ValueType = typing.NewType("ValueType", builtins.int)
-    V: typing_extensions.TypeAlias = ValueType
-
-class _SpeedLimitEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_SpeedLimit.ValueType], builtins.type):
-    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
-    NO_LIMIT: _SpeedLimit.ValueType  # 0
-    FAST: _SpeedLimit.ValueType  # 1
-    NORMAL: _SpeedLimit.ValueType  # 2
-    SLOW: _SpeedLimit.ValueType  # 3
-
-class SpeedLimit(_SpeedLimit, metaclass=_SpeedLimitEnumTypeWrapper): ...
-
-NO_LIMIT: SpeedLimit.ValueType  # 0
-FAST: SpeedLimit.ValueType  # 1
-NORMAL: SpeedLimit.ValueType  # 2
-SLOW: SpeedLimit.ValueType  # 3
-global___SpeedLimit = SpeedLimit
-
 @typing_extensions.final
 class Head(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
@@ -386,17 +367,37 @@ class SpeedLimitRequest(google.protobuf.message.Message):
     LIMIT_FIELD_NUMBER: builtins.int
     @property
     def id(self) -> part_pb2.PartId: ...
-    limit: global___SpeedLimit.ValueType
+    limit: builtins.int
     def __init__(
         self,
         *,
         id: part_pb2.PartId | None = ...,
-        limit: global___SpeedLimit.ValueType = ...,
+        limit: builtins.int = ...,
     ) -> None: ...
     def HasField(self, field_name: typing_extensions.Literal["id", b"id"]) -> builtins.bool: ...
     def ClearField(self, field_name: typing_extensions.Literal["id", b"id", "limit", b"limit"]) -> None: ...
 
 global___SpeedLimitRequest = SpeedLimitRequest
+
+@typing_extensions.final
+class TorqueLimitRequest(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    ID_FIELD_NUMBER: builtins.int
+    LIMIT_FIELD_NUMBER: builtins.int
+    @property
+    def id(self) -> part_pb2.PartId: ...
+    limit: builtins.int
+    def __init__(
+        self,
+        *,
+        id: part_pb2.PartId | None = ...,
+        limit: builtins.int = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["id", b"id"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["id", b"id", "limit", b"limit"]) -> None: ...
+
+global___TorqueLimitRequest = TorqueLimitRequest
 
 @typing_extensions.final
 class JointsLimits(google.protobuf.message.Message):

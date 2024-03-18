@@ -113,16 +113,14 @@ message HeadStatus {
 
 }
 
-enum SpeedLimit {
-    NO_LIMIT = 0;
-    FAST = 1;
-    NORMAL = 2;
-    SLOW = 3;
-}
-
 message SpeedLimitRequest {
     reachy.part.PartId id = 1;
-    SpeedLimit limit = 2;
+    uint32 limit = 2;
+}
+
+message TorqueLimitRequest {
+    reachy.part.PartId id = 1;
+    uint32 limit = 2;
 }
 
 message JointsLimits {
@@ -161,5 +159,6 @@ service HeadService {
     rpc GetJointGoalPosition (reachy.part.PartId) returns (kinematics.Rotation3d);
 
     rpc SetSpeedLimit (SpeedLimitRequest) returns (google.protobuf.Empty);
+    rpc SetTorqueLimit (TorqueLimitRequest) returns (google.protobuf.Empty);
     rpc SendNeckJointGoal (NeckJointGoal) returns (google.protobuf.Empty);
 }

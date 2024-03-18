@@ -82,6 +82,10 @@ class HeadServiceStub:
         head_pb2.SpeedLimitRequest,
         google.protobuf.empty_pb2.Empty,
     ]
+    SetTorqueLimit: grpc.UnaryUnaryMultiCallable[
+        head_pb2.TorqueLimitRequest,
+        google.protobuf.empty_pb2.Empty,
+    ]
     SendNeckJointGoal: grpc.UnaryUnaryMultiCallable[
         head_pb2.NeckJointGoal,
         google.protobuf.empty_pb2.Empty,
@@ -146,6 +150,10 @@ class HeadServiceAsyncStub:
     ]
     SetSpeedLimit: grpc.aio.UnaryUnaryMultiCallable[
         head_pb2.SpeedLimitRequest,
+        google.protobuf.empty_pb2.Empty,
+    ]
+    SetTorqueLimit: grpc.aio.UnaryUnaryMultiCallable[
+        head_pb2.TorqueLimitRequest,
         google.protobuf.empty_pb2.Empty,
     ]
     SendNeckJointGoal: grpc.aio.UnaryUnaryMultiCallable[
@@ -242,6 +250,12 @@ class HeadServiceServicer(metaclass=abc.ABCMeta):
     def SetSpeedLimit(
         self,
         request: head_pb2.SpeedLimitRequest,
+        context: _ServicerContext,
+    ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
+    @abc.abstractmethod
+    def SetTorqueLimit(
+        self,
+        request: head_pb2.TorqueLimitRequest,
         context: _ServicerContext,
     ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
     @abc.abstractmethod
