@@ -5,6 +5,7 @@ import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
 
 import "component.proto";
+import "error.proto";
 
 package component.dynamixel_motor;
 
@@ -88,7 +89,7 @@ message ListOfDynamixelMotor {
 }
 
 message DynamixelMotorStatus {
-
+    repeated error.Error errors = 1;
 }
 
 service DynamixelMotorService {

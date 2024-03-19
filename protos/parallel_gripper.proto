@@ -4,6 +4,7 @@ import "google/protobuf/timestamp.proto";
 import "google/protobuf/empty.proto";
 
 import "component.proto";
+import "error.proto";
 
 package component.parallel_gripper;
 
@@ -58,7 +59,7 @@ message ListOfParallelGripperInfo {
 }
 
 message ParallelGripperStatus {
-
+    repeated error.Error errors = 1;
 }
 
 service GripperService {

@@ -364,9 +364,24 @@ global___ArmIKSolution = ArmIKSolution
 class ArmStatus(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
+    SHOULDER_STATUS_FIELD_NUMBER: builtins.int
+    ELBOW_STATUS_FIELD_NUMBER: builtins.int
+    WRIST_STATUS_FIELD_NUMBER: builtins.int
+    @property
+    def shoulder_status(self) -> orbita2d_pb2.Orbita2dStatus: ...
+    @property
+    def elbow_status(self) -> orbita2d_pb2.Orbita2dStatus: ...
+    @property
+    def wrist_status(self) -> orbita3d_pb2.Orbita3dStatus: ...
     def __init__(
         self,
+        *,
+        shoulder_status: orbita2d_pb2.Orbita2dStatus | None = ...,
+        elbow_status: orbita2d_pb2.Orbita2dStatus | None = ...,
+        wrist_status: orbita3d_pb2.Orbita3dStatus | None = ...,
     ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["elbow_status", b"elbow_status", "shoulder_status", b"shoulder_status", "wrist_status", b"wrist_status"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["elbow_status", b"elbow_status", "shoulder_status", b"shoulder_status", "wrist_status", b"wrist_status"]) -> None: ...
 
 global___ArmStatus = ArmStatus
 

@@ -5,6 +5,7 @@ import "google/protobuf/timestamp.proto";
 import "google/protobuf/empty.proto";
 
 import "component.proto";
+import "error.proto";
 
 package component.orbita2d;
 
@@ -116,7 +117,7 @@ message ListOfOrbita2d {
 }
 
 message Orbita2dStatus {
-
+    repeated error.Error errors = 1;
 }
 
 service Orbita2dService {

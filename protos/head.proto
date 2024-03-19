@@ -110,7 +110,9 @@ message NeckIKSolution {
 }
 
 message HeadStatus {
-
+    component.orbita3d.Orbita3dStatus neck_status = 1;
+    component.dynamixel_motor.DynamixelMotorStatus l_antenna_status = 2;
+    component.dynamixel_motor.DynamixelMotorStatus r_antenna_status = 3;
 }
 
 message SpeedLimitRequest {
