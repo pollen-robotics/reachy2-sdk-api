@@ -353,15 +353,24 @@ global___NeckIKSolution = NeckIKSolution
 class HeadStatus(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
-    ERRORS_FIELD_NUMBER: builtins.int
+    NECK_STATUS_FIELD_NUMBER: builtins.int
+    L_ANTENNA_STATUS_FIELD_NUMBER: builtins.int
+    R_ANTENNA_STATUS_FIELD_NUMBER: builtins.int
     @property
-    def errors(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[error_pb2.Error]: ...
+    def neck_status(self) -> orbita3d_pb2.Orbita3dStatus: ...
+    @property
+    def l_antenna_status(self) -> dynamixel_motor_pb2.DynamixelMotorStatus: ...
+    @property
+    def r_antenna_status(self) -> dynamixel_motor_pb2.DynamixelMotorStatus: ...
     def __init__(
         self,
         *,
-        errors: collections.abc.Iterable[error_pb2.Error] | None = ...,
+        neck_status: orbita3d_pb2.Orbita3dStatus | None = ...,
+        l_antenna_status: dynamixel_motor_pb2.DynamixelMotorStatus | None = ...,
+        r_antenna_status: dynamixel_motor_pb2.DynamixelMotorStatus | None = ...,
     ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["errors", b"errors"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["l_antenna_status", b"l_antenna_status", "neck_status", b"neck_status", "r_antenna_status", b"r_antenna_status"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["l_antenna_status", b"l_antenna_status", "neck_status", b"neck_status", "r_antenna_status", b"r_antenna_status"]) -> None: ...
 
 global___HeadStatus = HeadStatus
 

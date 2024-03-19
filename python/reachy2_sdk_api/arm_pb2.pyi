@@ -364,15 +364,24 @@ global___ArmIKSolution = ArmIKSolution
 class ArmStatus(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
-    ERRORS_FIELD_NUMBER: builtins.int
+    SHOULDER_STATUS_FIELD_NUMBER: builtins.int
+    ELBOW_STATUS_FIELD_NUMBER: builtins.int
+    WRIST_STATUS_FIELD_NUMBER: builtins.int
     @property
-    def errors(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[error_pb2.Error]: ...
+    def shoulder_status(self) -> orbita2d_pb2.Orbita2dStatus: ...
+    @property
+    def elbow_status(self) -> orbita2d_pb2.Orbita2dStatus: ...
+    @property
+    def wrist_status(self) -> orbita3d_pb2.Orbita3dStatus: ...
     def __init__(
         self,
         *,
-        errors: collections.abc.Iterable[error_pb2.Error] | None = ...,
+        shoulder_status: orbita2d_pb2.Orbita2dStatus | None = ...,
+        elbow_status: orbita2d_pb2.Orbita2dStatus | None = ...,
+        wrist_status: orbita3d_pb2.Orbita3dStatus | None = ...,
     ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["errors", b"errors"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["elbow_status", b"elbow_status", "shoulder_status", b"shoulder_status", "wrist_status", b"wrist_status"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["elbow_status", b"elbow_status", "shoulder_status", b"shoulder_status", "wrist_status", b"wrist_status"]) -> None: ...
 
 global___ArmStatus = ArmStatus
 
