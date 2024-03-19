@@ -113,7 +113,9 @@ message ArmIKSolution {
 }
 
 message ArmStatus {
-    repeated error.Error errors = 1;
+    component.orbita2d.Orbita2dStatus shoulder_status = 1;
+    component.orbita2d.Orbita2dStatus elbow_status = 2;
+    component.orbita3d.Orbita3dStatus wrist_status = 3;
 }
 
 message SpeedLimitRequest {
