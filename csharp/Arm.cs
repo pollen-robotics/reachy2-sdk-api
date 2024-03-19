@@ -68,52 +68,55 @@ namespace Reachy.Part.Arm {
             "KAsyHC5yZWFjaHkucGFydC5hcm0uQXJtUG9zaXRpb24icQoNQXJtSUtTb2x1",
             "dGlvbhIPCgdzdWNjZXNzGAEgASgIEjIKDGFybV9wb3NpdGlvbhgCIAEoCzIc",
             "LnJlYWNoeS5wYXJ0LmFybS5Bcm1Qb3NpdGlvbhIbCgVlcnJvchgDIAEoCzIM",
-            "LmVycm9yLkVycm9yIikKCUFybVN0YXR1cxIcCgZlcnJvcnMYASADKAsyDC5l",
-            "cnJvci5FcnJvciJDChFTcGVlZExpbWl0UmVxdWVzdBIfCgJpZBgBIAEoCzIT",
-            "LnJlYWNoeS5wYXJ0LlBhcnRJZBINCgVsaW1pdBgCIAEoDSJEChJUb3JxdWVM",
-            "aW1pdFJlcXVlc3QSHwoCaWQYASABKAsyEy5yZWFjaHkucGFydC5QYXJ0SWQS",
-            "DQoFbGltaXQYAiABKA0iqgEKCUFybUxpbWl0cxI1Cg9zaG91bGRlcl9saW1p",
-            "dHMYASABKAsyHC5jb21wb25lbnQub3JiaXRhMmQuTGltaXRzMmQSMgoMZWxi",
-            "b3dfbGltaXRzGAIgASgLMhwuY29tcG9uZW50Lm9yYml0YTJkLkxpbWl0czJk",
-            "EjIKDHdyaXN0X2xpbWl0cxgDIAEoCzIcLmNvbXBvbmVudC5vcmJpdGEzZC5M",
-            "aW1pdHMzZCK8AQoPQXJtVGVtcGVyYXR1cmVzEjkKFHNob3VsZGVyX3RlbXBl",
-            "cmF0dXJlGAEgASgLMhsuY29tcG9uZW50Lm9yYml0YTJkLkZsb2F0MmQSNgoR",
-            "ZWxib3dfdGVtcGVyYXR1cmUYAiABKAsyGy5jb21wb25lbnQub3JiaXRhMmQu",
-            "RmxvYXQyZBI2ChF3cmlzdF90ZW1wZXJhdHVyZRgDIAEoCzIbLmNvbXBvbmVu",
-            "dC5vcmJpdGEzZC5GbG9hdDNkKtsBCghBcm1GaWVsZBIICgROT05FEAASCAoE",
-            "TkFNRRABEgYKAklEEAISFAoQUFJFU0VOVF9QT1NJVElPThADEhEKDVBSRVNF",
-            "TlRfU1BFRUQQBBIQCgxQUkVTRU5UX0xPQUQQBRIPCgtURU1QRVJBVFVSRRAG",
-            "EhAKDEpPSU5UX0xJTUlUUxAHEg0KCUNPTVBMSUFOVBAIEhEKDUdPQUxfUE9T",
-            "SVRJT04QCRIPCgtTUEVFRF9MSU1JVBAKEhAKDFRPUlFVRV9MSU1JVBALEgcK",
-            "A1BJRBAMEgcKA0FMTBAPMuAJCgpBcm1TZXJ2aWNlEkAKCkdldEFsbEFybXMS",
-            "Fi5nb29nbGUucHJvdG9idWYuRW1wdHkaGi5yZWFjaHkucGFydC5hcm0uTGlz",
-            "dE9mQXJtEjoKCEdldFN0YXRlEhMucmVhY2h5LnBhcnQuUGFydElkGhkucmVh",
-            "Y2h5LnBhcnQuYXJtLkFybVN0YXRlEk0KDENvbXB1dGVBcm1GSxIdLnJlYWNo",
-            "eS5wYXJ0LmFybS5Bcm1GS1JlcXVlc3QaHi5yZWFjaHkucGFydC5hcm0uQXJt",
-            "RktTb2x1dGlvbhJNCgxDb21wdXRlQXJtSUsSHS5yZWFjaHkucGFydC5hcm0u",
-            "QXJtSUtSZXF1ZXN0Gh4ucmVhY2h5LnBhcnQuYXJtLkFybUlLU29sdXRpb24S",
-            "SQoUR2V0Q2FydGVzaWFuUG9zaXRpb24SEy5yZWFjaHkucGFydC5QYXJ0SWQa",
-            "HC5yZWFjaHkua2luZW1hdGljcy5NYXRyaXg0eDQSRQoQR2V0Sm9pbnRQb3Np",
-            "dGlvbhITLnJlYWNoeS5wYXJ0LlBhcnRJZBocLnJlYWNoeS5wYXJ0LmFybS5B",
-            "cm1Qb3NpdGlvbhI4CgVBdWRpdBITLnJlYWNoeS5wYXJ0LlBhcnRJZBoaLnJl",
-            "YWNoeS5wYXJ0LmFybS5Bcm1TdGF0dXMSOAoJSGVhcnRCZWF0EhMucmVhY2h5",
-            "LnBhcnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EjYKB1Jlc3Rh",
-            "cnQSEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1w",
-            "dHkSQQoSUmVzZXREZWZhdWx0VmFsdWVzEhMucmVhY2h5LnBhcnQuUGFydElk",
-            "GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EjUKBlR1cm5PbhITLnJlYWNoeS5w",
-            "YXJ0LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRI2CgdUdXJuT2Zm",
-            "EhMucmVhY2h5LnBhcnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5",
-            "EkIKD0dldEpvaW50c0xpbWl0cxITLnJlYWNoeS5wYXJ0LlBhcnRJZBoaLnJl",
-            "YWNoeS5wYXJ0LmFybS5Bcm1MaW1pdHMSSAoPR2V0VGVtcGVyYXR1cmVzEhMu",
-            "cmVhY2h5LnBhcnQuUGFydElkGiAucmVhY2h5LnBhcnQuYXJtLkFybVRlbXBl",
-            "cmF0dXJlcxJJChRHZXRKb2ludEdvYWxQb3NpdGlvbhITLnJlYWNoeS5wYXJ0",
-            "LlBhcnRJZBocLnJlYWNoeS5wYXJ0LmFybS5Bcm1Qb3NpdGlvbhJLCg1TZXRT",
-            "cGVlZExpbWl0EiIucmVhY2h5LnBhcnQuYXJtLlNwZWVkTGltaXRSZXF1ZXN0",
-            "GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Ek0KDlNldFRvcnF1ZUxpbWl0EiMu",
-            "cmVhY2h5LnBhcnQuYXJtLlRvcnF1ZUxpbWl0UmVxdWVzdBoWLmdvb2dsZS5w",
-            "cm90b2J1Zi5FbXB0eRJRChRTZW5kQXJtQ2FydGVzaWFuR29hbBIhLnJlYWNo",
-            "eS5wYXJ0LmFybS5Bcm1DYXJ0ZXNpYW5Hb2FsGhYuZ29vZ2xlLnByb3RvYnVm",
-            "LkVtcHR5YgZwcm90bzM="));
+            "LmVycm9yLkVycm9yIrwBCglBcm1TdGF0dXMSOwoPc2hvdWxkZXJfc3RhdHVz",
+            "GAEgASgLMiIuY29tcG9uZW50Lm9yYml0YTJkLk9yYml0YTJkU3RhdHVzEjgK",
+            "DGVsYm93X3N0YXR1cxgCIAEoCzIiLmNvbXBvbmVudC5vcmJpdGEyZC5PcmJp",
+            "dGEyZFN0YXR1cxI4Cgx3cmlzdF9zdGF0dXMYAyABKAsyIi5jb21wb25lbnQu",
+            "b3JiaXRhM2QuT3JiaXRhM2RTdGF0dXMiQwoRU3BlZWRMaW1pdFJlcXVlc3QS",
+            "HwoCaWQYASABKAsyEy5yZWFjaHkucGFydC5QYXJ0SWQSDQoFbGltaXQYAiAB",
+            "KA0iRAoSVG9ycXVlTGltaXRSZXF1ZXN0Eh8KAmlkGAEgASgLMhMucmVhY2h5",
+            "LnBhcnQuUGFydElkEg0KBWxpbWl0GAIgASgNIqoBCglBcm1MaW1pdHMSNQoP",
+            "c2hvdWxkZXJfbGltaXRzGAEgASgLMhwuY29tcG9uZW50Lm9yYml0YTJkLkxp",
+            "bWl0czJkEjIKDGVsYm93X2xpbWl0cxgCIAEoCzIcLmNvbXBvbmVudC5vcmJp",
+            "dGEyZC5MaW1pdHMyZBIyCgx3cmlzdF9saW1pdHMYAyABKAsyHC5jb21wb25l",
+            "bnQub3JiaXRhM2QuTGltaXRzM2QivAEKD0FybVRlbXBlcmF0dXJlcxI5ChRz",
+            "aG91bGRlcl90ZW1wZXJhdHVyZRgBIAEoCzIbLmNvbXBvbmVudC5vcmJpdGEy",
+            "ZC5GbG9hdDJkEjYKEWVsYm93X3RlbXBlcmF0dXJlGAIgASgLMhsuY29tcG9u",
+            "ZW50Lm9yYml0YTJkLkZsb2F0MmQSNgoRd3Jpc3RfdGVtcGVyYXR1cmUYAyAB",
+            "KAsyGy5jb21wb25lbnQub3JiaXRhM2QuRmxvYXQzZCrbAQoIQXJtRmllbGQS",
+            "CAoETk9ORRAAEggKBE5BTUUQARIGCgJJRBACEhQKEFBSRVNFTlRfUE9TSVRJ",
+            "T04QAxIRCg1QUkVTRU5UX1NQRUVEEAQSEAoMUFJFU0VOVF9MT0FEEAUSDwoL",
+            "VEVNUEVSQVRVUkUQBhIQCgxKT0lOVF9MSU1JVFMQBxINCglDT01QTElBTlQQ",
+            "CBIRCg1HT0FMX1BPU0lUSU9OEAkSDwoLU1BFRURfTElNSVQQChIQCgxUT1JR",
+            "VUVfTElNSVQQCxIHCgNQSUQQDBIHCgNBTEwQDzLgCQoKQXJtU2VydmljZRJA",
+            "CgpHZXRBbGxBcm1zEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GhoucmVhY2h5",
+            "LnBhcnQuYXJtLkxpc3RPZkFybRI6CghHZXRTdGF0ZRITLnJlYWNoeS5wYXJ0",
+            "LlBhcnRJZBoZLnJlYWNoeS5wYXJ0LmFybS5Bcm1TdGF0ZRJNCgxDb21wdXRl",
+            "QXJtRksSHS5yZWFjaHkucGFydC5hcm0uQXJtRktSZXF1ZXN0Gh4ucmVhY2h5",
+            "LnBhcnQuYXJtLkFybUZLU29sdXRpb24STQoMQ29tcHV0ZUFybUlLEh0ucmVh",
+            "Y2h5LnBhcnQuYXJtLkFybUlLUmVxdWVzdBoeLnJlYWNoeS5wYXJ0LmFybS5B",
+            "cm1JS1NvbHV0aW9uEkkKFEdldENhcnRlc2lhblBvc2l0aW9uEhMucmVhY2h5",
+            "LnBhcnQuUGFydElkGhwucmVhY2h5LmtpbmVtYXRpY3MuTWF0cml4NHg0EkUK",
+            "EEdldEpvaW50UG9zaXRpb24SEy5yZWFjaHkucGFydC5QYXJ0SWQaHC5yZWFj",
+            "aHkucGFydC5hcm0uQXJtUG9zaXRpb24SOAoFQXVkaXQSEy5yZWFjaHkucGFy",
+            "dC5QYXJ0SWQaGi5yZWFjaHkucGFydC5hcm0uQXJtU3RhdHVzEjgKCUhlYXJ0",
+            "QmVhdBITLnJlYWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5F",
+            "bXB0eRI2CgdSZXN0YXJ0EhMucmVhY2h5LnBhcnQuUGFydElkGhYuZ29vZ2xl",
+            "LnByb3RvYnVmLkVtcHR5EkEKElJlc2V0RGVmYXVsdFZhbHVlcxITLnJlYWNo",
+            "eS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRI1CgZUdXJu",
+            "T24SEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1w",
+            "dHkSNgoHVHVybk9mZhITLnJlYWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5w",
+            "cm90b2J1Zi5FbXB0eRJCCg9HZXRKb2ludHNMaW1pdHMSEy5yZWFjaHkucGFy",
+            "dC5QYXJ0SWQaGi5yZWFjaHkucGFydC5hcm0uQXJtTGltaXRzEkgKD0dldFRl",
+            "bXBlcmF0dXJlcxITLnJlYWNoeS5wYXJ0LlBhcnRJZBogLnJlYWNoeS5wYXJ0",
+            "LmFybS5Bcm1UZW1wZXJhdHVyZXMSSQoUR2V0Sm9pbnRHb2FsUG9zaXRpb24S",
+            "Ey5yZWFjaHkucGFydC5QYXJ0SWQaHC5yZWFjaHkucGFydC5hcm0uQXJtUG9z",
+            "aXRpb24SSwoNU2V0U3BlZWRMaW1pdBIiLnJlYWNoeS5wYXJ0LmFybS5TcGVl",
+            "ZExpbWl0UmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJNCg5TZXRU",
+            "b3JxdWVMaW1pdBIjLnJlYWNoeS5wYXJ0LmFybS5Ub3JxdWVMaW1pdFJlcXVl",
+            "c3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSUQoUU2VuZEFybUNhcnRlc2lh",
+            "bkdvYWwSIS5yZWFjaHkucGFydC5hcm0uQXJtQ2FydGVzaWFuR29hbBoWLmdv",
+            "b2dsZS5wcm90b2J1Zi5FbXB0eWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, global::Reachy.Kinematics.KinematicsReflection.Descriptor, global::Error.ErrorReflection.Descriptor, global::Component.Orbita2D.Orbita2DReflection.Descriptor, global::Component.Orbita3D.Orbita3DReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.Part.Arm.ArmField), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -129,7 +132,7 @@ namespace Reachy.Part.Arm {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.ArmFKSolution), global::Reachy.Part.Arm.ArmFKSolution.Parser, new[]{ "Success", "EndEffector" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.ArmIKRequest), global::Reachy.Part.Arm.ArmIKRequest.Parser, new[]{ "Id", "Target", "Q0" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.ArmIKSolution), global::Reachy.Part.Arm.ArmIKSolution.Parser, new[]{ "Success", "ArmPosition", "Error" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.ArmStatus), global::Reachy.Part.Arm.ArmStatus.Parser, new[]{ "Errors" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.ArmStatus), global::Reachy.Part.Arm.ArmStatus.Parser, new[]{ "ShoulderStatus", "ElbowStatus", "WristStatus" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.SpeedLimitRequest), global::Reachy.Part.Arm.SpeedLimitRequest.Parser, new[]{ "Id", "Limit" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.TorqueLimitRequest), global::Reachy.Part.Arm.TorqueLimitRequest.Parser, new[]{ "Id", "Limit" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.ArmLimits), global::Reachy.Part.Arm.ArmLimits.Parser, new[]{ "ShoulderLimits", "ElbowLimits", "WristLimits" }, null, null, null, null),
@@ -3625,7 +3628,9 @@ namespace Reachy.Part.Arm {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ArmStatus(ArmStatus other) : this() {
-      errors_ = other.errors_.Clone();
+      shoulderStatus_ = other.shoulderStatus_ != null ? other.shoulderStatus_.Clone() : null;
+      elbowStatus_ = other.elbowStatus_ != null ? other.elbowStatus_.Clone() : null;
+      wristStatus_ = other.wristStatus_ != null ? other.wristStatus_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3635,15 +3640,40 @@ namespace Reachy.Part.Arm {
       return new ArmStatus(this);
     }
 
-    /// <summary>Field number for the "errors" field.</summary>
-    public const int ErrorsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Error.Error> _repeated_errors_codec
-        = pb::FieldCodec.ForMessage(10, global::Error.Error.Parser);
-    private readonly pbc::RepeatedField<global::Error.Error> errors_ = new pbc::RepeatedField<global::Error.Error>();
+    /// <summary>Field number for the "shoulder_status" field.</summary>
+    public const int ShoulderStatusFieldNumber = 1;
+    private global::Component.Orbita2D.Orbita2dStatus shoulderStatus_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Error.Error> Errors {
-      get { return errors_; }
+    public global::Component.Orbita2D.Orbita2dStatus ShoulderStatus {
+      get { return shoulderStatus_; }
+      set {
+        shoulderStatus_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "elbow_status" field.</summary>
+    public const int ElbowStatusFieldNumber = 2;
+    private global::Component.Orbita2D.Orbita2dStatus elbowStatus_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Component.Orbita2D.Orbita2dStatus ElbowStatus {
+      get { return elbowStatus_; }
+      set {
+        elbowStatus_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "wrist_status" field.</summary>
+    public const int WristStatusFieldNumber = 3;
+    private global::Component.Orbita3D.Orbita3dStatus wristStatus_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Component.Orbita3D.Orbita3dStatus WristStatus {
+      get { return wristStatus_; }
+      set {
+        wristStatus_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3661,7 +3691,9 @@ namespace Reachy.Part.Arm {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!errors_.Equals(other.errors_)) return false;
+      if (!object.Equals(ShoulderStatus, other.ShoulderStatus)) return false;
+      if (!object.Equals(ElbowStatus, other.ElbowStatus)) return false;
+      if (!object.Equals(WristStatus, other.WristStatus)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3669,7 +3701,9 @@ namespace Reachy.Part.Arm {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= errors_.GetHashCode();
+      if (shoulderStatus_ != null) hash ^= ShoulderStatus.GetHashCode();
+      if (elbowStatus_ != null) hash ^= ElbowStatus.GetHashCode();
+      if (wristStatus_ != null) hash ^= WristStatus.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3688,7 +3722,18 @@ namespace Reachy.Part.Arm {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      errors_.WriteTo(output, _repeated_errors_codec);
+      if (shoulderStatus_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ShoulderStatus);
+      }
+      if (elbowStatus_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ElbowStatus);
+      }
+      if (wristStatus_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(WristStatus);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3699,7 +3744,18 @@ namespace Reachy.Part.Arm {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      errors_.WriteTo(ref output, _repeated_errors_codec);
+      if (shoulderStatus_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ShoulderStatus);
+      }
+      if (elbowStatus_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ElbowStatus);
+      }
+      if (wristStatus_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(WristStatus);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3710,7 +3766,15 @@ namespace Reachy.Part.Arm {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += errors_.CalculateSize(_repeated_errors_codec);
+      if (shoulderStatus_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ShoulderStatus);
+      }
+      if (elbowStatus_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ElbowStatus);
+      }
+      if (wristStatus_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(WristStatus);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -3723,7 +3787,24 @@ namespace Reachy.Part.Arm {
       if (other == null) {
         return;
       }
-      errors_.Add(other.errors_);
+      if (other.shoulderStatus_ != null) {
+        if (shoulderStatus_ == null) {
+          ShoulderStatus = new global::Component.Orbita2D.Orbita2dStatus();
+        }
+        ShoulderStatus.MergeFrom(other.ShoulderStatus);
+      }
+      if (other.elbowStatus_ != null) {
+        if (elbowStatus_ == null) {
+          ElbowStatus = new global::Component.Orbita2D.Orbita2dStatus();
+        }
+        ElbowStatus.MergeFrom(other.ElbowStatus);
+      }
+      if (other.wristStatus_ != null) {
+        if (wristStatus_ == null) {
+          WristStatus = new global::Component.Orbita3D.Orbita3dStatus();
+        }
+        WristStatus.MergeFrom(other.WristStatus);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -3740,7 +3821,24 @@ namespace Reachy.Part.Arm {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            errors_.AddEntriesFrom(input, _repeated_errors_codec);
+            if (shoulderStatus_ == null) {
+              ShoulderStatus = new global::Component.Orbita2D.Orbita2dStatus();
+            }
+            input.ReadMessage(ShoulderStatus);
+            break;
+          }
+          case 18: {
+            if (elbowStatus_ == null) {
+              ElbowStatus = new global::Component.Orbita2D.Orbita2dStatus();
+            }
+            input.ReadMessage(ElbowStatus);
+            break;
+          }
+          case 26: {
+            if (wristStatus_ == null) {
+              WristStatus = new global::Component.Orbita3D.Orbita3dStatus();
+            }
+            input.ReadMessage(WristStatus);
             break;
           }
         }
@@ -3759,7 +3857,24 @@ namespace Reachy.Part.Arm {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            errors_.AddEntriesFrom(ref input, _repeated_errors_codec);
+            if (shoulderStatus_ == null) {
+              ShoulderStatus = new global::Component.Orbita2D.Orbita2dStatus();
+            }
+            input.ReadMessage(ShoulderStatus);
+            break;
+          }
+          case 18: {
+            if (elbowStatus_ == null) {
+              ElbowStatus = new global::Component.Orbita2D.Orbita2dStatus();
+            }
+            input.ReadMessage(ElbowStatus);
+            break;
+          }
+          case 26: {
+            if (wristStatus_ == null) {
+              WristStatus = new global::Component.Orbita3D.Orbita3dStatus();
+            }
+            input.ReadMessage(WristStatus);
             break;
           }
         }
