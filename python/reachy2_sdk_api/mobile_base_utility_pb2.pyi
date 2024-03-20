@@ -48,6 +48,7 @@ class _ZuuuModePossiblitiesEnumTypeWrapper(google.protobuf.internal.enum_type_wr
     SPEED: _ZuuuModePossiblities.ValueType  # 4
     GOTO: _ZuuuModePossiblities.ValueType  # 5
     EMERGENCY_STOP: _ZuuuModePossiblities.ValueType  # 6
+    CMD_GOTO: _ZuuuModePossiblities.ValueType  # 7
 
 class ZuuuModePossiblities(_ZuuuModePossiblities, metaclass=_ZuuuModePossiblitiesEnumTypeWrapper): ...
 
@@ -58,6 +59,7 @@ FREE_WHEEL: ZuuuModePossiblities.ValueType  # 3
 SPEED: ZuuuModePossiblities.ValueType  # 4
 GOTO: ZuuuModePossiblities.ValueType  # 5
 EMERGENCY_STOP: ZuuuModePossiblities.ValueType  # 6
+CMD_GOTO: ZuuuModePossiblities.ValueType  # 7
 global___ZuuuModePossiblities = ZuuuModePossiblities
 
 @typing_extensions.final
