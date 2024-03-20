@@ -46,6 +46,7 @@ enum ZuuuModePossiblities {
     SPEED = 4;
     GOTO = 5;
     EMERGENCY_STOP = 6;
+    CMD_GOTO = 7;
 }
 
 message ZuuuModeCommand {
