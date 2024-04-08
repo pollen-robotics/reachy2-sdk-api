@@ -14,9 +14,9 @@ setup(
     version="0.1.0",
     packages=find_packages(exclude=["tests"]),
     install_requires=[
-        "grpcio>=1.59.0, <1.62.2",
-        "grpcio-tools>1.59.0, <1.62.2",
-        "protobuf==4.25.1",
+        "grpcio>=1.59.0, <=1.62.2",
+        "grpcio-tools>=1.59.0, <=1.62.2",
+        "protobuf>=4.25.0, <=4.25.3",
     ],
     author="Pollen Robotics",
     author_email="contact@pollen-robotics.com",
