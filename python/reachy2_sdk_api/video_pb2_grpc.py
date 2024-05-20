@@ -40,6 +40,11 @@ class VideoServiceStub(object):
                 request_serializer=video__pb2.CameraInfo.SerializeToString,
                 response_deserializer=video__pb2.Frame.FromString,
                 )
+        self.GetIntrinsicMatrix = channel.unary_unary(
+                '/component.video.VideoService/GetIntrinsicMatrix',
+                request_serializer=video__pb2.CameraInfo.SerializeToString,
+                response_deserializer=video__pb2.IntrinsicMatrix.FromString,
+                )
         self.Capture = channel.unary_unary(
                 '/component.video.VideoService/Capture',
                 request_serializer=video__pb2.CameraInfo.SerializeToString,
@@ -85,6 +90,12 @@ class VideoServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def GetIntrinsicMatrix(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
     def Capture(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
@@ -124,6 +135,11 @@ def add_VideoServiceServicer_to_server(servicer, server):
                     servicer.GetDisparity,
                     request_deserializer=video__pb2.CameraInfo.FromString,
                     response_serializer=video__pb2.Frame.SerializeToString,
+            ),
+            'GetIntrinsicMatrix': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetIntrinsicMatrix,
+                    request_deserializer=video__pb2.CameraInfo.FromString,
+                    response_serializer=video__pb2.IntrinsicMatrix.SerializeToString,
             ),
             'Capture': grpc.unary_unary_rpc_method_handler(
                     servicer.Capture,
@@ -227,6 +243,23 @@ class VideoService(object):
         return grpc.experimental.unary_unary(request, target, '/component.video.VideoService/GetDisparity',
             video__pb2.CameraInfo.SerializeToString,
             video__pb2.Frame.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def GetIntrinsicMatrix(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/component.video.VideoService/GetIntrinsicMatrix',
+            video__pb2.CameraInfo.SerializeToString,
+            video__pb2.IntrinsicMatrix.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 

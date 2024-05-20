@@ -32,6 +32,10 @@ message Frame {
     bytes data = 1;
 }
 
+message IntrinsicMatrix {
+    bytes K = 1;
+}
+
 message ViewRequest {
     CameraInfo camera_info = 1;
     optional View view = 2;
@@ -43,6 +47,7 @@ service VideoService {
     rpc GetDepthFrame (ViewRequest) returns (Frame);
     rpc GetDepthMap (CameraInfo) returns (Frame);
     rpc GetDisparity (CameraInfo) returns (Frame);
+    rpc GetIntrinsicMatrix (CameraInfo) returns (IntrinsicMatrix);
     rpc Capture(CameraInfo) returns (VideoAck);
     rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
 }
