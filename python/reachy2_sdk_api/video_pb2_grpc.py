@@ -42,7 +42,7 @@ class VideoServiceStub(object):
                 )
         self.GetIntrinsicMatrix = channel.unary_unary(
                 '/component.video.VideoService/GetIntrinsicMatrix',
-                request_serializer=video__pb2.CameraInfo.SerializeToString,
+                request_serializer=video__pb2.ViewRequest.SerializeToString,
                 response_deserializer=video__pb2.IntrinsicMatrix.FromString,
                 )
         self.Capture = channel.unary_unary(
@@ -138,7 +138,7 @@ def add_VideoServiceServicer_to_server(servicer, server):
             ),
             'GetIntrinsicMatrix': grpc.unary_unary_rpc_method_handler(
                     servicer.GetIntrinsicMatrix,
-                    request_deserializer=video__pb2.CameraInfo.FromString,
+                    request_deserializer=video__pb2.ViewRequest.FromString,
                     response_serializer=video__pb2.IntrinsicMatrix.SerializeToString,
             ),
             'Capture': grpc.unary_unary_rpc_method_handler(
@@ -258,7 +258,7 @@ class VideoService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/component.video.VideoService/GetIntrinsicMatrix',
-            video__pb2.CameraInfo.SerializeToString,
+            video__pb2.ViewRequest.SerializeToString,
             video__pb2.IntrinsicMatrix.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

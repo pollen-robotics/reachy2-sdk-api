@@ -116,14 +116,23 @@ global___Frame = Frame
 class IntrinsicMatrix(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
-    K_FIELD_NUMBER: builtins.int
-    K: builtins.bytes
+    FX_FIELD_NUMBER: builtins.int
+    FY_FIELD_NUMBER: builtins.int
+    CX_FIELD_NUMBER: builtins.int
+    CY_FIELD_NUMBER: builtins.int
+    fx: builtins.float
+    fy: builtins.float
+    cx: builtins.float
+    cy: builtins.float
     def __init__(
         self,
         *,
-        K: builtins.bytes = ...,
+        fx: builtins.float = ...,
+        fy: builtins.float = ...,
+        cx: builtins.float = ...,
+        cy: builtins.float = ...,
     ) -> None: ...
-    def ClearField(self, field_name: typing.Literal["K", b"K"]) -> None: ...
+    def ClearField(self, field_name: typing.Literal["cx", b"cx", "cy", b"cy", "fx", b"fx", "fy", b"fy"]) -> None: ...
 
 global___IntrinsicMatrix = IntrinsicMatrix
 
