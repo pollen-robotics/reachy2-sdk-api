@@ -50,6 +50,11 @@ class VideoServiceStub:
         video_pb2.IntrinsicMatrix,
     ]
 
+    GetDepthIntrinsicMatrix: grpc.UnaryUnaryMultiCallable[
+        video_pb2.CameraInfo,
+        video_pb2.IntrinsicMatrix,
+    ]
+
     Capture: grpc.UnaryUnaryMultiCallable[
         video_pb2.CameraInfo,
         video_pb2.VideoAck,
@@ -88,6 +93,11 @@ class VideoServiceAsyncStub:
 
     GetIntrinsicMatrix: grpc.aio.UnaryUnaryMultiCallable[
         video_pb2.ViewRequest,
+        video_pb2.IntrinsicMatrix,
+    ]
+
+    GetDepthIntrinsicMatrix: grpc.aio.UnaryUnaryMultiCallable[
+        video_pb2.CameraInfo,
         video_pb2.IntrinsicMatrix,
     ]
 
@@ -141,6 +151,13 @@ class VideoServiceServicer(metaclass=abc.ABCMeta):
     def GetIntrinsicMatrix(
         self,
         request: video_pb2.ViewRequest,
+        context: _ServicerContext,
+    ) -> typing.Union[video_pb2.IntrinsicMatrix, collections.abc.Awaitable[video_pb2.IntrinsicMatrix]]: ...
+
+    @abc.abstractmethod
+    def GetDepthIntrinsicMatrix(
+        self,
+        request: video_pb2.CameraInfo,
         context: _ServicerContext,
     ) -> typing.Union[video_pb2.IntrinsicMatrix, collections.abc.Awaitable[video_pb2.IntrinsicMatrix]]: ...
 

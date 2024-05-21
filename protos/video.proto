@@ -52,6 +52,7 @@ service VideoService {
     rpc GetDepthMap (CameraInfo) returns (Frame);
     rpc GetDisparity (CameraInfo) returns (Frame);
     rpc GetIntrinsicMatrix (ViewRequest) returns (IntrinsicMatrix);
+    rpc GetDepthIntrinsicMatrix (CameraInfo) returns (IntrinsicMatrix);
     rpc Capture(CameraInfo) returns (VideoAck);
     rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
 }
