@@ -73,9 +73,17 @@ message ReachyStreamStateRequest {
     float publish_frequency = 2;
 }
 
+message ReachyStreamAuditRequest {
+    ReachyId id = 1;
+    float publish_frequency = 2;
+}
+
 service ReachyService {
     rpc GetReachy (google.protobuf.Empty) returns (Reachy);
 
     rpc GetReachyState (ReachyId) returns (ReachyState);
     rpc StreamReachyState (ReachyStreamStateRequest) returns (stream ReachyState);
+
+    rpc Audit (ReachyId) returns (ReachyStatus);
+    rpc StreamAudit (ReachyStreamAuditRequest) returns (stream ReachyStatus);
 }
