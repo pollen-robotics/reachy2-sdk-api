@@ -61,6 +61,11 @@ class MobileBaseUtilityServiceStub(object):
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=mobile__base__utility__pb2.MobileBaseState.FromString,
                 )
+        self.Audit = channel.unary_unary(
+                '/mobile.base.utility.MobileBaseUtilityService/Audit',
+                request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+                response_deserializer=mobile__base__utility__pb2.MobileBaseStatus.FromString,
+                )
 
 
 class MobileBaseUtilityServiceServicer(object):
@@ -120,6 +125,12 @@ class MobileBaseUtilityServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def Audit(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
 
 def add_MobileBaseUtilityServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
@@ -167,6 +178,11 @@ def add_MobileBaseUtilityServiceServicer_to_server(servicer, server):
                     servicer.GetState,
                     request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                     response_serializer=mobile__base__utility__pb2.MobileBaseState.SerializeToString,
+            ),
+            'Audit': grpc.unary_unary_rpc_method_handler(
+                    servicer.Audit,
+                    request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                    response_serializer=mobile__base__utility__pb2.MobileBaseStatus.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -328,5 +344,22 @@ class MobileBaseUtilityService(object):
         return grpc.experimental.unary_unary(request, target, '/mobile.base.utility.MobileBaseUtilityService/GetState',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             mobile__base__utility__pb2.MobileBaseState.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def Audit(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/mobile.base.utility.MobileBaseUtilityService/Audit',
+            google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            mobile__base__utility__pb2.MobileBaseStatus.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

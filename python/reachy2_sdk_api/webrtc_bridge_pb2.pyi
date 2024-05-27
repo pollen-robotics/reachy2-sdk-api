@@ -40,17 +40,20 @@ class Connect(google.protobuf.message.Message):
 
     REACHY_ID_FIELD_NUMBER: builtins.int
     UPDATE_FREQUENCY_FIELD_NUMBER: builtins.int
+    AUDIT_FREQUENCY_FIELD_NUMBER: builtins.int
     @property
     def reachy_id(self) -> reachy_pb2.ReachyId: ...
     update_frequency: builtins.float
+    audit_frequency: builtins.float
     def __init__(
         self,
         *,
         reachy_id: reachy_pb2.ReachyId | None = ...,
         update_frequency: builtins.float = ...,
+        audit_frequency: builtins.float = ...,
     ) -> None: ...
     def HasField(self, field_name: typing_extensions.Literal["reachy_id", b"reachy_id"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["reachy_id", b"reachy_id", "update_frequency", b"update_frequency"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["audit_frequency", b"audit_frequency", "reachy_id", b"reachy_id", "update_frequency", b"update_frequency"]) -> None: ...
 
 global___Connect = Connect
 

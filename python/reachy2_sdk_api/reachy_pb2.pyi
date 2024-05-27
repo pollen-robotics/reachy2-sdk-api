@@ -161,6 +161,51 @@ class ReachyState(google.protobuf.message.Message):
 global___ReachyState = ReachyState
 
 @typing_extensions.final
+class ReachyStatus(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    TIMESTAMP_FIELD_NUMBER: builtins.int
+    ID_FIELD_NUMBER: builtins.int
+    L_ARM_STATUS_FIELD_NUMBER: builtins.int
+    R_ARM_STATE_FIELD_NUMBER: builtins.int
+    HEAD_STATE_FIELD_NUMBER: builtins.int
+    L_HAND_STATE_FIELD_NUMBER: builtins.int
+    R_HAND_STATE_FIELD_NUMBER: builtins.int
+    MOBILE_BASE_STATUS_FIELD_NUMBER: builtins.int
+    @property
+    def timestamp(self) -> google.protobuf.timestamp_pb2.Timestamp: ...
+    @property
+    def id(self) -> global___ReachyId: ...
+    @property
+    def l_arm_status(self) -> arm_pb2.ArmStatus: ...
+    @property
+    def r_arm_state(self) -> arm_pb2.ArmStatus: ...
+    @property
+    def head_state(self) -> head_pb2.HeadStatus: ...
+    @property
+    def l_hand_state(self) -> hand_pb2.HandStatus: ...
+    @property
+    def r_hand_state(self) -> hand_pb2.HandStatus: ...
+    @property
+    def mobile_base_status(self) -> mobile_base_utility_pb2.MobileBaseStatus: ...
+    def __init__(
+        self,
+        *,
+        timestamp: google.protobuf.timestamp_pb2.Timestamp | None = ...,
+        id: global___ReachyId | None = ...,
+        l_arm_status: arm_pb2.ArmStatus | None = ...,
+        r_arm_state: arm_pb2.ArmStatus | None = ...,
+        head_state: head_pb2.HeadStatus | None = ...,
+        l_hand_state: hand_pb2.HandStatus | None = ...,
+        r_hand_state: hand_pb2.HandStatus | None = ...,
+        mobile_base_status: mobile_base_utility_pb2.MobileBaseStatus | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["head_state", b"head_state", "id", b"id", "l_arm_status", b"l_arm_status", "l_hand_state", b"l_hand_state", "mobile_base_status", b"mobile_base_status", "r_arm_state", b"r_arm_state", "r_hand_state", b"r_hand_state", "timestamp", b"timestamp"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["head_state", b"head_state", "id", b"id", "l_arm_status", b"l_arm_status", "l_hand_state", b"l_hand_state", "mobile_base_status", b"mobile_base_status", "r_arm_state", b"r_arm_state", "r_hand_state", b"r_hand_state", "timestamp", b"timestamp"]) -> None: ...
+
+global___ReachyStatus = ReachyStatus
+
+@typing_extensions.final
 class ReachyStreamStateRequest(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -179,3 +224,23 @@ class ReachyStreamStateRequest(google.protobuf.message.Message):
     def ClearField(self, field_name: typing_extensions.Literal["id", b"id", "publish_frequency", b"publish_frequency"]) -> None: ...
 
 global___ReachyStreamStateRequest = ReachyStreamStateRequest
+
+@typing_extensions.final
+class ReachyStreamAuditRequest(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    ID_FIELD_NUMBER: builtins.int
+    PUBLISH_FREQUENCY_FIELD_NUMBER: builtins.int
+    @property
+    def id(self) -> global___ReachyId: ...
+    publish_frequency: builtins.float
+    def __init__(
+        self,
+        *,
+        id: global___ReachyId | None = ...,
+        publish_frequency: builtins.float = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["id", b"id"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["id", b"id", "publish_frequency", b"publish_frequency"]) -> None: ...
+
+global___ReachyStreamAuditRequest = ReachyStreamAuditRequest
