@@ -59,12 +59,17 @@ namespace Reachy {
             "LmhhbmQuSGFuZFN0YXR1cxJBChJtb2JpbGVfYmFzZV9zdGF0dXMYCCABKAsy",
             "JS5tb2JpbGUuYmFzZS51dGlsaXR5Lk1vYmlsZUJhc2VTdGF0dXMiUwoYUmVh",
             "Y2h5U3RyZWFtU3RhdGVSZXF1ZXN0EhwKAmlkGAEgASgLMhAucmVhY2h5LlJl",
-            "YWNoeUlkEhkKEXB1Ymxpc2hfZnJlcXVlbmN5GAIgASgCMssBCg1SZWFjaHlT",
-            "ZXJ2aWNlEjMKCUdldFJlYWNoeRIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRoO",
-            "LnJlYWNoeS5SZWFjaHkSNwoOR2V0UmVhY2h5U3RhdGUSEC5yZWFjaHkuUmVh",
-            "Y2h5SWQaEy5yZWFjaHkuUmVhY2h5U3RhdGUSTAoRU3RyZWFtUmVhY2h5U3Rh",
-            "dGUSIC5yZWFjaHkuUmVhY2h5U3RyZWFtU3RhdGVSZXF1ZXN0GhMucmVhY2h5",
-            "LlJlYWNoeVN0YXRlMAFiBnByb3RvMw=="));
+            "YWNoeUlkEhkKEXB1Ymxpc2hfZnJlcXVlbmN5GAIgASgCIlMKGFJlYWNoeVN0",
+            "cmVhbUF1ZGl0UmVxdWVzdBIcCgJpZBgBIAEoCzIQLnJlYWNoeS5SZWFjaHlJ",
+            "ZBIZChFwdWJsaXNoX2ZyZXF1ZW5jeRgCIAEoAjLFAgoNUmVhY2h5U2Vydmlj",
+            "ZRIzCglHZXRSZWFjaHkSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaDi5yZWFj",
+            "aHkuUmVhY2h5EjcKDkdldFJlYWNoeVN0YXRlEhAucmVhY2h5LlJlYWNoeUlk",
+            "GhMucmVhY2h5LlJlYWNoeVN0YXRlEkwKEVN0cmVhbVJlYWNoeVN0YXRlEiAu",
+            "cmVhY2h5LlJlYWNoeVN0cmVhbVN0YXRlUmVxdWVzdBoTLnJlYWNoeS5SZWFj",
+            "aHlTdGF0ZTABEi8KBUF1ZGl0EhAucmVhY2h5LlJlYWNoeUlkGhQucmVhY2h5",
+            "LlJlYWNoeVN0YXR1cxJHCgtTdHJlYW1BdWRpdBIgLnJlYWNoeS5SZWFjaHlT",
+            "dHJlYW1BdWRpdFJlcXVlc3QaFC5yZWFjaHkuUmVhY2h5U3RhdHVzMAFiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Mobile.Base.Utility.MobileBaseUtilityReflection.Descriptor, global::Component.Sound.SoundReflection.Descriptor, global::Component.Video.VideoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -73,7 +78,8 @@ namespace Reachy {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyInfo), global::Reachy.ReachyInfo.Parser, new[]{ "SerialNumber", "VersionHard", "VersionSoft" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyState), global::Reachy.ReachyState.Parser, new[]{ "Timestamp", "Id", "LArmState", "RArmState", "HeadState", "LHandState", "RHandState", "MobileBaseState" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStatus), global::Reachy.ReachyStatus.Parser, new[]{ "Timestamp", "Id", "LArmStatus", "RArmState", "HeadState", "LHandState", "RHandState", "MobileBaseStatus" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStreamStateRequest), global::Reachy.ReachyStreamStateRequest.Parser, new[]{ "Id", "PublishFrequency" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStreamStateRequest), global::Reachy.ReachyStreamStateRequest.Parser, new[]{ "Id", "PublishFrequency" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStreamAuditRequest), global::Reachy.ReachyStreamAuditRequest.Parser, new[]{ "Id", "PublishFrequency" }, null, null, null, null)
           }));
     }
     #endregion
@@ -2385,6 +2391,241 @@ namespace Reachy {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ReachyStreamStateRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.id_ != null) {
+        if (id_ == null) {
+          Id = new global::Reachy.ReachyId();
+        }
+        Id.MergeFrom(other.Id);
+      }
+      if (other.PublishFrequency != 0F) {
+        PublishFrequency = other.PublishFrequency;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (id_ == null) {
+              Id = new global::Reachy.ReachyId();
+            }
+            input.ReadMessage(Id);
+            break;
+          }
+          case 21: {
+            PublishFrequency = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (id_ == null) {
+              Id = new global::Reachy.ReachyId();
+            }
+            input.ReadMessage(Id);
+            break;
+          }
+          case 21: {
+            PublishFrequency = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class ReachyStreamAuditRequest : pb::IMessage<ReachyStreamAuditRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ReachyStreamAuditRequest> _parser = new pb::MessageParser<ReachyStreamAuditRequest>(() => new ReachyStreamAuditRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ReachyStreamAuditRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Reachy.ReachyReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ReachyStreamAuditRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ReachyStreamAuditRequest(ReachyStreamAuditRequest other) : this() {
+      id_ = other.id_ != null ? other.id_.Clone() : null;
+      publishFrequency_ = other.publishFrequency_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ReachyStreamAuditRequest Clone() {
+      return new ReachyStreamAuditRequest(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private global::Reachy.ReachyId id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.ReachyId Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "publish_frequency" field.</summary>
+    public const int PublishFrequencyFieldNumber = 2;
+    private float publishFrequency_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float PublishFrequency {
+      get { return publishFrequency_; }
+      set {
+        publishFrequency_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ReachyStreamAuditRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ReachyStreamAuditRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Id, other.Id)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(PublishFrequency, other.PublishFrequency)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (id_ != null) hash ^= Id.GetHashCode();
+      if (PublishFrequency != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(PublishFrequency);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (id_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Id);
+      }
+      if (PublishFrequency != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(PublishFrequency);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (id_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Id);
+      }
+      if (PublishFrequency != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(PublishFrequency);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (id_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
+      }
+      if (PublishFrequency != 0F) {
+        size += 1 + 4;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ReachyStreamAuditRequest other) {
       if (other == null) {
         return;
       }
