@@ -33,6 +33,11 @@ enum ArmField {
     ALL = 15;
 }
 
+enum IKMode {
+    UNCONSTRAINED = 0;
+    LOW_ELBOW = 1;
+}
+
 message ArmState {
     google.protobuf.Timestamp timestamp = 1;
 
@@ -76,6 +81,7 @@ message ArmCartesianGoal {
     kinematics.ExtEulerAnglesTolerances orientation_tolerance = 4;
 
     ArmPosition q0 = 5;
+    IKMode mode = 6;
     google.protobuf.FloatValue duration = 10;
 }
 
