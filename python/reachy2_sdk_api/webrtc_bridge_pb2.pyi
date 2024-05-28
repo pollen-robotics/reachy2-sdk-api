@@ -302,3 +302,19 @@ class AnyCommands(google.protobuf.message.Message):
     def ClearField(self, field_name: typing_extensions.Literal["commands", b"commands"]) -> None: ...
 
 global___AnyCommands = AnyCommands
+
+@typing_extensions.final
+class ReachabilityAnswer(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    REACHABILITY_FIELD_NUMBER: builtins.int
+    @property
+    def reachability(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[arm_pb2.ArmCartesianGoalReachability]: ...
+    def __init__(
+        self,
+        *,
+        reachability: collections.abc.Iterable[arm_pb2.ArmCartesianGoalReachability] | None = ...,
+    ) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["reachability", b"reachability"]) -> None: ...
+
+global___ReachabilityAnswer = ReachabilityAnswer

@@ -474,3 +474,24 @@ class ArmTemperatures(google.protobuf.message.Message):
     def ClearField(self, field_name: typing_extensions.Literal["elbow_temperature", b"elbow_temperature", "shoulder_temperature", b"shoulder_temperature", "wrist_temperature", b"wrist_temperature"]) -> None: ...
 
 global___ArmTemperatures = ArmTemperatures
+
+@typing_extensions.final
+class ArmCartesianGoalReachability(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    ID_FIELD_NUMBER: builtins.int
+    REACHABLE_FIELD_NUMBER: builtins.int
+    @property
+    def id(self) -> part_pb2.PartId: ...
+    @property
+    def reachable(self) -> google.protobuf.wrappers_pb2.BoolValue: ...
+    def __init__(
+        self,
+        *,
+        id: part_pb2.PartId | None = ...,
+        reachable: google.protobuf.wrappers_pb2.BoolValue | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["id", b"id", "reachable", b"reachable"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["id", b"id", "reachable", b"reachable"]) -> None: ...
+
+global___ArmCartesianGoalReachability = ArmCartesianGoalReachability

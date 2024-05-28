@@ -105,7 +105,7 @@ class ArmServiceStub(object):
         self.SendArmCartesianGoal = channel.unary_unary(
                 '/reachy.part.arm.ArmService/SendArmCartesianGoal',
                 request_serializer=arm__pb2.ArmCartesianGoal.SerializeToString,
-                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                response_deserializer=arm__pb2.ArmCartesianGoalReachability.FromString,
                 )
 
 
@@ -311,7 +311,7 @@ def add_ArmServiceServicer_to_server(servicer, server):
             'SendArmCartesianGoal': grpc.unary_unary_rpc_method_handler(
                     servicer.SendArmCartesianGoal,
                     request_deserializer=arm__pb2.ArmCartesianGoal.FromString,
-                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+                    response_serializer=arm__pb2.ArmCartesianGoalReachability.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -625,6 +625,6 @@ class ArmService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/SendArmCartesianGoal',
             arm__pb2.ArmCartesianGoal.SerializeToString,
-            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+            arm__pb2.ArmCartesianGoalReachability.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

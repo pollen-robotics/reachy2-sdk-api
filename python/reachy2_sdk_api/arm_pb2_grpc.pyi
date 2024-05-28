@@ -92,7 +92,7 @@ class ArmServiceStub:
     ]
     SendArmCartesianGoal: grpc.UnaryUnaryMultiCallable[
         arm_pb2.ArmCartesianGoal,
-        google.protobuf.empty_pb2.Empty,
+        arm_pb2.ArmCartesianGoalReachability,
     ]
 
 class ArmServiceAsyncStub:
@@ -166,7 +166,7 @@ class ArmServiceAsyncStub:
     ]
     SendArmCartesianGoal: grpc.aio.UnaryUnaryMultiCallable[
         arm_pb2.ArmCartesianGoal,
-        google.protobuf.empty_pb2.Empty,
+        arm_pb2.ArmCartesianGoalReachability,
     ]
 
 class ArmServiceServicer(metaclass=abc.ABCMeta):
@@ -277,6 +277,6 @@ class ArmServiceServicer(metaclass=abc.ABCMeta):
         self,
         request: arm_pb2.ArmCartesianGoal,
         context: _ServicerContext,
-    ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
+    ) -> typing.Union[arm_pb2.ArmCartesianGoalReachability, collections.abc.Awaitable[arm_pb2.ArmCartesianGoalReachability]]: ...
 
 def add_ArmServiceServicer_to_server(servicer: ArmServiceServicer, server: typing.Union[grpc.Server, grpc.aio.Server]) -> None: ...
