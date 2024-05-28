@@ -140,6 +140,11 @@ message ArmTemperatures {
     component.orbita3d.Float3d wrist_temperature = 3;
 }
 
+message ArmCartesianGoalReachability {
+    reachy.part.PartId id = 1;
+    google.protobuf.BoolValue reachable = 2;
+}
+
 service ArmService {
     rpc GetAllArms (google.protobuf.Empty) returns (ListOfArm);
 
@@ -166,5 +171,5 @@ service ArmService {
 
     rpc SetSpeedLimit (SpeedLimitRequest) returns (google.protobuf.Empty);
     rpc SetTorqueLimit (TorqueLimitRequest) returns (google.protobuf.Empty);
-    rpc SendArmCartesianGoal (ArmCartesianGoal) returns (google.protobuf.Empty);
+    rpc SendArmCartesianGoal (ArmCartesianGoal) returns (ArmCartesianGoalReachability);
 }

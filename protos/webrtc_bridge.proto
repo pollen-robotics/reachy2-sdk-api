@@ -82,3 +82,7 @@ message MobileBaseCommand {
 message AnyCommands {
     repeated AnyCommand commands = 1;
 }
+
+message ReachabilityAnswer {
+    repeated reachy.part.arm.ArmCartesianGoalReachability reachability = 1;
+}
