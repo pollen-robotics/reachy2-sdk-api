@@ -64,6 +64,21 @@ PID: ArmField.ValueType  # 12
 ALL: ArmField.ValueType  # 15
 global___ArmField = ArmField
 
+class _IKMode:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _IKModeEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_IKMode.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    UNCONSTRAINED: _IKMode.ValueType  # 0
+    LOW_ELBOW: _IKMode.ValueType  # 1
+
+class IKMode(_IKMode, metaclass=_IKModeEnumTypeWrapper): ...
+
+UNCONSTRAINED: IKMode.ValueType  # 0
+LOW_ELBOW: IKMode.ValueType  # 1
+global___IKMode = IKMode
+
 @typing_extensions.final
 class ArmState(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
@@ -200,6 +215,7 @@ class ArmCartesianGoal(google.protobuf.message.Message):
     POSITION_TOLERANCE_FIELD_NUMBER: builtins.int
     ORIENTATION_TOLERANCE_FIELD_NUMBER: builtins.int
     Q0_FIELD_NUMBER: builtins.int
+    MODE_FIELD_NUMBER: builtins.int
     DURATION_FIELD_NUMBER: builtins.int
     @property
     def id(self) -> part_pb2.PartId: ...
@@ -211,6 +227,7 @@ class ArmCartesianGoal(google.protobuf.message.Message):
     def orientation_tolerance(self) -> kinematics_pb2.ExtEulerAnglesTolerances: ...
     @property
     def q0(self) -> global___ArmPosition: ...
+    mode: global___IKMode.ValueType
     @property
     def duration(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
     def __init__(
@@ -221,10 +238,11 @@ class ArmCartesianGoal(google.protobuf.message.Message):
         position_tolerance: kinematics_pb2.PointDistanceTolerances | None = ...,
         orientation_tolerance: kinematics_pb2.ExtEulerAnglesTolerances | None = ...,
         q0: global___ArmPosition | None = ...,
+        mode: global___IKMode.ValueType = ...,
         duration: google.protobuf.wrappers_pb2.FloatValue | None = ...,
     ) -> None: ...
     def HasField(self, field_name: typing_extensions.Literal["duration", b"duration", "goal_pose", b"goal_pose", "id", b"id", "orientation_tolerance", b"orientation_tolerance", "position_tolerance", b"position_tolerance", "q0", b"q0"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["duration", b"duration", "goal_pose", b"goal_pose", "id", b"id", "orientation_tolerance", b"orientation_tolerance", "position_tolerance", b"position_tolerance", "q0", b"q0"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["duration", b"duration", "goal_pose", b"goal_pose", "id", b"id", "mode", b"mode", "orientation_tolerance", b"orientation_tolerance", "position_tolerance", b"position_tolerance", "q0", b"q0"]) -> None: ...
 
 global___ArmCartesianGoal = ArmCartesianGoal
 
