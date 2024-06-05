@@ -2,6 +2,7 @@ syntax = "proto3";
 
 import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
 
 import "error.proto";
 
@@ -32,6 +33,12 @@ message Frame {
     bytes data = 1;
 }
 
+
+message FrameTs {
+    bytes data = 1;
+    Timestamp ts = 2;
+}
+
 message IntrinsicMatrix {
     double fx = 1;
     double fy = 2;
@@ -55,4 +62,8 @@ service VideoService {
     rpc GetDepthIntrinsicMatrix (CameraInfo) returns (IntrinsicMatrix);
     rpc Capture(CameraInfo) returns (VideoAck);
     rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
+}
+
+service VideoStream {
+    rpc GetFrame (google.protobuf.Empty) returns (stream FrameTs);
 }
