@@ -47,4 +47,5 @@ service MobileBaseMobilityService {
     rpc SendSetSpeed(SetSpeedVector) returns (MobilityServiceAck);
     rpc SendGoTo(GoToVector) returns (MobilityServiceAck);
     rpc DistanceToGoal(google.protobuf.Empty) returns (DistanceToGoalVector);
+    rpc GetLastDirection(google.protobuf.Empty) returns (DirectionVector);
 }
