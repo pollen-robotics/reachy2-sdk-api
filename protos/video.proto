@@ -36,7 +36,7 @@ message Frame {
 
 message FrameTs {
     bytes data = 1;
-    Timestamp ts = 2;
+    google.protobuf.Timestamp ts = 2;
 }
 
 message IntrinsicMatrix {

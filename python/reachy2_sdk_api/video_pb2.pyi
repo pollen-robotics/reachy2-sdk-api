@@ -10,6 +10,7 @@ import google.protobuf.descriptor
 import google.protobuf.internal.containers
 import google.protobuf.internal.enum_type_wrapper
 import google.protobuf.message
+import google.protobuf.timestamp_pb2
 import google.protobuf.wrappers_pb2
 import sys
 import typing
@@ -111,6 +112,26 @@ class Frame(google.protobuf.message.Message):
     def ClearField(self, field_name: typing.Literal["data", b"data"]) -> None: ...
 
 global___Frame = Frame
+
+@typing.final
+class FrameTs(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    DATA_FIELD_NUMBER: builtins.int
+    TS_FIELD_NUMBER: builtins.int
+    data: builtins.bytes
+    @property
+    def ts(self) -> google.protobuf.timestamp_pb2.Timestamp: ...
+    def __init__(
+        self,
+        *,
+        data: builtins.bytes = ...,
+        ts: google.protobuf.timestamp_pb2.Timestamp | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing.Literal["ts", b"ts"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing.Literal["data", b"data", "ts", b"ts"]) -> None: ...
+
+global___FrameTs = FrameTs
 
 @typing.final
 class IntrinsicMatrix(google.protobuf.message.Message):

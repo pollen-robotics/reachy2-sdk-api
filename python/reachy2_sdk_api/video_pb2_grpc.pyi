@@ -176,3 +176,26 @@ class VideoServiceServicer(metaclass=abc.ABCMeta):
     ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
 
 def add_VideoServiceServicer_to_server(servicer: VideoServiceServicer, server: typing.Union[grpc.Server, grpc.aio.Server]) -> None: ...
+
+class VideoStreamStub:
+    def __init__(self, channel: typing.Union[grpc.Channel, grpc.aio.Channel]) -> None: ...
+    GetFrame: grpc.UnaryStreamMultiCallable[
+        google.protobuf.empty_pb2.Empty,
+        video_pb2.FrameTs,
+    ]
+
+class VideoStreamAsyncStub:
+    GetFrame: grpc.aio.UnaryStreamMultiCallable[
+        google.protobuf.empty_pb2.Empty,
+        video_pb2.FrameTs,
+    ]
+
+class VideoStreamServicer(metaclass=abc.ABCMeta):
+    @abc.abstractmethod
+    def GetFrame(
+        self,
+        request: google.protobuf.empty_pb2.Empty,
+        context: _ServicerContext,
+    ) -> typing.Union[collections.abc.Iterator[video_pb2.FrameTs], collections.abc.AsyncIterator[video_pb2.FrameTs]]: ...
+
+def add_VideoStreamServicer_to_server(servicer: VideoStreamServicer, server: typing.Union[grpc.Server, grpc.aio.Server]) -> None: ...

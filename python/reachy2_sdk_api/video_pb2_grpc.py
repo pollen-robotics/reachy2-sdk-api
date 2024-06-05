@@ -329,3 +329,64 @@ class VideoService(object):
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+
+class VideoStreamStub(object):
+    """Missing associated documentation comment in .proto file."""
+
+    def __init__(self, channel):
+        """Constructor.
+
+        Args:
+            channel: A grpc.Channel.
+        """
+        self.GetFrame = channel.unary_stream(
+                '/component.video.VideoStream/GetFrame',
+                request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+                response_deserializer=video__pb2.FrameTs.FromString,
+                )
+
+
+class VideoStreamServicer(object):
+    """Missing associated documentation comment in .proto file."""
+
+    def GetFrame(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+
+def add_VideoStreamServicer_to_server(servicer, server):
+    rpc_method_handlers = {
+            'GetFrame': grpc.unary_stream_rpc_method_handler(
+                    servicer.GetFrame,
+                    request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                    response_serializer=video__pb2.FrameTs.SerializeToString,
+            ),
+    }
+    generic_handler = grpc.method_handlers_generic_handler(
+            'component.video.VideoStream', rpc_method_handlers)
+    server.add_generic_rpc_handlers((generic_handler,))
+
+
+ # This class is part of an EXPERIMENTAL API.
+class VideoStream(object):
+    """Missing associated documentation comment in .proto file."""
+
+    @staticmethod
+    def GetFrame(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_stream(request, target, '/component.video.VideoStream/GetFrame',
+            google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            video__pb2.FrameTs.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
