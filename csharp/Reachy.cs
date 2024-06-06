@@ -48,28 +48,28 @@ namespace Reachy {
             "DGxfaGFuZF9zdGF0ZRgGIAEoCzIbLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFN0",
             "YXRlEjEKDHJfaGFuZF9zdGF0ZRgHIAEoCzIbLnJlYWNoeS5wYXJ0LmhhbmQu",
             "SGFuZFN0YXRlEj8KEW1vYmlsZV9iYXNlX3N0YXRlGAggASgLMiQubW9iaWxl",
-            "LmJhc2UudXRpbGl0eS5Nb2JpbGVCYXNlU3RhdGUimwMKDFJlYWNoeVN0YXR1",
+            "LmJhc2UudXRpbGl0eS5Nb2JpbGVCYXNlU3RhdGUinwMKDFJlYWNoeVN0YXR1",
             "cxItCgl0aW1lc3RhbXAYASABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
             "YW1wEhwKAmlkGAIgASgLMhAucmVhY2h5LlJlYWNoeUlkEjAKDGxfYXJtX3N0",
-            "YXR1cxgDIAEoCzIaLnJlYWNoeS5wYXJ0LmFybS5Bcm1TdGF0dXMSLwoLcl9h",
-            "cm1fc3RhdGUYBCABKAsyGi5yZWFjaHkucGFydC5hcm0uQXJtU3RhdHVzEjAK",
-            "CmhlYWRfc3RhdGUYBSABKAsyHC5yZWFjaHkucGFydC5oZWFkLkhlYWRTdGF0",
-            "dXMSMgoMbF9oYW5kX3N0YXRlGAYgASgLMhwucmVhY2h5LnBhcnQuaGFuZC5I",
-            "YW5kU3RhdHVzEjIKDHJfaGFuZF9zdGF0ZRgHIAEoCzIcLnJlYWNoeS5wYXJ0",
-            "LmhhbmQuSGFuZFN0YXR1cxJBChJtb2JpbGVfYmFzZV9zdGF0dXMYCCABKAsy",
-            "JS5tb2JpbGUuYmFzZS51dGlsaXR5Lk1vYmlsZUJhc2VTdGF0dXMiUwoYUmVh",
-            "Y2h5U3RyZWFtU3RhdGVSZXF1ZXN0EhwKAmlkGAEgASgLMhAucmVhY2h5LlJl",
-            "YWNoeUlkEhkKEXB1Ymxpc2hfZnJlcXVlbmN5GAIgASgCIlMKGFJlYWNoeVN0",
-            "cmVhbUF1ZGl0UmVxdWVzdBIcCgJpZBgBIAEoCzIQLnJlYWNoeS5SZWFjaHlJ",
-            "ZBIZChFwdWJsaXNoX2ZyZXF1ZW5jeRgCIAEoAjLFAgoNUmVhY2h5U2Vydmlj",
-            "ZRIzCglHZXRSZWFjaHkSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaDi5yZWFj",
-            "aHkuUmVhY2h5EjcKDkdldFJlYWNoeVN0YXRlEhAucmVhY2h5LlJlYWNoeUlk",
-            "GhMucmVhY2h5LlJlYWNoeVN0YXRlEkwKEVN0cmVhbVJlYWNoeVN0YXRlEiAu",
-            "cmVhY2h5LlJlYWNoeVN0cmVhbVN0YXRlUmVxdWVzdBoTLnJlYWNoeS5SZWFj",
-            "aHlTdGF0ZTABEi8KBUF1ZGl0EhAucmVhY2h5LlJlYWNoeUlkGhQucmVhY2h5",
-            "LlJlYWNoeVN0YXR1cxJHCgtTdHJlYW1BdWRpdBIgLnJlYWNoeS5SZWFjaHlT",
-            "dHJlYW1BdWRpdFJlcXVlc3QaFC5yZWFjaHkuUmVhY2h5U3RhdHVzMAFiBnBy",
-            "b3RvMw=="));
+            "YXR1cxgDIAEoCzIaLnJlYWNoeS5wYXJ0LmFybS5Bcm1TdGF0dXMSMAoMcl9h",
+            "cm1fc3RhdHVzGAQgASgLMhoucmVhY2h5LnBhcnQuYXJtLkFybVN0YXR1cxIx",
+            "CgtoZWFkX3N0YXR1cxgFIAEoCzIcLnJlYWNoeS5wYXJ0LmhlYWQuSGVhZFN0",
+            "YXR1cxIzCg1sX2hhbmRfc3RhdHVzGAYgASgLMhwucmVhY2h5LnBhcnQuaGFu",
+            "ZC5IYW5kU3RhdHVzEjMKDXJfaGFuZF9zdGF0dXMYByABKAsyHC5yZWFjaHku",
+            "cGFydC5oYW5kLkhhbmRTdGF0dXMSQQoSbW9iaWxlX2Jhc2Vfc3RhdHVzGAgg",
+            "ASgLMiUubW9iaWxlLmJhc2UudXRpbGl0eS5Nb2JpbGVCYXNlU3RhdHVzIlMK",
+            "GFJlYWNoeVN0cmVhbVN0YXRlUmVxdWVzdBIcCgJpZBgBIAEoCzIQLnJlYWNo",
+            "eS5SZWFjaHlJZBIZChFwdWJsaXNoX2ZyZXF1ZW5jeRgCIAEoAiJTChhSZWFj",
+            "aHlTdHJlYW1BdWRpdFJlcXVlc3QSHAoCaWQYASABKAsyEC5yZWFjaHkuUmVh",
+            "Y2h5SWQSGQoRcHVibGlzaF9mcmVxdWVuY3kYAiABKAIyxQIKDVJlYWNoeVNl",
+            "cnZpY2USMwoJR2V0UmVhY2h5EhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Gg4u",
+            "cmVhY2h5LlJlYWNoeRI3Cg5HZXRSZWFjaHlTdGF0ZRIQLnJlYWNoeS5SZWFj",
+            "aHlJZBoTLnJlYWNoeS5SZWFjaHlTdGF0ZRJMChFTdHJlYW1SZWFjaHlTdGF0",
+            "ZRIgLnJlYWNoeS5SZWFjaHlTdHJlYW1TdGF0ZVJlcXVlc3QaEy5yZWFjaHku",
+            "UmVhY2h5U3RhdGUwARIvCgVBdWRpdBIQLnJlYWNoeS5SZWFjaHlJZBoULnJl",
+            "YWNoeS5SZWFjaHlTdGF0dXMSRwoLU3RyZWFtQXVkaXQSIC5yZWFjaHkuUmVh",
+            "Y2h5U3RyZWFtQXVkaXRSZXF1ZXN0GhQucmVhY2h5LlJlYWNoeVN0YXR1czAB",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Mobile.Base.Utility.MobileBaseUtilityReflection.Descriptor, global::Component.Sound.SoundReflection.Descriptor, global::Component.Video.VideoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -77,7 +77,7 @@ namespace Reachy {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyId), global::Reachy.ReachyId.Parser, new[]{ "Id", "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyInfo), global::Reachy.ReachyInfo.Parser, new[]{ "SerialNumber", "VersionHard", "VersionSoft" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyState), global::Reachy.ReachyState.Parser, new[]{ "Timestamp", "Id", "LArmState", "RArmState", "HeadState", "LHandState", "RHandState", "MobileBaseState" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStatus), global::Reachy.ReachyStatus.Parser, new[]{ "Timestamp", "Id", "LArmStatus", "RArmState", "HeadState", "LHandState", "RHandState", "MobileBaseStatus" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStatus), global::Reachy.ReachyStatus.Parser, new[]{ "Timestamp", "Id", "LArmStatus", "RArmStatus", "HeadStatus", "LHandStatus", "RHandStatus", "MobileBaseStatus" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStreamStateRequest), global::Reachy.ReachyStreamStateRequest.Parser, new[]{ "Id", "PublishFrequency" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStreamAuditRequest), global::Reachy.ReachyStreamAuditRequest.Parser, new[]{ "Id", "PublishFrequency" }, null, null, null, null)
           }));
@@ -1744,10 +1744,10 @@ namespace Reachy {
       timestamp_ = other.timestamp_ != null ? other.timestamp_.Clone() : null;
       id_ = other.id_ != null ? other.id_.Clone() : null;
       lArmStatus_ = other.lArmStatus_ != null ? other.lArmStatus_.Clone() : null;
-      rArmState_ = other.rArmState_ != null ? other.rArmState_.Clone() : null;
-      headState_ = other.headState_ != null ? other.headState_.Clone() : null;
-      lHandState_ = other.lHandState_ != null ? other.lHandState_.Clone() : null;
-      rHandState_ = other.rHandState_ != null ? other.rHandState_.Clone() : null;
+      rArmStatus_ = other.rArmStatus_ != null ? other.rArmStatus_.Clone() : null;
+      headStatus_ = other.headStatus_ != null ? other.headStatus_.Clone() : null;
+      lHandStatus_ = other.lHandStatus_ != null ? other.lHandStatus_.Clone() : null;
+      rHandStatus_ = other.rHandStatus_ != null ? other.rHandStatus_.Clone() : null;
       mobileBaseStatus_ = other.mobileBaseStatus_ != null ? other.mobileBaseStatus_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1794,51 +1794,51 @@ namespace Reachy {
       }
     }
 
-    /// <summary>Field number for the "r_arm_state" field.</summary>
-    public const int RArmStateFieldNumber = 4;
-    private global::Reachy.Part.Arm.ArmStatus rArmState_;
+    /// <summary>Field number for the "r_arm_status" field.</summary>
+    public const int RArmStatusFieldNumber = 4;
+    private global::Reachy.Part.Arm.ArmStatus rArmStatus_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Reachy.Part.Arm.ArmStatus RArmState {
-      get { return rArmState_; }
+    public global::Reachy.Part.Arm.ArmStatus RArmStatus {
+      get { return rArmStatus_; }
       set {
-        rArmState_ = value;
+        rArmStatus_ = value;
       }
     }
 
-    /// <summary>Field number for the "head_state" field.</summary>
-    public const int HeadStateFieldNumber = 5;
-    private global::Reachy.Part.Head.HeadStatus headState_;
+    /// <summary>Field number for the "head_status" field.</summary>
+    public const int HeadStatusFieldNumber = 5;
+    private global::Reachy.Part.Head.HeadStatus headStatus_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Reachy.Part.Head.HeadStatus HeadState {
-      get { return headState_; }
+    public global::Reachy.Part.Head.HeadStatus HeadStatus {
+      get { return headStatus_; }
       set {
-        headState_ = value;
+        headStatus_ = value;
       }
     }
 
-    /// <summary>Field number for the "l_hand_state" field.</summary>
-    public const int LHandStateFieldNumber = 6;
-    private global::Reachy.Part.Hand.HandStatus lHandState_;
+    /// <summary>Field number for the "l_hand_status" field.</summary>
+    public const int LHandStatusFieldNumber = 6;
+    private global::Reachy.Part.Hand.HandStatus lHandStatus_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Reachy.Part.Hand.HandStatus LHandState {
-      get { return lHandState_; }
+    public global::Reachy.Part.Hand.HandStatus LHandStatus {
+      get { return lHandStatus_; }
       set {
-        lHandState_ = value;
+        lHandStatus_ = value;
       }
     }
 
-    /// <summary>Field number for the "r_hand_state" field.</summary>
-    public const int RHandStateFieldNumber = 7;
-    private global::Reachy.Part.Hand.HandStatus rHandState_;
+    /// <summary>Field number for the "r_hand_status" field.</summary>
+    public const int RHandStatusFieldNumber = 7;
+    private global::Reachy.Part.Hand.HandStatus rHandStatus_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Reachy.Part.Hand.HandStatus RHandState {
-      get { return rHandState_; }
+    public global::Reachy.Part.Hand.HandStatus RHandStatus {
+      get { return rHandStatus_; }
       set {
-        rHandState_ = value;
+        rHandStatus_ = value;
       }
     }
 
@@ -1872,10 +1872,10 @@ namespace Reachy {
       if (!object.Equals(Timestamp, other.Timestamp)) return false;
       if (!object.Equals(Id, other.Id)) return false;
       if (!object.Equals(LArmStatus, other.LArmStatus)) return false;
-      if (!object.Equals(RArmState, other.RArmState)) return false;
-      if (!object.Equals(HeadState, other.HeadState)) return false;
-      if (!object.Equals(LHandState, other.LHandState)) return false;
-      if (!object.Equals(RHandState, other.RHandState)) return false;
+      if (!object.Equals(RArmStatus, other.RArmStatus)) return false;
+      if (!object.Equals(HeadStatus, other.HeadStatus)) return false;
+      if (!object.Equals(LHandStatus, other.LHandStatus)) return false;
+      if (!object.Equals(RHandStatus, other.RHandStatus)) return false;
       if (!object.Equals(MobileBaseStatus, other.MobileBaseStatus)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1887,10 +1887,10 @@ namespace Reachy {
       if (timestamp_ != null) hash ^= Timestamp.GetHashCode();
       if (id_ != null) hash ^= Id.GetHashCode();
       if (lArmStatus_ != null) hash ^= LArmStatus.GetHashCode();
-      if (rArmState_ != null) hash ^= RArmState.GetHashCode();
-      if (headState_ != null) hash ^= HeadState.GetHashCode();
-      if (lHandState_ != null) hash ^= LHandState.GetHashCode();
-      if (rHandState_ != null) hash ^= RHandState.GetHashCode();
+      if (rArmStatus_ != null) hash ^= RArmStatus.GetHashCode();
+      if (headStatus_ != null) hash ^= HeadStatus.GetHashCode();
+      if (lHandStatus_ != null) hash ^= LHandStatus.GetHashCode();
+      if (rHandStatus_ != null) hash ^= RHandStatus.GetHashCode();
       if (mobileBaseStatus_ != null) hash ^= MobileBaseStatus.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1922,21 +1922,21 @@ namespace Reachy {
         output.WriteRawTag(26);
         output.WriteMessage(LArmStatus);
       }
-      if (rArmState_ != null) {
+      if (rArmStatus_ != null) {
         output.WriteRawTag(34);
-        output.WriteMessage(RArmState);
+        output.WriteMessage(RArmStatus);
       }
-      if (headState_ != null) {
+      if (headStatus_ != null) {
         output.WriteRawTag(42);
-        output.WriteMessage(HeadState);
+        output.WriteMessage(HeadStatus);
       }
-      if (lHandState_ != null) {
+      if (lHandStatus_ != null) {
         output.WriteRawTag(50);
-        output.WriteMessage(LHandState);
+        output.WriteMessage(LHandStatus);
       }
-      if (rHandState_ != null) {
+      if (rHandStatus_ != null) {
         output.WriteRawTag(58);
-        output.WriteMessage(RHandState);
+        output.WriteMessage(RHandStatus);
       }
       if (mobileBaseStatus_ != null) {
         output.WriteRawTag(66);
@@ -1964,21 +1964,21 @@ namespace Reachy {
         output.WriteRawTag(26);
         output.WriteMessage(LArmStatus);
       }
-      if (rArmState_ != null) {
+      if (rArmStatus_ != null) {
         output.WriteRawTag(34);
-        output.WriteMessage(RArmState);
+        output.WriteMessage(RArmStatus);
       }
-      if (headState_ != null) {
+      if (headStatus_ != null) {
         output.WriteRawTag(42);
-        output.WriteMessage(HeadState);
+        output.WriteMessage(HeadStatus);
       }
-      if (lHandState_ != null) {
+      if (lHandStatus_ != null) {
         output.WriteRawTag(50);
-        output.WriteMessage(LHandState);
+        output.WriteMessage(LHandStatus);
       }
-      if (rHandState_ != null) {
+      if (rHandStatus_ != null) {
         output.WriteRawTag(58);
-        output.WriteMessage(RHandState);
+        output.WriteMessage(RHandStatus);
       }
       if (mobileBaseStatus_ != null) {
         output.WriteRawTag(66);
@@ -2003,17 +2003,17 @@ namespace Reachy {
       if (lArmStatus_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LArmStatus);
       }
-      if (rArmState_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RArmState);
+      if (rArmStatus_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RArmStatus);
       }
-      if (headState_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(HeadState);
+      if (headStatus_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(HeadStatus);
       }
-      if (lHandState_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LHandState);
+      if (lHandStatus_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LHandStatus);
       }
-      if (rHandState_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RHandState);
+      if (rHandStatus_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RHandStatus);
       }
       if (mobileBaseStatus_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(MobileBaseStatus);
@@ -2048,29 +2048,29 @@ namespace Reachy {
         }
         LArmStatus.MergeFrom(other.LArmStatus);
       }
-      if (other.rArmState_ != null) {
-        if (rArmState_ == null) {
-          RArmState = new global::Reachy.Part.Arm.ArmStatus();
+      if (other.rArmStatus_ != null) {
+        if (rArmStatus_ == null) {
+          RArmStatus = new global::Reachy.Part.Arm.ArmStatus();
         }
-        RArmState.MergeFrom(other.RArmState);
+        RArmStatus.MergeFrom(other.RArmStatus);
       }
-      if (other.headState_ != null) {
-        if (headState_ == null) {
-          HeadState = new global::Reachy.Part.Head.HeadStatus();
+      if (other.headStatus_ != null) {
+        if (headStatus_ == null) {
+          HeadStatus = new global::Reachy.Part.Head.HeadStatus();
         }
-        HeadState.MergeFrom(other.HeadState);
+        HeadStatus.MergeFrom(other.HeadStatus);
       }
-      if (other.lHandState_ != null) {
-        if (lHandState_ == null) {
-          LHandState = new global::Reachy.Part.Hand.HandStatus();
+      if (other.lHandStatus_ != null) {
+        if (lHandStatus_ == null) {
+          LHandStatus = new global::Reachy.Part.Hand.HandStatus();
         }
-        LHandState.MergeFrom(other.LHandState);
+        LHandStatus.MergeFrom(other.LHandStatus);
       }
-      if (other.rHandState_ != null) {
-        if (rHandState_ == null) {
-          RHandState = new global::Reachy.Part.Hand.HandStatus();
+      if (other.rHandStatus_ != null) {
+        if (rHandStatus_ == null) {
+          RHandStatus = new global::Reachy.Part.Hand.HandStatus();
         }
-        RHandState.MergeFrom(other.RHandState);
+        RHandStatus.MergeFrom(other.RHandStatus);
       }
       if (other.mobileBaseStatus_ != null) {
         if (mobileBaseStatus_ == null) {
@@ -2115,31 +2115,31 @@ namespace Reachy {
             break;
           }
           case 34: {
-            if (rArmState_ == null) {
-              RArmState = new global::Reachy.Part.Arm.ArmStatus();
+            if (rArmStatus_ == null) {
+              RArmStatus = new global::Reachy.Part.Arm.ArmStatus();
             }
-            input.ReadMessage(RArmState);
+            input.ReadMessage(RArmStatus);
             break;
           }
           case 42: {
-            if (headState_ == null) {
-              HeadState = new global::Reachy.Part.Head.HeadStatus();
+            if (headStatus_ == null) {
+              HeadStatus = new global::Reachy.Part.Head.HeadStatus();
             }
-            input.ReadMessage(HeadState);
+            input.ReadMessage(HeadStatus);
             break;
           }
           case 50: {
-            if (lHandState_ == null) {
-              LHandState = new global::Reachy.Part.Hand.HandStatus();
+            if (lHandStatus_ == null) {
+              LHandStatus = new global::Reachy.Part.Hand.HandStatus();
             }
-            input.ReadMessage(LHandState);
+            input.ReadMessage(LHandStatus);
             break;
           }
           case 58: {
-            if (rHandState_ == null) {
-              RHandState = new global::Reachy.Part.Hand.HandStatus();
+            if (rHandStatus_ == null) {
+              RHandStatus = new global::Reachy.Part.Hand.HandStatus();
             }
-            input.ReadMessage(RHandState);
+            input.ReadMessage(RHandStatus);
             break;
           }
           case 66: {
@@ -2186,31 +2186,31 @@ namespace Reachy {
             break;
           }
           case 34: {
-            if (rArmState_ == null) {
-              RArmState = new global::Reachy.Part.Arm.ArmStatus();
+            if (rArmStatus_ == null) {
+              RArmStatus = new global::Reachy.Part.Arm.ArmStatus();
             }
-            input.ReadMessage(RArmState);
+            input.ReadMessage(RArmStatus);
             break;
           }
           case 42: {
-            if (headState_ == null) {
-              HeadState = new global::Reachy.Part.Head.HeadStatus();
+            if (headStatus_ == null) {
+              HeadStatus = new global::Reachy.Part.Head.HeadStatus();
             }
-            input.ReadMessage(HeadState);
+            input.ReadMessage(HeadStatus);
             break;
           }
           case 50: {
-            if (lHandState_ == null) {
-              LHandState = new global::Reachy.Part.Hand.HandStatus();
+            if (lHandStatus_ == null) {
+              LHandStatus = new global::Reachy.Part.Hand.HandStatus();
             }
-            input.ReadMessage(LHandState);
+            input.ReadMessage(LHandStatus);
             break;
           }
           case 58: {
-            if (rHandState_ == null) {
-              RHandState = new global::Reachy.Part.Hand.HandStatus();
+            if (rHandStatus_ == null) {
+              RHandStatus = new global::Reachy.Part.Hand.HandStatus();
             }
-            input.ReadMessage(RHandState);
+            input.ReadMessage(RHandStatus);
             break;
           }
           case 66: {
