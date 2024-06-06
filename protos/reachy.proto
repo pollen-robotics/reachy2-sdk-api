@@ -61,10 +61,10 @@ message ReachyStatus {
     ReachyId id = 2;
 
     reachy.part.arm.ArmStatus l_arm_status = 3;
-    reachy.part.arm.ArmStatus r_arm_state = 4;
-    reachy.part.head.HeadStatus head_state = 5;
-    reachy.part.hand.HandStatus l_hand_state = 6;
-    reachy.part.hand.HandStatus r_hand_state = 7;
+    reachy.part.arm.ArmStatus r_arm_status = 4;
+    reachy.part.head.HeadStatus head_status = 5;
+    reachy.part.hand.HandStatus l_hand_status = 6;
+    reachy.part.hand.HandStatus r_hand_status = 7;
     mobile.base.utility.MobileBaseStatus mobile_base_status = 8;
 }
 
