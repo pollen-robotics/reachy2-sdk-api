@@ -216,7 +216,7 @@ class ArmCartesianGoal(google.protobuf.message.Message):
     ORIENTATION_TOLERANCE_FIELD_NUMBER: builtins.int
     Q0_FIELD_NUMBER: builtins.int
     MODE_FIELD_NUMBER: builtins.int
-    PREFERED_THETA_FIELD_NUMBER: builtins.int
+    PREFERRED_THETA_FIELD_NUMBER: builtins.int
     D_THETA_MAX_FIELD_NUMBER: builtins.int
     DURATION_FIELD_NUMBER: builtins.int
     ORDER_ID_FIELD_NUMBER: builtins.int
@@ -232,7 +232,7 @@ class ArmCartesianGoal(google.protobuf.message.Message):
     def q0(self) -> global___ArmPosition: ...
     mode: global___IKMode.ValueType
     @property
-    def prefered_theta(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    def preferred_theta(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
     @property
     def d_theta_max(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
     @property
@@ -248,13 +248,13 @@ class ArmCartesianGoal(google.protobuf.message.Message):
         orientation_tolerance: kinematics_pb2.ExtEulerAnglesTolerances | None = ...,
         q0: global___ArmPosition | None = ...,
         mode: global___IKMode.ValueType = ...,
-        prefered_theta: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        preferred_theta: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         d_theta_max: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         duration: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         order_id: google.protobuf.wrappers_pb2.Int32Value | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["d_theta_max", b"d_theta_max", "duration", b"duration", "goal_pose", b"goal_pose", "id", b"id", "order_id", b"order_id", "orientation_tolerance", b"orientation_tolerance", "position_tolerance", b"position_tolerance", "prefered_theta", b"prefered_theta", "q0", b"q0"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["d_theta_max", b"d_theta_max", "duration", b"duration", "goal_pose", b"goal_pose", "id", b"id", "mode", b"mode", "order_id", b"order_id", "orientation_tolerance", b"orientation_tolerance", "position_tolerance", b"position_tolerance", "prefered_theta", b"prefered_theta", "q0", b"q0"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["d_theta_max", b"d_theta_max", "duration", b"duration", "goal_pose", b"goal_pose", "id", b"id", "order_id", b"order_id", "orientation_tolerance", b"orientation_tolerance", "position_tolerance", b"position_tolerance", "preferred_theta", b"preferred_theta", "q0", b"q0"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["d_theta_max", b"d_theta_max", "duration", b"duration", "goal_pose", b"goal_pose", "id", b"id", "mode", b"mode", "order_id", b"order_id", "orientation_tolerance", b"orientation_tolerance", "position_tolerance", b"position_tolerance", "preferred_theta", b"preferred_theta", "q0", b"q0"]) -> None: ...
 
 global___ArmCartesianGoal = ArmCartesianGoal
 
