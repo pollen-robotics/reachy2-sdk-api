@@ -82,7 +82,7 @@ message ArmCartesianGoal {
 
     ArmPosition q0 = 5;
     IKMode mode = 6;
-    google.protobuf.FloatValue prefered_theta = 7;
+    google.protobuf.FloatValue preferred_theta = 7;
     google.protobuf.FloatValue d_theta_max  = 8;
 
     google.protobuf.FloatValue duration = 10;
