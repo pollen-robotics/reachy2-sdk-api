@@ -10,6 +10,7 @@ import google.protobuf.empty_pb2
 import grpc
 import grpc.aio
 import kinematics_pb2
+import marker_pb2
 import part_pb2
 import typing
 
@@ -112,6 +113,11 @@ class ArmServiceStub:
         google.protobuf.empty_pb2.Empty,
     ]
 
+    PublishMarker: grpc.UnaryUnaryMultiCallable[
+        marker_pb2.MarkerArray,
+        google.protobuf.empty_pb2.Empty,
+    ]
+
 class ArmServiceAsyncStub:
     GetAllArms: grpc.aio.UnaryUnaryMultiCallable[
         google.protobuf.empty_pb2.Empty,
@@ -200,6 +206,11 @@ class ArmServiceAsyncStub:
 
     SendArmCartesianGoal: grpc.aio.UnaryUnaryMultiCallable[
         arm_pb2.ArmCartesianGoal,
+        google.protobuf.empty_pb2.Empty,
+    ]
+
+    PublishMarker: grpc.aio.UnaryUnaryMultiCallable[
+        marker_pb2.MarkerArray,
         google.protobuf.empty_pb2.Empty,
     ]
 
@@ -327,6 +338,13 @@ class ArmServiceServicer(metaclass=abc.ABCMeta):
     def SendArmCartesianGoal(
         self,
         request: arm_pb2.ArmCartesianGoal,
+        context: _ServicerContext,
+    ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
+
+    @abc.abstractmethod
+    def PublishMarker(
+        self,
+        request: marker_pb2.MarkerArray,
         context: _ServicerContext,
     ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
 

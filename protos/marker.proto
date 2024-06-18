@@ -1,0 +1,52 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+import "kinematics.proto";
+
+package reachy.utils.markers;
+
+message Marker {
+    kinematics.Matrix4x4 pose = 1;
+    MarkerColor color = 2;
+    MarkerShape shape = 3;
+    int32 id = 4;
+    MarkerScale scale = 5;
+    google.protobuf.FloatValue lifetime = 6;
+}
+
+message MarkerArray {
+    repeated Marker markers = 1;
+}
+
+message MarkerColor {
+    google.protobuf.FloatValue r = 1;
+    google.protobuf.FloatValue g = 2;
+    google.protobuf.FloatValue b = 3;
+    google.protobuf.FloatValue a = 4;
+}
+
+message MarkerScale {
+    google.protobuf.FloatValue x = 1;
+    google.protobuf.FloatValue y = 2;
+    google.protobuf.FloatValue z = 3;
+}
+
+enum MarkerShape {
+    ARROW = 0;
+    CUBE = 1;
+    SPHERE = 2;
+    CYLINDER = 3;
+    LINE_STRIP = 4;
+    LINE_LIST = 5;
+    CUBE_LIST = 6;
+    SPHERE_LIST = 7;
+    POINTS = 8;
+    TEXT_VIEW_FACING = 9;
+    MESH_RESOURCE = 10;
+    TRIANGLE_LIST = 11;
+    ADD = 12;
+    MODIFY = 13;
+    DELETE = 14;
+    DELETEALL = 15;
+    GRASP_FORK = 16;
+}

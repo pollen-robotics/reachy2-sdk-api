@@ -5,6 +5,7 @@ import grpc
 import arm_pb2 as arm__pb2
 from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 import kinematics_pb2 as kinematics__pb2
+import marker_pb2 as marker__pb2
 import part_pb2 as part__pb2
 
 
@@ -105,6 +106,11 @@ class ArmServiceStub(object):
         self.SendArmCartesianGoal = channel.unary_unary(
                 '/reachy.part.arm.ArmService/SendArmCartesianGoal',
                 request_serializer=arm__pb2.ArmCartesianGoal.SerializeToString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                )
+        self.PublishMarker = channel.unary_unary(
+                '/reachy.part.arm.ArmService/PublishMarker',
+                request_serializer=marker__pb2.MarkerArray.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
 
@@ -220,6 +226,12 @@ class ArmServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def PublishMarker(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
 
 def add_ArmServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
@@ -311,6 +323,11 @@ def add_ArmServiceServicer_to_server(servicer, server):
             'SendArmCartesianGoal': grpc.unary_unary_rpc_method_handler(
                     servicer.SendArmCartesianGoal,
                     request_deserializer=arm__pb2.ArmCartesianGoal.FromString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            ),
+            'PublishMarker': grpc.unary_unary_rpc_method_handler(
+                    servicer.PublishMarker,
+                    request_deserializer=marker__pb2.MarkerArray.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
     }
@@ -625,6 +642,23 @@ class ArmService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/SendArmCartesianGoal',
             arm__pb2.ArmCartesianGoal.SerializeToString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def PublishMarker(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/PublishMarker',
+            marker__pb2.MarkerArray.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

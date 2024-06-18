@@ -7,6 +7,7 @@ import "google/protobuf/timestamp.proto";
 import "part.proto";
 import "kinematics.proto";
 import "error.proto";
+import "marker.proto";
 import "orbita2d.proto";
 import "orbita3d.proto";
 
@@ -167,4 +168,6 @@ service ArmService {
     rpc SetSpeedLimit (SpeedLimitRequest) returns (google.protobuf.Empty);
     rpc SetTorqueLimit (TorqueLimitRequest) returns (google.protobuf.Empty);
     rpc SendArmCartesianGoal (ArmCartesianGoal) returns (google.protobuf.Empty);
+
+    rpc PublishMarker (reachy.utils.markers.MarkerArray) returns (google.protobuf.Empty);
 }
