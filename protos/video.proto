@@ -39,13 +39,6 @@ message FrameTs {
     google.protobuf.Timestamp ts = 2;
 }
 
-message IntrinsicMatrix {
-    double fx = 1;
-    double fy = 2;
-    double cx = 3;
-    double cy = 4;
-
-}
 
 message ViewRequest {
     CameraInfo camera_info = 1;
@@ -58,8 +51,6 @@ service VideoService {
     rpc GetDepthFrame (ViewRequest) returns (Frame);
     rpc GetDepthMap (CameraInfo) returns (Frame);
     rpc GetDisparity (CameraInfo) returns (Frame);
-    rpc GetIntrinsicMatrix (ViewRequest) returns (IntrinsicMatrix);
-    rpc GetDepthIntrinsicMatrix (CameraInfo) returns (IntrinsicMatrix);
     rpc Capture(CameraInfo) returns (VideoAck);
     rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
 }

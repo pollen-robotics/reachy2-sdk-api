@@ -134,30 +134,6 @@ class FrameTs(google.protobuf.message.Message):
 global___FrameTs = FrameTs
 
 @typing.final
-class IntrinsicMatrix(google.protobuf.message.Message):
-    DESCRIPTOR: google.protobuf.descriptor.Descriptor
-
-    FX_FIELD_NUMBER: builtins.int
-    FY_FIELD_NUMBER: builtins.int
-    CX_FIELD_NUMBER: builtins.int
-    CY_FIELD_NUMBER: builtins.int
-    fx: builtins.float
-    fy: builtins.float
-    cx: builtins.float
-    cy: builtins.float
-    def __init__(
-        self,
-        *,
-        fx: builtins.float = ...,
-        fy: builtins.float = ...,
-        cx: builtins.float = ...,
-        cy: builtins.float = ...,
-    ) -> None: ...
-    def ClearField(self, field_name: typing.Literal["cx", b"cx", "cy", b"cy", "fx", b"fx", "fy", b"fy"]) -> None: ...
-
-global___IntrinsicMatrix = IntrinsicMatrix
-
-@typing.final
 class ViewRequest(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
