@@ -114,7 +114,7 @@ class ArmServiceStub:
     ]
 
     PublishMarker: grpc.UnaryUnaryMultiCallable[
-        marker_pb2.MarkerArray,
+        marker_pb2.MarkerPublicationRequest,
         google.protobuf.empty_pb2.Empty,
     ]
 
@@ -210,7 +210,7 @@ class ArmServiceAsyncStub:
     ]
 
     PublishMarker: grpc.aio.UnaryUnaryMultiCallable[
-        marker_pb2.MarkerArray,
+        marker_pb2.MarkerPublicationRequest,
         google.protobuf.empty_pb2.Empty,
     ]
 
@@ -344,7 +344,7 @@ class ArmServiceServicer(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def PublishMarker(
         self,
-        request: marker_pb2.MarkerArray,
+        request: marker_pb2.MarkerPublicationRequest,
         context: _ServicerContext,
     ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
 

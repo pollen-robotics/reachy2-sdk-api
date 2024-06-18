@@ -11,6 +11,7 @@ import google.protobuf.internal.enum_type_wrapper
 import google.protobuf.message
 import google.protobuf.wrappers_pb2
 import kinematics_pb2
+import part_pb2
 import sys
 import typing
 
@@ -166,6 +167,27 @@ class MarkerPose(google.protobuf.message.Message):
     def ClearField(self, field_name: typing.Literal["orientation", b"orientation", "position", b"position"]) -> None: ...
 
 global___MarkerPose = MarkerPose
+
+@typing.final
+class MarkerPublicationRequest(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    PART_ID_FIELD_NUMBER: builtins.int
+    MARKERS_FIELD_NUMBER: builtins.int
+    @property
+    def part_id(self) -> part_pb2.PartId: ...
+    @property
+    def markers(self) -> global___MarkerArray: ...
+    def __init__(
+        self,
+        *,
+        part_id: part_pb2.PartId | None = ...,
+        markers: global___MarkerArray | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing.Literal["markers", b"markers", "part_id", b"part_id"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing.Literal["markers", b"markers", "part_id", b"part_id"]) -> None: ...
+
+global___MarkerPublicationRequest = MarkerPublicationRequest
 
 @typing.final
 class MarkerScale(google.protobuf.message.Message):

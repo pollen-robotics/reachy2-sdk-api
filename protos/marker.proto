@@ -2,6 +2,7 @@ syntax = "proto3";
 
 import "google/protobuf/wrappers.proto";
 import "kinematics.proto";
+import "part.proto";
 
 package reachy.utils.markers;
 
@@ -28,6 +29,11 @@ message MarkerColor {
 message MarkerPose {
     kinematics.Point position = 1;
     kinematics.Quaternion orientation = 2;
+}
+
+message MarkerPublicationRequest {
+    reachy.part.PartId part_id = 1;
+    MarkerArray markers = 2;
 }
 
 message MarkerScale {

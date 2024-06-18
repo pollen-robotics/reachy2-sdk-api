@@ -169,5 +169,5 @@ service ArmService {
     rpc SetTorqueLimit (TorqueLimitRequest) returns (google.protobuf.Empty);
     rpc SendArmCartesianGoal (ArmCartesianGoal) returns (google.protobuf.Empty);
 
-    rpc PublishMarker (reachy.utils.markers.MarkerArray) returns (google.protobuf.Empty);
+    rpc PublishMarker (reachy.utils.markers.MarkerPublicationRequest) returns (google.protobuf.Empty);
 }

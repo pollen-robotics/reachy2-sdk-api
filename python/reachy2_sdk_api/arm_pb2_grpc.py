@@ -110,7 +110,7 @@ class ArmServiceStub(object):
                 )
         self.PublishMarker = channel.unary_unary(
                 '/reachy.part.arm.ArmService/PublishMarker',
-                request_serializer=marker__pb2.MarkerArray.SerializeToString,
+                request_serializer=marker__pb2.MarkerPublicationRequest.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
 
@@ -327,7 +327,7 @@ def add_ArmServiceServicer_to_server(servicer, server):
             ),
             'PublishMarker': grpc.unary_unary_rpc_method_handler(
                     servicer.PublishMarker,
-                    request_deserializer=marker__pb2.MarkerArray.FromString,
+                    request_deserializer=marker__pb2.MarkerPublicationRequest.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
     }
@@ -658,7 +658,7 @@ class ArmService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.arm.ArmService/PublishMarker',
-            marker__pb2.MarkerArray.SerializeToString,
+            marker__pb2.MarkerPublicationRequest.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
