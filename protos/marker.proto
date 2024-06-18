@@ -6,7 +6,7 @@ import "kinematics.proto";
 package reachy.utils.markers;
 
 message Marker {
-    kinematics.Matrix4x4 pose = 1;
+    MarkerPose pose = 1;
     MarkerColor color = 2;
     MarkerShape shape = 3;
     int32 id = 4;
@@ -23,6 +23,11 @@ message MarkerColor {
     google.protobuf.FloatValue g = 2;
     google.protobuf.FloatValue b = 3;
     google.protobuf.FloatValue a = 4;
+}
+
+message MarkerPose {
+    kinematics.Point position = 1;
+    kinematics.Quaternion orientation = 2;
 }
 
 message MarkerScale {

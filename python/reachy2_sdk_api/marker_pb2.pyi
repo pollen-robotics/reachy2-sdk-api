@@ -79,7 +79,7 @@ class Marker(google.protobuf.message.Message):
     shape: global___MarkerShape.ValueType
     id: builtins.int
     @property
-    def pose(self) -> kinematics_pb2.Matrix4x4: ...
+    def pose(self) -> global___MarkerPose: ...
     @property
     def color(self) -> global___MarkerColor: ...
     @property
@@ -89,7 +89,7 @@ class Marker(google.protobuf.message.Message):
     def __init__(
         self,
         *,
-        pose: kinematics_pb2.Matrix4x4 | None = ...,
+        pose: global___MarkerPose | None = ...,
         color: global___MarkerColor | None = ...,
         shape: global___MarkerShape.ValueType = ...,
         id: builtins.int = ...,
@@ -145,6 +145,27 @@ class MarkerColor(google.protobuf.message.Message):
     def ClearField(self, field_name: typing.Literal["a", b"a", "b", b"b", "g", b"g", "r", b"r"]) -> None: ...
 
 global___MarkerColor = MarkerColor
+
+@typing.final
+class MarkerPose(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    POSITION_FIELD_NUMBER: builtins.int
+    ORIENTATION_FIELD_NUMBER: builtins.int
+    @property
+    def position(self) -> kinematics_pb2.Point: ...
+    @property
+    def orientation(self) -> kinematics_pb2.Quaternion: ...
+    def __init__(
+        self,
+        *,
+        position: kinematics_pb2.Point | None = ...,
+        orientation: kinematics_pb2.Quaternion | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing.Literal["orientation", b"orientation", "position", b"position"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing.Literal["orientation", b"orientation", "position", b"position"]) -> None: ...
+
+global___MarkerPose = MarkerPose
 
 @typing.final
 class MarkerScale(google.protobuf.message.Message):
