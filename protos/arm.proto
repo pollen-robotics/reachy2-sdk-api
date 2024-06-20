@@ -38,6 +38,14 @@ enum IKMode {
     LOW_ELBOW = 1;
 }
 
+enum ReachabilityError {
+    DISTANCE_LIMIT = 0;
+    ELBOW_LIMIT = 1;
+    WRIST_LIMIT = 2;
+    TORSO_COLLISION = 3;
+    OTHER = 4;
+}
+
 message ArmState {
     google.protobuf.Timestamp timestamp = 1;
 
@@ -48,6 +56,15 @@ message ArmState {
     component.orbita2d.Orbita2dState shoulder_state = 4;
     component.orbita2d.Orbita2dState elbow_state = 5;
     component.orbita3d.Orbita3dState wrist_state = 6;
+
+    repeated ReachabilityAnswer reachability = 10;
+}
+
+message ReachabilityAnswer {
+    google.protobuf.Int32Value order_id = 1;
+    google.protobuf.BoolValue is_reachable = 2;
+
+    ReachabilityError description = 3;
 }
 
 message ArmDescription {
