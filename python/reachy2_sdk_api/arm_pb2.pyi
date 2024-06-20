@@ -79,6 +79,27 @@ UNCONSTRAINED: IKMode.ValueType  # 0
 LOW_ELBOW: IKMode.ValueType  # 1
 global___IKMode = IKMode
 
+class _ReachabilityError:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _ReachabilityErrorEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_ReachabilityError.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    DISTANCE_LIMIT: _ReachabilityError.ValueType  # 0
+    ELBOW_LIMIT: _ReachabilityError.ValueType  # 1
+    WRIST_LIMIT: _ReachabilityError.ValueType  # 2
+    TORSO_COLLISION: _ReachabilityError.ValueType  # 3
+    OTHER: _ReachabilityError.ValueType  # 4
+
+class ReachabilityError(_ReachabilityError, metaclass=_ReachabilityErrorEnumTypeWrapper): ...
+
+DISTANCE_LIMIT: ReachabilityError.ValueType  # 0
+ELBOW_LIMIT: ReachabilityError.ValueType  # 1
+WRIST_LIMIT: ReachabilityError.ValueType  # 2
+TORSO_COLLISION: ReachabilityError.ValueType  # 3
+OTHER: ReachabilityError.ValueType  # 4
+global___ReachabilityError = ReachabilityError
+
 @typing_extensions.final
 class ArmState(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
@@ -89,6 +110,7 @@ class ArmState(google.protobuf.message.Message):
     SHOULDER_STATE_FIELD_NUMBER: builtins.int
     ELBOW_STATE_FIELD_NUMBER: builtins.int
     WRIST_STATE_FIELD_NUMBER: builtins.int
+    REACHABILITY_FIELD_NUMBER: builtins.int
     @property
     def timestamp(self) -> google.protobuf.timestamp_pb2.Timestamp: ...
     @property
@@ -100,6 +122,8 @@ class ArmState(google.protobuf.message.Message):
     def elbow_state(self) -> orbita2d_pb2.Orbita2dState: ...
     @property
     def wrist_state(self) -> orbita3d_pb2.Orbita3dState: ...
+    @property
+    def reachability(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___ReachabilityAnswer]: ...
     def __init__(
         self,
         *,
@@ -109,11 +133,36 @@ class ArmState(google.protobuf.message.Message):
         shoulder_state: orbita2d_pb2.Orbita2dState | None = ...,
         elbow_state: orbita2d_pb2.Orbita2dState | None = ...,
         wrist_state: orbita3d_pb2.Orbita3dState | None = ...,
+        reachability: collections.abc.Iterable[global___ReachabilityAnswer] | None = ...,
     ) -> None: ...
     def HasField(self, field_name: typing_extensions.Literal["elbow_state", b"elbow_state", "id", b"id", "shoulder_state", b"shoulder_state", "timestamp", b"timestamp", "wrist_state", b"wrist_state"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["activated", b"activated", "elbow_state", b"elbow_state", "id", b"id", "shoulder_state", b"shoulder_state", "timestamp", b"timestamp", "wrist_state", b"wrist_state"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["activated", b"activated", "elbow_state", b"elbow_state", "id", b"id", "reachability", b"reachability", "shoulder_state", b"shoulder_state", "timestamp", b"timestamp", "wrist_state", b"wrist_state"]) -> None: ...
 
 global___ArmState = ArmState
+
+@typing_extensions.final
+class ReachabilityAnswer(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    ORDER_ID_FIELD_NUMBER: builtins.int
+    IS_REACHABLE_FIELD_NUMBER: builtins.int
+    DESCRIPTION_FIELD_NUMBER: builtins.int
+    @property
+    def order_id(self) -> google.protobuf.wrappers_pb2.Int32Value: ...
+    @property
+    def is_reachable(self) -> google.protobuf.wrappers_pb2.BoolValue: ...
+    description: global___ReachabilityError.ValueType
+    def __init__(
+        self,
+        *,
+        order_id: google.protobuf.wrappers_pb2.Int32Value | None = ...,
+        is_reachable: google.protobuf.wrappers_pb2.BoolValue | None = ...,
+        description: global___ReachabilityError.ValueType = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["is_reachable", b"is_reachable", "order_id", b"order_id"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["description", b"description", "is_reachable", b"is_reachable", "order_id", b"order_id"]) -> None: ...
+
+global___ReachabilityAnswer = ReachabilityAnswer
 
 @typing_extensions.final
 class ArmDescription(google.protobuf.message.Message):
