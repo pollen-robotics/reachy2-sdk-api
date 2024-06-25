@@ -33,9 +33,14 @@ enum ArmField {
     ALL = 15;
 }
 
-enum IKMode {
+enum IKConstrainedMode {
     UNCONSTRAINED = 0;
     LOW_ELBOW = 1;
+}
+
+enum IKContinuousMode {
+    CONTINUOUS = 0;
+    DISCRETE = 1;
 }
 
 enum ReachabilityError {
@@ -98,9 +103,10 @@ message ArmCartesianGoal {
     kinematics.ExtEulerAnglesTolerances orientation_tolerance = 4;
 
     ArmPosition q0 = 5;
-    IKMode mode = 6;
+    IKConstrainedMode constrained_mode = 6;
     google.protobuf.FloatValue preferred_theta = 7;
     google.protobuf.FloatValue d_theta_max  = 8;
+    IKContinuousMode continuous_mode = 9;
 
     google.protobuf.FloatValue duration = 10;
 
