@@ -64,20 +64,35 @@ PID: ArmField.ValueType  # 12
 ALL: ArmField.ValueType  # 15
 global___ArmField = ArmField
 
-class _IKMode:
+class _IKConstrainedMode:
     ValueType = typing.NewType("ValueType", builtins.int)
     V: typing_extensions.TypeAlias = ValueType
 
-class _IKModeEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_IKMode.ValueType], builtins.type):
+class _IKConstrainedModeEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_IKConstrainedMode.ValueType], builtins.type):
     DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
-    UNCONSTRAINED: _IKMode.ValueType  # 0
-    LOW_ELBOW: _IKMode.ValueType  # 1
+    UNCONSTRAINED: _IKConstrainedMode.ValueType  # 0
+    LOW_ELBOW: _IKConstrainedMode.ValueType  # 1
 
-class IKMode(_IKMode, metaclass=_IKModeEnumTypeWrapper): ...
+class IKConstrainedMode(_IKConstrainedMode, metaclass=_IKConstrainedModeEnumTypeWrapper): ...
 
-UNCONSTRAINED: IKMode.ValueType  # 0
-LOW_ELBOW: IKMode.ValueType  # 1
-global___IKMode = IKMode
+UNCONSTRAINED: IKConstrainedMode.ValueType  # 0
+LOW_ELBOW: IKConstrainedMode.ValueType  # 1
+global___IKConstrainedMode = IKConstrainedMode
+
+class _IKContinuousMode:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _IKContinuousModeEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_IKContinuousMode.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    CONTINUOUS: _IKContinuousMode.ValueType  # 0
+    DISCRETE: _IKContinuousMode.ValueType  # 1
+
+class IKContinuousMode(_IKContinuousMode, metaclass=_IKContinuousModeEnumTypeWrapper): ...
+
+CONTINUOUS: IKContinuousMode.ValueType  # 0
+DISCRETE: IKContinuousMode.ValueType  # 1
+global___IKContinuousMode = IKContinuousMode
 
 class _ReachabilityError:
     ValueType = typing.NewType("ValueType", builtins.int)
@@ -264,9 +279,10 @@ class ArmCartesianGoal(google.protobuf.message.Message):
     POSITION_TOLERANCE_FIELD_NUMBER: builtins.int
     ORIENTATION_TOLERANCE_FIELD_NUMBER: builtins.int
     Q0_FIELD_NUMBER: builtins.int
-    MODE_FIELD_NUMBER: builtins.int
+    CONSTRAINED_MODE_FIELD_NUMBER: builtins.int
     PREFERRED_THETA_FIELD_NUMBER: builtins.int
     D_THETA_MAX_FIELD_NUMBER: builtins.int
+    CONTINUOUS_MODE_FIELD_NUMBER: builtins.int
     DURATION_FIELD_NUMBER: builtins.int
     ORDER_ID_FIELD_NUMBER: builtins.int
     @property
@@ -279,11 +295,12 @@ class ArmCartesianGoal(google.protobuf.message.Message):
     def orientation_tolerance(self) -> kinematics_pb2.ExtEulerAnglesTolerances: ...
     @property
     def q0(self) -> global___ArmPosition: ...
-    mode: global___IKMode.ValueType
+    constrained_mode: global___IKConstrainedMode.ValueType
     @property
     def preferred_theta(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
     @property
     def d_theta_max(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    continuous_mode: global___IKContinuousMode.ValueType
     @property
     def duration(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
     @property
@@ -296,14 +313,15 @@ class ArmCartesianGoal(google.protobuf.message.Message):
         position_tolerance: kinematics_pb2.PointDistanceTolerances | None = ...,
         orientation_tolerance: kinematics_pb2.ExtEulerAnglesTolerances | None = ...,
         q0: global___ArmPosition | None = ...,
-        mode: global___IKMode.ValueType = ...,
+        constrained_mode: global___IKConstrainedMode.ValueType = ...,
         preferred_theta: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         d_theta_max: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        continuous_mode: global___IKContinuousMode.ValueType = ...,
         duration: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         order_id: google.protobuf.wrappers_pb2.Int32Value | None = ...,
     ) -> None: ...
     def HasField(self, field_name: typing_extensions.Literal["d_theta_max", b"d_theta_max", "duration", b"duration", "goal_pose", b"goal_pose", "id", b"id", "order_id", b"order_id", "orientation_tolerance", b"orientation_tolerance", "position_tolerance", b"position_tolerance", "preferred_theta", b"preferred_theta", "q0", b"q0"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["d_theta_max", b"d_theta_max", "duration", b"duration", "goal_pose", b"goal_pose", "id", b"id", "mode", b"mode", "order_id", b"order_id", "orientation_tolerance", b"orientation_tolerance", "position_tolerance", b"position_tolerance", "preferred_theta", b"preferred_theta", "q0", b"q0"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["constrained_mode", b"constrained_mode", "continuous_mode", b"continuous_mode", "d_theta_max", b"d_theta_max", "duration", b"duration", "goal_pose", b"goal_pose", "id", b"id", "order_id", b"order_id", "orientation_tolerance", b"orientation_tolerance", "position_tolerance", b"position_tolerance", "preferred_theta", b"preferred_theta", "q0", b"q0"]) -> None: ...
 
 global___ArmCartesianGoal = ArmCartesianGoal
 
