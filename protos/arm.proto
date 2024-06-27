@@ -34,21 +34,25 @@ enum ArmField {
 }
 
 enum IKConstrainedMode {
-    UNCONSTRAINED = 0;
-    LOW_ELBOW = 1;
+    UNDEFINED = 0;
+    UNCONSTRAINED = 1;
+    LOW_ELBOW = 2;
 }
 
 enum IKContinuousMode {
-    CONTINUOUS = 0;
-    DISCRETE = 1;
+    UNDEFINED = 0;
+    CONTINUOUS = 1;
+    DISCRETE = 2;
 }
 
 enum ReachabilityError {
-    DISTANCE_LIMIT = 0;
-    ELBOW_LIMIT = 1;
-    WRIST_LIMIT = 2;
-    TORSO_COLLISION = 3;
-    OTHER = 4;
+    UNDEFINED = 0;
+    DISTANCE_LIMIT = 1;
+    SHOULDER_LIMIT = 2;
+    ELBOW_LIMIT = 3;
+    WRIST_LIMIT = 4;
+    CONTINUITY_LIMIT = 5;
+    OTHER = 6;
 }
 
 message ArmState {
