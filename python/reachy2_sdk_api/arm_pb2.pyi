@@ -70,13 +70,15 @@ class _IKConstrainedMode:
 
 class _IKConstrainedModeEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_IKConstrainedMode.ValueType], builtins.type):
     DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
-    UNCONSTRAINED: _IKConstrainedMode.ValueType  # 0
-    LOW_ELBOW: _IKConstrainedMode.ValueType  # 1
+    UNDEFINED_CONSTRAINED_MODE: _IKConstrainedMode.ValueType  # 0
+    UNCONSTRAINED: _IKConstrainedMode.ValueType  # 1
+    LOW_ELBOW: _IKConstrainedMode.ValueType  # 2
 
 class IKConstrainedMode(_IKConstrainedMode, metaclass=_IKConstrainedModeEnumTypeWrapper): ...
 
-UNCONSTRAINED: IKConstrainedMode.ValueType  # 0
-LOW_ELBOW: IKConstrainedMode.ValueType  # 1
+UNDEFINED_CONSTRAINED_MODE: IKConstrainedMode.ValueType  # 0
+UNCONSTRAINED: IKConstrainedMode.ValueType  # 1
+LOW_ELBOW: IKConstrainedMode.ValueType  # 2
 global___IKConstrainedMode = IKConstrainedMode
 
 class _IKContinuousMode:
@@ -85,13 +87,15 @@ class _IKContinuousMode:
 
 class _IKContinuousModeEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_IKContinuousMode.ValueType], builtins.type):
     DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
-    CONTINUOUS: _IKContinuousMode.ValueType  # 0
-    DISCRETE: _IKContinuousMode.ValueType  # 1
+    UNDEFINED_CONTINUOUS_MODE: _IKContinuousMode.ValueType  # 0
+    CONTINUOUS: _IKContinuousMode.ValueType  # 1
+    DISCRETE: _IKContinuousMode.ValueType  # 2
 
 class IKContinuousMode(_IKContinuousMode, metaclass=_IKContinuousModeEnumTypeWrapper): ...
 
-CONTINUOUS: IKContinuousMode.ValueType  # 0
-DISCRETE: IKContinuousMode.ValueType  # 1
+UNDEFINED_CONTINUOUS_MODE: IKContinuousMode.ValueType  # 0
+CONTINUOUS: IKContinuousMode.ValueType  # 1
+DISCRETE: IKContinuousMode.ValueType  # 2
 global___IKContinuousMode = IKContinuousMode
 
 class _ReachabilityError:
@@ -100,19 +104,23 @@ class _ReachabilityError:
 
 class _ReachabilityErrorEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_ReachabilityError.ValueType], builtins.type):
     DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
-    DISTANCE_LIMIT: _ReachabilityError.ValueType  # 0
-    ELBOW_LIMIT: _ReachabilityError.ValueType  # 1
-    WRIST_LIMIT: _ReachabilityError.ValueType  # 2
-    TORSO_COLLISION: _ReachabilityError.ValueType  # 3
-    OTHER: _ReachabilityError.ValueType  # 4
+    NO_ERROR: _ReachabilityError.ValueType  # 0
+    DISTANCE_LIMIT: _ReachabilityError.ValueType  # 1
+    SHOULDER_LIMIT: _ReachabilityError.ValueType  # 2
+    ELBOW_LIMIT: _ReachabilityError.ValueType  # 3
+    WRIST_LIMIT: _ReachabilityError.ValueType  # 4
+    CONTINUITY_LIMIT: _ReachabilityError.ValueType  # 5
+    OTHER: _ReachabilityError.ValueType  # 6
 
 class ReachabilityError(_ReachabilityError, metaclass=_ReachabilityErrorEnumTypeWrapper): ...
 
-DISTANCE_LIMIT: ReachabilityError.ValueType  # 0
-ELBOW_LIMIT: ReachabilityError.ValueType  # 1
-WRIST_LIMIT: ReachabilityError.ValueType  # 2
-TORSO_COLLISION: ReachabilityError.ValueType  # 3
-OTHER: ReachabilityError.ValueType  # 4
+NO_ERROR: ReachabilityError.ValueType  # 0
+DISTANCE_LIMIT: ReachabilityError.ValueType  # 1
+SHOULDER_LIMIT: ReachabilityError.ValueType  # 2
+ELBOW_LIMIT: ReachabilityError.ValueType  # 3
+WRIST_LIMIT: ReachabilityError.ValueType  # 4
+CONTINUITY_LIMIT: ReachabilityError.ValueType  # 5
+OTHER: ReachabilityError.ValueType  # 6
 global___ReachabilityError = ReachabilityError
 
 @typing_extensions.final
