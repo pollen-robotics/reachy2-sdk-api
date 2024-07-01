@@ -55,7 +55,25 @@ message ReachyState {
     mobile.base.utility.MobileBaseState mobile_base_state = 8;
 }
 
+message ReachyStatus {
+    google.protobuf.Timestamp timestamp = 1;
+
+    ReachyId id = 2;
+
+    reachy.part.arm.ArmStatus l_arm_status = 3;
+    reachy.part.arm.ArmStatus r_arm_status = 4;
+    reachy.part.head.HeadStatus head_status = 5;
+    reachy.part.hand.HandStatus l_hand_status = 6;
+    reachy.part.hand.HandStatus r_hand_status = 7;
+    mobile.base.utility.MobileBaseStatus mobile_base_status = 8;
+}
+
 message ReachyStreamStateRequest {
+    ReachyId id = 1;
+    float publish_frequency = 2;
+}
+
+message ReachyStreamAuditRequest {
     ReachyId id = 1;
     float publish_frequency = 2;
 }
@@ -65,4 +83,7 @@ service ReachyService {
 
     rpc GetReachyState (ReachyId) returns (ReachyState);
     rpc StreamReachyState (ReachyStreamStateRequest) returns (stream ReachyState);
+
+    rpc Audit (ReachyId) returns (ReachyStatus);
+    rpc StreamAudit (ReachyStreamAuditRequest) returns (stream ReachyStatus);
 }

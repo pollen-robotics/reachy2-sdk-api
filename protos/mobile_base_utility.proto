@@ -4,6 +4,7 @@ import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
 import "mobile_base_lidar.proto";
 import "mobile_base_mobility.proto";
+import "error.proto";
 
 package mobile.base.utility;
 
@@ -61,6 +62,10 @@ message MobileBaseVersion {
     google.protobuf.FloatValue model_version = 1;
 }
 
+message MobileBaseStatus {
+    repeated error.Error errors = 1;
+}
+
 service MobileBaseUtilityService {
     rpc SetControlMode(ControlModeCommand) returns (mobile.base.mobility.MobilityServiceAck);
     rpc GetControlMode(google.protobuf.Empty) returns (ControlModeCommand);
@@ -71,4 +76,5 @@ service MobileBaseUtilityService {
     rpc ResetOdometry(google.protobuf.Empty) returns (mobile.base.mobility.MobilityServiceAck);
     rpc GetMobileBase(google.protobuf.Empty) returns (MobileBase);
     rpc GetState(google.protobuf.Empty) returns (MobileBaseState);
+    rpc Audit (google.protobuf.Empty) returns (MobileBaseStatus);
 }

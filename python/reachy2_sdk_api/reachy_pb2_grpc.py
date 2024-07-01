@@ -30,6 +30,16 @@ class ReachyServiceStub(object):
                 request_serializer=reachy__pb2.ReachyStreamStateRequest.SerializeToString,
                 response_deserializer=reachy__pb2.ReachyState.FromString,
                 )
+        self.Audit = channel.unary_unary(
+                '/reachy.ReachyService/Audit',
+                request_serializer=reachy__pb2.ReachyId.SerializeToString,
+                response_deserializer=reachy__pb2.ReachyStatus.FromString,
+                )
+        self.StreamAudit = channel.unary_stream(
+                '/reachy.ReachyService/StreamAudit',
+                request_serializer=reachy__pb2.ReachyStreamAuditRequest.SerializeToString,
+                response_deserializer=reachy__pb2.ReachyStatus.FromString,
+                )
 
 
 class ReachyServiceServicer(object):
@@ -53,6 +63,18 @@ class ReachyServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def Audit(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def StreamAudit(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
 
 def add_ReachyServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
@@ -70,6 +92,16 @@ def add_ReachyServiceServicer_to_server(servicer, server):
                     servicer.StreamReachyState,
                     request_deserializer=reachy__pb2.ReachyStreamStateRequest.FromString,
                     response_serializer=reachy__pb2.ReachyState.SerializeToString,
+            ),
+            'Audit': grpc.unary_unary_rpc_method_handler(
+                    servicer.Audit,
+                    request_deserializer=reachy__pb2.ReachyId.FromString,
+                    response_serializer=reachy__pb2.ReachyStatus.SerializeToString,
+            ),
+            'StreamAudit': grpc.unary_stream_rpc_method_handler(
+                    servicer.StreamAudit,
+                    request_deserializer=reachy__pb2.ReachyStreamAuditRequest.FromString,
+                    response_serializer=reachy__pb2.ReachyStatus.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -129,5 +161,39 @@ class ReachyService(object):
         return grpc.experimental.unary_stream(request, target, '/reachy.ReachyService/StreamReachyState',
             reachy__pb2.ReachyStreamStateRequest.SerializeToString,
             reachy__pb2.ReachyState.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def Audit(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/reachy.ReachyService/Audit',
+            reachy__pb2.ReachyId.SerializeToString,
+            reachy__pb2.ReachyStatus.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def StreamAudit(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_stream(request, target, '/reachy.ReachyService/StreamAudit',
+            reachy__pb2.ReachyStreamAuditRequest.SerializeToString,
+            reachy__pb2.ReachyStatus.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
