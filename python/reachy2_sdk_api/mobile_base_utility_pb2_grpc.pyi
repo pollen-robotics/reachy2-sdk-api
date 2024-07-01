@@ -57,6 +57,10 @@ class MobileBaseUtilityServiceStub:
         google.protobuf.empty_pb2.Empty,
         mobile_base_utility_pb2.MobileBaseState,
     ]
+    Audit: grpc.UnaryUnaryMultiCallable[
+        google.protobuf.empty_pb2.Empty,
+        mobile_base_utility_pb2.MobileBaseStatus,
+    ]
 
 class MobileBaseUtilityServiceAsyncStub:
     SetControlMode: grpc.aio.UnaryUnaryMultiCallable[
@@ -94,6 +98,10 @@ class MobileBaseUtilityServiceAsyncStub:
     GetState: grpc.aio.UnaryUnaryMultiCallable[
         google.protobuf.empty_pb2.Empty,
         mobile_base_utility_pb2.MobileBaseState,
+    ]
+    Audit: grpc.aio.UnaryUnaryMultiCallable[
+        google.protobuf.empty_pb2.Empty,
+        mobile_base_utility_pb2.MobileBaseStatus,
     ]
 
 class MobileBaseUtilityServiceServicer(metaclass=abc.ABCMeta):
@@ -151,5 +159,11 @@ class MobileBaseUtilityServiceServicer(metaclass=abc.ABCMeta):
         request: google.protobuf.empty_pb2.Empty,
         context: _ServicerContext,
     ) -> typing.Union[mobile_base_utility_pb2.MobileBaseState, collections.abc.Awaitable[mobile_base_utility_pb2.MobileBaseState]]: ...
+    @abc.abstractmethod
+    def Audit(
+        self,
+        request: google.protobuf.empty_pb2.Empty,
+        context: _ServicerContext,
+    ) -> typing.Union[mobile_base_utility_pb2.MobileBaseStatus, collections.abc.Awaitable[mobile_base_utility_pb2.MobileBaseStatus]]: ...
 
 def add_MobileBaseUtilityServiceServicer_to_server(servicer: MobileBaseUtilityServiceServicer, server: typing.Union[grpc.Server, grpc.aio.Server]) -> None: ...

@@ -61,6 +61,8 @@ namespace Mobile.Base.Utility {
     static readonly grpc::Marshaller<global::Mobile.Base.Utility.MobileBase> __Marshaller_mobile_base_utility_MobileBase = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mobile.Base.Utility.MobileBase.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Mobile.Base.Utility.MobileBaseState> __Marshaller_mobile_base_utility_MobileBaseState = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mobile.Base.Utility.MobileBaseState.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Mobile.Base.Utility.MobileBaseStatus> __Marshaller_mobile_base_utility_MobileBaseStatus = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mobile.Base.Utility.MobileBaseStatus.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Mobile.Base.Utility.ControlModeCommand, global::Mobile.Base.Mobility.MobilityServiceAck> __Method_SetControlMode = new grpc::Method<global::Mobile.Base.Utility.ControlModeCommand, global::Mobile.Base.Mobility.MobilityServiceAck>(
@@ -134,6 +136,14 @@ namespace Mobile.Base.Utility {
         __Marshaller_google_protobuf_Empty,
         __Marshaller_mobile_base_utility_MobileBaseState);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.MobileBaseStatus> __Method_Audit = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.MobileBaseStatus>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "Audit",
+        __Marshaller_google_protobuf_Empty,
+        __Marshaller_mobile_base_utility_MobileBaseStatus);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -194,6 +204,12 @@ namespace Mobile.Base.Utility {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Mobile.Base.Utility.MobileBaseState> GetState(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Mobile.Base.Utility.MobileBaseStatus> Audit(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -407,6 +423,26 @@ namespace Mobile.Base.Utility {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetState, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Mobile.Base.Utility.MobileBaseStatus Audit(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return Audit(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Mobile.Base.Utility.MobileBaseStatus Audit(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_Audit, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Utility.MobileBaseStatus> AuditAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AuditAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Utility.MobileBaseStatus> AuditAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_Audit, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override MobileBaseUtilityServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -429,7 +465,8 @@ namespace Mobile.Base.Utility {
           .AddMethod(__Method_GetOdometry, serviceImpl.GetOdometry)
           .AddMethod(__Method_ResetOdometry, serviceImpl.ResetOdometry)
           .AddMethod(__Method_GetMobileBase, serviceImpl.GetMobileBase)
-          .AddMethod(__Method_GetState, serviceImpl.GetState).Build();
+          .AddMethod(__Method_GetState, serviceImpl.GetState)
+          .AddMethod(__Method_Audit, serviceImpl.Audit).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -448,6 +485,7 @@ namespace Mobile.Base.Utility {
       serviceBinder.AddMethod(__Method_ResetOdometry, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Mobility.MobilityServiceAck>(serviceImpl.ResetOdometry));
       serviceBinder.AddMethod(__Method_GetMobileBase, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.MobileBase>(serviceImpl.GetMobileBase));
       serviceBinder.AddMethod(__Method_GetState, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.MobileBaseState>(serviceImpl.GetState));
+      serviceBinder.AddMethod(__Method_Audit, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.MobileBaseStatus>(serviceImpl.Audit));
     }
 
   }
