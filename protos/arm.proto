@@ -33,6 +33,28 @@ enum ArmField {
     ALL = 15;
 }
 
+enum IKConstrainedMode {
+    UNDEFINED_CONSTRAINED_MODE = 0;
+    UNCONSTRAINED = 1;
+    LOW_ELBOW = 2;
+}
+
+enum IKContinuousMode {
+    UNDEFINED_CONTINUOUS_MODE = 0;
+    CONTINUOUS = 1;
+    DISCRETE = 2;
+}
+
+enum ReachabilityError {
+    NO_ERROR = 0;
+    DISTANCE_LIMIT = 1;
+    SHOULDER_LIMIT = 2;
+    ELBOW_LIMIT = 3;
+    WRIST_LIMIT = 4;
+    CONTINUITY_LIMIT = 5;
+    OTHER = 6;
+}
+
 message ArmState {
     google.protobuf.Timestamp timestamp = 1;
 
@@ -43,6 +65,15 @@ message ArmState {
     component.orbita2d.Orbita2dState shoulder_state = 4;
     component.orbita2d.Orbita2dState elbow_state = 5;
     component.orbita3d.Orbita3dState wrist_state = 6;
+
+    repeated ReachabilityAnswer reachability = 10;
+}
+
+message ReachabilityAnswer {
+    google.protobuf.Int32Value order_id = 1;
+    google.protobuf.BoolValue is_reachable = 2;
+
+    ReachabilityError description = 3;
 }
 
 message ArmDescription {
@@ -76,7 +107,14 @@ message ArmCartesianGoal {
     kinematics.ExtEulerAnglesTolerances orientation_tolerance = 4;
 
     ArmPosition q0 = 5;
+    IKConstrainedMode constrained_mode = 6;
+    google.protobuf.FloatValue preferred_theta = 7;
+    google.protobuf.FloatValue d_theta_max  = 8;
+    IKContinuousMode continuous_mode = 9;
+
     google.protobuf.FloatValue duration = 10;
+
+    google.protobuf.Int32Value order_id = 15;
 }
 
 message ArmJointGoal {

@@ -64,6 +64,65 @@ PID: ArmField.ValueType  # 12
 ALL: ArmField.ValueType  # 15
 global___ArmField = ArmField
 
+class _IKConstrainedMode:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _IKConstrainedModeEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_IKConstrainedMode.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    UNDEFINED_CONSTRAINED_MODE: _IKConstrainedMode.ValueType  # 0
+    UNCONSTRAINED: _IKConstrainedMode.ValueType  # 1
+    LOW_ELBOW: _IKConstrainedMode.ValueType  # 2
+
+class IKConstrainedMode(_IKConstrainedMode, metaclass=_IKConstrainedModeEnumTypeWrapper): ...
+
+UNDEFINED_CONSTRAINED_MODE: IKConstrainedMode.ValueType  # 0
+UNCONSTRAINED: IKConstrainedMode.ValueType  # 1
+LOW_ELBOW: IKConstrainedMode.ValueType  # 2
+global___IKConstrainedMode = IKConstrainedMode
+
+class _IKContinuousMode:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _IKContinuousModeEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_IKContinuousMode.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    UNDEFINED_CONTINUOUS_MODE: _IKContinuousMode.ValueType  # 0
+    CONTINUOUS: _IKContinuousMode.ValueType  # 1
+    DISCRETE: _IKContinuousMode.ValueType  # 2
+
+class IKContinuousMode(_IKContinuousMode, metaclass=_IKContinuousModeEnumTypeWrapper): ...
+
+UNDEFINED_CONTINUOUS_MODE: IKContinuousMode.ValueType  # 0
+CONTINUOUS: IKContinuousMode.ValueType  # 1
+DISCRETE: IKContinuousMode.ValueType  # 2
+global___IKContinuousMode = IKContinuousMode
+
+class _ReachabilityError:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _ReachabilityErrorEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_ReachabilityError.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    NO_ERROR: _ReachabilityError.ValueType  # 0
+    DISTANCE_LIMIT: _ReachabilityError.ValueType  # 1
+    SHOULDER_LIMIT: _ReachabilityError.ValueType  # 2
+    ELBOW_LIMIT: _ReachabilityError.ValueType  # 3
+    WRIST_LIMIT: _ReachabilityError.ValueType  # 4
+    CONTINUITY_LIMIT: _ReachabilityError.ValueType  # 5
+    OTHER: _ReachabilityError.ValueType  # 6
+
+class ReachabilityError(_ReachabilityError, metaclass=_ReachabilityErrorEnumTypeWrapper): ...
+
+NO_ERROR: ReachabilityError.ValueType  # 0
+DISTANCE_LIMIT: ReachabilityError.ValueType  # 1
+SHOULDER_LIMIT: ReachabilityError.ValueType  # 2
+ELBOW_LIMIT: ReachabilityError.ValueType  # 3
+WRIST_LIMIT: ReachabilityError.ValueType  # 4
+CONTINUITY_LIMIT: ReachabilityError.ValueType  # 5
+OTHER: ReachabilityError.ValueType  # 6
+global___ReachabilityError = ReachabilityError
+
 @typing_extensions.final
 class ArmState(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
@@ -74,6 +133,7 @@ class ArmState(google.protobuf.message.Message):
     SHOULDER_STATE_FIELD_NUMBER: builtins.int
     ELBOW_STATE_FIELD_NUMBER: builtins.int
     WRIST_STATE_FIELD_NUMBER: builtins.int
+    REACHABILITY_FIELD_NUMBER: builtins.int
     @property
     def timestamp(self) -> google.protobuf.timestamp_pb2.Timestamp: ...
     @property
@@ -85,6 +145,8 @@ class ArmState(google.protobuf.message.Message):
     def elbow_state(self) -> orbita2d_pb2.Orbita2dState: ...
     @property
     def wrist_state(self) -> orbita3d_pb2.Orbita3dState: ...
+    @property
+    def reachability(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___ReachabilityAnswer]: ...
     def __init__(
         self,
         *,
@@ -94,11 +156,36 @@ class ArmState(google.protobuf.message.Message):
         shoulder_state: orbita2d_pb2.Orbita2dState | None = ...,
         elbow_state: orbita2d_pb2.Orbita2dState | None = ...,
         wrist_state: orbita3d_pb2.Orbita3dState | None = ...,
+        reachability: collections.abc.Iterable[global___ReachabilityAnswer] | None = ...,
     ) -> None: ...
     def HasField(self, field_name: typing_extensions.Literal["elbow_state", b"elbow_state", "id", b"id", "shoulder_state", b"shoulder_state", "timestamp", b"timestamp", "wrist_state", b"wrist_state"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["activated", b"activated", "elbow_state", b"elbow_state", "id", b"id", "shoulder_state", b"shoulder_state", "timestamp", b"timestamp", "wrist_state", b"wrist_state"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["activated", b"activated", "elbow_state", b"elbow_state", "id", b"id", "reachability", b"reachability", "shoulder_state", b"shoulder_state", "timestamp", b"timestamp", "wrist_state", b"wrist_state"]) -> None: ...
 
 global___ArmState = ArmState
+
+@typing_extensions.final
+class ReachabilityAnswer(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    ORDER_ID_FIELD_NUMBER: builtins.int
+    IS_REACHABLE_FIELD_NUMBER: builtins.int
+    DESCRIPTION_FIELD_NUMBER: builtins.int
+    @property
+    def order_id(self) -> google.protobuf.wrappers_pb2.Int32Value: ...
+    @property
+    def is_reachable(self) -> google.protobuf.wrappers_pb2.BoolValue: ...
+    description: global___ReachabilityError.ValueType
+    def __init__(
+        self,
+        *,
+        order_id: google.protobuf.wrappers_pb2.Int32Value | None = ...,
+        is_reachable: google.protobuf.wrappers_pb2.BoolValue | None = ...,
+        description: global___ReachabilityError.ValueType = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["is_reachable", b"is_reachable", "order_id", b"order_id"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["description", b"description", "is_reachable", b"is_reachable", "order_id", b"order_id"]) -> None: ...
+
+global___ReachabilityAnswer = ReachabilityAnswer
 
 @typing_extensions.final
 class ArmDescription(google.protobuf.message.Message):
@@ -200,7 +287,12 @@ class ArmCartesianGoal(google.protobuf.message.Message):
     POSITION_TOLERANCE_FIELD_NUMBER: builtins.int
     ORIENTATION_TOLERANCE_FIELD_NUMBER: builtins.int
     Q0_FIELD_NUMBER: builtins.int
+    CONSTRAINED_MODE_FIELD_NUMBER: builtins.int
+    PREFERRED_THETA_FIELD_NUMBER: builtins.int
+    D_THETA_MAX_FIELD_NUMBER: builtins.int
+    CONTINUOUS_MODE_FIELD_NUMBER: builtins.int
     DURATION_FIELD_NUMBER: builtins.int
+    ORDER_ID_FIELD_NUMBER: builtins.int
     @property
     def id(self) -> part_pb2.PartId: ...
     @property
@@ -211,8 +303,16 @@ class ArmCartesianGoal(google.protobuf.message.Message):
     def orientation_tolerance(self) -> kinematics_pb2.ExtEulerAnglesTolerances: ...
     @property
     def q0(self) -> global___ArmPosition: ...
+    constrained_mode: global___IKConstrainedMode.ValueType
+    @property
+    def preferred_theta(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    @property
+    def d_theta_max(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    continuous_mode: global___IKContinuousMode.ValueType
     @property
     def duration(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    @property
+    def order_id(self) -> google.protobuf.wrappers_pb2.Int32Value: ...
     def __init__(
         self,
         *,
@@ -221,10 +321,15 @@ class ArmCartesianGoal(google.protobuf.message.Message):
         position_tolerance: kinematics_pb2.PointDistanceTolerances | None = ...,
         orientation_tolerance: kinematics_pb2.ExtEulerAnglesTolerances | None = ...,
         q0: global___ArmPosition | None = ...,
+        constrained_mode: global___IKConstrainedMode.ValueType = ...,
+        preferred_theta: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        d_theta_max: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        continuous_mode: global___IKContinuousMode.ValueType = ...,
         duration: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        order_id: google.protobuf.wrappers_pb2.Int32Value | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["duration", b"duration", "goal_pose", b"goal_pose", "id", b"id", "orientation_tolerance", b"orientation_tolerance", "position_tolerance", b"position_tolerance", "q0", b"q0"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["duration", b"duration", "goal_pose", b"goal_pose", "id", b"id", "orientation_tolerance", b"orientation_tolerance", "position_tolerance", b"position_tolerance", "q0", b"q0"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["d_theta_max", b"d_theta_max", "duration", b"duration", "goal_pose", b"goal_pose", "id", b"id", "order_id", b"order_id", "orientation_tolerance", b"orientation_tolerance", "position_tolerance", b"position_tolerance", "preferred_theta", b"preferred_theta", "q0", b"q0"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["constrained_mode", b"constrained_mode", "continuous_mode", b"continuous_mode", "d_theta_max", b"d_theta_max", "duration", b"duration", "goal_pose", b"goal_pose", "id", b"id", "order_id", b"order_id", "orientation_tolerance", b"orientation_tolerance", "position_tolerance", b"position_tolerance", "preferred_theta", b"preferred_theta", "q0", b"q0"]) -> None: ...
 
 global___ArmCartesianGoal = ArmCartesianGoal
 
