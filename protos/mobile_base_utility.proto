@@ -20,11 +20,10 @@ message MobileBase {
     
 message MobileBaseState {
     BatteryLevel battery_level = 1;
-    mobile.base.lidar.LidarObstacleDetectionStatus lidar_obstacle_detection_status = 2;
-    mobile.base.lidar.LidarSafety lidar_safety = 3;
+    mobile.base.lidar.LidarSafety lidar_safety = 2;
 
-    ZuuuModePossiblities zuuu_mode = 4;
-    ControlModePossiblities control_mode = 5;
+    ZuuuModePossiblities zuuu_mode = 3;
+    ControlModePossiblities control_mode = 4;
 }
 
 message OdometryVector {
