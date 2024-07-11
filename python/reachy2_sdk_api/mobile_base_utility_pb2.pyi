@@ -109,18 +109,28 @@ class MobileBaseState(google.protobuf.message.Message):
 
     BATTERY_LEVEL_FIELD_NUMBER: builtins.int
     LIDAR_OBSTACLE_DETECTION_STATUS_FIELD_NUMBER: builtins.int
+    LIDAR_SAFETY_FIELD_NUMBER: builtins.int
+    ZUUU_MODE_FIELD_NUMBER: builtins.int
+    CONTROL_MODE_FIELD_NUMBER: builtins.int
     @property
     def battery_level(self) -> global___BatteryLevel: ...
     @property
     def lidar_obstacle_detection_status(self) -> mobile_base_lidar_pb2.LidarObstacleDetectionStatus: ...
+    @property
+    def lidar_safety(self) -> mobile_base_lidar_pb2.LidarSafety: ...
+    zuuu_mode: global___ZuuuModePossiblities.ValueType
+    control_mode: global___ControlModePossiblities.ValueType
     def __init__(
         self,
         *,
         battery_level: global___BatteryLevel | None = ...,
         lidar_obstacle_detection_status: mobile_base_lidar_pb2.LidarObstacleDetectionStatus | None = ...,
+        lidar_safety: mobile_base_lidar_pb2.LidarSafety | None = ...,
+        zuuu_mode: global___ZuuuModePossiblities.ValueType = ...,
+        control_mode: global___ControlModePossiblities.ValueType = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["battery_level", b"battery_level", "lidar_obstacle_detection_status", b"lidar_obstacle_detection_status"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["battery_level", b"battery_level", "lidar_obstacle_detection_status", b"lidar_obstacle_detection_status"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["battery_level", b"battery_level", "lidar_obstacle_detection_status", b"lidar_obstacle_detection_status", "lidar_safety", b"lidar_safety"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["battery_level", b"battery_level", "control_mode", b"control_mode", "lidar_obstacle_detection_status", b"lidar_obstacle_detection_status", "lidar_safety", b"lidar_safety", "zuuu_mode", b"zuuu_mode"]) -> None: ...
 
 global___MobileBaseState = MobileBaseState
 
