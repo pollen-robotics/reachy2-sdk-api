@@ -18,35 +18,35 @@ import mobile_base_mobility_pb2 as mobile__base__mobility__pb2
 import error_pb2 as error__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x19mobile_base_utility.proto\x12\x13mobile.base.utility\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x17mobile_base_lidar.proto\x1a\x1amobile_base_mobility.proto\x1a\x0b\x65rror.proto\"S\n\x0eMobileBaseInfo\x12\x15\n\rserial_number\x18\x01 \x01(\t\x12\x14\n\x0cversion_hard\x18\x02 \x01(\t\x12\x14\n\x0cversion_soft\x18\x03 \x01(\t\"?\n\nMobileBase\x12\x31\n\x04info\x18\x01 \x01(\x0b\x32#.mobile.base.utility.MobileBaseInfo\"\x83\x02\n\x0fMobileBaseState\x12\x38\n\rbattery_level\x18\x01 \x01(\x0b\x32!.mobile.base.utility.BatteryLevel\x12\x34\n\x0clidar_safety\x18\x02 \x01(\x0b\x32\x1e.mobile.base.lidar.LidarSafety\x12<\n\tzuuu_mode\x18\x03 \x01(\x0e\x32).mobile.base.utility.ZuuuModePossiblities\x12\x42\n\x0c\x63ontrol_mode\x18\x04 \x01(\x0e\x32,.mobile.base.utility.ControlModePossiblities\"\x8c\x01\n\x0eOdometryVector\x12&\n\x01x\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12&\n\x01y\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12*\n\x05theta\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"P\n\x12\x43ontrolModeCommand\x12:\n\x04mode\x18\x01 \x01(\x0e\x32,.mobile.base.utility.ControlModePossiblities\"J\n\x0fZuuuModeCommand\x12\x37\n\x04mode\x18\x01 \x01(\x0e\x32).mobile.base.utility.ZuuuModePossiblities\":\n\x0c\x42\x61tteryLevel\x12*\n\x05level\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"G\n\x11MobileBaseVersion\x12\x32\n\rmodel_version\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"0\n\x10MobileBaseStatus\x12\x1c\n\x06\x65rrors\x18\x01 \x03(\x0b\x32\x0c.error.Error*H\n\x17\x43ontrolModePossiblities\x12\x15\n\x11NONE_CONTROL_MODE\x10\x00\x12\r\n\tOPEN_LOOP\x10\x01\x12\x07\n\x03PID\x10\x02*\x89\x01\n\x14ZuuuModePossiblities\x12\x12\n\x0eNONE_ZUUU_MODE\x10\x00\x12\x0b\n\x07\x43MD_VEL\x10\x01\x12\t\n\x05\x42RAKE\x10\x02\x12\x0e\n\nFREE_WHEEL\x10\x03\x12\t\n\x05SPEED\x10\x04\x12\x08\n\x04GOTO\x10\x05\x12\x12\n\x0e\x45MERGENCY_STOP\x10\x06\x12\x0c\n\x08\x43MD_GOTO\x10\x07\x32\xc7\x06\n\x18MobileBaseUtilityService\x12\x63\n\x0eSetControlMode\x12\'.mobile.base.utility.ControlModeCommand\x1a(.mobile.base.mobility.MobilityServiceAck\x12Q\n\x0eGetControlMode\x12\x16.google.protobuf.Empty\x1a\'.mobile.base.utility.ControlModeCommand\x12]\n\x0bSetZuuuMode\x12$.mobile.base.utility.ZuuuModeCommand\x1a(.mobile.base.mobility.MobilityServiceAck\x12K\n\x0bGetZuuuMode\x12\x16.google.protobuf.Empty\x1a$.mobile.base.utility.ZuuuModeCommand\x12L\n\x0fGetBatteryLevel\x12\x16.google.protobuf.Empty\x1a!.mobile.base.utility.BatteryLevel\x12J\n\x0bGetOdometry\x12\x16.google.protobuf.Empty\x1a#.mobile.base.utility.OdometryVector\x12Q\n\rResetOdometry\x12\x16.google.protobuf.Empty\x1a(.mobile.base.mobility.MobilityServiceAck\x12H\n\rGetMobileBase\x12\x16.google.protobuf.Empty\x1a\x1f.mobile.base.utility.MobileBase\x12H\n\x08GetState\x12\x16.google.protobuf.Empty\x1a$.mobile.base.utility.MobileBaseState\x12\x46\n\x05\x41udit\x12\x16.google.protobuf.Empty\x1a%.mobile.base.utility.MobileBaseStatusb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x19mobile_base_utility.proto\x12\x13mobile.base.utility\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x17mobile_base_lidar.proto\x1a\x1amobile_base_mobility.proto\x1a\x0b\x65rror.proto\"S\n\x0eMobileBaseInfo\x12\x15\n\rserial_number\x18\x01 \x01(\t\x12\x14\n\x0cversion_hard\x18\x02 \x01(\t\x12\x14\n\x0cversion_soft\x18\x03 \x01(\t\"?\n\nMobileBase\x12\x31\n\x04info\x18\x01 \x01(\x0b\x32#.mobile.base.utility.MobileBaseInfo\"\xf9\x01\n\x0fMobileBaseState\x12\x38\n\rbattery_level\x18\x01 \x01(\x0b\x32!.mobile.base.utility.BatteryLevel\x12\x34\n\x0clidar_safety\x18\x02 \x01(\x0b\x32\x1e.mobile.base.lidar.LidarSafety\x12\x37\n\tzuuu_mode\x18\x03 \x01(\x0b\x32$.mobile.base.utility.ZuuuModeCommand\x12=\n\x0c\x63ontrol_mode\x18\x04 \x01(\x0b\x32\'.mobile.base.utility.ControlModeCommand\"\x8c\x01\n\x0eOdometryVector\x12&\n\x01x\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12&\n\x01y\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12*\n\x05theta\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"P\n\x12\x43ontrolModeCommand\x12:\n\x04mode\x18\x01 \x01(\x0e\x32,.mobile.base.utility.ControlModePossiblities\"J\n\x0fZuuuModeCommand\x12\x37\n\x04mode\x18\x01 \x01(\x0e\x32).mobile.base.utility.ZuuuModePossiblities\":\n\x0c\x42\x61tteryLevel\x12*\n\x05level\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"G\n\x11MobileBaseVersion\x12\x32\n\rmodel_version\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"0\n\x10MobileBaseStatus\x12\x1c\n\x06\x65rrors\x18\x01 \x03(\x0b\x32\x0c.error.Error*H\n\x17\x43ontrolModePossiblities\x12\x15\n\x11NONE_CONTROL_MODE\x10\x00\x12\r\n\tOPEN_LOOP\x10\x01\x12\x07\n\x03PID\x10\x02*\x89\x01\n\x14ZuuuModePossiblities\x12\x12\n\x0eNONE_ZUUU_MODE\x10\x00\x12\x0b\n\x07\x43MD_VEL\x10\x01\x12\t\n\x05\x42RAKE\x10\x02\x12\x0e\n\nFREE_WHEEL\x10\x03\x12\t\n\x05SPEED\x10\x04\x12\x08\n\x04GOTO\x10\x05\x12\x12\n\x0e\x45MERGENCY_STOP\x10\x06\x12\x0c\n\x08\x43MD_GOTO\x10\x07\x32\xc7\x06\n\x18MobileBaseUtilityService\x12\x63\n\x0eSetControlMode\x12\'.mobile.base.utility.ControlModeCommand\x1a(.mobile.base.mobility.MobilityServiceAck\x12Q\n\x0eGetControlMode\x12\x16.google.protobuf.Empty\x1a\'.mobile.base.utility.ControlModeCommand\x12]\n\x0bSetZuuuMode\x12$.mobile.base.utility.ZuuuModeCommand\x1a(.mobile.base.mobility.MobilityServiceAck\x12K\n\x0bGetZuuuMode\x12\x16.google.protobuf.Empty\x1a$.mobile.base.utility.ZuuuModeCommand\x12L\n\x0fGetBatteryLevel\x12\x16.google.protobuf.Empty\x1a!.mobile.base.utility.BatteryLevel\x12J\n\x0bGetOdometry\x12\x16.google.protobuf.Empty\x1a#.mobile.base.utility.OdometryVector\x12Q\n\rResetOdometry\x12\x16.google.protobuf.Empty\x1a(.mobile.base.mobility.MobilityServiceAck\x12H\n\rGetMobileBase\x12\x16.google.protobuf.Empty\x1a\x1f.mobile.base.utility.MobileBase\x12H\n\x08GetState\x12\x16.google.protobuf.Empty\x1a$.mobile.base.utility.MobileBaseState\x12\x46\n\x05\x41udit\x12\x16.google.protobuf.Empty\x1a%.mobile.base.utility.MobileBaseStatusb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mobile_base_utility_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   DESCRIPTOR._options = None
-  _globals['_CONTROLMODEPOSSIBLITIES']._serialized_start=1073
-  _globals['_CONTROLMODEPOSSIBLITIES']._serialized_end=1145
-  _globals['_ZUUUMODEPOSSIBLITIES']._serialized_start=1148
-  _globals['_ZUUUMODEPOSSIBLITIES']._serialized_end=1285
+  _globals['_CONTROLMODEPOSSIBLITIES']._serialized_start=1063
+  _globals['_CONTROLMODEPOSSIBLITIES']._serialized_end=1135
+  _globals['_ZUUUMODEPOSSIBLITIES']._serialized_start=1138
+  _globals['_ZUUUMODEPOSSIBLITIES']._serialized_end=1275
   _globals['_MOBILEBASEINFO']._serialized_start=177
   _globals['_MOBILEBASEINFO']._serialized_end=260
   _globals['_MOBILEBASE']._serialized_start=262
   _globals['_MOBILEBASE']._serialized_end=325
   _globals['_MOBILEBASESTATE']._serialized_start=328
-  _globals['_MOBILEBASESTATE']._serialized_end=587
-  _globals['_ODOMETRYVECTOR']._serialized_start=590
-  _globals['_ODOMETRYVECTOR']._serialized_end=730
-  _globals['_CONTROLMODECOMMAND']._serialized_start=732
-  _globals['_CONTROLMODECOMMAND']._serialized_end=812
-  _globals['_ZUUUMODECOMMAND']._serialized_start=814
-  _globals['_ZUUUMODECOMMAND']._serialized_end=888
-  _globals['_BATTERYLEVEL']._serialized_start=890
-  _globals['_BATTERYLEVEL']._serialized_end=948
-  _globals['_MOBILEBASEVERSION']._serialized_start=950
-  _globals['_MOBILEBASEVERSION']._serialized_end=1021
-  _globals['_MOBILEBASESTATUS']._serialized_start=1023
-  _globals['_MOBILEBASESTATUS']._serialized_end=1071
-  _globals['_MOBILEBASEUTILITYSERVICE']._serialized_start=1288
-  _globals['_MOBILEBASEUTILITYSERVICE']._serialized_end=2127
+  _globals['_MOBILEBASESTATE']._serialized_end=577
+  _globals['_ODOMETRYVECTOR']._serialized_start=580
+  _globals['_ODOMETRYVECTOR']._serialized_end=720
+  _globals['_CONTROLMODECOMMAND']._serialized_start=722
+  _globals['_CONTROLMODECOMMAND']._serialized_end=802
+  _globals['_ZUUUMODECOMMAND']._serialized_start=804
+  _globals['_ZUUUMODECOMMAND']._serialized_end=878
+  _globals['_BATTERYLEVEL']._serialized_start=880
+  _globals['_BATTERYLEVEL']._serialized_end=938
+  _globals['_MOBILEBASEVERSION']._serialized_start=940
+  _globals['_MOBILEBASEVERSION']._serialized_end=1011
+  _globals['_MOBILEBASESTATUS']._serialized_start=1013
+  _globals['_MOBILEBASESTATUS']._serialized_end=1061
+  _globals['_MOBILEBASEUTILITYSERVICE']._serialized_start=1278
+  _globals['_MOBILEBASEUTILITYSERVICE']._serialized_end=2117
 # @@protoc_insertion_point(module_scope)
