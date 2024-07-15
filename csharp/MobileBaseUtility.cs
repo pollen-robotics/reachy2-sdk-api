@@ -31,51 +31,53 @@ namespace Mobile.Base.Utility {
             "b2JpbGVCYXNlSW5mbxIVCg1zZXJpYWxfbnVtYmVyGAEgASgJEhQKDHZlcnNp",
             "b25faGFyZBgCIAEoCRIUCgx2ZXJzaW9uX3NvZnQYAyABKAkiPwoKTW9iaWxl",
             "QmFzZRIxCgRpbmZvGAEgASgLMiMubW9iaWxlLmJhc2UudXRpbGl0eS5Nb2Jp",
-            "bGVCYXNlSW5mbyKlAQoPTW9iaWxlQmFzZVN0YXRlEjgKDWJhdHRlcnlfbGV2",
-            "ZWwYASABKAsyIS5tb2JpbGUuYmFzZS51dGlsaXR5LkJhdHRlcnlMZXZlbBJY",
-            "Ch9saWRhcl9vYnN0YWNsZV9kZXRlY3Rpb25fc3RhdHVzGAIgASgLMi8ubW9i",
-            "aWxlLmJhc2UubGlkYXIuTGlkYXJPYnN0YWNsZURldGVjdGlvblN0YXR1cyKM",
-            "AQoOT2RvbWV0cnlWZWN0b3ISJgoBeBgBIAEoCzIbLmdvb2dsZS5wcm90b2J1",
-            "Zi5GbG9hdFZhbHVlEiYKAXkYAiABKAsyGy5nb29nbGUucHJvdG9idWYuRmxv",
-            "YXRWYWx1ZRIqCgV0aGV0YRgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9h",
-            "dFZhbHVlIlAKEkNvbnRyb2xNb2RlQ29tbWFuZBI6CgRtb2RlGAEgASgOMiwu",
-            "bW9iaWxlLmJhc2UudXRpbGl0eS5Db250cm9sTW9kZVBvc3NpYmxpdGllcyJK",
-            "Cg9adXV1TW9kZUNvbW1hbmQSNwoEbW9kZRgBIAEoDjIpLm1vYmlsZS5iYXNl",
-            "LnV0aWxpdHkuWnV1dU1vZGVQb3NzaWJsaXRpZXMiOgoMQmF0dGVyeUxldmVs",
-            "EioKBWxldmVsGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUi",
-            "RwoRTW9iaWxlQmFzZVZlcnNpb24SMgoNbW9kZWxfdmVyc2lvbhgBIAEoCzIb",
-            "Lmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlIjAKEE1vYmlsZUJhc2VTdGF0",
-            "dXMSHAoGZXJyb3JzGAEgAygLMgwuZXJyb3IuRXJyb3IqSAoXQ29udHJvbE1v",
-            "ZGVQb3NzaWJsaXRpZXMSFQoRTk9ORV9DT05UUk9MX01PREUQABINCglPUEVO",
-            "X0xPT1AQARIHCgNQSUQQAiqJAQoUWnV1dU1vZGVQb3NzaWJsaXRpZXMSEgoO",
-            "Tk9ORV9aVVVVX01PREUQABILCgdDTURfVkVMEAESCQoFQlJBS0UQAhIOCgpG",
-            "UkVFX1dIRUVMEAMSCQoFU1BFRUQQBBIICgRHT1RPEAUSEgoORU1FUkdFTkNZ",
-            "X1NUT1AQBhIMCghDTURfR09UTxAHMscGChhNb2JpbGVCYXNlVXRpbGl0eVNl",
-            "cnZpY2USYwoOU2V0Q29udHJvbE1vZGUSJy5tb2JpbGUuYmFzZS51dGlsaXR5",
-            "LkNvbnRyb2xNb2RlQ29tbWFuZBooLm1vYmlsZS5iYXNlLm1vYmlsaXR5Lk1v",
-            "YmlsaXR5U2VydmljZUFjaxJRCg5HZXRDb250cm9sTW9kZRIWLmdvb2dsZS5w",
-            "cm90b2J1Zi5FbXB0eRonLm1vYmlsZS5iYXNlLnV0aWxpdHkuQ29udHJvbE1v",
-            "ZGVDb21tYW5kEl0KC1NldFp1dXVNb2RlEiQubW9iaWxlLmJhc2UudXRpbGl0",
-            "eS5adXV1TW9kZUNvbW1hbmQaKC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5Nb2Jp",
-            "bGl0eVNlcnZpY2VBY2sSSwoLR2V0WnV1dU1vZGUSFi5nb29nbGUucHJvdG9i",
-            "dWYuRW1wdHkaJC5tb2JpbGUuYmFzZS51dGlsaXR5Llp1dXVNb2RlQ29tbWFu",
-            "ZBJMCg9HZXRCYXR0ZXJ5TGV2ZWwSFi5nb29nbGUucHJvdG9idWYuRW1wdHka",
-            "IS5tb2JpbGUuYmFzZS51dGlsaXR5LkJhdHRlcnlMZXZlbBJKCgtHZXRPZG9t",
-            "ZXRyeRIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRojLm1vYmlsZS5iYXNlLnV0",
-            "aWxpdHkuT2RvbWV0cnlWZWN0b3ISUQoNUmVzZXRPZG9tZXRyeRIWLmdvb2ds",
-            "ZS5wcm90b2J1Zi5FbXB0eRooLm1vYmlsZS5iYXNlLm1vYmlsaXR5Lk1vYmls",
-            "aXR5U2VydmljZUFjaxJICg1HZXRNb2JpbGVCYXNlEhYuZ29vZ2xlLnByb3Rv",
-            "YnVmLkVtcHR5Gh8ubW9iaWxlLmJhc2UudXRpbGl0eS5Nb2JpbGVCYXNlEkgK",
-            "CEdldFN0YXRlEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GiQubW9iaWxlLmJh",
-            "c2UudXRpbGl0eS5Nb2JpbGVCYXNlU3RhdGUSRgoFQXVkaXQSFi5nb29nbGUu",
-            "cHJvdG9idWYuRW1wdHkaJS5tb2JpbGUuYmFzZS51dGlsaXR5Lk1vYmlsZUJh",
-            "c2VTdGF0dXNiBnByb3RvMw=="));
+            "bGVCYXNlSW5mbyL5AQoPTW9iaWxlQmFzZVN0YXRlEjgKDWJhdHRlcnlfbGV2",
+            "ZWwYASABKAsyIS5tb2JpbGUuYmFzZS51dGlsaXR5LkJhdHRlcnlMZXZlbBI0",
+            "CgxsaWRhcl9zYWZldHkYAiABKAsyHi5tb2JpbGUuYmFzZS5saWRhci5MaWRh",
+            "clNhZmV0eRI3Cgl6dXV1X21vZGUYAyABKAsyJC5tb2JpbGUuYmFzZS51dGls",
+            "aXR5Llp1dXVNb2RlQ29tbWFuZBI9Cgxjb250cm9sX21vZGUYBCABKAsyJy5t",
+            "b2JpbGUuYmFzZS51dGlsaXR5LkNvbnRyb2xNb2RlQ29tbWFuZCKMAQoOT2Rv",
+            "bWV0cnlWZWN0b3ISJgoBeBgBIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9h",
+            "dFZhbHVlEiYKAXkYAiABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1",
+            "ZRIqCgV0aGV0YRgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVl",
+            "IlAKEkNvbnRyb2xNb2RlQ29tbWFuZBI6CgRtb2RlGAEgASgOMiwubW9iaWxl",
+            "LmJhc2UudXRpbGl0eS5Db250cm9sTW9kZVBvc3NpYmxpdGllcyJKCg9adXV1",
+            "TW9kZUNvbW1hbmQSNwoEbW9kZRgBIAEoDjIpLm1vYmlsZS5iYXNlLnV0aWxp",
+            "dHkuWnV1dU1vZGVQb3NzaWJsaXRpZXMiOgoMQmF0dGVyeUxldmVsEioKBWxl",
+            "dmVsGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUiRwoRTW9i",
+            "aWxlQmFzZVZlcnNpb24SMgoNbW9kZWxfdmVyc2lvbhgBIAEoCzIbLmdvb2ds",
+            "ZS5wcm90b2J1Zi5GbG9hdFZhbHVlIjAKEE1vYmlsZUJhc2VTdGF0dXMSHAoG",
+            "ZXJyb3JzGAEgAygLMgwuZXJyb3IuRXJyb3IqSAoXQ29udHJvbE1vZGVQb3Nz",
+            "aWJsaXRpZXMSFQoRTk9ORV9DT05UUk9MX01PREUQABINCglPUEVOX0xPT1AQ",
+            "ARIHCgNQSUQQAiqJAQoUWnV1dU1vZGVQb3NzaWJsaXRpZXMSEgoOTk9ORV9a",
+            "VVVVX01PREUQABILCgdDTURfVkVMEAESCQoFQlJBS0UQAhIOCgpGUkVFX1dI",
+            "RUVMEAMSCQoFU1BFRUQQBBIICgRHT1RPEAUSEgoORU1FUkdFTkNZX1NUT1AQ",
+            "BhIMCghDTURfR09UTxAHMscGChhNb2JpbGVCYXNlVXRpbGl0eVNlcnZpY2US",
+            "YwoOU2V0Q29udHJvbE1vZGUSJy5tb2JpbGUuYmFzZS51dGlsaXR5LkNvbnRy",
+            "b2xNb2RlQ29tbWFuZBooLm1vYmlsZS5iYXNlLm1vYmlsaXR5Lk1vYmlsaXR5",
+            "U2VydmljZUFjaxJRCg5HZXRDb250cm9sTW9kZRIWLmdvb2dsZS5wcm90b2J1",
+            "Zi5FbXB0eRonLm1vYmlsZS5iYXNlLnV0aWxpdHkuQ29udHJvbE1vZGVDb21t",
+            "YW5kEl0KC1NldFp1dXVNb2RlEiQubW9iaWxlLmJhc2UudXRpbGl0eS5adXV1",
+            "TW9kZUNvbW1hbmQaKC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5Nb2JpbGl0eVNl",
+            "cnZpY2VBY2sSSwoLR2V0WnV1dU1vZGUSFi5nb29nbGUucHJvdG9idWYuRW1w",
+            "dHkaJC5tb2JpbGUuYmFzZS51dGlsaXR5Llp1dXVNb2RlQ29tbWFuZBJMCg9H",
+            "ZXRCYXR0ZXJ5TGV2ZWwSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaIS5tb2Jp",
+            "bGUuYmFzZS51dGlsaXR5LkJhdHRlcnlMZXZlbBJKCgtHZXRPZG9tZXRyeRIW",
+            "Lmdvb2dsZS5wcm90b2J1Zi5FbXB0eRojLm1vYmlsZS5iYXNlLnV0aWxpdHku",
+            "T2RvbWV0cnlWZWN0b3ISUQoNUmVzZXRPZG9tZXRyeRIWLmdvb2dsZS5wcm90",
+            "b2J1Zi5FbXB0eRooLm1vYmlsZS5iYXNlLm1vYmlsaXR5Lk1vYmlsaXR5U2Vy",
+            "dmljZUFjaxJICg1HZXRNb2JpbGVCYXNlEhYuZ29vZ2xlLnByb3RvYnVmLkVt",
+            "cHR5Gh8ubW9iaWxlLmJhc2UudXRpbGl0eS5Nb2JpbGVCYXNlEkgKCEdldFN0",
+            "YXRlEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GiQubW9iaWxlLmJhc2UudXRp",
+            "bGl0eS5Nb2JpbGVCYXNlU3RhdGUSRgoFQXVkaXQSFi5nb29nbGUucHJvdG9i",
+            "dWYuRW1wdHkaJS5tb2JpbGUuYmFzZS51dGlsaXR5Lk1vYmlsZUJhc2VTdGF0",
+            "dXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Mobile.Base.Lidar.MobileBaseLidarReflection.Descriptor, global::Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor, global::Error.ErrorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mobile.Base.Utility.ControlModePossiblities), typeof(global::Mobile.Base.Utility.ZuuuModePossiblities), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mobile.Base.Utility.MobileBaseInfo), global::Mobile.Base.Utility.MobileBaseInfo.Parser, new[]{ "SerialNumber", "VersionHard", "VersionSoft" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mobile.Base.Utility.MobileBase), global::Mobile.Base.Utility.MobileBase.Parser, new[]{ "Info" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mobile.Base.Utility.MobileBaseState), global::Mobile.Base.Utility.MobileBaseState.Parser, new[]{ "BatteryLevel", "LidarObstacleDetectionStatus" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mobile.Base.Utility.MobileBaseState), global::Mobile.Base.Utility.MobileBaseState.Parser, new[]{ "BatteryLevel", "LidarSafety", "ZuuuMode", "ControlMode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mobile.Base.Utility.OdometryVector), global::Mobile.Base.Utility.OdometryVector.Parser, new[]{ "X", "Y", "Theta" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mobile.Base.Utility.ControlModeCommand), global::Mobile.Base.Utility.ControlModeCommand.Parser, new[]{ "Mode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mobile.Base.Utility.ZuuuModeCommand), global::Mobile.Base.Utility.ZuuuModeCommand.Parser, new[]{ "Mode" }, null, null, null, null),
@@ -604,7 +606,9 @@ namespace Mobile.Base.Utility {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MobileBaseState(MobileBaseState other) : this() {
       batteryLevel_ = other.batteryLevel_ != null ? other.batteryLevel_.Clone() : null;
-      lidarObstacleDetectionStatus_ = other.lidarObstacleDetectionStatus_ != null ? other.lidarObstacleDetectionStatus_.Clone() : null;
+      lidarSafety_ = other.lidarSafety_ != null ? other.lidarSafety_.Clone() : null;
+      zuuuMode_ = other.zuuuMode_ != null ? other.zuuuMode_.Clone() : null;
+      controlMode_ = other.controlMode_ != null ? other.controlMode_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -626,15 +630,39 @@ namespace Mobile.Base.Utility {
       }
     }
 
-    /// <summary>Field number for the "lidar_obstacle_detection_status" field.</summary>
-    public const int LidarObstacleDetectionStatusFieldNumber = 2;
-    private global::Mobile.Base.Lidar.LidarObstacleDetectionStatus lidarObstacleDetectionStatus_;
+    /// <summary>Field number for the "lidar_safety" field.</summary>
+    public const int LidarSafetyFieldNumber = 2;
+    private global::Mobile.Base.Lidar.LidarSafety lidarSafety_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Mobile.Base.Lidar.LidarObstacleDetectionStatus LidarObstacleDetectionStatus {
-      get { return lidarObstacleDetectionStatus_; }
+    public global::Mobile.Base.Lidar.LidarSafety LidarSafety {
+      get { return lidarSafety_; }
       set {
-        lidarObstacleDetectionStatus_ = value;
+        lidarSafety_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "zuuu_mode" field.</summary>
+    public const int ZuuuModeFieldNumber = 3;
+    private global::Mobile.Base.Utility.ZuuuModeCommand zuuuMode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Mobile.Base.Utility.ZuuuModeCommand ZuuuMode {
+      get { return zuuuMode_; }
+      set {
+        zuuuMode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "control_mode" field.</summary>
+    public const int ControlModeFieldNumber = 4;
+    private global::Mobile.Base.Utility.ControlModeCommand controlMode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Mobile.Base.Utility.ControlModeCommand ControlMode {
+      get { return controlMode_; }
+      set {
+        controlMode_ = value;
       }
     }
 
@@ -654,7 +682,9 @@ namespace Mobile.Base.Utility {
         return true;
       }
       if (!object.Equals(BatteryLevel, other.BatteryLevel)) return false;
-      if (!object.Equals(LidarObstacleDetectionStatus, other.LidarObstacleDetectionStatus)) return false;
+      if (!object.Equals(LidarSafety, other.LidarSafety)) return false;
+      if (!object.Equals(ZuuuMode, other.ZuuuMode)) return false;
+      if (!object.Equals(ControlMode, other.ControlMode)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -663,7 +693,9 @@ namespace Mobile.Base.Utility {
     public override int GetHashCode() {
       int hash = 1;
       if (batteryLevel_ != null) hash ^= BatteryLevel.GetHashCode();
-      if (lidarObstacleDetectionStatus_ != null) hash ^= LidarObstacleDetectionStatus.GetHashCode();
+      if (lidarSafety_ != null) hash ^= LidarSafety.GetHashCode();
+      if (zuuuMode_ != null) hash ^= ZuuuMode.GetHashCode();
+      if (controlMode_ != null) hash ^= ControlMode.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -686,9 +718,17 @@ namespace Mobile.Base.Utility {
         output.WriteRawTag(10);
         output.WriteMessage(BatteryLevel);
       }
-      if (lidarObstacleDetectionStatus_ != null) {
+      if (lidarSafety_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(LidarObstacleDetectionStatus);
+        output.WriteMessage(LidarSafety);
+      }
+      if (zuuuMode_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(ZuuuMode);
+      }
+      if (controlMode_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(ControlMode);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -704,9 +744,17 @@ namespace Mobile.Base.Utility {
         output.WriteRawTag(10);
         output.WriteMessage(BatteryLevel);
       }
-      if (lidarObstacleDetectionStatus_ != null) {
+      if (lidarSafety_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(LidarObstacleDetectionStatus);
+        output.WriteMessage(LidarSafety);
+      }
+      if (zuuuMode_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(ZuuuMode);
+      }
+      if (controlMode_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(ControlMode);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -721,8 +769,14 @@ namespace Mobile.Base.Utility {
       if (batteryLevel_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(BatteryLevel);
       }
-      if (lidarObstacleDetectionStatus_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LidarObstacleDetectionStatus);
+      if (lidarSafety_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LidarSafety);
+      }
+      if (zuuuMode_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ZuuuMode);
+      }
+      if (controlMode_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ControlMode);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -742,11 +796,23 @@ namespace Mobile.Base.Utility {
         }
         BatteryLevel.MergeFrom(other.BatteryLevel);
       }
-      if (other.lidarObstacleDetectionStatus_ != null) {
-        if (lidarObstacleDetectionStatus_ == null) {
-          LidarObstacleDetectionStatus = new global::Mobile.Base.Lidar.LidarObstacleDetectionStatus();
+      if (other.lidarSafety_ != null) {
+        if (lidarSafety_ == null) {
+          LidarSafety = new global::Mobile.Base.Lidar.LidarSafety();
         }
-        LidarObstacleDetectionStatus.MergeFrom(other.LidarObstacleDetectionStatus);
+        LidarSafety.MergeFrom(other.LidarSafety);
+      }
+      if (other.zuuuMode_ != null) {
+        if (zuuuMode_ == null) {
+          ZuuuMode = new global::Mobile.Base.Utility.ZuuuModeCommand();
+        }
+        ZuuuMode.MergeFrom(other.ZuuuMode);
+      }
+      if (other.controlMode_ != null) {
+        if (controlMode_ == null) {
+          ControlMode = new global::Mobile.Base.Utility.ControlModeCommand();
+        }
+        ControlMode.MergeFrom(other.ControlMode);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -771,10 +837,24 @@ namespace Mobile.Base.Utility {
             break;
           }
           case 18: {
-            if (lidarObstacleDetectionStatus_ == null) {
-              LidarObstacleDetectionStatus = new global::Mobile.Base.Lidar.LidarObstacleDetectionStatus();
+            if (lidarSafety_ == null) {
+              LidarSafety = new global::Mobile.Base.Lidar.LidarSafety();
             }
-            input.ReadMessage(LidarObstacleDetectionStatus);
+            input.ReadMessage(LidarSafety);
+            break;
+          }
+          case 26: {
+            if (zuuuMode_ == null) {
+              ZuuuMode = new global::Mobile.Base.Utility.ZuuuModeCommand();
+            }
+            input.ReadMessage(ZuuuMode);
+            break;
+          }
+          case 34: {
+            if (controlMode_ == null) {
+              ControlMode = new global::Mobile.Base.Utility.ControlModeCommand();
+            }
+            input.ReadMessage(ControlMode);
             break;
           }
         }
@@ -800,10 +880,24 @@ namespace Mobile.Base.Utility {
             break;
           }
           case 18: {
-            if (lidarObstacleDetectionStatus_ == null) {
-              LidarObstacleDetectionStatus = new global::Mobile.Base.Lidar.LidarObstacleDetectionStatus();
+            if (lidarSafety_ == null) {
+              LidarSafety = new global::Mobile.Base.Lidar.LidarSafety();
             }
-            input.ReadMessage(LidarObstacleDetectionStatus);
+            input.ReadMessage(LidarSafety);
+            break;
+          }
+          case 26: {
+            if (zuuuMode_ == null) {
+              ZuuuMode = new global::Mobile.Base.Utility.ZuuuModeCommand();
+            }
+            input.ReadMessage(ZuuuMode);
+            break;
+          }
+          case 34: {
+            if (controlMode_ == null) {
+              ControlMode = new global::Mobile.Base.Utility.ControlModeCommand();
+            }
+            input.ReadMessage(ControlMode);
             break;
           }
         }
