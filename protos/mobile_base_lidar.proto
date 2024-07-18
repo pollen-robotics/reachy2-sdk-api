@@ -4,7 +4,7 @@ import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
 import "mobile_base_mobility.proto";
 
-package mobile.base.lidar;
+package reachy.part.mobile.base.lidar;
 
 enum LidarObstacleDetectionEnum {
     DETECTION_ERROR=0;
