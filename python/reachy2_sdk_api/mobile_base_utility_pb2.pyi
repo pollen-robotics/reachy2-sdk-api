@@ -68,40 +68,23 @@ CMD_GOTO: ZuuuModePossiblities.ValueType  # 7
 global___ZuuuModePossiblities = ZuuuModePossiblities
 
 @typing_extensions.final
-class MobileBaseInfo(google.protobuf.message.Message):
-    DESCRIPTOR: google.protobuf.descriptor.Descriptor
-
-    SERIAL_NUMBER_FIELD_NUMBER: builtins.int
-    VERSION_HARD_FIELD_NUMBER: builtins.int
-    VERSION_SOFT_FIELD_NUMBER: builtins.int
-    serial_number: builtins.str
-    version_hard: builtins.str
-    version_soft: builtins.str
-    def __init__(
-        self,
-        *,
-        serial_number: builtins.str = ...,
-        version_hard: builtins.str = ...,
-        version_soft: builtins.str = ...,
-    ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["serial_number", b"serial_number", "version_hard", b"version_hard", "version_soft", b"version_soft"]) -> None: ...
-
-global___MobileBaseInfo = MobileBaseInfo
-
-@typing_extensions.final
 class MobileBase(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
+    PART_ID_FIELD_NUMBER: builtins.int
     INFO_FIELD_NUMBER: builtins.int
     @property
-    def info(self) -> global___MobileBaseInfo: ...
+    def part_id(self) -> part_pb2.PartId: ...
+    @property
+    def info(self) -> part_pb2.PartInfo: ...
     def __init__(
         self,
         *,
-        info: global___MobileBaseInfo | None = ...,
+        part_id: part_pb2.PartId | None = ...,
+        info: part_pb2.PartInfo | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["info", b"info"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["info", b"info"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["info", b"info", "part_id", b"part_id"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["info", b"info", "part_id", b"part_id"]) -> None: ...
 
 global___MobileBase = MobileBase
 

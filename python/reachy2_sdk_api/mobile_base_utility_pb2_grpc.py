@@ -17,52 +17,52 @@ class MobileBaseUtilityServiceStub(object):
             channel: A grpc.Channel.
         """
         self.SetControlMode = channel.unary_unary(
-                '/mobile.base.utility.MobileBaseUtilityService/SetControlMode',
+                '/reachy.part.mobile.base.utility.MobileBaseUtilityService/SetControlMode',
                 request_serializer=mobile__base__utility__pb2.ControlModeCommand.SerializeToString,
                 response_deserializer=mobile__base__mobility__pb2.MobilityServiceAck.FromString,
                 )
         self.GetControlMode = channel.unary_unary(
-                '/mobile.base.utility.MobileBaseUtilityService/GetControlMode',
+                '/reachy.part.mobile.base.utility.MobileBaseUtilityService/GetControlMode',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=mobile__base__utility__pb2.ControlModeCommand.FromString,
                 )
         self.SetZuuuMode = channel.unary_unary(
-                '/mobile.base.utility.MobileBaseUtilityService/SetZuuuMode',
+                '/reachy.part.mobile.base.utility.MobileBaseUtilityService/SetZuuuMode',
                 request_serializer=mobile__base__utility__pb2.ZuuuModeCommand.SerializeToString,
                 response_deserializer=mobile__base__mobility__pb2.MobilityServiceAck.FromString,
                 )
         self.GetZuuuMode = channel.unary_unary(
-                '/mobile.base.utility.MobileBaseUtilityService/GetZuuuMode',
+                '/reachy.part.mobile.base.utility.MobileBaseUtilityService/GetZuuuMode',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=mobile__base__utility__pb2.ZuuuModeCommand.FromString,
                 )
         self.GetBatteryLevel = channel.unary_unary(
-                '/mobile.base.utility.MobileBaseUtilityService/GetBatteryLevel',
+                '/reachy.part.mobile.base.utility.MobileBaseUtilityService/GetBatteryLevel',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=mobile__base__utility__pb2.BatteryLevel.FromString,
                 )
         self.GetOdometry = channel.unary_unary(
-                '/mobile.base.utility.MobileBaseUtilityService/GetOdometry',
+                '/reachy.part.mobile.base.utility.MobileBaseUtilityService/GetOdometry',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=mobile__base__utility__pb2.OdometryVector.FromString,
                 )
         self.ResetOdometry = channel.unary_unary(
-                '/mobile.base.utility.MobileBaseUtilityService/ResetOdometry',
+                '/reachy.part.mobile.base.utility.MobileBaseUtilityService/ResetOdometry',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=mobile__base__mobility__pb2.MobilityServiceAck.FromString,
                 )
         self.GetMobileBase = channel.unary_unary(
-                '/mobile.base.utility.MobileBaseUtilityService/GetMobileBase',
+                '/reachy.part.mobile.base.utility.MobileBaseUtilityService/GetMobileBase',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=mobile__base__utility__pb2.MobileBase.FromString,
                 )
         self.GetState = channel.unary_unary(
-                '/mobile.base.utility.MobileBaseUtilityService/GetState',
+                '/reachy.part.mobile.base.utility.MobileBaseUtilityService/GetState',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=mobile__base__utility__pb2.MobileBaseState.FromString,
                 )
         self.Audit = channel.unary_unary(
-                '/mobile.base.utility.MobileBaseUtilityService/Audit',
+                '/reachy.part.mobile.base.utility.MobileBaseUtilityService/Audit',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=mobile__base__utility__pb2.MobileBaseStatus.FromString,
                 )
@@ -186,7 +186,7 @@ def add_MobileBaseUtilityServiceServicer_to_server(servicer, server):
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-            'mobile.base.utility.MobileBaseUtilityService', rpc_method_handlers)
+            'reachy.part.mobile.base.utility.MobileBaseUtilityService', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
 
 
@@ -205,7 +205,7 @@ class MobileBaseUtilityService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.utility.MobileBaseUtilityService/SetControlMode',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.utility.MobileBaseUtilityService/SetControlMode',
             mobile__base__utility__pb2.ControlModeCommand.SerializeToString,
             mobile__base__mobility__pb2.MobilityServiceAck.FromString,
             options, channel_credentials,
@@ -222,7 +222,7 @@ class MobileBaseUtilityService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.utility.MobileBaseUtilityService/GetControlMode',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.utility.MobileBaseUtilityService/GetControlMode',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             mobile__base__utility__pb2.ControlModeCommand.FromString,
             options, channel_credentials,
@@ -239,7 +239,7 @@ class MobileBaseUtilityService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.utility.MobileBaseUtilityService/SetZuuuMode',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.utility.MobileBaseUtilityService/SetZuuuMode',
             mobile__base__utility__pb2.ZuuuModeCommand.SerializeToString,
             mobile__base__mobility__pb2.MobilityServiceAck.FromString,
             options, channel_credentials,
@@ -256,7 +256,7 @@ class MobileBaseUtilityService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.utility.MobileBaseUtilityService/GetZuuuMode',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.utility.MobileBaseUtilityService/GetZuuuMode',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             mobile__base__utility__pb2.ZuuuModeCommand.FromString,
             options, channel_credentials,
@@ -273,7 +273,7 @@ class MobileBaseUtilityService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.utility.MobileBaseUtilityService/GetBatteryLevel',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.utility.MobileBaseUtilityService/GetBatteryLevel',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             mobile__base__utility__pb2.BatteryLevel.FromString,
             options, channel_credentials,
@@ -290,7 +290,7 @@ class MobileBaseUtilityService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.utility.MobileBaseUtilityService/GetOdometry',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.utility.MobileBaseUtilityService/GetOdometry',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             mobile__base__utility__pb2.OdometryVector.FromString,
             options, channel_credentials,
@@ -307,7 +307,7 @@ class MobileBaseUtilityService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.utility.MobileBaseUtilityService/ResetOdometry',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.utility.MobileBaseUtilityService/ResetOdometry',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             mobile__base__mobility__pb2.MobilityServiceAck.FromString,
             options, channel_credentials,
@@ -324,7 +324,7 @@ class MobileBaseUtilityService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.utility.MobileBaseUtilityService/GetMobileBase',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.utility.MobileBaseUtilityService/GetMobileBase',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             mobile__base__utility__pb2.MobileBase.FromString,
             options, channel_credentials,
@@ -341,7 +341,7 @@ class MobileBaseUtilityService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.utility.MobileBaseUtilityService/GetState',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.utility.MobileBaseUtilityService/GetState',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             mobile__base__utility__pb2.MobileBaseState.FromString,
             options, channel_credentials,
@@ -358,7 +358,7 @@ class MobileBaseUtilityService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.utility.MobileBaseUtilityService/Audit',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.utility.MobileBaseUtilityService/Audit',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             mobile__base__utility__pb2.MobileBaseStatus.FromString,
             options, channel_credentials,

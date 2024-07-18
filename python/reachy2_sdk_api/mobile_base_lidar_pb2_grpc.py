@@ -17,22 +17,22 @@ class MobileBaseLidarServiceStub(object):
             channel: A grpc.Channel.
         """
         self.SetZuuuSafety = channel.unary_unary(
-                '/mobile.base.lidar.MobileBaseLidarService/SetZuuuSafety',
+                '/reachy.part.mobile.base.lidar.MobileBaseLidarService/SetZuuuSafety',
                 request_serializer=mobile__base__lidar__pb2.LidarSafety.SerializeToString,
                 response_deserializer=mobile__base__mobility__pb2.MobilityServiceAck.FromString,
                 )
         self.GetZuuuSafety = channel.unary_unary(
-                '/mobile.base.lidar.MobileBaseLidarService/GetZuuuSafety',
+                '/reachy.part.mobile.base.lidar.MobileBaseLidarService/GetZuuuSafety',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=mobile__base__lidar__pb2.LidarSafety.FromString,
                 )
         self.GetLidarMap = channel.unary_unary(
-                '/mobile.base.lidar.MobileBaseLidarService/GetLidarMap',
+                '/reachy.part.mobile.base.lidar.MobileBaseLidarService/GetLidarMap',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=mobile__base__lidar__pb2.LidarMap.FromString,
                 )
         self.GetLidarObstacleDetectionStatus = channel.unary_unary(
-                '/mobile.base.lidar.MobileBaseLidarService/GetLidarObstacleDetectionStatus',
+                '/reachy.part.mobile.base.lidar.MobileBaseLidarService/GetLidarObstacleDetectionStatus',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=mobile__base__lidar__pb2.LidarObstacleDetectionStatus.FromString,
                 )
@@ -90,7 +90,7 @@ def add_MobileBaseLidarServiceServicer_to_server(servicer, server):
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-            'mobile.base.lidar.MobileBaseLidarService', rpc_method_handlers)
+            'reachy.part.mobile.base.lidar.MobileBaseLidarService', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
 
 
@@ -109,7 +109,7 @@ class MobileBaseLidarService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.lidar.MobileBaseLidarService/SetZuuuSafety',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.lidar.MobileBaseLidarService/SetZuuuSafety',
             mobile__base__lidar__pb2.LidarSafety.SerializeToString,
             mobile__base__mobility__pb2.MobilityServiceAck.FromString,
             options, channel_credentials,
@@ -126,7 +126,7 @@ class MobileBaseLidarService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.lidar.MobileBaseLidarService/GetZuuuSafety',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.lidar.MobileBaseLidarService/GetZuuuSafety',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             mobile__base__lidar__pb2.LidarSafety.FromString,
             options, channel_credentials,
@@ -143,7 +143,7 @@ class MobileBaseLidarService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.lidar.MobileBaseLidarService/GetLidarMap',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.lidar.MobileBaseLidarService/GetLidarMap',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             mobile__base__lidar__pb2.LidarMap.FromString,
             options, channel_credentials,
@@ -160,7 +160,7 @@ class MobileBaseLidarService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.lidar.MobileBaseLidarService/GetLidarObstacleDetectionStatus',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.lidar.MobileBaseLidarService/GetLidarObstacleDetectionStatus',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             mobile__base__lidar__pb2.LidarObstacleDetectionStatus.FromString,
             options, channel_credentials,
