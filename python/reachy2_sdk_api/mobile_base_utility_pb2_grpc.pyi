@@ -9,6 +9,7 @@ import grpc
 import grpc.aio
 import mobile_base_mobility_pb2
 import mobile_base_utility_pb2
+import part_pb2
 import typing
 
 _T = typing.TypeVar('_T')
@@ -54,7 +55,7 @@ class MobileBaseUtilityServiceStub:
         mobile_base_utility_pb2.MobileBase,
     ]
     GetState: grpc.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
+        part_pb2.PartId,
         mobile_base_utility_pb2.MobileBaseState,
     ]
     Audit: grpc.UnaryUnaryMultiCallable[
@@ -96,7 +97,7 @@ class MobileBaseUtilityServiceAsyncStub:
         mobile_base_utility_pb2.MobileBase,
     ]
     GetState: grpc.aio.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
+        part_pb2.PartId,
         mobile_base_utility_pb2.MobileBaseState,
     ]
     Audit: grpc.aio.UnaryUnaryMultiCallable[
@@ -156,7 +157,7 @@ class MobileBaseUtilityServiceServicer(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def GetState(
         self,
-        request: google.protobuf.empty_pb2.Empty,
+        request: part_pb2.PartId,
         context: _ServicerContext,
     ) -> typing.Union[mobile_base_utility_pb2.MobileBaseState, collections.abc.Awaitable[mobile_base_utility_pb2.MobileBaseState]]: ...
     @abc.abstractmethod
