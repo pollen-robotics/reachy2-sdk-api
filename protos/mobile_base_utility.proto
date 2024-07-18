@@ -18,7 +18,7 @@ message MobileBaseInfo {
 }
     
 message MobileBase {
-    reachy.part.PartId id = 1;
+    reachy.part.PartId part_id = 1;
     MobileBaseInfo info = 2;
 }
     
