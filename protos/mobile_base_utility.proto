@@ -9,17 +9,11 @@ import "mobile_base_mobility.proto";
 import "error.proto";
 import "part.proto";
 
-package mobile.base.utility;
-
-message MobileBaseInfo {
-    string serial_number = 1;
-    string version_hard = 2;
-    string version_soft = 3;
-}
+package reachy.part.mobile.base.utility;
     
 message MobileBase {
     PartId part_id = 1;
-    MobileBaseInfo info = 3;
+    PartInfo info = 5;
 }
     
 message MobileBaseState {
