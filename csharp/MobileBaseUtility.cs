@@ -30,56 +30,57 @@ namespace Mobile.Base.Utility {
             "cC5wcm90bxoXbW9iaWxlX2Jhc2VfbGlkYXIucHJvdG8aGm1vYmlsZV9iYXNl",
             "X21vYmlsaXR5LnByb3RvGgtlcnJvci5wcm90bxoKcGFydC5wcm90byJTCg5N",
             "b2JpbGVCYXNlSW5mbxIVCg1zZXJpYWxfbnVtYmVyGAEgASgJEhQKDHZlcnNp",
-            "b25faGFyZBgCIAEoCRIUCgx2ZXJzaW9uX3NvZnQYAyABKAkiPwoKTW9iaWxl",
-            "QmFzZRIxCgRpbmZvGAEgASgLMiMubW9iaWxlLmJhc2UudXRpbGl0eS5Nb2Jp",
-            "bGVCYXNlSW5mbyLcAgoPTW9iaWxlQmFzZVN0YXRlEi0KCXRpbWVzdGFtcBgB",
-            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASHwoCaWQYAiABKAsy",
-            "Ey5yZWFjaHkucGFydC5QYXJ0SWQSEQoJYWN0aXZhdGVkGAMgASgIEjgKDWJh",
-            "dHRlcnlfbGV2ZWwYBCABKAsyIS5tb2JpbGUuYmFzZS51dGlsaXR5LkJhdHRl",
-            "cnlMZXZlbBI0CgxsaWRhcl9zYWZldHkYBSABKAsyHi5tb2JpbGUuYmFzZS5s",
-            "aWRhci5MaWRhclNhZmV0eRI3Cgl6dXV1X21vZGUYBiABKAsyJC5tb2JpbGUu",
-            "YmFzZS51dGlsaXR5Llp1dXVNb2RlQ29tbWFuZBI9Cgxjb250cm9sX21vZGUY",
-            "ByABKAsyJy5tb2JpbGUuYmFzZS51dGlsaXR5LkNvbnRyb2xNb2RlQ29tbWFu",
-            "ZCKMAQoOT2RvbWV0cnlWZWN0b3ISJgoBeBgBIAEoCzIbLmdvb2dsZS5wcm90",
-            "b2J1Zi5GbG9hdFZhbHVlEiYKAXkYAiABKAsyGy5nb29nbGUucHJvdG9idWYu",
-            "RmxvYXRWYWx1ZRIqCgV0aGV0YRgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5G",
-            "bG9hdFZhbHVlIlAKEkNvbnRyb2xNb2RlQ29tbWFuZBI6CgRtb2RlGAEgASgO",
-            "MiwubW9iaWxlLmJhc2UudXRpbGl0eS5Db250cm9sTW9kZVBvc3NpYmxpdGll",
-            "cyJKCg9adXV1TW9kZUNvbW1hbmQSNwoEbW9kZRgBIAEoDjIpLm1vYmlsZS5i",
-            "YXNlLnV0aWxpdHkuWnV1dU1vZGVQb3NzaWJsaXRpZXMiOgoMQmF0dGVyeUxl",
-            "dmVsEioKBWxldmVsGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFs",
-            "dWUiRwoRTW9iaWxlQmFzZVZlcnNpb24SMgoNbW9kZWxfdmVyc2lvbhgBIAEo",
-            "CzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlIjAKEE1vYmlsZUJhc2VT",
-            "dGF0dXMSHAoGZXJyb3JzGAEgAygLMgwuZXJyb3IuRXJyb3IqSAoXQ29udHJv",
-            "bE1vZGVQb3NzaWJsaXRpZXMSFQoRTk9ORV9DT05UUk9MX01PREUQABINCglP",
-            "UEVOX0xPT1AQARIHCgNQSUQQAiqJAQoUWnV1dU1vZGVQb3NzaWJsaXRpZXMS",
-            "EgoOTk9ORV9aVVVVX01PREUQABILCgdDTURfVkVMEAESCQoFQlJBS0UQAhIO",
-            "CgpGUkVFX1dIRUVMEAMSCQoFU1BFRUQQBBIICgRHT1RPEAUSEgoORU1FUkdF",
-            "TkNZX1NUT1AQBhIMCghDTURfR09UTxAHMscGChhNb2JpbGVCYXNlVXRpbGl0",
-            "eVNlcnZpY2USYwoOU2V0Q29udHJvbE1vZGUSJy5tb2JpbGUuYmFzZS51dGls",
-            "aXR5LkNvbnRyb2xNb2RlQ29tbWFuZBooLm1vYmlsZS5iYXNlLm1vYmlsaXR5",
-            "Lk1vYmlsaXR5U2VydmljZUFjaxJRCg5HZXRDb250cm9sTW9kZRIWLmdvb2ds",
-            "ZS5wcm90b2J1Zi5FbXB0eRonLm1vYmlsZS5iYXNlLnV0aWxpdHkuQ29udHJv",
-            "bE1vZGVDb21tYW5kEl0KC1NldFp1dXVNb2RlEiQubW9iaWxlLmJhc2UudXRp",
-            "bGl0eS5adXV1TW9kZUNvbW1hbmQaKC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5N",
-            "b2JpbGl0eVNlcnZpY2VBY2sSSwoLR2V0WnV1dU1vZGUSFi5nb29nbGUucHJv",
-            "dG9idWYuRW1wdHkaJC5tb2JpbGUuYmFzZS51dGlsaXR5Llp1dXVNb2RlQ29t",
-            "bWFuZBJMCg9HZXRCYXR0ZXJ5TGV2ZWwSFi5nb29nbGUucHJvdG9idWYuRW1w",
-            "dHkaIS5tb2JpbGUuYmFzZS51dGlsaXR5LkJhdHRlcnlMZXZlbBJKCgtHZXRP",
-            "ZG9tZXRyeRIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRojLm1vYmlsZS5iYXNl",
-            "LnV0aWxpdHkuT2RvbWV0cnlWZWN0b3ISUQoNUmVzZXRPZG9tZXRyeRIWLmdv",
-            "b2dsZS5wcm90b2J1Zi5FbXB0eRooLm1vYmlsZS5iYXNlLm1vYmlsaXR5Lk1v",
-            "YmlsaXR5U2VydmljZUFjaxJICg1HZXRNb2JpbGVCYXNlEhYuZ29vZ2xlLnBy",
-            "b3RvYnVmLkVtcHR5Gh8ubW9iaWxlLmJhc2UudXRpbGl0eS5Nb2JpbGVCYXNl",
-            "EkgKCEdldFN0YXRlEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GiQubW9iaWxl",
-            "LmJhc2UudXRpbGl0eS5Nb2JpbGVCYXNlU3RhdGUSRgoFQXVkaXQSFi5nb29n",
-            "bGUucHJvdG9idWYuRW1wdHkaJS5tb2JpbGUuYmFzZS51dGlsaXR5Lk1vYmls",
-            "ZUJhc2VTdGF0dXNiBnByb3RvMw=="));
+            "b25faGFyZBgCIAEoCRIUCgx2ZXJzaW9uX3NvZnQYAyABKAkiZQoKTW9iaWxl",
+            "QmFzZRIkCgdwYXJ0X2lkGAEgASgLMhMucmVhY2h5LnBhcnQuUGFydElkEjEK",
+            "BGluZm8YAiABKAsyIy5tb2JpbGUuYmFzZS51dGlsaXR5Lk1vYmlsZUJhc2VJ",
+            "bmZvItwCCg9Nb2JpbGVCYXNlU3RhdGUSLQoJdGltZXN0YW1wGAEgASgLMhou",
+            "Z29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIfCgJpZBgCIAEoCzITLnJlYWNo",
+            "eS5wYXJ0LlBhcnRJZBIRCglhY3RpdmF0ZWQYAyABKAgSOAoNYmF0dGVyeV9s",
+            "ZXZlbBgEIAEoCzIhLm1vYmlsZS5iYXNlLnV0aWxpdHkuQmF0dGVyeUxldmVs",
+            "EjQKDGxpZGFyX3NhZmV0eRgFIAEoCzIeLm1vYmlsZS5iYXNlLmxpZGFyLkxp",
+            "ZGFyU2FmZXR5EjcKCXp1dXVfbW9kZRgGIAEoCzIkLm1vYmlsZS5iYXNlLnV0",
+            "aWxpdHkuWnV1dU1vZGVDb21tYW5kEj0KDGNvbnRyb2xfbW9kZRgHIAEoCzIn",
+            "Lm1vYmlsZS5iYXNlLnV0aWxpdHkuQ29udHJvbE1vZGVDb21tYW5kIowBCg5P",
+            "ZG9tZXRyeVZlY3RvchImCgF4GAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZs",
+            "b2F0VmFsdWUSJgoBeRgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZh",
+            "bHVlEioKBXRoZXRhGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFs",
+            "dWUiUAoSQ29udHJvbE1vZGVDb21tYW5kEjoKBG1vZGUYASABKA4yLC5tb2Jp",
+            "bGUuYmFzZS51dGlsaXR5LkNvbnRyb2xNb2RlUG9zc2libGl0aWVzIkoKD1p1",
+            "dXVNb2RlQ29tbWFuZBI3CgRtb2RlGAEgASgOMikubW9iaWxlLmJhc2UudXRp",
+            "bGl0eS5adXV1TW9kZVBvc3NpYmxpdGllcyI6CgxCYXR0ZXJ5TGV2ZWwSKgoF",
+            "bGV2ZWwYASABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSJHChFN",
+            "b2JpbGVCYXNlVmVyc2lvbhIyCg1tb2RlbF92ZXJzaW9uGAEgASgLMhsuZ29v",
+            "Z2xlLnByb3RvYnVmLkZsb2F0VmFsdWUiMAoQTW9iaWxlQmFzZVN0YXR1cxIc",
+            "CgZlcnJvcnMYASADKAsyDC5lcnJvci5FcnJvcipIChdDb250cm9sTW9kZVBv",
+            "c3NpYmxpdGllcxIVChFOT05FX0NPTlRST0xfTU9ERRAAEg0KCU9QRU5fTE9P",
+            "UBABEgcKA1BJRBACKokBChRadXV1TW9kZVBvc3NpYmxpdGllcxISCg5OT05F",
+            "X1pVVVVfTU9ERRAAEgsKB0NNRF9WRUwQARIJCgVCUkFLRRACEg4KCkZSRUVf",
+            "V0hFRUwQAxIJCgVTUEVFRBAEEggKBEdPVE8QBRISCg5FTUVSR0VOQ1lfU1RP",
+            "UBAGEgwKCENNRF9HT1RPEAcyxAYKGE1vYmlsZUJhc2VVdGlsaXR5U2Vydmlj",
+            "ZRJjCg5TZXRDb250cm9sTW9kZRInLm1vYmlsZS5iYXNlLnV0aWxpdHkuQ29u",
+            "dHJvbE1vZGVDb21tYW5kGigubW9iaWxlLmJhc2UubW9iaWxpdHkuTW9iaWxp",
+            "dHlTZXJ2aWNlQWNrElEKDkdldENvbnRyb2xNb2RlEhYuZ29vZ2xlLnByb3Rv",
+            "YnVmLkVtcHR5GicubW9iaWxlLmJhc2UudXRpbGl0eS5Db250cm9sTW9kZUNv",
+            "bW1hbmQSXQoLU2V0WnV1dU1vZGUSJC5tb2JpbGUuYmFzZS51dGlsaXR5Llp1",
+            "dXVNb2RlQ29tbWFuZBooLm1vYmlsZS5iYXNlLm1vYmlsaXR5Lk1vYmlsaXR5",
+            "U2VydmljZUFjaxJLCgtHZXRadXV1TW9kZRIWLmdvb2dsZS5wcm90b2J1Zi5F",
+            "bXB0eRokLm1vYmlsZS5iYXNlLnV0aWxpdHkuWnV1dU1vZGVDb21tYW5kEkwK",
+            "D0dldEJhdHRlcnlMZXZlbBIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRohLm1v",
+            "YmlsZS5iYXNlLnV0aWxpdHkuQmF0dGVyeUxldmVsEkoKC0dldE9kb21ldHJ5",
+            "EhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GiMubW9iaWxlLmJhc2UudXRpbGl0",
+            "eS5PZG9tZXRyeVZlY3RvchJRCg1SZXNldE9kb21ldHJ5EhYuZ29vZ2xlLnBy",
+            "b3RvYnVmLkVtcHR5GigubW9iaWxlLmJhc2UubW9iaWxpdHkuTW9iaWxpdHlT",
+            "ZXJ2aWNlQWNrEkgKDUdldE1vYmlsZUJhc2USFi5nb29nbGUucHJvdG9idWYu",
+            "RW1wdHkaHy5tb2JpbGUuYmFzZS51dGlsaXR5Lk1vYmlsZUJhc2USRQoIR2V0",
+            "U3RhdGUSEy5yZWFjaHkucGFydC5QYXJ0SWQaJC5tb2JpbGUuYmFzZS51dGls",
+            "aXR5Lk1vYmlsZUJhc2VTdGF0ZRJGCgVBdWRpdBIWLmdvb2dsZS5wcm90b2J1",
+            "Zi5FbXB0eRolLm1vYmlsZS5iYXNlLnV0aWxpdHkuTW9iaWxlQmFzZVN0YXR1",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Mobile.Base.Lidar.MobileBaseLidarReflection.Descriptor, global::Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor, global::Error.ErrorReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Mobile.Base.Utility.ControlModePossiblities), typeof(global::Mobile.Base.Utility.ZuuuModePossiblities), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Mobile.Base.Utility.MobileBaseInfo), global::Mobile.Base.Utility.MobileBaseInfo.Parser, new[]{ "SerialNumber", "VersionHard", "VersionSoft" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Mobile.Base.Utility.MobileBase), global::Mobile.Base.Utility.MobileBase.Parser, new[]{ "Info" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Mobile.Base.Utility.MobileBase), global::Mobile.Base.Utility.MobileBase.Parser, new[]{ "PartId", "Info" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mobile.Base.Utility.MobileBaseState), global::Mobile.Base.Utility.MobileBaseState.Parser, new[]{ "Timestamp", "Id", "Activated", "BatteryLevel", "LidarSafety", "ZuuuMode", "ControlMode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mobile.Base.Utility.OdometryVector), global::Mobile.Base.Utility.OdometryVector.Parser, new[]{ "X", "Y", "Theta" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Mobile.Base.Utility.ControlModeCommand), global::Mobile.Base.Utility.ControlModeCommand.Parser, new[]{ "Mode" }, null, null, null, null),
@@ -410,6 +411,7 @@ namespace Mobile.Base.Utility {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MobileBase(MobileBase other) : this() {
+      partId_ = other.partId_ != null ? other.partId_.Clone() : null;
       info_ = other.info_ != null ? other.info_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -420,8 +422,20 @@ namespace Mobile.Base.Utility {
       return new MobileBase(this);
     }
 
+    /// <summary>Field number for the "part_id" field.</summary>
+    public const int PartIdFieldNumber = 1;
+    private global::Reachy.Part.PartId partId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.PartId PartId {
+      get { return partId_; }
+      set {
+        partId_ = value;
+      }
+    }
+
     /// <summary>Field number for the "info" field.</summary>
-    public const int InfoFieldNumber = 1;
+    public const int InfoFieldNumber = 2;
     private global::Mobile.Base.Utility.MobileBaseInfo info_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -447,6 +461,7 @@ namespace Mobile.Base.Utility {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (!object.Equals(PartId, other.PartId)) return false;
       if (!object.Equals(Info, other.Info)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -455,6 +470,7 @@ namespace Mobile.Base.Utility {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
+      if (partId_ != null) hash ^= PartId.GetHashCode();
       if (info_ != null) hash ^= Info.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -474,8 +490,12 @@ namespace Mobile.Base.Utility {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (info_ != null) {
+      if (partId_ != null) {
         output.WriteRawTag(10);
+        output.WriteMessage(PartId);
+      }
+      if (info_ != null) {
+        output.WriteRawTag(18);
         output.WriteMessage(Info);
       }
       if (_unknownFields != null) {
@@ -488,8 +508,12 @@ namespace Mobile.Base.Utility {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (info_ != null) {
+      if (partId_ != null) {
         output.WriteRawTag(10);
+        output.WriteMessage(PartId);
+      }
+      if (info_ != null) {
+        output.WriteRawTag(18);
         output.WriteMessage(Info);
       }
       if (_unknownFields != null) {
@@ -502,6 +526,9 @@ namespace Mobile.Base.Utility {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
+      if (partId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PartId);
+      }
       if (info_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Info);
       }
@@ -516,6 +543,12 @@ namespace Mobile.Base.Utility {
     public void MergeFrom(MobileBase other) {
       if (other == null) {
         return;
+      }
+      if (other.partId_ != null) {
+        if (partId_ == null) {
+          PartId = new global::Reachy.Part.PartId();
+        }
+        PartId.MergeFrom(other.PartId);
       }
       if (other.info_ != null) {
         if (info_ == null) {
@@ -539,6 +572,13 @@ namespace Mobile.Base.Utility {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
+            if (partId_ == null) {
+              PartId = new global::Reachy.Part.PartId();
+            }
+            input.ReadMessage(PartId);
+            break;
+          }
+          case 18: {
             if (info_ == null) {
               Info = new global::Mobile.Base.Utility.MobileBaseInfo();
             }
@@ -561,6 +601,13 @@ namespace Mobile.Base.Utility {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
+            if (partId_ == null) {
+              PartId = new global::Reachy.Part.PartId();
+            }
+            input.ReadMessage(PartId);
+            break;
+          }
+          case 18: {
             if (info_ == null) {
               Info = new global::Mobile.Base.Utility.MobileBaseInfo();
             }
