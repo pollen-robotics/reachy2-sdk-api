@@ -18,7 +18,8 @@ message MobileBaseInfo {
 }
     
 message MobileBase {
-    MobileBaseInfo info = 1;
+    PartId part_id = 1;
+    MobileBaseInfo info = 3;
 }
     
 message MobileBaseState {
