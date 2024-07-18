@@ -2,9 +2,12 @@ syntax = "proto3";
 
 import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+
 import "mobile_base_lidar.proto";
 import "mobile_base_mobility.proto";
 import "error.proto";
+import "part.proto";
 
 package mobile.base.utility;
 
@@ -19,8 +22,17 @@ message MobileBase {
 }
     
 message MobileBaseState {
-    BatteryLevel battery_level = 1;
-    mobile.base.lidar.LidarObstacleDetectionStatus lidar_obstacle_detection_status = 2;
+    google.protobuf.Timestamp timestamp = 1;
+
+    reachy.part.PartId id = 2;
+
+    bool activated = 3;
+
+    BatteryLevel battery_level = 4;
+    mobile.base.lidar.LidarSafety lidar_safety = 5;
+
+    ZuuuModeCommand zuuu_mode = 6;
+    ControlModeCommand control_mode = 7;
 }
 
 message OdometryVector {

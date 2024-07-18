@@ -9,8 +9,10 @@ import google.protobuf.descriptor
 import google.protobuf.internal.containers
 import google.protobuf.internal.enum_type_wrapper
 import google.protobuf.message
+import google.protobuf.timestamp_pb2
 import google.protobuf.wrappers_pb2
 import mobile_base_lidar_pb2
+import part_pb2
 import sys
 import typing
 
@@ -107,20 +109,39 @@ global___MobileBase = MobileBase
 class MobileBaseState(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
+    TIMESTAMP_FIELD_NUMBER: builtins.int
+    ID_FIELD_NUMBER: builtins.int
+    ACTIVATED_FIELD_NUMBER: builtins.int
     BATTERY_LEVEL_FIELD_NUMBER: builtins.int
-    LIDAR_OBSTACLE_DETECTION_STATUS_FIELD_NUMBER: builtins.int
+    LIDAR_SAFETY_FIELD_NUMBER: builtins.int
+    ZUUU_MODE_FIELD_NUMBER: builtins.int
+    CONTROL_MODE_FIELD_NUMBER: builtins.int
+    @property
+    def timestamp(self) -> google.protobuf.timestamp_pb2.Timestamp: ...
+    @property
+    def id(self) -> part_pb2.PartId: ...
+    activated: builtins.bool
     @property
     def battery_level(self) -> global___BatteryLevel: ...
     @property
-    def lidar_obstacle_detection_status(self) -> mobile_base_lidar_pb2.LidarObstacleDetectionStatus: ...
+    def lidar_safety(self) -> mobile_base_lidar_pb2.LidarSafety: ...
+    @property
+    def zuuu_mode(self) -> global___ZuuuModeCommand: ...
+    @property
+    def control_mode(self) -> global___ControlModeCommand: ...
     def __init__(
         self,
         *,
+        timestamp: google.protobuf.timestamp_pb2.Timestamp | None = ...,
+        id: part_pb2.PartId | None = ...,
+        activated: builtins.bool = ...,
         battery_level: global___BatteryLevel | None = ...,
-        lidar_obstacle_detection_status: mobile_base_lidar_pb2.LidarObstacleDetectionStatus | None = ...,
+        lidar_safety: mobile_base_lidar_pb2.LidarSafety | None = ...,
+        zuuu_mode: global___ZuuuModeCommand | None = ...,
+        control_mode: global___ControlModeCommand | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["battery_level", b"battery_level", "lidar_obstacle_detection_status", b"lidar_obstacle_detection_status"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["battery_level", b"battery_level", "lidar_obstacle_detection_status", b"lidar_obstacle_detection_status"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["battery_level", b"battery_level", "control_mode", b"control_mode", "id", b"id", "lidar_safety", b"lidar_safety", "timestamp", b"timestamp", "zuuu_mode", b"zuuu_mode"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["activated", b"activated", "battery_level", b"battery_level", "control_mode", b"control_mode", "id", b"id", "lidar_safety", b"lidar_safety", "timestamp", b"timestamp", "zuuu_mode", b"zuuu_mode"]) -> None: ...
 
 global___MobileBaseState = MobileBaseState
 
