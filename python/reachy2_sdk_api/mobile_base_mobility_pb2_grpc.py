@@ -2,8 +2,8 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 import mobile_base_mobility_pb2 as mobile__base__mobility__pb2
+import part_pb2 as part__pb2
 
 
 class MobileBaseMobilityServiceStub(object):
@@ -32,7 +32,7 @@ class MobileBaseMobilityServiceStub(object):
                 )
         self.DistanceToGoal = channel.unary_unary(
                 '/reachy.part.mobile.base.mobility.MobileBaseMobilityService/DistanceToGoal',
-                request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+                request_serializer=part__pb2.PartId.SerializeToString,
                 response_deserializer=mobile__base__mobility__pb2.DistanceToGoalVector.FromString,
                 )
 
@@ -85,7 +85,7 @@ def add_MobileBaseMobilityServiceServicer_to_server(servicer, server):
             ),
             'DistanceToGoal': grpc.unary_unary_rpc_method_handler(
                     servicer.DistanceToGoal,
-                    request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                    request_deserializer=part__pb2.PartId.FromString,
                     response_serializer=mobile__base__mobility__pb2.DistanceToGoalVector.SerializeToString,
             ),
     }
@@ -161,7 +161,7 @@ class MobileBaseMobilityService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.mobility.MobileBaseMobilityService/DistanceToGoal',
-            google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            part__pb2.PartId.SerializeToString,
             mobile__base__mobility__pb2.DistanceToGoalVector.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

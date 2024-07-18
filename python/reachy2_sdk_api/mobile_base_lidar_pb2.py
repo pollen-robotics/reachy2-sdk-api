@@ -14,23 +14,24 @@ _sym_db = _symbol_database.Default()
 from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 from google.protobuf import wrappers_pb2 as google_dot_protobuf_dot_wrappers__pb2
 import mobile_base_mobility_pb2 as mobile__base__mobility__pb2
+import part_pb2 as part__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x17mobile_base_lidar.proto\x12\x1dreachy.part.mobile.base.lidar\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x1amobile_base_mobility.proto\"i\n\x1cLidarObstacleDetectionStatus\x12I\n\x06status\x18\x01 \x01(\x0e\x32\x39.reachy.part.mobile.base.lidar.LidarObstacleDetectionEnum\"\x8a\x02\n\x0bLidarSafety\x12-\n\tsafety_on\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x34\n\x0fsafety_distance\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x36\n\x11\x63ritical_distance\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12^\n\x19obstacle_detection_status\x18\x04 \x01(\x0b\x32;.reachy.part.mobile.base.lidar.LidarObstacleDetectionStatus\"\x18\n\x08LidarMap\x12\x0c\n\x04\x64\x61ta\x18\x01 \x01(\x0c*\x81\x01\n\x1aLidarObstacleDetectionEnum\x12\x13\n\x0f\x44\x45TECTION_ERROR\x10\x00\x12\x16\n\x12NO_OBJECT_DETECTED\x10\x01\x12\x1c\n\x18OBJECT_DETECTED_SLOWDOWN\x10\x02\x12\x18\n\x14OBJECT_DETECTED_STOP\x10\x03\x32\xa8\x03\n\x16MobileBaseLidarService\x12q\n\rSetZuuuSafety\x12*.reachy.part.mobile.base.lidar.LidarSafety\x1a\x34.reachy.part.mobile.base.mobility.MobilityServiceAck\x12S\n\rGetZuuuSafety\x12\x16.google.protobuf.Empty\x1a*.reachy.part.mobile.base.lidar.LidarSafety\x12N\n\x0bGetLidarMap\x12\x16.google.protobuf.Empty\x1a\'.reachy.part.mobile.base.lidar.LidarMap\x12v\n\x1fGetLidarObstacleDetectionStatus\x12\x16.google.protobuf.Empty\x1a;.reachy.part.mobile.base.lidar.LidarObstacleDetectionStatusb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x17mobile_base_lidar.proto\x12\x1dreachy.part.mobile.base.lidar\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x1amobile_base_mobility.proto\x1a\npart.proto\"i\n\x1cLidarObstacleDetectionStatus\x12I\n\x06status\x18\x01 \x01(\x0e\x32\x39.reachy.part.mobile.base.lidar.LidarObstacleDetectionEnum\"\xab\x02\n\x0bLidarSafety\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12-\n\tsafety_on\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x34\n\x0fsafety_distance\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x36\n\x11\x63ritical_distance\x18\x04 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12^\n\x19obstacle_detection_status\x18\x05 \x01(\x0b\x32;.reachy.part.mobile.base.lidar.LidarObstacleDetectionStatus\"\x18\n\x08LidarMap\x12\x0c\n\x04\x64\x61ta\x18\x01 \x01(\x0c*\x81\x01\n\x1aLidarObstacleDetectionEnum\x12\x13\n\x0f\x44\x45TECTION_ERROR\x10\x00\x12\x16\n\x12NO_OBJECT_DETECTED\x10\x01\x12\x1c\n\x18OBJECT_DETECTED_SLOWDOWN\x10\x02\x12\x18\n\x14OBJECT_DETECTED_STOP\x10\x03\x32\x9f\x03\n\x16MobileBaseLidarService\x12q\n\rSetZuuuSafety\x12*.reachy.part.mobile.base.lidar.LidarSafety\x1a\x34.reachy.part.mobile.base.mobility.MobilityServiceAck\x12P\n\rGetZuuuSafety\x12\x13.reachy.part.PartId\x1a*.reachy.part.mobile.base.lidar.LidarSafety\x12K\n\x0bGetLidarMap\x12\x13.reachy.part.PartId\x1a\'.reachy.part.mobile.base.lidar.LidarMap\x12s\n\x1fGetLidarObstacleDetectionStatus\x12\x13.reachy.part.PartId\x1a;.reachy.part.mobile.base.lidar.LidarObstacleDetectionStatusb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mobile_base_lidar_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   DESCRIPTOR._options = None
-  _globals['_LIDAROBSTACLEDETECTIONENUM']._serialized_start=550
-  _globals['_LIDAROBSTACLEDETECTIONENUM']._serialized_end=679
-  _globals['_LIDAROBSTACLEDETECTIONSTATUS']._serialized_start=147
-  _globals['_LIDAROBSTACLEDETECTIONSTATUS']._serialized_end=252
-  _globals['_LIDARSAFETY']._serialized_start=255
-  _globals['_LIDARSAFETY']._serialized_end=521
-  _globals['_LIDARMAP']._serialized_start=523
-  _globals['_LIDARMAP']._serialized_end=547
-  _globals['_MOBILEBASELIDARSERVICE']._serialized_start=682
-  _globals['_MOBILEBASELIDARSERVICE']._serialized_end=1106
+  _globals['_LIDAROBSTACLEDETECTIONENUM']._serialized_start=595
+  _globals['_LIDAROBSTACLEDETECTIONENUM']._serialized_end=724
+  _globals['_LIDAROBSTACLEDETECTIONSTATUS']._serialized_start=159
+  _globals['_LIDAROBSTACLEDETECTIONSTATUS']._serialized_end=264
+  _globals['_LIDARSAFETY']._serialized_start=267
+  _globals['_LIDARSAFETY']._serialized_end=566
+  _globals['_LIDARMAP']._serialized_start=568
+  _globals['_LIDARMAP']._serialized_end=592
+  _globals['_MOBILEBASELIDARSERVICE']._serialized_start=727
+  _globals['_MOBILEBASELIDARSERVICE']._serialized_end=1142
 # @@protoc_insertion_point(module_scope)

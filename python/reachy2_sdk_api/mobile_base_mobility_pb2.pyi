@@ -6,6 +6,7 @@ import builtins
 import google.protobuf.descriptor
 import google.protobuf.message
 import google.protobuf.wrappers_pb2
+import part_pb2
 import sys
 
 if sys.version_info >= (3, 8):
@@ -47,16 +48,20 @@ global___DirectionVector = DirectionVector
 class TargetDirectionCommand(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
+    ID_FIELD_NUMBER: builtins.int
     DIRECTION_FIELD_NUMBER: builtins.int
+    @property
+    def id(self) -> part_pb2.PartId: ...
     @property
     def direction(self) -> global___DirectionVector: ...
     def __init__(
         self,
         *,
+        id: part_pb2.PartId | None = ...,
         direction: global___DirectionVector | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["direction", b"direction"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["direction", b"direction"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["direction", b"direction", "id", b"id"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["direction", b"direction", "id", b"id"]) -> None: ...
 
 global___TargetDirectionCommand = TargetDirectionCommand
 
@@ -64,9 +69,12 @@ global___TargetDirectionCommand = TargetDirectionCommand
 class GoToVector(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
+    ID_FIELD_NUMBER: builtins.int
     X_GOAL_FIELD_NUMBER: builtins.int
     Y_GOAL_FIELD_NUMBER: builtins.int
     THETA_GOAL_FIELD_NUMBER: builtins.int
+    @property
+    def id(self) -> part_pb2.PartId: ...
     @property
     def x_goal(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
     @property
@@ -76,12 +84,13 @@ class GoToVector(google.protobuf.message.Message):
     def __init__(
         self,
         *,
+        id: part_pb2.PartId | None = ...,
         x_goal: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         y_goal: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         theta_goal: google.protobuf.wrappers_pb2.FloatValue | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["theta_goal", b"theta_goal", "x_goal", b"x_goal", "y_goal", b"y_goal"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["theta_goal", b"theta_goal", "x_goal", b"x_goal", "y_goal", b"y_goal"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["id", b"id", "theta_goal", b"theta_goal", "x_goal", b"x_goal", "y_goal", b"y_goal"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["id", b"id", "theta_goal", b"theta_goal", "x_goal", b"x_goal", "y_goal", b"y_goal"]) -> None: ...
 
 global___GoToVector = GoToVector
 
@@ -89,10 +98,13 @@ global___GoToVector = GoToVector
 class SetSpeedVector(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
+    ID_FIELD_NUMBER: builtins.int
     X_VEL_FIELD_NUMBER: builtins.int
     Y_VEL_FIELD_NUMBER: builtins.int
     ROT_VEL_FIELD_NUMBER: builtins.int
     DURATION_FIELD_NUMBER: builtins.int
+    @property
+    def id(self) -> part_pb2.PartId: ...
     @property
     def x_vel(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
     @property
@@ -104,13 +116,14 @@ class SetSpeedVector(google.protobuf.message.Message):
     def __init__(
         self,
         *,
+        id: part_pb2.PartId | None = ...,
         x_vel: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         y_vel: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         rot_vel: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         duration: google.protobuf.wrappers_pb2.FloatValue | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["duration", b"duration", "rot_vel", b"rot_vel", "x_vel", b"x_vel", "y_vel", b"y_vel"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["duration", b"duration", "rot_vel", b"rot_vel", "x_vel", b"x_vel", "y_vel", b"y_vel"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["duration", b"duration", "id", b"id", "rot_vel", b"rot_vel", "x_vel", b"x_vel", "y_vel", b"y_vel"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["duration", b"duration", "id", b"id", "rot_vel", b"rot_vel", "x_vel", b"x_vel", "y_vel", b"y_vel"]) -> None: ...
 
 global___SetSpeedVector = SetSpeedVector
 
