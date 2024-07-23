@@ -5,6 +5,7 @@ import grpc
 from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 import mobile_base_mobility_pb2 as mobile__base__mobility__pb2
 import mobile_base_utility_pb2 as mobile__base__utility__pb2
+import part_pb2 as part__pb2
 
 
 class MobileBaseUtilityServiceStub(object):
@@ -58,7 +59,7 @@ class MobileBaseUtilityServiceStub(object):
                 )
         self.GetState = channel.unary_unary(
                 '/mobile.base.utility.MobileBaseUtilityService/GetState',
-                request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+                request_serializer=part__pb2.PartId.SerializeToString,
                 response_deserializer=mobile__base__utility__pb2.MobileBaseState.FromString,
                 )
         self.Audit = channel.unary_unary(
@@ -176,7 +177,7 @@ def add_MobileBaseUtilityServiceServicer_to_server(servicer, server):
             ),
             'GetState': grpc.unary_unary_rpc_method_handler(
                     servicer.GetState,
-                    request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                    request_deserializer=part__pb2.PartId.FromString,
                     response_serializer=mobile__base__utility__pb2.MobileBaseState.SerializeToString,
             ),
             'Audit': grpc.unary_unary_rpc_method_handler(
@@ -342,7 +343,7 @@ class MobileBaseUtilityService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/mobile.base.utility.MobileBaseUtilityService/GetState',
-            google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            part__pb2.PartId.SerializeToString,
             mobile__base__utility__pb2.MobileBaseState.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

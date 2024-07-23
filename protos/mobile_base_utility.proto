@@ -18,7 +18,8 @@ message MobileBaseInfo {
 }
     
 message MobileBase {
-    MobileBaseInfo info = 1;
+    reachy.part.PartId part_id = 1;
+    MobileBaseInfo info = 2;
 }
     
 message MobileBaseState {
@@ -87,6 +88,6 @@ service MobileBaseUtilityService {
     rpc GetOdometry(google.protobuf.Empty) returns (OdometryVector);
     rpc ResetOdometry(google.protobuf.Empty) returns (mobile.base.mobility.MobilityServiceAck);
     rpc GetMobileBase(google.protobuf.Empty) returns (MobileBase);
-    rpc GetState(google.protobuf.Empty) returns (MobileBaseState);
+    rpc GetState(reachy.part.PartId) returns (MobileBaseState);
     rpc Audit (google.protobuf.Empty) returns (MobileBaseStatus);
 }
