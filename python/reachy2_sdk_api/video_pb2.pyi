@@ -9,6 +9,7 @@ import google.protobuf.descriptor
 import google.protobuf.internal.containers
 import google.protobuf.internal.enum_type_wrapper
 import google.protobuf.message
+import google.protobuf.timestamp_pb2
 import google.protobuf.wrappers_pb2
 import sys
 import typing
@@ -57,57 +58,97 @@ class VideoAck(google.protobuf.message.Message):
 global___VideoAck = VideoAck
 
 @typing_extensions.final
-class CameraInfo(google.protobuf.message.Message):
+class CameraFeatures(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
-    MXID_FIELD_NUMBER: builtins.int
     NAME_FIELD_NUMBER: builtins.int
     STEREO_FIELD_NUMBER: builtins.int
     DEPTH_FIELD_NUMBER: builtins.int
-    mxid: builtins.str
     name: builtins.str
+    """string mxid = 1;"""
     stereo: builtins.bool
     depth: builtins.bool
     def __init__(
         self,
         *,
-        mxid: builtins.str = ...,
         name: builtins.str = ...,
         stereo: builtins.bool = ...,
         depth: builtins.bool = ...,
     ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["depth", b"depth", "mxid", b"mxid", "name", b"name", "stereo", b"stereo"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["depth", b"depth", "name", b"name", "stereo", b"stereo"]) -> None: ...
 
-global___CameraInfo = CameraInfo
+global___CameraFeatures = CameraFeatures
 
 @typing_extensions.final
-class ListOfCameraInfo(google.protobuf.message.Message):
+class CameraParameters(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
-    CAMERA_INFO_FIELD_NUMBER: builtins.int
+    HEIGHT_FIELD_NUMBER: builtins.int
+    WIDTH_FIELD_NUMBER: builtins.int
+    DISTORTION_MODEL_FIELD_NUMBER: builtins.int
+    D_FIELD_NUMBER: builtins.int
+    K_FIELD_NUMBER: builtins.int
+    R_FIELD_NUMBER: builtins.int
+    P_FIELD_NUMBER: builtins.int
+    height: builtins.int
+    width: builtins.int
+    distortion_model: builtins.str
     @property
-    def camera_info(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___CameraInfo]: ...
+    def D(self) -> google.protobuf.internal.containers.RepeatedScalarFieldContainer[builtins.float]: ...
+    @property
+    def K(self) -> google.protobuf.internal.containers.RepeatedScalarFieldContainer[builtins.float]: ...
+    @property
+    def R(self) -> google.protobuf.internal.containers.RepeatedScalarFieldContainer[builtins.float]: ...
+    @property
+    def P(self) -> google.protobuf.internal.containers.RepeatedScalarFieldContainer[builtins.float]: ...
     def __init__(
         self,
         *,
-        camera_info: collections.abc.Iterable[global___CameraInfo] | None = ...,
+        height: builtins.int = ...,
+        width: builtins.int = ...,
+        distortion_model: builtins.str = ...,
+        D: collections.abc.Iterable[builtins.float] | None = ...,
+        K: collections.abc.Iterable[builtins.float] | None = ...,
+        R: collections.abc.Iterable[builtins.float] | None = ...,
+        P: collections.abc.Iterable[builtins.float] | None = ...,
     ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["camera_info", b"camera_info"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["D", b"D", "K", b"K", "P", b"P", "R", b"R", "distortion_model", b"distortion_model", "height", b"height", "width", b"width"]) -> None: ...
 
-global___ListOfCameraInfo = ListOfCameraInfo
+global___CameraParameters = CameraParameters
+
+@typing_extensions.final
+class ListOfCameraFeatures(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    CAMERA_FEAT_FIELD_NUMBER: builtins.int
+    @property
+    def camera_feat(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___CameraFeatures]: ...
+    def __init__(
+        self,
+        *,
+        camera_feat: collections.abc.Iterable[global___CameraFeatures] | None = ...,
+    ) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["camera_feat", b"camera_feat"]) -> None: ...
+
+global___ListOfCameraFeatures = ListOfCameraFeatures
 
 @typing_extensions.final
 class Frame(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
+    TIMESTAMP_FIELD_NUMBER: builtins.int
     DATA_FIELD_NUMBER: builtins.int
+    @property
+    def timestamp(self) -> google.protobuf.timestamp_pb2.Timestamp: ...
     data: builtins.bytes
     def __init__(
         self,
         *,
+        timestamp: google.protobuf.timestamp_pb2.Timestamp | None = ...,
         data: builtins.bytes = ...,
     ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["data", b"data"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["timestamp", b"timestamp"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["data", b"data", "timestamp", b"timestamp"]) -> None: ...
 
 global___Frame = Frame
 
@@ -115,19 +156,19 @@ global___Frame = Frame
 class ViewRequest(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
-    CAMERA_INFO_FIELD_NUMBER: builtins.int
+    CAMERA_FEAT_FIELD_NUMBER: builtins.int
     VIEW_FIELD_NUMBER: builtins.int
     @property
-    def camera_info(self) -> global___CameraInfo: ...
+    def camera_feat(self) -> global___CameraFeatures: ...
     view: global___View.ValueType
     def __init__(
         self,
         *,
-        camera_info: global___CameraInfo | None = ...,
+        camera_feat: global___CameraFeatures | None = ...,
         view: global___View.ValueType | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["_view", b"_view", "camera_info", b"camera_info", "view", b"view"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["_view", b"_view", "camera_info", b"camera_info", "view", b"view"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["_view", b"_view", "camera_feat", b"camera_feat", "view", b"view"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["_view", b"_view", "camera_feat", b"camera_feat", "view", b"view"]) -> None: ...
     def WhichOneof(self, oneof_group: typing_extensions.Literal["_view", b"_view"]) -> typing_extensions.Literal["view"] | None: ...
 
 global___ViewRequest = ViewRequest

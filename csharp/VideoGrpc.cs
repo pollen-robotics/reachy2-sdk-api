@@ -48,36 +48,26 @@ namespace Component.Video {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Component.Video.ListOfStereoCameraInfo> __Marshaller_component_video_ListOfStereoCameraInfo = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Component.Video.ListOfStereoCameraInfo.Parser));
+    static readonly grpc::Marshaller<global::Component.Video.ListOfCameraInfo> __Marshaller_component_video_ListOfCameraInfo = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Component.Video.ListOfCameraInfo.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Component.Video.ListOfDepthCameraInfo> __Marshaller_component_video_ListOfDepthCameraInfo = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Component.Video.ListOfDepthCameraInfo.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Component.ComponentId> __Marshaller_component_ComponentId = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Component.ComponentId.Parser));
+    static readonly grpc::Marshaller<global::Component.Video.ViewRequest> __Marshaller_component_video_ViewRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Component.Video.ViewRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Component.Video.Frame> __Marshaller_component_video_Frame = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Component.Video.Frame.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Component.Video.ListOfStereoCameraInfo> __Method_GetAllStereoCamera = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Component.Video.ListOfStereoCameraInfo>(
+    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Component.Video.ListOfCameraInfo> __Method_GetAvailableCameras = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Component.Video.ListOfCameraInfo>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "GetAllStereoCamera",
+        "GetAvailableCameras",
         __Marshaller_google_protobuf_Empty,
-        __Marshaller_component_video_ListOfStereoCameraInfo);
+        __Marshaller_component_video_ListOfCameraInfo);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Component.Video.ListOfDepthCameraInfo> __Method_GetAllDepthCamera = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Component.Video.ListOfDepthCameraInfo>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetAllDepthCamera",
-        __Marshaller_google_protobuf_Empty,
-        __Marshaller_component_video_ListOfDepthCameraInfo);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Component.ComponentId, global::Component.Video.Frame> __Method_GetFrame = new grpc::Method<global::Component.ComponentId, global::Component.Video.Frame>(
+    static readonly grpc::Method<global::Component.Video.ViewRequest, global::Component.Video.Frame> __Method_GetFrame = new grpc::Method<global::Component.Video.ViewRequest, global::Component.Video.Frame>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetFrame",
-        __Marshaller_component_ComponentId,
+        __Marshaller_component_video_ViewRequest,
         __Marshaller_component_video_Frame);
 
     /// <summary>Service descriptor</summary>
@@ -91,19 +81,23 @@ namespace Component.Video {
     public abstract partial class VideoServiceBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Component.Video.ListOfStereoCameraInfo> GetAllStereoCamera(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Component.Video.ListOfCameraInfo> GetAvailableCameras(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      ///rpc GetDepthFrame (ViewRequest) returns (Frame);
+      ///rpc GetDepthMap (CameraInfo) returns (Frame);
+      ///rpc GetDisparity (CameraInfo) returns (Frame);
+      ///rpc Capture(CameraInfo) returns (VideoAck);
+      ///rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Component.Video.ListOfDepthCameraInfo> GetAllDepthCamera(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Component.Video.Frame> GetFrame(global::Component.ComponentId request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Component.Video.Frame> GetFrame(global::Component.Video.ViewRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -138,62 +132,86 @@ namespace Component.Video {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Component.Video.ListOfStereoCameraInfo GetAllStereoCamera(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Component.Video.ListOfCameraInfo GetAvailableCameras(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetAllStereoCamera(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetAvailableCameras(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Component.Video.ListOfStereoCameraInfo GetAllStereoCamera(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      public virtual global::Component.Video.ListOfCameraInfo GetAvailableCameras(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetAllStereoCamera, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetAvailableCameras, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Component.Video.ListOfStereoCameraInfo> GetAllStereoCameraAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Component.Video.ListOfCameraInfo> GetAvailableCamerasAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetAllStereoCameraAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetAvailableCamerasAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Component.Video.ListOfStereoCameraInfo> GetAllStereoCameraAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Component.Video.ListOfCameraInfo> GetAvailableCamerasAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetAllStereoCamera, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetAvailableCameras, null, options, request);
       }
+      /// <summary>
+      ///rpc GetDepthFrame (ViewRequest) returns (Frame);
+      ///rpc GetDepthMap (CameraInfo) returns (Frame);
+      ///rpc GetDisparity (CameraInfo) returns (Frame);
+      ///rpc Capture(CameraInfo) returns (VideoAck);
+      ///rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Component.Video.ListOfDepthCameraInfo GetAllDepthCamera(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetAllDepthCamera(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Component.Video.ListOfDepthCameraInfo GetAllDepthCamera(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetAllDepthCamera, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Component.Video.ListOfDepthCameraInfo> GetAllDepthCameraAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetAllDepthCameraAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Component.Video.ListOfDepthCameraInfo> GetAllDepthCameraAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetAllDepthCamera, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Component.Video.Frame GetFrame(global::Component.ComponentId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Component.Video.Frame GetFrame(global::Component.Video.ViewRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetFrame(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      ///rpc GetDepthFrame (ViewRequest) returns (Frame);
+      ///rpc GetDepthMap (CameraInfo) returns (Frame);
+      ///rpc GetDisparity (CameraInfo) returns (Frame);
+      ///rpc Capture(CameraInfo) returns (VideoAck);
+      ///rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Component.Video.Frame GetFrame(global::Component.ComponentId request, grpc::CallOptions options)
+      public virtual global::Component.Video.Frame GetFrame(global::Component.Video.ViewRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetFrame, null, options, request);
       }
+      /// <summary>
+      ///rpc GetDepthFrame (ViewRequest) returns (Frame);
+      ///rpc GetDepthMap (CameraInfo) returns (Frame);
+      ///rpc GetDisparity (CameraInfo) returns (Frame);
+      ///rpc Capture(CameraInfo) returns (VideoAck);
+      ///rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Component.Video.Frame> GetFrameAsync(global::Component.ComponentId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Component.Video.Frame> GetFrameAsync(global::Component.Video.ViewRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetFrameAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      ///rpc GetDepthFrame (ViewRequest) returns (Frame);
+      ///rpc GetDepthMap (CameraInfo) returns (Frame);
+      ///rpc GetDisparity (CameraInfo) returns (Frame);
+      ///rpc Capture(CameraInfo) returns (VideoAck);
+      ///rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Component.Video.Frame> GetFrameAsync(global::Component.ComponentId request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Component.Video.Frame> GetFrameAsync(global::Component.Video.ViewRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetFrame, null, options, request);
       }
@@ -211,8 +229,7 @@ namespace Component.Video {
     public static grpc::ServerServiceDefinition BindService(VideoServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetAllStereoCamera, serviceImpl.GetAllStereoCamera)
-          .AddMethod(__Method_GetAllDepthCamera, serviceImpl.GetAllDepthCamera)
+          .AddMethod(__Method_GetAvailableCameras, serviceImpl.GetAvailableCameras)
           .AddMethod(__Method_GetFrame, serviceImpl.GetFrame).Build();
     }
 
@@ -223,9 +240,8 @@ namespace Component.Video {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, VideoServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_GetAllStereoCamera, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Component.Video.ListOfStereoCameraInfo>(serviceImpl.GetAllStereoCamera));
-      serviceBinder.AddMethod(__Method_GetAllDepthCamera, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Component.Video.ListOfDepthCameraInfo>(serviceImpl.GetAllDepthCamera));
-      serviceBinder.AddMethod(__Method_GetFrame, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Component.ComponentId, global::Component.Video.Frame>(serviceImpl.GetFrame));
+      serviceBinder.AddMethod(__Method_GetAvailableCameras, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Component.Video.ListOfCameraInfo>(serviceImpl.GetAvailableCameras));
+      serviceBinder.AddMethod(__Method_GetFrame, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Component.Video.ViewRequest, global::Component.Video.Frame>(serviceImpl.GetFrame));
     }
 
   }
