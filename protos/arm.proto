@@ -34,13 +34,13 @@ enum ArmField {
 }
 
 enum ArmJointOrder {
-    SHOULDER_PITCH = 1;
-    SHOULDER_ROLL = 2;
-    ELBOW_YAW = 3;
-    ELBOW_PITCH = 4;
-    WRIST_ROLL = 5;
-    WRIST_PITCH = 6;
-    WRIST_YAW = 7;
+    SHOULDER_PITCH = 0;
+    SHOULDER_ROLL = 1;
+    ELBOW_YAW = 2;
+    ELBOW_PITCH = 3;
+    WRIST_ROLL = 4;
+    WRIST_PITCH = 5;
+    WRIST_YAW = 6;
 }
 
 enum IKConstrainedMode {

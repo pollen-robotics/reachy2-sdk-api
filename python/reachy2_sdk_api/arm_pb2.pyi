@@ -64,6 +64,31 @@ PID: ArmField.ValueType  # 12
 ALL: ArmField.ValueType  # 15
 global___ArmField = ArmField
 
+class _ArmJointOrder:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _ArmJointOrderEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_ArmJointOrder.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    SHOULDER_PITCH: _ArmJointOrder.ValueType  # 0
+    SHOULDER_ROLL: _ArmJointOrder.ValueType  # 1
+    ELBOW_YAW: _ArmJointOrder.ValueType  # 2
+    ELBOW_PITCH: _ArmJointOrder.ValueType  # 3
+    WRIST_ROLL: _ArmJointOrder.ValueType  # 4
+    WRIST_PITCH: _ArmJointOrder.ValueType  # 5
+    WRIST_YAW: _ArmJointOrder.ValueType  # 6
+
+class ArmJointOrder(_ArmJointOrder, metaclass=_ArmJointOrderEnumTypeWrapper): ...
+
+SHOULDER_PITCH: ArmJointOrder.ValueType  # 0
+SHOULDER_ROLL: ArmJointOrder.ValueType  # 1
+ELBOW_YAW: ArmJointOrder.ValueType  # 2
+ELBOW_PITCH: ArmJointOrder.ValueType  # 3
+WRIST_ROLL: ArmJointOrder.ValueType  # 4
+WRIST_PITCH: ArmJointOrder.ValueType  # 5
+WRIST_YAW: ArmJointOrder.ValueType  # 6
+global___ArmJointOrder = ArmJointOrder
+
 class _IKConstrainedMode:
     ValueType = typing.NewType("ValueType", builtins.int)
     V: typing_extensions.TypeAlias = ValueType

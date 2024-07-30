@@ -65,6 +65,23 @@ PID: HeadField.ValueType  # 12
 ALL: HeadField.ValueType  # 15
 global___HeadField = HeadField
 
+class _NeckJointOrder:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _NeckJointOrderEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_NeckJointOrder.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    ROLL: _NeckJointOrder.ValueType  # 0
+    PITCH: _NeckJointOrder.ValueType  # 1
+    YAW: _NeckJointOrder.ValueType  # 2
+
+class NeckJointOrder(_NeckJointOrder, metaclass=_NeckJointOrderEnumTypeWrapper): ...
+
+ROLL: NeckJointOrder.ValueType  # 0
+PITCH: NeckJointOrder.ValueType  # 1
+YAW: NeckJointOrder.ValueType  # 2
+global___NeckJointOrder = NeckJointOrder
+
 @typing_extensions.final
 class Head(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor

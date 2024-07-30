@@ -35,9 +35,9 @@ enum HeadField {
 }
 
 enum NeckJointOrder {
-    ROLL = 1;
-    PITCH = 2;
-    YAW = 3;
+    ROLL = 0;
+    PITCH = 1;
+    YAW = 2;
 }
 
 message Head {

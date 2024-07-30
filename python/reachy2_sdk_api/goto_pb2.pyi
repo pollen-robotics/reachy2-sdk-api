@@ -9,7 +9,9 @@ import google.protobuf.descriptor
 import google.protobuf.internal.containers
 import google.protobuf.internal.enum_type_wrapper
 import google.protobuf.message
+import google.protobuf.wrappers_pb2
 import head_pb2
+import part_pb2
 import sys
 import typing
 
@@ -154,6 +156,34 @@ class JointsGoal(google.protobuf.message.Message):
 global___JointsGoal = JointsGoal
 
 @typing_extensions.final
+class SingleJointGoal(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    ID_FIELD_NUMBER: builtins.int
+    ARM_JOINT_FIELD_NUMBER: builtins.int
+    NECK_JOINT_FIELD_NUMBER: builtins.int
+    JOINT_GOAL_FIELD_NUMBER: builtins.int
+    @property
+    def id(self) -> part_pb2.PartId: ...
+    arm_joint: arm_pb2.ArmJointOrder.ValueType
+    neck_joint: head_pb2.NeckJointOrder.ValueType
+    @property
+    def joint_goal(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    def __init__(
+        self,
+        *,
+        id: part_pb2.PartId | None = ...,
+        arm_joint: arm_pb2.ArmJointOrder.ValueType = ...,
+        neck_joint: head_pb2.NeckJointOrder.ValueType = ...,
+        joint_goal: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["arm_joint", b"arm_joint", "id", b"id", "joint", b"joint", "joint_goal", b"joint_goal", "neck_joint", b"neck_joint"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["arm_joint", b"arm_joint", "id", b"id", "joint", b"joint", "joint_goal", b"joint_goal", "neck_joint", b"neck_joint"]) -> None: ...
+    def WhichOneof(self, oneof_group: typing_extensions.Literal["joint", b"joint"]) -> typing_extensions.Literal["arm_joint", "neck_joint"] | None: ...
+
+global___SingleJointGoal = SingleJointGoal
+
+@typing_extensions.final
 class GoToInterpolation(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -174,11 +204,14 @@ class GoToRequest(google.protobuf.message.Message):
 
     CARTESIAN_GOAL_FIELD_NUMBER: builtins.int
     JOINTS_GOAL_FIELD_NUMBER: builtins.int
+    SINGLE_JOINT_GOAL_FIELD_NUMBER: builtins.int
     INTERPOLATION_MODE_FIELD_NUMBER: builtins.int
     @property
     def cartesian_goal(self) -> global___CartesianGoal: ...
     @property
     def joints_goal(self) -> global___JointsGoal: ...
+    @property
+    def single_joint_goal(self) -> global___SingleJointGoal: ...
     @property
     def interpolation_mode(self) -> global___GoToInterpolation: ...
     def __init__(
@@ -186,11 +219,12 @@ class GoToRequest(google.protobuf.message.Message):
         *,
         cartesian_goal: global___CartesianGoal | None = ...,
         joints_goal: global___JointsGoal | None = ...,
+        single_joint_goal: global___SingleJointGoal | None = ...,
         interpolation_mode: global___GoToInterpolation | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["cartesian_goal", b"cartesian_goal", "goal", b"goal", "interpolation_mode", b"interpolation_mode", "joints_goal", b"joints_goal"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["cartesian_goal", b"cartesian_goal", "goal", b"goal", "interpolation_mode", b"interpolation_mode", "joints_goal", b"joints_goal"]) -> None: ...
-    def WhichOneof(self, oneof_group: typing_extensions.Literal["goal", b"goal"]) -> typing_extensions.Literal["cartesian_goal", "joints_goal"] | None: ...
+    def HasField(self, field_name: typing_extensions.Literal["cartesian_goal", b"cartesian_goal", "goal", b"goal", "interpolation_mode", b"interpolation_mode", "joints_goal", b"joints_goal", "single_joint_goal", b"single_joint_goal"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["cartesian_goal", b"cartesian_goal", "goal", b"goal", "interpolation_mode", b"interpolation_mode", "joints_goal", b"joints_goal", "single_joint_goal", b"single_joint_goal"]) -> None: ...
+    def WhichOneof(self, oneof_group: typing_extensions.Literal["goal", b"goal"]) -> typing_extensions.Literal["cartesian_goal", "joints_goal", "single_joint_goal"] | None: ...
 
 global___GoToRequest = GoToRequest
 
