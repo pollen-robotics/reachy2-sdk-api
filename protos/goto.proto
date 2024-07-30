@@ -52,6 +52,7 @@ message SingleJointGoal {
         reachy.part.head.NeckJointOrder neck_joint = 3;
     }
     google.protobuf.FloatValue joint_goal = 4;
+    google.protobuf.FloatValue duration = 10;
 }
 
 enum InterpolationMode {
