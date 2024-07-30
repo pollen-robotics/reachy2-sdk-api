@@ -41,6 +41,7 @@ message JointsGoal {
     oneof joints_goal {
         reachy.part.arm.ArmJointGoal arm_joint_goal = 1;
         reachy.part.head.NeckJointGoal neck_joint_goal = 2;
+        SingleJointGoal single_joint_goal = 3;
     }
 }
 
@@ -67,9 +68,8 @@ message GoToRequest {
     oneof goal {
         CartesianGoal cartesian_goal = 1;
         JointsGoal joints_goal = 2;
-        SingleJointGoal single_joint_goal = 3;
     }
-    GoToInterpolation interpolation_mode = 4;
+    GoToInterpolation interpolation_mode = 3;
 }
 
 message GoToQueue {
