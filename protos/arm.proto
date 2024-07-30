@@ -33,6 +33,16 @@ enum ArmField {
     ALL = 15;
 }
 
+enum ArmJointOrder {
+    SHOULDER_PITCH = 1;
+    SHOULDER_ROLL = 2;
+    ELBOW_YAW = 3;
+    ELBOW_PITCH = 4;
+    WRIST_ROLL = 5;
+    WRIST_PITCH = 6;
+    WRIST_YAW = 7;
+}
+
 enum IKConstrainedMode {
     UNDEFINED_CONSTRAINED_MODE = 0;
     UNCONSTRAINED = 1;

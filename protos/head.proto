@@ -34,6 +34,12 @@ enum HeadField {
     ALL = 15;
 }
 
+enum NeckJointOrder {
+    ROLL = 1;
+    PITCH = 2;
+    YAW = 3;
+}
+
 message Head {
     PartId part_id = 1;
     HeadDescription description = 2;
