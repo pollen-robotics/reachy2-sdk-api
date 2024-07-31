@@ -65,7 +65,6 @@ class CameraFeatures(google.protobuf.message.Message):
     STEREO_FIELD_NUMBER: builtins.int
     DEPTH_FIELD_NUMBER: builtins.int
     name: builtins.str
-    """string mxid = 1;"""
     stereo: builtins.bool
     depth: builtins.bool
     def __init__(

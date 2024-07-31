@@ -32,12 +32,6 @@ class VideoServiceStub:
         video_pb2.ViewRequest,
         video_pb2.CameraParameters,
     ]
-    """rpc GetDepthFrame (ViewRequest) returns (Frame);
-    rpc GetDepthMap (CameraFeatures) returns (Frame);
-    rpc GetDisparity (CameraFeatures) returns (Frame);
-    rpc Capture(CameraFeatures) returns (VideoAck);
-    rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
-    """
 
 class VideoServiceAsyncStub:
     GetAvailableCameras: grpc.aio.UnaryUnaryMultiCallable[
@@ -52,12 +46,6 @@ class VideoServiceAsyncStub:
         video_pb2.ViewRequest,
         video_pb2.CameraParameters,
     ]
-    """rpc GetDepthFrame (ViewRequest) returns (Frame);
-    rpc GetDepthMap (CameraFeatures) returns (Frame);
-    rpc GetDisparity (CameraFeatures) returns (Frame);
-    rpc Capture(CameraFeatures) returns (VideoAck);
-    rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
-    """
 
 class VideoServiceServicer(metaclass=abc.ABCMeta):
     @abc.abstractmethod
@@ -77,12 +65,6 @@ class VideoServiceServicer(metaclass=abc.ABCMeta):
         self,
         request: video_pb2.ViewRequest,
         context: _ServicerContext,
-    ) -> typing.Union[video_pb2.CameraParameters, collections.abc.Awaitable[video_pb2.CameraParameters]]:
-        """rpc GetDepthFrame (ViewRequest) returns (Frame);
-        rpc GetDepthMap (CameraFeatures) returns (Frame);
-        rpc GetDisparity (CameraFeatures) returns (Frame);
-        rpc Capture(CameraFeatures) returns (VideoAck);
-        rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
-        """
+    ) -> typing.Union[video_pb2.CameraParameters, collections.abc.Awaitable[video_pb2.CameraParameters]]: ...
 
 def add_VideoServiceServicer_to_server(servicer: VideoServiceServicer, server: typing.Union[grpc.Server, grpc.aio.Server]) -> None: ...

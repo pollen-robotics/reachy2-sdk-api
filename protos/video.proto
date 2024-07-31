@@ -19,7 +19,6 @@ message VideoAck {
 }
 
 message CameraFeatures {
-    //string mxid = 1;
     string name = 2;
     bool stereo = 3;
     bool depth = 4;
@@ -53,9 +52,4 @@ service VideoService {
     rpc GetAvailableCameras(google.protobuf.Empty) returns (ListOfCameraFeatures);
     rpc GetFrame (ViewRequest) returns (Frame);
     rpc GetParameters (ViewRequest) returns (CameraParameters);
-    //rpc GetDepthFrame (ViewRequest) returns (Frame);
-    //rpc GetDepthMap (CameraFeatures) returns (Frame);
-    //rpc GetDisparity (CameraFeatures) returns (Frame);
-    //rpc Capture(CameraFeatures) returns (VideoAck);
-    //rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
 }

@@ -48,12 +48,7 @@ class VideoServiceServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def GetParameters(self, request, context):
-        """rpc GetDepthFrame (ViewRequest) returns (Frame);
-        rpc GetDepthMap (CameraFeatures) returns (Frame);
-        rpc GetDisparity (CameraFeatures) returns (Frame);
-        rpc Capture(CameraFeatures) returns (VideoAck);
-        rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
-        """
+        """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
