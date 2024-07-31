@@ -26,27 +26,35 @@ namespace Component.Video {
           string.Concat(
             "Cgt2aWRlby5wcm90bxIPY29tcG9uZW50LnZpZGVvGhtnb29nbGUvcHJvdG9i",
             "dWYvZW1wdHkucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90",
-            "bxoLZXJyb3IucHJvdG8iVAoIVmlkZW9BY2sSKwoHc3VjY2VzcxgBIAEoCzIa",
-            "Lmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUSGwoFZXJyb3IYAiABKAsyDC5l",
-            "cnJvci5FcnJvciI5CgpDYW1lcmFJbmZvEgwKBG5hbWUYAiABKAkSDgoGc3Rl",
-            "cmVvGAMgASgIEg0KBWRlcHRoGAQgASgIIkQKEExpc3RPZkNhbWVyYUluZm8S",
-            "MAoLY2FtZXJhX2luZm8YASADKAsyGy5jb21wb25lbnQudmlkZW8uQ2FtZXJh",
-            "SW5mbyIVCgVGcmFtZRIMCgRkYXRhGAEgASgMInIKC1ZpZXdSZXF1ZXN0EjAK",
-            "C2NhbWVyYV9pbmZvGAEgASgLMhsuY29tcG9uZW50LnZpZGVvLkNhbWVyYUlu",
-            "Zm8SKAoEdmlldxgCIAEoDjIVLmNvbXBvbmVudC52aWRlby5WaWV3SACIAQFC",
-            "BwoFX3ZpZXcqGwoEVmlldxIICgRMRUZUEAASCQoFUklHSFQQATKiAQoMVmlk",
-            "ZW9TZXJ2aWNlElAKE0dldEF2YWlsYWJsZUNhbWVyYXMSFi5nb29nbGUucHJv",
-            "dG9idWYuRW1wdHkaIS5jb21wb25lbnQudmlkZW8uTGlzdE9mQ2FtZXJhSW5m",
-            "bxJACghHZXRGcmFtZRIcLmNvbXBvbmVudC52aWRlby5WaWV3UmVxdWVzdBoW",
-            "LmNvbXBvbmVudC52aWRlby5GcmFtZWIGcHJvdG8z"));
+            "bxofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90bxoLZXJyb3IucHJv",
+            "dG8iVAoIVmlkZW9BY2sSKwoHc3VjY2VzcxgBIAEoCzIaLmdvb2dsZS5wcm90",
+            "b2J1Zi5Cb29sVmFsdWUSGwoFZXJyb3IYAiABKAsyDC5lcnJvci5FcnJvciI9",
+            "Cg5DYW1lcmFGZWF0dXJlcxIMCgRuYW1lGAIgASgJEg4KBnN0ZXJlbxgDIAEo",
+            "CBINCgVkZXB0aBgEIAEoCCJ3ChBDYW1lcmFQYXJhbWV0ZXJzEg4KBmhlaWdo",
+            "dBgBIAEoDRINCgV3aWR0aBgCIAEoDRIYChBkaXN0b3J0aW9uX21vZGVsGAMg",
+            "ASgJEgkKAUQYBCADKAISCQoBSxgFIAMoAhIJCgFSGAYgAygCEgkKAVAYByAD",
+            "KAIiTAoUTGlzdE9mQ2FtZXJhRmVhdHVyZXMSNAoLY2FtZXJhX2ZlYXQYASAD",
+            "KAsyHy5jb21wb25lbnQudmlkZW8uQ2FtZXJhRmVhdHVyZXMiRAoFRnJhbWUS",
+            "LQoJdGltZXN0YW1wGAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
+            "cBIMCgRkYXRhGAIgASgMInYKC1ZpZXdSZXF1ZXN0EjQKC2NhbWVyYV9mZWF0",
+            "GAEgASgLMh8uY29tcG9uZW50LnZpZGVvLkNhbWVyYUZlYXR1cmVzEigKBHZp",
+            "ZXcYAiABKA4yFS5jb21wb25lbnQudmlkZW8uVmlld0gAiAEBQgcKBV92aWV3",
+            "KhsKBFZpZXcSCAoETEVGVBAAEgkKBVJJR0hUEAEy+AEKDFZpZGVvU2Vydmlj",
+            "ZRJUChNHZXRBdmFpbGFibGVDYW1lcmFzEhYuZ29vZ2xlLnByb3RvYnVmLkVt",
+            "cHR5GiUuY29tcG9uZW50LnZpZGVvLkxpc3RPZkNhbWVyYUZlYXR1cmVzEkAK",
+            "CEdldEZyYW1lEhwuY29tcG9uZW50LnZpZGVvLlZpZXdSZXF1ZXN0GhYuY29t",
+            "cG9uZW50LnZpZGVvLkZyYW1lElAKDUdldFBhcmFtZXRlcnMSHC5jb21wb25l",
+            "bnQudmlkZW8uVmlld1JlcXVlc3QaIS5jb21wb25lbnQudmlkZW8uQ2FtZXJh",
+            "UGFyYW1ldGVyc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Error.ErrorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Error.ErrorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Component.Video.View), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.VideoAck), global::Component.Video.VideoAck.Parser, new[]{ "Success", "Error" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.CameraInfo), global::Component.Video.CameraInfo.Parser, new[]{ "Name", "Stereo", "Depth" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.ListOfCameraInfo), global::Component.Video.ListOfCameraInfo.Parser, new[]{ "CameraInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.Frame), global::Component.Video.Frame.Parser, new[]{ "Data" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.ViewRequest), global::Component.Video.ViewRequest.Parser, new[]{ "CameraInfo", "View" }, new[]{ "View" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.CameraFeatures), global::Component.Video.CameraFeatures.Parser, new[]{ "Name", "Stereo", "Depth" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.CameraParameters), global::Component.Video.CameraParameters.Parser, new[]{ "Height", "Width", "DistortionModel", "D", "K", "R", "P" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.ListOfCameraFeatures), global::Component.Video.ListOfCameraFeatures.Parser, new[]{ "CameraFeat" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.Frame), global::Component.Video.Frame.Parser, new[]{ "Timestamp", "Data" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.ViewRequest), global::Component.Video.ViewRequest.Parser, new[]{ "CameraFeat", "View" }, new[]{ "View" }, null, null, null)
           }));
     }
     #endregion
@@ -304,16 +312,16 @@ namespace Component.Video {
 
   }
 
-  public sealed partial class CameraInfo : pb::IMessage<CameraInfo>
+  public sealed partial class CameraFeatures : pb::IMessage<CameraFeatures>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<CameraInfo> _parser = new pb::MessageParser<CameraInfo>(() => new CameraInfo());
+    private static readonly pb::MessageParser<CameraFeatures> _parser = new pb::MessageParser<CameraFeatures>(() => new CameraFeatures());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<CameraInfo> Parser { get { return _parser; } }
+    public static pb::MessageParser<CameraFeatures> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -329,7 +337,7 @@ namespace Component.Video {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CameraInfo() {
+    public CameraFeatures() {
       OnConstruction();
     }
 
@@ -337,7 +345,7 @@ namespace Component.Video {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CameraInfo(CameraInfo other) : this() {
+    public CameraFeatures(CameraFeatures other) : this() {
       name_ = other.name_;
       stereo_ = other.stereo_;
       depth_ = other.depth_;
@@ -346,16 +354,13 @@ namespace Component.Video {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CameraInfo Clone() {
-      return new CameraInfo(this);
+    public CameraFeatures Clone() {
+      return new CameraFeatures(this);
     }
 
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
     private string name_ = "";
-    /// <summary>
-    ///string mxid = 1;
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
@@ -392,12 +397,12 @@ namespace Component.Video {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as CameraInfo);
+      return Equals(other as CameraFeatures);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(CameraInfo other) {
+    public bool Equals(CameraFeatures other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -496,7 +501,7 @@ namespace Component.Video {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(CameraInfo other) {
+    public void MergeFrom(CameraFeatures other) {
       if (other == null) {
         return;
       }
@@ -570,16 +575,16 @@ namespace Component.Video {
 
   }
 
-  public sealed partial class ListOfCameraInfo : pb::IMessage<ListOfCameraInfo>
+  public sealed partial class CameraParameters : pb::IMessage<CameraParameters>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<ListOfCameraInfo> _parser = new pb::MessageParser<ListOfCameraInfo>(() => new ListOfCameraInfo());
+    private static readonly pb::MessageParser<CameraParameters> _parser = new pb::MessageParser<CameraParameters>(() => new CameraParameters());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<ListOfCameraInfo> Parser { get { return _parser; } }
+    public static pb::MessageParser<CameraParameters> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -595,7 +600,7 @@ namespace Component.Video {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ListOfCameraInfo() {
+    public CameraParameters() {
       OnConstruction();
     }
 
@@ -603,44 +608,125 @@ namespace Component.Video {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ListOfCameraInfo(ListOfCameraInfo other) : this() {
-      cameraInfo_ = other.cameraInfo_.Clone();
+    public CameraParameters(CameraParameters other) : this() {
+      height_ = other.height_;
+      width_ = other.width_;
+      distortionModel_ = other.distortionModel_;
+      d_ = other.d_.Clone();
+      k_ = other.k_.Clone();
+      r_ = other.r_.Clone();
+      p_ = other.p_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ListOfCameraInfo Clone() {
-      return new ListOfCameraInfo(this);
+    public CameraParameters Clone() {
+      return new CameraParameters(this);
     }
 
-    /// <summary>Field number for the "camera_info" field.</summary>
-    public const int CameraInfoFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Component.Video.CameraInfo> _repeated_cameraInfo_codec
-        = pb::FieldCodec.ForMessage(10, global::Component.Video.CameraInfo.Parser);
-    private readonly pbc::RepeatedField<global::Component.Video.CameraInfo> cameraInfo_ = new pbc::RepeatedField<global::Component.Video.CameraInfo>();
+    /// <summary>Field number for the "height" field.</summary>
+    public const int HeightFieldNumber = 1;
+    private uint height_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Component.Video.CameraInfo> CameraInfo {
-      get { return cameraInfo_; }
+    public uint Height {
+      get { return height_; }
+      set {
+        height_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "width" field.</summary>
+    public const int WidthFieldNumber = 2;
+    private uint width_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Width {
+      get { return width_; }
+      set {
+        width_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "distortion_model" field.</summary>
+    public const int DistortionModelFieldNumber = 3;
+    private string distortionModel_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string DistortionModel {
+      get { return distortionModel_; }
+      set {
+        distortionModel_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "D" field.</summary>
+    public const int DFieldNumber = 4;
+    private static readonly pb::FieldCodec<float> _repeated_d_codec
+        = pb::FieldCodec.ForFloat(34);
+    private readonly pbc::RepeatedField<float> d_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> D {
+      get { return d_; }
+    }
+
+    /// <summary>Field number for the "K" field.</summary>
+    public const int KFieldNumber = 5;
+    private static readonly pb::FieldCodec<float> _repeated_k_codec
+        = pb::FieldCodec.ForFloat(42);
+    private readonly pbc::RepeatedField<float> k_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> K {
+      get { return k_; }
+    }
+
+    /// <summary>Field number for the "R" field.</summary>
+    public const int RFieldNumber = 6;
+    private static readonly pb::FieldCodec<float> _repeated_r_codec
+        = pb::FieldCodec.ForFloat(50);
+    private readonly pbc::RepeatedField<float> r_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> R {
+      get { return r_; }
+    }
+
+    /// <summary>Field number for the "P" field.</summary>
+    public const int PFieldNumber = 7;
+    private static readonly pb::FieldCodec<float> _repeated_p_codec
+        = pb::FieldCodec.ForFloat(58);
+    private readonly pbc::RepeatedField<float> p_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> P {
+      get { return p_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as ListOfCameraInfo);
+      return Equals(other as CameraParameters);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(ListOfCameraInfo other) {
+    public bool Equals(CameraParameters other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!cameraInfo_.Equals(other.cameraInfo_)) return false;
+      if (Height != other.Height) return false;
+      if (Width != other.Width) return false;
+      if (DistortionModel != other.DistortionModel) return false;
+      if(!d_.Equals(other.d_)) return false;
+      if(!k_.Equals(other.k_)) return false;
+      if(!r_.Equals(other.r_)) return false;
+      if(!p_.Equals(other.p_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -648,7 +734,13 @@ namespace Component.Video {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= cameraInfo_.GetHashCode();
+      if (Height != 0) hash ^= Height.GetHashCode();
+      if (Width != 0) hash ^= Width.GetHashCode();
+      if (DistortionModel.Length != 0) hash ^= DistortionModel.GetHashCode();
+      hash ^= d_.GetHashCode();
+      hash ^= k_.GetHashCode();
+      hash ^= r_.GetHashCode();
+      hash ^= p_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -667,7 +759,22 @@ namespace Component.Video {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      cameraInfo_.WriteTo(output, _repeated_cameraInfo_codec);
+      if (Height != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Height);
+      }
+      if (Width != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Width);
+      }
+      if (DistortionModel.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(DistortionModel);
+      }
+      d_.WriteTo(output, _repeated_d_codec);
+      k_.WriteTo(output, _repeated_k_codec);
+      r_.WriteTo(output, _repeated_r_codec);
+      p_.WriteTo(output, _repeated_p_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -678,7 +785,22 @@ namespace Component.Video {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      cameraInfo_.WriteTo(ref output, _repeated_cameraInfo_codec);
+      if (Height != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Height);
+      }
+      if (Width != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Width);
+      }
+      if (DistortionModel.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(DistortionModel);
+      }
+      d_.WriteTo(ref output, _repeated_d_codec);
+      k_.WriteTo(ref output, _repeated_k_codec);
+      r_.WriteTo(ref output, _repeated_r_codec);
+      p_.WriteTo(ref output, _repeated_p_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -689,7 +811,19 @@ namespace Component.Video {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += cameraInfo_.CalculateSize(_repeated_cameraInfo_codec);
+      if (Height != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Height);
+      }
+      if (Width != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Width);
+      }
+      if (DistortionModel.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DistortionModel);
+      }
+      size += d_.CalculateSize(_repeated_d_codec);
+      size += k_.CalculateSize(_repeated_k_codec);
+      size += r_.CalculateSize(_repeated_r_codec);
+      size += p_.CalculateSize(_repeated_p_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -698,11 +832,257 @@ namespace Component.Video {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(ListOfCameraInfo other) {
+    public void MergeFrom(CameraParameters other) {
       if (other == null) {
         return;
       }
-      cameraInfo_.Add(other.cameraInfo_);
+      if (other.Height != 0) {
+        Height = other.Height;
+      }
+      if (other.Width != 0) {
+        Width = other.Width;
+      }
+      if (other.DistortionModel.Length != 0) {
+        DistortionModel = other.DistortionModel;
+      }
+      d_.Add(other.d_);
+      k_.Add(other.k_);
+      r_.Add(other.r_);
+      p_.Add(other.p_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Height = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Width = input.ReadUInt32();
+            break;
+          }
+          case 26: {
+            DistortionModel = input.ReadString();
+            break;
+          }
+          case 34:
+          case 37: {
+            d_.AddEntriesFrom(input, _repeated_d_codec);
+            break;
+          }
+          case 42:
+          case 45: {
+            k_.AddEntriesFrom(input, _repeated_k_codec);
+            break;
+          }
+          case 50:
+          case 53: {
+            r_.AddEntriesFrom(input, _repeated_r_codec);
+            break;
+          }
+          case 58:
+          case 61: {
+            p_.AddEntriesFrom(input, _repeated_p_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Height = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Width = input.ReadUInt32();
+            break;
+          }
+          case 26: {
+            DistortionModel = input.ReadString();
+            break;
+          }
+          case 34:
+          case 37: {
+            d_.AddEntriesFrom(ref input, _repeated_d_codec);
+            break;
+          }
+          case 42:
+          case 45: {
+            k_.AddEntriesFrom(ref input, _repeated_k_codec);
+            break;
+          }
+          case 50:
+          case 53: {
+            r_.AddEntriesFrom(ref input, _repeated_r_codec);
+            break;
+          }
+          case 58:
+          case 61: {
+            p_.AddEntriesFrom(ref input, _repeated_p_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class ListOfCameraFeatures : pb::IMessage<ListOfCameraFeatures>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ListOfCameraFeatures> _parser = new pb::MessageParser<ListOfCameraFeatures>(() => new ListOfCameraFeatures());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ListOfCameraFeatures> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Component.Video.VideoReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ListOfCameraFeatures() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ListOfCameraFeatures(ListOfCameraFeatures other) : this() {
+      cameraFeat_ = other.cameraFeat_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ListOfCameraFeatures Clone() {
+      return new ListOfCameraFeatures(this);
+    }
+
+    /// <summary>Field number for the "camera_feat" field.</summary>
+    public const int CameraFeatFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Component.Video.CameraFeatures> _repeated_cameraFeat_codec
+        = pb::FieldCodec.ForMessage(10, global::Component.Video.CameraFeatures.Parser);
+    private readonly pbc::RepeatedField<global::Component.Video.CameraFeatures> cameraFeat_ = new pbc::RepeatedField<global::Component.Video.CameraFeatures>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Component.Video.CameraFeatures> CameraFeat {
+      get { return cameraFeat_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ListOfCameraFeatures);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ListOfCameraFeatures other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!cameraFeat_.Equals(other.cameraFeat_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= cameraFeat_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      cameraFeat_.WriteTo(output, _repeated_cameraFeat_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      cameraFeat_.WriteTo(ref output, _repeated_cameraFeat_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += cameraFeat_.CalculateSize(_repeated_cameraFeat_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ListOfCameraFeatures other) {
+      if (other == null) {
+        return;
+      }
+      cameraFeat_.Add(other.cameraFeat_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -719,7 +1099,7 @@ namespace Component.Video {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            cameraInfo_.AddEntriesFrom(input, _repeated_cameraInfo_codec);
+            cameraFeat_.AddEntriesFrom(input, _repeated_cameraFeat_codec);
             break;
           }
         }
@@ -738,7 +1118,7 @@ namespace Component.Video {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            cameraInfo_.AddEntriesFrom(ref input, _repeated_cameraInfo_codec);
+            cameraFeat_.AddEntriesFrom(ref input, _repeated_cameraFeat_codec);
             break;
           }
         }
@@ -762,7 +1142,7 @@ namespace Component.Video {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Component.Video.VideoReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Component.Video.VideoReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -782,6 +1162,7 @@ namespace Component.Video {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Frame(Frame other) : this() {
+      timestamp_ = other.timestamp_ != null ? other.timestamp_.Clone() : null;
       data_ = other.data_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -792,8 +1173,20 @@ namespace Component.Video {
       return new Frame(this);
     }
 
+    /// <summary>Field number for the "timestamp" field.</summary>
+    public const int TimestampFieldNumber = 1;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp timestamp_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp Timestamp {
+      get { return timestamp_; }
+      set {
+        timestamp_ = value;
+      }
+    }
+
     /// <summary>Field number for the "data" field.</summary>
-    public const int DataFieldNumber = 1;
+    public const int DataFieldNumber = 2;
     private pb::ByteString data_ = pb::ByteString.Empty;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -819,6 +1212,7 @@ namespace Component.Video {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (!object.Equals(Timestamp, other.Timestamp)) return false;
       if (Data != other.Data) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -827,6 +1221,7 @@ namespace Component.Video {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
+      if (timestamp_ != null) hash ^= Timestamp.GetHashCode();
       if (Data.Length != 0) hash ^= Data.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -846,8 +1241,12 @@ namespace Component.Video {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Data.Length != 0) {
+      if (timestamp_ != null) {
         output.WriteRawTag(10);
+        output.WriteMessage(Timestamp);
+      }
+      if (Data.Length != 0) {
+        output.WriteRawTag(18);
         output.WriteBytes(Data);
       }
       if (_unknownFields != null) {
@@ -860,8 +1259,12 @@ namespace Component.Video {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Data.Length != 0) {
+      if (timestamp_ != null) {
         output.WriteRawTag(10);
+        output.WriteMessage(Timestamp);
+      }
+      if (Data.Length != 0) {
+        output.WriteRawTag(18);
         output.WriteBytes(Data);
       }
       if (_unknownFields != null) {
@@ -874,6 +1277,9 @@ namespace Component.Video {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
+      if (timestamp_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Timestamp);
+      }
       if (Data.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeBytesSize(Data);
       }
@@ -888,6 +1294,12 @@ namespace Component.Video {
     public void MergeFrom(Frame other) {
       if (other == null) {
         return;
+      }
+      if (other.timestamp_ != null) {
+        if (timestamp_ == null) {
+          Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        Timestamp.MergeFrom(other.Timestamp);
       }
       if (other.Data.Length != 0) {
         Data = other.Data;
@@ -908,6 +1320,13 @@ namespace Component.Video {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
+            if (timestamp_ == null) {
+              Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Timestamp);
+            break;
+          }
+          case 18: {
             Data = input.ReadBytes();
             break;
           }
@@ -927,6 +1346,13 @@ namespace Component.Video {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
+            if (timestamp_ == null) {
+              Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Timestamp);
+            break;
+          }
+          case 18: {
             Data = input.ReadBytes();
             break;
           }
@@ -952,7 +1378,7 @@ namespace Component.Video {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Component.Video.VideoReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Component.Video.VideoReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -973,7 +1399,7 @@ namespace Component.Video {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ViewRequest(ViewRequest other) : this() {
       _hasBits0 = other._hasBits0;
-      cameraInfo_ = other.cameraInfo_ != null ? other.cameraInfo_.Clone() : null;
+      cameraFeat_ = other.cameraFeat_ != null ? other.cameraFeat_.Clone() : null;
       view_ = other.view_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -984,15 +1410,15 @@ namespace Component.Video {
       return new ViewRequest(this);
     }
 
-    /// <summary>Field number for the "camera_info" field.</summary>
-    public const int CameraInfoFieldNumber = 1;
-    private global::Component.Video.CameraInfo cameraInfo_;
+    /// <summary>Field number for the "camera_feat" field.</summary>
+    public const int CameraFeatFieldNumber = 1;
+    private global::Component.Video.CameraFeatures cameraFeat_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Component.Video.CameraInfo CameraInfo {
-      get { return cameraInfo_; }
+    public global::Component.Video.CameraFeatures CameraFeat {
+      get { return cameraFeat_; }
       set {
-        cameraInfo_ = value;
+        cameraFeat_ = value;
       }
     }
 
@@ -1038,7 +1464,7 @@ namespace Component.Video {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(CameraInfo, other.CameraInfo)) return false;
+      if (!object.Equals(CameraFeat, other.CameraFeat)) return false;
       if (View != other.View) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1047,7 +1473,7 @@ namespace Component.Video {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (cameraInfo_ != null) hash ^= CameraInfo.GetHashCode();
+      if (cameraFeat_ != null) hash ^= CameraFeat.GetHashCode();
       if (HasView) hash ^= View.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1067,9 +1493,9 @@ namespace Component.Video {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (cameraInfo_ != null) {
+      if (cameraFeat_ != null) {
         output.WriteRawTag(10);
-        output.WriteMessage(CameraInfo);
+        output.WriteMessage(CameraFeat);
       }
       if (HasView) {
         output.WriteRawTag(16);
@@ -1085,9 +1511,9 @@ namespace Component.Video {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (cameraInfo_ != null) {
+      if (cameraFeat_ != null) {
         output.WriteRawTag(10);
-        output.WriteMessage(CameraInfo);
+        output.WriteMessage(CameraFeat);
       }
       if (HasView) {
         output.WriteRawTag(16);
@@ -1103,8 +1529,8 @@ namespace Component.Video {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (cameraInfo_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CameraInfo);
+      if (cameraFeat_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CameraFeat);
       }
       if (HasView) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) View);
@@ -1121,11 +1547,11 @@ namespace Component.Video {
       if (other == null) {
         return;
       }
-      if (other.cameraInfo_ != null) {
-        if (cameraInfo_ == null) {
-          CameraInfo = new global::Component.Video.CameraInfo();
+      if (other.cameraFeat_ != null) {
+        if (cameraFeat_ == null) {
+          CameraFeat = new global::Component.Video.CameraFeatures();
         }
-        CameraInfo.MergeFrom(other.CameraInfo);
+        CameraFeat.MergeFrom(other.CameraFeat);
       }
       if (other.HasView) {
         View = other.View;
@@ -1146,10 +1572,10 @@ namespace Component.Video {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (cameraInfo_ == null) {
-              CameraInfo = new global::Component.Video.CameraInfo();
+            if (cameraFeat_ == null) {
+              CameraFeat = new global::Component.Video.CameraFeatures();
             }
-            input.ReadMessage(CameraInfo);
+            input.ReadMessage(CameraFeat);
             break;
           }
           case 16: {
@@ -1172,10 +1598,10 @@ namespace Component.Video {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            if (cameraInfo_ == null) {
-              CameraInfo = new global::Component.Video.CameraInfo();
+            if (cameraFeat_ == null) {
+              CameraFeat = new global::Component.Video.CameraFeatures();
             }
-            input.ReadMessage(CameraInfo);
+            input.ReadMessage(CameraFeat);
             break;
           }
           case 16: {
