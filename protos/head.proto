@@ -34,10 +34,14 @@ enum HeadField {
     ALL = 15;
 }
 
-enum NeckJointOrder {
+enum NeckJoints {
     ROLL = 0;
     PITCH = 1;
     YAW = 2;
+}
+
+message CustomNeckJoints {
+    repeated NeckJoints joints = 1;
 }
 
 message Head {

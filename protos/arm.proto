@@ -33,7 +33,7 @@ enum ArmField {
     ALL = 15;
 }
 
-enum ArmJointOrder {
+enum ArmJoints {
     SHOULDER_PITCH = 0;
     SHOULDER_ROLL = 1;
     ELBOW_YAW = 2;
@@ -63,6 +63,10 @@ enum ReachabilityError {
     WRIST_LIMIT = 4;
     CONTINUITY_LIMIT = 5;
     OTHER = 6;
+}
+
+message CustomArmJoints {
+    repeated ArmJoints joints = 1;
 }
 
 message ArmState {
