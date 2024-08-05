@@ -65,6 +65,39 @@ PID: HeadField.ValueType  # 12
 ALL: HeadField.ValueType  # 15
 global___HeadField = HeadField
 
+class _NeckJoints:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _NeckJointsEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_NeckJoints.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    ROLL: _NeckJoints.ValueType  # 0
+    PITCH: _NeckJoints.ValueType  # 1
+    YAW: _NeckJoints.ValueType  # 2
+
+class NeckJoints(_NeckJoints, metaclass=_NeckJointsEnumTypeWrapper): ...
+
+ROLL: NeckJoints.ValueType  # 0
+PITCH: NeckJoints.ValueType  # 1
+YAW: NeckJoints.ValueType  # 2
+global___NeckJoints = NeckJoints
+
+@typing_extensions.final
+class CustomNeckJoints(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    JOINTS_FIELD_NUMBER: builtins.int
+    @property
+    def joints(self) -> google.protobuf.internal.containers.RepeatedScalarFieldContainer[global___NeckJoints.ValueType]: ...
+    def __init__(
+        self,
+        *,
+        joints: collections.abc.Iterable[global___NeckJoints.ValueType] | None = ...,
+    ) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["joints", b"joints"]) -> None: ...
+
+global___CustomNeckJoints = CustomNeckJoints
+
 @typing_extensions.final
 class Head(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
