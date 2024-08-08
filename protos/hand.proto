@@ -54,7 +54,10 @@ message JointsLimits {
 }
 
 message ParallelGripperPosition {
-    float position = 1;
+    oneof position {
+        float opening_percentage = 1;
+        float goal_position = 2;
+    }
 }
 
 message HandPosition {
