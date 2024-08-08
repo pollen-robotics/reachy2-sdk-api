@@ -205,14 +205,19 @@ global___JointsLimits = JointsLimits
 class ParallelGripperPosition(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
-    POSITION_FIELD_NUMBER: builtins.int
-    position: builtins.float
+    OPENING_PERCENTAGE_FIELD_NUMBER: builtins.int
+    GOAL_POSITION_FIELD_NUMBER: builtins.int
+    opening_percentage: builtins.float
+    goal_position: builtins.float
     def __init__(
         self,
         *,
-        position: builtins.float = ...,
+        opening_percentage: builtins.float = ...,
+        goal_position: builtins.float = ...,
     ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["position", b"position"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["goal_position", b"goal_position", "opening_percentage", b"opening_percentage", "position", b"position"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["goal_position", b"goal_position", "opening_percentage", b"opening_percentage", "position", b"position"]) -> None: ...
+    def WhichOneof(self, oneof_group: typing_extensions.Literal["position", b"position"]) -> typing_extensions.Literal["opening_percentage", "goal_position"] | None: ...
 
 global___ParallelGripperPosition = ParallelGripperPosition
 
