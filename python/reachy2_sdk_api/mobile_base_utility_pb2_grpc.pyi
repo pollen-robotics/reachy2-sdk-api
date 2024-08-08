@@ -10,6 +10,7 @@ import grpc
 import grpc.aio
 import mobile_base_mobility_pb2
 import mobile_base_utility_pb2
+import part_pb2
 import typing
 
 _T = typing.TypeVar("_T")
@@ -62,8 +63,12 @@ class MobileBaseUtilityServiceStub:
     ]
 
     GetState: grpc.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
+        part_pb2.PartId,
         mobile_base_utility_pb2.MobileBaseState,
+    ]
+    Audit: grpc.UnaryUnaryMultiCallable[
+        google.protobuf.empty_pb2.Empty,
+        mobile_base_utility_pb2.MobileBaseStatus,
     ]
 
 class MobileBaseUtilityServiceAsyncStub:
@@ -108,8 +113,12 @@ class MobileBaseUtilityServiceAsyncStub:
     ]
 
     GetState: grpc.aio.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
+        part_pb2.PartId,
         mobile_base_utility_pb2.MobileBaseState,
+    ]
+    Audit: grpc.aio.UnaryUnaryMultiCallable[
+        google.protobuf.empty_pb2.Empty,
+        mobile_base_utility_pb2.MobileBaseStatus,
     ]
 
 class MobileBaseUtilityServiceServicer(metaclass=abc.ABCMeta):
@@ -172,8 +181,14 @@ class MobileBaseUtilityServiceServicer(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def GetState(
         self,
-        request: google.protobuf.empty_pb2.Empty,
+        request: part_pb2.PartId,
         context: _ServicerContext,
     ) -> typing.Union[mobile_base_utility_pb2.MobileBaseState, collections.abc.Awaitable[mobile_base_utility_pb2.MobileBaseState]]: ...
+    @abc.abstractmethod
+    def Audit(
+        self,
+        request: google.protobuf.empty_pb2.Empty,
+        context: _ServicerContext,
+    ) -> typing.Union[mobile_base_utility_pb2.MobileBaseStatus, collections.abc.Awaitable[mobile_base_utility_pb2.MobileBaseStatus]]: ...
 
 def add_MobileBaseUtilityServiceServicer_to_server(servicer: MobileBaseUtilityServiceServicer, server: typing.Union[grpc.Server, grpc.aio.Server]) -> None: ...

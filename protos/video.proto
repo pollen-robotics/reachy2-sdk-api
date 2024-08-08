@@ -2,6 +2,7 @@ syntax = "proto3";
 
 import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
 
 import "error.proto";
 
@@ -17,32 +18,38 @@ message VideoAck {
     error.Error error = 2;
 }
 
-message CameraInfo {
-    string mxid = 1;
+message CameraFeatures {
     string name = 2;
     bool stereo = 3;
     bool depth = 4;
 }
 
-message ListOfCameraInfo {
-    repeated CameraInfo camera_info = 1;
+message CameraParameters {
+    uint32 height = 1;
+    uint32 width = 2;
+    string distortion_model = 3;
+    repeated float D = 4;
+    repeated float K = 5;
+    repeated float R = 6;
+    repeated float P = 7;
+}
+
+message ListOfCameraFeatures {
+    repeated CameraFeatures camera_feat = 1;
 }
 
 message Frame {
-    bytes data = 1;
+    google.protobuf.Timestamp timestamp = 1;
+    bytes data = 2;
 }
 
 message ViewRequest {
-    CameraInfo camera_info = 1;
+    CameraFeatures camera_feat = 1;
     optional View view = 2;
 }
 
 service VideoService {
-    rpc InitAllCameras(google.protobuf.Empty) returns (ListOfCameraInfo);
+    rpc GetAvailableCameras(google.protobuf.Empty) returns (ListOfCameraFeatures);
     rpc GetFrame (ViewRequest) returns (Frame);
-    rpc GetDepthFrame (ViewRequest) returns (Frame);
-    rpc GetDepthMap (CameraInfo) returns (Frame);
-    rpc GetDisparity (CameraInfo) returns (Frame);
-    rpc Capture(CameraInfo) returns (VideoAck);
-    rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
+    rpc GetParameters (ViewRequest) returns (CameraParameters);
 }
