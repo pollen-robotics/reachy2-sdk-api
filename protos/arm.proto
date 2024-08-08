@@ -33,6 +33,16 @@ enum ArmField {
     ALL = 15;
 }
 
+enum ArmJoints {
+    SHOULDER_PITCH = 0;
+    SHOULDER_ROLL = 1;
+    ELBOW_YAW = 2;
+    ELBOW_PITCH = 3;
+    WRIST_ROLL = 4;
+    WRIST_PITCH = 5;
+    WRIST_YAW = 6;
+}
+
 enum IKConstrainedMode {
     UNDEFINED_CONSTRAINED_MODE = 0;
     UNCONSTRAINED = 1;
@@ -53,6 +63,10 @@ enum ReachabilityError {
     WRIST_LIMIT = 4;
     CONTINUITY_LIMIT = 5;
     OTHER = 6;
+}
+
+message CustomArmJoints {
+    repeated ArmJoints joints = 1;
 }
 
 message ArmState {

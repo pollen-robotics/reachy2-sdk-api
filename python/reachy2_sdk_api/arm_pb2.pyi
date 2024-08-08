@@ -64,6 +64,31 @@ PID: ArmField.ValueType  # 12
 ALL: ArmField.ValueType  # 15
 global___ArmField = ArmField
 
+class _ArmJoints:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _ArmJointsEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_ArmJoints.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    SHOULDER_PITCH: _ArmJoints.ValueType  # 0
+    SHOULDER_ROLL: _ArmJoints.ValueType  # 1
+    ELBOW_YAW: _ArmJoints.ValueType  # 2
+    ELBOW_PITCH: _ArmJoints.ValueType  # 3
+    WRIST_ROLL: _ArmJoints.ValueType  # 4
+    WRIST_PITCH: _ArmJoints.ValueType  # 5
+    WRIST_YAW: _ArmJoints.ValueType  # 6
+
+class ArmJoints(_ArmJoints, metaclass=_ArmJointsEnumTypeWrapper): ...
+
+SHOULDER_PITCH: ArmJoints.ValueType  # 0
+SHOULDER_ROLL: ArmJoints.ValueType  # 1
+ELBOW_YAW: ArmJoints.ValueType  # 2
+ELBOW_PITCH: ArmJoints.ValueType  # 3
+WRIST_ROLL: ArmJoints.ValueType  # 4
+WRIST_PITCH: ArmJoints.ValueType  # 5
+WRIST_YAW: ArmJoints.ValueType  # 6
+global___ArmJoints = ArmJoints
+
 class _IKConstrainedMode:
     ValueType = typing.NewType("ValueType", builtins.int)
     V: typing_extensions.TypeAlias = ValueType
@@ -122,6 +147,22 @@ WRIST_LIMIT: ReachabilityError.ValueType  # 4
 CONTINUITY_LIMIT: ReachabilityError.ValueType  # 5
 OTHER: ReachabilityError.ValueType  # 6
 global___ReachabilityError = ReachabilityError
+
+@typing_extensions.final
+class CustomArmJoints(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    JOINTS_FIELD_NUMBER: builtins.int
+    @property
+    def joints(self) -> google.protobuf.internal.containers.RepeatedScalarFieldContainer[global___ArmJoints.ValueType]: ...
+    def __init__(
+        self,
+        *,
+        joints: collections.abc.Iterable[global___ArmJoints.ValueType] | None = ...,
+    ) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["joints", b"joints"]) -> None: ...
+
+global___CustomArmJoints = CustomArmJoints
 
 @typing_extensions.final
 class ArmState(google.protobuf.message.Message):
