@@ -37,6 +37,10 @@ class MobileBaseMobilityServiceStub:
         google.protobuf.empty_pb2.Empty,
         mobile_base_mobility_pb2.DistanceToGoalVector,
     ]
+    GetLastDirection: grpc.UnaryUnaryMultiCallable[
+        google.protobuf.empty_pb2.Empty,
+        mobile_base_mobility_pb2.DirectionVector,
+    ]
 
 class MobileBaseMobilityServiceAsyncStub:
     SendDirection: grpc.aio.UnaryUnaryMultiCallable[
@@ -55,6 +59,10 @@ class MobileBaseMobilityServiceAsyncStub:
     DistanceToGoal: grpc.aio.UnaryUnaryMultiCallable[
         google.protobuf.empty_pb2.Empty,
         mobile_base_mobility_pb2.DistanceToGoalVector,
+    ]
+    GetLastDirection: grpc.aio.UnaryUnaryMultiCallable[
+        google.protobuf.empty_pb2.Empty,
+        mobile_base_mobility_pb2.DirectionVector,
     ]
 
 class MobileBaseMobilityServiceServicer(metaclass=abc.ABCMeta):
@@ -83,5 +91,11 @@ class MobileBaseMobilityServiceServicer(metaclass=abc.ABCMeta):
         request: google.protobuf.empty_pb2.Empty,
         context: _ServicerContext,
     ) -> typing.Union[mobile_base_mobility_pb2.DistanceToGoalVector, collections.abc.Awaitable[mobile_base_mobility_pb2.DistanceToGoalVector]]: ...
+    @abc.abstractmethod
+    def GetLastDirection(
+        self,
+        request: google.protobuf.empty_pb2.Empty,
+        context: _ServicerContext,
+    ) -> typing.Union[mobile_base_mobility_pb2.DirectionVector, collections.abc.Awaitable[mobile_base_mobility_pb2.DirectionVector]]: ...
 
 def add_MobileBaseMobilityServiceServicer_to_server(servicer: MobileBaseMobilityServiceServicer, server: typing.Union[grpc.Server, grpc.aio.Server]) -> None: ...
