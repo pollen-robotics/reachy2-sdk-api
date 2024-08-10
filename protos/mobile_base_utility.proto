@@ -2,8 +2,12 @@ syntax = "proto3";
 
 import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+
 import "mobile_base_lidar.proto";
 import "mobile_base_mobility.proto";
+import "error.proto";
+import "part.proto";
 
 package mobile.base.utility;
 
@@ -14,12 +18,22 @@ message MobileBaseInfo {
 }
     
 message MobileBase {
-    MobileBaseInfo info = 1;
+    reachy.part.PartId part_id = 1;
+    MobileBaseInfo info = 2;
 }
     
 message MobileBaseState {
-    BatteryLevel battery_level = 1;
-    mobile.base.lidar.LidarObstacleDetectionStatus lidar_obstacle_detection_status = 2;
+    google.protobuf.Timestamp timestamp = 1;
+
+    reachy.part.PartId id = 2;
+
+    bool activated = 3;
+
+    BatteryLevel battery_level = 4;
+    mobile.base.lidar.LidarSafety lidar_safety = 5;
+
+    ZuuuModeCommand zuuu_mode = 6;
+    ControlModeCommand control_mode = 7;
 }
 
 message OdometryVector {
@@ -61,6 +75,10 @@ message MobileBaseVersion {
     google.protobuf.FloatValue model_version = 1;
 }
 
+message MobileBaseStatus {
+    repeated error.Error errors = 1;
+}
+
 service MobileBaseUtilityService {
     rpc SetControlMode(ControlModeCommand) returns (mobile.base.mobility.MobilityServiceAck);
     rpc GetControlMode(google.protobuf.Empty) returns (ControlModeCommand);
@@ -70,5 +88,6 @@ service MobileBaseUtilityService {
     rpc GetOdometry(google.protobuf.Empty) returns (OdometryVector);
     rpc ResetOdometry(google.protobuf.Empty) returns (mobile.base.mobility.MobilityServiceAck);
     rpc GetMobileBase(google.protobuf.Empty) returns (MobileBase);
-    rpc GetState(google.protobuf.Empty) returns (MobileBaseState);
+    rpc GetState(reachy.part.PartId) returns (MobileBaseState);
+    rpc Audit (google.protobuf.Empty) returns (MobileBaseStatus);
 }

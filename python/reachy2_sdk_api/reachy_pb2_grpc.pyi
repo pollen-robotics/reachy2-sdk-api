@@ -32,6 +32,14 @@ class ReachyServiceStub:
         reachy_pb2.ReachyStreamStateRequest,
         reachy_pb2.ReachyState,
     ]
+    Audit: grpc.UnaryUnaryMultiCallable[
+        reachy_pb2.ReachyId,
+        reachy_pb2.ReachyStatus,
+    ]
+    StreamAudit: grpc.UnaryStreamMultiCallable[
+        reachy_pb2.ReachyStreamAuditRequest,
+        reachy_pb2.ReachyStatus,
+    ]
 
 class ReachyServiceAsyncStub:
     GetReachy: grpc.aio.UnaryUnaryMultiCallable[
@@ -45,6 +53,14 @@ class ReachyServiceAsyncStub:
     StreamReachyState: grpc.aio.UnaryStreamMultiCallable[
         reachy_pb2.ReachyStreamStateRequest,
         reachy_pb2.ReachyState,
+    ]
+    Audit: grpc.aio.UnaryUnaryMultiCallable[
+        reachy_pb2.ReachyId,
+        reachy_pb2.ReachyStatus,
+    ]
+    StreamAudit: grpc.aio.UnaryStreamMultiCallable[
+        reachy_pb2.ReachyStreamAuditRequest,
+        reachy_pb2.ReachyStatus,
     ]
 
 class ReachyServiceServicer(metaclass=abc.ABCMeta):
@@ -66,5 +82,17 @@ class ReachyServiceServicer(metaclass=abc.ABCMeta):
         request: reachy_pb2.ReachyStreamStateRequest,
         context: _ServicerContext,
     ) -> typing.Union[collections.abc.Iterator[reachy_pb2.ReachyState], collections.abc.AsyncIterator[reachy_pb2.ReachyState]]: ...
+    @abc.abstractmethod
+    def Audit(
+        self,
+        request: reachy_pb2.ReachyId,
+        context: _ServicerContext,
+    ) -> typing.Union[reachy_pb2.ReachyStatus, collections.abc.Awaitable[reachy_pb2.ReachyStatus]]: ...
+    @abc.abstractmethod
+    def StreamAudit(
+        self,
+        request: reachy_pb2.ReachyStreamAuditRequest,
+        context: _ServicerContext,
+    ) -> typing.Union[collections.abc.Iterator[reachy_pb2.ReachyStatus], collections.abc.AsyncIterator[reachy_pb2.ReachyStatus]]: ...
 
 def add_ReachyServiceServicer_to_server(servicer: ReachyServiceServicer, server: typing.Union[grpc.Server, grpc.aio.Server]) -> None: ...
