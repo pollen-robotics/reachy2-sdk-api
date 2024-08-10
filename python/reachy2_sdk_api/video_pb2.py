@@ -17,27 +17,27 @@ from google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__
 import error_pb2 as error__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0bvideo.proto\x12\x0f\x63omponent.video\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x0b\x65rror.proto\"T\n\x08VideoAck\x12+\n\x07success\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x1b\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x0c.error.Error\"=\n\x0e\x43\x61meraFeatures\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0e\n\x06stereo\x18\x03 \x01(\x08\x12\r\n\x05\x64\x65pth\x18\x04 \x01(\x08\"w\n\x10\x43\x61meraParameters\x12\x0e\n\x06height\x18\x01 \x01(\r\x12\r\n\x05width\x18\x02 \x01(\r\x12\x18\n\x10\x64istortion_model\x18\x03 \x01(\t\x12\t\n\x01\x44\x18\x04 \x03(\x02\x12\t\n\x01K\x18\x05 \x03(\x02\x12\t\n\x01R\x18\x06 \x03(\x02\x12\t\n\x01P\x18\x07 \x03(\x02\"L\n\x14ListOfCameraFeatures\x12\x34\n\x0b\x63\x61mera_feat\x18\x01 \x03(\x0b\x32\x1f.component.video.CameraFeatures\"D\n\x05\x46rame\x12-\n\ttimestamp\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x0c\n\x04\x64\x61ta\x18\x02 \x01(\x0c\"v\n\x0bViewRequest\x12\x34\n\x0b\x63\x61mera_feat\x18\x01 \x01(\x0b\x32\x1f.component.video.CameraFeatures\x12(\n\x04view\x18\x02 \x01(\x0e\x32\x15.component.video.ViewH\x00\x88\x01\x01\x42\x07\n\x05_view*\x1b\n\x04View\x12\x08\n\x04LEFT\x10\x00\x12\t\n\x05RIGHT\x10\x01\x32\xf8\x01\n\x0cVideoService\x12T\n\x13GetAvailableCameras\x12\x16.google.protobuf.Empty\x1a%.component.video.ListOfCameraFeatures\x12@\n\x08GetFrame\x12\x1c.component.video.ViewRequest\x1a\x16.component.video.Frame\x12P\n\rGetParameters\x12\x1c.component.video.ViewRequest\x1a!.component.video.CameraParametersb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0bvideo.proto\x12\x0f\x63omponent.video\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x0b\x65rror.proto\"T\n\x08VideoAck\x12+\n\x07success\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x1b\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x0c.error.Error\"L\n\x0e\x43\x61meraFeatures\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0e\n\x06stereo\x18\x03 \x01(\x08\x12\r\n\x05\x64\x65pth\x18\x04 \x01(\x08\x12\r\n\x05\x64ummy\x18\x05 \x01(\x08\"w\n\x10\x43\x61meraParameters\x12\x0e\n\x06height\x18\x01 \x01(\r\x12\r\n\x05width\x18\x02 \x01(\r\x12\x18\n\x10\x64istortion_model\x18\x03 \x01(\t\x12\t\n\x01\x44\x18\x04 \x03(\x02\x12\t\n\x01K\x18\x05 \x03(\x02\x12\t\n\x01R\x18\x06 \x03(\x02\x12\t\n\x01P\x18\x07 \x03(\x02\"L\n\x14ListOfCameraFeatures\x12\x34\n\x0b\x63\x61mera_feat\x18\x01 \x03(\x0b\x32\x1f.component.video.CameraFeatures\"D\n\x05\x46rame\x12-\n\ttimestamp\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x0c\n\x04\x64\x61ta\x18\x02 \x01(\x0c\"v\n\x0bViewRequest\x12\x34\n\x0b\x63\x61mera_feat\x18\x01 \x01(\x0b\x32\x1f.component.video.CameraFeatures\x12(\n\x04view\x18\x02 \x01(\x0e\x32\x15.component.video.ViewH\x00\x88\x01\x01\x42\x07\n\x05_view*\x1b\n\x04View\x12\x08\n\x04LEFT\x10\x00\x12\t\n\x05RIGHT\x10\x01\x32\xf8\x01\n\x0cVideoService\x12T\n\x13GetAvailableCameras\x12\x16.google.protobuf.Empty\x1a%.component.video.ListOfCameraFeatures\x12@\n\x08GetFrame\x12\x1c.component.video.ViewRequest\x1a\x16.component.video.Frame\x12P\n\rGetParameters\x12\x1c.component.video.ViewRequest\x1a!.component.video.CameraParametersb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'video_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   DESCRIPTOR._options = None
-  _globals['_VIEW']._serialized_start=677
-  _globals['_VIEW']._serialized_end=704
+  _globals['_VIEW']._serialized_start=692
+  _globals['_VIEW']._serialized_end=719
   _globals['_VIDEOACK']._serialized_start=139
   _globals['_VIDEOACK']._serialized_end=223
   _globals['_CAMERAFEATURES']._serialized_start=225
-  _globals['_CAMERAFEATURES']._serialized_end=286
-  _globals['_CAMERAPARAMETERS']._serialized_start=288
-  _globals['_CAMERAPARAMETERS']._serialized_end=407
-  _globals['_LISTOFCAMERAFEATURES']._serialized_start=409
-  _globals['_LISTOFCAMERAFEATURES']._serialized_end=485
-  _globals['_FRAME']._serialized_start=487
-  _globals['_FRAME']._serialized_end=555
-  _globals['_VIEWREQUEST']._serialized_start=557
-  _globals['_VIEWREQUEST']._serialized_end=675
-  _globals['_VIDEOSERVICE']._serialized_start=707
-  _globals['_VIDEOSERVICE']._serialized_end=955
+  _globals['_CAMERAFEATURES']._serialized_end=301
+  _globals['_CAMERAPARAMETERS']._serialized_start=303
+  _globals['_CAMERAPARAMETERS']._serialized_end=422
+  _globals['_LISTOFCAMERAFEATURES']._serialized_start=424
+  _globals['_LISTOFCAMERAFEATURES']._serialized_end=500
+  _globals['_FRAME']._serialized_start=502
+  _globals['_FRAME']._serialized_end=570
+  _globals['_VIEWREQUEST']._serialized_start=572
+  _globals['_VIEWREQUEST']._serialized_end=690
+  _globals['_VIDEOSERVICE']._serialized_start=722
+  _globals['_VIDEOSERVICE']._serialized_end=970
 # @@protoc_insertion_point(module_scope)

@@ -64,17 +64,20 @@ class CameraFeatures(google.protobuf.message.Message):
     NAME_FIELD_NUMBER: builtins.int
     STEREO_FIELD_NUMBER: builtins.int
     DEPTH_FIELD_NUMBER: builtins.int
+    DUMMY_FIELD_NUMBER: builtins.int
     name: builtins.str
     stereo: builtins.bool
     depth: builtins.bool
+    dummy: builtins.bool
     def __init__(
         self,
         *,
         name: builtins.str = ...,
         stereo: builtins.bool = ...,
         depth: builtins.bool = ...,
+        dummy: builtins.bool = ...,
     ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["depth", b"depth", "name", b"name", "stereo", b"stereo"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["depth", b"depth", "dummy", b"dummy", "name", b"name", "stereo", b"stereo"]) -> None: ...
 
 global___CameraFeatures = CameraFeatures
 
