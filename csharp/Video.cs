@@ -28,29 +28,29 @@ namespace Component.Video {
             "dWYvZW1wdHkucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90",
             "bxofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90bxoLZXJyb3IucHJv",
             "dG8iVAoIVmlkZW9BY2sSKwoHc3VjY2VzcxgBIAEoCzIaLmdvb2dsZS5wcm90",
-            "b2J1Zi5Cb29sVmFsdWUSGwoFZXJyb3IYAiABKAsyDC5lcnJvci5FcnJvciI9",
+            "b2J1Zi5Cb29sVmFsdWUSGwoFZXJyb3IYAiABKAsyDC5lcnJvci5FcnJvciJM",
             "Cg5DYW1lcmFGZWF0dXJlcxIMCgRuYW1lGAIgASgJEg4KBnN0ZXJlbxgDIAEo",
-            "CBINCgVkZXB0aBgEIAEoCCJ3ChBDYW1lcmFQYXJhbWV0ZXJzEg4KBmhlaWdo",
-            "dBgBIAEoDRINCgV3aWR0aBgCIAEoDRIYChBkaXN0b3J0aW9uX21vZGVsGAMg",
-            "ASgJEgkKAUQYBCADKAISCQoBSxgFIAMoAhIJCgFSGAYgAygCEgkKAVAYByAD",
-            "KAIiTAoUTGlzdE9mQ2FtZXJhRmVhdHVyZXMSNAoLY2FtZXJhX2ZlYXQYASAD",
-            "KAsyHy5jb21wb25lbnQudmlkZW8uQ2FtZXJhRmVhdHVyZXMiRAoFRnJhbWUS",
-            "LQoJdGltZXN0YW1wGAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
-            "cBIMCgRkYXRhGAIgASgMInYKC1ZpZXdSZXF1ZXN0EjQKC2NhbWVyYV9mZWF0",
-            "GAEgASgLMh8uY29tcG9uZW50LnZpZGVvLkNhbWVyYUZlYXR1cmVzEigKBHZp",
-            "ZXcYAiABKA4yFS5jb21wb25lbnQudmlkZW8uVmlld0gAiAEBQgcKBV92aWV3",
-            "KhsKBFZpZXcSCAoETEVGVBAAEgkKBVJJR0hUEAEy+AEKDFZpZGVvU2Vydmlj",
-            "ZRJUChNHZXRBdmFpbGFibGVDYW1lcmFzEhYuZ29vZ2xlLnByb3RvYnVmLkVt",
-            "cHR5GiUuY29tcG9uZW50LnZpZGVvLkxpc3RPZkNhbWVyYUZlYXR1cmVzEkAK",
-            "CEdldEZyYW1lEhwuY29tcG9uZW50LnZpZGVvLlZpZXdSZXF1ZXN0GhYuY29t",
-            "cG9uZW50LnZpZGVvLkZyYW1lElAKDUdldFBhcmFtZXRlcnMSHC5jb21wb25l",
-            "bnQudmlkZW8uVmlld1JlcXVlc3QaIS5jb21wb25lbnQudmlkZW8uQ2FtZXJh",
-            "UGFyYW1ldGVyc2IGcHJvdG8z"));
+            "CBINCgVkZXB0aBgEIAEoCBINCgVkdW1teRgFIAEoCCJ3ChBDYW1lcmFQYXJh",
+            "bWV0ZXJzEg4KBmhlaWdodBgBIAEoDRINCgV3aWR0aBgCIAEoDRIYChBkaXN0",
+            "b3J0aW9uX21vZGVsGAMgASgJEgkKAUQYBCADKAISCQoBSxgFIAMoAhIJCgFS",
+            "GAYgAygCEgkKAVAYByADKAIiTAoUTGlzdE9mQ2FtZXJhRmVhdHVyZXMSNAoL",
+            "Y2FtZXJhX2ZlYXQYASADKAsyHy5jb21wb25lbnQudmlkZW8uQ2FtZXJhRmVh",
+            "dHVyZXMiRAoFRnJhbWUSLQoJdGltZXN0YW1wGAEgASgLMhouZ29vZ2xlLnBy",
+            "b3RvYnVmLlRpbWVzdGFtcBIMCgRkYXRhGAIgASgMInYKC1ZpZXdSZXF1ZXN0",
+            "EjQKC2NhbWVyYV9mZWF0GAEgASgLMh8uY29tcG9uZW50LnZpZGVvLkNhbWVy",
+            "YUZlYXR1cmVzEigKBHZpZXcYAiABKA4yFS5jb21wb25lbnQudmlkZW8uVmll",
+            "d0gAiAEBQgcKBV92aWV3KhsKBFZpZXcSCAoETEVGVBAAEgkKBVJJR0hUEAEy",
+            "+AEKDFZpZGVvU2VydmljZRJUChNHZXRBdmFpbGFibGVDYW1lcmFzEhYuZ29v",
+            "Z2xlLnByb3RvYnVmLkVtcHR5GiUuY29tcG9uZW50LnZpZGVvLkxpc3RPZkNh",
+            "bWVyYUZlYXR1cmVzEkAKCEdldEZyYW1lEhwuY29tcG9uZW50LnZpZGVvLlZp",
+            "ZXdSZXF1ZXN0GhYuY29tcG9uZW50LnZpZGVvLkZyYW1lElAKDUdldFBhcmFt",
+            "ZXRlcnMSHC5jb21wb25lbnQudmlkZW8uVmlld1JlcXVlc3QaIS5jb21wb25l",
+            "bnQudmlkZW8uQ2FtZXJhUGFyYW1ldGVyc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Error.ErrorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Component.Video.View), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.VideoAck), global::Component.Video.VideoAck.Parser, new[]{ "Success", "Error" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.CameraFeatures), global::Component.Video.CameraFeatures.Parser, new[]{ "Name", "Stereo", "Depth" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.CameraFeatures), global::Component.Video.CameraFeatures.Parser, new[]{ "Name", "Stereo", "Depth", "Dummy" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.CameraParameters), global::Component.Video.CameraParameters.Parser, new[]{ "Height", "Width", "DistortionModel", "D", "K", "R", "P" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.ListOfCameraFeatures), global::Component.Video.ListOfCameraFeatures.Parser, new[]{ "CameraFeat" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.Frame), global::Component.Video.Frame.Parser, new[]{ "Timestamp", "Data" }, null, null, null, null),
@@ -349,6 +349,7 @@ namespace Component.Video {
       name_ = other.name_;
       stereo_ = other.stereo_;
       depth_ = other.depth_;
+      dummy_ = other.dummy_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -394,6 +395,18 @@ namespace Component.Video {
       }
     }
 
+    /// <summary>Field number for the "dummy" field.</summary>
+    public const int DummyFieldNumber = 5;
+    private bool dummy_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Dummy {
+      get { return dummy_; }
+      set {
+        dummy_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -412,6 +425,7 @@ namespace Component.Video {
       if (Name != other.Name) return false;
       if (Stereo != other.Stereo) return false;
       if (Depth != other.Depth) return false;
+      if (Dummy != other.Dummy) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -422,6 +436,7 @@ namespace Component.Video {
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (Stereo != false) hash ^= Stereo.GetHashCode();
       if (Depth != false) hash ^= Depth.GetHashCode();
+      if (Dummy != false) hash ^= Dummy.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -452,6 +467,10 @@ namespace Component.Video {
         output.WriteRawTag(32);
         output.WriteBool(Depth);
       }
+      if (Dummy != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(Dummy);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -474,6 +493,10 @@ namespace Component.Video {
         output.WriteRawTag(32);
         output.WriteBool(Depth);
       }
+      if (Dummy != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(Dummy);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -491,6 +514,9 @@ namespace Component.Video {
         size += 1 + 1;
       }
       if (Depth != false) {
+        size += 1 + 1;
+      }
+      if (Dummy != false) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -513,6 +539,9 @@ namespace Component.Video {
       }
       if (other.Depth != false) {
         Depth = other.Depth;
+      }
+      if (other.Dummy != false) {
+        Dummy = other.Dummy;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -541,6 +570,10 @@ namespace Component.Video {
             Depth = input.ReadBool();
             break;
           }
+          case 40: {
+            Dummy = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -566,6 +599,10 @@ namespace Component.Video {
           }
           case 32: {
             Depth = input.ReadBool();
+            break;
+          }
+          case 40: {
+            Dummy = input.ReadBool();
             break;
           }
         }
