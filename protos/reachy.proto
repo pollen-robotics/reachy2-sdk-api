@@ -8,7 +8,6 @@ import "head.proto";
 import "hand.proto";
 import "mobile_base_utility.proto";
 import "sound.proto";
-import "video.proto";
 
 package reachy;
 

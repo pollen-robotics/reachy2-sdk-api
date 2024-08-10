@@ -22,6 +22,7 @@ message CameraFeatures {
     string name = 2;
     bool stereo = 3;
     bool depth = 4;
+    bool dummy = 5;
 }
 
 message CameraParameters {
