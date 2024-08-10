@@ -5,7 +5,7 @@ on: [push]
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     steps:
     - name: Checkout code
@@ -14,10 +14,10 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v2
       with:
-        msbuild-architecture: x64
+        vs-version: '[17.10,17.11)'
 
     - name: Build solution
-      run: msbuild 'csharp\reachy_sdk\reachy_sdk.sln'
+      run: msbuild 'csharp\reachy_sdk\reachy_sdk.sln' /p:Configuration=Release
 
     - name: Commit and push changes
       run: |
