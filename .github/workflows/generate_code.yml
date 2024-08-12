@@ -1,18 +1,18 @@
 
-name: Generate Protobuf Python Code
+name: Generate Code
 
 on: [push]
   
 jobs:
-  build:
+  generate-python:
     runs-on: ubuntu-22.04
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up Python 3.10
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: "3.10"
 
@@ -31,4 +31,31 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add .
         git commit -m "Generated Protobuf Python Code" || echo "No changes to commit"
+        git push
+
+  generate-csharp:
+    runs-on: windows-2022
+    needs: generate-python
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+      with:
+        vs-version: '[17.10,17.11)'
+
+    - name: Restore NuGet packages
+      run: nuget restore 'csharp/reachy_sdk/reachy_sdk.sln'
+
+    - name: Build solution
+      run: msbuild 'csharp\reachy_sdk\reachy_sdk.sln' /p:Configuration=Release
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add .
+        git commit -m "Generated Protobuf C# Code" || echo "No changes to commit"
         git push
