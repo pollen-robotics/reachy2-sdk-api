@@ -207,13 +207,15 @@ class ParallelGripperPosition(google.protobuf.message.Message):
 
     OPENING_PERCENTAGE_FIELD_NUMBER: builtins.int
     GOAL_POSITION_FIELD_NUMBER: builtins.int
-    opening_percentage: builtins.float
-    goal_position: builtins.float
+    @property
+    def opening_percentage(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    @property
+    def goal_position(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
     def __init__(
         self,
         *,
-        opening_percentage: builtins.float = ...,
-        goal_position: builtins.float = ...,
+        opening_percentage: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        goal_position: google.protobuf.wrappers_pb2.FloatValue | None = ...,
     ) -> None: ...
     def HasField(self, field_name: typing_extensions.Literal["goal_position", b"goal_position", "opening_percentage", b"opening_percentage", "position", b"position"]) -> builtins.bool: ...
     def ClearField(self, field_name: typing_extensions.Literal["goal_position", b"goal_position", "opening_percentage", b"opening_percentage", "position", b"position"]) -> None: ...

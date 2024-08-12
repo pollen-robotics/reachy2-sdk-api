@@ -55,8 +55,8 @@ message JointsLimits {
 
 message ParallelGripperPosition {
     oneof position {
-        float opening_percentage = 1;
-        float goal_position = 2;
+        google.protobuf.FloatValue opening_percentage = 1;
+        google.protobuf.FloatValue goal_position = 2;
     }
 }
 
