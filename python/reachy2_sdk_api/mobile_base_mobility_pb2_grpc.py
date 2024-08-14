@@ -2,8 +2,8 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 import mobile_base_mobility_pb2 as mobile__base__mobility__pb2
+import part_pb2 as part__pb2
 
 
 class MobileBaseMobilityServiceStub(object):
@@ -16,23 +16,23 @@ class MobileBaseMobilityServiceStub(object):
             channel: A grpc.Channel.
         """
         self.SendDirection = channel.unary_unary(
-                '/mobile.base.mobility.MobileBaseMobilityService/SendDirection',
+                '/reachy.part.mobile.base.mobility.MobileBaseMobilityService/SendDirection',
                 request_serializer=mobile__base__mobility__pb2.TargetDirectionCommand.SerializeToString,
                 response_deserializer=mobile__base__mobility__pb2.MobilityServiceAck.FromString,
                 )
         self.SendSetSpeed = channel.unary_unary(
-                '/mobile.base.mobility.MobileBaseMobilityService/SendSetSpeed',
+                '/reachy.part.mobile.base.mobility.MobileBaseMobilityService/SendSetSpeed',
                 request_serializer=mobile__base__mobility__pb2.SetSpeedVector.SerializeToString,
                 response_deserializer=mobile__base__mobility__pb2.MobilityServiceAck.FromString,
                 )
         self.SendGoTo = channel.unary_unary(
-                '/mobile.base.mobility.MobileBaseMobilityService/SendGoTo',
+                '/reachy.part.mobile.base.mobility.MobileBaseMobilityService/SendGoTo',
                 request_serializer=mobile__base__mobility__pb2.GoToVector.SerializeToString,
                 response_deserializer=mobile__base__mobility__pb2.MobilityServiceAck.FromString,
                 )
         self.DistanceToGoal = channel.unary_unary(
-                '/mobile.base.mobility.MobileBaseMobilityService/DistanceToGoal',
-                request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+                '/reachy.part.mobile.base.mobility.MobileBaseMobilityService/DistanceToGoal',
+                request_serializer=part__pb2.PartId.SerializeToString,
                 response_deserializer=mobile__base__mobility__pb2.DistanceToGoalVector.FromString,
                 )
 
@@ -85,12 +85,12 @@ def add_MobileBaseMobilityServiceServicer_to_server(servicer, server):
             ),
             'DistanceToGoal': grpc.unary_unary_rpc_method_handler(
                     servicer.DistanceToGoal,
-                    request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                    request_deserializer=part__pb2.PartId.FromString,
                     response_serializer=mobile__base__mobility__pb2.DistanceToGoalVector.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-            'mobile.base.mobility.MobileBaseMobilityService', rpc_method_handlers)
+            'reachy.part.mobile.base.mobility.MobileBaseMobilityService', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
 
 
@@ -109,7 +109,7 @@ class MobileBaseMobilityService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.mobility.MobileBaseMobilityService/SendDirection',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.mobility.MobileBaseMobilityService/SendDirection',
             mobile__base__mobility__pb2.TargetDirectionCommand.SerializeToString,
             mobile__base__mobility__pb2.MobilityServiceAck.FromString,
             options, channel_credentials,
@@ -126,7 +126,7 @@ class MobileBaseMobilityService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.mobility.MobileBaseMobilityService/SendSetSpeed',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.mobility.MobileBaseMobilityService/SendSetSpeed',
             mobile__base__mobility__pb2.SetSpeedVector.SerializeToString,
             mobile__base__mobility__pb2.MobilityServiceAck.FromString,
             options, channel_credentials,
@@ -143,7 +143,7 @@ class MobileBaseMobilityService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.mobility.MobileBaseMobilityService/SendGoTo',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.mobility.MobileBaseMobilityService/SendGoTo',
             mobile__base__mobility__pb2.GoToVector.SerializeToString,
             mobile__base__mobility__pb2.MobilityServiceAck.FromString,
             options, channel_credentials,
@@ -160,8 +160,8 @@ class MobileBaseMobilityService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.mobility.MobileBaseMobilityService/DistanceToGoal',
-            google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.mobility.MobileBaseMobilityService/DistanceToGoal',
+            part__pb2.PartId.SerializeToString,
             mobile__base__mobility__pb2.DistanceToGoalVector.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
