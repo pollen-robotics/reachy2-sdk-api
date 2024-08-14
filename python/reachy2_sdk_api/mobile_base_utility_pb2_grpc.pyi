@@ -22,12 +22,44 @@ class _ServicerContext(grpc.ServicerContext, grpc.aio.ServicerContext):  # type:
 
 class MobileBaseUtilityServiceStub:
     def __init__(self, channel: typing.Union[grpc.Channel, grpc.aio.Channel]) -> None: ...
+    GetAllMobileBases: grpc.UnaryUnaryMultiCallable[
+        google.protobuf.empty_pb2.Empty,
+        mobile_base_utility_pb2.ListOfMobileBase,
+    ]
+    GetState: grpc.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        mobile_base_utility_pb2.MobileBaseState,
+    ]
+    Audit: grpc.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        mobile_base_utility_pb2.MobileBaseStatus,
+    ]
+    HeartBeat: grpc.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        google.protobuf.empty_pb2.Empty,
+    ]
+    Restart: grpc.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        google.protobuf.empty_pb2.Empty,
+    ]
+    ResetDefaultValues: grpc.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        google.protobuf.empty_pb2.Empty,
+    ]
+    TurnOn: grpc.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        google.protobuf.empty_pb2.Empty,
+    ]
+    TurnOff: grpc.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        google.protobuf.empty_pb2.Empty,
+    ]
     SetControlMode: grpc.UnaryUnaryMultiCallable[
         mobile_base_utility_pb2.ControlModeCommand,
         mobile_base_mobility_pb2.MobilityServiceAck,
     ]
     GetControlMode: grpc.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
+        part_pb2.PartId,
         mobile_base_utility_pb2.ControlModeCommand,
     ]
     SetZuuuMode: grpc.UnaryUnaryMultiCallable[
@@ -35,41 +67,61 @@ class MobileBaseUtilityServiceStub:
         mobile_base_mobility_pb2.MobilityServiceAck,
     ]
     GetZuuuMode: grpc.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
+        part_pb2.PartId,
         mobile_base_utility_pb2.ZuuuModeCommand,
     ]
     GetBatteryLevel: grpc.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
+        part_pb2.PartId,
         mobile_base_utility_pb2.BatteryLevel,
     ]
     GetOdometry: grpc.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
+        part_pb2.PartId,
         mobile_base_utility_pb2.OdometryVector,
     ]
     ResetOdometry: grpc.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
-        mobile_base_mobility_pb2.MobilityServiceAck,
-    ]
-    GetMobileBase: grpc.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
-        mobile_base_utility_pb2.MobileBase,
-    ]
-    GetState: grpc.UnaryUnaryMultiCallable[
         part_pb2.PartId,
-        mobile_base_utility_pb2.MobileBaseState,
-    ]
-    Audit: grpc.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
-        mobile_base_utility_pb2.MobileBaseStatus,
+        mobile_base_mobility_pb2.MobilityServiceAck,
     ]
 
 class MobileBaseUtilityServiceAsyncStub:
+    GetAllMobileBases: grpc.aio.UnaryUnaryMultiCallable[
+        google.protobuf.empty_pb2.Empty,
+        mobile_base_utility_pb2.ListOfMobileBase,
+    ]
+    GetState: grpc.aio.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        mobile_base_utility_pb2.MobileBaseState,
+    ]
+    Audit: grpc.aio.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        mobile_base_utility_pb2.MobileBaseStatus,
+    ]
+    HeartBeat: grpc.aio.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        google.protobuf.empty_pb2.Empty,
+    ]
+    Restart: grpc.aio.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        google.protobuf.empty_pb2.Empty,
+    ]
+    ResetDefaultValues: grpc.aio.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        google.protobuf.empty_pb2.Empty,
+    ]
+    TurnOn: grpc.aio.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        google.protobuf.empty_pb2.Empty,
+    ]
+    TurnOff: grpc.aio.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        google.protobuf.empty_pb2.Empty,
+    ]
     SetControlMode: grpc.aio.UnaryUnaryMultiCallable[
         mobile_base_utility_pb2.ControlModeCommand,
         mobile_base_mobility_pb2.MobilityServiceAck,
     ]
     GetControlMode: grpc.aio.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
+        part_pb2.PartId,
         mobile_base_utility_pb2.ControlModeCommand,
     ]
     SetZuuuMode: grpc.aio.UnaryUnaryMultiCallable[
@@ -77,35 +129,71 @@ class MobileBaseUtilityServiceAsyncStub:
         mobile_base_mobility_pb2.MobilityServiceAck,
     ]
     GetZuuuMode: grpc.aio.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
+        part_pb2.PartId,
         mobile_base_utility_pb2.ZuuuModeCommand,
     ]
     GetBatteryLevel: grpc.aio.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
+        part_pb2.PartId,
         mobile_base_utility_pb2.BatteryLevel,
     ]
     GetOdometry: grpc.aio.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
+        part_pb2.PartId,
         mobile_base_utility_pb2.OdometryVector,
     ]
     ResetOdometry: grpc.aio.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
-        mobile_base_mobility_pb2.MobilityServiceAck,
-    ]
-    GetMobileBase: grpc.aio.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
-        mobile_base_utility_pb2.MobileBase,
-    ]
-    GetState: grpc.aio.UnaryUnaryMultiCallable[
         part_pb2.PartId,
-        mobile_base_utility_pb2.MobileBaseState,
-    ]
-    Audit: grpc.aio.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
-        mobile_base_utility_pb2.MobileBaseStatus,
+        mobile_base_mobility_pb2.MobilityServiceAck,
     ]
 
 class MobileBaseUtilityServiceServicer(metaclass=abc.ABCMeta):
+    @abc.abstractmethod
+    def GetAllMobileBases(
+        self,
+        request: google.protobuf.empty_pb2.Empty,
+        context: _ServicerContext,
+    ) -> typing.Union[mobile_base_utility_pb2.ListOfMobileBase, collections.abc.Awaitable[mobile_base_utility_pb2.ListOfMobileBase]]: ...
+    @abc.abstractmethod
+    def GetState(
+        self,
+        request: part_pb2.PartId,
+        context: _ServicerContext,
+    ) -> typing.Union[mobile_base_utility_pb2.MobileBaseState, collections.abc.Awaitable[mobile_base_utility_pb2.MobileBaseState]]: ...
+    @abc.abstractmethod
+    def Audit(
+        self,
+        request: part_pb2.PartId,
+        context: _ServicerContext,
+    ) -> typing.Union[mobile_base_utility_pb2.MobileBaseStatus, collections.abc.Awaitable[mobile_base_utility_pb2.MobileBaseStatus]]: ...
+    @abc.abstractmethod
+    def HeartBeat(
+        self,
+        request: part_pb2.PartId,
+        context: _ServicerContext,
+    ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
+    @abc.abstractmethod
+    def Restart(
+        self,
+        request: part_pb2.PartId,
+        context: _ServicerContext,
+    ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
+    @abc.abstractmethod
+    def ResetDefaultValues(
+        self,
+        request: part_pb2.PartId,
+        context: _ServicerContext,
+    ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
+    @abc.abstractmethod
+    def TurnOn(
+        self,
+        request: part_pb2.PartId,
+        context: _ServicerContext,
+    ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
+    @abc.abstractmethod
+    def TurnOff(
+        self,
+        request: part_pb2.PartId,
+        context: _ServicerContext,
+    ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
     @abc.abstractmethod
     def SetControlMode(
         self,
@@ -115,7 +203,7 @@ class MobileBaseUtilityServiceServicer(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def GetControlMode(
         self,
-        request: google.protobuf.empty_pb2.Empty,
+        request: part_pb2.PartId,
         context: _ServicerContext,
     ) -> typing.Union[mobile_base_utility_pb2.ControlModeCommand, collections.abc.Awaitable[mobile_base_utility_pb2.ControlModeCommand]]: ...
     @abc.abstractmethod
@@ -127,44 +215,26 @@ class MobileBaseUtilityServiceServicer(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def GetZuuuMode(
         self,
-        request: google.protobuf.empty_pb2.Empty,
+        request: part_pb2.PartId,
         context: _ServicerContext,
     ) -> typing.Union[mobile_base_utility_pb2.ZuuuModeCommand, collections.abc.Awaitable[mobile_base_utility_pb2.ZuuuModeCommand]]: ...
     @abc.abstractmethod
     def GetBatteryLevel(
         self,
-        request: google.protobuf.empty_pb2.Empty,
+        request: part_pb2.PartId,
         context: _ServicerContext,
     ) -> typing.Union[mobile_base_utility_pb2.BatteryLevel, collections.abc.Awaitable[mobile_base_utility_pb2.BatteryLevel]]: ...
     @abc.abstractmethod
     def GetOdometry(
         self,
-        request: google.protobuf.empty_pb2.Empty,
+        request: part_pb2.PartId,
         context: _ServicerContext,
     ) -> typing.Union[mobile_base_utility_pb2.OdometryVector, collections.abc.Awaitable[mobile_base_utility_pb2.OdometryVector]]: ...
     @abc.abstractmethod
     def ResetOdometry(
         self,
-        request: google.protobuf.empty_pb2.Empty,
-        context: _ServicerContext,
-    ) -> typing.Union[mobile_base_mobility_pb2.MobilityServiceAck, collections.abc.Awaitable[mobile_base_mobility_pb2.MobilityServiceAck]]: ...
-    @abc.abstractmethod
-    def GetMobileBase(
-        self,
-        request: google.protobuf.empty_pb2.Empty,
-        context: _ServicerContext,
-    ) -> typing.Union[mobile_base_utility_pb2.MobileBase, collections.abc.Awaitable[mobile_base_utility_pb2.MobileBase]]: ...
-    @abc.abstractmethod
-    def GetState(
-        self,
         request: part_pb2.PartId,
         context: _ServicerContext,
-    ) -> typing.Union[mobile_base_utility_pb2.MobileBaseState, collections.abc.Awaitable[mobile_base_utility_pb2.MobileBaseState]]: ...
-    @abc.abstractmethod
-    def Audit(
-        self,
-        request: google.protobuf.empty_pb2.Empty,
-        context: _ServicerContext,
-    ) -> typing.Union[mobile_base_utility_pb2.MobileBaseStatus, collections.abc.Awaitable[mobile_base_utility_pb2.MobileBaseStatus]]: ...
+    ) -> typing.Union[mobile_base_mobility_pb2.MobilityServiceAck, collections.abc.Awaitable[mobile_base_mobility_pb2.MobilityServiceAck]]: ...
 
 def add_MobileBaseUtilityServiceServicer_to_server(servicer: MobileBaseUtilityServiceServicer, server: typing.Union[grpc.Server, grpc.aio.Server]) -> None: ...
