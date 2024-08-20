@@ -33,13 +33,13 @@ class MobileBaseMobilityServiceStub:
         mobile_base_mobility_pb2.GoToVector,
         mobile_base_mobility_pb2.MobilityServiceAck,
     ]
+    GetLastDirection: grpc.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        mobile_base_mobility_pb2.DirectionVector,
+    ]
     DistanceToGoal: grpc.UnaryUnaryMultiCallable[
         part_pb2.PartId,
         mobile_base_mobility_pb2.DistanceToGoalVector,
-    ]
-    GetLastDirection: grpc.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
-        mobile_base_mobility_pb2.DirectionVector,
     ]
 
 class MobileBaseMobilityServiceAsyncStub:
@@ -56,13 +56,13 @@ class MobileBaseMobilityServiceAsyncStub:
         mobile_base_mobility_pb2.GoToVector,
         mobile_base_mobility_pb2.MobilityServiceAck,
     ]
+    GetLastDirection: grpc.aio.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        mobile_base_mobility_pb2.DirectionVector,
+    ]
     DistanceToGoal: grpc.aio.UnaryUnaryMultiCallable[
         part_pb2.PartId,
         mobile_base_mobility_pb2.DistanceToGoalVector,
-    ]
-    GetLastDirection: grpc.aio.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
-        mobile_base_mobility_pb2.DirectionVector,
     ]
 
 class MobileBaseMobilityServiceServicer(metaclass=abc.ABCMeta):
@@ -86,16 +86,16 @@ class MobileBaseMobilityServiceServicer(metaclass=abc.ABCMeta):
         context: _ServicerContext,
     ) -> typing.Union[mobile_base_mobility_pb2.MobilityServiceAck, collections.abc.Awaitable[mobile_base_mobility_pb2.MobilityServiceAck]]: ...
     @abc.abstractmethod
+    def GetLastDirection(
+        self,
+        request: part_pb2.PartId,
+        context: _ServicerContext,
+    ) -> typing.Union[mobile_base_mobility_pb2.DirectionVector, collections.abc.Awaitable[mobile_base_mobility_pb2.DirectionVector]]: ...
+    @abc.abstractmethod
     def DistanceToGoal(
         self,
         request: part_pb2.PartId,
         context: _ServicerContext,
     ) -> typing.Union[mobile_base_mobility_pb2.DistanceToGoalVector, collections.abc.Awaitable[mobile_base_mobility_pb2.DistanceToGoalVector]]: ...
-    @abc.abstractmethod
-    def GetLastDirection(
-        self,
-        request: google.protobuf.empty_pb2.Empty,
-        context: _ServicerContext,
-    ) -> typing.Union[mobile_base_mobility_pb2.DirectionVector, collections.abc.Awaitable[mobile_base_mobility_pb2.DirectionVector]]: ...
 
 def add_MobileBaseMobilityServiceServicer_to_server(servicer: MobileBaseMobilityServiceServicer, server: typing.Union[grpc.Server, grpc.aio.Server]) -> None: ...

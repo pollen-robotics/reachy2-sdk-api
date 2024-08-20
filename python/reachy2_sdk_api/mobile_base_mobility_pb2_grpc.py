@@ -30,15 +30,15 @@ class MobileBaseMobilityServiceStub(object):
                 request_serializer=mobile__base__mobility__pb2.GoToVector.SerializeToString,
                 response_deserializer=mobile__base__mobility__pb2.MobilityServiceAck.FromString,
                 )
+        self.GetLastDirection = channel.unary_unary(
+                '/reachy.part.mobile.base.mobility.MobileBaseMobilityService/GetLastDirection',
+                request_serializer=part__pb2.PartId.SerializeToString,
+                response_deserializer=mobile__base__mobility__pb2.DirectionVector.FromString,
+                )
         self.DistanceToGoal = channel.unary_unary(
                 '/reachy.part.mobile.base.mobility.MobileBaseMobilityService/DistanceToGoal',
                 request_serializer=part__pb2.PartId.SerializeToString,
                 response_deserializer=mobile__base__mobility__pb2.DistanceToGoalVector.FromString,
-                )
-        self.GetLastDirection = channel.unary_unary(
-                '/mobile.base.mobility.MobileBaseMobilityService/GetLastDirection',
-                request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-                response_deserializer=mobile__base__mobility__pb2.DirectionVector.FromString,
                 )
 
 
@@ -64,13 +64,13 @@ class MobileBaseMobilityServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
-    def DistanceToGoal(self, request, context):
+    def GetLastDirection(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
-    def GetLastDirection(self, request, context):
+    def DistanceToGoal(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -94,15 +94,15 @@ def add_MobileBaseMobilityServiceServicer_to_server(servicer, server):
                     request_deserializer=mobile__base__mobility__pb2.GoToVector.FromString,
                     response_serializer=mobile__base__mobility__pb2.MobilityServiceAck.SerializeToString,
             ),
+            'GetLastDirection': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetLastDirection,
+                    request_deserializer=part__pb2.PartId.FromString,
+                    response_serializer=mobile__base__mobility__pb2.DirectionVector.SerializeToString,
+            ),
             'DistanceToGoal': grpc.unary_unary_rpc_method_handler(
                     servicer.DistanceToGoal,
                     request_deserializer=part__pb2.PartId.FromString,
                     response_serializer=mobile__base__mobility__pb2.DistanceToGoalVector.SerializeToString,
-            ),
-            'GetLastDirection': grpc.unary_unary_rpc_method_handler(
-                    servicer.GetLastDirection,
-                    request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
-                    response_serializer=mobile__base__mobility__pb2.DirectionVector.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -166,6 +166,23 @@ class MobileBaseMobilityService(object):
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
+    def GetLastDirection(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.mobility.MobileBaseMobilityService/GetLastDirection',
+            part__pb2.PartId.SerializeToString,
+            mobile__base__mobility__pb2.DirectionVector.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
     def DistanceToGoal(request,
             target,
             options=(),
@@ -179,22 +196,5 @@ class MobileBaseMobilityService(object):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.mobility.MobileBaseMobilityService/DistanceToGoal',
             part__pb2.PartId.SerializeToString,
             mobile__base__mobility__pb2.DistanceToGoalVector.FromString,
-            options, channel_credentials,
-            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
-
-    @staticmethod
-    def GetLastDirection(request,
-            target,
-            options=(),
-            channel_credentials=None,
-            call_credentials=None,
-            insecure=False,
-            compression=None,
-            wait_for_ready=None,
-            timeout=None,
-            metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/mobile.base.mobility.MobileBaseMobilityService/GetLastDirection',
-            google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-            mobile__base__mobility__pb2.DirectionVector.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
