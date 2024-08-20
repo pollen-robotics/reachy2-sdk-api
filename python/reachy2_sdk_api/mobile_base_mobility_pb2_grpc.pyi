@@ -4,10 +4,10 @@ isort:skip_file
 """
 import abc
 import collections.abc
-import google.protobuf.empty_pb2
 import grpc
 import grpc.aio
 import mobile_base_mobility_pb2
+import part_pb2
 import typing
 
 _T = typing.TypeVar('_T')
@@ -34,7 +34,7 @@ class MobileBaseMobilityServiceStub:
         mobile_base_mobility_pb2.MobilityServiceAck,
     ]
     DistanceToGoal: grpc.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
+        part_pb2.PartId,
         mobile_base_mobility_pb2.DistanceToGoalVector,
     ]
     GetLastDirection: grpc.UnaryUnaryMultiCallable[
@@ -57,7 +57,7 @@ class MobileBaseMobilityServiceAsyncStub:
         mobile_base_mobility_pb2.MobilityServiceAck,
     ]
     DistanceToGoal: grpc.aio.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
+        part_pb2.PartId,
         mobile_base_mobility_pb2.DistanceToGoalVector,
     ]
     GetLastDirection: grpc.aio.UnaryUnaryMultiCallable[
@@ -88,7 +88,7 @@ class MobileBaseMobilityServiceServicer(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def DistanceToGoal(
         self,
-        request: google.protobuf.empty_pb2.Empty,
+        request: part_pb2.PartId,
         context: _ServicerContext,
     ) -> typing.Union[mobile_base_mobility_pb2.DistanceToGoalVector, collections.abc.Awaitable[mobile_base_mobility_pb2.DistanceToGoalVector]]: ...
     @abc.abstractmethod

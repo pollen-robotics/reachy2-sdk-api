@@ -3,8 +3,9 @@ syntax = "proto3";
 import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
 import "mobile_base_mobility.proto";
+import "part.proto";
 
-package mobile.base.lidar;
+package reachy.part.mobile.base.lidar;
 
 enum LidarObstacleDetectionEnum {
     DETECTION_ERROR=0;
@@ -18,10 +19,11 @@ message LidarObstacleDetectionStatus {
 }
 
 message LidarSafety {
-    google.protobuf.BoolValue safety_on = 1;
-    google.protobuf.FloatValue safety_distance = 2;
-    google.protobuf.FloatValue critical_distance = 3;
-    LidarObstacleDetectionStatus obstacle_detection_status = 4;
+    reachy.part.PartId id = 1;
+    google.protobuf.BoolValue safety_on = 2;
+    google.protobuf.FloatValue safety_distance = 3;
+    google.protobuf.FloatValue critical_distance = 4;
+    LidarObstacleDetectionStatus obstacle_detection_status = 5;
 }
 
 message LidarMap {
@@ -30,8 +32,8 @@ message LidarMap {
 
 service MobileBaseLidarService {
     rpc SetZuuuSafety(LidarSafety) returns (mobile.base.mobility.MobilityServiceAck);
-    rpc GetZuuuSafety(google.protobuf.Empty) returns (LidarSafety);
+    rpc GetZuuuSafety(reachy.part.PartId) returns (LidarSafety);
 
-    rpc GetLidarMap(google.protobuf.Empty) returns (LidarMap);
-    rpc GetLidarObstacleDetectionStatus(google.protobuf.Empty) returns (LidarObstacleDetectionStatus);
+    rpc GetLidarMap(reachy.part.PartId) returns (LidarMap);
+    rpc GetLidarObstacleDetectionStatus(reachy.part.PartId) returns (LidarObstacleDetectionStatus);
 }

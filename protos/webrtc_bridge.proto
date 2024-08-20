@@ -76,8 +76,8 @@ message NeckCommand {
 }
 
 message MobileBaseCommand {
-    mobile.base.mobility.TargetDirectionCommand target_direction = 1;
-    mobile.base.utility.ZuuuModeCommand mobile_base_mode = 2;
+    reachy.part.mobile.base.mobility.TargetDirectionCommand target_direction = 1;
+    reachy.part.mobile.base.utility.ZuuuModeCommand mobile_base_mode = 2;
 }
 
 message AnyCommands {
