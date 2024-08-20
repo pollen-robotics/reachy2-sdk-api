@@ -48,7 +48,7 @@ namespace Reachy.Part.Mobile.Base.Mobility {
             "EjAKC2RlbHRhX3RoZXRhGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0",
             "VmFsdWUSLQoIZGlzdGFuY2UYBCABKAsyGy5nb29nbGUucHJvdG9idWYuRmxv",
             "YXRWYWx1ZSJBChJNb2JpbGl0eVNlcnZpY2VBY2sSKwoHc3VjY2VzcxgBIAEo",
-            "CzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUy4wMKGU1vYmlsZUJhc2VN",
+            "CzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUyvwQKGU1vYmlsZUJhc2VN",
             "b2JpbGl0eVNlcnZpY2USfwoNU2VuZERpcmVjdGlvbhI4LnJlYWNoeS5wYXJ0",
             "Lm1vYmlsZS5iYXNlLm1vYmlsaXR5LlRhcmdldERpcmVjdGlvbkNvbW1hbmQa",
             "NC5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5Nb2JpbGl0eVNl",
@@ -57,9 +57,11 @@ namespace Reachy.Part.Mobile.Base.Mobility {
             "b2JpbGUuYmFzZS5tb2JpbGl0eS5Nb2JpbGl0eVNlcnZpY2VBY2sSbgoIU2Vu",
             "ZEdvVG8SLC5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5Hb1Rv",
             "VmVjdG9yGjQucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UubW9iaWxpdHkuTW9i",
-            "aWxpdHlTZXJ2aWNlQWNrEl0KDkRpc3RhbmNlVG9Hb2FsEhMucmVhY2h5LnBh",
-            "cnQuUGFydElkGjYucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UubW9iaWxpdHku",
-            "RGlzdGFuY2VUb0dvYWxWZWN0b3JiBnByb3RvMw=="));
+            "aWxpdHlTZXJ2aWNlQWNrEloKEEdldExhc3REaXJlY3Rpb24SEy5yZWFjaHku",
+            "cGFydC5QYXJ0SWQaMS5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0",
+            "eS5EaXJlY3Rpb25WZWN0b3ISXQoORGlzdGFuY2VUb0dvYWwSEy5yZWFjaHku",
+            "cGFydC5QYXJ0SWQaNi5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0",
+            "eS5EaXN0YW5jZVRvR29hbFZlY3RvcmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -56,6 +56,8 @@ namespace Reachy.Part.Mobile.Base.Mobility {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Reachy.Part.PartId> __Marshaller_reachy_part_PartId = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.PartId.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Reachy.Part.Mobile.Base.Mobility.DirectionVector> __Marshaller_reachy_part_mobile_base_mobility_DirectionVector = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Mobile.Base.Mobility.DirectionVector.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Reachy.Part.Mobile.Base.Mobility.DistanceToGoalVector> __Marshaller_reachy_part_mobile_base_mobility_DistanceToGoalVector = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Mobile.Base.Mobility.DistanceToGoalVector.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -81,6 +83,14 @@ namespace Reachy.Part.Mobile.Base.Mobility {
         "SendGoTo",
         __Marshaller_reachy_part_mobile_base_mobility_GoToVector,
         __Marshaller_reachy_part_mobile_base_mobility_MobilityServiceAck);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Mobility.DirectionVector> __Method_GetLastDirection = new grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Mobility.DirectionVector>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetLastDirection",
+        __Marshaller_reachy_part_PartId,
+        __Marshaller_reachy_part_mobile_base_mobility_DirectionVector);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Mobility.DistanceToGoalVector> __Method_DistanceToGoal = new grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Mobility.DistanceToGoalVector>(
@@ -120,6 +130,12 @@ namespace Reachy.Part.Mobile.Base.Mobility {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> SendGoTo(global::Reachy.Part.Mobile.Base.Mobility.GoToVector request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Reachy.Part.Mobile.Base.Mobility.DirectionVector> GetLastDirection(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -248,6 +264,26 @@ namespace Reachy.Part.Mobile.Base.Mobility {
         return CallInvoker.AsyncUnaryCall(__Method_SendGoTo, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.Part.Mobile.Base.Mobility.DirectionVector GetLastDirection(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetLastDirection(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.Part.Mobile.Base.Mobility.DirectionVector GetLastDirection(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetLastDirection, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Mobility.DirectionVector> GetLastDirectionAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetLastDirectionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Mobility.DirectionVector> GetLastDirectionAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetLastDirection, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Reachy.Part.Mobile.Base.Mobility.DistanceToGoalVector DistanceToGoal(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return DistanceToGoal(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -284,6 +320,7 @@ namespace Reachy.Part.Mobile.Base.Mobility {
           .AddMethod(__Method_SendDirection, serviceImpl.SendDirection)
           .AddMethod(__Method_SendSetSpeed, serviceImpl.SendSetSpeed)
           .AddMethod(__Method_SendGoTo, serviceImpl.SendGoTo)
+          .AddMethod(__Method_GetLastDirection, serviceImpl.GetLastDirection)
           .AddMethod(__Method_DistanceToGoal, serviceImpl.DistanceToGoal).Build();
     }
 
@@ -297,6 +334,7 @@ namespace Reachy.Part.Mobile.Base.Mobility {
       serviceBinder.AddMethod(__Method_SendDirection, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Mobile.Base.Mobility.TargetDirectionCommand, global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck>(serviceImpl.SendDirection));
       serviceBinder.AddMethod(__Method_SendSetSpeed, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Mobile.Base.Mobility.SetSpeedVector, global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck>(serviceImpl.SendSetSpeed));
       serviceBinder.AddMethod(__Method_SendGoTo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Mobile.Base.Mobility.GoToVector, global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck>(serviceImpl.SendGoTo));
+      serviceBinder.AddMethod(__Method_GetLastDirection, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Mobility.DirectionVector>(serviceImpl.GetLastDirection));
       serviceBinder.AddMethod(__Method_DistanceToGoal, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Mobility.DistanceToGoalVector>(serviceImpl.DistanceToGoal));
     }
 
