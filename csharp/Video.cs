@@ -36,20 +36,21 @@ namespace Component.Video {
             "KAIiTAoUTGlzdE9mQ2FtZXJhRmVhdHVyZXMSNAoLY2FtZXJhX2ZlYXQYASAD",
             "KAsyHy5jb21wb25lbnQudmlkZW8uQ2FtZXJhRmVhdHVyZXMiRAoFRnJhbWUS",
             "LQoJdGltZXN0YW1wGAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
-            "cBIMCgRkYXRhGAIgASgMImYKCEZyYW1lUmF3Ei0KCXRpbWVzdGFtcBgBIAEo",
-            "CzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASDAoEZGF0YRgCIAEoDBIO",
-            "CgZoZWlnaHQYAyABKA0SDQoFd2lkdGgYBCABKA0idgoLVmlld1JlcXVlc3QS",
-            "NAoLY2FtZXJhX2ZlYXQYASABKAsyHy5jb21wb25lbnQudmlkZW8uQ2FtZXJh",
-            "RmVhdHVyZXMSKAoEdmlldxgCIAEoDjIVLmNvbXBvbmVudC52aWRlby5WaWV3",
-            "SACIAQFCBwoFX3ZpZXcqJgoEVmlldxIICgRMRUZUEAASCQoFUklHSFQQARIJ",
-            "CgVERVBUSBACMr0CCgxWaWRlb1NlcnZpY2USVAoTR2V0QXZhaWxhYmxlQ2Ft",
-            "ZXJhcxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRolLmNvbXBvbmVudC52aWRl",
-            "by5MaXN0T2ZDYW1lcmFGZWF0dXJlcxJACghHZXRGcmFtZRIcLmNvbXBvbmVu",
-            "dC52aWRlby5WaWV3UmVxdWVzdBoWLmNvbXBvbmVudC52aWRlby5GcmFtZRJQ",
-            "Cg1HZXRQYXJhbWV0ZXJzEhwuY29tcG9uZW50LnZpZGVvLlZpZXdSZXF1ZXN0",
-            "GiEuY29tcG9uZW50LnZpZGVvLkNhbWVyYVBhcmFtZXRlcnMSQwoIR2V0RGVw",
-            "dGgSHC5jb21wb25lbnQudmlkZW8uVmlld1JlcXVlc3QaGS5jb21wb25lbnQu",
-            "dmlkZW8uRnJhbWVSYXdiBnByb3RvMw=="));
+            "cBIMCgRkYXRhGAIgASgMIpsBCghGcmFtZVJhdxItCgl0aW1lc3RhbXAYASAB",
+            "KAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEgwKBGRhdGEYAiABKAwS",
+            "DgoGaGVpZ2h0GAMgASgNEg0KBXdpZHRoGAQgASgNEhAKCGVuY29kaW5nGAUg",
+            "ASgJEgwKBHN0ZXAYBiABKA0SEwoLaXNiaWdlbmRpYW4YByABKAgidgoLVmll",
+            "d1JlcXVlc3QSNAoLY2FtZXJhX2ZlYXQYASABKAsyHy5jb21wb25lbnQudmlk",
+            "ZW8uQ2FtZXJhRmVhdHVyZXMSKAoEdmlldxgCIAEoDjIVLmNvbXBvbmVudC52",
+            "aWRlby5WaWV3SACIAQFCBwoFX3ZpZXcqJgoEVmlldxIICgRMRUZUEAASCQoF",
+            "UklHSFQQARIJCgVERVBUSBACMr0CCgxWaWRlb1NlcnZpY2USVAoTR2V0QXZh",
+            "aWxhYmxlQ2FtZXJhcxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRolLmNvbXBv",
+            "bmVudC52aWRlby5MaXN0T2ZDYW1lcmFGZWF0dXJlcxJACghHZXRGcmFtZRIc",
+            "LmNvbXBvbmVudC52aWRlby5WaWV3UmVxdWVzdBoWLmNvbXBvbmVudC52aWRl",
+            "by5GcmFtZRJQCg1HZXRQYXJhbWV0ZXJzEhwuY29tcG9uZW50LnZpZGVvLlZp",
+            "ZXdSZXF1ZXN0GiEuY29tcG9uZW50LnZpZGVvLkNhbWVyYVBhcmFtZXRlcnMS",
+            "QwoIR2V0RGVwdGgSHC5jb21wb25lbnQudmlkZW8uVmlld1JlcXVlc3QaGS5j",
+            "b21wb25lbnQudmlkZW8uRnJhbWVSYXdiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Error.ErrorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Component.Video.View), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -58,7 +59,7 @@ namespace Component.Video {
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.CameraParameters), global::Component.Video.CameraParameters.Parser, new[]{ "Height", "Width", "DistortionModel", "D", "K", "R", "P" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.ListOfCameraFeatures), global::Component.Video.ListOfCameraFeatures.Parser, new[]{ "CameraFeat" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.Frame), global::Component.Video.Frame.Parser, new[]{ "Timestamp", "Data" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.FrameRaw), global::Component.Video.FrameRaw.Parser, new[]{ "Timestamp", "Data", "Height", "Width" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.FrameRaw), global::Component.Video.FrameRaw.Parser, new[]{ "Timestamp", "Data", "Height", "Width", "Encoding", "Step", "Isbigendian" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.ViewRequest), global::Component.Video.ViewRequest.Parser, new[]{ "CameraFeat", "View" }, new[]{ "View" }, null, null, null)
           }));
     }
@@ -1407,6 +1408,9 @@ namespace Component.Video {
       data_ = other.data_;
       height_ = other.height_;
       width_ = other.width_;
+      encoding_ = other.encoding_;
+      step_ = other.step_;
+      isbigendian_ = other.isbigendian_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1464,6 +1468,42 @@ namespace Component.Video {
       }
     }
 
+    /// <summary>Field number for the "encoding" field.</summary>
+    public const int EncodingFieldNumber = 5;
+    private string encoding_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Encoding {
+      get { return encoding_; }
+      set {
+        encoding_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "step" field.</summary>
+    public const int StepFieldNumber = 6;
+    private uint step_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Step {
+      get { return step_; }
+      set {
+        step_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "isbigendian" field.</summary>
+    public const int IsbigendianFieldNumber = 7;
+    private bool isbigendian_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Isbigendian {
+      get { return isbigendian_; }
+      set {
+        isbigendian_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1483,6 +1523,9 @@ namespace Component.Video {
       if (Data != other.Data) return false;
       if (Height != other.Height) return false;
       if (Width != other.Width) return false;
+      if (Encoding != other.Encoding) return false;
+      if (Step != other.Step) return false;
+      if (Isbigendian != other.Isbigendian) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1494,6 +1537,9 @@ namespace Component.Video {
       if (Data.Length != 0) hash ^= Data.GetHashCode();
       if (Height != 0) hash ^= Height.GetHashCode();
       if (Width != 0) hash ^= Width.GetHashCode();
+      if (Encoding.Length != 0) hash ^= Encoding.GetHashCode();
+      if (Step != 0) hash ^= Step.GetHashCode();
+      if (Isbigendian != false) hash ^= Isbigendian.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1528,6 +1574,18 @@ namespace Component.Video {
         output.WriteRawTag(32);
         output.WriteUInt32(Width);
       }
+      if (Encoding.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(Encoding);
+      }
+      if (Step != 0) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(Step);
+      }
+      if (Isbigendian != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(Isbigendian);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1554,6 +1612,18 @@ namespace Component.Video {
         output.WriteRawTag(32);
         output.WriteUInt32(Width);
       }
+      if (Encoding.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(Encoding);
+      }
+      if (Step != 0) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(Step);
+      }
+      if (Isbigendian != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(Isbigendian);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1575,6 +1645,15 @@ namespace Component.Video {
       }
       if (Width != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Width);
+      }
+      if (Encoding.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Encoding);
+      }
+      if (Step != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Step);
+      }
+      if (Isbigendian != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1602,6 +1681,15 @@ namespace Component.Video {
       }
       if (other.Width != 0) {
         Width = other.Width;
+      }
+      if (other.Encoding.Length != 0) {
+        Encoding = other.Encoding;
+      }
+      if (other.Step != 0) {
+        Step = other.Step;
+      }
+      if (other.Isbigendian != false) {
+        Isbigendian = other.Isbigendian;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1637,6 +1725,18 @@ namespace Component.Video {
             Width = input.ReadUInt32();
             break;
           }
+          case 42: {
+            Encoding = input.ReadString();
+            break;
+          }
+          case 48: {
+            Step = input.ReadUInt32();
+            break;
+          }
+          case 56: {
+            Isbigendian = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -1669,6 +1769,18 @@ namespace Component.Video {
           }
           case 32: {
             Width = input.ReadUInt32();
+            break;
+          }
+          case 42: {
+            Encoding = input.ReadString();
+            break;
+          }
+          case 48: {
+            Step = input.ReadUInt32();
+            break;
+          }
+          case 56: {
+            Isbigendian = input.ReadBool();
             break;
           }
         }
