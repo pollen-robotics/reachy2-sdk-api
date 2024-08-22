@@ -32,6 +32,10 @@ class VideoServiceStub:
         video_pb2.ViewRequest,
         video_pb2.CameraParameters,
     ]
+    GetDepth: grpc.UnaryUnaryMultiCallable[
+        video_pb2.ViewRequest,
+        video_pb2.FrameRaw,
+    ]
 
 class VideoServiceAsyncStub:
     GetAvailableCameras: grpc.aio.UnaryUnaryMultiCallable[
@@ -45,6 +49,10 @@ class VideoServiceAsyncStub:
     GetParameters: grpc.aio.UnaryUnaryMultiCallable[
         video_pb2.ViewRequest,
         video_pb2.CameraParameters,
+    ]
+    GetDepth: grpc.aio.UnaryUnaryMultiCallable[
+        video_pb2.ViewRequest,
+        video_pb2.FrameRaw,
     ]
 
 class VideoServiceServicer(metaclass=abc.ABCMeta):
@@ -66,5 +74,11 @@ class VideoServiceServicer(metaclass=abc.ABCMeta):
         request: video_pb2.ViewRequest,
         context: _ServicerContext,
     ) -> typing.Union[video_pb2.CameraParameters, collections.abc.Awaitable[video_pb2.CameraParameters]]: ...
+    @abc.abstractmethod
+    def GetDepth(
+        self,
+        request: video_pb2.ViewRequest,
+        context: _ServicerContext,
+    ) -> typing.Union[video_pb2.FrameRaw, collections.abc.Awaitable[video_pb2.FrameRaw]]: ...
 
 def add_VideoServiceServicer_to_server(servicer: VideoServiceServicer, server: typing.Union[grpc.Server, grpc.aio.Server]) -> None: ...
