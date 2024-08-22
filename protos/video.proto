@@ -49,6 +49,9 @@ message FrameRaw {
     bytes data = 2;
     uint32 height = 3;
     uint32 width = 4;
+    string encoding = 5;
+    uint32 step = 6;
+    bool isbigendian = 7;   
 }
 
 message ViewRequest {

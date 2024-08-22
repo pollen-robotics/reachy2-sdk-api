@@ -161,11 +161,17 @@ class FrameRaw(google.protobuf.message.Message):
     DATA_FIELD_NUMBER: builtins.int
     HEIGHT_FIELD_NUMBER: builtins.int
     WIDTH_FIELD_NUMBER: builtins.int
+    ENCODING_FIELD_NUMBER: builtins.int
+    STEP_FIELD_NUMBER: builtins.int
+    ISBIGENDIAN_FIELD_NUMBER: builtins.int
     @property
     def timestamp(self) -> google.protobuf.timestamp_pb2.Timestamp: ...
     data: builtins.bytes
     height: builtins.int
     width: builtins.int
+    encoding: builtins.str
+    step: builtins.int
+    isbigendian: builtins.bool
     def __init__(
         self,
         *,
@@ -173,9 +179,12 @@ class FrameRaw(google.protobuf.message.Message):
         data: builtins.bytes = ...,
         height: builtins.int = ...,
         width: builtins.int = ...,
+        encoding: builtins.str = ...,
+        step: builtins.int = ...,
+        isbigendian: builtins.bool = ...,
     ) -> None: ...
     def HasField(self, field_name: typing_extensions.Literal["timestamp", b"timestamp"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["data", b"data", "height", b"height", "timestamp", b"timestamp", "width", b"width"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["data", b"data", "encoding", b"encoding", "height", b"height", "isbigendian", b"isbigendian", "step", b"step", "timestamp", b"timestamp", "width", b"width"]) -> None: ...
 
 global___FrameRaw = FrameRaw
 
