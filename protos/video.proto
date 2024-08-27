@@ -11,6 +11,7 @@ package component.video;
 enum View {
     LEFT = 0;
     RIGHT = 1;
+    DEPTH = 2;
 }
 
 message VideoAck {
@@ -43,6 +44,16 @@ message Frame {
     bytes data = 2;
 }
 
+message FrameRaw {
+    google.protobuf.Timestamp timestamp = 1;
+    bytes data = 2;
+    uint32 height = 3;
+    uint32 width = 4;
+    string encoding = 5;
+    uint32 step = 6;
+    bool isbigendian = 7;   
+}
+
 message ViewRequest {
     CameraFeatures camera_feat = 1;
     optional View view = 2;
@@ -52,4 +63,5 @@ service VideoService {
     rpc GetAvailableCameras(google.protobuf.Empty) returns (ListOfCameraFeatures);
     rpc GetFrame (ViewRequest) returns (Frame);
     rpc GetParameters (ViewRequest) returns (CameraParameters);
+    rpc GetDepth (ViewRequest) returns (FrameRaw);
 }

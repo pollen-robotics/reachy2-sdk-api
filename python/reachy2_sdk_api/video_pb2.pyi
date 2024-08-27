@@ -29,11 +29,13 @@ class _ViewEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeW
     DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
     LEFT: _View.ValueType  # 0
     RIGHT: _View.ValueType  # 1
+    DEPTH: _View.ValueType  # 2
 
 class View(_View, metaclass=_ViewEnumTypeWrapper): ...
 
 LEFT: View.ValueType  # 0
 RIGHT: View.ValueType  # 1
+DEPTH: View.ValueType  # 2
 global___View = View
 
 @typing_extensions.final
@@ -150,6 +152,41 @@ class Frame(google.protobuf.message.Message):
     def ClearField(self, field_name: typing_extensions.Literal["data", b"data", "timestamp", b"timestamp"]) -> None: ...
 
 global___Frame = Frame
+
+@typing_extensions.final
+class FrameRaw(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    TIMESTAMP_FIELD_NUMBER: builtins.int
+    DATA_FIELD_NUMBER: builtins.int
+    HEIGHT_FIELD_NUMBER: builtins.int
+    WIDTH_FIELD_NUMBER: builtins.int
+    ENCODING_FIELD_NUMBER: builtins.int
+    STEP_FIELD_NUMBER: builtins.int
+    ISBIGENDIAN_FIELD_NUMBER: builtins.int
+    @property
+    def timestamp(self) -> google.protobuf.timestamp_pb2.Timestamp: ...
+    data: builtins.bytes
+    height: builtins.int
+    width: builtins.int
+    encoding: builtins.str
+    step: builtins.int
+    isbigendian: builtins.bool
+    def __init__(
+        self,
+        *,
+        timestamp: google.protobuf.timestamp_pb2.Timestamp | None = ...,
+        data: builtins.bytes = ...,
+        height: builtins.int = ...,
+        width: builtins.int = ...,
+        encoding: builtins.str = ...,
+        step: builtins.int = ...,
+        isbigendian: builtins.bool = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["timestamp", b"timestamp"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["data", b"data", "encoding", b"encoding", "height", b"height", "isbigendian", b"isbigendian", "step", b"step", "timestamp", b"timestamp", "width", b"width"]) -> None: ...
+
+global___FrameRaw = FrameRaw
 
 @typing_extensions.final
 class ViewRequest(google.protobuf.message.Message):
