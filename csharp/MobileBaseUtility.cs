@@ -41,59 +41,61 @@ namespace Reachy.Part.Mobile.Base.Utility {
             "cnQubW9iaWxlLmJhc2UubGlkYXIuTGlkYXJTYWZldHkSQwoJenV1dV9tb2Rl",
             "GAYgASgLMjAucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0eS5adXV1",
             "TW9kZUNvbW1hbmQSSQoMY29udHJvbF9tb2RlGAcgASgLMjMucmVhY2h5LnBh",
-            "cnQubW9iaWxlLmJhc2UudXRpbGl0eS5Db250cm9sTW9kZUNvbW1hbmQijAEK",
+            "cnQubW9iaWxlLmJhc2UudXRpbGl0eS5Db250cm9sTW9kZUNvbW1hbmQiiwIK",
             "Dk9kb21ldHJ5VmVjdG9yEiYKAXgYASABKAsyGy5nb29nbGUucHJvdG9idWYu",
             "RmxvYXRWYWx1ZRImCgF5GAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0",
             "VmFsdWUSKgoFdGhldGEYAyABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRW",
-            "YWx1ZSJ9ChJDb250cm9sTW9kZUNvbW1hbmQSHwoCaWQYASABKAsyEy5yZWFj",
-            "aHkucGFydC5QYXJ0SWQSRgoEbW9kZRgCIAEoDjI4LnJlYWNoeS5wYXJ0Lm1v",
-            "YmlsZS5iYXNlLnV0aWxpdHkuQ29udHJvbE1vZGVQb3NzaWJsaXRpZXMidwoP",
-            "WnV1dU1vZGVDb21tYW5kEh8KAmlkGAEgASgLMhMucmVhY2h5LnBhcnQuUGFy",
-            "dElkEkMKBG1vZGUYAiABKA4yNS5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS51",
-            "dGlsaXR5Llp1dXVNb2RlUG9zc2libGl0aWVzIjoKDEJhdHRlcnlMZXZlbBIq",
-            "CgVsZXZlbBgBIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlIjAK",
-            "EE1vYmlsZUJhc2VTdGF0dXMSHAoGZXJyb3JzGAEgAygLMgwuZXJyb3IuRXJy",
-            "b3IqSAoXQ29udHJvbE1vZGVQb3NzaWJsaXRpZXMSFQoRTk9ORV9DT05UUk9M",
-            "X01PREUQABINCglPUEVOX0xPT1AQARIHCgNQSUQQAiqJAQoUWnV1dU1vZGVQ",
-            "b3NzaWJsaXRpZXMSEgoOTk9ORV9aVVVVX01PREUQABILCgdDTURfVkVMEAES",
-            "CQoFQlJBS0UQAhIOCgpGUkVFX1dIRUVMEAMSCQoFU1BFRUQQBBIICgRHT1RP",
-            "EAUSEgoORU1FUkdFTkNZX1NUT1AQBhIMCghDTURfR09UTxAHMvAJChhNb2Jp",
-            "bGVCYXNlVXRpbGl0eVNlcnZpY2USXgoRR2V0QWxsTW9iaWxlQmFzZXMSFi5n",
-            "b29nbGUucHJvdG9idWYuRW1wdHkaMS5yZWFjaHkucGFydC5tb2JpbGUuYmFz",
-            "ZS51dGlsaXR5Lkxpc3RPZk1vYmlsZUJhc2USUQoIR2V0U3RhdGUSEy5yZWFj",
-            "aHkucGFydC5QYXJ0SWQaMC5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS51dGls",
-            "aXR5Lk1vYmlsZUJhc2VTdGF0ZRJPCgVBdWRpdBITLnJlYWNoeS5wYXJ0LlBh",
-            "cnRJZBoxLnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLnV0aWxpdHkuTW9iaWxl",
-            "QmFzZVN0YXR1cxI4CglIZWFydEJlYXQSEy5yZWFjaHkucGFydC5QYXJ0SWQa",
-            "Fi5nb29nbGUucHJvdG9idWYuRW1wdHkSNgoHUmVzdGFydBITLnJlYWNoeS5w",
-            "YXJ0LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJBChJSZXNldERl",
-            "ZmF1bHRWYWx1ZXMSEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5nb29nbGUucHJv",
-            "dG9idWYuRW1wdHkSNQoGVHVybk9uEhMucmVhY2h5LnBhcnQuUGFydElkGhYu",
-            "Z29vZ2xlLnByb3RvYnVmLkVtcHR5EjYKB1R1cm5PZmYSEy5yZWFjaHkucGFy",
-            "dC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSewoOU2V0Q29udHJv",
-            "bE1vZGUSMy5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS51dGlsaXR5LkNvbnRy",
-            "b2xNb2RlQ29tbWFuZBo0LnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLm1vYmls",
-            "aXR5Lk1vYmlsaXR5U2VydmljZUFjaxJaCg5HZXRDb250cm9sTW9kZRITLnJl",
-            "YWNoeS5wYXJ0LlBhcnRJZBozLnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLnV0",
-            "aWxpdHkuQ29udHJvbE1vZGVDb21tYW5kEnUKC1NldFp1dXVNb2RlEjAucmVh",
-            "Y2h5LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0eS5adXV1TW9kZUNvbW1hbmQa",
-            "NC5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5Nb2JpbGl0eVNl",
-            "cnZpY2VBY2sSVAoLR2V0WnV1dU1vZGUSEy5yZWFjaHkucGFydC5QYXJ0SWQa",
-            "MC5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS51dGlsaXR5Llp1dXVNb2RlQ29t",
-            "bWFuZBJVCg9HZXRCYXR0ZXJ5TGV2ZWwSEy5yZWFjaHkucGFydC5QYXJ0SWQa",
-            "LS5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS51dGlsaXR5LkJhdHRlcnlMZXZl",
-            "bBJTCgtHZXRPZG9tZXRyeRITLnJlYWNoeS5wYXJ0LlBhcnRJZBovLnJlYWNo",
-            "eS5wYXJ0Lm1vYmlsZS5iYXNlLnV0aWxpdHkuT2RvbWV0cnlWZWN0b3ISWgoN",
-            "UmVzZXRPZG9tZXRyeRITLnJlYWNoeS5wYXJ0LlBhcnRJZBo0LnJlYWNoeS5w",
-            "YXJ0Lm1vYmlsZS5iYXNlLm1vYmlsaXR5Lk1vYmlsaXR5U2VydmljZUFja2IG",
-            "cHJvdG8z"));
+            "YWx1ZRInCgJ2eBgEIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVl",
+            "EicKAnZ5GAUgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSKwoG",
+            "dnRoZXRhGAYgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUifQoS",
+            "Q29udHJvbE1vZGVDb21tYW5kEh8KAmlkGAEgASgLMhMucmVhY2h5LnBhcnQu",
+            "UGFydElkEkYKBG1vZGUYAiABKA4yOC5yZWFjaHkucGFydC5tb2JpbGUuYmFz",
+            "ZS51dGlsaXR5LkNvbnRyb2xNb2RlUG9zc2libGl0aWVzIncKD1p1dXVNb2Rl",
+            "Q29tbWFuZBIfCgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBJDCgRt",
+            "b2RlGAIgASgOMjUucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0eS5a",
+            "dXV1TW9kZVBvc3NpYmxpdGllcyI6CgxCYXR0ZXJ5TGV2ZWwSKgoFbGV2ZWwY",
+            "ASABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSIwChBNb2JpbGVC",
+            "YXNlU3RhdHVzEhwKBmVycm9ycxgBIAMoCzIMLmVycm9yLkVycm9yKkgKF0Nv",
+            "bnRyb2xNb2RlUG9zc2libGl0aWVzEhUKEU5PTkVfQ09OVFJPTF9NT0RFEAAS",
+            "DQoJT1BFTl9MT09QEAESBwoDUElEEAIqiQEKFFp1dXVNb2RlUG9zc2libGl0",
+            "aWVzEhIKDk5PTkVfWlVVVV9NT0RFEAASCwoHQ01EX1ZFTBABEgkKBUJSQUtF",
+            "EAISDgoKRlJFRV9XSEVFTBADEgkKBVNQRUVEEAQSCAoER09UTxAFEhIKDkVN",
+            "RVJHRU5DWV9TVE9QEAYSDAoIQ01EX0dPVE8QBzLwCQoYTW9iaWxlQmFzZVV0",
+            "aWxpdHlTZXJ2aWNlEl4KEUdldEFsbE1vYmlsZUJhc2VzEhYuZ29vZ2xlLnBy",
+            "b3RvYnVmLkVtcHR5GjEucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0",
+            "eS5MaXN0T2ZNb2JpbGVCYXNlElEKCEdldFN0YXRlEhMucmVhY2h5LnBhcnQu",
+            "UGFydElkGjAucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0eS5Nb2Jp",
+            "bGVCYXNlU3RhdGUSTwoFQXVkaXQSEy5yZWFjaHkucGFydC5QYXJ0SWQaMS5y",
+            "ZWFjaHkucGFydC5tb2JpbGUuYmFzZS51dGlsaXR5Lk1vYmlsZUJhc2VTdGF0",
+            "dXMSOAoJSGVhcnRCZWF0EhMucmVhY2h5LnBhcnQuUGFydElkGhYuZ29vZ2xl",
+            "LnByb3RvYnVmLkVtcHR5EjYKB1Jlc3RhcnQSEy5yZWFjaHkucGFydC5QYXJ0",
+            "SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSQQoSUmVzZXREZWZhdWx0VmFs",
+            "dWVzEhMucmVhY2h5LnBhcnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVt",
+            "cHR5EjUKBlR1cm5PbhITLnJlYWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5w",
+            "cm90b2J1Zi5FbXB0eRI2CgdUdXJuT2ZmEhMucmVhY2h5LnBhcnQuUGFydElk",
+            "GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EnsKDlNldENvbnRyb2xNb2RlEjMu",
+            "cmVhY2h5LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0eS5Db250cm9sTW9kZUNv",
+            "bW1hbmQaNC5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5Nb2Jp",
+            "bGl0eVNlcnZpY2VBY2sSWgoOR2V0Q29udHJvbE1vZGUSEy5yZWFjaHkucGFy",
+            "dC5QYXJ0SWQaMy5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS51dGlsaXR5LkNv",
+            "bnRyb2xNb2RlQ29tbWFuZBJ1CgtTZXRadXV1TW9kZRIwLnJlYWNoeS5wYXJ0",
+            "Lm1vYmlsZS5iYXNlLnV0aWxpdHkuWnV1dU1vZGVDb21tYW5kGjQucmVhY2h5",
+            "LnBhcnQubW9iaWxlLmJhc2UubW9iaWxpdHkuTW9iaWxpdHlTZXJ2aWNlQWNr",
+            "ElQKC0dldFp1dXVNb2RlEhMucmVhY2h5LnBhcnQuUGFydElkGjAucmVhY2h5",
+            "LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0eS5adXV1TW9kZUNvbW1hbmQSVQoP",
+            "R2V0QmF0dGVyeUxldmVsEhMucmVhY2h5LnBhcnQuUGFydElkGi0ucmVhY2h5",
+            "LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0eS5CYXR0ZXJ5TGV2ZWwSUwoLR2V0",
+            "T2RvbWV0cnkSEy5yZWFjaHkucGFydC5QYXJ0SWQaLy5yZWFjaHkucGFydC5t",
+            "b2JpbGUuYmFzZS51dGlsaXR5Lk9kb21ldHJ5VmVjdG9yEloKDVJlc2V0T2Rv",
+            "bWV0cnkSEy5yZWFjaHkucGFydC5QYXJ0SWQaNC5yZWFjaHkucGFydC5tb2Jp",
+            "bGUuYmFzZS5tb2JpbGl0eS5Nb2JpbGl0eVNlcnZpY2VBY2tiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.Mobile.Base.Lidar.MobileBaseLidarReflection.Descriptor, global::Reachy.Part.Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor, global::Error.ErrorReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.Part.Mobile.Base.Utility.ControlModePossiblities), typeof(global::Reachy.Part.Mobile.Base.Utility.ZuuuModePossiblities), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Utility.MobileBase), global::Reachy.Part.Mobile.Base.Utility.MobileBase.Parser, new[]{ "PartId", "Info" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Utility.ListOfMobileBase), global::Reachy.Part.Mobile.Base.Utility.ListOfMobileBase.Parser, new[]{ "MobileBase" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Utility.MobileBaseState), global::Reachy.Part.Mobile.Base.Utility.MobileBaseState.Parser, new[]{ "Timestamp", "Id", "Activated", "BatteryLevel", "LidarSafety", "ZuuuMode", "ControlMode" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Utility.OdometryVector), global::Reachy.Part.Mobile.Base.Utility.OdometryVector.Parser, new[]{ "X", "Y", "Theta" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Utility.OdometryVector), global::Reachy.Part.Mobile.Base.Utility.OdometryVector.Parser, new[]{ "X", "Y", "Theta", "Vx", "Vy", "Vtheta" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand), global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand.Parser, new[]{ "Id", "Mode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand), global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand.Parser, new[]{ "Id", "Mode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Utility.BatteryLevel), global::Reachy.Part.Mobile.Base.Utility.BatteryLevel.Parser, new[]{ "Level" }, null, null, null, null),
@@ -1048,6 +1050,9 @@ namespace Reachy.Part.Mobile.Base.Utility {
       X = other.X;
       Y = other.Y;
       Theta = other.Theta;
+      Vx = other.Vx;
+      Vy = other.Vy;
+      Vtheta = other.Vtheta;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1099,6 +1104,48 @@ namespace Reachy.Part.Mobile.Base.Utility {
     }
 
 
+    /// <summary>Field number for the "vx" field.</summary>
+    public const int VxFieldNumber = 4;
+    private static readonly pb::FieldCodec<float?> _single_vx_codec = pb::FieldCodec.ForStructWrapper<float>(34);
+    private float? vx_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float? Vx {
+      get { return vx_; }
+      set {
+        vx_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "vy" field.</summary>
+    public const int VyFieldNumber = 5;
+    private static readonly pb::FieldCodec<float?> _single_vy_codec = pb::FieldCodec.ForStructWrapper<float>(42);
+    private float? vy_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float? Vy {
+      get { return vy_; }
+      set {
+        vy_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "vtheta" field.</summary>
+    public const int VthetaFieldNumber = 6;
+    private static readonly pb::FieldCodec<float?> _single_vtheta_codec = pb::FieldCodec.ForStructWrapper<float>(50);
+    private float? vtheta_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float? Vtheta {
+      get { return vtheta_; }
+      set {
+        vtheta_ = value;
+      }
+    }
+
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1117,6 +1164,9 @@ namespace Reachy.Part.Mobile.Base.Utility {
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(X, other.X)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(Y, other.Y)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(Theta, other.Theta)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(Vx, other.Vx)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(Vy, other.Vy)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(Vtheta, other.Vtheta)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1127,6 +1177,9 @@ namespace Reachy.Part.Mobile.Base.Utility {
       if (x_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(X);
       if (y_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Y);
       if (theta_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Theta);
+      if (vx_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Vx);
+      if (vy_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Vy);
+      if (vtheta_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Vtheta);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1154,6 +1207,15 @@ namespace Reachy.Part.Mobile.Base.Utility {
       if (theta_ != null) {
         _single_theta_codec.WriteTagAndValue(output, Theta);
       }
+      if (vx_ != null) {
+        _single_vx_codec.WriteTagAndValue(output, Vx);
+      }
+      if (vy_ != null) {
+        _single_vy_codec.WriteTagAndValue(output, Vy);
+      }
+      if (vtheta_ != null) {
+        _single_vtheta_codec.WriteTagAndValue(output, Vtheta);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1173,6 +1235,15 @@ namespace Reachy.Part.Mobile.Base.Utility {
       if (theta_ != null) {
         _single_theta_codec.WriteTagAndValue(ref output, Theta);
       }
+      if (vx_ != null) {
+        _single_vx_codec.WriteTagAndValue(ref output, Vx);
+      }
+      if (vy_ != null) {
+        _single_vy_codec.WriteTagAndValue(ref output, Vy);
+      }
+      if (vtheta_ != null) {
+        _single_vtheta_codec.WriteTagAndValue(ref output, Vtheta);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1191,6 +1262,15 @@ namespace Reachy.Part.Mobile.Base.Utility {
       }
       if (theta_ != null) {
         size += _single_theta_codec.CalculateSizeWithTag(Theta);
+      }
+      if (vx_ != null) {
+        size += _single_vx_codec.CalculateSizeWithTag(Vx);
+      }
+      if (vy_ != null) {
+        size += _single_vy_codec.CalculateSizeWithTag(Vy);
+      }
+      if (vtheta_ != null) {
+        size += _single_vtheta_codec.CalculateSizeWithTag(Vtheta);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1217,6 +1297,21 @@ namespace Reachy.Part.Mobile.Base.Utility {
       if (other.theta_ != null) {
         if (theta_ == null || other.Theta != 0F) {
           Theta = other.Theta;
+        }
+      }
+      if (other.vx_ != null) {
+        if (vx_ == null || other.Vx != 0F) {
+          Vx = other.Vx;
+        }
+      }
+      if (other.vy_ != null) {
+        if (vy_ == null || other.Vy != 0F) {
+          Vy = other.Vy;
+        }
+      }
+      if (other.vtheta_ != null) {
+        if (vtheta_ == null || other.Vtheta != 0F) {
+          Vtheta = other.Vtheta;
         }
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1255,6 +1350,27 @@ namespace Reachy.Part.Mobile.Base.Utility {
             }
             break;
           }
+          case 34: {
+            float? value = _single_vx_codec.Read(input);
+            if (vx_ == null || value != 0F) {
+              Vx = value;
+            }
+            break;
+          }
+          case 42: {
+            float? value = _single_vy_codec.Read(input);
+            if (vy_ == null || value != 0F) {
+              Vy = value;
+            }
+            break;
+          }
+          case 50: {
+            float? value = _single_vtheta_codec.Read(input);
+            if (vtheta_ == null || value != 0F) {
+              Vtheta = value;
+            }
+            break;
+          }
         }
       }
     #endif
@@ -1288,6 +1404,27 @@ namespace Reachy.Part.Mobile.Base.Utility {
             float? value = _single_theta_codec.Read(ref input);
             if (theta_ == null || value != 0F) {
               Theta = value;
+            }
+            break;
+          }
+          case 34: {
+            float? value = _single_vx_codec.Read(ref input);
+            if (vx_ == null || value != 0F) {
+              Vx = value;
+            }
+            break;
+          }
+          case 42: {
+            float? value = _single_vy_codec.Read(ref input);
+            if (vy_ == null || value != 0F) {
+              Vy = value;
+            }
+            break;
+          }
+          case 50: {
+            float? value = _single_vtheta_codec.Read(ref input);
+            if (vtheta_ == null || value != 0F) {
+              Vtheta = value;
             }
             break;
           }

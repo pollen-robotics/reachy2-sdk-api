@@ -38,6 +38,9 @@ message OdometryVector {
     google.protobuf.FloatValue x = 1;
     google.protobuf.FloatValue y = 2;
     google.protobuf.FloatValue theta = 3;
+    google.protobuf.FloatValue vx = 4;
+    google.protobuf.FloatValue vy = 5;
+    google.protobuf.FloatValue vtheta = 6;
 }
 
 enum ControlModePossiblities {

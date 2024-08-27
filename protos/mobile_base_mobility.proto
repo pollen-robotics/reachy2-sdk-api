@@ -50,5 +50,6 @@ service MobileBaseMobilityService {
     rpc SendDirection(TargetDirectionCommand) returns (MobilityServiceAck);
     rpc SendSetSpeed(SetSpeedVector) returns (MobilityServiceAck);
     rpc SendGoTo(GoToVector) returns (MobilityServiceAck);
+    rpc GetLastDirection(reachy.part.PartId) returns (DirectionVector);
     rpc DistanceToGoal(reachy.part.PartId) returns (DistanceToGoalVector);
 }

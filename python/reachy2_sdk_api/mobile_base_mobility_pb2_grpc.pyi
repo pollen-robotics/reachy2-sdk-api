@@ -33,6 +33,10 @@ class MobileBaseMobilityServiceStub:
         mobile_base_mobility_pb2.GoToVector,
         mobile_base_mobility_pb2.MobilityServiceAck,
     ]
+    GetLastDirection: grpc.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        mobile_base_mobility_pb2.DirectionVector,
+    ]
     DistanceToGoal: grpc.UnaryUnaryMultiCallable[
         part_pb2.PartId,
         mobile_base_mobility_pb2.DistanceToGoalVector,
@@ -51,6 +55,10 @@ class MobileBaseMobilityServiceAsyncStub:
     SendGoTo: grpc.aio.UnaryUnaryMultiCallable[
         mobile_base_mobility_pb2.GoToVector,
         mobile_base_mobility_pb2.MobilityServiceAck,
+    ]
+    GetLastDirection: grpc.aio.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        mobile_base_mobility_pb2.DirectionVector,
     ]
     DistanceToGoal: grpc.aio.UnaryUnaryMultiCallable[
         part_pb2.PartId,
@@ -77,6 +85,12 @@ class MobileBaseMobilityServiceServicer(metaclass=abc.ABCMeta):
         request: mobile_base_mobility_pb2.GoToVector,
         context: _ServicerContext,
     ) -> typing.Union[mobile_base_mobility_pb2.MobilityServiceAck, collections.abc.Awaitable[mobile_base_mobility_pb2.MobilityServiceAck]]: ...
+    @abc.abstractmethod
+    def GetLastDirection(
+        self,
+        request: part_pb2.PartId,
+        context: _ServicerContext,
+    ) -> typing.Union[mobile_base_mobility_pb2.DirectionVector, collections.abc.Awaitable[mobile_base_mobility_pb2.DirectionVector]]: ...
     @abc.abstractmethod
     def DistanceToGoal(
         self,
