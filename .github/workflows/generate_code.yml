@@ -1,7 +1,12 @@
 
 name: Generate Code
 
-on: [push]
+on:
+  push:
+    branches:
+      - '*'
+    tags:
+      - '!v*'
   
 jobs:
   generate-python:
