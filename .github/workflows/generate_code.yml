@@ -52,8 +52,6 @@ jobs:
 
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v2
-      with:
-        vs-version: '[17.10,17.11)'
 
     - name: Restore NuGet packages
       run: nuget restore 'csharp/reachy_sdk/reachy_sdk.sln'
