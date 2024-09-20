@@ -19,20 +19,9 @@ message VideoAck {
     error.Error error = 2;
 }
 
-// Start of Steve's Gazebo addons
-message CameraInfo {
-    string mxid = 1;
-    string name = 2;
-    bool stereo = 3;
-    bool depth = 4;
-}
-
-message ListOfCameraInfo {
-    repeated CameraInfo camera_info = 1;
-}
-// End of Steve
 
 message CameraFeatures {
+    string mxid = 1;
     string name = 2;
     bool stereo = 3;
     bool depth = 4;
@@ -83,18 +72,6 @@ message ViewRequest {
 service VideoService {
     rpc GetAvailableCameras(google.protobuf.Empty) returns (ListOfCameraFeatures);
     rpc GetFrame (ViewRequest) returns (Frame);
-    // Start of Steve's Gazebo addons
-    rpc GetDepthFrame (ViewRequest) returns (Frame);
-    rpc GetDepthMap (CameraInfo) returns (Frame);
-    rpc GetDisparity (CameraInfo) returns (Frame);
-    rpc GetIntrinsicMatrix (ViewRequest) returns (IntrinsicMatrix);
-    rpc GetDepthIntrinsicMatrix (CameraInfo) returns (IntrinsicMatrix);
-    rpc Capture(CameraInfo) returns (VideoAck);
-    rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
-    // End of Steve
-
-    // Fabien's
     rpc GetParameters (ViewRequest) returns (CameraParameters);
     rpc GetDepth (ViewRequest) returns (FrameRaw);
-    // End of Fabien's
 }
