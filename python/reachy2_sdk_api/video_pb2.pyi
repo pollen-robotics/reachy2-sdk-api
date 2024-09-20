@@ -60,9 +60,7 @@ class VideoAck(google.protobuf.message.Message):
 global___VideoAck = VideoAck
 
 @typing_extensions.final
-class CameraInfo(google.protobuf.message.Message):
-    """Start of Steve's Gazebo addons"""
-
+class CameraFeatures(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
     MXID_FIELD_NUMBER: builtins.int
@@ -82,43 +80,6 @@ class CameraInfo(google.protobuf.message.Message):
         depth: builtins.bool = ...,
     ) -> None: ...
     def ClearField(self, field_name: typing_extensions.Literal["depth", b"depth", "mxid", b"mxid", "name", b"name", "stereo", b"stereo"]) -> None: ...
-
-global___CameraInfo = CameraInfo
-
-@typing_extensions.final
-class ListOfCameraInfo(google.protobuf.message.Message):
-    DESCRIPTOR: google.protobuf.descriptor.Descriptor
-
-    CAMERA_INFO_FIELD_NUMBER: builtins.int
-    @property
-    def camera_info(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___CameraInfo]: ...
-    def __init__(
-        self,
-        *,
-        camera_info: collections.abc.Iterable[global___CameraInfo] | None = ...,
-    ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["camera_info", b"camera_info"]) -> None: ...
-
-global___ListOfCameraInfo = ListOfCameraInfo
-
-@typing_extensions.final
-class CameraFeatures(google.protobuf.message.Message):
-    DESCRIPTOR: google.protobuf.descriptor.Descriptor
-
-    NAME_FIELD_NUMBER: builtins.int
-    STEREO_FIELD_NUMBER: builtins.int
-    DEPTH_FIELD_NUMBER: builtins.int
-    name: builtins.str
-    stereo: builtins.bool
-    depth: builtins.bool
-    def __init__(
-        self,
-        *,
-        name: builtins.str = ...,
-        stereo: builtins.bool = ...,
-        depth: builtins.bool = ...,
-    ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["depth", b"depth", "name", b"name", "stereo", b"stereo"]) -> None: ...
 
 global___CameraFeatures = CameraFeatures
 

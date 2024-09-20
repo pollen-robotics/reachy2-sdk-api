@@ -28,46 +28,14 @@ class VideoServiceStub:
         video_pb2.ViewRequest,
         video_pb2.Frame,
     ]
-    GetDepthFrame: grpc.UnaryUnaryMultiCallable[
-        video_pb2.ViewRequest,
-        video_pb2.Frame,
-    ]
-    """Start of Steve's Gazebo addons"""
-    GetDepthMap: grpc.UnaryUnaryMultiCallable[
-        video_pb2.CameraInfo,
-        video_pb2.Frame,
-    ]
-    GetDisparity: grpc.UnaryUnaryMultiCallable[
-        video_pb2.CameraInfo,
-        video_pb2.Frame,
-    ]
-    GetIntrinsicMatrix: grpc.UnaryUnaryMultiCallable[
-        video_pb2.ViewRequest,
-        video_pb2.IntrinsicMatrix,
-    ]
-    GetDepthIntrinsicMatrix: grpc.UnaryUnaryMultiCallable[
-        video_pb2.CameraInfo,
-        video_pb2.IntrinsicMatrix,
-    ]
-    Capture: grpc.UnaryUnaryMultiCallable[
-        video_pb2.CameraInfo,
-        video_pb2.VideoAck,
-    ]
-    GoodBye: grpc.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
-        google.protobuf.empty_pb2.Empty,
-    ]
-    """End of Steve"""
     GetParameters: grpc.UnaryUnaryMultiCallable[
         video_pb2.ViewRequest,
         video_pb2.CameraParameters,
     ]
-    """Fabien's"""
     GetDepth: grpc.UnaryUnaryMultiCallable[
         video_pb2.ViewRequest,
         video_pb2.FrameRaw,
     ]
-    """End of Fabien's"""
 
 class VideoServiceAsyncStub:
     GetAvailableCameras: grpc.aio.UnaryUnaryMultiCallable[
@@ -78,46 +46,14 @@ class VideoServiceAsyncStub:
         video_pb2.ViewRequest,
         video_pb2.Frame,
     ]
-    GetDepthFrame: grpc.aio.UnaryUnaryMultiCallable[
-        video_pb2.ViewRequest,
-        video_pb2.Frame,
-    ]
-    """Start of Steve's Gazebo addons"""
-    GetDepthMap: grpc.aio.UnaryUnaryMultiCallable[
-        video_pb2.CameraInfo,
-        video_pb2.Frame,
-    ]
-    GetDisparity: grpc.aio.UnaryUnaryMultiCallable[
-        video_pb2.CameraInfo,
-        video_pb2.Frame,
-    ]
-    GetIntrinsicMatrix: grpc.aio.UnaryUnaryMultiCallable[
-        video_pb2.ViewRequest,
-        video_pb2.IntrinsicMatrix,
-    ]
-    GetDepthIntrinsicMatrix: grpc.aio.UnaryUnaryMultiCallable[
-        video_pb2.CameraInfo,
-        video_pb2.IntrinsicMatrix,
-    ]
-    Capture: grpc.aio.UnaryUnaryMultiCallable[
-        video_pb2.CameraInfo,
-        video_pb2.VideoAck,
-    ]
-    GoodBye: grpc.aio.UnaryUnaryMultiCallable[
-        google.protobuf.empty_pb2.Empty,
-        google.protobuf.empty_pb2.Empty,
-    ]
-    """End of Steve"""
     GetParameters: grpc.aio.UnaryUnaryMultiCallable[
         video_pb2.ViewRequest,
         video_pb2.CameraParameters,
     ]
-    """Fabien's"""
     GetDepth: grpc.aio.UnaryUnaryMultiCallable[
         video_pb2.ViewRequest,
         video_pb2.FrameRaw,
     ]
-    """End of Fabien's"""
 
 class VideoServiceServicer(metaclass=abc.ABCMeta):
     @abc.abstractmethod
@@ -133,62 +69,16 @@ class VideoServiceServicer(metaclass=abc.ABCMeta):
         context: _ServicerContext,
     ) -> typing.Union[video_pb2.Frame, collections.abc.Awaitable[video_pb2.Frame]]: ...
     @abc.abstractmethod
-    def GetDepthFrame(
-        self,
-        request: video_pb2.ViewRequest,
-        context: _ServicerContext,
-    ) -> typing.Union[video_pb2.Frame, collections.abc.Awaitable[video_pb2.Frame]]:
-        """Start of Steve's Gazebo addons"""
-    @abc.abstractmethod
-    def GetDepthMap(
-        self,
-        request: video_pb2.CameraInfo,
-        context: _ServicerContext,
-    ) -> typing.Union[video_pb2.Frame, collections.abc.Awaitable[video_pb2.Frame]]: ...
-    @abc.abstractmethod
-    def GetDisparity(
-        self,
-        request: video_pb2.CameraInfo,
-        context: _ServicerContext,
-    ) -> typing.Union[video_pb2.Frame, collections.abc.Awaitable[video_pb2.Frame]]: ...
-    @abc.abstractmethod
-    def GetIntrinsicMatrix(
-        self,
-        request: video_pb2.ViewRequest,
-        context: _ServicerContext,
-    ) -> typing.Union[video_pb2.IntrinsicMatrix, collections.abc.Awaitable[video_pb2.IntrinsicMatrix]]: ...
-    @abc.abstractmethod
-    def GetDepthIntrinsicMatrix(
-        self,
-        request: video_pb2.CameraInfo,
-        context: _ServicerContext,
-    ) -> typing.Union[video_pb2.IntrinsicMatrix, collections.abc.Awaitable[video_pb2.IntrinsicMatrix]]: ...
-    @abc.abstractmethod
-    def Capture(
-        self,
-        request: video_pb2.CameraInfo,
-        context: _ServicerContext,
-    ) -> typing.Union[video_pb2.VideoAck, collections.abc.Awaitable[video_pb2.VideoAck]]: ...
-    @abc.abstractmethod
-    def GoodBye(
-        self,
-        request: google.protobuf.empty_pb2.Empty,
-        context: _ServicerContext,
-    ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]:
-        """End of Steve"""
-    @abc.abstractmethod
     def GetParameters(
         self,
         request: video_pb2.ViewRequest,
         context: _ServicerContext,
-    ) -> typing.Union[video_pb2.CameraParameters, collections.abc.Awaitable[video_pb2.CameraParameters]]:
-        """Fabien's"""
+    ) -> typing.Union[video_pb2.CameraParameters, collections.abc.Awaitable[video_pb2.CameraParameters]]: ...
     @abc.abstractmethod
     def GetDepth(
         self,
         request: video_pb2.ViewRequest,
         context: _ServicerContext,
-    ) -> typing.Union[video_pb2.FrameRaw, collections.abc.Awaitable[video_pb2.FrameRaw]]:
-        """End of Fabien's"""
+    ) -> typing.Union[video_pb2.FrameRaw, collections.abc.Awaitable[video_pb2.FrameRaw]]: ...
 
 def add_VideoServiceServicer_to_server(servicer: VideoServiceServicer, server: typing.Union[grpc.Server, grpc.aio.Server]) -> None: ...
