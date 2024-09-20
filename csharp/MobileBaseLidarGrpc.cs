@@ -7,10 +7,10 @@
 
 using grpc = global::Grpc.Core;
 
-namespace Mobile.Base.Lidar {
+namespace Reachy.Part.Mobile.Base.Lidar {
   public static partial class MobileBaseLidarService
   {
-    static readonly string __ServiceName = "mobile.base.lidar.MobileBaseLidarService";
+    static readonly string __ServiceName = "reachy.part.mobile.base.lidar.MobileBaseLidarService";
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
@@ -46,52 +46,52 @@ namespace Mobile.Base.Lidar {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Mobile.Base.Lidar.LidarSafety> __Marshaller_mobile_base_lidar_LidarSafety = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mobile.Base.Lidar.LidarSafety.Parser));
+    static readonly grpc::Marshaller<global::Reachy.Part.Mobile.Base.Lidar.LidarSafety> __Marshaller_reachy_part_mobile_base_lidar_LidarSafety = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Mobile.Base.Lidar.LidarSafety.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Mobile.Base.Mobility.MobilityServiceAck> __Marshaller_mobile_base_mobility_MobilityServiceAck = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mobile.Base.Mobility.MobilityServiceAck.Parser));
+    static readonly grpc::Marshaller<global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> __Marshaller_reachy_part_mobile_base_mobility_MobilityServiceAck = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
+    static readonly grpc::Marshaller<global::Reachy.Part.PartId> __Marshaller_reachy_part_PartId = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.PartId.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Mobile.Base.Lidar.LidarMap> __Marshaller_mobile_base_lidar_LidarMap = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mobile.Base.Lidar.LidarMap.Parser));
+    static readonly grpc::Marshaller<global::Reachy.Part.Mobile.Base.Lidar.LidarMap> __Marshaller_reachy_part_mobile_base_lidar_LidarMap = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Mobile.Base.Lidar.LidarMap.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Mobile.Base.Lidar.LidarObstacleDetectionStatus> __Marshaller_mobile_base_lidar_LidarObstacleDetectionStatus = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mobile.Base.Lidar.LidarObstacleDetectionStatus.Parser));
+    static readonly grpc::Marshaller<global::Reachy.Part.Mobile.Base.Lidar.LidarObstacleDetectionStatus> __Marshaller_reachy_part_mobile_base_lidar_LidarObstacleDetectionStatus = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Mobile.Base.Lidar.LidarObstacleDetectionStatus.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Mobile.Base.Lidar.LidarSafety, global::Mobile.Base.Mobility.MobilityServiceAck> __Method_SetZuuuSafety = new grpc::Method<global::Mobile.Base.Lidar.LidarSafety, global::Mobile.Base.Mobility.MobilityServiceAck>(
+    static readonly grpc::Method<global::Reachy.Part.Mobile.Base.Lidar.LidarSafety, global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> __Method_SetZuuuSafety = new grpc::Method<global::Reachy.Part.Mobile.Base.Lidar.LidarSafety, global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck>(
         grpc::MethodType.Unary,
         __ServiceName,
         "SetZuuuSafety",
-        __Marshaller_mobile_base_lidar_LidarSafety,
-        __Marshaller_mobile_base_mobility_MobilityServiceAck);
+        __Marshaller_reachy_part_mobile_base_lidar_LidarSafety,
+        __Marshaller_reachy_part_mobile_base_mobility_MobilityServiceAck);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Lidar.LidarSafety> __Method_GetZuuuSafety = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Lidar.LidarSafety>(
+    static readonly grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Lidar.LidarSafety> __Method_GetZuuuSafety = new grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Lidar.LidarSafety>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetZuuuSafety",
-        __Marshaller_google_protobuf_Empty,
-        __Marshaller_mobile_base_lidar_LidarSafety);
+        __Marshaller_reachy_part_PartId,
+        __Marshaller_reachy_part_mobile_base_lidar_LidarSafety);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Lidar.LidarMap> __Method_GetLidarMap = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Lidar.LidarMap>(
+    static readonly grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Lidar.LidarMap> __Method_GetLidarMap = new grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Lidar.LidarMap>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetLidarMap",
-        __Marshaller_google_protobuf_Empty,
-        __Marshaller_mobile_base_lidar_LidarMap);
+        __Marshaller_reachy_part_PartId,
+        __Marshaller_reachy_part_mobile_base_lidar_LidarMap);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Lidar.LidarObstacleDetectionStatus> __Method_GetLidarObstacleDetectionStatus = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Lidar.LidarObstacleDetectionStatus>(
+    static readonly grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Lidar.LidarObstacleDetectionStatus> __Method_GetLidarObstacleDetectionStatus = new grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Lidar.LidarObstacleDetectionStatus>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetLidarObstacleDetectionStatus",
-        __Marshaller_google_protobuf_Empty,
-        __Marshaller_mobile_base_lidar_LidarObstacleDetectionStatus);
+        __Marshaller_reachy_part_PartId,
+        __Marshaller_reachy_part_mobile_base_lidar_LidarObstacleDetectionStatus);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Mobile.Base.Lidar.MobileBaseLidarReflection.Descriptor.Services[0]; }
+      get { return global::Reachy.Part.Mobile.Base.Lidar.MobileBaseLidarReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of MobileBaseLidarService</summary>
@@ -99,25 +99,25 @@ namespace Mobile.Base.Lidar {
     public abstract partial class MobileBaseLidarServiceBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Mobile.Base.Mobility.MobilityServiceAck> SetZuuuSafety(global::Mobile.Base.Lidar.LidarSafety request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> SetZuuuSafety(global::Reachy.Part.Mobile.Base.Lidar.LidarSafety request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Mobile.Base.Lidar.LidarSafety> GetZuuuSafety(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Reachy.Part.Mobile.Base.Lidar.LidarSafety> GetZuuuSafety(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Mobile.Base.Lidar.LidarMap> GetLidarMap(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Reachy.Part.Mobile.Base.Lidar.LidarMap> GetLidarMap(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Mobile.Base.Lidar.LidarObstacleDetectionStatus> GetLidarObstacleDetectionStatus(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Reachy.Part.Mobile.Base.Lidar.LidarObstacleDetectionStatus> GetLidarObstacleDetectionStatus(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -152,82 +152,82 @@ namespace Mobile.Base.Lidar {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Mobility.MobilityServiceAck SetZuuuSafety(global::Mobile.Base.Lidar.LidarSafety request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck SetZuuuSafety(global::Reachy.Part.Mobile.Base.Lidar.LidarSafety request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return SetZuuuSafety(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Mobility.MobilityServiceAck SetZuuuSafety(global::Mobile.Base.Lidar.LidarSafety request, grpc::CallOptions options)
+      public virtual global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck SetZuuuSafety(global::Reachy.Part.Mobile.Base.Lidar.LidarSafety request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SetZuuuSafety, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Mobility.MobilityServiceAck> SetZuuuSafetyAsync(global::Mobile.Base.Lidar.LidarSafety request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> SetZuuuSafetyAsync(global::Reachy.Part.Mobile.Base.Lidar.LidarSafety request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return SetZuuuSafetyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Mobility.MobilityServiceAck> SetZuuuSafetyAsync(global::Mobile.Base.Lidar.LidarSafety request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> SetZuuuSafetyAsync(global::Reachy.Part.Mobile.Base.Lidar.LidarSafety request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetZuuuSafety, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Lidar.LidarSafety GetZuuuSafety(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Reachy.Part.Mobile.Base.Lidar.LidarSafety GetZuuuSafety(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetZuuuSafety(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Lidar.LidarSafety GetZuuuSafety(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      public virtual global::Reachy.Part.Mobile.Base.Lidar.LidarSafety GetZuuuSafety(global::Reachy.Part.PartId request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetZuuuSafety, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Lidar.LidarSafety> GetZuuuSafetyAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Lidar.LidarSafety> GetZuuuSafetyAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetZuuuSafetyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Lidar.LidarSafety> GetZuuuSafetyAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Lidar.LidarSafety> GetZuuuSafetyAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetZuuuSafety, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Lidar.LidarMap GetLidarMap(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Reachy.Part.Mobile.Base.Lidar.LidarMap GetLidarMap(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetLidarMap(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Lidar.LidarMap GetLidarMap(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      public virtual global::Reachy.Part.Mobile.Base.Lidar.LidarMap GetLidarMap(global::Reachy.Part.PartId request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetLidarMap, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Lidar.LidarMap> GetLidarMapAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Lidar.LidarMap> GetLidarMapAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetLidarMapAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Lidar.LidarMap> GetLidarMapAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Lidar.LidarMap> GetLidarMapAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetLidarMap, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Lidar.LidarObstacleDetectionStatus GetLidarObstacleDetectionStatus(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Reachy.Part.Mobile.Base.Lidar.LidarObstacleDetectionStatus GetLidarObstacleDetectionStatus(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetLidarObstacleDetectionStatus(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Lidar.LidarObstacleDetectionStatus GetLidarObstacleDetectionStatus(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      public virtual global::Reachy.Part.Mobile.Base.Lidar.LidarObstacleDetectionStatus GetLidarObstacleDetectionStatus(global::Reachy.Part.PartId request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetLidarObstacleDetectionStatus, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Lidar.LidarObstacleDetectionStatus> GetLidarObstacleDetectionStatusAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Lidar.LidarObstacleDetectionStatus> GetLidarObstacleDetectionStatusAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetLidarObstacleDetectionStatusAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Lidar.LidarObstacleDetectionStatus> GetLidarObstacleDetectionStatusAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Lidar.LidarObstacleDetectionStatus> GetLidarObstacleDetectionStatusAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetLidarObstacleDetectionStatus, null, options, request);
       }
@@ -258,10 +258,10 @@ namespace Mobile.Base.Lidar {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, MobileBaseLidarServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_SetZuuuSafety, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mobile.Base.Lidar.LidarSafety, global::Mobile.Base.Mobility.MobilityServiceAck>(serviceImpl.SetZuuuSafety));
-      serviceBinder.AddMethod(__Method_GetZuuuSafety, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Lidar.LidarSafety>(serviceImpl.GetZuuuSafety));
-      serviceBinder.AddMethod(__Method_GetLidarMap, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Lidar.LidarMap>(serviceImpl.GetLidarMap));
-      serviceBinder.AddMethod(__Method_GetLidarObstacleDetectionStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Lidar.LidarObstacleDetectionStatus>(serviceImpl.GetLidarObstacleDetectionStatus));
+      serviceBinder.AddMethod(__Method_SetZuuuSafety, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Mobile.Base.Lidar.LidarSafety, global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck>(serviceImpl.SetZuuuSafety));
+      serviceBinder.AddMethod(__Method_GetZuuuSafety, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Lidar.LidarSafety>(serviceImpl.GetZuuuSafety));
+      serviceBinder.AddMethod(__Method_GetLidarMap, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Lidar.LidarMap>(serviceImpl.GetLidarMap));
+      serviceBinder.AddMethod(__Method_GetLidarObstacleDetectionStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Lidar.LidarObstacleDetectionStatus>(serviceImpl.GetLidarObstacleDetectionStatus));
     }
 
   }

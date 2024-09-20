@@ -21,7 +21,7 @@ import mobile_base_mobility_pb2 as mobile__base__mobility__pb2
 import mobile_base_utility_pb2 as mobile__base__utility__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x13webrtc_bridge.proto\x12\x06\x62ridge\x1a\tarm.proto\x1a\nhand.proto\x1a\nhead.proto\x1a\npart.proto\x1a\x0creachy.proto\x1a\x0b\x65rror.proto\x1a\x1amobile_base_mobility.proto\x1a\x19mobile_base_utility.proto\"\x0b\n\tGetReachy\"H\n\x07\x43onnect\x12#\n\treachy_id\x18\x01 \x01(\x0b\x32\x10.reachy.ReachyId\x12\x18\n\x10update_frequency\x18\x02 \x01(\x02\"1\n\nDisconnect\x12#\n\treachy_id\x18\x01 \x01(\x0b\x32\x10.reachy.ReachyId\"\x92\x01\n\x0eServiceRequest\x12\'\n\nget_reachy\x18\x01 \x01(\x0b\x32\x11.bridge.GetReachyH\x00\x12\"\n\x07\x63onnect\x18\x02 \x01(\x0b\x32\x0f.bridge.ConnectH\x00\x12(\n\ndisconnect\x18\x03 \x01(\x0b\x32\x12.bridge.DisconnectH\x00\x42\t\n\x07request\"u\n\x10\x43onnectionStatus\x12\x11\n\tconnected\x18\x01 \x01(\x08\x12\x15\n\rstate_channel\x18\x02 \x01(\t\x12\x17\n\x0f\x63ommand_channel\x18\x03 \x01(\t\x12\x1e\n\x06reachy\x18\x04 \x01(\x0b\x32\x0e.reachy.Reachy\"s\n\x0fServiceResponse\x12\x35\n\x11\x63onnection_status\x18\x01 \x01(\x0b\x32\x18.bridge.ConnectionStatusH\x00\x12\x1d\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x0c.error.ErrorH\x00\x42\n\n\x08response\"\xd6\x01\n\nAnyCommand\x12)\n\x0b\x61rm_command\x18\x01 \x01(\x0b\x32\x12.bridge.ArmCommandH\x00\x12+\n\x0chand_command\x18\x02 \x01(\x0b\x32\x13.bridge.HandCommandH\x00\x12+\n\x0cneck_command\x18\x03 \x01(\x0b\x32\x13.bridge.NeckCommandH\x00\x12\x38\n\x13mobile_base_command\x18\x04 \x01(\x0b\x32\x19.bridge.MobileBaseCommandH\x00\x42\t\n\x07\x63ommand\"\x8c\x02\n\nArmCommand\x12=\n\x12\x61rm_cartesian_goal\x18\x01 \x01(\x0b\x32!.reachy.part.arm.ArmCartesianGoal\x12$\n\x07turn_on\x18\x02 \x01(\x0b\x32\x13.reachy.part.PartId\x12%\n\x08turn_off\x18\x03 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x37\n\x0bspeed_limit\x18\x04 \x01(\x0b\x32\".reachy.part.arm.SpeedLimitRequest\x12\x39\n\x0ctorque_limit\x18\x05 \x01(\x0b\x32#.reachy.part.arm.TorqueLimitRequest\"\x94\x01\n\x0bHandCommand\x12\x38\n\thand_goal\x18\x01 \x01(\x0b\x32%.reachy.part.hand.HandPositionRequest\x12$\n\x07turn_on\x18\x02 \x01(\x0b\x32\x13.reachy.part.PartId\x12%\n\x08turn_off\x18\x03 \x01(\x0b\x32\x13.reachy.part.PartId\"\x84\x02\n\x0bNeckCommand\x12\x32\n\tneck_goal\x18\x01 \x01(\x0b\x32\x1f.reachy.part.head.NeckJointGoal\x12$\n\x07turn_on\x18\x02 \x01(\x0b\x32\x13.reachy.part.PartId\x12%\n\x08turn_off\x18\x03 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x38\n\x0bspeed_limit\x18\x04 \x01(\x0b\x32#.reachy.part.head.SpeedLimitRequest\x12:\n\x0ctorque_limit\x18\x05 \x01(\x0b\x32$.reachy.part.head.TorqueLimitRequest\"\x9b\x01\n\x11MobileBaseCommand\x12\x46\n\x10target_direction\x18\x01 \x01(\x0b\x32,.mobile.base.mobility.TargetDirectionCommand\x12>\n\x10mobile_base_mode\x18\x02 \x01(\x0b\x32$.mobile.base.utility.ZuuuModeCommand\"3\n\x0b\x41nyCommands\x12$\n\x08\x63ommands\x18\x01 \x03(\x0b\x32\x12.bridge.AnyCommandb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x13webrtc_bridge.proto\x12\x06\x62ridge\x1a\tarm.proto\x1a\nhand.proto\x1a\nhead.proto\x1a\npart.proto\x1a\x0creachy.proto\x1a\x0b\x65rror.proto\x1a\x1amobile_base_mobility.proto\x1a\x19mobile_base_utility.proto\"\x0b\n\tGetReachy\"a\n\x07\x43onnect\x12#\n\treachy_id\x18\x01 \x01(\x0b\x32\x10.reachy.ReachyId\x12\x18\n\x10update_frequency\x18\x02 \x01(\x02\x12\x17\n\x0f\x61udit_frequency\x18\x03 \x01(\x02\"1\n\nDisconnect\x12#\n\treachy_id\x18\x01 \x01(\x0b\x32\x10.reachy.ReachyId\"\x92\x01\n\x0eServiceRequest\x12\'\n\nget_reachy\x18\x01 \x01(\x0b\x32\x11.bridge.GetReachyH\x00\x12\"\n\x07\x63onnect\x18\x02 \x01(\x0b\x32\x0f.bridge.ConnectH\x00\x12(\n\ndisconnect\x18\x03 \x01(\x0b\x32\x12.bridge.DisconnectH\x00\x42\t\n\x07request\"u\n\x10\x43onnectionStatus\x12\x11\n\tconnected\x18\x01 \x01(\x08\x12\x15\n\rstate_channel\x18\x02 \x01(\t\x12\x17\n\x0f\x63ommand_channel\x18\x03 \x01(\t\x12\x1e\n\x06reachy\x18\x04 \x01(\x0b\x32\x0e.reachy.Reachy\"s\n\x0fServiceResponse\x12\x35\n\x11\x63onnection_status\x18\x01 \x01(\x0b\x32\x18.bridge.ConnectionStatusH\x00\x12\x1d\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x0c.error.ErrorH\x00\x42\n\n\x08response\"\xd6\x01\n\nAnyCommand\x12)\n\x0b\x61rm_command\x18\x01 \x01(\x0b\x32\x12.bridge.ArmCommandH\x00\x12+\n\x0chand_command\x18\x02 \x01(\x0b\x32\x13.bridge.HandCommandH\x00\x12+\n\x0cneck_command\x18\x03 \x01(\x0b\x32\x13.bridge.NeckCommandH\x00\x12\x38\n\x13mobile_base_command\x18\x04 \x01(\x0b\x32\x19.bridge.MobileBaseCommandH\x00\x42\t\n\x07\x63ommand\"\x8c\x02\n\nArmCommand\x12=\n\x12\x61rm_cartesian_goal\x18\x01 \x01(\x0b\x32!.reachy.part.arm.ArmCartesianGoal\x12$\n\x07turn_on\x18\x02 \x01(\x0b\x32\x13.reachy.part.PartId\x12%\n\x08turn_off\x18\x03 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x37\n\x0bspeed_limit\x18\x04 \x01(\x0b\x32\".reachy.part.arm.SpeedLimitRequest\x12\x39\n\x0ctorque_limit\x18\x05 \x01(\x0b\x32#.reachy.part.arm.TorqueLimitRequest\"\x94\x01\n\x0bHandCommand\x12\x38\n\thand_goal\x18\x01 \x01(\x0b\x32%.reachy.part.hand.HandPositionRequest\x12$\n\x07turn_on\x18\x02 \x01(\x0b\x32\x13.reachy.part.PartId\x12%\n\x08turn_off\x18\x03 \x01(\x0b\x32\x13.reachy.part.PartId\"\x84\x02\n\x0bNeckCommand\x12\x32\n\tneck_goal\x18\x01 \x01(\x0b\x32\x1f.reachy.part.head.NeckJointGoal\x12$\n\x07turn_on\x18\x02 \x01(\x0b\x32\x13.reachy.part.PartId\x12%\n\x08turn_off\x18\x03 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x38\n\x0bspeed_limit\x18\x04 \x01(\x0b\x32#.reachy.part.head.SpeedLimitRequest\x12:\n\x0ctorque_limit\x18\x05 \x01(\x0b\x32$.reachy.part.head.TorqueLimitRequest\"\xb3\x01\n\x11MobileBaseCommand\x12R\n\x10target_direction\x18\x01 \x01(\x0b\x32\x38.reachy.part.mobile.base.mobility.TargetDirectionCommand\x12J\n\x10mobile_base_mode\x18\x02 \x01(\x0b\x32\x30.reachy.part.mobile.base.utility.ZuuuModeCommand\"3\n\x0b\x41nyCommands\x12$\n\x08\x63ommands\x18\x01 \x03(\x0b\x32\x12.bridge.AnyCommandb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -31,25 +31,25 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _globals['_GETREACHY']._serialized_start=160
   _globals['_GETREACHY']._serialized_end=171
   _globals['_CONNECT']._serialized_start=173
-  _globals['_CONNECT']._serialized_end=245
-  _globals['_DISCONNECT']._serialized_start=247
-  _globals['_DISCONNECT']._serialized_end=296
-  _globals['_SERVICEREQUEST']._serialized_start=299
-  _globals['_SERVICEREQUEST']._serialized_end=445
-  _globals['_CONNECTIONSTATUS']._serialized_start=447
-  _globals['_CONNECTIONSTATUS']._serialized_end=564
-  _globals['_SERVICERESPONSE']._serialized_start=566
-  _globals['_SERVICERESPONSE']._serialized_end=681
-  _globals['_ANYCOMMAND']._serialized_start=684
-  _globals['_ANYCOMMAND']._serialized_end=898
-  _globals['_ARMCOMMAND']._serialized_start=901
-  _globals['_ARMCOMMAND']._serialized_end=1169
-  _globals['_HANDCOMMAND']._serialized_start=1172
-  _globals['_HANDCOMMAND']._serialized_end=1320
-  _globals['_NECKCOMMAND']._serialized_start=1323
-  _globals['_NECKCOMMAND']._serialized_end=1583
-  _globals['_MOBILEBASECOMMAND']._serialized_start=1586
-  _globals['_MOBILEBASECOMMAND']._serialized_end=1741
-  _globals['_ANYCOMMANDS']._serialized_start=1743
-  _globals['_ANYCOMMANDS']._serialized_end=1794
+  _globals['_CONNECT']._serialized_end=270
+  _globals['_DISCONNECT']._serialized_start=272
+  _globals['_DISCONNECT']._serialized_end=321
+  _globals['_SERVICEREQUEST']._serialized_start=324
+  _globals['_SERVICEREQUEST']._serialized_end=470
+  _globals['_CONNECTIONSTATUS']._serialized_start=472
+  _globals['_CONNECTIONSTATUS']._serialized_end=589
+  _globals['_SERVICERESPONSE']._serialized_start=591
+  _globals['_SERVICERESPONSE']._serialized_end=706
+  _globals['_ANYCOMMAND']._serialized_start=709
+  _globals['_ANYCOMMAND']._serialized_end=923
+  _globals['_ARMCOMMAND']._serialized_start=926
+  _globals['_ARMCOMMAND']._serialized_end=1194
+  _globals['_HANDCOMMAND']._serialized_start=1197
+  _globals['_HANDCOMMAND']._serialized_end=1345
+  _globals['_NECKCOMMAND']._serialized_start=1348
+  _globals['_NECKCOMMAND']._serialized_end=1608
+  _globals['_MOBILEBASECOMMAND']._serialized_start=1611
+  _globals['_MOBILEBASECOMMAND']._serialized_end=1790
+  _globals['_ANYCOMMANDS']._serialized_start=1792
+  _globals['_ANYCOMMANDS']._serialized_end=1843
 # @@protoc_insertion_point(module_scope)

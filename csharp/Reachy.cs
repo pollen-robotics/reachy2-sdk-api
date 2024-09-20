@@ -27,43 +27,59 @@ namespace Reachy {
             "CgxyZWFjaHkucHJvdG8SBnJlYWNoeRobZ29vZ2xlL3Byb3RvYnVmL2VtcHR5",
             "LnByb3RvGh9nb29nbGUvcHJvdG9idWYvdGltZXN0YW1wLnByb3RvGglhcm0u",
             "cHJvdG8aCmhlYWQucHJvdG8aCmhhbmQucHJvdG8aGW1vYmlsZV9iYXNlX3V0",
-            "aWxpdHkucHJvdG8aC3NvdW5kLnByb3RvGgt2aWRlby5wcm90byKaAwoGUmVh",
-            "Y2h5EhwKAmlkGAEgASgLMhAucmVhY2h5LlJlYWNoeUlkEiMKBWxfYXJtGAIg",
-            "ASgLMhQucmVhY2h5LnBhcnQuYXJtLkFybRIjCgVyX2FybRgDIAEoCzIULnJl",
-            "YWNoeS5wYXJ0LmFybS5Bcm0SJAoEaGVhZBgEIAEoCzIWLnJlYWNoeS5wYXJ0",
-            "LmhlYWQuSGVhZBImCgZsX2hhbmQYBSABKAsyFi5yZWFjaHkucGFydC5oYW5k",
-            "LkhhbmQSJgoGcl9oYW5kGAYgASgLMhYucmVhY2h5LnBhcnQuaGFuZC5IYW5k",
-            "EjQKC21vYmlsZV9iYXNlGAcgASgLMh8ubW9iaWxlLmJhc2UudXRpbGl0eS5N",
-            "b2JpbGVCYXNlEi8KCm1pY3JvcGhvbmUYCCABKAsyGy5jb21wb25lbnQuc291",
-            "bmQuTWljcm9waG9uZRIpCgdzcGVha2VyGAkgASgLMhguY29tcG9uZW50LnNv",
-            "dW5kLlNwZWFrZXISIAoEaW5mbxgUIAEoCzISLnJlYWNoeS5SZWFjaHlJbmZv",
-            "IiQKCFJlYWNoeUlkEgoKAmlkGAEgASgNEgwKBG5hbWUYAiABKAkiTwoKUmVh",
-            "Y2h5SW5mbxIVCg1zZXJpYWxfbnVtYmVyGAEgASgJEhQKDHZlcnNpb25faGFy",
-            "ZBgCIAEoCRIUCgx2ZXJzaW9uX3NvZnQYAyABKAkikgMKC1JlYWNoeVN0YXRl",
-            "Ei0KCXRpbWVzdGFtcBgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
-            "bXASHAoCaWQYAiABKAsyEC5yZWFjaHkuUmVhY2h5SWQSLgoLbF9hcm1fc3Rh",
-            "dGUYAyABKAsyGS5yZWFjaHkucGFydC5hcm0uQXJtU3RhdGUSLgoLcl9hcm1f",
-            "c3RhdGUYBCABKAsyGS5yZWFjaHkucGFydC5hcm0uQXJtU3RhdGUSLwoKaGVh",
-            "ZF9zdGF0ZRgFIAEoCzIbLnJlYWNoeS5wYXJ0LmhlYWQuSGVhZFN0YXRlEjEK",
-            "DGxfaGFuZF9zdGF0ZRgGIAEoCzIbLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFN0",
-            "YXRlEjEKDHJfaGFuZF9zdGF0ZRgHIAEoCzIbLnJlYWNoeS5wYXJ0LmhhbmQu",
-            "SGFuZFN0YXRlEj8KEW1vYmlsZV9iYXNlX3N0YXRlGAggASgLMiQubW9iaWxl",
-            "LmJhc2UudXRpbGl0eS5Nb2JpbGVCYXNlU3RhdGUiUwoYUmVhY2h5U3RyZWFt",
-            "U3RhdGVSZXF1ZXN0EhwKAmlkGAEgASgLMhAucmVhY2h5LlJlYWNoeUlkEhkK",
-            "EXB1Ymxpc2hfZnJlcXVlbmN5GAIgASgCMssBCg1SZWFjaHlTZXJ2aWNlEjMK",
-            "CUdldFJlYWNoeRIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRoOLnJlYWNoeS5S",
-            "ZWFjaHkSNwoOR2V0UmVhY2h5U3RhdGUSEC5yZWFjaHkuUmVhY2h5SWQaEy5y",
-            "ZWFjaHkuUmVhY2h5U3RhdGUSTAoRU3RyZWFtUmVhY2h5U3RhdGUSIC5yZWFj",
-            "aHkuUmVhY2h5U3RyZWFtU3RhdGVSZXF1ZXN0GhMucmVhY2h5LlJlYWNoeVN0",
-            "YXRlMAFiBnByb3RvMw=="));
+            "aWxpdHkucHJvdG8aC3NvdW5kLnByb3RvIqYDCgZSZWFjaHkSHAoCaWQYASAB",
+            "KAsyEC5yZWFjaHkuUmVhY2h5SWQSIwoFbF9hcm0YAiABKAsyFC5yZWFjaHku",
+            "cGFydC5hcm0uQXJtEiMKBXJfYXJtGAMgASgLMhQucmVhY2h5LnBhcnQuYXJt",
+            "LkFybRIkCgRoZWFkGAQgASgLMhYucmVhY2h5LnBhcnQuaGVhZC5IZWFkEiYK",
+            "BmxfaGFuZBgFIAEoCzIWLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZBImCgZyX2hh",
+            "bmQYBiABKAsyFi5yZWFjaHkucGFydC5oYW5kLkhhbmQSQAoLbW9iaWxlX2Jh",
+            "c2UYByABKAsyKy5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS51dGlsaXR5Lk1v",
+            "YmlsZUJhc2USLwoKbWljcm9waG9uZRgIIAEoCzIbLmNvbXBvbmVudC5zb3Vu",
+            "ZC5NaWNyb3Bob25lEikKB3NwZWFrZXIYCSABKAsyGC5jb21wb25lbnQuc291",
+            "bmQuU3BlYWtlchIgCgRpbmZvGBQgASgLMhIucmVhY2h5LlJlYWNoeUluZm8i",
+            "JAoIUmVhY2h5SWQSCgoCaWQYASABKA0SDAoEbmFtZRgCIAEoCSJPCgpSZWFj",
+            "aHlJbmZvEhUKDXNlcmlhbF9udW1iZXIYASABKAkSFAoMdmVyc2lvbl9oYXJk",
+            "GAIgASgJEhQKDHZlcnNpb25fc29mdBgDIAEoCSKeAwoLUmVhY2h5U3RhdGUS",
+            "LQoJdGltZXN0YW1wGAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
+            "cBIcCgJpZBgCIAEoCzIQLnJlYWNoeS5SZWFjaHlJZBIuCgtsX2FybV9zdGF0",
+            "ZRgDIAEoCzIZLnJlYWNoeS5wYXJ0LmFybS5Bcm1TdGF0ZRIuCgtyX2FybV9z",
+            "dGF0ZRgEIAEoCzIZLnJlYWNoeS5wYXJ0LmFybS5Bcm1TdGF0ZRIvCgpoZWFk",
+            "X3N0YXRlGAUgASgLMhsucmVhY2h5LnBhcnQuaGVhZC5IZWFkU3RhdGUSMQoM",
+            "bF9oYW5kX3N0YXRlGAYgASgLMhsucmVhY2h5LnBhcnQuaGFuZC5IYW5kU3Rh",
+            "dGUSMQoMcl9oYW5kX3N0YXRlGAcgASgLMhsucmVhY2h5LnBhcnQuaGFuZC5I",
+            "YW5kU3RhdGUSSwoRbW9iaWxlX2Jhc2Vfc3RhdGUYCCABKAsyMC5yZWFjaHku",
+            "cGFydC5tb2JpbGUuYmFzZS51dGlsaXR5Lk1vYmlsZUJhc2VTdGF0ZSKrAwoM",
+            "UmVhY2h5U3RhdHVzEi0KCXRpbWVzdGFtcBgBIAEoCzIaLmdvb2dsZS5wcm90",
+            "b2J1Zi5UaW1lc3RhbXASHAoCaWQYAiABKAsyEC5yZWFjaHkuUmVhY2h5SWQS",
+            "MAoMbF9hcm1fc3RhdHVzGAMgASgLMhoucmVhY2h5LnBhcnQuYXJtLkFybVN0",
+            "YXR1cxIwCgxyX2FybV9zdGF0dXMYBCABKAsyGi5yZWFjaHkucGFydC5hcm0u",
+            "QXJtU3RhdHVzEjEKC2hlYWRfc3RhdHVzGAUgASgLMhwucmVhY2h5LnBhcnQu",
+            "aGVhZC5IZWFkU3RhdHVzEjMKDWxfaGFuZF9zdGF0dXMYBiABKAsyHC5yZWFj",
+            "aHkucGFydC5oYW5kLkhhbmRTdGF0dXMSMwoNcl9oYW5kX3N0YXR1cxgHIAEo",
+            "CzIcLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFN0YXR1cxJNChJtb2JpbGVfYmFz",
+            "ZV9zdGF0dXMYCCABKAsyMS5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS51dGls",
+            "aXR5Lk1vYmlsZUJhc2VTdGF0dXMiUwoYUmVhY2h5U3RyZWFtU3RhdGVSZXF1",
+            "ZXN0EhwKAmlkGAEgASgLMhAucmVhY2h5LlJlYWNoeUlkEhkKEXB1Ymxpc2hf",
+            "ZnJlcXVlbmN5GAIgASgCIlMKGFJlYWNoeVN0cmVhbUF1ZGl0UmVxdWVzdBIc",
+            "CgJpZBgBIAEoCzIQLnJlYWNoeS5SZWFjaHlJZBIZChFwdWJsaXNoX2ZyZXF1",
+            "ZW5jeRgCIAEoAjLFAgoNUmVhY2h5U2VydmljZRIzCglHZXRSZWFjaHkSFi5n",
+            "b29nbGUucHJvdG9idWYuRW1wdHkaDi5yZWFjaHkuUmVhY2h5EjcKDkdldFJl",
+            "YWNoeVN0YXRlEhAucmVhY2h5LlJlYWNoeUlkGhMucmVhY2h5LlJlYWNoeVN0",
+            "YXRlEkwKEVN0cmVhbVJlYWNoeVN0YXRlEiAucmVhY2h5LlJlYWNoeVN0cmVh",
+            "bVN0YXRlUmVxdWVzdBoTLnJlYWNoeS5SZWFjaHlTdGF0ZTABEi8KBUF1ZGl0",
+            "EhAucmVhY2h5LlJlYWNoeUlkGhQucmVhY2h5LlJlYWNoeVN0YXR1cxJHCgtT",
+            "dHJlYW1BdWRpdBIgLnJlYWNoeS5SZWFjaHlTdHJlYW1BdWRpdFJlcXVlc3Qa",
+            "FC5yZWFjaHkuUmVhY2h5U3RhdHVzMAFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Mobile.Base.Utility.MobileBaseUtilityReflection.Descriptor, global::Component.Sound.SoundReflection.Descriptor, global::Component.Video.VideoReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Reachy.Part.Mobile.Base.Utility.MobileBaseUtilityReflection.Descriptor, global::Component.Sound.SoundReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Reachy), global::Reachy.Reachy.Parser, new[]{ "Id", "LArm", "RArm", "Head", "LHand", "RHand", "MobileBase", "Microphone", "Speaker", "Info" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyId), global::Reachy.ReachyId.Parser, new[]{ "Id", "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyInfo), global::Reachy.ReachyInfo.Parser, new[]{ "SerialNumber", "VersionHard", "VersionSoft" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyState), global::Reachy.ReachyState.Parser, new[]{ "Timestamp", "Id", "LArmState", "RArmState", "HeadState", "LHandState", "RHandState", "MobileBaseState" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStreamStateRequest), global::Reachy.ReachyStreamStateRequest.Parser, new[]{ "Id", "PublishFrequency" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStatus), global::Reachy.ReachyStatus.Parser, new[]{ "Timestamp", "Id", "LArmStatus", "RArmStatus", "HeadStatus", "LHandStatus", "RHandStatus", "MobileBaseStatus" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStreamStateRequest), global::Reachy.ReachyStreamStateRequest.Parser, new[]{ "Id", "PublishFrequency" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStreamAuditRequest), global::Reachy.ReachyStreamAuditRequest.Parser, new[]{ "Id", "PublishFrequency" }, null, null, null, null)
           }));
     }
     #endregion
@@ -197,10 +213,10 @@ namespace Reachy {
 
     /// <summary>Field number for the "mobile_base" field.</summary>
     public const int MobileBaseFieldNumber = 7;
-    private global::Mobile.Base.Utility.MobileBase mobileBase_;
+    private global::Reachy.Part.Mobile.Base.Utility.MobileBase mobileBase_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Mobile.Base.Utility.MobileBase MobileBase {
+    public global::Reachy.Part.Mobile.Base.Utility.MobileBase MobileBase {
       get { return mobileBase_; }
       set {
         mobileBase_ = value;
@@ -483,7 +499,7 @@ namespace Reachy {
       }
       if (other.mobileBase_ != null) {
         if (mobileBase_ == null) {
-          MobileBase = new global::Mobile.Base.Utility.MobileBase();
+          MobileBase = new global::Reachy.Part.Mobile.Base.Utility.MobileBase();
         }
         MobileBase.MergeFrom(other.MobileBase);
       }
@@ -564,7 +580,7 @@ namespace Reachy {
           }
           case 58: {
             if (mobileBase_ == null) {
-              MobileBase = new global::Mobile.Base.Utility.MobileBase();
+              MobileBase = new global::Reachy.Part.Mobile.Base.Utility.MobileBase();
             }
             input.ReadMessage(MobileBase);
             break;
@@ -649,7 +665,7 @@ namespace Reachy {
           }
           case 58: {
             if (mobileBase_ == null) {
-              MobileBase = new global::Mobile.Base.Utility.MobileBase();
+              MobileBase = new global::Reachy.Part.Mobile.Base.Utility.MobileBase();
             }
             input.ReadMessage(MobileBase);
             break;
@@ -1308,10 +1324,10 @@ namespace Reachy {
 
     /// <summary>Field number for the "mobile_base_state" field.</summary>
     public const int MobileBaseStateFieldNumber = 8;
-    private global::Mobile.Base.Utility.MobileBaseState mobileBaseState_;
+    private global::Reachy.Part.Mobile.Base.Utility.MobileBaseState mobileBaseState_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Mobile.Base.Utility.MobileBaseState MobileBaseState {
+    public global::Reachy.Part.Mobile.Base.Utility.MobileBaseState MobileBaseState {
       get { return mobileBaseState_; }
       set {
         mobileBaseState_ = value;
@@ -1538,7 +1554,7 @@ namespace Reachy {
       }
       if (other.mobileBaseState_ != null) {
         if (mobileBaseState_ == null) {
-          MobileBaseState = new global::Mobile.Base.Utility.MobileBaseState();
+          MobileBaseState = new global::Reachy.Part.Mobile.Base.Utility.MobileBaseState();
         }
         MobileBaseState.MergeFrom(other.MobileBaseState);
       }
@@ -1608,7 +1624,7 @@ namespace Reachy {
           }
           case 66: {
             if (mobileBaseState_ == null) {
-              MobileBaseState = new global::Mobile.Base.Utility.MobileBaseState();
+              MobileBaseState = new global::Reachy.Part.Mobile.Base.Utility.MobileBaseState();
             }
             input.ReadMessage(MobileBaseState);
             break;
@@ -1679,9 +1695,529 @@ namespace Reachy {
           }
           case 66: {
             if (mobileBaseState_ == null) {
-              MobileBaseState = new global::Mobile.Base.Utility.MobileBaseState();
+              MobileBaseState = new global::Reachy.Part.Mobile.Base.Utility.MobileBaseState();
             }
             input.ReadMessage(MobileBaseState);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class ReachyStatus : pb::IMessage<ReachyStatus>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ReachyStatus> _parser = new pb::MessageParser<ReachyStatus>(() => new ReachyStatus());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ReachyStatus> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Reachy.ReachyReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ReachyStatus() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ReachyStatus(ReachyStatus other) : this() {
+      timestamp_ = other.timestamp_ != null ? other.timestamp_.Clone() : null;
+      id_ = other.id_ != null ? other.id_.Clone() : null;
+      lArmStatus_ = other.lArmStatus_ != null ? other.lArmStatus_.Clone() : null;
+      rArmStatus_ = other.rArmStatus_ != null ? other.rArmStatus_.Clone() : null;
+      headStatus_ = other.headStatus_ != null ? other.headStatus_.Clone() : null;
+      lHandStatus_ = other.lHandStatus_ != null ? other.lHandStatus_.Clone() : null;
+      rHandStatus_ = other.rHandStatus_ != null ? other.rHandStatus_.Clone() : null;
+      mobileBaseStatus_ = other.mobileBaseStatus_ != null ? other.mobileBaseStatus_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ReachyStatus Clone() {
+      return new ReachyStatus(this);
+    }
+
+    /// <summary>Field number for the "timestamp" field.</summary>
+    public const int TimestampFieldNumber = 1;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp timestamp_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp Timestamp {
+      get { return timestamp_; }
+      set {
+        timestamp_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 2;
+    private global::Reachy.ReachyId id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.ReachyId Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "l_arm_status" field.</summary>
+    public const int LArmStatusFieldNumber = 3;
+    private global::Reachy.Part.Arm.ArmStatus lArmStatus_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Arm.ArmStatus LArmStatus {
+      get { return lArmStatus_; }
+      set {
+        lArmStatus_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "r_arm_status" field.</summary>
+    public const int RArmStatusFieldNumber = 4;
+    private global::Reachy.Part.Arm.ArmStatus rArmStatus_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Arm.ArmStatus RArmStatus {
+      get { return rArmStatus_; }
+      set {
+        rArmStatus_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "head_status" field.</summary>
+    public const int HeadStatusFieldNumber = 5;
+    private global::Reachy.Part.Head.HeadStatus headStatus_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Head.HeadStatus HeadStatus {
+      get { return headStatus_; }
+      set {
+        headStatus_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "l_hand_status" field.</summary>
+    public const int LHandStatusFieldNumber = 6;
+    private global::Reachy.Part.Hand.HandStatus lHandStatus_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Hand.HandStatus LHandStatus {
+      get { return lHandStatus_; }
+      set {
+        lHandStatus_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "r_hand_status" field.</summary>
+    public const int RHandStatusFieldNumber = 7;
+    private global::Reachy.Part.Hand.HandStatus rHandStatus_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Hand.HandStatus RHandStatus {
+      get { return rHandStatus_; }
+      set {
+        rHandStatus_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "mobile_base_status" field.</summary>
+    public const int MobileBaseStatusFieldNumber = 8;
+    private global::Reachy.Part.Mobile.Base.Utility.MobileBaseStatus mobileBaseStatus_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Mobile.Base.Utility.MobileBaseStatus MobileBaseStatus {
+      get { return mobileBaseStatus_; }
+      set {
+        mobileBaseStatus_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ReachyStatus);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ReachyStatus other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Timestamp, other.Timestamp)) return false;
+      if (!object.Equals(Id, other.Id)) return false;
+      if (!object.Equals(LArmStatus, other.LArmStatus)) return false;
+      if (!object.Equals(RArmStatus, other.RArmStatus)) return false;
+      if (!object.Equals(HeadStatus, other.HeadStatus)) return false;
+      if (!object.Equals(LHandStatus, other.LHandStatus)) return false;
+      if (!object.Equals(RHandStatus, other.RHandStatus)) return false;
+      if (!object.Equals(MobileBaseStatus, other.MobileBaseStatus)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (timestamp_ != null) hash ^= Timestamp.GetHashCode();
+      if (id_ != null) hash ^= Id.GetHashCode();
+      if (lArmStatus_ != null) hash ^= LArmStatus.GetHashCode();
+      if (rArmStatus_ != null) hash ^= RArmStatus.GetHashCode();
+      if (headStatus_ != null) hash ^= HeadStatus.GetHashCode();
+      if (lHandStatus_ != null) hash ^= LHandStatus.GetHashCode();
+      if (rHandStatus_ != null) hash ^= RHandStatus.GetHashCode();
+      if (mobileBaseStatus_ != null) hash ^= MobileBaseStatus.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (timestamp_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Timestamp);
+      }
+      if (id_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Id);
+      }
+      if (lArmStatus_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(LArmStatus);
+      }
+      if (rArmStatus_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(RArmStatus);
+      }
+      if (headStatus_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(HeadStatus);
+      }
+      if (lHandStatus_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(LHandStatus);
+      }
+      if (rHandStatus_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(RHandStatus);
+      }
+      if (mobileBaseStatus_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(MobileBaseStatus);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (timestamp_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Timestamp);
+      }
+      if (id_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Id);
+      }
+      if (lArmStatus_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(LArmStatus);
+      }
+      if (rArmStatus_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(RArmStatus);
+      }
+      if (headStatus_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(HeadStatus);
+      }
+      if (lHandStatus_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(LHandStatus);
+      }
+      if (rHandStatus_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(RHandStatus);
+      }
+      if (mobileBaseStatus_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(MobileBaseStatus);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (timestamp_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Timestamp);
+      }
+      if (id_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
+      }
+      if (lArmStatus_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LArmStatus);
+      }
+      if (rArmStatus_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RArmStatus);
+      }
+      if (headStatus_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(HeadStatus);
+      }
+      if (lHandStatus_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LHandStatus);
+      }
+      if (rHandStatus_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RHandStatus);
+      }
+      if (mobileBaseStatus_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MobileBaseStatus);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ReachyStatus other) {
+      if (other == null) {
+        return;
+      }
+      if (other.timestamp_ != null) {
+        if (timestamp_ == null) {
+          Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        Timestamp.MergeFrom(other.Timestamp);
+      }
+      if (other.id_ != null) {
+        if (id_ == null) {
+          Id = new global::Reachy.ReachyId();
+        }
+        Id.MergeFrom(other.Id);
+      }
+      if (other.lArmStatus_ != null) {
+        if (lArmStatus_ == null) {
+          LArmStatus = new global::Reachy.Part.Arm.ArmStatus();
+        }
+        LArmStatus.MergeFrom(other.LArmStatus);
+      }
+      if (other.rArmStatus_ != null) {
+        if (rArmStatus_ == null) {
+          RArmStatus = new global::Reachy.Part.Arm.ArmStatus();
+        }
+        RArmStatus.MergeFrom(other.RArmStatus);
+      }
+      if (other.headStatus_ != null) {
+        if (headStatus_ == null) {
+          HeadStatus = new global::Reachy.Part.Head.HeadStatus();
+        }
+        HeadStatus.MergeFrom(other.HeadStatus);
+      }
+      if (other.lHandStatus_ != null) {
+        if (lHandStatus_ == null) {
+          LHandStatus = new global::Reachy.Part.Hand.HandStatus();
+        }
+        LHandStatus.MergeFrom(other.LHandStatus);
+      }
+      if (other.rHandStatus_ != null) {
+        if (rHandStatus_ == null) {
+          RHandStatus = new global::Reachy.Part.Hand.HandStatus();
+        }
+        RHandStatus.MergeFrom(other.RHandStatus);
+      }
+      if (other.mobileBaseStatus_ != null) {
+        if (mobileBaseStatus_ == null) {
+          MobileBaseStatus = new global::Reachy.Part.Mobile.Base.Utility.MobileBaseStatus();
+        }
+        MobileBaseStatus.MergeFrom(other.MobileBaseStatus);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (timestamp_ == null) {
+              Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Timestamp);
+            break;
+          }
+          case 18: {
+            if (id_ == null) {
+              Id = new global::Reachy.ReachyId();
+            }
+            input.ReadMessage(Id);
+            break;
+          }
+          case 26: {
+            if (lArmStatus_ == null) {
+              LArmStatus = new global::Reachy.Part.Arm.ArmStatus();
+            }
+            input.ReadMessage(LArmStatus);
+            break;
+          }
+          case 34: {
+            if (rArmStatus_ == null) {
+              RArmStatus = new global::Reachy.Part.Arm.ArmStatus();
+            }
+            input.ReadMessage(RArmStatus);
+            break;
+          }
+          case 42: {
+            if (headStatus_ == null) {
+              HeadStatus = new global::Reachy.Part.Head.HeadStatus();
+            }
+            input.ReadMessage(HeadStatus);
+            break;
+          }
+          case 50: {
+            if (lHandStatus_ == null) {
+              LHandStatus = new global::Reachy.Part.Hand.HandStatus();
+            }
+            input.ReadMessage(LHandStatus);
+            break;
+          }
+          case 58: {
+            if (rHandStatus_ == null) {
+              RHandStatus = new global::Reachy.Part.Hand.HandStatus();
+            }
+            input.ReadMessage(RHandStatus);
+            break;
+          }
+          case 66: {
+            if (mobileBaseStatus_ == null) {
+              MobileBaseStatus = new global::Reachy.Part.Mobile.Base.Utility.MobileBaseStatus();
+            }
+            input.ReadMessage(MobileBaseStatus);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (timestamp_ == null) {
+              Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Timestamp);
+            break;
+          }
+          case 18: {
+            if (id_ == null) {
+              Id = new global::Reachy.ReachyId();
+            }
+            input.ReadMessage(Id);
+            break;
+          }
+          case 26: {
+            if (lArmStatus_ == null) {
+              LArmStatus = new global::Reachy.Part.Arm.ArmStatus();
+            }
+            input.ReadMessage(LArmStatus);
+            break;
+          }
+          case 34: {
+            if (rArmStatus_ == null) {
+              RArmStatus = new global::Reachy.Part.Arm.ArmStatus();
+            }
+            input.ReadMessage(RArmStatus);
+            break;
+          }
+          case 42: {
+            if (headStatus_ == null) {
+              HeadStatus = new global::Reachy.Part.Head.HeadStatus();
+            }
+            input.ReadMessage(HeadStatus);
+            break;
+          }
+          case 50: {
+            if (lHandStatus_ == null) {
+              LHandStatus = new global::Reachy.Part.Hand.HandStatus();
+            }
+            input.ReadMessage(LHandStatus);
+            break;
+          }
+          case 58: {
+            if (rHandStatus_ == null) {
+              RHandStatus = new global::Reachy.Part.Hand.HandStatus();
+            }
+            input.ReadMessage(RHandStatus);
+            break;
+          }
+          case 66: {
+            if (mobileBaseStatus_ == null) {
+              MobileBaseStatus = new global::Reachy.Part.Mobile.Base.Utility.MobileBaseStatus();
+            }
+            input.ReadMessage(MobileBaseStatus);
             break;
           }
         }
@@ -1705,7 +2241,7 @@ namespace Reachy {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.ReachyReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Reachy.ReachyReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1855,6 +2391,241 @@ namespace Reachy {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ReachyStreamStateRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.id_ != null) {
+        if (id_ == null) {
+          Id = new global::Reachy.ReachyId();
+        }
+        Id.MergeFrom(other.Id);
+      }
+      if (other.PublishFrequency != 0F) {
+        PublishFrequency = other.PublishFrequency;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (id_ == null) {
+              Id = new global::Reachy.ReachyId();
+            }
+            input.ReadMessage(Id);
+            break;
+          }
+          case 21: {
+            PublishFrequency = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (id_ == null) {
+              Id = new global::Reachy.ReachyId();
+            }
+            input.ReadMessage(Id);
+            break;
+          }
+          case 21: {
+            PublishFrequency = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class ReachyStreamAuditRequest : pb::IMessage<ReachyStreamAuditRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ReachyStreamAuditRequest> _parser = new pb::MessageParser<ReachyStreamAuditRequest>(() => new ReachyStreamAuditRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ReachyStreamAuditRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Reachy.ReachyReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ReachyStreamAuditRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ReachyStreamAuditRequest(ReachyStreamAuditRequest other) : this() {
+      id_ = other.id_ != null ? other.id_.Clone() : null;
+      publishFrequency_ = other.publishFrequency_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ReachyStreamAuditRequest Clone() {
+      return new ReachyStreamAuditRequest(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private global::Reachy.ReachyId id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.ReachyId Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "publish_frequency" field.</summary>
+    public const int PublishFrequencyFieldNumber = 2;
+    private float publishFrequency_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float PublishFrequency {
+      get { return publishFrequency_; }
+      set {
+        publishFrequency_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ReachyStreamAuditRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ReachyStreamAuditRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Id, other.Id)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(PublishFrequency, other.PublishFrequency)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (id_ != null) hash ^= Id.GetHashCode();
+      if (PublishFrequency != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(PublishFrequency);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (id_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Id);
+      }
+      if (PublishFrequency != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(PublishFrequency);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (id_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Id);
+      }
+      if (PublishFrequency != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(PublishFrequency);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (id_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
+      }
+      if (PublishFrequency != 0F) {
+        size += 1 + 4;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ReachyStreamAuditRequest other) {
       if (other == null) {
         return;
       }

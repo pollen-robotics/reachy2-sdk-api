@@ -7,10 +7,10 @@
 
 using grpc = global::Grpc.Core;
 
-namespace Mobile.Base.Utility {
+namespace Reachy.Part.Mobile.Base.Utility {
   public static partial class MobileBaseUtilityService
   {
-    static readonly string __ServiceName = "mobile.base.utility.MobileBaseUtilityService";
+    static readonly string __ServiceName = "reachy.part.mobile.base.utility.MobileBaseUtilityService";
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
@@ -46,98 +46,150 @@ namespace Mobile.Base.Utility {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Mobile.Base.Utility.ControlModeCommand> __Marshaller_mobile_base_utility_ControlModeCommand = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mobile.Base.Utility.ControlModeCommand.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Mobile.Base.Mobility.MobilityServiceAck> __Marshaller_mobile_base_mobility_MobilityServiceAck = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mobile.Base.Mobility.MobilityServiceAck.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Mobile.Base.Utility.ZuuuModeCommand> __Marshaller_mobile_base_utility_ZuuuModeCommand = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mobile.Base.Utility.ZuuuModeCommand.Parser));
+    static readonly grpc::Marshaller<global::Reachy.Part.Mobile.Base.Utility.ListOfMobileBase> __Marshaller_reachy_part_mobile_base_utility_ListOfMobileBase = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Mobile.Base.Utility.ListOfMobileBase.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Mobile.Base.Utility.BatteryLevel> __Marshaller_mobile_base_utility_BatteryLevel = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mobile.Base.Utility.BatteryLevel.Parser));
+    static readonly grpc::Marshaller<global::Reachy.Part.PartId> __Marshaller_reachy_part_PartId = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.PartId.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Mobile.Base.Utility.OdometryVector> __Marshaller_mobile_base_utility_OdometryVector = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mobile.Base.Utility.OdometryVector.Parser));
+    static readonly grpc::Marshaller<global::Reachy.Part.Mobile.Base.Utility.MobileBaseState> __Marshaller_reachy_part_mobile_base_utility_MobileBaseState = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Mobile.Base.Utility.MobileBaseState.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Mobile.Base.Utility.MobileBase> __Marshaller_mobile_base_utility_MobileBase = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mobile.Base.Utility.MobileBase.Parser));
+    static readonly grpc::Marshaller<global::Reachy.Part.Mobile.Base.Utility.MobileBaseStatus> __Marshaller_reachy_part_mobile_base_utility_MobileBaseStatus = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Mobile.Base.Utility.MobileBaseStatus.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Mobile.Base.Utility.MobileBaseState> __Marshaller_mobile_base_utility_MobileBaseState = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Mobile.Base.Utility.MobileBaseState.Parser));
+    static readonly grpc::Marshaller<global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand> __Marshaller_reachy_part_mobile_base_utility_ControlModeCommand = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> __Marshaller_reachy_part_mobile_base_mobility_MobilityServiceAck = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand> __Marshaller_reachy_part_mobile_base_utility_ZuuuModeCommand = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Reachy.Part.Mobile.Base.Utility.BatteryLevel> __Marshaller_reachy_part_mobile_base_utility_BatteryLevel = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Mobile.Base.Utility.BatteryLevel.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Reachy.Part.Mobile.Base.Utility.OdometryVector> __Marshaller_reachy_part_mobile_base_utility_OdometryVector = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.Part.Mobile.Base.Utility.OdometryVector.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Mobile.Base.Utility.ControlModeCommand, global::Mobile.Base.Mobility.MobilityServiceAck> __Method_SetControlMode = new grpc::Method<global::Mobile.Base.Utility.ControlModeCommand, global::Mobile.Base.Mobility.MobilityServiceAck>(
+    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Reachy.Part.Mobile.Base.Utility.ListOfMobileBase> __Method_GetAllMobileBases = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Reachy.Part.Mobile.Base.Utility.ListOfMobileBase>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "SetControlMode",
-        __Marshaller_mobile_base_utility_ControlModeCommand,
-        __Marshaller_mobile_base_mobility_MobilityServiceAck);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.ControlModeCommand> __Method_GetControlMode = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.ControlModeCommand>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetControlMode",
+        "GetAllMobileBases",
         __Marshaller_google_protobuf_Empty,
-        __Marshaller_mobile_base_utility_ControlModeCommand);
+        __Marshaller_reachy_part_mobile_base_utility_ListOfMobileBase);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Mobile.Base.Utility.ZuuuModeCommand, global::Mobile.Base.Mobility.MobilityServiceAck> __Method_SetZuuuMode = new grpc::Method<global::Mobile.Base.Utility.ZuuuModeCommand, global::Mobile.Base.Mobility.MobilityServiceAck>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "SetZuuuMode",
-        __Marshaller_mobile_base_utility_ZuuuModeCommand,
-        __Marshaller_mobile_base_mobility_MobilityServiceAck);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.ZuuuModeCommand> __Method_GetZuuuMode = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.ZuuuModeCommand>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetZuuuMode",
-        __Marshaller_google_protobuf_Empty,
-        __Marshaller_mobile_base_utility_ZuuuModeCommand);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.BatteryLevel> __Method_GetBatteryLevel = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.BatteryLevel>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetBatteryLevel",
-        __Marshaller_google_protobuf_Empty,
-        __Marshaller_mobile_base_utility_BatteryLevel);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.OdometryVector> __Method_GetOdometry = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.OdometryVector>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetOdometry",
-        __Marshaller_google_protobuf_Empty,
-        __Marshaller_mobile_base_utility_OdometryVector);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Mobility.MobilityServiceAck> __Method_ResetOdometry = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Mobility.MobilityServiceAck>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "ResetOdometry",
-        __Marshaller_google_protobuf_Empty,
-        __Marshaller_mobile_base_mobility_MobilityServiceAck);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.MobileBase> __Method_GetMobileBase = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.MobileBase>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetMobileBase",
-        __Marshaller_google_protobuf_Empty,
-        __Marshaller_mobile_base_utility_MobileBase);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.MobileBaseState> __Method_GetState = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.MobileBaseState>(
+    static readonly grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Utility.MobileBaseState> __Method_GetState = new grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Utility.MobileBaseState>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetState",
-        __Marshaller_google_protobuf_Empty,
-        __Marshaller_mobile_base_utility_MobileBaseState);
+        __Marshaller_reachy_part_PartId,
+        __Marshaller_reachy_part_mobile_base_utility_MobileBaseState);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Utility.MobileBaseStatus> __Method_Audit = new grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Utility.MobileBaseStatus>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "Audit",
+        __Marshaller_reachy_part_PartId,
+        __Marshaller_reachy_part_mobile_base_utility_MobileBaseStatus);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.Part.PartId, global::Google.Protobuf.WellKnownTypes.Empty> __Method_HeartBeat = new grpc::Method<global::Reachy.Part.PartId, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "HeartBeat",
+        __Marshaller_reachy_part_PartId,
+        __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.Part.PartId, global::Google.Protobuf.WellKnownTypes.Empty> __Method_Restart = new grpc::Method<global::Reachy.Part.PartId, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "Restart",
+        __Marshaller_reachy_part_PartId,
+        __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.Part.PartId, global::Google.Protobuf.WellKnownTypes.Empty> __Method_ResetDefaultValues = new grpc::Method<global::Reachy.Part.PartId, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ResetDefaultValues",
+        __Marshaller_reachy_part_PartId,
+        __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.Part.PartId, global::Google.Protobuf.WellKnownTypes.Empty> __Method_TurnOn = new grpc::Method<global::Reachy.Part.PartId, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "TurnOn",
+        __Marshaller_reachy_part_PartId,
+        __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.Part.PartId, global::Google.Protobuf.WellKnownTypes.Empty> __Method_TurnOff = new grpc::Method<global::Reachy.Part.PartId, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "TurnOff",
+        __Marshaller_reachy_part_PartId,
+        __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand, global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> __Method_SetControlMode = new grpc::Method<global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand, global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SetControlMode",
+        __Marshaller_reachy_part_mobile_base_utility_ControlModeCommand,
+        __Marshaller_reachy_part_mobile_base_mobility_MobilityServiceAck);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand> __Method_GetControlMode = new grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetControlMode",
+        __Marshaller_reachy_part_PartId,
+        __Marshaller_reachy_part_mobile_base_utility_ControlModeCommand);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand, global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> __Method_SetZuuuMode = new grpc::Method<global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand, global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SetZuuuMode",
+        __Marshaller_reachy_part_mobile_base_utility_ZuuuModeCommand,
+        __Marshaller_reachy_part_mobile_base_mobility_MobilityServiceAck);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand> __Method_GetZuuuMode = new grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetZuuuMode",
+        __Marshaller_reachy_part_PartId,
+        __Marshaller_reachy_part_mobile_base_utility_ZuuuModeCommand);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Utility.BatteryLevel> __Method_GetBatteryLevel = new grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Utility.BatteryLevel>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetBatteryLevel",
+        __Marshaller_reachy_part_PartId,
+        __Marshaller_reachy_part_mobile_base_utility_BatteryLevel);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Utility.OdometryVector> __Method_GetOdometry = new grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Utility.OdometryVector>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetOdometry",
+        __Marshaller_reachy_part_PartId,
+        __Marshaller_reachy_part_mobile_base_utility_OdometryVector);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> __Method_ResetOdometry = new grpc::Method<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ResetOdometry",
+        __Marshaller_reachy_part_PartId,
+        __Marshaller_reachy_part_mobile_base_mobility_MobilityServiceAck);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Mobile.Base.Utility.MobileBaseUtilityReflection.Descriptor.Services[0]; }
+      get { return global::Reachy.Part.Mobile.Base.Utility.MobileBaseUtilityReflection.Descriptor.Services[0]; }
     }
 
     /// <summary>Base class for server-side implementations of MobileBaseUtilityService</summary>
@@ -145,55 +197,91 @@ namespace Mobile.Base.Utility {
     public abstract partial class MobileBaseUtilityServiceBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Mobile.Base.Mobility.MobilityServiceAck> SetControlMode(global::Mobile.Base.Utility.ControlModeCommand request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Reachy.Part.Mobile.Base.Utility.ListOfMobileBase> GetAllMobileBases(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Mobile.Base.Utility.ControlModeCommand> GetControlMode(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Reachy.Part.Mobile.Base.Utility.MobileBaseState> GetState(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Mobile.Base.Mobility.MobilityServiceAck> SetZuuuMode(global::Mobile.Base.Utility.ZuuuModeCommand request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Reachy.Part.Mobile.Base.Utility.MobileBaseStatus> Audit(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Mobile.Base.Utility.ZuuuModeCommand> GetZuuuMode(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> HeartBeat(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Mobile.Base.Utility.BatteryLevel> GetBatteryLevel(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> Restart(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Mobile.Base.Utility.OdometryVector> GetOdometry(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> ResetDefaultValues(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Mobile.Base.Mobility.MobilityServiceAck> ResetOdometry(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> TurnOn(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Mobile.Base.Utility.MobileBase> GetMobileBase(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> TurnOff(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Mobile.Base.Utility.MobileBaseState> GetState(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> SetControlMode(global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand> GetControlMode(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> SetZuuuMode(global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand> GetZuuuMode(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Reachy.Part.Mobile.Base.Utility.BatteryLevel> GetBatteryLevel(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Reachy.Part.Mobile.Base.Utility.OdometryVector> GetOdometry(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> ResetOdometry(global::Reachy.Part.PartId request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -228,184 +316,304 @@ namespace Mobile.Base.Utility {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Mobility.MobilityServiceAck SetControlMode(global::Mobile.Base.Utility.ControlModeCommand request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Reachy.Part.Mobile.Base.Utility.ListOfMobileBase GetAllMobileBases(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return SetControlMode(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetAllMobileBases(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Mobility.MobilityServiceAck SetControlMode(global::Mobile.Base.Utility.ControlModeCommand request, grpc::CallOptions options)
+      public virtual global::Reachy.Part.Mobile.Base.Utility.ListOfMobileBase GetAllMobileBases(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_SetControlMode, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetAllMobileBases, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Mobility.MobilityServiceAck> SetControlModeAsync(global::Mobile.Base.Utility.ControlModeCommand request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Utility.ListOfMobileBase> GetAllMobileBasesAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return SetControlModeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetAllMobileBasesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Mobility.MobilityServiceAck> SetControlModeAsync(global::Mobile.Base.Utility.ControlModeCommand request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Utility.ListOfMobileBase> GetAllMobileBasesAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_SetControlMode, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetAllMobileBases, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Utility.ControlModeCommand GetControlMode(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetControlMode(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Utility.ControlModeCommand GetControlMode(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetControlMode, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Utility.ControlModeCommand> GetControlModeAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetControlModeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Utility.ControlModeCommand> GetControlModeAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetControlMode, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Mobility.MobilityServiceAck SetZuuuMode(global::Mobile.Base.Utility.ZuuuModeCommand request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return SetZuuuMode(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Mobility.MobilityServiceAck SetZuuuMode(global::Mobile.Base.Utility.ZuuuModeCommand request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_SetZuuuMode, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Mobility.MobilityServiceAck> SetZuuuModeAsync(global::Mobile.Base.Utility.ZuuuModeCommand request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return SetZuuuModeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Mobility.MobilityServiceAck> SetZuuuModeAsync(global::Mobile.Base.Utility.ZuuuModeCommand request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_SetZuuuMode, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Utility.ZuuuModeCommand GetZuuuMode(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetZuuuMode(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Utility.ZuuuModeCommand GetZuuuMode(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetZuuuMode, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Utility.ZuuuModeCommand> GetZuuuModeAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetZuuuModeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Utility.ZuuuModeCommand> GetZuuuModeAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetZuuuMode, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Utility.BatteryLevel GetBatteryLevel(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetBatteryLevel(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Utility.BatteryLevel GetBatteryLevel(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetBatteryLevel, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Utility.BatteryLevel> GetBatteryLevelAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetBatteryLevelAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Utility.BatteryLevel> GetBatteryLevelAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetBatteryLevel, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Utility.OdometryVector GetOdometry(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetOdometry(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Utility.OdometryVector GetOdometry(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetOdometry, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Utility.OdometryVector> GetOdometryAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetOdometryAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Utility.OdometryVector> GetOdometryAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetOdometry, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Mobility.MobilityServiceAck ResetOdometry(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return ResetOdometry(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Mobility.MobilityServiceAck ResetOdometry(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_ResetOdometry, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Mobility.MobilityServiceAck> ResetOdometryAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return ResetOdometryAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Mobility.MobilityServiceAck> ResetOdometryAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_ResetOdometry, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Utility.MobileBase GetMobileBase(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetMobileBase(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Utility.MobileBase GetMobileBase(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetMobileBase, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Utility.MobileBase> GetMobileBaseAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetMobileBaseAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Utility.MobileBase> GetMobileBaseAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetMobileBase, null, options, request);
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Utility.MobileBaseState GetState(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Reachy.Part.Mobile.Base.Utility.MobileBaseState GetState(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetState(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Mobile.Base.Utility.MobileBaseState GetState(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      public virtual global::Reachy.Part.Mobile.Base.Utility.MobileBaseState GetState(global::Reachy.Part.PartId request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetState, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Utility.MobileBaseState> GetStateAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Utility.MobileBaseState> GetStateAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetStateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Mobile.Base.Utility.MobileBaseState> GetStateAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Utility.MobileBaseState> GetStateAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetState, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.Part.Mobile.Base.Utility.MobileBaseStatus Audit(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return Audit(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.Part.Mobile.Base.Utility.MobileBaseStatus Audit(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_Audit, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Utility.MobileBaseStatus> AuditAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AuditAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Utility.MobileBaseStatus> AuditAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_Audit, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty HeartBeat(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return HeartBeat(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty HeartBeat(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_HeartBeat, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> HeartBeatAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return HeartBeatAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> HeartBeatAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_HeartBeat, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty Restart(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return Restart(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty Restart(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_Restart, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> RestartAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RestartAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> RestartAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_Restart, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty ResetDefaultValues(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ResetDefaultValues(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty ResetDefaultValues(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ResetDefaultValues, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> ResetDefaultValuesAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ResetDefaultValuesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> ResetDefaultValuesAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ResetDefaultValues, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty TurnOn(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return TurnOn(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty TurnOn(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_TurnOn, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> TurnOnAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return TurnOnAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> TurnOnAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_TurnOn, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty TurnOff(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return TurnOff(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty TurnOff(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_TurnOff, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> TurnOffAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return TurnOffAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> TurnOffAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_TurnOff, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck SetControlMode(global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SetControlMode(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck SetControlMode(global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SetControlMode, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> SetControlModeAsync(global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SetControlModeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> SetControlModeAsync(global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SetControlMode, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand GetControlMode(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetControlMode(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand GetControlMode(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetControlMode, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand> GetControlModeAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetControlModeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand> GetControlModeAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetControlMode, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck SetZuuuMode(global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SetZuuuMode(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck SetZuuuMode(global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SetZuuuMode, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> SetZuuuModeAsync(global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SetZuuuModeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> SetZuuuModeAsync(global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SetZuuuMode, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand GetZuuuMode(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetZuuuMode(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand GetZuuuMode(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetZuuuMode, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand> GetZuuuModeAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetZuuuModeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand> GetZuuuModeAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetZuuuMode, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.Part.Mobile.Base.Utility.BatteryLevel GetBatteryLevel(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetBatteryLevel(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.Part.Mobile.Base.Utility.BatteryLevel GetBatteryLevel(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetBatteryLevel, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Utility.BatteryLevel> GetBatteryLevelAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetBatteryLevelAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Utility.BatteryLevel> GetBatteryLevelAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetBatteryLevel, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.Part.Mobile.Base.Utility.OdometryVector GetOdometry(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetOdometry(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.Part.Mobile.Base.Utility.OdometryVector GetOdometry(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetOdometry, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Utility.OdometryVector> GetOdometryAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetOdometryAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Utility.OdometryVector> GetOdometryAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetOdometry, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck ResetOdometry(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ResetOdometry(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck ResetOdometry(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ResetOdometry, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> ResetOdometryAsync(global::Reachy.Part.PartId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ResetOdometryAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck> ResetOdometryAsync(global::Reachy.Part.PartId request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ResetOdometry, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -421,15 +629,21 @@ namespace Mobile.Base.Utility {
     public static grpc::ServerServiceDefinition BindService(MobileBaseUtilityServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
+          .AddMethod(__Method_GetAllMobileBases, serviceImpl.GetAllMobileBases)
+          .AddMethod(__Method_GetState, serviceImpl.GetState)
+          .AddMethod(__Method_Audit, serviceImpl.Audit)
+          .AddMethod(__Method_HeartBeat, serviceImpl.HeartBeat)
+          .AddMethod(__Method_Restart, serviceImpl.Restart)
+          .AddMethod(__Method_ResetDefaultValues, serviceImpl.ResetDefaultValues)
+          .AddMethod(__Method_TurnOn, serviceImpl.TurnOn)
+          .AddMethod(__Method_TurnOff, serviceImpl.TurnOff)
           .AddMethod(__Method_SetControlMode, serviceImpl.SetControlMode)
           .AddMethod(__Method_GetControlMode, serviceImpl.GetControlMode)
           .AddMethod(__Method_SetZuuuMode, serviceImpl.SetZuuuMode)
           .AddMethod(__Method_GetZuuuMode, serviceImpl.GetZuuuMode)
           .AddMethod(__Method_GetBatteryLevel, serviceImpl.GetBatteryLevel)
           .AddMethod(__Method_GetOdometry, serviceImpl.GetOdometry)
-          .AddMethod(__Method_ResetOdometry, serviceImpl.ResetOdometry)
-          .AddMethod(__Method_GetMobileBase, serviceImpl.GetMobileBase)
-          .AddMethod(__Method_GetState, serviceImpl.GetState).Build();
+          .AddMethod(__Method_ResetOdometry, serviceImpl.ResetOdometry).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -439,15 +653,21 @@ namespace Mobile.Base.Utility {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, MobileBaseUtilityServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_SetControlMode, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mobile.Base.Utility.ControlModeCommand, global::Mobile.Base.Mobility.MobilityServiceAck>(serviceImpl.SetControlMode));
-      serviceBinder.AddMethod(__Method_GetControlMode, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.ControlModeCommand>(serviceImpl.GetControlMode));
-      serviceBinder.AddMethod(__Method_SetZuuuMode, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Mobile.Base.Utility.ZuuuModeCommand, global::Mobile.Base.Mobility.MobilityServiceAck>(serviceImpl.SetZuuuMode));
-      serviceBinder.AddMethod(__Method_GetZuuuMode, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.ZuuuModeCommand>(serviceImpl.GetZuuuMode));
-      serviceBinder.AddMethod(__Method_GetBatteryLevel, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.BatteryLevel>(serviceImpl.GetBatteryLevel));
-      serviceBinder.AddMethod(__Method_GetOdometry, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.OdometryVector>(serviceImpl.GetOdometry));
-      serviceBinder.AddMethod(__Method_ResetOdometry, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Mobility.MobilityServiceAck>(serviceImpl.ResetOdometry));
-      serviceBinder.AddMethod(__Method_GetMobileBase, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.MobileBase>(serviceImpl.GetMobileBase));
-      serviceBinder.AddMethod(__Method_GetState, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Mobile.Base.Utility.MobileBaseState>(serviceImpl.GetState));
+      serviceBinder.AddMethod(__Method_GetAllMobileBases, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Reachy.Part.Mobile.Base.Utility.ListOfMobileBase>(serviceImpl.GetAllMobileBases));
+      serviceBinder.AddMethod(__Method_GetState, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Utility.MobileBaseState>(serviceImpl.GetState));
+      serviceBinder.AddMethod(__Method_Audit, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Utility.MobileBaseStatus>(serviceImpl.Audit));
+      serviceBinder.AddMethod(__Method_HeartBeat, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.HeartBeat));
+      serviceBinder.AddMethod(__Method_Restart, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.Restart));
+      serviceBinder.AddMethod(__Method_ResetDefaultValues, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.ResetDefaultValues));
+      serviceBinder.AddMethod(__Method_TurnOn, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.TurnOn));
+      serviceBinder.AddMethod(__Method_TurnOff, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.TurnOff));
+      serviceBinder.AddMethod(__Method_SetControlMode, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand, global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck>(serviceImpl.SetControlMode));
+      serviceBinder.AddMethod(__Method_GetControlMode, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand>(serviceImpl.GetControlMode));
+      serviceBinder.AddMethod(__Method_SetZuuuMode, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand, global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck>(serviceImpl.SetZuuuMode));
+      serviceBinder.AddMethod(__Method_GetZuuuMode, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand>(serviceImpl.GetZuuuMode));
+      serviceBinder.AddMethod(__Method_GetBatteryLevel, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Utility.BatteryLevel>(serviceImpl.GetBatteryLevel));
+      serviceBinder.AddMethod(__Method_GetOdometry, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Utility.OdometryVector>(serviceImpl.GetOdometry));
+      serviceBinder.AddMethod(__Method_ResetOdometry, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck>(serviceImpl.ResetOdometry));
     }
 
   }

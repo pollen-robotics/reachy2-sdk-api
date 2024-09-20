@@ -8,6 +8,7 @@ import google.protobuf.descriptor
 import google.protobuf.internal.enum_type_wrapper
 import google.protobuf.message
 import google.protobuf.wrappers_pb2
+import part_pb2
 import sys
 import typing
 
@@ -56,10 +57,13 @@ global___LidarObstacleDetectionStatus = LidarObstacleDetectionStatus
 class LidarSafety(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
+    ID_FIELD_NUMBER: builtins.int
     SAFETY_ON_FIELD_NUMBER: builtins.int
     SAFETY_DISTANCE_FIELD_NUMBER: builtins.int
     CRITICAL_DISTANCE_FIELD_NUMBER: builtins.int
     OBSTACLE_DETECTION_STATUS_FIELD_NUMBER: builtins.int
+    @property
+    def id(self) -> part_pb2.PartId: ...
     @property
     def safety_on(self) -> google.protobuf.wrappers_pb2.BoolValue: ...
     @property
@@ -71,13 +75,19 @@ class LidarSafety(google.protobuf.message.Message):
     def __init__(
         self,
         *,
+        id: part_pb2.PartId | None = ...,
         safety_on: google.protobuf.wrappers_pb2.BoolValue | None = ...,
         safety_distance: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         critical_distance: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         obstacle_detection_status: global___LidarObstacleDetectionStatus | None = ...,
     ) -> None: ...
+<<<<<<< HEAD
     def HasField(self, field_name: typing.Literal["critical_distance", b"critical_distance", "obstacle_detection_status", b"obstacle_detection_status", "safety_distance", b"safety_distance", "safety_on", b"safety_on"]) -> builtins.bool: ...
     def ClearField(self, field_name: typing.Literal["critical_distance", b"critical_distance", "obstacle_detection_status", b"obstacle_detection_status", "safety_distance", b"safety_distance", "safety_on", b"safety_on"]) -> None: ...
+=======
+    def HasField(self, field_name: typing_extensions.Literal["critical_distance", b"critical_distance", "id", b"id", "obstacle_detection_status", b"obstacle_detection_status", "safety_distance", b"safety_distance", "safety_on", b"safety_on"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["critical_distance", b"critical_distance", "id", b"id", "obstacle_detection_status", b"obstacle_detection_status", "safety_distance", b"safety_distance", "safety_on", b"safety_on"]) -> None: ...
+>>>>>>> v1.0.9
 
 global___LidarSafety = LidarSafety
 

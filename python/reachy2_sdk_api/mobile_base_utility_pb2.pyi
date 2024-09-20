@@ -4,11 +4,16 @@ isort:skip_file
 """
 
 import builtins
+import collections.abc
+import error_pb2
 import google.protobuf.descriptor
+import google.protobuf.internal.containers
 import google.protobuf.internal.enum_type_wrapper
 import google.protobuf.message
+import google.protobuf.timestamp_pb2
 import google.protobuf.wrappers_pb2
 import mobile_base_lidar_pb2
+import part_pb2
 import sys
 import typing
 
@@ -63,6 +68,7 @@ EMERGENCY_STOP: ZuuuModePossiblities.ValueType  # 6
 CMD_GOTO: ZuuuModePossiblities.ValueType  # 7
 global___ZuuuModePossiblities = ZuuuModePossiblities
 
+<<<<<<< HEAD
 @typing.final
 class MobileBaseInfo(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
@@ -85,40 +91,96 @@ class MobileBaseInfo(google.protobuf.message.Message):
 global___MobileBaseInfo = MobileBaseInfo
 
 @typing.final
+=======
+@typing_extensions.final
+>>>>>>> v1.0.9
 class MobileBase(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
+    PART_ID_FIELD_NUMBER: builtins.int
     INFO_FIELD_NUMBER: builtins.int
     @property
-    def info(self) -> global___MobileBaseInfo: ...
+    def part_id(self) -> part_pb2.PartId: ...
+    @property
+    def info(self) -> part_pb2.PartInfo: ...
     def __init__(
         self,
         *,
-        info: global___MobileBaseInfo | None = ...,
+        part_id: part_pb2.PartId | None = ...,
+        info: part_pb2.PartInfo | None = ...,
     ) -> None: ...
+<<<<<<< HEAD
     def HasField(self, field_name: typing.Literal["info", b"info"]) -> builtins.bool: ...
     def ClearField(self, field_name: typing.Literal["info", b"info"]) -> None: ...
 
 global___MobileBase = MobileBase
 
 @typing.final
-class MobileBaseState(google.protobuf.message.Message):
+=======
+    def HasField(self, field_name: typing_extensions.Literal["info", b"info", "part_id", b"part_id"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["info", b"info", "part_id", b"part_id"]) -> None: ...
+
+global___MobileBase = MobileBase
+
+@typing_extensions.final
+class ListOfMobileBase(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
-    BATTERY_LEVEL_FIELD_NUMBER: builtins.int
-    LIDAR_OBSTACLE_DETECTION_STATUS_FIELD_NUMBER: builtins.int
+    MOBILE_BASE_FIELD_NUMBER: builtins.int
     @property
-    def battery_level(self) -> global___BatteryLevel: ...
-    @property
-    def lidar_obstacle_detection_status(self) -> mobile_base_lidar_pb2.LidarObstacleDetectionStatus: ...
+    def mobile_base(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___MobileBase]: ...
     def __init__(
         self,
         *,
-        battery_level: global___BatteryLevel | None = ...,
-        lidar_obstacle_detection_status: mobile_base_lidar_pb2.LidarObstacleDetectionStatus | None = ...,
+        mobile_base: collections.abc.Iterable[global___MobileBase] | None = ...,
     ) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["mobile_base", b"mobile_base"]) -> None: ...
+
+global___ListOfMobileBase = ListOfMobileBase
+
+@typing_extensions.final
+>>>>>>> v1.0.9
+class MobileBaseState(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    TIMESTAMP_FIELD_NUMBER: builtins.int
+    ID_FIELD_NUMBER: builtins.int
+    ACTIVATED_FIELD_NUMBER: builtins.int
+    BATTERY_LEVEL_FIELD_NUMBER: builtins.int
+    LIDAR_SAFETY_FIELD_NUMBER: builtins.int
+    ZUUU_MODE_FIELD_NUMBER: builtins.int
+    CONTROL_MODE_FIELD_NUMBER: builtins.int
+    @property
+    def timestamp(self) -> google.protobuf.timestamp_pb2.Timestamp: ...
+    @property
+    def id(self) -> part_pb2.PartId: ...
+    activated: builtins.bool
+    @property
+    def battery_level(self) -> global___BatteryLevel: ...
+    @property
+    def lidar_safety(self) -> mobile_base_lidar_pb2.LidarSafety: ...
+    @property
+    def zuuu_mode(self) -> global___ZuuuModeCommand: ...
+    @property
+    def control_mode(self) -> global___ControlModeCommand: ...
+    def __init__(
+        self,
+        *,
+        timestamp: google.protobuf.timestamp_pb2.Timestamp | None = ...,
+        id: part_pb2.PartId | None = ...,
+        activated: builtins.bool = ...,
+        battery_level: global___BatteryLevel | None = ...,
+        lidar_safety: mobile_base_lidar_pb2.LidarSafety | None = ...,
+        zuuu_mode: global___ZuuuModeCommand | None = ...,
+        control_mode: global___ControlModeCommand | None = ...,
+    ) -> None: ...
+<<<<<<< HEAD
     def HasField(self, field_name: typing.Literal["battery_level", b"battery_level", "lidar_obstacle_detection_status", b"lidar_obstacle_detection_status"]) -> builtins.bool: ...
     def ClearField(self, field_name: typing.Literal["battery_level", b"battery_level", "lidar_obstacle_detection_status", b"lidar_obstacle_detection_status"]) -> None: ...
+=======
+    def HasField(self, field_name: typing_extensions.Literal["battery_level", b"battery_level", "control_mode", b"control_mode", "id", b"id", "lidar_safety", b"lidar_safety", "timestamp", b"timestamp", "zuuu_mode", b"zuuu_mode"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["activated", b"activated", "battery_level", b"battery_level", "control_mode", b"control_mode", "id", b"id", "lidar_safety", b"lidar_safety", "timestamp", b"timestamp", "zuuu_mode", b"zuuu_mode"]) -> None: ...
+>>>>>>> v1.0.9
 
 global___MobileBaseState = MobileBaseState
 
@@ -129,21 +191,38 @@ class OdometryVector(google.protobuf.message.Message):
     X_FIELD_NUMBER: builtins.int
     Y_FIELD_NUMBER: builtins.int
     THETA_FIELD_NUMBER: builtins.int
+    VX_FIELD_NUMBER: builtins.int
+    VY_FIELD_NUMBER: builtins.int
+    VTHETA_FIELD_NUMBER: builtins.int
     @property
     def x(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
     @property
     def y(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
     @property
     def theta(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    @property
+    def vx(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    @property
+    def vy(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    @property
+    def vtheta(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
     def __init__(
         self,
         *,
         x: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         y: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         theta: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        vx: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        vy: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        vtheta: google.protobuf.wrappers_pb2.FloatValue | None = ...,
     ) -> None: ...
+<<<<<<< HEAD
     def HasField(self, field_name: typing.Literal["theta", b"theta", "x", b"x", "y", b"y"]) -> builtins.bool: ...
     def ClearField(self, field_name: typing.Literal["theta", b"theta", "x", b"x", "y", b"y"]) -> None: ...
+=======
+    def HasField(self, field_name: typing_extensions.Literal["theta", b"theta", "vtheta", b"vtheta", "vx", b"vx", "vy", b"vy", "x", b"x", "y", b"y"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["theta", b"theta", "vtheta", b"vtheta", "vx", b"vx", "vy", b"vy", "x", b"x", "y", b"y"]) -> None: ...
+>>>>>>> v1.0.9
 
 global___OdometryVector = OdometryVector
 
@@ -151,14 +230,23 @@ global___OdometryVector = OdometryVector
 class ControlModeCommand(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
+    ID_FIELD_NUMBER: builtins.int
     MODE_FIELD_NUMBER: builtins.int
+    @property
+    def id(self) -> part_pb2.PartId: ...
     mode: global___ControlModePossiblities.ValueType
     def __init__(
         self,
         *,
+        id: part_pb2.PartId | None = ...,
         mode: global___ControlModePossiblities.ValueType = ...,
     ) -> None: ...
+<<<<<<< HEAD
     def ClearField(self, field_name: typing.Literal["mode", b"mode"]) -> None: ...
+=======
+    def HasField(self, field_name: typing_extensions.Literal["id", b"id"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["id", b"id", "mode", b"mode"]) -> None: ...
+>>>>>>> v1.0.9
 
 global___ControlModeCommand = ControlModeCommand
 
@@ -166,14 +254,23 @@ global___ControlModeCommand = ControlModeCommand
 class ZuuuModeCommand(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
+    ID_FIELD_NUMBER: builtins.int
     MODE_FIELD_NUMBER: builtins.int
+    @property
+    def id(self) -> part_pb2.PartId: ...
     mode: global___ZuuuModePossiblities.ValueType
     def __init__(
         self,
         *,
+        id: part_pb2.PartId | None = ...,
         mode: global___ZuuuModePossiblities.ValueType = ...,
     ) -> None: ...
+<<<<<<< HEAD
     def ClearField(self, field_name: typing.Literal["mode", b"mode"]) -> None: ...
+=======
+    def HasField(self, field_name: typing_extensions.Literal["id", b"id"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["id", b"id", "mode", b"mode"]) -> None: ...
+>>>>>>> v1.0.9
 
 global___ZuuuModeCommand = ZuuuModeCommand
 
@@ -194,19 +291,28 @@ class BatteryLevel(google.protobuf.message.Message):
 
 global___BatteryLevel = BatteryLevel
 
+<<<<<<< HEAD
 @typing.final
 class MobileBaseVersion(google.protobuf.message.Message):
+=======
+@typing_extensions.final
+class MobileBaseStatus(google.protobuf.message.Message):
+>>>>>>> v1.0.9
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
-    MODEL_VERSION_FIELD_NUMBER: builtins.int
+    ERRORS_FIELD_NUMBER: builtins.int
     @property
-    def model_version(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    def errors(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[error_pb2.Error]: ...
     def __init__(
         self,
         *,
-        model_version: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        errors: collections.abc.Iterable[error_pb2.Error] | None = ...,
     ) -> None: ...
+<<<<<<< HEAD
     def HasField(self, field_name: typing.Literal["model_version", b"model_version"]) -> builtins.bool: ...
     def ClearField(self, field_name: typing.Literal["model_version", b"model_version"]) -> None: ...
+=======
+    def ClearField(self, field_name: typing_extensions.Literal["errors", b"errors"]) -> None: ...
+>>>>>>> v1.0.9
 
-global___MobileBaseVersion = MobileBaseVersion
+global___MobileBaseStatus = MobileBaseStatus

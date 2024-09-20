@@ -15,6 +15,7 @@ message GetReachy {}
 message Connect {
     reachy.ReachyId reachy_id = 1;
     float update_frequency = 2;
+    float audit_frequency = 3;
 }
 message Disconnect {
     reachy.ReachyId reachy_id = 1;
@@ -75,8 +76,8 @@ message NeckCommand {
 }
 
 message MobileBaseCommand {
-    mobile.base.mobility.TargetDirectionCommand target_direction = 1;
-    mobile.base.utility.ZuuuModeCommand mobile_base_mode = 2;
+    reachy.part.mobile.base.mobility.TargetDirectionCommand target_direction = 1;
+    reachy.part.mobile.base.utility.ZuuuModeCommand mobile_base_mode = 2;
 }
 
 message AnyCommands {

@@ -2,6 +2,7 @@ syntax = "proto3";
 
 import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
 
 import "error.proto";
 
@@ -10,6 +11,7 @@ package component.video;
 enum View {
     LEFT = 0;
     RIGHT = 1;
+    DEPTH = 2;
 }
 
 message VideoAck {
@@ -17,6 +19,7 @@ message VideoAck {
     error.Error error = 2;
 }
 
+// Start of Steve's Gazebo addons
 message CameraInfo {
     string mxid = 1;
     string name = 2;
@@ -27,9 +30,41 @@ message CameraInfo {
 message ListOfCameraInfo {
     repeated CameraInfo camera_info = 1;
 }
+// End of Steve
+
+message CameraFeatures {
+    string name = 2;
+    bool stereo = 3;
+    bool depth = 4;
+}
+
+message CameraParameters {
+    uint32 height = 1;
+    uint32 width = 2;
+    string distortion_model = 3;
+    repeated float D = 4;
+    repeated float K = 5;
+    repeated float R = 6;
+    repeated float P = 7;
+}
+
+message ListOfCameraFeatures {
+    repeated CameraFeatures camera_feat = 1;
+}
 
 message Frame {
-    bytes data = 1;
+    google.protobuf.Timestamp timestamp = 1;
+    bytes data = 2;
+}
+
+message FrameRaw {
+    google.protobuf.Timestamp timestamp = 1;
+    bytes data = 2;
+    uint32 height = 3;
+    uint32 width = 4;
+    string encoding = 5;
+    uint32 step = 6;
+    bool isbigendian = 7;   
 }
 
 message IntrinsicMatrix {
@@ -41,13 +76,14 @@ message IntrinsicMatrix {
 }
 
 message ViewRequest {
-    CameraInfo camera_info = 1;
+    CameraFeatures camera_feat = 1;
     optional View view = 2;
 }
 
 service VideoService {
-    rpc InitAllCameras(google.protobuf.Empty) returns (ListOfCameraInfo);
+    rpc GetAvailableCameras(google.protobuf.Empty) returns (ListOfCameraFeatures);
     rpc GetFrame (ViewRequest) returns (Frame);
+    // Start of Steve's Gazebo addons
     rpc GetDepthFrame (ViewRequest) returns (Frame);
     rpc GetDepthMap (CameraInfo) returns (Frame);
     rpc GetDisparity (CameraInfo) returns (Frame);
@@ -55,4 +91,10 @@ service VideoService {
     rpc GetDepthIntrinsicMatrix (CameraInfo) returns (IntrinsicMatrix);
     rpc Capture(CameraInfo) returns (VideoAck);
     rpc GoodBye(google.protobuf.Empty) returns (google.protobuf.Empty);
+    // End of Steve
+
+    // Fabien's
+    rpc GetParameters (ViewRequest) returns (CameraParameters);
+    rpc GetDepth (ViewRequest) returns (FrameRaw);
+    // End of Fabien's
 }

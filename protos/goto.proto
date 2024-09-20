@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
 
 import "arm.proto";
 import "head.proto";
@@ -31,16 +32,27 @@ message GoToGoalStatus {
 
 message CartesianGoal {
     oneof cartesian_goal {
-        reachy.part.arm.ArmCartesianGoal arm_cartesian_goal=1;
-        reachy.part.head.NeckCartesianGoal neck_cartesian_goal=2;
+        reachy.part.arm.ArmCartesianGoal arm_cartesian_goal = 1;
+        reachy.part.head.NeckCartesianGoal neck_cartesian_goal = 2;
     }
 }
 
 message JointsGoal {
     oneof joints_goal {
-        reachy.part.arm.ArmJointGoal arm_joint_goal=1;
-        reachy.part.head.NeckJointGoal neck_joint_goal=2;
+        reachy.part.arm.ArmJointGoal arm_joint_goal = 1;
+        reachy.part.head.NeckJointGoal neck_joint_goal = 2;
+        CustomJointGoal custom_joint_goal = 3;
     }
+}
+
+message CustomJointGoal {
+    reachy.part.PartId id = 1;
+    oneof joints {
+        reachy.part.arm.CustomArmJoints arm_joints = 2;
+        reachy.part.head.CustomNeckJoints neck_joints = 3;
+    }
+    repeated google.protobuf.FloatValue joints_goals = 4;
+    google.protobuf.FloatValue duration = 10;
 }
 
 enum InterpolationMode {
@@ -55,8 +67,8 @@ message GoToInterpolation {
 
 message GoToRequest {
     oneof goal {
-        CartesianGoal cartesian_goal=1;
-        JointsGoal joints_goal=2;
+        CartesianGoal cartesian_goal = 1;
+        JointsGoal joints_goal = 2;
     }
     GoToInterpolation interpolation_mode = 3;
 }

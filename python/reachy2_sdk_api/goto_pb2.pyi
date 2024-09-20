@@ -10,7 +10,9 @@ import google.protobuf.descriptor
 import google.protobuf.internal.containers
 import google.protobuf.internal.enum_type_wrapper
 import google.protobuf.message
+import google.protobuf.wrappers_pb2
 import head_pb2
+import part_pb2
 import sys
 import typing
 
@@ -138,16 +140,21 @@ class JointsGoal(google.protobuf.message.Message):
 
     ARM_JOINT_GOAL_FIELD_NUMBER: builtins.int
     NECK_JOINT_GOAL_FIELD_NUMBER: builtins.int
+    CUSTOM_JOINT_GOAL_FIELD_NUMBER: builtins.int
     @property
     def arm_joint_goal(self) -> arm_pb2.ArmJointGoal: ...
     @property
     def neck_joint_goal(self) -> head_pb2.NeckJointGoal: ...
+    @property
+    def custom_joint_goal(self) -> global___CustomJointGoal: ...
     def __init__(
         self,
         *,
         arm_joint_goal: arm_pb2.ArmJointGoal | None = ...,
         neck_joint_goal: head_pb2.NeckJointGoal | None = ...,
+        custom_joint_goal: global___CustomJointGoal | None = ...,
     ) -> None: ...
+<<<<<<< HEAD
     def HasField(self, field_name: typing.Literal["arm_joint_goal", b"arm_joint_goal", "joints_goal", b"joints_goal", "neck_joint_goal", b"neck_joint_goal"]) -> builtins.bool: ...
     def ClearField(self, field_name: typing.Literal["arm_joint_goal", b"arm_joint_goal", "joints_goal", b"joints_goal", "neck_joint_goal", b"neck_joint_goal"]) -> None: ...
     def WhichOneof(self, oneof_group: typing.Literal["joints_goal", b"joints_goal"]) -> typing.Literal["arm_joint_goal", "neck_joint_goal"] | None: ...
@@ -155,6 +162,49 @@ class JointsGoal(google.protobuf.message.Message):
 global___JointsGoal = JointsGoal
 
 @typing.final
+=======
+    def HasField(self, field_name: typing_extensions.Literal["arm_joint_goal", b"arm_joint_goal", "custom_joint_goal", b"custom_joint_goal", "joints_goal", b"joints_goal", "neck_joint_goal", b"neck_joint_goal"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["arm_joint_goal", b"arm_joint_goal", "custom_joint_goal", b"custom_joint_goal", "joints_goal", b"joints_goal", "neck_joint_goal", b"neck_joint_goal"]) -> None: ...
+    def WhichOneof(self, oneof_group: typing_extensions.Literal["joints_goal", b"joints_goal"]) -> typing_extensions.Literal["arm_joint_goal", "neck_joint_goal", "custom_joint_goal"] | None: ...
+
+global___JointsGoal = JointsGoal
+
+@typing_extensions.final
+class CustomJointGoal(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    ID_FIELD_NUMBER: builtins.int
+    ARM_JOINTS_FIELD_NUMBER: builtins.int
+    NECK_JOINTS_FIELD_NUMBER: builtins.int
+    JOINTS_GOALS_FIELD_NUMBER: builtins.int
+    DURATION_FIELD_NUMBER: builtins.int
+    @property
+    def id(self) -> part_pb2.PartId: ...
+    @property
+    def arm_joints(self) -> arm_pb2.CustomArmJoints: ...
+    @property
+    def neck_joints(self) -> head_pb2.CustomNeckJoints: ...
+    @property
+    def joints_goals(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[google.protobuf.wrappers_pb2.FloatValue]: ...
+    @property
+    def duration(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    def __init__(
+        self,
+        *,
+        id: part_pb2.PartId | None = ...,
+        arm_joints: arm_pb2.CustomArmJoints | None = ...,
+        neck_joints: head_pb2.CustomNeckJoints | None = ...,
+        joints_goals: collections.abc.Iterable[google.protobuf.wrappers_pb2.FloatValue] | None = ...,
+        duration: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["arm_joints", b"arm_joints", "duration", b"duration", "id", b"id", "joints", b"joints", "neck_joints", b"neck_joints"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["arm_joints", b"arm_joints", "duration", b"duration", "id", b"id", "joints", b"joints", "joints_goals", b"joints_goals", "neck_joints", b"neck_joints"]) -> None: ...
+    def WhichOneof(self, oneof_group: typing_extensions.Literal["joints", b"joints"]) -> typing_extensions.Literal["arm_joints", "neck_joints"] | None: ...
+
+global___CustomJointGoal = CustomJointGoal
+
+@typing_extensions.final
+>>>>>>> v1.0.9
 class GoToInterpolation(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 

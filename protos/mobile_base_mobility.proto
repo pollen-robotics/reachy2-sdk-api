@@ -2,8 +2,9 @@ syntax = "proto3";
 
 import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
+import "part.proto";
 
-package mobile.base.mobility;
+package reachy.part.mobile.base.mobility;
 
 // Speed commands in SI units (m/s and rad/s)
 message DirectionVector {
@@ -14,20 +15,23 @@ message DirectionVector {
 }
 
 message TargetDirectionCommand {
-    DirectionVector direction = 1;
+    reachy.part.PartId id = 1;
+    DirectionVector direction = 2;
 }
 
 message GoToVector {
-    google.protobuf.FloatValue x_goal = 1;
-    google.protobuf.FloatValue y_goal = 2;
-    google.protobuf.FloatValue theta_goal = 3;
+    reachy.part.PartId id = 1;
+    google.protobuf.FloatValue x_goal = 2;
+    google.protobuf.FloatValue y_goal = 3;
+    google.protobuf.FloatValue theta_goal = 4;
 }
 
 message SetSpeedVector {
-    google.protobuf.FloatValue x_vel = 1;
-    google.protobuf.FloatValue y_vel = 2;
-    google.protobuf.FloatValue rot_vel = 3;
-    google.protobuf.FloatValue duration = 4;
+    reachy.part.PartId id = 1;
+    google.protobuf.FloatValue x_vel = 2;
+    google.protobuf.FloatValue y_vel = 3;
+    google.protobuf.FloatValue rot_vel = 4;
+    google.protobuf.FloatValue duration = 5;
 }
 
 message DistanceToGoalVector {
@@ -46,5 +50,6 @@ service MobileBaseMobilityService {
     rpc SendDirection(TargetDirectionCommand) returns (MobilityServiceAck);
     rpc SendSetSpeed(SetSpeedVector) returns (MobilityServiceAck);
     rpc SendGoTo(GoToVector) returns (MobilityServiceAck);
-    rpc DistanceToGoal(google.protobuf.Empty) returns (DistanceToGoalVector);
+    rpc GetLastDirection(reachy.part.PartId) returns (DirectionVector);
+    rpc DistanceToGoal(reachy.part.PartId) returns (DistanceToGoalVector);
 }

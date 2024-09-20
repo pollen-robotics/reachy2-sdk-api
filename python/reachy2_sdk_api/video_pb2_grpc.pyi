@@ -20,20 +20,25 @@ class _ServicerContext(grpc.ServicerContext, grpc.aio.ServicerContext):  # type:
 
 class VideoServiceStub:
     def __init__(self, channel: typing.Union[grpc.Channel, grpc.aio.Channel]) -> None: ...
-    InitAllCameras: grpc.UnaryUnaryMultiCallable[
+    GetAvailableCameras: grpc.UnaryUnaryMultiCallable[
         google.protobuf.empty_pb2.Empty,
-        video_pb2.ListOfCameraInfo,
+        video_pb2.ListOfCameraFeatures,
     ]
 
     GetFrame: grpc.UnaryUnaryMultiCallable[
         video_pb2.ViewRequest,
         video_pb2.Frame,
     ]
+<<<<<<< HEAD
 
     GetDepthFrame: grpc.UnaryUnaryMultiCallable[
+=======
+    GetParameters: grpc.UnaryUnaryMultiCallable[
+>>>>>>> v1.0.9
         video_pb2.ViewRequest,
-        video_pb2.Frame,
+        video_pb2.CameraParameters,
     ]
+<<<<<<< HEAD
 
     GetDepthMap: grpc.UnaryUnaryMultiCallable[
         video_pb2.CameraInfo,
@@ -63,23 +68,33 @@ class VideoServiceStub:
     GoodBye: grpc.UnaryUnaryMultiCallable[
         google.protobuf.empty_pb2.Empty,
         google.protobuf.empty_pb2.Empty,
+=======
+    GetDepth: grpc.UnaryUnaryMultiCallable[
+        video_pb2.ViewRequest,
+        video_pb2.FrameRaw,
+>>>>>>> v1.0.9
     ]
 
 class VideoServiceAsyncStub:
-    InitAllCameras: grpc.aio.UnaryUnaryMultiCallable[
+    GetAvailableCameras: grpc.aio.UnaryUnaryMultiCallable[
         google.protobuf.empty_pb2.Empty,
-        video_pb2.ListOfCameraInfo,
+        video_pb2.ListOfCameraFeatures,
     ]
 
     GetFrame: grpc.aio.UnaryUnaryMultiCallable[
         video_pb2.ViewRequest,
         video_pb2.Frame,
     ]
+<<<<<<< HEAD
 
     GetDepthFrame: grpc.aio.UnaryUnaryMultiCallable[
+=======
+    GetParameters: grpc.aio.UnaryUnaryMultiCallable[
+>>>>>>> v1.0.9
         video_pb2.ViewRequest,
-        video_pb2.Frame,
+        video_pb2.CameraParameters,
     ]
+<<<<<<< HEAD
 
     GetDepthMap: grpc.aio.UnaryUnaryMultiCallable[
         video_pb2.CameraInfo,
@@ -109,16 +124,25 @@ class VideoServiceAsyncStub:
     GoodBye: grpc.aio.UnaryUnaryMultiCallable[
         google.protobuf.empty_pb2.Empty,
         google.protobuf.empty_pb2.Empty,
+=======
+    GetDepth: grpc.aio.UnaryUnaryMultiCallable[
+        video_pb2.ViewRequest,
+        video_pb2.FrameRaw,
+>>>>>>> v1.0.9
     ]
 
 class VideoServiceServicer(metaclass=abc.ABCMeta):
     @abc.abstractmethod
-    def InitAllCameras(
+    def GetAvailableCameras(
         self,
         request: google.protobuf.empty_pb2.Empty,
         context: _ServicerContext,
+<<<<<<< HEAD
     ) -> typing.Union[video_pb2.ListOfCameraInfo, collections.abc.Awaitable[video_pb2.ListOfCameraInfo]]: ...
 
+=======
+    ) -> typing.Union[video_pb2.ListOfCameraFeatures, collections.abc.Awaitable[video_pb2.ListOfCameraFeatures]]: ...
+>>>>>>> v1.0.9
     @abc.abstractmethod
     def GetFrame(
         self,
@@ -127,17 +151,22 @@ class VideoServiceServicer(metaclass=abc.ABCMeta):
     ) -> typing.Union[video_pb2.Frame, collections.abc.Awaitable[video_pb2.Frame]]: ...
 
     @abc.abstractmethod
-    def GetDepthFrame(
+    def GetParameters(
         self,
         request: video_pb2.ViewRequest,
         context: _ServicerContext,
+<<<<<<< HEAD
     ) -> typing.Union[video_pb2.Frame, collections.abc.Awaitable[video_pb2.Frame]]: ...
 
+=======
+    ) -> typing.Union[video_pb2.CameraParameters, collections.abc.Awaitable[video_pb2.CameraParameters]]: ...
+>>>>>>> v1.0.9
     @abc.abstractmethod
-    def GetDepthMap(
+    def GetDepth(
         self,
-        request: video_pb2.CameraInfo,
+        request: video_pb2.ViewRequest,
         context: _ServicerContext,
+<<<<<<< HEAD
     ) -> typing.Union[video_pb2.Frame, collections.abc.Awaitable[video_pb2.Frame]]: ...
 
     @abc.abstractmethod
@@ -174,5 +203,8 @@ class VideoServiceServicer(metaclass=abc.ABCMeta):
         request: google.protobuf.empty_pb2.Empty,
         context: _ServicerContext,
     ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
+=======
+    ) -> typing.Union[video_pb2.FrameRaw, collections.abc.Awaitable[video_pb2.FrameRaw]]: ...
+>>>>>>> v1.0.9
 
 def add_VideoServiceServicer_to_server(servicer: VideoServiceServicer, server: typing.Union[grpc.Server, grpc.aio.Server]) -> None: ...

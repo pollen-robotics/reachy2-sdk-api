@@ -15,21 +15,22 @@ class VideoServiceStub(object):
         Args:
             channel: A grpc.Channel.
         """
-        self.InitAllCameras = channel.unary_unary(
-                '/component.video.VideoService/InitAllCameras',
+        self.GetAvailableCameras = channel.unary_unary(
+                '/component.video.VideoService/GetAvailableCameras',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-                response_deserializer=video__pb2.ListOfCameraInfo.FromString,
+                response_deserializer=video__pb2.ListOfCameraFeatures.FromString,
                 )
         self.GetFrame = channel.unary_unary(
                 '/component.video.VideoService/GetFrame',
                 request_serializer=video__pb2.ViewRequest.SerializeToString,
                 response_deserializer=video__pb2.Frame.FromString,
                 )
-        self.GetDepthFrame = channel.unary_unary(
-                '/component.video.VideoService/GetDepthFrame',
+        self.GetParameters = channel.unary_unary(
+                '/component.video.VideoService/GetParameters',
                 request_serializer=video__pb2.ViewRequest.SerializeToString,
-                response_deserializer=video__pb2.Frame.FromString,
+                response_deserializer=video__pb2.CameraParameters.FromString,
                 )
+<<<<<<< HEAD
         self.GetDepthMap = channel.unary_unary(
                 '/component.video.VideoService/GetDepthMap',
                 request_serializer=video__pb2.CameraInfo.SerializeToString,
@@ -59,13 +60,19 @@ class VideoServiceStub(object):
                 '/component.video.VideoService/GoodBye',
                 request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+=======
+        self.GetDepth = channel.unary_unary(
+                '/component.video.VideoService/GetDepth',
+                request_serializer=video__pb2.ViewRequest.SerializeToString,
+                response_deserializer=video__pb2.FrameRaw.FromString,
+>>>>>>> v1.0.9
                 )
 
 
 class VideoServiceServicer(object):
     """Missing associated documentation comment in .proto file."""
 
-    def InitAllCameras(self, request, context):
+    def GetAvailableCameras(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -77,12 +84,13 @@ class VideoServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
-    def GetDepthFrame(self, request, context):
+    def GetParameters(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+<<<<<<< HEAD
     def GetDepthMap(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
@@ -114,6 +122,9 @@ class VideoServiceServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def GoodBye(self, request, context):
+=======
+    def GetDepth(self, request, context):
+>>>>>>> v1.0.9
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -122,21 +133,22 @@ class VideoServiceServicer(object):
 
 def add_VideoServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
-            'InitAllCameras': grpc.unary_unary_rpc_method_handler(
-                    servicer.InitAllCameras,
+            'GetAvailableCameras': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetAvailableCameras,
                     request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
-                    response_serializer=video__pb2.ListOfCameraInfo.SerializeToString,
+                    response_serializer=video__pb2.ListOfCameraFeatures.SerializeToString,
             ),
             'GetFrame': grpc.unary_unary_rpc_method_handler(
                     servicer.GetFrame,
                     request_deserializer=video__pb2.ViewRequest.FromString,
                     response_serializer=video__pb2.Frame.SerializeToString,
             ),
-            'GetDepthFrame': grpc.unary_unary_rpc_method_handler(
-                    servicer.GetDepthFrame,
+            'GetParameters': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetParameters,
                     request_deserializer=video__pb2.ViewRequest.FromString,
-                    response_serializer=video__pb2.Frame.SerializeToString,
+                    response_serializer=video__pb2.CameraParameters.SerializeToString,
             ),
+<<<<<<< HEAD
             'GetDepthMap': grpc.unary_unary_rpc_method_handler(
                     servicer.GetDepthMap,
                     request_deserializer=video__pb2.CameraInfo.FromString,
@@ -166,6 +178,12 @@ def add_VideoServiceServicer_to_server(servicer, server):
                     servicer.GoodBye,
                     request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+=======
+            'GetDepth': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetDepth,
+                    request_deserializer=video__pb2.ViewRequest.FromString,
+                    response_serializer=video__pb2.FrameRaw.SerializeToString,
+>>>>>>> v1.0.9
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -178,7 +196,7 @@ class VideoService(object):
     """Missing associated documentation comment in .proto file."""
 
     @staticmethod
-    def InitAllCameras(request,
+    def GetAvailableCameras(request,
             target,
             options=(),
             channel_credentials=None,
@@ -188,9 +206,9 @@ class VideoService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/component.video.VideoService/InitAllCameras',
+        return grpc.experimental.unary_unary(request, target, '/component.video.VideoService/GetAvailableCameras',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-            video__pb2.ListOfCameraInfo.FromString,
+            video__pb2.ListOfCameraFeatures.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
@@ -212,7 +230,7 @@ class VideoService(object):
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
-    def GetDepthFrame(request,
+    def GetParameters(request,
             target,
             options=(),
             channel_credentials=None,
@@ -222,14 +240,14 @@ class VideoService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/component.video.VideoService/GetDepthFrame',
+        return grpc.experimental.unary_unary(request, target, '/component.video.VideoService/GetParameters',
             video__pb2.ViewRequest.SerializeToString,
-            video__pb2.Frame.FromString,
+            video__pb2.CameraParameters.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
-    def GetDepthMap(request,
+    def GetDepth(request,
             target,
             options=(),
             channel_credentials=None,
@@ -239,6 +257,7 @@ class VideoService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
+<<<<<<< HEAD
         return grpc.experimental.unary_unary(request, target, '/component.video.VideoService/GetDepthMap',
             video__pb2.CameraInfo.SerializeToString,
             video__pb2.Frame.FromString,
@@ -327,5 +346,10 @@ class VideoService(object):
         return grpc.experimental.unary_unary(request, target, '/component.video.VideoService/GoodBye',
             google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+=======
+        return grpc.experimental.unary_unary(request, target, '/component.video.VideoService/GetDepth',
+            video__pb2.ViewRequest.SerializeToString,
+            video__pb2.FrameRaw.FromString,
+>>>>>>> v1.0.9
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

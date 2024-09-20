@@ -55,6 +55,10 @@ namespace Reachy {
     static readonly grpc::Marshaller<global::Reachy.ReachyState> __Marshaller_reachy_ReachyState = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.ReachyState.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Reachy.ReachyStreamStateRequest> __Marshaller_reachy_ReachyStreamStateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.ReachyStreamStateRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Reachy.ReachyStatus> __Marshaller_reachy_ReachyStatus = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.ReachyStatus.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Reachy.ReachyStreamAuditRequest> __Marshaller_reachy_ReachyStreamAuditRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Reachy.ReachyStreamAuditRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Reachy.Reachy> __Method_GetReachy = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Reachy.Reachy>(
@@ -80,6 +84,22 @@ namespace Reachy {
         __Marshaller_reachy_ReachyStreamStateRequest,
         __Marshaller_reachy_ReachyState);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.ReachyId, global::Reachy.ReachyStatus> __Method_Audit = new grpc::Method<global::Reachy.ReachyId, global::Reachy.ReachyStatus>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "Audit",
+        __Marshaller_reachy_ReachyId,
+        __Marshaller_reachy_ReachyStatus);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Reachy.ReachyStreamAuditRequest, global::Reachy.ReachyStatus> __Method_StreamAudit = new grpc::Method<global::Reachy.ReachyStreamAuditRequest, global::Reachy.ReachyStatus>(
+        grpc::MethodType.ServerStreaming,
+        __ServiceName,
+        "StreamAudit",
+        __Marshaller_reachy_ReachyStreamAuditRequest,
+        __Marshaller_reachy_ReachyStatus);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -104,6 +124,18 @@ namespace Reachy {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task StreamReachyState(global::Reachy.ReachyStreamStateRequest request, grpc::IServerStreamWriter<global::Reachy.ReachyState> responseStream, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Reachy.ReachyStatus> Audit(global::Reachy.ReachyId request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task StreamAudit(global::Reachy.ReachyStreamAuditRequest request, grpc::IServerStreamWriter<global::Reachy.ReachyStatus> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -187,6 +219,36 @@ namespace Reachy {
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_StreamReachyState, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.ReachyStatus Audit(global::Reachy.ReachyId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return Audit(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Reachy.ReachyStatus Audit(global::Reachy.ReachyId request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_Audit, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.ReachyStatus> AuditAsync(global::Reachy.ReachyId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AuditAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Reachy.ReachyStatus> AuditAsync(global::Reachy.ReachyId request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_Audit, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::Reachy.ReachyStatus> StreamAudit(global::Reachy.ReachyStreamAuditRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return StreamAudit(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncServerStreamingCall<global::Reachy.ReachyStatus> StreamAudit(global::Reachy.ReachyStreamAuditRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncServerStreamingCall(__Method_StreamAudit, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override ReachyServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -203,7 +265,9 @@ namespace Reachy {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetReachy, serviceImpl.GetReachy)
           .AddMethod(__Method_GetReachyState, serviceImpl.GetReachyState)
-          .AddMethod(__Method_StreamReachyState, serviceImpl.StreamReachyState).Build();
+          .AddMethod(__Method_StreamReachyState, serviceImpl.StreamReachyState)
+          .AddMethod(__Method_Audit, serviceImpl.Audit)
+          .AddMethod(__Method_StreamAudit, serviceImpl.StreamAudit).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -216,6 +280,8 @@ namespace Reachy {
       serviceBinder.AddMethod(__Method_GetReachy, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::Reachy.Reachy>(serviceImpl.GetReachy));
       serviceBinder.AddMethod(__Method_GetReachyState, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.ReachyId, global::Reachy.ReachyState>(serviceImpl.GetReachyState));
       serviceBinder.AddMethod(__Method_StreamReachyState, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Reachy.ReachyStreamStateRequest, global::Reachy.ReachyState>(serviceImpl.StreamReachyState));
+      serviceBinder.AddMethod(__Method_Audit, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.ReachyId, global::Reachy.ReachyStatus>(serviceImpl.Audit));
+      serviceBinder.AddMethod(__Method_StreamAudit, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::Reachy.ReachyStreamAuditRequest, global::Reachy.ReachyStatus>(serviceImpl.StreamAudit));
     }
 
   }

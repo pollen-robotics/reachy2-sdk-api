@@ -206,14 +206,25 @@ global___JointsLimits = JointsLimits
 class ParallelGripperPosition(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
+    OPENING_PERCENTAGE_FIELD_NUMBER: builtins.int
     POSITION_FIELD_NUMBER: builtins.int
-    position: builtins.float
+    @property
+    def opening_percentage(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    @property
+    def position(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
     def __init__(
         self,
         *,
-        position: builtins.float = ...,
+        opening_percentage: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        position: google.protobuf.wrappers_pb2.FloatValue | None = ...,
     ) -> None: ...
+<<<<<<< HEAD
     def ClearField(self, field_name: typing.Literal["position", b"position"]) -> None: ...
+=======
+    def HasField(self, field_name: typing_extensions.Literal["gripper_position", b"gripper_position", "opening_percentage", b"opening_percentage", "position", b"position"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["gripper_position", b"gripper_position", "opening_percentage", b"opening_percentage", "position", b"position"]) -> None: ...
+    def WhichOneof(self, oneof_group: typing_extensions.Literal["gripper_position", b"gripper_position"]) -> typing_extensions.Literal["opening_percentage", "position"] | None: ...
+>>>>>>> v1.0.9
 
 global___ParallelGripperPosition = ParallelGripperPosition
 
