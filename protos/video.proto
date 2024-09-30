@@ -37,7 +37,7 @@ message CameraParameters {
 }
 
 message CameraExtrinsics {
-    reachy.kinematics.Matrix4x4 extrincics = 1;
+    reachy.kinematics.Matrix4x4 extrinsics = 1;
 }
 
 message ListOfCameraFeatures {
