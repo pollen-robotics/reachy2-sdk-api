@@ -34,7 +34,7 @@ namespace Component.Video {
             "YXJhbWV0ZXJzEg4KBmhlaWdodBgBIAEoDRINCgV3aWR0aBgCIAEoDRIYChBk",
             "aXN0b3J0aW9uX21vZGVsGAMgASgJEgkKAUQYBCADKAISCQoBSxgFIAMoAhIJ",
             "CgFSGAYgAygCEgkKAVAYByADKAIiRAoQQ2FtZXJhRXh0cmluc2ljcxIwCgpl",
-            "eHRyaW5jaWNzGAEgASgLMhwucmVhY2h5LmtpbmVtYXRpY3MuTWF0cml4NHg0",
+            "eHRyaW5zaWNzGAEgASgLMhwucmVhY2h5LmtpbmVtYXRpY3MuTWF0cml4NHg0",
             "IkwKFExpc3RPZkNhbWVyYUZlYXR1cmVzEjQKC2NhbWVyYV9mZWF0GAEgAygL",
             "Mh8uY29tcG9uZW50LnZpZGVvLkNhbWVyYUZlYXR1cmVzIkQKBUZyYW1lEi0K",
             "CXRpbWVzdGFtcBgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAS",
@@ -61,7 +61,7 @@ namespace Component.Video {
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.VideoAck), global::Component.Video.VideoAck.Parser, new[]{ "Success", "Error" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.CameraFeatures), global::Component.Video.CameraFeatures.Parser, new[]{ "Name", "Stereo", "Depth" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.CameraParameters), global::Component.Video.CameraParameters.Parser, new[]{ "Height", "Width", "DistortionModel", "D", "K", "R", "P" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.CameraExtrinsics), global::Component.Video.CameraExtrinsics.Parser, new[]{ "Extrincics" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.CameraExtrinsics), global::Component.Video.CameraExtrinsics.Parser, new[]{ "Extrinsics" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.ListOfCameraFeatures), global::Component.Video.ListOfCameraFeatures.Parser, new[]{ "CameraFeat" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.Frame), global::Component.Video.Frame.Parser, new[]{ "Timestamp", "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.FrameRaw), global::Component.Video.FrameRaw.Parser, new[]{ "Timestamp", "Data", "Height", "Width", "Encoding", "Step", "Isbigendian" }, null, null, null, null),
@@ -996,7 +996,7 @@ namespace Component.Video {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CameraExtrinsics(CameraExtrinsics other) : this() {
-      extrincics_ = other.extrincics_ != null ? other.extrincics_.Clone() : null;
+      extrinsics_ = other.extrinsics_ != null ? other.extrinsics_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1006,15 +1006,15 @@ namespace Component.Video {
       return new CameraExtrinsics(this);
     }
 
-    /// <summary>Field number for the "extrincics" field.</summary>
-    public const int ExtrincicsFieldNumber = 1;
-    private global::Reachy.Kinematics.Matrix4x4 extrincics_;
+    /// <summary>Field number for the "extrinsics" field.</summary>
+    public const int ExtrinsicsFieldNumber = 1;
+    private global::Reachy.Kinematics.Matrix4x4 extrinsics_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Reachy.Kinematics.Matrix4x4 Extrincics {
-      get { return extrincics_; }
+    public global::Reachy.Kinematics.Matrix4x4 Extrinsics {
+      get { return extrinsics_; }
       set {
-        extrincics_ = value;
+        extrinsics_ = value;
       }
     }
 
@@ -1033,7 +1033,7 @@ namespace Component.Video {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Extrincics, other.Extrincics)) return false;
+      if (!object.Equals(Extrinsics, other.Extrinsics)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1041,7 +1041,7 @@ namespace Component.Video {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (extrincics_ != null) hash ^= Extrincics.GetHashCode();
+      if (extrinsics_ != null) hash ^= Extrinsics.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1060,9 +1060,9 @@ namespace Component.Video {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (extrincics_ != null) {
+      if (extrinsics_ != null) {
         output.WriteRawTag(10);
-        output.WriteMessage(Extrincics);
+        output.WriteMessage(Extrinsics);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1074,9 +1074,9 @@ namespace Component.Video {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (extrincics_ != null) {
+      if (extrinsics_ != null) {
         output.WriteRawTag(10);
-        output.WriteMessage(Extrincics);
+        output.WriteMessage(Extrinsics);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1088,8 +1088,8 @@ namespace Component.Video {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (extrincics_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Extrincics);
+      if (extrinsics_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Extrinsics);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1103,11 +1103,11 @@ namespace Component.Video {
       if (other == null) {
         return;
       }
-      if (other.extrincics_ != null) {
-        if (extrincics_ == null) {
-          Extrincics = new global::Reachy.Kinematics.Matrix4x4();
+      if (other.extrinsics_ != null) {
+        if (extrinsics_ == null) {
+          Extrinsics = new global::Reachy.Kinematics.Matrix4x4();
         }
-        Extrincics.MergeFrom(other.Extrincics);
+        Extrinsics.MergeFrom(other.Extrinsics);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1125,10 +1125,10 @@ namespace Component.Video {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (extrincics_ == null) {
-              Extrincics = new global::Reachy.Kinematics.Matrix4x4();
+            if (extrinsics_ == null) {
+              Extrinsics = new global::Reachy.Kinematics.Matrix4x4();
             }
-            input.ReadMessage(Extrincics);
+            input.ReadMessage(Extrinsics);
             break;
           }
         }
@@ -1147,10 +1147,10 @@ namespace Component.Video {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            if (extrincics_ == null) {
-              Extrincics = new global::Reachy.Kinematics.Matrix4x4();
+            if (extrinsics_ == null) {
+              Extrinsics = new global::Reachy.Kinematics.Matrix4x4();
             }
-            input.ReadMessage(Extrincics);
+            input.ReadMessage(Extrinsics);
             break;
           }
         }
