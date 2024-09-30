@@ -5,6 +5,7 @@ import "google/protobuf/wrappers.proto";
 import "google/protobuf/timestamp.proto";
 
 import "error.proto";
+import "kinematics.proto";
 
 package component.video;
 
@@ -20,9 +21,9 @@ message VideoAck {
 }
 
 message CameraFeatures {
-    string name = 2;
-    bool stereo = 3;
-    bool depth = 4;
+    string name = 1;
+    bool stereo = 2;
+    bool depth = 3;
 }
 
 message CameraParameters {
@@ -33,6 +34,10 @@ message CameraParameters {
     repeated float K = 5;
     repeated float R = 6;
     repeated float P = 7;
+}
+
+message CameraExtrinsics {
+    reachy.kinematics.Matrix4x4 extrincics = 1;
 }
 
 message ListOfCameraFeatures {
@@ -64,4 +69,5 @@ service VideoService {
     rpc GetFrame (ViewRequest) returns (Frame);
     rpc GetParameters (ViewRequest) returns (CameraParameters);
     rpc GetDepth (ViewRequest) returns (FrameRaw);
+    rpc GetExtrinsics (ViewRequest) returns (CameraExtrinsics);
 }
