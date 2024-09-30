@@ -27,36 +27,41 @@ namespace Component.Video {
             "Cgt2aWRlby5wcm90bxIPY29tcG9uZW50LnZpZGVvGhtnb29nbGUvcHJvdG9i",
             "dWYvZW1wdHkucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90",
             "bxofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90bxoLZXJyb3IucHJv",
-            "dG8iVAoIVmlkZW9BY2sSKwoHc3VjY2VzcxgBIAEoCzIaLmdvb2dsZS5wcm90",
-            "b2J1Zi5Cb29sVmFsdWUSGwoFZXJyb3IYAiABKAsyDC5lcnJvci5FcnJvciI9",
-            "Cg5DYW1lcmFGZWF0dXJlcxIMCgRuYW1lGAIgASgJEg4KBnN0ZXJlbxgDIAEo",
-            "CBINCgVkZXB0aBgEIAEoCCJ3ChBDYW1lcmFQYXJhbWV0ZXJzEg4KBmhlaWdo",
-            "dBgBIAEoDRINCgV3aWR0aBgCIAEoDRIYChBkaXN0b3J0aW9uX21vZGVsGAMg",
-            "ASgJEgkKAUQYBCADKAISCQoBSxgFIAMoAhIJCgFSGAYgAygCEgkKAVAYByAD",
-            "KAIiTAoUTGlzdE9mQ2FtZXJhRmVhdHVyZXMSNAoLY2FtZXJhX2ZlYXQYASAD",
-            "KAsyHy5jb21wb25lbnQudmlkZW8uQ2FtZXJhRmVhdHVyZXMiRAoFRnJhbWUS",
-            "LQoJdGltZXN0YW1wGAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
-            "cBIMCgRkYXRhGAIgASgMIpsBCghGcmFtZVJhdxItCgl0aW1lc3RhbXAYASAB",
-            "KAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEgwKBGRhdGEYAiABKAwS",
-            "DgoGaGVpZ2h0GAMgASgNEg0KBXdpZHRoGAQgASgNEhAKCGVuY29kaW5nGAUg",
-            "ASgJEgwKBHN0ZXAYBiABKA0SEwoLaXNiaWdlbmRpYW4YByABKAgidgoLVmll",
-            "d1JlcXVlc3QSNAoLY2FtZXJhX2ZlYXQYASABKAsyHy5jb21wb25lbnQudmlk",
-            "ZW8uQ2FtZXJhRmVhdHVyZXMSKAoEdmlldxgCIAEoDjIVLmNvbXBvbmVudC52",
-            "aWRlby5WaWV3SACIAQFCBwoFX3ZpZXcqJgoEVmlldxIICgRMRUZUEAASCQoF",
-            "UklHSFQQARIJCgVERVBUSBACMr0CCgxWaWRlb1NlcnZpY2USVAoTR2V0QXZh",
-            "aWxhYmxlQ2FtZXJhcxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRolLmNvbXBv",
-            "bmVudC52aWRlby5MaXN0T2ZDYW1lcmFGZWF0dXJlcxJACghHZXRGcmFtZRIc",
-            "LmNvbXBvbmVudC52aWRlby5WaWV3UmVxdWVzdBoWLmNvbXBvbmVudC52aWRl",
-            "by5GcmFtZRJQCg1HZXRQYXJhbWV0ZXJzEhwuY29tcG9uZW50LnZpZGVvLlZp",
-            "ZXdSZXF1ZXN0GiEuY29tcG9uZW50LnZpZGVvLkNhbWVyYVBhcmFtZXRlcnMS",
-            "QwoIR2V0RGVwdGgSHC5jb21wb25lbnQudmlkZW8uVmlld1JlcXVlc3QaGS5j",
-            "b21wb25lbnQudmlkZW8uRnJhbWVSYXdiBnByb3RvMw=="));
+            "dG8aEGtpbmVtYXRpY3MucHJvdG8iVAoIVmlkZW9BY2sSKwoHc3VjY2VzcxgB",
+            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUSGwoFZXJyb3IYAiAB",
+            "KAsyDC5lcnJvci5FcnJvciI9Cg5DYW1lcmFGZWF0dXJlcxIMCgRuYW1lGAEg",
+            "ASgJEg4KBnN0ZXJlbxgCIAEoCBINCgVkZXB0aBgDIAEoCCJ3ChBDYW1lcmFQ",
+            "YXJhbWV0ZXJzEg4KBmhlaWdodBgBIAEoDRINCgV3aWR0aBgCIAEoDRIYChBk",
+            "aXN0b3J0aW9uX21vZGVsGAMgASgJEgkKAUQYBCADKAISCQoBSxgFIAMoAhIJ",
+            "CgFSGAYgAygCEgkKAVAYByADKAIiRAoQQ2FtZXJhRXh0cmluc2ljcxIwCgpl",
+            "eHRyaW5jaWNzGAEgASgLMhwucmVhY2h5LmtpbmVtYXRpY3MuTWF0cml4NHg0",
+            "IkwKFExpc3RPZkNhbWVyYUZlYXR1cmVzEjQKC2NhbWVyYV9mZWF0GAEgAygL",
+            "Mh8uY29tcG9uZW50LnZpZGVvLkNhbWVyYUZlYXR1cmVzIkQKBUZyYW1lEi0K",
+            "CXRpbWVzdGFtcBgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAS",
+            "DAoEZGF0YRgCIAEoDCKbAQoIRnJhbWVSYXcSLQoJdGltZXN0YW1wGAEgASgL",
+            "MhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIMCgRkYXRhGAIgASgMEg4K",
+            "BmhlaWdodBgDIAEoDRINCgV3aWR0aBgEIAEoDRIQCghlbmNvZGluZxgFIAEo",
+            "CRIMCgRzdGVwGAYgASgNEhMKC2lzYmlnZW5kaWFuGAcgASgIInYKC1ZpZXdS",
+            "ZXF1ZXN0EjQKC2NhbWVyYV9mZWF0GAEgASgLMh8uY29tcG9uZW50LnZpZGVv",
+            "LkNhbWVyYUZlYXR1cmVzEigKBHZpZXcYAiABKA4yFS5jb21wb25lbnQudmlk",
+            "ZW8uVmlld0gAiAEBQgcKBV92aWV3KiYKBFZpZXcSCAoETEVGVBAAEgkKBVJJ",
+            "R0hUEAESCQoFREVQVEgQAjKPAwoMVmlkZW9TZXJ2aWNlElQKE0dldEF2YWls",
+            "YWJsZUNhbWVyYXMSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaJS5jb21wb25l",
+            "bnQudmlkZW8uTGlzdE9mQ2FtZXJhRmVhdHVyZXMSQAoIR2V0RnJhbWUSHC5j",
+            "b21wb25lbnQudmlkZW8uVmlld1JlcXVlc3QaFi5jb21wb25lbnQudmlkZW8u",
+            "RnJhbWUSUAoNR2V0UGFyYW1ldGVycxIcLmNvbXBvbmVudC52aWRlby5WaWV3",
+            "UmVxdWVzdBohLmNvbXBvbmVudC52aWRlby5DYW1lcmFQYXJhbWV0ZXJzEkMK",
+            "CEdldERlcHRoEhwuY29tcG9uZW50LnZpZGVvLlZpZXdSZXF1ZXN0GhkuY29t",
+            "cG9uZW50LnZpZGVvLkZyYW1lUmF3ElAKDUdldEV4dHJpbnNpY3MSHC5jb21w",
+            "b25lbnQudmlkZW8uVmlld1JlcXVlc3QaIS5jb21wb25lbnQudmlkZW8uQ2Ft",
+            "ZXJhRXh0cmluc2ljc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Error.ErrorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Error.ErrorReflection.Descriptor, global::Reachy.Kinematics.KinematicsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Component.Video.View), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.VideoAck), global::Component.Video.VideoAck.Parser, new[]{ "Success", "Error" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.CameraFeatures), global::Component.Video.CameraFeatures.Parser, new[]{ "Name", "Stereo", "Depth" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.CameraParameters), global::Component.Video.CameraParameters.Parser, new[]{ "Height", "Width", "DistortionModel", "D", "K", "R", "P" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.CameraExtrinsics), global::Component.Video.CameraExtrinsics.Parser, new[]{ "Extrincics" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.ListOfCameraFeatures), global::Component.Video.ListOfCameraFeatures.Parser, new[]{ "CameraFeat" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.Frame), global::Component.Video.Frame.Parser, new[]{ "Timestamp", "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Video.FrameRaw), global::Component.Video.FrameRaw.Parser, new[]{ "Timestamp", "Data", "Height", "Width", "Encoding", "Step", "Isbigendian" }, null, null, null, null),
@@ -366,7 +371,7 @@ namespace Component.Video {
     }
 
     /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 2;
+    public const int NameFieldNumber = 1;
     private string name_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -378,7 +383,7 @@ namespace Component.Video {
     }
 
     /// <summary>Field number for the "stereo" field.</summary>
-    public const int StereoFieldNumber = 3;
+    public const int StereoFieldNumber = 2;
     private bool stereo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -390,7 +395,7 @@ namespace Component.Video {
     }
 
     /// <summary>Field number for the "depth" field.</summary>
-    public const int DepthFieldNumber = 4;
+    public const int DepthFieldNumber = 3;
     private bool depth_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -448,15 +453,15 @@ namespace Component.Video {
       output.WriteRawMessage(this);
     #else
       if (Name.Length != 0) {
-        output.WriteRawTag(18);
+        output.WriteRawTag(10);
         output.WriteString(Name);
       }
       if (Stereo != false) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(16);
         output.WriteBool(Stereo);
       }
       if (Depth != false) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(24);
         output.WriteBool(Depth);
       }
       if (_unknownFields != null) {
@@ -470,15 +475,15 @@ namespace Component.Video {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Name.Length != 0) {
-        output.WriteRawTag(18);
+        output.WriteRawTag(10);
         output.WriteString(Name);
       }
       if (Stereo != false) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(16);
         output.WriteBool(Stereo);
       }
       if (Depth != false) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(24);
         output.WriteBool(Depth);
       }
       if (_unknownFields != null) {
@@ -536,15 +541,15 @@ namespace Component.Video {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 18: {
+          case 10: {
             Name = input.ReadString();
             break;
           }
-          case 24: {
+          case 16: {
             Stereo = input.ReadBool();
             break;
           }
-          case 32: {
+          case 24: {
             Depth = input.ReadBool();
             break;
           }
@@ -563,15 +568,15 @@ namespace Component.Video {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 18: {
+          case 10: {
             Name = input.ReadString();
             break;
           }
-          case 24: {
+          case 16: {
             Stereo = input.ReadBool();
             break;
           }
-          case 32: {
+          case 24: {
             Depth = input.ReadBool();
             break;
           }
@@ -957,6 +962,204 @@ namespace Component.Video {
 
   }
 
+  public sealed partial class CameraExtrinsics : pb::IMessage<CameraExtrinsics>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CameraExtrinsics> _parser = new pb::MessageParser<CameraExtrinsics>(() => new CameraExtrinsics());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CameraExtrinsics> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Component.Video.VideoReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CameraExtrinsics() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CameraExtrinsics(CameraExtrinsics other) : this() {
+      extrincics_ = other.extrincics_ != null ? other.extrincics_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CameraExtrinsics Clone() {
+      return new CameraExtrinsics(this);
+    }
+
+    /// <summary>Field number for the "extrincics" field.</summary>
+    public const int ExtrincicsFieldNumber = 1;
+    private global::Reachy.Kinematics.Matrix4x4 extrincics_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Kinematics.Matrix4x4 Extrincics {
+      get { return extrincics_; }
+      set {
+        extrincics_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CameraExtrinsics);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CameraExtrinsics other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Extrincics, other.Extrincics)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (extrincics_ != null) hash ^= Extrincics.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (extrincics_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Extrincics);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (extrincics_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Extrincics);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (extrincics_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Extrincics);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CameraExtrinsics other) {
+      if (other == null) {
+        return;
+      }
+      if (other.extrincics_ != null) {
+        if (extrincics_ == null) {
+          Extrincics = new global::Reachy.Kinematics.Matrix4x4();
+        }
+        Extrincics.MergeFrom(other.Extrincics);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (extrincics_ == null) {
+              Extrincics = new global::Reachy.Kinematics.Matrix4x4();
+            }
+            input.ReadMessage(Extrincics);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (extrincics_ == null) {
+              Extrincics = new global::Reachy.Kinematics.Matrix4x4();
+            }
+            input.ReadMessage(Extrincics);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class ListOfCameraFeatures : pb::IMessage<ListOfCameraFeatures>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -971,7 +1174,7 @@ namespace Component.Video {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Component.Video.VideoReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Component.Video.VideoReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1149,7 +1352,7 @@ namespace Component.Video {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Component.Video.VideoReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Component.Video.VideoReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1384,7 +1587,7 @@ namespace Component.Video {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Component.Video.VideoReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Component.Video.VideoReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1805,7 +2008,7 @@ namespace Component.Video {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Component.Video.VideoReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Component.Video.VideoReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
