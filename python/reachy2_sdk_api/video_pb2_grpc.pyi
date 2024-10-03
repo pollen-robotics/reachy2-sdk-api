@@ -36,6 +36,10 @@ class VideoServiceStub:
         video_pb2.ViewRequest,
         video_pb2.FrameRaw,
     ]
+    GetExtrinsics: grpc.UnaryUnaryMultiCallable[
+        video_pb2.ViewRequest,
+        video_pb2.CameraExtrinsics,
+    ]
 
 class VideoServiceAsyncStub:
     GetAvailableCameras: grpc.aio.UnaryUnaryMultiCallable[
@@ -53,6 +57,10 @@ class VideoServiceAsyncStub:
     GetDepth: grpc.aio.UnaryUnaryMultiCallable[
         video_pb2.ViewRequest,
         video_pb2.FrameRaw,
+    ]
+    GetExtrinsics: grpc.aio.UnaryUnaryMultiCallable[
+        video_pb2.ViewRequest,
+        video_pb2.CameraExtrinsics,
     ]
 
 class VideoServiceServicer(metaclass=abc.ABCMeta):
@@ -80,5 +88,11 @@ class VideoServiceServicer(metaclass=abc.ABCMeta):
         request: video_pb2.ViewRequest,
         context: _ServicerContext,
     ) -> typing.Union[video_pb2.FrameRaw, collections.abc.Awaitable[video_pb2.FrameRaw]]: ...
+    @abc.abstractmethod
+    def GetExtrinsics(
+        self,
+        request: video_pb2.ViewRequest,
+        context: _ServicerContext,
+    ) -> typing.Union[video_pb2.CameraExtrinsics, collections.abc.Awaitable[video_pb2.CameraExtrinsics]]: ...
 
 def add_VideoServiceServicer_to_server(servicer: VideoServiceServicer, server: typing.Union[grpc.Server, grpc.aio.Server]) -> None: ...

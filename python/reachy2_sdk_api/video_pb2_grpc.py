@@ -35,6 +35,11 @@ class VideoServiceStub(object):
                 request_serializer=video__pb2.ViewRequest.SerializeToString,
                 response_deserializer=video__pb2.FrameRaw.FromString,
                 )
+        self.GetExtrinsics = channel.unary_unary(
+                '/component.video.VideoService/GetExtrinsics',
+                request_serializer=video__pb2.ViewRequest.SerializeToString,
+                response_deserializer=video__pb2.CameraExtrinsics.FromString,
+                )
 
 
 class VideoServiceServicer(object):
@@ -64,6 +69,12 @@ class VideoServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def GetExtrinsics(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
 
 def add_VideoServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
@@ -86,6 +97,11 @@ def add_VideoServiceServicer_to_server(servicer, server):
                     servicer.GetDepth,
                     request_deserializer=video__pb2.ViewRequest.FromString,
                     response_serializer=video__pb2.FrameRaw.SerializeToString,
+            ),
+            'GetExtrinsics': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetExtrinsics,
+                    request_deserializer=video__pb2.ViewRequest.FromString,
+                    response_serializer=video__pb2.CameraExtrinsics.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -162,5 +178,22 @@ class VideoService(object):
         return grpc.experimental.unary_unary(request, target, '/component.video.VideoService/GetDepth',
             video__pb2.ViewRequest.SerializeToString,
             video__pb2.FrameRaw.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def GetExtrinsics(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/component.video.VideoService/GetExtrinsics',
+            video__pb2.ViewRequest.SerializeToString,
+            video__pb2.CameraExtrinsics.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

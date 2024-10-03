@@ -11,6 +11,7 @@ import google.protobuf.internal.enum_type_wrapper
 import google.protobuf.message
 import google.protobuf.timestamp_pb2
 import google.protobuf.wrappers_pb2
+import kinematics_pb2
 import sys
 import typing
 
@@ -116,6 +117,23 @@ class CameraParameters(google.protobuf.message.Message):
     def ClearField(self, field_name: typing_extensions.Literal["D", b"D", "K", b"K", "P", b"P", "R", b"R", "distortion_model", b"distortion_model", "height", b"height", "width", b"width"]) -> None: ...
 
 global___CameraParameters = CameraParameters
+
+@typing_extensions.final
+class CameraExtrinsics(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    EXTRINSICS_FIELD_NUMBER: builtins.int
+    @property
+    def extrinsics(self) -> kinematics_pb2.Matrix4x4: ...
+    def __init__(
+        self,
+        *,
+        extrinsics: kinematics_pb2.Matrix4x4 | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["extrinsics", b"extrinsics"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["extrinsics", b"extrinsics"]) -> None: ...
+
+global___CameraExtrinsics = CameraExtrinsics
 
 @typing_extensions.final
 class ListOfCameraFeatures(google.protobuf.message.Message):

@@ -57,6 +57,8 @@ namespace Component.Video {
     static readonly grpc::Marshaller<global::Component.Video.CameraParameters> __Marshaller_component_video_CameraParameters = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Component.Video.CameraParameters.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Component.Video.FrameRaw> __Marshaller_component_video_FrameRaw = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Component.Video.FrameRaw.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Component.Video.CameraExtrinsics> __Marshaller_component_video_CameraExtrinsics = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Component.Video.CameraExtrinsics.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Component.Video.ListOfCameraFeatures> __Method_GetAvailableCameras = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::Component.Video.ListOfCameraFeatures>(
@@ -90,6 +92,14 @@ namespace Component.Video {
         __Marshaller_component_video_ViewRequest,
         __Marshaller_component_video_FrameRaw);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Component.Video.ViewRequest, global::Component.Video.CameraExtrinsics> __Method_GetExtrinsics = new grpc::Method<global::Component.Video.ViewRequest, global::Component.Video.CameraExtrinsics>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetExtrinsics",
+        __Marshaller_component_video_ViewRequest,
+        __Marshaller_component_video_CameraExtrinsics);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -120,6 +130,12 @@ namespace Component.Video {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Component.Video.FrameRaw> GetDepth(global::Component.Video.ViewRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Component.Video.CameraExtrinsics> GetExtrinsics(global::Component.Video.ViewRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -233,6 +249,26 @@ namespace Component.Video {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetDepth, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Component.Video.CameraExtrinsics GetExtrinsics(global::Component.Video.ViewRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetExtrinsics(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Component.Video.CameraExtrinsics GetExtrinsics(global::Component.Video.ViewRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetExtrinsics, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Component.Video.CameraExtrinsics> GetExtrinsicsAsync(global::Component.Video.ViewRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetExtrinsicsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Component.Video.CameraExtrinsics> GetExtrinsicsAsync(global::Component.Video.ViewRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetExtrinsics, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override VideoServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -250,7 +286,8 @@ namespace Component.Video {
           .AddMethod(__Method_GetAvailableCameras, serviceImpl.GetAvailableCameras)
           .AddMethod(__Method_GetFrame, serviceImpl.GetFrame)
           .AddMethod(__Method_GetParameters, serviceImpl.GetParameters)
-          .AddMethod(__Method_GetDepth, serviceImpl.GetDepth).Build();
+          .AddMethod(__Method_GetDepth, serviceImpl.GetDepth)
+          .AddMethod(__Method_GetExtrinsics, serviceImpl.GetExtrinsics).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -264,6 +301,7 @@ namespace Component.Video {
       serviceBinder.AddMethod(__Method_GetFrame, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Component.Video.ViewRequest, global::Component.Video.Frame>(serviceImpl.GetFrame));
       serviceBinder.AddMethod(__Method_GetParameters, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Component.Video.ViewRequest, global::Component.Video.CameraParameters>(serviceImpl.GetParameters));
       serviceBinder.AddMethod(__Method_GetDepth, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Component.Video.ViewRequest, global::Component.Video.FrameRaw>(serviceImpl.GetDepth));
+      serviceBinder.AddMethod(__Method_GetExtrinsics, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Component.Video.ViewRequest, global::Component.Video.CameraExtrinsics>(serviceImpl.GetExtrinsics));
     }
 
   }
