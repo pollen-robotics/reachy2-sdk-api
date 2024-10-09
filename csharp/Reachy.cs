@@ -63,15 +63,15 @@ namespace Reachy {
             "dBIcCgJpZBgBIAEoCzIQLnJlYWNoeS5SZWFjaHlJZBIZChFwdWJsaXNoX2Zy",
             "ZXF1ZW5jeRgCIAEoAiJTChhSZWFjaHlTdHJlYW1BdWRpdFJlcXVlc3QSHAoC",
             "aWQYASABKAsyEC5yZWFjaHkuUmVhY2h5SWQSGQoRcHVibGlzaF9mcmVxdWVu",
-            "Y3kYAiABKAIqLgoOUmVhY2h5Q29yZU1vZGUSCAoETk9ORRAAEggKBEZBS0UQ",
-            "ARIICgRSRUFMEAIyxQIKDVJlYWNoeVNlcnZpY2USMwoJR2V0UmVhY2h5EhYu",
-            "Z29vZ2xlLnByb3RvYnVmLkVtcHR5Gg4ucmVhY2h5LlJlYWNoeRI3Cg5HZXRS",
-            "ZWFjaHlTdGF0ZRIQLnJlYWNoeS5SZWFjaHlJZBoTLnJlYWNoeS5SZWFjaHlT",
-            "dGF0ZRJMChFTdHJlYW1SZWFjaHlTdGF0ZRIgLnJlYWNoeS5SZWFjaHlTdHJl",
-            "YW1TdGF0ZVJlcXVlc3QaEy5yZWFjaHkuUmVhY2h5U3RhdGUwARIvCgVBdWRp",
-            "dBIQLnJlYWNoeS5SZWFjaHlJZBoULnJlYWNoeS5SZWFjaHlTdGF0dXMSRwoL",
-            "U3RyZWFtQXVkaXQSIC5yZWFjaHkuUmVhY2h5U3RyZWFtQXVkaXRSZXF1ZXN0",
-            "GhQucmVhY2h5LlJlYWNoeVN0YXR1czABYgZwcm90bzM="));
+            "Y3kYAiABKAIqOgoOUmVhY2h5Q29yZU1vZGUSCAoETk9ORRAAEggKBEZBS0UQ",
+            "ARIICgRSRUFMEAISCgoGR0FaRUJPEAMyxQIKDVJlYWNoeVNlcnZpY2USMwoJ",
+            "R2V0UmVhY2h5EhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Gg4ucmVhY2h5LlJl",
+            "YWNoeRI3Cg5HZXRSZWFjaHlTdGF0ZRIQLnJlYWNoeS5SZWFjaHlJZBoTLnJl",
+            "YWNoeS5SZWFjaHlTdGF0ZRJMChFTdHJlYW1SZWFjaHlTdGF0ZRIgLnJlYWNo",
+            "eS5SZWFjaHlTdHJlYW1TdGF0ZVJlcXVlc3QaEy5yZWFjaHkuUmVhY2h5U3Rh",
+            "dGUwARIvCgVBdWRpdBIQLnJlYWNoeS5SZWFjaHlJZBoULnJlYWNoeS5SZWFj",
+            "aHlTdGF0dXMSRwoLU3RyZWFtQXVkaXQSIC5yZWFjaHkuUmVhY2h5U3RyZWFt",
+            "QXVkaXRSZXF1ZXN0GhQucmVhY2h5LlJlYWNoeVN0YXR1czABYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Reachy.Part.Mobile.Base.Utility.MobileBaseUtilityReflection.Descriptor, global::Component.Sound.SoundReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.ReachyCoreMode), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -92,6 +92,7 @@ namespace Reachy {
     [pbr::OriginalName("NONE")] None = 0,
     [pbr::OriginalName("FAKE")] Fake = 1,
     [pbr::OriginalName("REAL")] Real = 2,
+    [pbr::OriginalName("GAZEBO")] Gazebo = 3,
   }
 
   #endregion
