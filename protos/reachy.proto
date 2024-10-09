@@ -47,6 +47,7 @@ enum ReachyCoreMode {
     NONE = 0;
     FAKE = 1;
     REAL = 2;
+    GAZEBO = 3;
 }
 
 message ReachyState {
