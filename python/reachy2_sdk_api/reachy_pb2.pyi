@@ -5,6 +5,7 @@ isort:skip_file
 import arm_pb2
 import builtins
 import google.protobuf.descriptor
+import google.protobuf.internal.enum_type_wrapper
 import google.protobuf.message
 import google.protobuf.timestamp_pb2
 import hand_pb2
@@ -12,13 +13,33 @@ import head_pb2
 import mobile_base_utility_pb2
 import sound_pb2
 import sys
+import typing
 
-if sys.version_info >= (3, 8):
+if sys.version_info >= (3, 10):
     import typing as typing_extensions
 else:
     import typing_extensions
 
 DESCRIPTOR: google.protobuf.descriptor.FileDescriptor
+
+class _ReachyCoreMode:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _ReachyCoreModeEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_ReachyCoreMode.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    NONE: _ReachyCoreMode.ValueType  # 0
+    FAKE: _ReachyCoreMode.ValueType  # 1
+    REAL: _ReachyCoreMode.ValueType  # 2
+    GAZEBO: _ReachyCoreMode.ValueType  # 3
+
+class ReachyCoreMode(_ReachyCoreMode, metaclass=_ReachyCoreModeEnumTypeWrapper): ...
+
+NONE: ReachyCoreMode.ValueType  # 0
+FAKE: ReachyCoreMode.ValueType  # 1
+REAL: ReachyCoreMode.ValueType  # 2
+GAZEBO: ReachyCoreMode.ValueType  # 3
+global___ReachyCoreMode = ReachyCoreMode
 
 @typing_extensions.final
 class Reachy(google.protobuf.message.Message):
@@ -101,17 +122,20 @@ class ReachyInfo(google.protobuf.message.Message):
     SERIAL_NUMBER_FIELD_NUMBER: builtins.int
     VERSION_HARD_FIELD_NUMBER: builtins.int
     VERSION_SOFT_FIELD_NUMBER: builtins.int
+    CORE_MODE_FIELD_NUMBER: builtins.int
     serial_number: builtins.str
     version_hard: builtins.str
     version_soft: builtins.str
+    core_mode: global___ReachyCoreMode.ValueType
     def __init__(
         self,
         *,
         serial_number: builtins.str = ...,
         version_hard: builtins.str = ...,
         version_soft: builtins.str = ...,
+        core_mode: global___ReachyCoreMode.ValueType = ...,
     ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["serial_number", b"serial_number", "version_hard", b"version_hard", "version_soft", b"version_soft"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["core_mode", b"core_mode", "serial_number", b"serial_number", "version_hard", b"version_hard", "version_soft", b"version_soft"]) -> None: ...
 
 global___ReachyInfo = ReachyInfo
 

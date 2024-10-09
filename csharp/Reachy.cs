@@ -37,45 +37,47 @@ namespace Reachy {
             "YmlsZUJhc2USLwoKbWljcm9waG9uZRgIIAEoCzIbLmNvbXBvbmVudC5zb3Vu",
             "ZC5NaWNyb3Bob25lEikKB3NwZWFrZXIYCSABKAsyGC5jb21wb25lbnQuc291",
             "bmQuU3BlYWtlchIgCgRpbmZvGBQgASgLMhIucmVhY2h5LlJlYWNoeUluZm8i",
-            "JAoIUmVhY2h5SWQSCgoCaWQYASABKA0SDAoEbmFtZRgCIAEoCSJPCgpSZWFj",
+            "JAoIUmVhY2h5SWQSCgoCaWQYASABKA0SDAoEbmFtZRgCIAEoCSJ6CgpSZWFj",
             "aHlJbmZvEhUKDXNlcmlhbF9udW1iZXIYASABKAkSFAoMdmVyc2lvbl9oYXJk",
-            "GAIgASgJEhQKDHZlcnNpb25fc29mdBgDIAEoCSKeAwoLUmVhY2h5U3RhdGUS",
-            "LQoJdGltZXN0YW1wGAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
-            "cBIcCgJpZBgCIAEoCzIQLnJlYWNoeS5SZWFjaHlJZBIuCgtsX2FybV9zdGF0",
-            "ZRgDIAEoCzIZLnJlYWNoeS5wYXJ0LmFybS5Bcm1TdGF0ZRIuCgtyX2FybV9z",
-            "dGF0ZRgEIAEoCzIZLnJlYWNoeS5wYXJ0LmFybS5Bcm1TdGF0ZRIvCgpoZWFk",
-            "X3N0YXRlGAUgASgLMhsucmVhY2h5LnBhcnQuaGVhZC5IZWFkU3RhdGUSMQoM",
-            "bF9oYW5kX3N0YXRlGAYgASgLMhsucmVhY2h5LnBhcnQuaGFuZC5IYW5kU3Rh",
-            "dGUSMQoMcl9oYW5kX3N0YXRlGAcgASgLMhsucmVhY2h5LnBhcnQuaGFuZC5I",
-            "YW5kU3RhdGUSSwoRbW9iaWxlX2Jhc2Vfc3RhdGUYCCABKAsyMC5yZWFjaHku",
-            "cGFydC5tb2JpbGUuYmFzZS51dGlsaXR5Lk1vYmlsZUJhc2VTdGF0ZSKrAwoM",
-            "UmVhY2h5U3RhdHVzEi0KCXRpbWVzdGFtcBgBIAEoCzIaLmdvb2dsZS5wcm90",
-            "b2J1Zi5UaW1lc3RhbXASHAoCaWQYAiABKAsyEC5yZWFjaHkuUmVhY2h5SWQS",
-            "MAoMbF9hcm1fc3RhdHVzGAMgASgLMhoucmVhY2h5LnBhcnQuYXJtLkFybVN0",
-            "YXR1cxIwCgxyX2FybV9zdGF0dXMYBCABKAsyGi5yZWFjaHkucGFydC5hcm0u",
-            "QXJtU3RhdHVzEjEKC2hlYWRfc3RhdHVzGAUgASgLMhwucmVhY2h5LnBhcnQu",
-            "aGVhZC5IZWFkU3RhdHVzEjMKDWxfaGFuZF9zdGF0dXMYBiABKAsyHC5yZWFj",
-            "aHkucGFydC5oYW5kLkhhbmRTdGF0dXMSMwoNcl9oYW5kX3N0YXR1cxgHIAEo",
-            "CzIcLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFN0YXR1cxJNChJtb2JpbGVfYmFz",
-            "ZV9zdGF0dXMYCCABKAsyMS5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS51dGls",
-            "aXR5Lk1vYmlsZUJhc2VTdGF0dXMiUwoYUmVhY2h5U3RyZWFtU3RhdGVSZXF1",
-            "ZXN0EhwKAmlkGAEgASgLMhAucmVhY2h5LlJlYWNoeUlkEhkKEXB1Ymxpc2hf",
-            "ZnJlcXVlbmN5GAIgASgCIlMKGFJlYWNoeVN0cmVhbUF1ZGl0UmVxdWVzdBIc",
-            "CgJpZBgBIAEoCzIQLnJlYWNoeS5SZWFjaHlJZBIZChFwdWJsaXNoX2ZyZXF1",
-            "ZW5jeRgCIAEoAjLFAgoNUmVhY2h5U2VydmljZRIzCglHZXRSZWFjaHkSFi5n",
-            "b29nbGUucHJvdG9idWYuRW1wdHkaDi5yZWFjaHkuUmVhY2h5EjcKDkdldFJl",
-            "YWNoeVN0YXRlEhAucmVhY2h5LlJlYWNoeUlkGhMucmVhY2h5LlJlYWNoeVN0",
-            "YXRlEkwKEVN0cmVhbVJlYWNoeVN0YXRlEiAucmVhY2h5LlJlYWNoeVN0cmVh",
-            "bVN0YXRlUmVxdWVzdBoTLnJlYWNoeS5SZWFjaHlTdGF0ZTABEi8KBUF1ZGl0",
-            "EhAucmVhY2h5LlJlYWNoeUlkGhQucmVhY2h5LlJlYWNoeVN0YXR1cxJHCgtT",
-            "dHJlYW1BdWRpdBIgLnJlYWNoeS5SZWFjaHlTdHJlYW1BdWRpdFJlcXVlc3Qa",
-            "FC5yZWFjaHkuUmVhY2h5U3RhdHVzMAFiBnByb3RvMw=="));
+            "GAIgASgJEhQKDHZlcnNpb25fc29mdBgDIAEoCRIpCgljb3JlX21vZGUYBCAB",
+            "KA4yFi5yZWFjaHkuUmVhY2h5Q29yZU1vZGUingMKC1JlYWNoeVN0YXRlEi0K",
+            "CXRpbWVzdGFtcBgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAS",
+            "HAoCaWQYAiABKAsyEC5yZWFjaHkuUmVhY2h5SWQSLgoLbF9hcm1fc3RhdGUY",
+            "AyABKAsyGS5yZWFjaHkucGFydC5hcm0uQXJtU3RhdGUSLgoLcl9hcm1fc3Rh",
+            "dGUYBCABKAsyGS5yZWFjaHkucGFydC5hcm0uQXJtU3RhdGUSLwoKaGVhZF9z",
+            "dGF0ZRgFIAEoCzIbLnJlYWNoeS5wYXJ0LmhlYWQuSGVhZFN0YXRlEjEKDGxf",
+            "aGFuZF9zdGF0ZRgGIAEoCzIbLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFN0YXRl",
+            "EjEKDHJfaGFuZF9zdGF0ZRgHIAEoCzIbLnJlYWNoeS5wYXJ0LmhhbmQuSGFu",
+            "ZFN0YXRlEksKEW1vYmlsZV9iYXNlX3N0YXRlGAggASgLMjAucmVhY2h5LnBh",
+            "cnQubW9iaWxlLmJhc2UudXRpbGl0eS5Nb2JpbGVCYXNlU3RhdGUiqwMKDFJl",
+            "YWNoeVN0YXR1cxItCgl0aW1lc3RhbXAYASABKAsyGi5nb29nbGUucHJvdG9i",
+            "dWYuVGltZXN0YW1wEhwKAmlkGAIgASgLMhAucmVhY2h5LlJlYWNoeUlkEjAK",
+            "DGxfYXJtX3N0YXR1cxgDIAEoCzIaLnJlYWNoeS5wYXJ0LmFybS5Bcm1TdGF0",
+            "dXMSMAoMcl9hcm1fc3RhdHVzGAQgASgLMhoucmVhY2h5LnBhcnQuYXJtLkFy",
+            "bVN0YXR1cxIxCgtoZWFkX3N0YXR1cxgFIAEoCzIcLnJlYWNoeS5wYXJ0Lmhl",
+            "YWQuSGVhZFN0YXR1cxIzCg1sX2hhbmRfc3RhdHVzGAYgASgLMhwucmVhY2h5",
+            "LnBhcnQuaGFuZC5IYW5kU3RhdHVzEjMKDXJfaGFuZF9zdGF0dXMYByABKAsy",
+            "HC5yZWFjaHkucGFydC5oYW5kLkhhbmRTdGF0dXMSTQoSbW9iaWxlX2Jhc2Vf",
+            "c3RhdHVzGAggASgLMjEucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0",
+            "eS5Nb2JpbGVCYXNlU3RhdHVzIlMKGFJlYWNoeVN0cmVhbVN0YXRlUmVxdWVz",
+            "dBIcCgJpZBgBIAEoCzIQLnJlYWNoeS5SZWFjaHlJZBIZChFwdWJsaXNoX2Zy",
+            "ZXF1ZW5jeRgCIAEoAiJTChhSZWFjaHlTdHJlYW1BdWRpdFJlcXVlc3QSHAoC",
+            "aWQYASABKAsyEC5yZWFjaHkuUmVhY2h5SWQSGQoRcHVibGlzaF9mcmVxdWVu",
+            "Y3kYAiABKAIqOgoOUmVhY2h5Q29yZU1vZGUSCAoETk9ORRAAEggKBEZBS0UQ",
+            "ARIICgRSRUFMEAISCgoGR0FaRUJPEAMyxQIKDVJlYWNoeVNlcnZpY2USMwoJ",
+            "R2V0UmVhY2h5EhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Gg4ucmVhY2h5LlJl",
+            "YWNoeRI3Cg5HZXRSZWFjaHlTdGF0ZRIQLnJlYWNoeS5SZWFjaHlJZBoTLnJl",
+            "YWNoeS5SZWFjaHlTdGF0ZRJMChFTdHJlYW1SZWFjaHlTdGF0ZRIgLnJlYWNo",
+            "eS5SZWFjaHlTdHJlYW1TdGF0ZVJlcXVlc3QaEy5yZWFjaHkuUmVhY2h5U3Rh",
+            "dGUwARIvCgVBdWRpdBIQLnJlYWNoeS5SZWFjaHlJZBoULnJlYWNoeS5SZWFj",
+            "aHlTdGF0dXMSRwoLU3RyZWFtQXVkaXQSIC5yZWFjaHkuUmVhY2h5U3RyZWFt",
+            "QXVkaXRSZXF1ZXN0GhQucmVhY2h5LlJlYWNoeVN0YXR1czABYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Reachy.Part.Mobile.Base.Utility.MobileBaseUtilityReflection.Descriptor, global::Component.Sound.SoundReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.ReachyCoreMode), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Reachy), global::Reachy.Reachy.Parser, new[]{ "Id", "LArm", "RArm", "Head", "LHand", "RHand", "MobileBase", "Microphone", "Speaker", "Info" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyId), global::Reachy.ReachyId.Parser, new[]{ "Id", "Name" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyInfo), global::Reachy.ReachyInfo.Parser, new[]{ "SerialNumber", "VersionHard", "VersionSoft" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyInfo), global::Reachy.ReachyInfo.Parser, new[]{ "SerialNumber", "VersionHard", "VersionSoft", "CoreMode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyState), global::Reachy.ReachyState.Parser, new[]{ "Timestamp", "Id", "LArmState", "RArmState", "HeadState", "LHandState", "RHandState", "MobileBaseState" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStatus), global::Reachy.ReachyStatus.Parser, new[]{ "Timestamp", "Id", "LArmStatus", "RArmStatus", "HeadStatus", "LHandStatus", "RHandStatus", "MobileBaseStatus" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStreamStateRequest), global::Reachy.ReachyStreamStateRequest.Parser, new[]{ "Id", "PublishFrequency" }, null, null, null, null),
@@ -85,6 +87,16 @@ namespace Reachy {
     #endregion
 
   }
+  #region Enums
+  public enum ReachyCoreMode {
+    [pbr::OriginalName("NONE")] None = 0,
+    [pbr::OriginalName("FAKE")] Fake = 1,
+    [pbr::OriginalName("REAL")] Real = 2,
+    [pbr::OriginalName("GAZEBO")] Gazebo = 3,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class Reachy : pb::IMessage<Reachy>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -961,6 +973,7 @@ namespace Reachy {
       serialNumber_ = other.serialNumber_;
       versionHard_ = other.versionHard_;
       versionSoft_ = other.versionSoft_;
+      coreMode_ = other.coreMode_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1006,6 +1019,18 @@ namespace Reachy {
       }
     }
 
+    /// <summary>Field number for the "core_mode" field.</summary>
+    public const int CoreModeFieldNumber = 4;
+    private global::Reachy.ReachyCoreMode coreMode_ = global::Reachy.ReachyCoreMode.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.ReachyCoreMode CoreMode {
+      get { return coreMode_; }
+      set {
+        coreMode_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1024,6 +1049,7 @@ namespace Reachy {
       if (SerialNumber != other.SerialNumber) return false;
       if (VersionHard != other.VersionHard) return false;
       if (VersionSoft != other.VersionSoft) return false;
+      if (CoreMode != other.CoreMode) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1034,6 +1060,7 @@ namespace Reachy {
       if (SerialNumber.Length != 0) hash ^= SerialNumber.GetHashCode();
       if (VersionHard.Length != 0) hash ^= VersionHard.GetHashCode();
       if (VersionSoft.Length != 0) hash ^= VersionSoft.GetHashCode();
+      if (CoreMode != global::Reachy.ReachyCoreMode.None) hash ^= CoreMode.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1064,6 +1091,10 @@ namespace Reachy {
         output.WriteRawTag(26);
         output.WriteString(VersionSoft);
       }
+      if (CoreMode != global::Reachy.ReachyCoreMode.None) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) CoreMode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1086,6 +1117,10 @@ namespace Reachy {
         output.WriteRawTag(26);
         output.WriteString(VersionSoft);
       }
+      if (CoreMode != global::Reachy.ReachyCoreMode.None) {
+        output.WriteRawTag(32);
+        output.WriteEnum((int) CoreMode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1104,6 +1139,9 @@ namespace Reachy {
       }
       if (VersionSoft.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(VersionSoft);
+      }
+      if (CoreMode != global::Reachy.ReachyCoreMode.None) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) CoreMode);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1125,6 +1163,9 @@ namespace Reachy {
       }
       if (other.VersionSoft.Length != 0) {
         VersionSoft = other.VersionSoft;
+      }
+      if (other.CoreMode != global::Reachy.ReachyCoreMode.None) {
+        CoreMode = other.CoreMode;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1153,6 +1194,10 @@ namespace Reachy {
             VersionSoft = input.ReadString();
             break;
           }
+          case 32: {
+            CoreMode = (global::Reachy.ReachyCoreMode) input.ReadEnum();
+            break;
+          }
         }
       }
     #endif
@@ -1178,6 +1223,10 @@ namespace Reachy {
           }
           case 26: {
             VersionSoft = input.ReadString();
+            break;
+          }
+          case 32: {
+            CoreMode = (global::Reachy.ReachyCoreMode) input.ReadEnum();
             break;
           }
         }

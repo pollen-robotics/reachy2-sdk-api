@@ -39,6 +39,15 @@ message ReachyInfo {
     string serial_number = 1;
     string version_hard = 2;
     string version_soft = 3;
+
+    ReachyCoreMode core_mode = 4;
+}
+
+enum ReachyCoreMode {
+    NONE = 0;
+    FAKE = 1;
+    REAL = 2;
+    GAZEBO = 3;
 }
 
 message ReachyState {
