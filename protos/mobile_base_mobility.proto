@@ -21,13 +21,20 @@ message TargetDirectionCommand {
 
 message GoToVector {
     reachy.part.PartId id = 1;
+
     google.protobuf.FloatValue x_goal = 2;
     google.protobuf.FloatValue y_goal = 3;
     google.protobuf.FloatValue theta_goal = 4;
+
+    google.protobuf.FloatValue distance_tolerance = 5;
+    google.protobuf.FloatValue angle_tolerance = 6;
+
+    google.protobuf.FloatValue timeout = 10;
 }
 
 message SetSpeedVector {
     reachy.part.PartId id = 1;
+
     google.protobuf.FloatValue x_vel = 2;
     google.protobuf.FloatValue y_vel = 3;
     google.protobuf.FloatValue rot_vel = 4;
@@ -46,10 +53,10 @@ message MobilityServiceAck {
 }
 
 service MobileBaseMobilityService {
-    // Mobility commands
     rpc SendDirection(TargetDirectionCommand) returns (MobilityServiceAck);
     rpc SendSetSpeed(SetSpeedVector) returns (MobilityServiceAck);
     rpc SendGoTo(GoToVector) returns (MobilityServiceAck);
+
     rpc GetLastDirection(reachy.part.PartId) returns (DirectionVector);
     rpc DistanceToGoal(reachy.part.PartId) returns (DistanceToGoalVector);
 }
