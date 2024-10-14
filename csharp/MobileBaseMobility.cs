@@ -33,41 +33,45 @@ namespace Reachy.Part.Mobile.Base.Mobility {
             "bG9hdFZhbHVlIn8KFlRhcmdldERpcmVjdGlvbkNvbW1hbmQSHwoCaWQYASAB",
             "KAsyEy5yZWFjaHkucGFydC5QYXJ0SWQSRAoJZGlyZWN0aW9uGAIgASgLMjEu",
             "cmVhY2h5LnBhcnQubW9iaWxlLmJhc2UubW9iaWxpdHkuRGlyZWN0aW9uVmVj",
-            "dG9yIrgBCgpHb1RvVmVjdG9yEh8KAmlkGAEgASgLMhMucmVhY2h5LnBhcnQu",
+            "dG9yItUCCgpHb1RvVmVjdG9yEh8KAmlkGAEgASgLMhMucmVhY2h5LnBhcnQu",
             "UGFydElkEisKBnhfZ29hbBgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9h",
             "dFZhbHVlEisKBnlfZ29hbBgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9h",
             "dFZhbHVlEi8KCnRoZXRhX2dvYWwYBCABKAsyGy5nb29nbGUucHJvdG9idWYu",
-            "RmxvYXRWYWx1ZSLmAQoOU2V0U3BlZWRWZWN0b3ISHwoCaWQYASABKAsyEy5y",
-            "ZWFjaHkucGFydC5QYXJ0SWQSKgoFeF92ZWwYAiABKAsyGy5nb29nbGUucHJv",
-            "dG9idWYuRmxvYXRWYWx1ZRIqCgV5X3ZlbBgDIAEoCzIbLmdvb2dsZS5wcm90",
-            "b2J1Zi5GbG9hdFZhbHVlEiwKB3JvdF92ZWwYBCABKAsyGy5nb29nbGUucHJv",
-            "dG9idWYuRmxvYXRWYWx1ZRItCghkdXJhdGlvbhgFIAEoCzIbLmdvb2dsZS5w",
-            "cm90b2J1Zi5GbG9hdFZhbHVlItMBChREaXN0YW5jZVRvR29hbFZlY3RvchIs",
-            "CgdkZWx0YV94GAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUS",
-            "LAoHZGVsdGFfeRgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVl",
-            "EjAKC2RlbHRhX3RoZXRhGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0",
-            "VmFsdWUSLQoIZGlzdGFuY2UYBCABKAsyGy5nb29nbGUucHJvdG9idWYuRmxv",
-            "YXRWYWx1ZSJBChJNb2JpbGl0eVNlcnZpY2VBY2sSKwoHc3VjY2VzcxgBIAEo",
-            "CzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUyvwQKGU1vYmlsZUJhc2VN",
-            "b2JpbGl0eVNlcnZpY2USfwoNU2VuZERpcmVjdGlvbhI4LnJlYWNoeS5wYXJ0",
-            "Lm1vYmlsZS5iYXNlLm1vYmlsaXR5LlRhcmdldERpcmVjdGlvbkNvbW1hbmQa",
-            "NC5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5Nb2JpbGl0eVNl",
-            "cnZpY2VBY2sSdgoMU2VuZFNldFNwZWVkEjAucmVhY2h5LnBhcnQubW9iaWxl",
-            "LmJhc2UubW9iaWxpdHkuU2V0U3BlZWRWZWN0b3IaNC5yZWFjaHkucGFydC5t",
-            "b2JpbGUuYmFzZS5tb2JpbGl0eS5Nb2JpbGl0eVNlcnZpY2VBY2sSbgoIU2Vu",
-            "ZEdvVG8SLC5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5Hb1Rv",
+            "RmxvYXRWYWx1ZRI3ChJkaXN0YW5jZV90b2xlcmFuY2UYBSABKAsyGy5nb29n",
+            "bGUucHJvdG9idWYuRmxvYXRWYWx1ZRI0Cg9hbmdsZV90b2xlcmFuY2UYBiAB",
+            "KAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRIsCgd0aW1lb3V0GAog",
+            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUi5gEKDlNldFNwZWVk",
+            "VmVjdG9yEh8KAmlkGAEgASgLMhMucmVhY2h5LnBhcnQuUGFydElkEioKBXhf",
+            "dmVsGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSKgoFeV92",
+            "ZWwYAyABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRIsCgdyb3Rf",
+            "dmVsGAQgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSLQoIZHVy",
+            "YXRpb24YBSABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSLTAQoU",
+            "RGlzdGFuY2VUb0dvYWxWZWN0b3ISLAoHZGVsdGFfeBgBIAEoCzIbLmdvb2ds",
+            "ZS5wcm90b2J1Zi5GbG9hdFZhbHVlEiwKB2RlbHRhX3kYAiABKAsyGy5nb29n",
+            "bGUucHJvdG9idWYuRmxvYXRWYWx1ZRIwCgtkZWx0YV90aGV0YRgDIAEoCzIb",
+            "Lmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlEi0KCGRpc3RhbmNlGAQgASgL",
+            "MhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUiQQoSTW9iaWxpdHlTZXJ2",
+            "aWNlQWNrEisKB3N1Y2Nlc3MYASABKAsyGi5nb29nbGUucHJvdG9idWYuQm9v",
+            "bFZhbHVlMr8EChlNb2JpbGVCYXNlTW9iaWxpdHlTZXJ2aWNlEn8KDVNlbmRE",
+            "aXJlY3Rpb24SOC5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5U",
+            "YXJnZXREaXJlY3Rpb25Db21tYW5kGjQucmVhY2h5LnBhcnQubW9iaWxlLmJh",
+            "c2UubW9iaWxpdHkuTW9iaWxpdHlTZXJ2aWNlQWNrEnYKDFNlbmRTZXRTcGVl",
+            "ZBIwLnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLm1vYmlsaXR5LlNldFNwZWVk",
             "VmVjdG9yGjQucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UubW9iaWxpdHkuTW9i",
-            "aWxpdHlTZXJ2aWNlQWNrEloKEEdldExhc3REaXJlY3Rpb24SEy5yZWFjaHku",
-            "cGFydC5QYXJ0SWQaMS5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0",
-            "eS5EaXJlY3Rpb25WZWN0b3ISXQoORGlzdGFuY2VUb0dvYWwSEy5yZWFjaHku",
-            "cGFydC5QYXJ0SWQaNi5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0",
-            "eS5EaXN0YW5jZVRvR29hbFZlY3RvcmIGcHJvdG8z"));
+            "aWxpdHlTZXJ2aWNlQWNrEm4KCFNlbmRHb1RvEiwucmVhY2h5LnBhcnQubW9i",
+            "aWxlLmJhc2UubW9iaWxpdHkuR29Ub1ZlY3Rvcho0LnJlYWNoeS5wYXJ0Lm1v",
+            "YmlsZS5iYXNlLm1vYmlsaXR5Lk1vYmlsaXR5U2VydmljZUFjaxJaChBHZXRM",
+            "YXN0RGlyZWN0aW9uEhMucmVhY2h5LnBhcnQuUGFydElkGjEucmVhY2h5LnBh",
+            "cnQubW9iaWxlLmJhc2UubW9iaWxpdHkuRGlyZWN0aW9uVmVjdG9yEl0KDkRp",
+            "c3RhbmNlVG9Hb2FsEhMucmVhY2h5LnBhcnQuUGFydElkGjYucmVhY2h5LnBh",
+            "cnQubW9iaWxlLmJhc2UubW9iaWxpdHkuRGlzdGFuY2VUb0dvYWxWZWN0b3Ji",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Mobility.DirectionVector), global::Reachy.Part.Mobile.Base.Mobility.DirectionVector.Parser, new[]{ "X", "Y", "Theta" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Mobility.TargetDirectionCommand), global::Reachy.Part.Mobile.Base.Mobility.TargetDirectionCommand.Parser, new[]{ "Id", "Direction" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Mobility.GoToVector), global::Reachy.Part.Mobile.Base.Mobility.GoToVector.Parser, new[]{ "Id", "XGoal", "YGoal", "ThetaGoal" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Mobility.GoToVector), global::Reachy.Part.Mobile.Base.Mobility.GoToVector.Parser, new[]{ "Id", "XGoal", "YGoal", "ThetaGoal", "DistanceTolerance", "AngleTolerance", "Timeout" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Mobility.SetSpeedVector), global::Reachy.Part.Mobile.Base.Mobility.SetSpeedVector.Parser, new[]{ "Id", "XVel", "YVel", "RotVel", "Duration" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Mobility.DistanceToGoalVector), global::Reachy.Part.Mobile.Base.Mobility.DistanceToGoalVector.Parser, new[]{ "DeltaX", "DeltaY", "DeltaTheta", "Distance" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck), global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck.Parser, new[]{ "Success" }, null, null, null, null)
@@ -652,6 +656,9 @@ namespace Reachy.Part.Mobile.Base.Mobility {
       XGoal = other.XGoal;
       YGoal = other.YGoal;
       ThetaGoal = other.ThetaGoal;
+      DistanceTolerance = other.DistanceTolerance;
+      AngleTolerance = other.AngleTolerance;
+      Timeout = other.Timeout;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -715,6 +722,48 @@ namespace Reachy.Part.Mobile.Base.Mobility {
     }
 
 
+    /// <summary>Field number for the "distance_tolerance" field.</summary>
+    public const int DistanceToleranceFieldNumber = 5;
+    private static readonly pb::FieldCodec<float?> _single_distanceTolerance_codec = pb::FieldCodec.ForStructWrapper<float>(42);
+    private float? distanceTolerance_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float? DistanceTolerance {
+      get { return distanceTolerance_; }
+      set {
+        distanceTolerance_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "angle_tolerance" field.</summary>
+    public const int AngleToleranceFieldNumber = 6;
+    private static readonly pb::FieldCodec<float?> _single_angleTolerance_codec = pb::FieldCodec.ForStructWrapper<float>(50);
+    private float? angleTolerance_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float? AngleTolerance {
+      get { return angleTolerance_; }
+      set {
+        angleTolerance_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "timeout" field.</summary>
+    public const int TimeoutFieldNumber = 10;
+    private static readonly pb::FieldCodec<float?> _single_timeout_codec = pb::FieldCodec.ForStructWrapper<float>(82);
+    private float? timeout_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float? Timeout {
+      get { return timeout_; }
+      set {
+        timeout_ = value;
+      }
+    }
+
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -734,6 +783,9 @@ namespace Reachy.Part.Mobile.Base.Mobility {
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(XGoal, other.XGoal)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(YGoal, other.YGoal)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(ThetaGoal, other.ThetaGoal)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(DistanceTolerance, other.DistanceTolerance)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(AngleTolerance, other.AngleTolerance)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(Timeout, other.Timeout)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -745,6 +797,9 @@ namespace Reachy.Part.Mobile.Base.Mobility {
       if (xGoal_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(XGoal);
       if (yGoal_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(YGoal);
       if (thetaGoal_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(ThetaGoal);
+      if (distanceTolerance_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(DistanceTolerance);
+      if (angleTolerance_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(AngleTolerance);
+      if (timeout_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Timeout);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -776,6 +831,15 @@ namespace Reachy.Part.Mobile.Base.Mobility {
       if (thetaGoal_ != null) {
         _single_thetaGoal_codec.WriteTagAndValue(output, ThetaGoal);
       }
+      if (distanceTolerance_ != null) {
+        _single_distanceTolerance_codec.WriteTagAndValue(output, DistanceTolerance);
+      }
+      if (angleTolerance_ != null) {
+        _single_angleTolerance_codec.WriteTagAndValue(output, AngleTolerance);
+      }
+      if (timeout_ != null) {
+        _single_timeout_codec.WriteTagAndValue(output, Timeout);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -799,6 +863,15 @@ namespace Reachy.Part.Mobile.Base.Mobility {
       if (thetaGoal_ != null) {
         _single_thetaGoal_codec.WriteTagAndValue(ref output, ThetaGoal);
       }
+      if (distanceTolerance_ != null) {
+        _single_distanceTolerance_codec.WriteTagAndValue(ref output, DistanceTolerance);
+      }
+      if (angleTolerance_ != null) {
+        _single_angleTolerance_codec.WriteTagAndValue(ref output, AngleTolerance);
+      }
+      if (timeout_ != null) {
+        _single_timeout_codec.WriteTagAndValue(ref output, Timeout);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -820,6 +893,15 @@ namespace Reachy.Part.Mobile.Base.Mobility {
       }
       if (thetaGoal_ != null) {
         size += _single_thetaGoal_codec.CalculateSizeWithTag(ThetaGoal);
+      }
+      if (distanceTolerance_ != null) {
+        size += _single_distanceTolerance_codec.CalculateSizeWithTag(DistanceTolerance);
+      }
+      if (angleTolerance_ != null) {
+        size += _single_angleTolerance_codec.CalculateSizeWithTag(AngleTolerance);
+      }
+      if (timeout_ != null) {
+        size += _single_timeout_codec.CalculateSizeWithTag(Timeout);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -852,6 +934,21 @@ namespace Reachy.Part.Mobile.Base.Mobility {
       if (other.thetaGoal_ != null) {
         if (thetaGoal_ == null || other.ThetaGoal != 0F) {
           ThetaGoal = other.ThetaGoal;
+        }
+      }
+      if (other.distanceTolerance_ != null) {
+        if (distanceTolerance_ == null || other.DistanceTolerance != 0F) {
+          DistanceTolerance = other.DistanceTolerance;
+        }
+      }
+      if (other.angleTolerance_ != null) {
+        if (angleTolerance_ == null || other.AngleTolerance != 0F) {
+          AngleTolerance = other.AngleTolerance;
+        }
+      }
+      if (other.timeout_ != null) {
+        if (timeout_ == null || other.Timeout != 0F) {
+          Timeout = other.Timeout;
         }
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -897,6 +994,27 @@ namespace Reachy.Part.Mobile.Base.Mobility {
             }
             break;
           }
+          case 42: {
+            float? value = _single_distanceTolerance_codec.Read(input);
+            if (distanceTolerance_ == null || value != 0F) {
+              DistanceTolerance = value;
+            }
+            break;
+          }
+          case 50: {
+            float? value = _single_angleTolerance_codec.Read(input);
+            if (angleTolerance_ == null || value != 0F) {
+              AngleTolerance = value;
+            }
+            break;
+          }
+          case 82: {
+            float? value = _single_timeout_codec.Read(input);
+            if (timeout_ == null || value != 0F) {
+              Timeout = value;
+            }
+            break;
+          }
         }
       }
     #endif
@@ -937,6 +1055,27 @@ namespace Reachy.Part.Mobile.Base.Mobility {
             float? value = _single_thetaGoal_codec.Read(ref input);
             if (thetaGoal_ == null || value != 0F) {
               ThetaGoal = value;
+            }
+            break;
+          }
+          case 42: {
+            float? value = _single_distanceTolerance_codec.Read(ref input);
+            if (distanceTolerance_ == null || value != 0F) {
+              DistanceTolerance = value;
+            }
+            break;
+          }
+          case 50: {
+            float? value = _single_angleTolerance_codec.Read(ref input);
+            if (angleTolerance_ == null || value != 0F) {
+              AngleTolerance = value;
+            }
+            break;
+          }
+          case 82: {
+            float? value = _single_timeout_codec.Read(ref input);
+            if (timeout_ == null || value != 0F) {
+              Timeout = value;
             }
             break;
           }
