@@ -73,6 +73,9 @@ class GoToVector(google.protobuf.message.Message):
     X_GOAL_FIELD_NUMBER: builtins.int
     Y_GOAL_FIELD_NUMBER: builtins.int
     THETA_GOAL_FIELD_NUMBER: builtins.int
+    DISTANCE_TOLERANCE_FIELD_NUMBER: builtins.int
+    ANGLE_TOLERANCE_FIELD_NUMBER: builtins.int
+    TIMEOUT_FIELD_NUMBER: builtins.int
     @property
     def id(self) -> part_pb2.PartId: ...
     @property
@@ -81,6 +84,12 @@ class GoToVector(google.protobuf.message.Message):
     def y_goal(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
     @property
     def theta_goal(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    @property
+    def distance_tolerance(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    @property
+    def angle_tolerance(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    @property
+    def timeout(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
     def __init__(
         self,
         *,
@@ -88,9 +97,12 @@ class GoToVector(google.protobuf.message.Message):
         x_goal: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         y_goal: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         theta_goal: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        distance_tolerance: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        angle_tolerance: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        timeout: google.protobuf.wrappers_pb2.FloatValue | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["id", b"id", "theta_goal", b"theta_goal", "x_goal", b"x_goal", "y_goal", b"y_goal"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["id", b"id", "theta_goal", b"theta_goal", "x_goal", b"x_goal", "y_goal", b"y_goal"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["angle_tolerance", b"angle_tolerance", "distance_tolerance", b"distance_tolerance", "id", b"id", "theta_goal", b"theta_goal", "timeout", b"timeout", "x_goal", b"x_goal", "y_goal", b"y_goal"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["angle_tolerance", b"angle_tolerance", "distance_tolerance", b"distance_tolerance", "id", b"id", "theta_goal", b"theta_goal", "timeout", b"timeout", "x_goal", b"x_goal", "y_goal", b"y_goal"]) -> None: ...
 
 global___GoToVector = GoToVector
 
