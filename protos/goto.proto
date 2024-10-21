@@ -45,6 +45,17 @@ message JointsGoal {
     }
 }
 
+message OdometryGoal {
+    google.protobuf.FloatValue x_goal = 2;
+    google.protobuf.FloatValue y_goal = 3;
+    google.protobuf.FloatValue theta_goal = 4;
+
+    google.protobuf.FloatValue distance_tolerance = 5;
+    google.protobuf.FloatValue angle_tolerance = 6;
+
+    google.protobuf.FloatValue timeout = 10;
+}
+
 message CustomJointGoal {
     reachy.part.PartId id = 1;
     oneof joints {
@@ -69,8 +80,9 @@ message GoToRequest {
     oneof goal {
         CartesianGoal cartesian_goal = 1;
         JointsGoal joints_goal = 2;
+        OdometryGoal odometry_goal = 3;
     }
-    GoToInterpolation interpolation_mode = 3;
+    GoToInterpolation interpolation_mode = 10;
 }
 
 message GoToQueue {
