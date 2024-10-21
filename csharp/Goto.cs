@@ -24,61 +24,61 @@ public static partial class GotoReflection {
         string.Concat(
           "Cgpnb3RvLnByb3RvGhtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8aHmdv",
           "b2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxoJYXJtLnByb3RvGgpoZWFk",
-          "LnByb3RvGgpwYXJ0LnByb3RvIhQKBkdvVG9JZBIKCgJpZBgBIAEoBSIWCgdH",
-          "b1RvQWNrEgsKA2FjaxgBIAEoCCIyCg5Hb1RvR29hbFN0YXR1cxIgCgtnb2Fs",
-          "X3N0YXR1cxgBIAEoDjILLkdvYWxTdGF0dXMipgEKDUNhcnRlc2lhbkdvYWwS",
-          "PwoSYXJtX2NhcnRlc2lhbl9nb2FsGAEgASgLMiEucmVhY2h5LnBhcnQuYXJt",
-          "LkFybUNhcnRlc2lhbkdvYWxIABJCChNuZWNrX2NhcnRlc2lhbl9nb2FsGAIg",
-          "ASgLMiMucmVhY2h5LnBhcnQuaGVhZC5OZWNrQ2FydGVzaWFuR29hbEgAQhAK",
-          "DmNhcnRlc2lhbl9nb2FsIr8BCgpKb2ludHNHb2FsEjcKDmFybV9qb2ludF9n",
-          "b2FsGAEgASgLMh0ucmVhY2h5LnBhcnQuYXJtLkFybUpvaW50R29hbEgAEjoK",
-          "D25lY2tfam9pbnRfZ29hbBgCIAEoCzIfLnJlYWNoeS5wYXJ0LmhlYWQuTmVj",
-          "a0pvaW50R29hbEgAEi0KEWN1c3RvbV9qb2ludF9nb2FsGAMgASgLMhAuQ3Vz",
-          "dG9tSm9pbnRHb2FsSABCDQoLam9pbnRzX2dvYWwitgIKDE9kb21ldHJ5R29h",
-          "bBIrCgZ4X2dvYWwYAiABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1",
-          "ZRIrCgZ5X2dvYWwYAyABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1",
-          "ZRIvCgp0aGV0YV9nb2FsGAQgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0",
-          "VmFsdWUSNwoSZGlzdGFuY2VfdG9sZXJhbmNlGAUgASgLMhsuZ29vZ2xlLnBy",
-          "b3RvYnVmLkZsb2F0VmFsdWUSNAoPYW5nbGVfdG9sZXJhbmNlGAYgASgLMhsu",
-          "Z29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSLAoHdGltZW91dBgKIAEoCzIb",
-          "Lmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlIpECCg9DdXN0b21Kb2ludEdv",
-          "YWwSHwoCaWQYASABKAsyEy5yZWFjaHkucGFydC5QYXJ0SWQSNgoKYXJtX2pv",
-          "aW50cxgCIAEoCzIgLnJlYWNoeS5wYXJ0LmFybS5DdXN0b21Bcm1Kb2ludHNI",
-          "ABI5CgtuZWNrX2pvaW50cxgDIAEoCzIiLnJlYWNoeS5wYXJ0LmhlYWQuQ3Vz",
-          "dG9tTmVja0pvaW50c0gAEjEKDGpvaW50c19nb2FscxgEIAMoCzIbLmdvb2ds",
-          "ZS5wcm90b2J1Zi5GbG9hdFZhbHVlEi0KCGR1cmF0aW9uGAogASgLMhsuZ29v",
-          "Z2xlLnByb3RvYnVmLkZsb2F0VmFsdWVCCAoGam9pbnRzIkMKEUdvVG9JbnRl",
-          "cnBvbGF0aW9uEi4KEmludGVycG9sYXRpb25fdHlwZRgBIAEoDjISLkludGVy",
-          "cG9sYXRpb25Nb2RlIrsBCgtHb1RvUmVxdWVzdBIoCg5jYXJ0ZXNpYW5fZ29h",
-          "bBgBIAEoCzIOLkNhcnRlc2lhbkdvYWxIABIiCgtqb2ludHNfZ29hbBgCIAEo",
-          "CzILLkpvaW50c0dvYWxIABImCg1vZG9tZXRyeV9nb2FsGAMgASgLMg0uT2Rv",
-          "bWV0cnlHb2FsSAASLgoSaW50ZXJwb2xhdGlvbl9tb2RlGAogASgLMhIuR29U",
-          "b0ludGVycG9sYXRpb25CBgoEZ29hbCImCglHb1RvUXVldWUSGQoIZ290b19p",
-          "ZHMYASADKAsyBy5Hb1RvSWQqqgEKCkdvYWxTdGF0dXMSCAoETk9ORRAAEhIK",
-          "DlNUQVRVU19VTktOT1dOEAESEwoPU1RBVFVTX0FDQ0VQVEVEEAISFAoQU1RB",
-          "VFVTX0VYRUNVVElORxADEhQKEFNUQVRVU19DQU5DRUxJTkcQBBIUChBTVEFU",
-          "VVNfU1VDQ0VFREVEEAUSEwoPU1RBVFVTX0NBTkNFTEVEEAYSEgoOU1RBVFVT",
-          "X0FCT1JURUQQBypJChFJbnRlcnBvbGF0aW9uTW9kZRIWChJOT05FX0lOVEVS",
-          "UE9MQVRJT04QABIKCgZMSU5FQVIQARIQCgxNSU5JTVVNX0pFUksQAjKeAwoL",
-          "R29Ub1NlcnZpY2USJgoNR29Ub0NhcnRlc2lhbhIMLkdvVG9SZXF1ZXN0Ggcu",
-          "R29Ub0lkEiMKCkdvVG9Kb2ludHMSDC5Hb1RvUmVxdWVzdBoHLkdvVG9JZBIo",
-          "CgxHZXRHb1RvU3RhdGUSBy5Hb1RvSWQaDy5Hb1RvR29hbFN0YXR1cxInCg5H",
-          "ZXRHb1RvUmVxdWVzdBIHLkdvVG9JZBoMLkdvVG9SZXF1ZXN0EjIKEkdldFBh",
-          "cnRHb1RvUGxheWluZxITLnJlYWNoeS5wYXJ0LlBhcnRJZBoHLkdvVG9JZBIz",
-          "ChBHZXRQYXJ0R29Ub1F1ZXVlEhMucmVhY2h5LnBhcnQuUGFydElkGgouR29U",
-          "b1F1ZXVlEh8KCkNhbmNlbEdvVG8SBy5Hb1RvSWQaCC5Hb1RvQWNrEjEKDUNh",
-          "bmNlbEFsbEdvVG8SFi5nb29nbGUucHJvdG9idWYuRW1wdHkaCC5Hb1RvQWNr",
-          "EjIKEUNhbmNlbFBhcnRBbGxHb1RvEhMucmVhY2h5LnBhcnQuUGFydElkGggu",
-          "R29Ub0Fja2IGcHJvdG8z"));
+          "LnByb3RvGgpwYXJ0LnByb3RvGhptb2JpbGVfYmFzZV9tb2JpbGl0eS5wcm90",
+          "byIUCgZHb1RvSWQSCgoCaWQYASABKAUiFgoHR29Ub0FjaxILCgNhY2sYASAB",
+          "KAgiMgoOR29Ub0dvYWxTdGF0dXMSIAoLZ29hbF9zdGF0dXMYASABKA4yCy5H",
+          "b2FsU3RhdHVzIqYBCg1DYXJ0ZXNpYW5Hb2FsEj8KEmFybV9jYXJ0ZXNpYW5f",
+          "Z29hbBgBIAEoCzIhLnJlYWNoeS5wYXJ0LmFybS5Bcm1DYXJ0ZXNpYW5Hb2Fs",
+          "SAASQgoTbmVja19jYXJ0ZXNpYW5fZ29hbBgCIAEoCzIjLnJlYWNoeS5wYXJ0",
+          "LmhlYWQuTmVja0NhcnRlc2lhbkdvYWxIAEIQCg5jYXJ0ZXNpYW5fZ29hbCK/",
+          "AQoKSm9pbnRzR29hbBI3Cg5hcm1fam9pbnRfZ29hbBgBIAEoCzIdLnJlYWNo",
+          "eS5wYXJ0LmFybS5Bcm1Kb2ludEdvYWxIABI6Cg9uZWNrX2pvaW50X2dvYWwY",
+          "AiABKAsyHy5yZWFjaHkucGFydC5oZWFkLk5lY2tKb2ludEdvYWxIABItChFj",
+          "dXN0b21fam9pbnRfZ29hbBgDIAEoCzIQLkN1c3RvbUpvaW50R29hbEgAQg0K",
+          "C2pvaW50c19nb2FsIvwBCgxPZG9tZXRyeUdvYWwSTwoNb2RvbWV0cnlfZ29h",
+          "bBgBIAEoCzI4LnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLm1vYmlsaXR5LlRh",
+          "cmdldERpcmVjdGlvbkNvbW1hbmQSNwoSZGlzdGFuY2VfdG9sZXJhbmNlGAIg",
+          "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSNAoPYW5nbGVfdG9s",
+          "ZXJhbmNlGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSLAoH",
+          "dGltZW91dBgKIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlIpEC",
+          "Cg9DdXN0b21Kb2ludEdvYWwSHwoCaWQYASABKAsyEy5yZWFjaHkucGFydC5Q",
+          "YXJ0SWQSNgoKYXJtX2pvaW50cxgCIAEoCzIgLnJlYWNoeS5wYXJ0LmFybS5D",
+          "dXN0b21Bcm1Kb2ludHNIABI5CgtuZWNrX2pvaW50cxgDIAEoCzIiLnJlYWNo",
+          "eS5wYXJ0LmhlYWQuQ3VzdG9tTmVja0pvaW50c0gAEjEKDGpvaW50c19nb2Fs",
+          "cxgEIAMoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlEi0KCGR1cmF0",
+          "aW9uGAogASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWVCCAoGam9p",
+          "bnRzIkMKEUdvVG9JbnRlcnBvbGF0aW9uEi4KEmludGVycG9sYXRpb25fdHlw",
+          "ZRgBIAEoDjISLkludGVycG9sYXRpb25Nb2RlIrsBCgtHb1RvUmVxdWVzdBIo",
+          "Cg5jYXJ0ZXNpYW5fZ29hbBgBIAEoCzIOLkNhcnRlc2lhbkdvYWxIABIiCgtq",
+          "b2ludHNfZ29hbBgCIAEoCzILLkpvaW50c0dvYWxIABImCg1vZG9tZXRyeV9n",
+          "b2FsGAMgASgLMg0uT2RvbWV0cnlHb2FsSAASLgoSaW50ZXJwb2xhdGlvbl9t",
+          "b2RlGAogASgLMhIuR29Ub0ludGVycG9sYXRpb25CBgoEZ29hbCImCglHb1Rv",
+          "UXVldWUSGQoIZ290b19pZHMYASADKAsyBy5Hb1RvSWQqqgEKCkdvYWxTdGF0",
+          "dXMSCAoETk9ORRAAEhIKDlNUQVRVU19VTktOT1dOEAESEwoPU1RBVFVTX0FD",
+          "Q0VQVEVEEAISFAoQU1RBVFVTX0VYRUNVVElORxADEhQKEFNUQVRVU19DQU5D",
+          "RUxJTkcQBBIUChBTVEFUVVNfU1VDQ0VFREVEEAUSEwoPU1RBVFVTX0NBTkNF",
+          "TEVEEAYSEgoOU1RBVFVTX0FCT1JURUQQBypJChFJbnRlcnBvbGF0aW9uTW9k",
+          "ZRIWChJOT05FX0lOVEVSUE9MQVRJT04QABIKCgZMSU5FQVIQARIQCgxNSU5J",
+          "TVVNX0pFUksQAjLFAwoLR29Ub1NlcnZpY2USJgoNR29Ub0NhcnRlc2lhbhIM",
+          "LkdvVG9SZXF1ZXN0GgcuR29Ub0lkEiMKCkdvVG9Kb2ludHMSDC5Hb1RvUmVx",
+          "dWVzdBoHLkdvVG9JZBIlCgxHb1RvT2RvbWV0cnkSDC5Hb1RvUmVxdWVzdBoH",
+          "LkdvVG9JZBIoCgxHZXRHb1RvU3RhdGUSBy5Hb1RvSWQaDy5Hb1RvR29hbFN0",
+          "YXR1cxInCg5HZXRHb1RvUmVxdWVzdBIHLkdvVG9JZBoMLkdvVG9SZXF1ZXN0",
+          "EjIKEkdldFBhcnRHb1RvUGxheWluZxITLnJlYWNoeS5wYXJ0LlBhcnRJZBoH",
+          "LkdvVG9JZBIzChBHZXRQYXJ0R29Ub1F1ZXVlEhMucmVhY2h5LnBhcnQuUGFy",
+          "dElkGgouR29Ub1F1ZXVlEh8KCkNhbmNlbEdvVG8SBy5Hb1RvSWQaCC5Hb1Rv",
+          "QWNrEjEKDUNhbmNlbEFsbEdvVG8SFi5nb29nbGUucHJvdG9idWYuRW1wdHka",
+          "CC5Hb1RvQWNrEjIKEUNhbmNlbFBhcnRBbGxHb1RvEhMucmVhY2h5LnBhcnQu",
+          "UGFydElkGgguR29Ub0Fja2IGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-        new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, },
+        new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, global::Reachy.Part.Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor, },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GoalStatus), typeof(global::InterpolationMode), }, null, new pbr::GeneratedClrTypeInfo[] {
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToId), global::GoToId.Parser, new[]{ "Id" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToAck), global::GoToAck.Parser, new[]{ "Ack" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToGoalStatus), global::GoToGoalStatus.Parser, new[]{ "GoalStatus" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::CartesianGoal), global::CartesianGoal.Parser, new[]{ "ArmCartesianGoal", "NeckCartesianGoal" }, new[]{ "CartesianGoal" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::JointsGoal), global::JointsGoal.Parser, new[]{ "ArmJointGoal", "NeckJointGoal", "CustomJointGoal" }, new[]{ "JointsGoal" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::OdometryGoal), global::OdometryGoal.Parser, new[]{ "XGoal", "YGoal", "ThetaGoal", "DistanceTolerance", "AngleTolerance", "Timeout" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::OdometryGoal), global::OdometryGoal.Parser, new[]{ "OdometryGoal_", "DistanceTolerance", "AngleTolerance", "Timeout" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::CustomJointGoal), global::CustomJointGoal.Parser, new[]{ "Id", "ArmJoints", "NeckJoints", "JointsGoals", "Duration" }, new[]{ "Joints" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToInterpolation), global::GoToInterpolation.Parser, new[]{ "InterpolationType" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToRequest), global::GoToRequest.Parser, new[]{ "CartesianGoal", "JointsGoal", "OdometryGoal", "InterpolationMode" }, new[]{ "Goal" }, null, null, null),
@@ -1333,9 +1333,7 @@ public sealed partial class OdometryGoal : pb::IMessage<OdometryGoal>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public OdometryGoal(OdometryGoal other) : this() {
-    XGoal = other.XGoal;
-    YGoal = other.YGoal;
-    ThetaGoal = other.ThetaGoal;
+    odometryGoal_ = other.odometryGoal_ != null ? other.odometryGoal_.Clone() : null;
     DistanceTolerance = other.DistanceTolerance;
     AngleTolerance = other.AngleTolerance;
     Timeout = other.Timeout;
@@ -1348,51 +1346,21 @@ public sealed partial class OdometryGoal : pb::IMessage<OdometryGoal>
     return new OdometryGoal(this);
   }
 
-  /// <summary>Field number for the "x_goal" field.</summary>
-  public const int XGoalFieldNumber = 2;
-  private static readonly pb::FieldCodec<float?> _single_xGoal_codec = pb::FieldCodec.ForStructWrapper<float>(18);
-  private float? xGoal_;
+  /// <summary>Field number for the "odometry_goal" field.</summary>
+  public const int OdometryGoal_FieldNumber = 1;
+  private global::Reachy.Part.Mobile.Base.Mobility.TargetDirectionCommand odometryGoal_;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-  public float? XGoal {
-    get { return xGoal_; }
+  public global::Reachy.Part.Mobile.Base.Mobility.TargetDirectionCommand OdometryGoal_ {
+    get { return odometryGoal_; }
     set {
-      xGoal_ = value;
+      odometryGoal_ = value;
     }
   }
-
-
-  /// <summary>Field number for the "y_goal" field.</summary>
-  public const int YGoalFieldNumber = 3;
-  private static readonly pb::FieldCodec<float?> _single_yGoal_codec = pb::FieldCodec.ForStructWrapper<float>(26);
-  private float? yGoal_;
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-  public float? YGoal {
-    get { return yGoal_; }
-    set {
-      yGoal_ = value;
-    }
-  }
-
-
-  /// <summary>Field number for the "theta_goal" field.</summary>
-  public const int ThetaGoalFieldNumber = 4;
-  private static readonly pb::FieldCodec<float?> _single_thetaGoal_codec = pb::FieldCodec.ForStructWrapper<float>(34);
-  private float? thetaGoal_;
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-  public float? ThetaGoal {
-    get { return thetaGoal_; }
-    set {
-      thetaGoal_ = value;
-    }
-  }
-
 
   /// <summary>Field number for the "distance_tolerance" field.</summary>
-  public const int DistanceToleranceFieldNumber = 5;
-  private static readonly pb::FieldCodec<float?> _single_distanceTolerance_codec = pb::FieldCodec.ForStructWrapper<float>(42);
+  public const int DistanceToleranceFieldNumber = 2;
+  private static readonly pb::FieldCodec<float?> _single_distanceTolerance_codec = pb::FieldCodec.ForStructWrapper<float>(18);
   private float? distanceTolerance_;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1405,8 +1373,8 @@ public sealed partial class OdometryGoal : pb::IMessage<OdometryGoal>
 
 
   /// <summary>Field number for the "angle_tolerance" field.</summary>
-  public const int AngleToleranceFieldNumber = 6;
-  private static readonly pb::FieldCodec<float?> _single_angleTolerance_codec = pb::FieldCodec.ForStructWrapper<float>(50);
+  public const int AngleToleranceFieldNumber = 3;
+  private static readonly pb::FieldCodec<float?> _single_angleTolerance_codec = pb::FieldCodec.ForStructWrapper<float>(26);
   private float? angleTolerance_;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1447,9 +1415,7 @@ public sealed partial class OdometryGoal : pb::IMessage<OdometryGoal>
     if (ReferenceEquals(other, this)) {
       return true;
     }
-    if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(XGoal, other.XGoal)) return false;
-    if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(YGoal, other.YGoal)) return false;
-    if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(ThetaGoal, other.ThetaGoal)) return false;
+    if (!object.Equals(OdometryGoal_, other.OdometryGoal_)) return false;
     if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(DistanceTolerance, other.DistanceTolerance)) return false;
     if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(AngleTolerance, other.AngleTolerance)) return false;
     if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(Timeout, other.Timeout)) return false;
@@ -1460,9 +1426,7 @@ public sealed partial class OdometryGoal : pb::IMessage<OdometryGoal>
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public override int GetHashCode() {
     int hash = 1;
-    if (xGoal_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(XGoal);
-    if (yGoal_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(YGoal);
-    if (thetaGoal_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(ThetaGoal);
+    if (odometryGoal_ != null) hash ^= OdometryGoal_.GetHashCode();
     if (distanceTolerance_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(DistanceTolerance);
     if (angleTolerance_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(AngleTolerance);
     if (timeout_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Timeout);
@@ -1484,14 +1448,9 @@ public sealed partial class OdometryGoal : pb::IMessage<OdometryGoal>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     output.WriteRawMessage(this);
   #else
-    if (xGoal_ != null) {
-      _single_xGoal_codec.WriteTagAndValue(output, XGoal);
-    }
-    if (yGoal_ != null) {
-      _single_yGoal_codec.WriteTagAndValue(output, YGoal);
-    }
-    if (thetaGoal_ != null) {
-      _single_thetaGoal_codec.WriteTagAndValue(output, ThetaGoal);
+    if (odometryGoal_ != null) {
+      output.WriteRawTag(10);
+      output.WriteMessage(OdometryGoal_);
     }
     if (distanceTolerance_ != null) {
       _single_distanceTolerance_codec.WriteTagAndValue(output, DistanceTolerance);
@@ -1512,14 +1471,9 @@ public sealed partial class OdometryGoal : pb::IMessage<OdometryGoal>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-    if (xGoal_ != null) {
-      _single_xGoal_codec.WriteTagAndValue(ref output, XGoal);
-    }
-    if (yGoal_ != null) {
-      _single_yGoal_codec.WriteTagAndValue(ref output, YGoal);
-    }
-    if (thetaGoal_ != null) {
-      _single_thetaGoal_codec.WriteTagAndValue(ref output, ThetaGoal);
+    if (odometryGoal_ != null) {
+      output.WriteRawTag(10);
+      output.WriteMessage(OdometryGoal_);
     }
     if (distanceTolerance_ != null) {
       _single_distanceTolerance_codec.WriteTagAndValue(ref output, DistanceTolerance);
@@ -1540,14 +1494,8 @@ public sealed partial class OdometryGoal : pb::IMessage<OdometryGoal>
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public int CalculateSize() {
     int size = 0;
-    if (xGoal_ != null) {
-      size += _single_xGoal_codec.CalculateSizeWithTag(XGoal);
-    }
-    if (yGoal_ != null) {
-      size += _single_yGoal_codec.CalculateSizeWithTag(YGoal);
-    }
-    if (thetaGoal_ != null) {
-      size += _single_thetaGoal_codec.CalculateSizeWithTag(ThetaGoal);
+    if (odometryGoal_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(OdometryGoal_);
     }
     if (distanceTolerance_ != null) {
       size += _single_distanceTolerance_codec.CalculateSizeWithTag(DistanceTolerance);
@@ -1570,20 +1518,11 @@ public sealed partial class OdometryGoal : pb::IMessage<OdometryGoal>
     if (other == null) {
       return;
     }
-    if (other.xGoal_ != null) {
-      if (xGoal_ == null || other.XGoal != 0F) {
-        XGoal = other.XGoal;
+    if (other.odometryGoal_ != null) {
+      if (odometryGoal_ == null) {
+        OdometryGoal_ = new global::Reachy.Part.Mobile.Base.Mobility.TargetDirectionCommand();
       }
-    }
-    if (other.yGoal_ != null) {
-      if (yGoal_ == null || other.YGoal != 0F) {
-        YGoal = other.YGoal;
-      }
-    }
-    if (other.thetaGoal_ != null) {
-      if (thetaGoal_ == null || other.ThetaGoal != 0F) {
-        ThetaGoal = other.ThetaGoal;
-      }
+      OdometryGoal_.MergeFrom(other.OdometryGoal_);
     }
     if (other.distanceTolerance_ != null) {
       if (distanceTolerance_ == null || other.DistanceTolerance != 0F) {
@@ -1615,35 +1554,21 @@ public sealed partial class OdometryGoal : pb::IMessage<OdometryGoal>
         default:
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
           break;
+        case 10: {
+          if (odometryGoal_ == null) {
+            OdometryGoal_ = new global::Reachy.Part.Mobile.Base.Mobility.TargetDirectionCommand();
+          }
+          input.ReadMessage(OdometryGoal_);
+          break;
+        }
         case 18: {
-          float? value = _single_xGoal_codec.Read(input);
-          if (xGoal_ == null || value != 0F) {
-            XGoal = value;
-          }
-          break;
-        }
-        case 26: {
-          float? value = _single_yGoal_codec.Read(input);
-          if (yGoal_ == null || value != 0F) {
-            YGoal = value;
-          }
-          break;
-        }
-        case 34: {
-          float? value = _single_thetaGoal_codec.Read(input);
-          if (thetaGoal_ == null || value != 0F) {
-            ThetaGoal = value;
-          }
-          break;
-        }
-        case 42: {
           float? value = _single_distanceTolerance_codec.Read(input);
           if (distanceTolerance_ == null || value != 0F) {
             DistanceTolerance = value;
           }
           break;
         }
-        case 50: {
+        case 26: {
           float? value = _single_angleTolerance_codec.Read(input);
           if (angleTolerance_ == null || value != 0F) {
             AngleTolerance = value;
@@ -1672,35 +1597,21 @@ public sealed partial class OdometryGoal : pb::IMessage<OdometryGoal>
         default:
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
           break;
+        case 10: {
+          if (odometryGoal_ == null) {
+            OdometryGoal_ = new global::Reachy.Part.Mobile.Base.Mobility.TargetDirectionCommand();
+          }
+          input.ReadMessage(OdometryGoal_);
+          break;
+        }
         case 18: {
-          float? value = _single_xGoal_codec.Read(ref input);
-          if (xGoal_ == null || value != 0F) {
-            XGoal = value;
-          }
-          break;
-        }
-        case 26: {
-          float? value = _single_yGoal_codec.Read(ref input);
-          if (yGoal_ == null || value != 0F) {
-            YGoal = value;
-          }
-          break;
-        }
-        case 34: {
-          float? value = _single_thetaGoal_codec.Read(ref input);
-          if (thetaGoal_ == null || value != 0F) {
-            ThetaGoal = value;
-          }
-          break;
-        }
-        case 42: {
           float? value = _single_distanceTolerance_codec.Read(ref input);
           if (distanceTolerance_ == null || value != 0F) {
             DistanceTolerance = value;
           }
           break;
         }
-        case 50: {
+        case 26: {
           float? value = _single_angleTolerance_codec.Read(ref input);
           if (angleTolerance_ == null || value != 0F) {
             AngleTolerance = value;

@@ -76,6 +76,14 @@ public static partial class GoToService
       __Marshaller_GoToId);
 
   [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+  static readonly grpc::Method<global::GoToRequest, global::GoToId> __Method_GoToOdometry = new grpc::Method<global::GoToRequest, global::GoToId>(
+      grpc::MethodType.Unary,
+      __ServiceName,
+      "GoToOdometry",
+      __Marshaller_GoToRequest,
+      __Marshaller_GoToId);
+
+  [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
   static readonly grpc::Method<global::GoToId, global::GoToGoalStatus> __Method_GetGoToState = new grpc::Method<global::GoToId, global::GoToGoalStatus>(
       grpc::MethodType.Unary,
       __ServiceName,
@@ -149,6 +157,12 @@ public static partial class GoToService
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public virtual global::System.Threading.Tasks.Task<global::GoToId> GoToJoints(global::GoToRequest request, grpc::ServerCallContext context)
+    {
+      throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual global::System.Threading.Tasks.Task<global::GoToId> GoToOdometry(global::GoToRequest request, grpc::ServerCallContext context)
     {
       throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
     }
@@ -263,6 +277,26 @@ public static partial class GoToService
     public virtual grpc::AsyncUnaryCall<global::GoToId> GoToJointsAsync(global::GoToRequest request, grpc::CallOptions options)
     {
       return CallInvoker.AsyncUnaryCall(__Method_GoToJoints, null, options, request);
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual global::GoToId GoToOdometry(global::GoToRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return GoToOdometry(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual global::GoToId GoToOdometry(global::GoToRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.BlockingUnaryCall(__Method_GoToOdometry, null, options, request);
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual grpc::AsyncUnaryCall<global::GoToId> GoToOdometryAsync(global::GoToRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+    {
+      return GoToOdometryAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+    }
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public virtual grpc::AsyncUnaryCall<global::GoToId> GoToOdometryAsync(global::GoToRequest request, grpc::CallOptions options)
+    {
+      return CallInvoker.AsyncUnaryCall(__Method_GoToOdometry, null, options, request);
     }
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public virtual global::GoToGoalStatus GetGoToState(global::GoToId request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
@@ -420,6 +454,7 @@ public static partial class GoToService
     return grpc::ServerServiceDefinition.CreateBuilder()
         .AddMethod(__Method_GoToCartesian, serviceImpl.GoToCartesian)
         .AddMethod(__Method_GoToJoints, serviceImpl.GoToJoints)
+        .AddMethod(__Method_GoToOdometry, serviceImpl.GoToOdometry)
         .AddMethod(__Method_GetGoToState, serviceImpl.GetGoToState)
         .AddMethod(__Method_GetGoToRequest, serviceImpl.GetGoToRequest)
         .AddMethod(__Method_GetPartGoToPlaying, serviceImpl.GetPartGoToPlaying)
@@ -438,6 +473,7 @@ public static partial class GoToService
   {
     serviceBinder.AddMethod(__Method_GoToCartesian, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GoToRequest, global::GoToId>(serviceImpl.GoToCartesian));
     serviceBinder.AddMethod(__Method_GoToJoints, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GoToRequest, global::GoToId>(serviceImpl.GoToJoints));
+    serviceBinder.AddMethod(__Method_GoToOdometry, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GoToRequest, global::GoToId>(serviceImpl.GoToOdometry));
     serviceBinder.AddMethod(__Method_GetGoToState, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GoToId, global::GoToGoalStatus>(serviceImpl.GetGoToState));
     serviceBinder.AddMethod(__Method_GetGoToRequest, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GoToId, global::GoToRequest>(serviceImpl.GetGoToRequest));
     serviceBinder.AddMethod(__Method_GetPartGoToPlaying, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Reachy.Part.PartId, global::GoToId>(serviceImpl.GetPartGoToPlaying));
