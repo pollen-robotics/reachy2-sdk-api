@@ -6,6 +6,7 @@ import "google/protobuf/wrappers.proto";
 import "arm.proto";
 import "head.proto";
 import "part.proto";
+import "mobile_base_mobility.proto";
 
 enum GoalStatus {
     NONE = 0;
@@ -46,12 +47,10 @@ message JointsGoal {
 }
 
 message OdometryGoal {
-    google.protobuf.FloatValue x_goal = 2;
-    google.protobuf.FloatValue y_goal = 3;
-    google.protobuf.FloatValue theta_goal = 4;
+    reachy.part.mobile.base.mobility.TargetDirectionCommand odometry_goal = 1;
 
-    google.protobuf.FloatValue distance_tolerance = 5;
-    google.protobuf.FloatValue angle_tolerance = 6;
+    google.protobuf.FloatValue distance_tolerance = 2;
+    google.protobuf.FloatValue angle_tolerance = 3;
 
     google.protobuf.FloatValue timeout = 10;
 }
