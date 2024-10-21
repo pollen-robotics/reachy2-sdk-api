@@ -93,6 +93,7 @@ message GoToQueue {
 service GoToService {
     rpc GoToCartesian (GoToRequest) returns (GoToId);
     rpc GoToJoints (GoToRequest) returns (GoToId);
+    rpc GoToOdometry (GoToRequest) returns (GoToId);
     rpc GetGoToState (GoToId) returns (GoToGoalStatus);
     rpc GetGoToRequest (GoToId) returns (GoToRequest);
     rpc GetPartGoToPlaying (reachy.part.PartId) returns (GoToId);
