@@ -11,6 +11,7 @@ import google.protobuf.internal.enum_type_wrapper
 import google.protobuf.message
 import google.protobuf.wrappers_pb2
 import head_pb2
+import mobile_base_mobility_pb2
 import part_pb2
 import sys
 import typing
@@ -163,18 +164,12 @@ global___JointsGoal = JointsGoal
 class OdometryGoal(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
-    X_GOAL_FIELD_NUMBER: builtins.int
-    Y_GOAL_FIELD_NUMBER: builtins.int
-    THETA_GOAL_FIELD_NUMBER: builtins.int
+    ODOMETRY_GOAL_FIELD_NUMBER: builtins.int
     DISTANCE_TOLERANCE_FIELD_NUMBER: builtins.int
     ANGLE_TOLERANCE_FIELD_NUMBER: builtins.int
     TIMEOUT_FIELD_NUMBER: builtins.int
     @property
-    def x_goal(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
-    @property
-    def y_goal(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
-    @property
-    def theta_goal(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    def odometry_goal(self) -> mobile_base_mobility_pb2.TargetDirectionCommand: ...
     @property
     def distance_tolerance(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
     @property
@@ -184,15 +179,13 @@ class OdometryGoal(google.protobuf.message.Message):
     def __init__(
         self,
         *,
-        x_goal: google.protobuf.wrappers_pb2.FloatValue | None = ...,
-        y_goal: google.protobuf.wrappers_pb2.FloatValue | None = ...,
-        theta_goal: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        odometry_goal: mobile_base_mobility_pb2.TargetDirectionCommand | None = ...,
         distance_tolerance: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         angle_tolerance: google.protobuf.wrappers_pb2.FloatValue | None = ...,
         timeout: google.protobuf.wrappers_pb2.FloatValue | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["angle_tolerance", b"angle_tolerance", "distance_tolerance", b"distance_tolerance", "theta_goal", b"theta_goal", "timeout", b"timeout", "x_goal", b"x_goal", "y_goal", b"y_goal"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["angle_tolerance", b"angle_tolerance", "distance_tolerance", b"distance_tolerance", "theta_goal", b"theta_goal", "timeout", b"timeout", "x_goal", b"x_goal", "y_goal", b"y_goal"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["angle_tolerance", b"angle_tolerance", "distance_tolerance", b"distance_tolerance", "odometry_goal", b"odometry_goal", "timeout", b"timeout"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["angle_tolerance", b"angle_tolerance", "distance_tolerance", b"distance_tolerance", "odometry_goal", b"odometry_goal", "timeout", b"timeout"]) -> None: ...
 
 global___OdometryGoal = OdometryGoal
 

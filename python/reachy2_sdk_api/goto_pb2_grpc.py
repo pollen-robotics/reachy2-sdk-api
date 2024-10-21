@@ -26,6 +26,11 @@ class GoToServiceStub(object):
                 request_serializer=goto__pb2.GoToRequest.SerializeToString,
                 response_deserializer=goto__pb2.GoToId.FromString,
                 )
+        self.GoToOdometry = channel.unary_unary(
+                '/GoToService/GoToOdometry',
+                request_serializer=goto__pb2.GoToRequest.SerializeToString,
+                response_deserializer=goto__pb2.GoToId.FromString,
+                )
         self.GetGoToState = channel.unary_unary(
                 '/GoToService/GetGoToState',
                 request_serializer=goto__pb2.GoToId.SerializeToString,
@@ -73,6 +78,12 @@ class GoToServiceServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def GoToJoints(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def GoToOdometry(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -130,6 +141,11 @@ def add_GoToServiceServicer_to_server(servicer, server):
             ),
             'GoToJoints': grpc.unary_unary_rpc_method_handler(
                     servicer.GoToJoints,
+                    request_deserializer=goto__pb2.GoToRequest.FromString,
+                    response_serializer=goto__pb2.GoToId.SerializeToString,
+            ),
+            'GoToOdometry': grpc.unary_unary_rpc_method_handler(
+                    servicer.GoToOdometry,
                     request_deserializer=goto__pb2.GoToRequest.FromString,
                     response_serializer=goto__pb2.GoToId.SerializeToString,
             ),
@@ -207,6 +223,23 @@ class GoToService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/GoToService/GoToJoints',
+            goto__pb2.GoToRequest.SerializeToString,
+            goto__pb2.GoToId.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def GoToOdometry(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/GoToService/GoToOdometry',
             goto__pb2.GoToRequest.SerializeToString,
             goto__pb2.GoToId.FromString,
             options, channel_credentials,
