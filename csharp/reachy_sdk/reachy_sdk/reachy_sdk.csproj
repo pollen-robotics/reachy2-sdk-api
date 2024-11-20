@@ -16,7 +16,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Protobuf Include="../../../protos/*.proto" Link="*.proto" OutputDir="%(RelativeDir)../csharp" CompileOutputs="false" />
+		<Protobuf Include="../../../protos/*.proto" Link="*.proto" GrpcServices="None" OutputDir="%(RelativeDir)../csharp" CompileOutputs="false" />
 	</ItemGroup>
 
 </Project>
