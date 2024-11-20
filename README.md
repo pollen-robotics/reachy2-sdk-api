@@ -15,3 +15,4 @@ python -m grpc_tools.protoc -I./protos --python_out=./python/reachy2_sdk_api --g
 ### For C#
 
 Open `reachy_sdk.sln` in Visual Studio, and `Click Build > Build Solution`
+Based on [documentation](https://chromium.googlesource.com/external/github.com/grpc/grpc/+/HEAD/src/csharp/BUILD-INTEGRATION.md)
