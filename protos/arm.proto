@@ -53,6 +53,7 @@ enum IKContinuousMode {
     UNDEFINED_CONTINUOUS_MODE = 0;
     CONTINUOUS = 1;
     DISCRETE = 2;
+    UNFREEZE = 3;
 }
 
 enum ReachabilityError {
@@ -61,8 +62,11 @@ enum ReachabilityError {
     SHOULDER_LIMIT = 2;
     ELBOW_LIMIT = 3;
     WRIST_LIMIT = 4;
-    CONTINUITY_LIMIT = 5;
-    OTHER = 6;
+    SINGULARITY_AVOIDANCE = 5;
+    DISCONTINUITY_FREEZE = 6;
+    MULTITURN_FREEZE = 7;
+    
+    OTHER = 20;
 }
 
 message CustomArmJoints {

@@ -115,12 +115,14 @@ class _IKContinuousModeEnumTypeWrapper(google.protobuf.internal.enum_type_wrappe
     UNDEFINED_CONTINUOUS_MODE: _IKContinuousMode.ValueType  # 0
     CONTINUOUS: _IKContinuousMode.ValueType  # 1
     DISCRETE: _IKContinuousMode.ValueType  # 2
+    UNFREEZE: _IKContinuousMode.ValueType  # 3
 
 class IKContinuousMode(_IKContinuousMode, metaclass=_IKContinuousModeEnumTypeWrapper): ...
 
 UNDEFINED_CONTINUOUS_MODE: IKContinuousMode.ValueType  # 0
 CONTINUOUS: IKContinuousMode.ValueType  # 1
 DISCRETE: IKContinuousMode.ValueType  # 2
+UNFREEZE: IKContinuousMode.ValueType  # 3
 global___IKContinuousMode = IKContinuousMode
 
 class _ReachabilityError:
@@ -134,8 +136,10 @@ class _ReachabilityErrorEnumTypeWrapper(google.protobuf.internal.enum_type_wrapp
     SHOULDER_LIMIT: _ReachabilityError.ValueType  # 2
     ELBOW_LIMIT: _ReachabilityError.ValueType  # 3
     WRIST_LIMIT: _ReachabilityError.ValueType  # 4
-    CONTINUITY_LIMIT: _ReachabilityError.ValueType  # 5
-    OTHER: _ReachabilityError.ValueType  # 6
+    SINGULARITY_AVOIDANCE: _ReachabilityError.ValueType  # 5
+    DISCONTINUITY_FREEZE: _ReachabilityError.ValueType  # 6
+    MULTITURN_FREEZE: _ReachabilityError.ValueType  # 7
+    OTHER: _ReachabilityError.ValueType  # 20
 
 class ReachabilityError(_ReachabilityError, metaclass=_ReachabilityErrorEnumTypeWrapper): ...
 
@@ -144,8 +148,10 @@ DISTANCE_LIMIT: ReachabilityError.ValueType  # 1
 SHOULDER_LIMIT: ReachabilityError.ValueType  # 2
 ELBOW_LIMIT: ReachabilityError.ValueType  # 3
 WRIST_LIMIT: ReachabilityError.ValueType  # 4
-CONTINUITY_LIMIT: ReachabilityError.ValueType  # 5
-OTHER: ReachabilityError.ValueType  # 6
+SINGULARITY_AVOIDANCE: ReachabilityError.ValueType  # 5
+DISCONTINUITY_FREEZE: ReachabilityError.ValueType  # 6
+MULTITURN_FREEZE: ReachabilityError.ValueType  # 7
+OTHER: ReachabilityError.ValueType  # 20
 global___ReachabilityError = ReachabilityError
 
 @typing_extensions.final
