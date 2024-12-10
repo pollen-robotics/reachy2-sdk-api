@@ -10,7 +10,7 @@ here = path.abspath(path.dirname(__file__))
 #     long_description = f.read()
 
 setup(
-    name="reachy2-sdk-api",
+    name="reachy2_sdk_api",
     version="1.0.11",
     packages=find_packages(exclude=["tests"]),
     install_requires=[
