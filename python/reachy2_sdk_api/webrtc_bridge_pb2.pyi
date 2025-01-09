@@ -5,6 +5,7 @@ isort:skip_file
 import arm_pb2
 import builtins
 import collections.abc
+import dynamixel_motor_pb2
 import error_pb2
 import google.protobuf.descriptor
 import google.protobuf.internal.containers
@@ -156,6 +157,7 @@ class AnyCommand(google.protobuf.message.Message):
     HAND_COMMAND_FIELD_NUMBER: builtins.int
     NECK_COMMAND_FIELD_NUMBER: builtins.int
     MOBILE_BASE_COMMAND_FIELD_NUMBER: builtins.int
+    ANTENNAS_COMMAND_FIELD_NUMBER: builtins.int
     @property
     def arm_command(self) -> global___ArmCommand: ...
     @property
@@ -164,6 +166,8 @@ class AnyCommand(google.protobuf.message.Message):
     def neck_command(self) -> global___NeckCommand: ...
     @property
     def mobile_base_command(self) -> global___MobileBaseCommand: ...
+    @property
+    def antennas_command(self) -> dynamixel_motor_pb2.DynamixelMotorsCommand: ...
     def __init__(
         self,
         *,
@@ -171,10 +175,11 @@ class AnyCommand(google.protobuf.message.Message):
         hand_command: global___HandCommand | None = ...,
         neck_command: global___NeckCommand | None = ...,
         mobile_base_command: global___MobileBaseCommand | None = ...,
+        antennas_command: dynamixel_motor_pb2.DynamixelMotorsCommand | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["arm_command", b"arm_command", "command", b"command", "hand_command", b"hand_command", "mobile_base_command", b"mobile_base_command", "neck_command", b"neck_command"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["arm_command", b"arm_command", "command", b"command", "hand_command", b"hand_command", "mobile_base_command", b"mobile_base_command", "neck_command", b"neck_command"]) -> None: ...
-    def WhichOneof(self, oneof_group: typing_extensions.Literal["command", b"command"]) -> typing_extensions.Literal["arm_command", "hand_command", "neck_command", "mobile_base_command"] | None: ...
+    def HasField(self, field_name: typing_extensions.Literal["antennas_command", b"antennas_command", "arm_command", b"arm_command", "command", b"command", "hand_command", b"hand_command", "mobile_base_command", b"mobile_base_command", "neck_command", b"neck_command"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["antennas_command", b"antennas_command", "arm_command", b"arm_command", "command", b"command", "hand_command", b"hand_command", "mobile_base_command", b"mobile_base_command", "neck_command", b"neck_command"]) -> None: ...
+    def WhichOneof(self, oneof_group: typing_extensions.Literal["command", b"command"]) -> typing_extensions.Literal["arm_command", "hand_command", "neck_command", "mobile_base_command", "antennas_command"] | None: ...
 
 global___AnyCommand = AnyCommand
 

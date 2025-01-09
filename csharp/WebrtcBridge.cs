@@ -24,50 +24,52 @@ namespace Bridge {
     static WebrtcBridgeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChN3ZWJydGNfYnJpZGdlLnByb3RvEgZicmlkZ2UaCWFybS5wcm90bxoKaGFu",
-            "ZC5wcm90bxoKaGVhZC5wcm90bxoKcGFydC5wcm90bxoMcmVhY2h5LnByb3Rv",
-            "GgtlcnJvci5wcm90bxoabW9iaWxlX2Jhc2VfbW9iaWxpdHkucHJvdG8aGW1v",
-            "YmlsZV9iYXNlX3V0aWxpdHkucHJvdG8iCwoJR2V0UmVhY2h5ImEKB0Nvbm5l",
-            "Y3QSIwoJcmVhY2h5X2lkGAEgASgLMhAucmVhY2h5LlJlYWNoeUlkEhgKEHVw",
-            "ZGF0ZV9mcmVxdWVuY3kYAiABKAISFwoPYXVkaXRfZnJlcXVlbmN5GAMgASgC",
-            "IjEKCkRpc2Nvbm5lY3QSIwoJcmVhY2h5X2lkGAEgASgLMhAucmVhY2h5LlJl",
-            "YWNoeUlkIpIBCg5TZXJ2aWNlUmVxdWVzdBInCgpnZXRfcmVhY2h5GAEgASgL",
-            "MhEuYnJpZGdlLkdldFJlYWNoeUgAEiIKB2Nvbm5lY3QYAiABKAsyDy5icmlk",
-            "Z2UuQ29ubmVjdEgAEigKCmRpc2Nvbm5lY3QYAyABKAsyEi5icmlkZ2UuRGlz",
-            "Y29ubmVjdEgAQgkKB3JlcXVlc3QidQoQQ29ubmVjdGlvblN0YXR1cxIRCglj",
-            "b25uZWN0ZWQYASABKAgSFQoNc3RhdGVfY2hhbm5lbBgCIAEoCRIXCg9jb21t",
-            "YW5kX2NoYW5uZWwYAyABKAkSHgoGcmVhY2h5GAQgASgLMg4ucmVhY2h5LlJl",
-            "YWNoeSJzCg9TZXJ2aWNlUmVzcG9uc2USNQoRY29ubmVjdGlvbl9zdGF0dXMY",
-            "ASABKAsyGC5icmlkZ2UuQ29ubmVjdGlvblN0YXR1c0gAEh0KBWVycm9yGAIg",
-            "ASgLMgwuZXJyb3IuRXJyb3JIAEIKCghyZXNwb25zZSLWAQoKQW55Q29tbWFu",
-            "ZBIpCgthcm1fY29tbWFuZBgBIAEoCzISLmJyaWRnZS5Bcm1Db21tYW5kSAAS",
-            "KwoMaGFuZF9jb21tYW5kGAIgASgLMhMuYnJpZGdlLkhhbmRDb21tYW5kSAAS",
-            "KwoMbmVja19jb21tYW5kGAMgASgLMhMuYnJpZGdlLk5lY2tDb21tYW5kSAAS",
-            "OAoTbW9iaWxlX2Jhc2VfY29tbWFuZBgEIAEoCzIZLmJyaWRnZS5Nb2JpbGVC",
-            "YXNlQ29tbWFuZEgAQgkKB2NvbW1hbmQijAIKCkFybUNvbW1hbmQSPQoSYXJt",
-            "X2NhcnRlc2lhbl9nb2FsGAEgASgLMiEucmVhY2h5LnBhcnQuYXJtLkFybUNh",
-            "cnRlc2lhbkdvYWwSJAoHdHVybl9vbhgCIAEoCzITLnJlYWNoeS5wYXJ0LlBh",
-            "cnRJZBIlCgh0dXJuX29mZhgDIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBI3",
-            "CgtzcGVlZF9saW1pdBgEIAEoCzIiLnJlYWNoeS5wYXJ0LmFybS5TcGVlZExp",
-            "bWl0UmVxdWVzdBI5Cgx0b3JxdWVfbGltaXQYBSABKAsyIy5yZWFjaHkucGFy",
-            "dC5hcm0uVG9ycXVlTGltaXRSZXF1ZXN0IpQBCgtIYW5kQ29tbWFuZBI4Cglo",
-            "YW5kX2dvYWwYASABKAsyJS5yZWFjaHkucGFydC5oYW5kLkhhbmRQb3NpdGlv",
-            "blJlcXVlc3QSJAoHdHVybl9vbhgCIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJ",
-            "ZBIlCgh0dXJuX29mZhgDIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZCKEAgoL",
-            "TmVja0NvbW1hbmQSMgoJbmVja19nb2FsGAEgASgLMh8ucmVhY2h5LnBhcnQu",
-            "aGVhZC5OZWNrSm9pbnRHb2FsEiQKB3R1cm5fb24YAiABKAsyEy5yZWFjaHku",
-            "cGFydC5QYXJ0SWQSJQoIdHVybl9vZmYYAyABKAsyEy5yZWFjaHkucGFydC5Q",
-            "YXJ0SWQSOAoLc3BlZWRfbGltaXQYBCABKAsyIy5yZWFjaHkucGFydC5oZWFk",
-            "LlNwZWVkTGltaXRSZXF1ZXN0EjoKDHRvcnF1ZV9saW1pdBgFIAEoCzIkLnJl",
-            "YWNoeS5wYXJ0LmhlYWQuVG9ycXVlTGltaXRSZXF1ZXN0IrMBChFNb2JpbGVC",
-            "YXNlQ29tbWFuZBJSChB0YXJnZXRfZGlyZWN0aW9uGAEgASgLMjgucmVhY2h5",
-            "LnBhcnQubW9iaWxlLmJhc2UubW9iaWxpdHkuVGFyZ2V0RGlyZWN0aW9uQ29t",
-            "bWFuZBJKChBtb2JpbGVfYmFzZV9tb2RlGAIgASgLMjAucmVhY2h5LnBhcnQu",
-            "bW9iaWxlLmJhc2UudXRpbGl0eS5adXV1TW9kZUNvbW1hbmQiMwoLQW55Q29t",
-            "bWFuZHMSJAoIY29tbWFuZHMYASADKAsyEi5icmlkZ2UuQW55Q29tbWFuZGIG",
-            "cHJvdG8z"));
+            "ChN3ZWJydGNfYnJpZGdlLnByb3RvEgZicmlkZ2UaCWFybS5wcm90bxoVZHlu",
+            "YW1peGVsX21vdG9yLnByb3RvGgpoYW5kLnByb3RvGgpoZWFkLnByb3RvGgpw",
+            "YXJ0LnByb3RvGgxyZWFjaHkucHJvdG8aC2Vycm9yLnByb3RvGhptb2JpbGVf",
+            "YmFzZV9tb2JpbGl0eS5wcm90bxoZbW9iaWxlX2Jhc2VfdXRpbGl0eS5wcm90",
+            "byILCglHZXRSZWFjaHkiYQoHQ29ubmVjdBIjCglyZWFjaHlfaWQYASABKAsy",
+            "EC5yZWFjaHkuUmVhY2h5SWQSGAoQdXBkYXRlX2ZyZXF1ZW5jeRgCIAEoAhIX",
+            "Cg9hdWRpdF9mcmVxdWVuY3kYAyABKAIiMQoKRGlzY29ubmVjdBIjCglyZWFj",
+            "aHlfaWQYASABKAsyEC5yZWFjaHkuUmVhY2h5SWQikgEKDlNlcnZpY2VSZXF1",
+            "ZXN0EicKCmdldF9yZWFjaHkYASABKAsyES5icmlkZ2UuR2V0UmVhY2h5SAAS",
+            "IgoHY29ubmVjdBgCIAEoCzIPLmJyaWRnZS5Db25uZWN0SAASKAoKZGlzY29u",
+            "bmVjdBgDIAEoCzISLmJyaWRnZS5EaXNjb25uZWN0SABCCQoHcmVxdWVzdCJ1",
+            "ChBDb25uZWN0aW9uU3RhdHVzEhEKCWNvbm5lY3RlZBgBIAEoCBIVCg1zdGF0",
+            "ZV9jaGFubmVsGAIgASgJEhcKD2NvbW1hbmRfY2hhbm5lbBgDIAEoCRIeCgZy",
+            "ZWFjaHkYBCABKAsyDi5yZWFjaHkuUmVhY2h5InMKD1NlcnZpY2VSZXNwb25z",
+            "ZRI1ChFjb25uZWN0aW9uX3N0YXR1cxgBIAEoCzIYLmJyaWRnZS5Db25uZWN0",
+            "aW9uU3RhdHVzSAASHQoFZXJyb3IYAiABKAsyDC5lcnJvci5FcnJvckgAQgoK",
+            "CHJlc3BvbnNlIqUCCgpBbnlDb21tYW5kEikKC2FybV9jb21tYW5kGAEgASgL",
+            "MhIuYnJpZGdlLkFybUNvbW1hbmRIABIrCgxoYW5kX2NvbW1hbmQYAiABKAsy",
+            "Ey5icmlkZ2UuSGFuZENvbW1hbmRIABIrCgxuZWNrX2NvbW1hbmQYAyABKAsy",
+            "Ey5icmlkZ2UuTmVja0NvbW1hbmRIABI4ChNtb2JpbGVfYmFzZV9jb21tYW5k",
+            "GAQgASgLMhkuYnJpZGdlLk1vYmlsZUJhc2VDb21tYW5kSAASTQoQYW50ZW5u",
+            "YXNfY29tbWFuZBgFIAEoCzIxLmNvbXBvbmVudC5keW5hbWl4ZWxfbW90b3Iu",
+            "RHluYW1peGVsTW90b3JzQ29tbWFuZEgAQgkKB2NvbW1hbmQijAIKCkFybUNv",
+            "bW1hbmQSPQoSYXJtX2NhcnRlc2lhbl9nb2FsGAEgASgLMiEucmVhY2h5LnBh",
+            "cnQuYXJtLkFybUNhcnRlc2lhbkdvYWwSJAoHdHVybl9vbhgCIAEoCzITLnJl",
+            "YWNoeS5wYXJ0LlBhcnRJZBIlCgh0dXJuX29mZhgDIAEoCzITLnJlYWNoeS5w",
+            "YXJ0LlBhcnRJZBI3CgtzcGVlZF9saW1pdBgEIAEoCzIiLnJlYWNoeS5wYXJ0",
+            "LmFybS5TcGVlZExpbWl0UmVxdWVzdBI5Cgx0b3JxdWVfbGltaXQYBSABKAsy",
+            "Iy5yZWFjaHkucGFydC5hcm0uVG9ycXVlTGltaXRSZXF1ZXN0IpQBCgtIYW5k",
+            "Q29tbWFuZBI4CgloYW5kX2dvYWwYASABKAsyJS5yZWFjaHkucGFydC5oYW5k",
+            "LkhhbmRQb3NpdGlvblJlcXVlc3QSJAoHdHVybl9vbhgCIAEoCzITLnJlYWNo",
+            "eS5wYXJ0LlBhcnRJZBIlCgh0dXJuX29mZhgDIAEoCzITLnJlYWNoeS5wYXJ0",
+            "LlBhcnRJZCKEAgoLTmVja0NvbW1hbmQSMgoJbmVja19nb2FsGAEgASgLMh8u",
+            "cmVhY2h5LnBhcnQuaGVhZC5OZWNrSm9pbnRHb2FsEiQKB3R1cm5fb24YAiAB",
+            "KAsyEy5yZWFjaHkucGFydC5QYXJ0SWQSJQoIdHVybl9vZmYYAyABKAsyEy5y",
+            "ZWFjaHkucGFydC5QYXJ0SWQSOAoLc3BlZWRfbGltaXQYBCABKAsyIy5yZWFj",
+            "aHkucGFydC5oZWFkLlNwZWVkTGltaXRSZXF1ZXN0EjoKDHRvcnF1ZV9saW1p",
+            "dBgFIAEoCzIkLnJlYWNoeS5wYXJ0LmhlYWQuVG9ycXVlTGltaXRSZXF1ZXN0",
+            "IrMBChFNb2JpbGVCYXNlQ29tbWFuZBJSChB0YXJnZXRfZGlyZWN0aW9uGAEg",
+            "ASgLMjgucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UubW9iaWxpdHkuVGFyZ2V0",
+            "RGlyZWN0aW9uQ29tbWFuZBJKChBtb2JpbGVfYmFzZV9tb2RlGAIgASgLMjAu",
+            "cmVhY2h5LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0eS5adXV1TW9kZUNvbW1h",
+            "bmQiMwoLQW55Q29tbWFuZHMSJAoIY29tbWFuZHMYASADKAsyEi5icmlkZ2Uu",
+            "QW55Q29tbWFuZGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, global::Reachy.ReachyReflection.Descriptor, global::Error.ErrorReflection.Descriptor, global::Reachy.Part.Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor, global::Reachy.Part.Mobile.Base.Utility.MobileBaseUtilityReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Component.DynamixelMotor.DynamixelMotorReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, global::Reachy.ReachyReflection.Descriptor, global::Error.ErrorReflection.Descriptor, global::Reachy.Part.Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor, global::Reachy.Part.Mobile.Base.Utility.MobileBaseUtilityReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.GetReachy), global::Bridge.GetReachy.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.Connect), global::Bridge.Connect.Parser, new[]{ "ReachyId", "UpdateFrequency", "AuditFrequency" }, null, null, null, null),
@@ -75,7 +77,7 @@ namespace Bridge {
             new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.ServiceRequest), global::Bridge.ServiceRequest.Parser, new[]{ "GetReachy", "Connect", "Disconnect" }, new[]{ "Request" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.ConnectionStatus), global::Bridge.ConnectionStatus.Parser, new[]{ "Connected", "StateChannel", "CommandChannel", "Reachy" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.ServiceResponse), global::Bridge.ServiceResponse.Parser, new[]{ "ConnectionStatus", "Error" }, new[]{ "Response" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.AnyCommand), global::Bridge.AnyCommand.Parser, new[]{ "ArmCommand", "HandCommand", "NeckCommand", "MobileBaseCommand" }, new[]{ "Command" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.AnyCommand), global::Bridge.AnyCommand.Parser, new[]{ "ArmCommand", "HandCommand", "NeckCommand", "MobileBaseCommand", "AntennasCommand" }, new[]{ "Command" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.ArmCommand), global::Bridge.ArmCommand.Parser, new[]{ "ArmCartesianGoal", "TurnOn", "TurnOff", "SpeedLimit", "TorqueLimit" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.HandCommand), global::Bridge.HandCommand.Parser, new[]{ "HandGoal", "TurnOn", "TurnOff" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Bridge.NeckCommand), global::Bridge.NeckCommand.Parser, new[]{ "NeckGoal", "TurnOn", "TurnOff", "SpeedLimit", "TorqueLimit" }, null, null, null, null),
@@ -1688,6 +1690,9 @@ namespace Bridge {
         case CommandOneofCase.MobileBaseCommand:
           MobileBaseCommand = other.MobileBaseCommand.Clone();
           break;
+        case CommandOneofCase.AntennasCommand:
+          AntennasCommand = other.AntennasCommand.Clone();
+          break;
       }
 
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1747,6 +1752,18 @@ namespace Bridge {
       }
     }
 
+    /// <summary>Field number for the "antennas_command" field.</summary>
+    public const int AntennasCommandFieldNumber = 5;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Component.DynamixelMotor.DynamixelMotorsCommand AntennasCommand {
+      get { return commandCase_ == CommandOneofCase.AntennasCommand ? (global::Component.DynamixelMotor.DynamixelMotorsCommand) command_ : null; }
+      set {
+        command_ = value;
+        commandCase_ = value == null ? CommandOneofCase.None : CommandOneofCase.AntennasCommand;
+      }
+    }
+
     private object command_;
     /// <summary>Enum of possible cases for the "command" oneof.</summary>
     public enum CommandOneofCase {
@@ -1755,6 +1772,7 @@ namespace Bridge {
       HandCommand = 2,
       NeckCommand = 3,
       MobileBaseCommand = 4,
+      AntennasCommand = 5,
     }
     private CommandOneofCase commandCase_ = CommandOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1789,6 +1807,7 @@ namespace Bridge {
       if (!object.Equals(HandCommand, other.HandCommand)) return false;
       if (!object.Equals(NeckCommand, other.NeckCommand)) return false;
       if (!object.Equals(MobileBaseCommand, other.MobileBaseCommand)) return false;
+      if (!object.Equals(AntennasCommand, other.AntennasCommand)) return false;
       if (CommandCase != other.CommandCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1801,6 +1820,7 @@ namespace Bridge {
       if (commandCase_ == CommandOneofCase.HandCommand) hash ^= HandCommand.GetHashCode();
       if (commandCase_ == CommandOneofCase.NeckCommand) hash ^= NeckCommand.GetHashCode();
       if (commandCase_ == CommandOneofCase.MobileBaseCommand) hash ^= MobileBaseCommand.GetHashCode();
+      if (commandCase_ == CommandOneofCase.AntennasCommand) hash ^= AntennasCommand.GetHashCode();
       hash ^= (int) commandCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1836,6 +1856,10 @@ namespace Bridge {
         output.WriteRawTag(34);
         output.WriteMessage(MobileBaseCommand);
       }
+      if (commandCase_ == CommandOneofCase.AntennasCommand) {
+        output.WriteRawTag(42);
+        output.WriteMessage(AntennasCommand);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1862,6 +1886,10 @@ namespace Bridge {
         output.WriteRawTag(34);
         output.WriteMessage(MobileBaseCommand);
       }
+      if (commandCase_ == CommandOneofCase.AntennasCommand) {
+        output.WriteRawTag(42);
+        output.WriteMessage(AntennasCommand);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1883,6 +1911,9 @@ namespace Bridge {
       }
       if (commandCase_ == CommandOneofCase.MobileBaseCommand) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(MobileBaseCommand);
+      }
+      if (commandCase_ == CommandOneofCase.AntennasCommand) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AntennasCommand);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1920,6 +1951,12 @@ namespace Bridge {
             MobileBaseCommand = new global::Bridge.MobileBaseCommand();
           }
           MobileBaseCommand.MergeFrom(other.MobileBaseCommand);
+          break;
+        case CommandOneofCase.AntennasCommand:
+          if (AntennasCommand == null) {
+            AntennasCommand = new global::Component.DynamixelMotor.DynamixelMotorsCommand();
+          }
+          AntennasCommand.MergeFrom(other.AntennasCommand);
           break;
       }
 
@@ -1974,6 +2011,15 @@ namespace Bridge {
             MobileBaseCommand = subBuilder;
             break;
           }
+          case 42: {
+            global::Component.DynamixelMotor.DynamixelMotorsCommand subBuilder = new global::Component.DynamixelMotor.DynamixelMotorsCommand();
+            if (commandCase_ == CommandOneofCase.AntennasCommand) {
+              subBuilder.MergeFrom(AntennasCommand);
+            }
+            input.ReadMessage(subBuilder);
+            AntennasCommand = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -2023,6 +2069,15 @@ namespace Bridge {
             }
             input.ReadMessage(subBuilder);
             MobileBaseCommand = subBuilder;
+            break;
+          }
+          case 42: {
+            global::Component.DynamixelMotor.DynamixelMotorsCommand subBuilder = new global::Component.DynamixelMotor.DynamixelMotorsCommand();
+            if (commandCase_ == CommandOneofCase.AntennasCommand) {
+              subBuilder.MergeFrom(AntennasCommand);
+            }
+            input.ReadMessage(subBuilder);
+            AntennasCommand = subBuilder;
             break;
           }
         }
