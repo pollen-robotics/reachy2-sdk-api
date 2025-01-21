@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+package component.audio;
+
+message AudioFiles{
+    repeated string files = 1;
+}
+
+message AudioFile{
+    string path = 1;
+}
+
+service AudioService {
+    rpc GetAudioFiles(google.protobuf.Empty) returns (AudioFiles);
+    rpc PlayAudioFile(AudioFile) returns (google.protobuf.Empty);
+    rpc StopPlaying(google.protobuf.Empty) returns (google.protobuf.Empty);
+    rpc RecordAudioFile(AudioFile) returns (google.protobuf.Empty);
+    rpc StopRecording(google.protobuf.Empty) returns (google.protobuf.Empty);
+}
