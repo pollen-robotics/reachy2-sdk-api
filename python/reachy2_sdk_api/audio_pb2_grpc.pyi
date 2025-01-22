@@ -40,6 +40,10 @@ class AudioServiceStub:
         google.protobuf.empty_pb2.Empty,
         google.protobuf.empty_pb2.Empty,
     ]
+    UploadAudioFile: grpc.StreamUnaryMultiCallable[
+        audio_pb2.UploadAudioFileRequest,
+        audio_pb2.AudioAck,
+    ]
 
 class AudioServiceAsyncStub:
     GetAudioFiles: grpc.aio.UnaryUnaryMultiCallable[
@@ -61,6 +65,10 @@ class AudioServiceAsyncStub:
     StopRecording: grpc.aio.UnaryUnaryMultiCallable[
         google.protobuf.empty_pb2.Empty,
         google.protobuf.empty_pb2.Empty,
+    ]
+    UploadAudioFile: grpc.aio.StreamUnaryMultiCallable[
+        audio_pb2.UploadAudioFileRequest,
+        audio_pb2.AudioAck,
     ]
 
 class AudioServiceServicer(metaclass=abc.ABCMeta):
@@ -94,5 +102,11 @@ class AudioServiceServicer(metaclass=abc.ABCMeta):
         request: google.protobuf.empty_pb2.Empty,
         context: _ServicerContext,
     ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
+    @abc.abstractmethod
+    def UploadAudioFile(
+        self,
+        request_iterator: _MaybeAsyncIterator[audio_pb2.UploadAudioFileRequest],
+        context: _ServicerContext,
+    ) -> typing.Union[audio_pb2.AudioAck, collections.abc.Awaitable[audio_pb2.AudioAck]]: ...
 
 def add_AudioServiceServicer_to_server(servicer: AudioServiceServicer, server: typing.Union[grpc.Server, grpc.aio.Server]) -> None: ...

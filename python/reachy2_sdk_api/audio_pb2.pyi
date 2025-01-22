@@ -4,9 +4,11 @@ isort:skip_file
 """
 import builtins
 import collections.abc
+import error_pb2
 import google.protobuf.descriptor
 import google.protobuf.internal.containers
 import google.protobuf.message
+import google.protobuf.wrappers_pb2
 import sys
 
 if sys.version_info >= (3, 8):
@@ -46,3 +48,45 @@ class AudioFile(google.protobuf.message.Message):
     def ClearField(self, field_name: typing_extensions.Literal["path", b"path"]) -> None: ...
 
 global___AudioFile = AudioFile
+
+@typing_extensions.final
+class UploadAudioFileRequest(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    INFO_FIELD_NUMBER: builtins.int
+    CHUNK_DATA_FIELD_NUMBER: builtins.int
+    @property
+    def info(self) -> global___AudioFile: ...
+    chunk_data: builtins.bytes
+    def __init__(
+        self,
+        *,
+        info: global___AudioFile | None = ...,
+        chunk_data: builtins.bytes = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["chunk_data", b"chunk_data", "data", b"data", "info", b"info"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["chunk_data", b"chunk_data", "data", b"data", "info", b"info"]) -> None: ...
+    def WhichOneof(self, oneof_group: typing_extensions.Literal["data", b"data"]) -> typing_extensions.Literal["info", "chunk_data"] | None: ...
+
+global___UploadAudioFileRequest = UploadAudioFileRequest
+
+@typing_extensions.final
+class AudioAck(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    SUCCESS_FIELD_NUMBER: builtins.int
+    ERROR_FIELD_NUMBER: builtins.int
+    @property
+    def success(self) -> google.protobuf.wrappers_pb2.BoolValue: ...
+    @property
+    def error(self) -> error_pb2.Error: ...
+    def __init__(
+        self,
+        *,
+        success: google.protobuf.wrappers_pb2.BoolValue | None = ...,
+        error: error_pb2.Error | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["error", b"error", "success", b"success"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["error", b"error", "success", b"success"]) -> None: ...
+
+global___AudioAck = AudioAck
