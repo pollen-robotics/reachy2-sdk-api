@@ -45,6 +45,11 @@ class AudioServiceStub(object):
                 request_serializer=audio__pb2.UploadAudioFileRequest.SerializeToString,
                 response_deserializer=audio__pb2.AudioAck.FromString,
                 )
+        self.RemoveAudioFile = channel.unary_unary(
+                '/component.audio.AudioService/RemoveAudioFile',
+                request_serializer=audio__pb2.AudioFile.SerializeToString,
+                response_deserializer=audio__pb2.AudioAck.FromString,
+                )
 
 
 class AudioServiceServicer(object):
@@ -86,6 +91,12 @@ class AudioServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def RemoveAudioFile(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
 
 def add_AudioServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
@@ -117,6 +128,11 @@ def add_AudioServiceServicer_to_server(servicer, server):
             'UploadAudioFile': grpc.stream_unary_rpc_method_handler(
                     servicer.UploadAudioFile,
                     request_deserializer=audio__pb2.UploadAudioFileRequest.FromString,
+                    response_serializer=audio__pb2.AudioAck.SerializeToString,
+            ),
+            'RemoveAudioFile': grpc.unary_unary_rpc_method_handler(
+                    servicer.RemoveAudioFile,
+                    request_deserializer=audio__pb2.AudioFile.FromString,
                     response_serializer=audio__pb2.AudioAck.SerializeToString,
             ),
     }
@@ -227,6 +243,23 @@ class AudioService(object):
             metadata=None):
         return grpc.experimental.stream_unary(request_iterator, target, '/component.audio.AudioService/UploadAudioFile',
             audio__pb2.UploadAudioFileRequest.SerializeToString,
+            audio__pb2.AudioAck.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def RemoveAudioFile(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/component.audio.AudioService/RemoveAudioFile',
+            audio__pb2.AudioFile.SerializeToString,
             audio__pb2.AudioAck.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

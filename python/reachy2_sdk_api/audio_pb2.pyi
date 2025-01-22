@@ -19,22 +19,6 @@ else:
 DESCRIPTOR: google.protobuf.descriptor.FileDescriptor
 
 @typing_extensions.final
-class AudioFiles(google.protobuf.message.Message):
-    DESCRIPTOR: google.protobuf.descriptor.Descriptor
-
-    FILES_FIELD_NUMBER: builtins.int
-    @property
-    def files(self) -> google.protobuf.internal.containers.RepeatedScalarFieldContainer[builtins.str]: ...
-    def __init__(
-        self,
-        *,
-        files: collections.abc.Iterable[builtins.str] | None = ...,
-    ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["files", b"files"]) -> None: ...
-
-global___AudioFiles = AudioFiles
-
-@typing_extensions.final
 class AudioFile(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -48,6 +32,22 @@ class AudioFile(google.protobuf.message.Message):
     def ClearField(self, field_name: typing_extensions.Literal["path", b"path"]) -> None: ...
 
 global___AudioFile = AudioFile
+
+@typing_extensions.final
+class AudioFiles(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    FILES_FIELD_NUMBER: builtins.int
+    @property
+    def files(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___AudioFile]: ...
+    def __init__(
+        self,
+        *,
+        files: collections.abc.Iterable[global___AudioFile] | None = ...,
+    ) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["files", b"files"]) -> None: ...
+
+global___AudioFiles = AudioFiles
 
 @typing_extensions.final
 class UploadAudioFileRequest(google.protobuf.message.Message):

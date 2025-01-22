@@ -44,6 +44,10 @@ class AudioServiceStub:
         audio_pb2.UploadAudioFileRequest,
         audio_pb2.AudioAck,
     ]
+    RemoveAudioFile: grpc.UnaryUnaryMultiCallable[
+        audio_pb2.AudioFile,
+        audio_pb2.AudioAck,
+    ]
 
 class AudioServiceAsyncStub:
     GetAudioFiles: grpc.aio.UnaryUnaryMultiCallable[
@@ -68,6 +72,10 @@ class AudioServiceAsyncStub:
     ]
     UploadAudioFile: grpc.aio.StreamUnaryMultiCallable[
         audio_pb2.UploadAudioFileRequest,
+        audio_pb2.AudioAck,
+    ]
+    RemoveAudioFile: grpc.aio.UnaryUnaryMultiCallable[
+        audio_pb2.AudioFile,
         audio_pb2.AudioAck,
     ]
 
@@ -106,6 +114,12 @@ class AudioServiceServicer(metaclass=abc.ABCMeta):
     def UploadAudioFile(
         self,
         request_iterator: _MaybeAsyncIterator[audio_pb2.UploadAudioFileRequest],
+        context: _ServicerContext,
+    ) -> typing.Union[audio_pb2.AudioAck, collections.abc.Awaitable[audio_pb2.AudioAck]]: ...
+    @abc.abstractmethod
+    def RemoveAudioFile(
+        self,
+        request: audio_pb2.AudioFile,
         context: _ServicerContext,
     ) -> typing.Union[audio_pb2.AudioAck, collections.abc.Awaitable[audio_pb2.AudioAck]]: ...
 
