@@ -26,27 +26,29 @@ namespace Component.Audio {
           string.Concat(
             "CgthdWRpby5wcm90bxIPY29tcG9uZW50LmF1ZGlvGhtnb29nbGUvcHJvdG9i",
             "dWYvZW1wdHkucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90",
-            "bxoLZXJyb3IucHJvdG8iGwoKQXVkaW9GaWxlcxINCgVmaWxlcxgBIAMoCSIZ",
-            "CglBdWRpb0ZpbGUSDAoEcGF0aBgBIAEoCSJiChZVcGxvYWRBdWRpb0ZpbGVS",
-            "ZXF1ZXN0EioKBGluZm8YASABKAsyGi5jb21wb25lbnQuYXVkaW8uQXVkaW9G",
-            "aWxlSAASFAoKY2h1bmtfZGF0YRgCIAEoDEgAQgYKBGRhdGEiVAoIQXVkaW9B",
-            "Y2sSKwoHc3VjY2VzcxgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFs",
-            "dWUSGwoFZXJyb3IYAiABKAsyDC5lcnJvci5FcnJvcjK5AwoMQXVkaW9TZXJ2",
-            "aWNlEkQKDUdldEF1ZGlvRmlsZXMSFi5nb29nbGUucHJvdG9idWYuRW1wdHka",
-            "Gy5jb21wb25lbnQuYXVkaW8uQXVkaW9GaWxlcxJDCg1QbGF5QXVkaW9GaWxl",
-            "EhouY29tcG9uZW50LmF1ZGlvLkF1ZGlvRmlsZRoWLmdvb2dsZS5wcm90b2J1",
-            "Zi5FbXB0eRI9CgtTdG9wUGxheWluZxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0",
-            "eRoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJFCg9SZWNvcmRBdWRpb0ZpbGUS",
-            "Gi5jb21wb25lbnQuYXVkaW8uQXVkaW9GaWxlGhYuZ29vZ2xlLnByb3RvYnVm",
-            "LkVtcHR5Ej8KDVN0b3BSZWNvcmRpbmcSFi5nb29nbGUucHJvdG9idWYuRW1w",
-            "dHkaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSVwoPVXBsb2FkQXVkaW9GaWxl",
-            "EicuY29tcG9uZW50LmF1ZGlvLlVwbG9hZEF1ZGlvRmlsZVJlcXVlc3QaGS5j",
-            "b21wb25lbnQuYXVkaW8uQXVkaW9BY2soAWIGcHJvdG8z"));
+            "bxoLZXJyb3IucHJvdG8iGQoJQXVkaW9GaWxlEgwKBHBhdGgYASABKAkiNwoK",
+            "QXVkaW9GaWxlcxIpCgVmaWxlcxgBIAMoCzIaLmNvbXBvbmVudC5hdWRpby5B",
+            "dWRpb0ZpbGUiYgoWVXBsb2FkQXVkaW9GaWxlUmVxdWVzdBIqCgRpbmZvGAEg",
+            "ASgLMhouY29tcG9uZW50LmF1ZGlvLkF1ZGlvRmlsZUgAEhQKCmNodW5rX2Rh",
+            "dGEYAiABKAxIAEIGCgRkYXRhIlQKCEF1ZGlvQWNrEisKB3N1Y2Nlc3MYASAB",
+            "KAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEhsKBWVycm9yGAIgASgL",
+            "MgwuZXJyb3IuRXJyb3IygwQKDEF1ZGlvU2VydmljZRJECg1HZXRBdWRpb0Zp",
+            "bGVzEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GhsuY29tcG9uZW50LmF1ZGlv",
+            "LkF1ZGlvRmlsZXMSQwoNUGxheUF1ZGlvRmlsZRIaLmNvbXBvbmVudC5hdWRp",
+            "by5BdWRpb0ZpbGUaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSPQoLU3RvcFBs",
+            "YXlpbmcSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaFi5nb29nbGUucHJvdG9i",
+            "dWYuRW1wdHkSRQoPUmVjb3JkQXVkaW9GaWxlEhouY29tcG9uZW50LmF1ZGlv",
+            "LkF1ZGlvRmlsZRoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRI/Cg1TdG9wUmVj",
+            "b3JkaW5nEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GhYuZ29vZ2xlLnByb3Rv",
+            "YnVmLkVtcHR5ElcKD1VwbG9hZEF1ZGlvRmlsZRInLmNvbXBvbmVudC5hdWRp",
+            "by5VcGxvYWRBdWRpb0ZpbGVSZXF1ZXN0GhkuY29tcG9uZW50LmF1ZGlvLkF1",
+            "ZGlvQWNrKAESSAoPUmVtb3ZlQXVkaW9GaWxlEhouY29tcG9uZW50LmF1ZGlv",
+            "LkF1ZGlvRmlsZRoZLmNvbXBvbmVudC5hdWRpby5BdWRpb0Fja2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Error.ErrorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Audio.AudioFiles), global::Component.Audio.AudioFiles.Parser, new[]{ "Files" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Audio.AudioFile), global::Component.Audio.AudioFile.Parser, new[]{ "Path" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Audio.AudioFiles), global::Component.Audio.AudioFiles.Parser, new[]{ "Files" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Audio.UploadAudioFileRequest), global::Component.Audio.UploadAudioFileRequest.Parser, new[]{ "Info", "ChunkData" }, new[]{ "Data" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Audio.AudioAck), global::Component.Audio.AudioAck.Parser, new[]{ "Success", "Error" }, null, null, null, null)
           }));
@@ -55,184 +57,6 @@ namespace Component.Audio {
 
   }
   #region Messages
-  public sealed partial class AudioFiles : pb::IMessage<AudioFiles>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<AudioFiles> _parser = new pb::MessageParser<AudioFiles>(() => new AudioFiles());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<AudioFiles> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Component.Audio.AudioReflection.Descriptor.MessageTypes[0]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public AudioFiles() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public AudioFiles(AudioFiles other) : this() {
-      files_ = other.files_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public AudioFiles Clone() {
-      return new AudioFiles(this);
-    }
-
-    /// <summary>Field number for the "files" field.</summary>
-    public const int FilesFieldNumber = 1;
-    private static readonly pb::FieldCodec<string> _repeated_files_codec
-        = pb::FieldCodec.ForString(10);
-    private readonly pbc::RepeatedField<string> files_ = new pbc::RepeatedField<string>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<string> Files {
-      get { return files_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as AudioFiles);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(AudioFiles other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!files_.Equals(other.files_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= files_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      files_.WriteTo(output, _repeated_files_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      files_.WriteTo(ref output, _repeated_files_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      size += files_.CalculateSize(_repeated_files_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(AudioFiles other) {
-      if (other == null) {
-        return;
-      }
-      files_.Add(other.files_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            files_.AddEntriesFrom(input, _repeated_files_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            files_.AddEntriesFrom(ref input, _repeated_files_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
   public sealed partial class AudioFile : pb::IMessage<AudioFile>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -247,7 +71,7 @@ namespace Component.Audio {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Component.Audio.AudioReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Component.Audio.AudioReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -413,6 +237,184 @@ namespace Component.Audio {
             break;
           case 10: {
             Path = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class AudioFiles : pb::IMessage<AudioFiles>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<AudioFiles> _parser = new pb::MessageParser<AudioFiles>(() => new AudioFiles());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<AudioFiles> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Component.Audio.AudioReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AudioFiles() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AudioFiles(AudioFiles other) : this() {
+      files_ = other.files_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AudioFiles Clone() {
+      return new AudioFiles(this);
+    }
+
+    /// <summary>Field number for the "files" field.</summary>
+    public const int FilesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Component.Audio.AudioFile> _repeated_files_codec
+        = pb::FieldCodec.ForMessage(10, global::Component.Audio.AudioFile.Parser);
+    private readonly pbc::RepeatedField<global::Component.Audio.AudioFile> files_ = new pbc::RepeatedField<global::Component.Audio.AudioFile>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Component.Audio.AudioFile> Files {
+      get { return files_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as AudioFiles);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(AudioFiles other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!files_.Equals(other.files_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= files_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      files_.WriteTo(output, _repeated_files_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      files_.WriteTo(ref output, _repeated_files_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += files_.CalculateSize(_repeated_files_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(AudioFiles other) {
+      if (other == null) {
+        return;
+      }
+      files_.Add(other.files_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            files_.AddEntriesFrom(input, _repeated_files_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            files_.AddEntriesFrom(ref input, _repeated_files_codec);
             break;
           }
         }
