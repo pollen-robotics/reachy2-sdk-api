@@ -1,6 +1,10 @@
 syntax = "proto3";
 
 import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+
+import "error.proto";
+
 package component.audio;
 
 message AudioFiles{
@@ -11,10 +15,24 @@ message AudioFile{
     string path = 1;
 }
 
+message UploadAudioFileRequest {
+  oneof data {
+    AudioFile info = 1;
+    bytes chunk_data = 2;
+  };
+}
+
+message AudioAck {
+    google.protobuf.BoolValue success = 1;
+    error.Error error = 2;
+}
+
+
 service AudioService {
     rpc GetAudioFiles(google.protobuf.Empty) returns (AudioFiles);
     rpc PlayAudioFile(AudioFile) returns (google.protobuf.Empty);
     rpc StopPlaying(google.protobuf.Empty) returns (google.protobuf.Empty);
     rpc RecordAudioFile(AudioFile) returns (google.protobuf.Empty);
     rpc StopRecording(google.protobuf.Empty) returns (google.protobuf.Empty);
+    rpc UploadAudioFile(stream UploadAudioFileRequest) returns (AudioAck);
 }
