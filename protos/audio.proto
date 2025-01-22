@@ -7,12 +7,12 @@ import "error.proto";
 
 package component.audio;
 
-message AudioFiles{
-    repeated string files = 1;
-}
-
 message AudioFile{
     string path = 1;
+}
+
+message AudioFiles{
+    repeated AudioFile files = 1;
 }
 
 message UploadAudioFileRequest {
@@ -27,7 +27,6 @@ message AudioAck {
     error.Error error = 2;
 }
 
-
 service AudioService {
     rpc GetAudioFiles(google.protobuf.Empty) returns (AudioFiles);
     rpc PlayAudioFile(AudioFile) returns (google.protobuf.Empty);
@@ -35,4 +34,5 @@ service AudioService {
     rpc RecordAudioFile(AudioFile) returns (google.protobuf.Empty);
     rpc StopRecording(google.protobuf.Empty) returns (google.protobuf.Empty);
     rpc UploadAudioFile(stream UploadAudioFileRequest) returns (AudioAck);
+    rpc RemoveAudioFile(AudioFile) returns (AudioAck);
 }
