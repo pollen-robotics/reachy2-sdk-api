@@ -15,7 +15,7 @@ message AudioFiles{
     repeated AudioFile files = 1;
 }
 
-message UploadAudioFileRequest {
+message AudioFileRequest {
   oneof data {
     AudioFile info = 1;
     bytes chunk_data = 2;
@@ -33,6 +33,7 @@ service AudioService {
     rpc StopPlaying(google.protobuf.Empty) returns (google.protobuf.Empty);
     rpc RecordAudioFile(AudioFile) returns (google.protobuf.Empty);
     rpc StopRecording(google.protobuf.Empty) returns (google.protobuf.Empty);
-    rpc UploadAudioFile(stream UploadAudioFileRequest) returns (AudioAck);
+    rpc UploadAudioFile(stream AudioFileRequest) returns (AudioAck);
+    rpc DownloadAudioFile(AudioFile) returns (stream AudioFileRequest);
     rpc RemoveAudioFile(AudioFile) returns (AudioAck);
 }
