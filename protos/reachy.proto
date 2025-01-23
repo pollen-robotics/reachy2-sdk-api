@@ -7,7 +7,6 @@ import "arm.proto";
 import "head.proto";
 import "hand.proto";
 import "mobile_base_utility.proto";
-import "sound.proto";
 
 package reachy;
 
@@ -21,12 +20,6 @@ message Reachy {
 
     reachy.part.mobile.base.utility.MobileBase mobile_base= 7;
 
-    component.sound.Microphone microphone = 8;
-    component.sound.Speaker speaker = 9;
-
-    // component.video.StereoCamera stereo_camera = 10;
-    // component.video.DepthCamera depth_camera = 11;
-    
     ReachyInfo info = 20;
 }
 
