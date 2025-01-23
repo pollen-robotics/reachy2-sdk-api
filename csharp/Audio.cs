@@ -28,28 +28,30 @@ namespace Component.Audio {
             "dWYvZW1wdHkucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90",
             "bxoLZXJyb3IucHJvdG8iGQoJQXVkaW9GaWxlEgwKBHBhdGgYASABKAkiNwoK",
             "QXVkaW9GaWxlcxIpCgVmaWxlcxgBIAMoCzIaLmNvbXBvbmVudC5hdWRpby5B",
-            "dWRpb0ZpbGUiYgoWVXBsb2FkQXVkaW9GaWxlUmVxdWVzdBIqCgRpbmZvGAEg",
-            "ASgLMhouY29tcG9uZW50LmF1ZGlvLkF1ZGlvRmlsZUgAEhQKCmNodW5rX2Rh",
-            "dGEYAiABKAxIAEIGCgRkYXRhIlQKCEF1ZGlvQWNrEisKB3N1Y2Nlc3MYASAB",
-            "KAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEhsKBWVycm9yGAIgASgL",
-            "MgwuZXJyb3IuRXJyb3IygwQKDEF1ZGlvU2VydmljZRJECg1HZXRBdWRpb0Zp",
-            "bGVzEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GhsuY29tcG9uZW50LmF1ZGlv",
-            "LkF1ZGlvRmlsZXMSQwoNUGxheUF1ZGlvRmlsZRIaLmNvbXBvbmVudC5hdWRp",
-            "by5BdWRpb0ZpbGUaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSPQoLU3RvcFBs",
-            "YXlpbmcSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaFi5nb29nbGUucHJvdG9i",
-            "dWYuRW1wdHkSRQoPUmVjb3JkQXVkaW9GaWxlEhouY29tcG9uZW50LmF1ZGlv",
-            "LkF1ZGlvRmlsZRoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRI/Cg1TdG9wUmVj",
-            "b3JkaW5nEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GhYuZ29vZ2xlLnByb3Rv",
-            "YnVmLkVtcHR5ElcKD1VwbG9hZEF1ZGlvRmlsZRInLmNvbXBvbmVudC5hdWRp",
-            "by5VcGxvYWRBdWRpb0ZpbGVSZXF1ZXN0GhkuY29tcG9uZW50LmF1ZGlvLkF1",
-            "ZGlvQWNrKAESSAoPUmVtb3ZlQXVkaW9GaWxlEhouY29tcG9uZW50LmF1ZGlv",
-            "LkF1ZGlvRmlsZRoZLmNvbXBvbmVudC5hdWRpby5BdWRpb0Fja2IGcHJvdG8z"));
+            "dWRpb0ZpbGUiXAoQQXVkaW9GaWxlUmVxdWVzdBIqCgRpbmZvGAEgASgLMhou",
+            "Y29tcG9uZW50LmF1ZGlvLkF1ZGlvRmlsZUgAEhQKCmNodW5rX2RhdGEYAiAB",
+            "KAxIAEIGCgRkYXRhIlQKCEF1ZGlvQWNrEisKB3N1Y2Nlc3MYASABKAsyGi5n",
+            "b29nbGUucHJvdG9idWYuQm9vbFZhbHVlEhsKBWVycm9yGAIgASgLMgwuZXJy",
+            "b3IuRXJyb3Iy0wQKDEF1ZGlvU2VydmljZRJECg1HZXRBdWRpb0ZpbGVzEhYu",
+            "Z29vZ2xlLnByb3RvYnVmLkVtcHR5GhsuY29tcG9uZW50LmF1ZGlvLkF1ZGlv",
+            "RmlsZXMSQwoNUGxheUF1ZGlvRmlsZRIaLmNvbXBvbmVudC5hdWRpby5BdWRp",
+            "b0ZpbGUaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSPQoLU3RvcFBsYXlpbmcS",
+            "Fi5nb29nbGUucHJvdG9idWYuRW1wdHkaFi5nb29nbGUucHJvdG9idWYuRW1w",
+            "dHkSRQoPUmVjb3JkQXVkaW9GaWxlEhouY29tcG9uZW50LmF1ZGlvLkF1ZGlv",
+            "RmlsZRoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRI/Cg1TdG9wUmVjb3JkaW5n",
+            "EhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GhYuZ29vZ2xlLnByb3RvYnVmLkVt",
+            "cHR5ElEKD1VwbG9hZEF1ZGlvRmlsZRIhLmNvbXBvbmVudC5hdWRpby5BdWRp",
+            "b0ZpbGVSZXF1ZXN0GhkuY29tcG9uZW50LmF1ZGlvLkF1ZGlvQWNrKAESVAoR",
+            "RG93bmxvYWRBdWRpb0ZpbGUSGi5jb21wb25lbnQuYXVkaW8uQXVkaW9GaWxl",
+            "GiEuY29tcG9uZW50LmF1ZGlvLkF1ZGlvRmlsZVJlcXVlc3QwARJICg9SZW1v",
+            "dmVBdWRpb0ZpbGUSGi5jb21wb25lbnQuYXVkaW8uQXVkaW9GaWxlGhkuY29t",
+            "cG9uZW50LmF1ZGlvLkF1ZGlvQWNrYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Error.ErrorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Audio.AudioFile), global::Component.Audio.AudioFile.Parser, new[]{ "Path" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Audio.AudioFiles), global::Component.Audio.AudioFiles.Parser, new[]{ "Files" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Audio.UploadAudioFileRequest), global::Component.Audio.UploadAudioFileRequest.Parser, new[]{ "Info", "ChunkData" }, new[]{ "Data" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Audio.AudioFileRequest), global::Component.Audio.AudioFileRequest.Parser, new[]{ "Info", "ChunkData" }, new[]{ "Data" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Audio.AudioAck), global::Component.Audio.AudioAck.Parser, new[]{ "Success", "Error" }, null, null, null, null)
           }));
     }
@@ -424,16 +426,16 @@ namespace Component.Audio {
 
   }
 
-  public sealed partial class UploadAudioFileRequest : pb::IMessage<UploadAudioFileRequest>
+  public sealed partial class AudioFileRequest : pb::IMessage<AudioFileRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<UploadAudioFileRequest> _parser = new pb::MessageParser<UploadAudioFileRequest>(() => new UploadAudioFileRequest());
+    private static readonly pb::MessageParser<AudioFileRequest> _parser = new pb::MessageParser<AudioFileRequest>(() => new AudioFileRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<UploadAudioFileRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<AudioFileRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -449,7 +451,7 @@ namespace Component.Audio {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public UploadAudioFileRequest() {
+    public AudioFileRequest() {
       OnConstruction();
     }
 
@@ -457,7 +459,7 @@ namespace Component.Audio {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public UploadAudioFileRequest(UploadAudioFileRequest other) : this() {
+    public AudioFileRequest(AudioFileRequest other) : this() {
       switch (other.DataCase) {
         case DataOneofCase.Info:
           Info = other.Info.Clone();
@@ -472,8 +474,8 @@ namespace Component.Audio {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public UploadAudioFileRequest Clone() {
-      return new UploadAudioFileRequest(this);
+    public AudioFileRequest Clone() {
+      return new AudioFileRequest(this);
     }
 
     /// <summary>Field number for the "info" field.</summary>
@@ -538,12 +540,12 @@ namespace Component.Audio {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as UploadAudioFileRequest);
+      return Equals(other as AudioFileRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(UploadAudioFileRequest other) {
+    public bool Equals(AudioFileRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -631,7 +633,7 @@ namespace Component.Audio {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(UploadAudioFileRequest other) {
+    public void MergeFrom(AudioFileRequest other) {
       if (other == null) {
         return;
       }
