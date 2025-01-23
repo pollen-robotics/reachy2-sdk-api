@@ -16,7 +16,7 @@ from google.protobuf import wrappers_pb2 as google_dot_protobuf_dot_wrappers__pb
 import error_pb2 as error__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0b\x61udio.proto\x12\x0f\x63omponent.audio\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x0b\x65rror.proto\"\x19\n\tAudioFile\x12\x0c\n\x04path\x18\x01 \x01(\t\"7\n\nAudioFiles\x12)\n\x05\x66iles\x18\x01 \x03(\x0b\x32\x1a.component.audio.AudioFile\"b\n\x16UploadAudioFileRequest\x12*\n\x04info\x18\x01 \x01(\x0b\x32\x1a.component.audio.AudioFileH\x00\x12\x14\n\nchunk_data\x18\x02 \x01(\x0cH\x00\x42\x06\n\x04\x64\x61ta\"T\n\x08\x41udioAck\x12+\n\x07success\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x1b\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x0c.error.Error2\x83\x04\n\x0c\x41udioService\x12\x44\n\rGetAudioFiles\x12\x16.google.protobuf.Empty\x1a\x1b.component.audio.AudioFiles\x12\x43\n\rPlayAudioFile\x12\x1a.component.audio.AudioFile\x1a\x16.google.protobuf.Empty\x12=\n\x0bStopPlaying\x12\x16.google.protobuf.Empty\x1a\x16.google.protobuf.Empty\x12\x45\n\x0fRecordAudioFile\x12\x1a.component.audio.AudioFile\x1a\x16.google.protobuf.Empty\x12?\n\rStopRecording\x12\x16.google.protobuf.Empty\x1a\x16.google.protobuf.Empty\x12W\n\x0fUploadAudioFile\x12\'.component.audio.UploadAudioFileRequest\x1a\x19.component.audio.AudioAck(\x01\x12H\n\x0fRemoveAudioFile\x12\x1a.component.audio.AudioFile\x1a\x19.component.audio.AudioAckb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0b\x61udio.proto\x12\x0f\x63omponent.audio\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1egoogle/protobuf/wrappers.proto\x1a\x0b\x65rror.proto\"\x19\n\tAudioFile\x12\x0c\n\x04path\x18\x01 \x01(\t\"7\n\nAudioFiles\x12)\n\x05\x66iles\x18\x01 \x03(\x0b\x32\x1a.component.audio.AudioFile\"\\\n\x10\x41udioFileRequest\x12*\n\x04info\x18\x01 \x01(\x0b\x32\x1a.component.audio.AudioFileH\x00\x12\x14\n\nchunk_data\x18\x02 \x01(\x0cH\x00\x42\x06\n\x04\x64\x61ta\"T\n\x08\x41udioAck\x12+\n\x07success\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x1b\n\x05\x65rror\x18\x02 \x01(\x0b\x32\x0c.error.Error2\xd3\x04\n\x0c\x41udioService\x12\x44\n\rGetAudioFiles\x12\x16.google.protobuf.Empty\x1a\x1b.component.audio.AudioFiles\x12\x43\n\rPlayAudioFile\x12\x1a.component.audio.AudioFile\x1a\x16.google.protobuf.Empty\x12=\n\x0bStopPlaying\x12\x16.google.protobuf.Empty\x1a\x16.google.protobuf.Empty\x12\x45\n\x0fRecordAudioFile\x12\x1a.component.audio.AudioFile\x1a\x16.google.protobuf.Empty\x12?\n\rStopRecording\x12\x16.google.protobuf.Empty\x1a\x16.google.protobuf.Empty\x12Q\n\x0fUploadAudioFile\x12!.component.audio.AudioFileRequest\x1a\x19.component.audio.AudioAck(\x01\x12T\n\x11\x44ownloadAudioFile\x12\x1a.component.audio.AudioFile\x1a!.component.audio.AudioFileRequest0\x01\x12H\n\x0fRemoveAudioFile\x12\x1a.component.audio.AudioFile\x1a\x19.component.audio.AudioAckb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -27,10 +27,10 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _globals['_AUDIOFILE']._serialized_end=131
   _globals['_AUDIOFILES']._serialized_start=133
   _globals['_AUDIOFILES']._serialized_end=188
-  _globals['_UPLOADAUDIOFILEREQUEST']._serialized_start=190
-  _globals['_UPLOADAUDIOFILEREQUEST']._serialized_end=288
-  _globals['_AUDIOACK']._serialized_start=290
-  _globals['_AUDIOACK']._serialized_end=374
-  _globals['_AUDIOSERVICE']._serialized_start=377
-  _globals['_AUDIOSERVICE']._serialized_end=892
+  _globals['_AUDIOFILEREQUEST']._serialized_start=190
+  _globals['_AUDIOFILEREQUEST']._serialized_end=282
+  _globals['_AUDIOACK']._serialized_start=284
+  _globals['_AUDIOACK']._serialized_end=368
+  _globals['_AUDIOSERVICE']._serialized_start=371
+  _globals['_AUDIOSERVICE']._serialized_end=966
 # @@protoc_insertion_point(module_scope)

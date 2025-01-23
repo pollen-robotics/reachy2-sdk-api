@@ -42,8 +42,13 @@ class AudioServiceStub(object):
                 )
         self.UploadAudioFile = channel.stream_unary(
                 '/component.audio.AudioService/UploadAudioFile',
-                request_serializer=audio__pb2.UploadAudioFileRequest.SerializeToString,
+                request_serializer=audio__pb2.AudioFileRequest.SerializeToString,
                 response_deserializer=audio__pb2.AudioAck.FromString,
+                )
+        self.DownloadAudioFile = channel.unary_stream(
+                '/component.audio.AudioService/DownloadAudioFile',
+                request_serializer=audio__pb2.AudioFile.SerializeToString,
+                response_deserializer=audio__pb2.AudioFileRequest.FromString,
                 )
         self.RemoveAudioFile = channel.unary_unary(
                 '/component.audio.AudioService/RemoveAudioFile',
@@ -91,6 +96,12 @@ class AudioServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def DownloadAudioFile(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
     def RemoveAudioFile(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
@@ -127,8 +138,13 @@ def add_AudioServiceServicer_to_server(servicer, server):
             ),
             'UploadAudioFile': grpc.stream_unary_rpc_method_handler(
                     servicer.UploadAudioFile,
-                    request_deserializer=audio__pb2.UploadAudioFileRequest.FromString,
+                    request_deserializer=audio__pb2.AudioFileRequest.FromString,
                     response_serializer=audio__pb2.AudioAck.SerializeToString,
+            ),
+            'DownloadAudioFile': grpc.unary_stream_rpc_method_handler(
+                    servicer.DownloadAudioFile,
+                    request_deserializer=audio__pb2.AudioFile.FromString,
+                    response_serializer=audio__pb2.AudioFileRequest.SerializeToString,
             ),
             'RemoveAudioFile': grpc.unary_unary_rpc_method_handler(
                     servicer.RemoveAudioFile,
@@ -242,8 +258,25 @@ class AudioService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.stream_unary(request_iterator, target, '/component.audio.AudioService/UploadAudioFile',
-            audio__pb2.UploadAudioFileRequest.SerializeToString,
+            audio__pb2.AudioFileRequest.SerializeToString,
             audio__pb2.AudioAck.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def DownloadAudioFile(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_stream(request, target, '/component.audio.AudioService/DownloadAudioFile',
+            audio__pb2.AudioFile.SerializeToString,
+            audio__pb2.AudioFileRequest.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 

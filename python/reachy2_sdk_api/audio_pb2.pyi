@@ -50,7 +50,7 @@ class AudioFiles(google.protobuf.message.Message):
 global___AudioFiles = AudioFiles
 
 @typing_extensions.final
-class UploadAudioFileRequest(google.protobuf.message.Message):
+class AudioFileRequest(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
     INFO_FIELD_NUMBER: builtins.int
@@ -68,7 +68,7 @@ class UploadAudioFileRequest(google.protobuf.message.Message):
     def ClearField(self, field_name: typing_extensions.Literal["chunk_data", b"chunk_data", "data", b"data", "info", b"info"]) -> None: ...
     def WhichOneof(self, oneof_group: typing_extensions.Literal["data", b"data"]) -> typing_extensions.Literal["info", "chunk_data"] | None: ...
 
-global___UploadAudioFileRequest = UploadAudioFileRequest
+global___AudioFileRequest = AudioFileRequest
 
 @typing_extensions.final
 class AudioAck(google.protobuf.message.Message):
