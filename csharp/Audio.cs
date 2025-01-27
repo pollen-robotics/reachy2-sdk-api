@@ -26,30 +26,31 @@ namespace Component.Audio {
           string.Concat(
             "CgthdWRpby5wcm90bxIPY29tcG9uZW50LmF1ZGlvGhtnb29nbGUvcHJvdG9i",
             "dWYvZW1wdHkucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90",
-            "bxoLZXJyb3IucHJvdG8iGQoJQXVkaW9GaWxlEgwKBHBhdGgYASABKAkiNwoK",
-            "QXVkaW9GaWxlcxIpCgVmaWxlcxgBIAMoCzIaLmNvbXBvbmVudC5hdWRpby5B",
-            "dWRpb0ZpbGUiXAoQQXVkaW9GaWxlUmVxdWVzdBIqCgRpbmZvGAEgASgLMhou",
-            "Y29tcG9uZW50LmF1ZGlvLkF1ZGlvRmlsZUgAEhQKCmNodW5rX2RhdGEYAiAB",
-            "KAxIAEIGCgRkYXRhIlQKCEF1ZGlvQWNrEisKB3N1Y2Nlc3MYASABKAsyGi5n",
-            "b29nbGUucHJvdG9idWYuQm9vbFZhbHVlEhsKBWVycm9yGAIgASgLMgwuZXJy",
-            "b3IuRXJyb3Iy0wQKDEF1ZGlvU2VydmljZRJECg1HZXRBdWRpb0ZpbGVzEhYu",
-            "Z29vZ2xlLnByb3RvYnVmLkVtcHR5GhsuY29tcG9uZW50LmF1ZGlvLkF1ZGlv",
-            "RmlsZXMSQwoNUGxheUF1ZGlvRmlsZRIaLmNvbXBvbmVudC5hdWRpby5BdWRp",
-            "b0ZpbGUaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSPQoLU3RvcFBsYXlpbmcS",
-            "Fi5nb29nbGUucHJvdG9idWYuRW1wdHkaFi5nb29nbGUucHJvdG9idWYuRW1w",
-            "dHkSRQoPUmVjb3JkQXVkaW9GaWxlEhouY29tcG9uZW50LmF1ZGlvLkF1ZGlv",
-            "RmlsZRoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRI/Cg1TdG9wUmVjb3JkaW5n",
-            "EhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GhYuZ29vZ2xlLnByb3RvYnVmLkVt",
-            "cHR5ElEKD1VwbG9hZEF1ZGlvRmlsZRIhLmNvbXBvbmVudC5hdWRpby5BdWRp",
-            "b0ZpbGVSZXF1ZXN0GhkuY29tcG9uZW50LmF1ZGlvLkF1ZGlvQWNrKAESVAoR",
-            "RG93bmxvYWRBdWRpb0ZpbGUSGi5jb21wb25lbnQuYXVkaW8uQXVkaW9GaWxl",
-            "GiEuY29tcG9uZW50LmF1ZGlvLkF1ZGlvRmlsZVJlcXVlc3QwARJICg9SZW1v",
-            "dmVBdWRpb0ZpbGUSGi5jb21wb25lbnQuYXVkaW8uQXVkaW9GaWxlGhkuY29t",
-            "cG9uZW50LmF1ZGlvLkF1ZGlvQWNrYgZwcm90bzM="));
+            "bxoLZXJyb3IucHJvdG8iPQoJQXVkaW9GaWxlEgwKBHBhdGgYASABKAkSFQoI",
+            "ZHVyYXRpb24YAiABKAJIAIgBAUILCglfZHVyYXRpb24iNwoKQXVkaW9GaWxl",
+            "cxIpCgVmaWxlcxgBIAMoCzIaLmNvbXBvbmVudC5hdWRpby5BdWRpb0ZpbGUi",
+            "XAoQQXVkaW9GaWxlUmVxdWVzdBIqCgRpbmZvGAEgASgLMhouY29tcG9uZW50",
+            "LmF1ZGlvLkF1ZGlvRmlsZUgAEhQKCmNodW5rX2RhdGEYAiABKAxIAEIGCgRk",
+            "YXRhIlQKCEF1ZGlvQWNrEisKB3N1Y2Nlc3MYASABKAsyGi5nb29nbGUucHJv",
+            "dG9idWYuQm9vbFZhbHVlEhsKBWVycm9yGAIgASgLMgwuZXJyb3IuRXJyb3Iy",
+            "0wQKDEF1ZGlvU2VydmljZRJECg1HZXRBdWRpb0ZpbGVzEhYuZ29vZ2xlLnBy",
+            "b3RvYnVmLkVtcHR5GhsuY29tcG9uZW50LmF1ZGlvLkF1ZGlvRmlsZXMSQwoN",
+            "UGxheUF1ZGlvRmlsZRIaLmNvbXBvbmVudC5hdWRpby5BdWRpb0ZpbGUaFi5n",
+            "b29nbGUucHJvdG9idWYuRW1wdHkSPQoLU3RvcFBsYXlpbmcSFi5nb29nbGUu",
+            "cHJvdG9idWYuRW1wdHkaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSRQoPUmVj",
+            "b3JkQXVkaW9GaWxlEhouY29tcG9uZW50LmF1ZGlvLkF1ZGlvRmlsZRoWLmdv",
+            "b2dsZS5wcm90b2J1Zi5FbXB0eRI/Cg1TdG9wUmVjb3JkaW5nEhYuZ29vZ2xl",
+            "LnByb3RvYnVmLkVtcHR5GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5ElEKD1Vw",
+            "bG9hZEF1ZGlvRmlsZRIhLmNvbXBvbmVudC5hdWRpby5BdWRpb0ZpbGVSZXF1",
+            "ZXN0GhkuY29tcG9uZW50LmF1ZGlvLkF1ZGlvQWNrKAESVAoRRG93bmxvYWRB",
+            "dWRpb0ZpbGUSGi5jb21wb25lbnQuYXVkaW8uQXVkaW9GaWxlGiEuY29tcG9u",
+            "ZW50LmF1ZGlvLkF1ZGlvRmlsZVJlcXVlc3QwARJICg9SZW1vdmVBdWRpb0Zp",
+            "bGUSGi5jb21wb25lbnQuYXVkaW8uQXVkaW9GaWxlGhkuY29tcG9uZW50LmF1",
+            "ZGlvLkF1ZGlvQWNrYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Error.ErrorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Audio.AudioFile), global::Component.Audio.AudioFile.Parser, new[]{ "Path" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Component.Audio.AudioFile), global::Component.Audio.AudioFile.Parser, new[]{ "Path", "Duration" }, new[]{ "Duration" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Audio.AudioFiles), global::Component.Audio.AudioFiles.Parser, new[]{ "Files" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Audio.AudioFileRequest), global::Component.Audio.AudioFileRequest.Parser, new[]{ "Info", "ChunkData" }, new[]{ "Data" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Component.Audio.AudioAck), global::Component.Audio.AudioAck.Parser, new[]{ "Success", "Error" }, null, null, null, null)
@@ -66,6 +67,7 @@ namespace Component.Audio {
   {
     private static readonly pb::MessageParser<AudioFile> _parser = new pb::MessageParser<AudioFile>(() => new AudioFile());
     private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AudioFile> Parser { get { return _parser; } }
@@ -93,7 +95,9 @@ namespace Component.Audio {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AudioFile(AudioFile other) : this() {
+      _hasBits0 = other._hasBits0;
       path_ = other.path_;
+      duration_ = other.duration_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -115,6 +119,33 @@ namespace Component.Audio {
       }
     }
 
+    /// <summary>Field number for the "duration" field.</summary>
+    public const int DurationFieldNumber = 2;
+    private readonly static float DurationDefaultValue = 0F;
+
+    private float duration_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float Duration {
+      get { if ((_hasBits0 & 1) != 0) { return duration_; } else { return DurationDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        duration_ = value;
+      }
+    }
+    /// <summary>Gets whether the "duration" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasDuration {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "duration" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDuration() {
+      _hasBits0 &= ~1;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -131,6 +162,7 @@ namespace Component.Audio {
         return true;
       }
       if (Path != other.Path) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Duration, other.Duration)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -139,6 +171,7 @@ namespace Component.Audio {
     public override int GetHashCode() {
       int hash = 1;
       if (Path.Length != 0) hash ^= Path.GetHashCode();
+      if (HasDuration) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Duration);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -161,6 +194,10 @@ namespace Component.Audio {
         output.WriteRawTag(10);
         output.WriteString(Path);
       }
+      if (HasDuration) {
+        output.WriteRawTag(21);
+        output.WriteFloat(Duration);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -175,6 +212,10 @@ namespace Component.Audio {
         output.WriteRawTag(10);
         output.WriteString(Path);
       }
+      if (HasDuration) {
+        output.WriteRawTag(21);
+        output.WriteFloat(Duration);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -187,6 +228,9 @@ namespace Component.Audio {
       int size = 0;
       if (Path.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Path);
+      }
+      if (HasDuration) {
+        size += 1 + 4;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -202,6 +246,9 @@ namespace Component.Audio {
       }
       if (other.Path.Length != 0) {
         Path = other.Path;
+      }
+      if (other.HasDuration) {
+        Duration = other.Duration;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -222,6 +269,10 @@ namespace Component.Audio {
             Path = input.ReadString();
             break;
           }
+          case 21: {
+            Duration = input.ReadFloat();
+            break;
+          }
         }
       }
     #endif
@@ -239,6 +290,10 @@ namespace Component.Audio {
             break;
           case 10: {
             Path = input.ReadString();
+            break;
+          }
+          case 21: {
+            Duration = input.ReadFloat();
             break;
           }
         }
