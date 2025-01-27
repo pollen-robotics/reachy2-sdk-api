@@ -23,13 +23,18 @@ class AudioFile(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
     PATH_FIELD_NUMBER: builtins.int
+    DURATION_FIELD_NUMBER: builtins.int
     path: builtins.str
+    duration: builtins.float
     def __init__(
         self,
         *,
         path: builtins.str = ...,
+        duration: builtins.float | None = ...,
     ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["path", b"path"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["_duration", b"_duration", "duration", b"duration"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["_duration", b"_duration", "duration", b"duration", "path", b"path"]) -> None: ...
+    def WhichOneof(self, oneof_group: typing_extensions.Literal["_duration", b"_duration"]) -> typing_extensions.Literal["duration"] | None: ...
 
 global___AudioFile = AudioFile
 
