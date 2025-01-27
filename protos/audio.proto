@@ -9,6 +9,7 @@ package component.audio;
 
 message AudioFile{
     string path = 1;
+    optional float duration = 2;
 }
 
 message AudioFiles{
