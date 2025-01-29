@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 import "arm.proto";
+import "dynamixel_motor.proto";
 import "hand.proto";
 import "head.proto";
 import "part.proto";
@@ -50,6 +51,7 @@ message AnyCommand {
         HandCommand hand_command = 2;
         NeckCommand neck_command = 3;
         MobileBaseCommand mobile_base_command = 4;
+        component.dynamixel_motor.DynamixelMotorsCommand antennas_command = 5;
     }
 }
 
