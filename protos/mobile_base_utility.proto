@@ -87,7 +87,6 @@ service MobileBaseUtilityService {
     rpc HeartBeat (reachy.part.PartId) returns (google.protobuf.Empty);
 
     rpc Restart (reachy.part.PartId) returns (google.protobuf.Empty);
-    rpc ResetDefaultValues(reachy.part.PartId) returns (google.protobuf.Empty);
 
     rpc TurnOn (reachy.part.PartId) returns (google.protobuf.Empty);
     rpc TurnOff (reachy.part.PartId) returns (google.protobuf.Empty);

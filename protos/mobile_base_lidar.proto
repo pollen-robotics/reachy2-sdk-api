@@ -33,6 +33,8 @@ service MobileBaseLidarService {
     rpc SetZuuuSafety(LidarSafety) returns (mobile.base.mobility.MobilityServiceAck);
     rpc GetZuuuSafety(reachy.part.PartId) returns (LidarSafety);
 
+    rpc ResetDefaultSafetyDistances(reachy.part.PartId) returns (mobile.base.mobility.MobilityServiceAck);
+
     rpc GetLidarMap(reachy.part.PartId) returns (LidarMap);
     rpc GetLidarObstacleDetectionStatus(reachy.part.PartId) returns (LidarObstacleDetectionStatus);
 }
