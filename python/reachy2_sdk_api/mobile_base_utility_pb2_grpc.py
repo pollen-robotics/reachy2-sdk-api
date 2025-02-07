@@ -42,11 +42,6 @@ class MobileBaseUtilityServiceStub(object):
                 request_serializer=part__pb2.PartId.SerializeToString,
                 response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
-        self.ResetDefaultValues = channel.unary_unary(
-                '/reachy.part.mobile.base.utility.MobileBaseUtilityService/ResetDefaultValues',
-                request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
-                )
         self.TurnOn = channel.unary_unary(
                 '/reachy.part.mobile.base.utility.MobileBaseUtilityService/TurnOn',
                 request_serializer=part__pb2.PartId.SerializeToString,
@@ -122,12 +117,6 @@ class MobileBaseUtilityServiceServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def Restart(self, request, context):
-        """Missing associated documentation comment in .proto file."""
-        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
-        context.set_details('Method not implemented!')
-        raise NotImplementedError('Method not implemented!')
-
-    def ResetDefaultValues(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -212,11 +201,6 @@ def add_MobileBaseUtilityServiceServicer_to_server(servicer, server):
             ),
             'Restart': grpc.unary_unary_rpc_method_handler(
                     servicer.Restart,
-                    request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
-            ),
-            'ResetDefaultValues': grpc.unary_unary_rpc_method_handler(
-                    servicer.ResetDefaultValues,
                     request_deserializer=part__pb2.PartId.FromString,
                     response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
@@ -355,23 +339,6 @@ class MobileBaseUtilityService(object):
             timeout=None,
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.utility.MobileBaseUtilityService/Restart',
-            part__pb2.PartId.SerializeToString,
-            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
-            options, channel_credentials,
-            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
-
-    @staticmethod
-    def ResetDefaultValues(request,
-            target,
-            options=(),
-            channel_credentials=None,
-            call_credentials=None,
-            insecure=False,
-            compression=None,
-            wait_for_ready=None,
-            timeout=None,
-            metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.utility.MobileBaseUtilityService/ResetDefaultValues',
             part__pb2.PartId.SerializeToString,
             google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
