@@ -80,9 +80,9 @@ message ReachyStreamAuditRequest {
 }
 
 message ReachyComponentsCommands {
-    reachy.part.arm.ArmComponentsCommands = l_arm_commands = 1;
-    reachy.part.arm.ArmComponentsCommands = r_arm_commands = 2;
-    reachy.part.head.HeadComponentsCommands = head_commands = 3;
+    reachy.part.arm.ArmComponentsCommands l_arm_commands = 1;
+    reachy.part.arm.ArmComponentsCommands r_arm_commands = 2;
+    reachy.part.head.HeadComponentsCommands head_commands = 3;
     reachy.part.hand.HandPositionRequest l_hand_command = 4;
     reachy.part.hand.HandPositionRequest r_hand_command = 5;
 }
