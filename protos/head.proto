@@ -147,6 +147,12 @@ message HeadTemperatures {
     float r_antenna_temperature = 3;
 }
 
+message HeadComponentsCommands {
+    component.orbita3d.Orbita3dsCommand neck_command = 1;
+    component.dynamixel_motor.DynamixelMotorsCommand l_antenna_command = 2;
+    component.dynamixel_motor.DynamixelMotorsCommand r_antenna_command = 3;
+}
+
 service HeadService {
     rpc GetAllHeads (google.protobuf.Empty) returns (ListOfHead);
 
@@ -173,4 +179,5 @@ service HeadService {
     rpc SetSpeedLimit (SpeedLimitRequest) returns (google.protobuf.Empty);
     rpc SetTorqueLimit (TorqueLimitRequest) returns (google.protobuf.Empty);
     rpc SendNeckJointGoal (NeckJointGoal) returns (google.protobuf.Empty);
+    rpc SendComponentsCommands (HeadComponentsCommands) returns (google.protobuf.Empty);
 }
