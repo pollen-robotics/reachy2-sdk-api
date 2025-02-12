@@ -96,51 +96,58 @@ namespace Reachy.Part.Arm {
             "cmF0dXJlGAEgASgLMhsuY29tcG9uZW50Lm9yYml0YTJkLkZsb2F0MmQSNgoR",
             "ZWxib3dfdGVtcGVyYXR1cmUYAiABKAsyGy5jb21wb25lbnQub3JiaXRhMmQu",
             "RmxvYXQyZBI2ChF3cmlzdF90ZW1wZXJhdHVyZRgDIAEoCzIbLmNvbXBvbmVu",
-            "dC5vcmJpdGEzZC5GbG9hdDNkKtsBCghBcm1GaWVsZBIICgROT05FEAASCAoE",
-            "TkFNRRABEgYKAklEEAISFAoQUFJFU0VOVF9QT1NJVElPThADEhEKDVBSRVNF",
-            "TlRfU1BFRUQQBBIQCgxQUkVTRU5UX0xPQUQQBRIPCgtURU1QRVJBVFVSRRAG",
-            "EhAKDEpPSU5UX0xJTUlUUxAHEg0KCUNPTVBMSUFOVBAIEhEKDUdPQUxfUE9T",
-            "SVRJT04QCRIPCgtTUEVFRF9MSU1JVBAKEhAKDFRPUlFVRV9MSU1JVBALEgcK",
-            "A1BJRBAMEgcKA0FMTBAPKoIBCglBcm1Kb2ludHMSEgoOU0hPVUxERVJfUElU",
-            "Q0gQABIRCg1TSE9VTERFUl9ST0xMEAESDQoJRUxCT1dfWUFXEAISDwoLRUxC",
-            "T1dfUElUQ0gQAxIOCgpXUklTVF9ST0xMEAQSDwoLV1JJU1RfUElUQ0gQBRIN",
-            "CglXUklTVF9ZQVcQBipVChFJS0NvbnN0cmFpbmVkTW9kZRIeChpVTkRFRklO",
-            "RURfQ09OU1RSQUlORURfTU9ERRAAEhEKDVVOQ09OU1RSQUlORUQQARINCglM",
-            "T1dfRUxCT1cQAipdChBJS0NvbnRpbnVvdXNNb2RlEh0KGVVOREVGSU5FRF9D",
-            "T05USU5VT1VTX01PREUQABIOCgpDT05USU5VT1VTEAESDAoIRElTQ1JFVEUQ",
-            "AhIMCghVTkZSRUVaRRADKsEBChFSZWFjaGFiaWxpdHlFcnJvchIMCghOT19F",
-            "UlJPUhAAEhIKDkRJU1RBTkNFX0xJTUlUEAESEgoOU0hPVUxERVJfTElNSVQQ",
-            "AhIPCgtFTEJPV19MSU1JVBADEg8KC1dSSVNUX0xJTUlUEAQSGQoVU0lOR1VM",
-            "QVJJVFlfQVZPSURBTkNFEAUSGAoURElTQ09OVElOVUlUWV9GUkVFWkUQBhIU",
-            "ChBNVUxUSVRVUk5fRlJFRVpFEAcSCQoFT1RIRVIQFDLgCQoKQXJtU2Vydmlj",
-            "ZRJACgpHZXRBbGxBcm1zEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GhoucmVh",
-            "Y2h5LnBhcnQuYXJtLkxpc3RPZkFybRI6CghHZXRTdGF0ZRITLnJlYWNoeS5w",
-            "YXJ0LlBhcnRJZBoZLnJlYWNoeS5wYXJ0LmFybS5Bcm1TdGF0ZRJNCgxDb21w",
-            "dXRlQXJtRksSHS5yZWFjaHkucGFydC5hcm0uQXJtRktSZXF1ZXN0Gh4ucmVh",
-            "Y2h5LnBhcnQuYXJtLkFybUZLU29sdXRpb24STQoMQ29tcHV0ZUFybUlLEh0u",
-            "cmVhY2h5LnBhcnQuYXJtLkFybUlLUmVxdWVzdBoeLnJlYWNoeS5wYXJ0LmFy",
-            "bS5Bcm1JS1NvbHV0aW9uEkkKFEdldENhcnRlc2lhblBvc2l0aW9uEhMucmVh",
-            "Y2h5LnBhcnQuUGFydElkGhwucmVhY2h5LmtpbmVtYXRpY3MuTWF0cml4NHg0",
-            "EkUKEEdldEpvaW50UG9zaXRpb24SEy5yZWFjaHkucGFydC5QYXJ0SWQaHC5y",
-            "ZWFjaHkucGFydC5hcm0uQXJtUG9zaXRpb24SOAoFQXVkaXQSEy5yZWFjaHku",
-            "cGFydC5QYXJ0SWQaGi5yZWFjaHkucGFydC5hcm0uQXJtU3RhdHVzEjgKCUhl",
-            "YXJ0QmVhdBITLnJlYWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1",
-            "Zi5FbXB0eRI2CgdSZXN0YXJ0EhMucmVhY2h5LnBhcnQuUGFydElkGhYuZ29v",
-            "Z2xlLnByb3RvYnVmLkVtcHR5EkEKElJlc2V0RGVmYXVsdFZhbHVlcxITLnJl",
-            "YWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRI1CgZU",
-            "dXJuT24SEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYu",
-            "RW1wdHkSNgoHVHVybk9mZhITLnJlYWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2ds",
-            "ZS5wcm90b2J1Zi5FbXB0eRJCCg9HZXRKb2ludHNMaW1pdHMSEy5yZWFjaHku",
-            "cGFydC5QYXJ0SWQaGi5yZWFjaHkucGFydC5hcm0uQXJtTGltaXRzEkgKD0dl",
-            "dFRlbXBlcmF0dXJlcxITLnJlYWNoeS5wYXJ0LlBhcnRJZBogLnJlYWNoeS5w",
-            "YXJ0LmFybS5Bcm1UZW1wZXJhdHVyZXMSSQoUR2V0Sm9pbnRHb2FsUG9zaXRp",
-            "b24SEy5yZWFjaHkucGFydC5QYXJ0SWQaHC5yZWFjaHkucGFydC5hcm0uQXJt",
-            "UG9zaXRpb24SSwoNU2V0U3BlZWRMaW1pdBIiLnJlYWNoeS5wYXJ0LmFybS5T",
-            "cGVlZExpbWl0UmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJNCg5T",
-            "ZXRUb3JxdWVMaW1pdBIjLnJlYWNoeS5wYXJ0LmFybS5Ub3JxdWVMaW1pdFJl",
-            "cXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSUQoUU2VuZEFybUNhcnRl",
-            "c2lhbkdvYWwSIS5yZWFjaHkucGFydC5hcm0uQXJtQ2FydGVzaWFuR29hbBoW",
-            "Lmdvb2dsZS5wcm90b2J1Zi5FbXB0eWIGcHJvdG8z"));
+            "dC5vcmJpdGEzZC5GbG9hdDNkItEBChVBcm1Db21wb25lbnRzQ29tbWFuZHMS",
+            "PgoQc2hvdWxkZXJfY29tbWFuZBgBIAEoCzIkLmNvbXBvbmVudC5vcmJpdGEy",
+            "ZC5PcmJpdGEyZHNDb21tYW5kEjsKDWVsYm93X2NvbW1hbmQYAiABKAsyJC5j",
+            "b21wb25lbnQub3JiaXRhMmQuT3JiaXRhMmRzQ29tbWFuZBI7Cg13cmlzdF9j",
+            "b21tYW5kGAMgASgLMiQuY29tcG9uZW50Lm9yYml0YTNkLk9yYml0YTNkc0Nv",
+            "bW1hbmQq2wEKCEFybUZpZWxkEggKBE5PTkUQABIICgROQU1FEAESBgoCSUQQ",
+            "AhIUChBQUkVTRU5UX1BPU0lUSU9OEAMSEQoNUFJFU0VOVF9TUEVFRBAEEhAK",
+            "DFBSRVNFTlRfTE9BRBAFEg8KC1RFTVBFUkFUVVJFEAYSEAoMSk9JTlRfTElN",
+            "SVRTEAcSDQoJQ09NUExJQU5UEAgSEQoNR09BTF9QT1NJVElPThAJEg8KC1NQ",
+            "RUVEX0xJTUlUEAoSEAoMVE9SUVVFX0xJTUlUEAsSBwoDUElEEAwSBwoDQUxM",
+            "EA8qggEKCUFybUpvaW50cxISCg5TSE9VTERFUl9QSVRDSBAAEhEKDVNIT1VM",
+            "REVSX1JPTEwQARINCglFTEJPV19ZQVcQAhIPCgtFTEJPV19QSVRDSBADEg4K",
+            "CldSSVNUX1JPTEwQBBIPCgtXUklTVF9QSVRDSBAFEg0KCVdSSVNUX1lBVxAG",
+            "KlUKEUlLQ29uc3RyYWluZWRNb2RlEh4KGlVOREVGSU5FRF9DT05TVFJBSU5F",
+            "RF9NT0RFEAASEQoNVU5DT05TVFJBSU5FRBABEg0KCUxPV19FTEJPVxACKl0K",
+            "EElLQ29udGludW91c01vZGUSHQoZVU5ERUZJTkVEX0NPTlRJTlVPVVNfTU9E",
+            "RRAAEg4KCkNPTlRJTlVPVVMQARIMCghESVNDUkVURRACEgwKCFVORlJFRVpF",
+            "EAMqwQEKEVJlYWNoYWJpbGl0eUVycm9yEgwKCE5PX0VSUk9SEAASEgoORElT",
+            "VEFOQ0VfTElNSVQQARISCg5TSE9VTERFUl9MSU1JVBACEg8KC0VMQk9XX0xJ",
+            "TUlUEAMSDwoLV1JJU1RfTElNSVQQBBIZChVTSU5HVUxBUklUWV9BVk9JREFO",
+            "Q0UQBRIYChRESVNDT05USU5VSVRZX0ZSRUVaRRAGEhQKEE1VTFRJVFVSTl9G",
+            "UkVFWkUQBxIJCgVPVEhFUhAUMroKCgpBcm1TZXJ2aWNlEkAKCkdldEFsbEFy",
+            "bXMSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaGi5yZWFjaHkucGFydC5hcm0u",
+            "TGlzdE9mQXJtEjoKCEdldFN0YXRlEhMucmVhY2h5LnBhcnQuUGFydElkGhku",
+            "cmVhY2h5LnBhcnQuYXJtLkFybVN0YXRlEk0KDENvbXB1dGVBcm1GSxIdLnJl",
+            "YWNoeS5wYXJ0LmFybS5Bcm1GS1JlcXVlc3QaHi5yZWFjaHkucGFydC5hcm0u",
+            "QXJtRktTb2x1dGlvbhJNCgxDb21wdXRlQXJtSUsSHS5yZWFjaHkucGFydC5h",
+            "cm0uQXJtSUtSZXF1ZXN0Gh4ucmVhY2h5LnBhcnQuYXJtLkFybUlLU29sdXRp",
+            "b24SSQoUR2V0Q2FydGVzaWFuUG9zaXRpb24SEy5yZWFjaHkucGFydC5QYXJ0",
+            "SWQaHC5yZWFjaHkua2luZW1hdGljcy5NYXRyaXg0eDQSRQoQR2V0Sm9pbnRQ",
+            "b3NpdGlvbhITLnJlYWNoeS5wYXJ0LlBhcnRJZBocLnJlYWNoeS5wYXJ0LmFy",
+            "bS5Bcm1Qb3NpdGlvbhI4CgVBdWRpdBITLnJlYWNoeS5wYXJ0LlBhcnRJZBoa",
+            "LnJlYWNoeS5wYXJ0LmFybS5Bcm1TdGF0dXMSOAoJSGVhcnRCZWF0EhMucmVh",
+            "Y2h5LnBhcnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EjYKB1Jl",
+            "c3RhcnQSEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYu",
+            "RW1wdHkSQQoSUmVzZXREZWZhdWx0VmFsdWVzEhMucmVhY2h5LnBhcnQuUGFy",
+            "dElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EjUKBlR1cm5PbhITLnJlYWNo",
+            "eS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRI2CgdUdXJu",
+            "T2ZmEhMucmVhY2h5LnBhcnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVt",
+            "cHR5EkIKD0dldEpvaW50c0xpbWl0cxITLnJlYWNoeS5wYXJ0LlBhcnRJZBoa",
+            "LnJlYWNoeS5wYXJ0LmFybS5Bcm1MaW1pdHMSSAoPR2V0VGVtcGVyYXR1cmVz",
+            "EhMucmVhY2h5LnBhcnQuUGFydElkGiAucmVhY2h5LnBhcnQuYXJtLkFybVRl",
+            "bXBlcmF0dXJlcxJJChRHZXRKb2ludEdvYWxQb3NpdGlvbhITLnJlYWNoeS5w",
+            "YXJ0LlBhcnRJZBocLnJlYWNoeS5wYXJ0LmFybS5Bcm1Qb3NpdGlvbhJLCg1T",
+            "ZXRTcGVlZExpbWl0EiIucmVhY2h5LnBhcnQuYXJtLlNwZWVkTGltaXRSZXF1",
+            "ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Ek0KDlNldFRvcnF1ZUxpbWl0",
+            "EiMucmVhY2h5LnBhcnQuYXJtLlRvcnF1ZUxpbWl0UmVxdWVzdBoWLmdvb2ds",
+            "ZS5wcm90b2J1Zi5FbXB0eRJRChRTZW5kQXJtQ2FydGVzaWFuR29hbBIhLnJl",
+            "YWNoeS5wYXJ0LmFybS5Bcm1DYXJ0ZXNpYW5Hb2FsGhYuZ29vZ2xlLnByb3Rv",
+            "YnVmLkVtcHR5ElgKFlNlbmRDb21wb25lbnRzQ29tbWFuZHMSJi5yZWFjaHku",
+            "cGFydC5hcm0uQXJtQ29tcG9uZW50c0NvbW1hbmRzGhYuZ29vZ2xlLnByb3Rv",
+            "YnVmLkVtcHR5YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, global::Reachy.Kinematics.KinematicsReflection.Descriptor, global::Error.ErrorReflection.Descriptor, global::Component.Orbita2D.Orbita2DReflection.Descriptor, global::Component.Orbita3D.Orbita3DReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.Part.Arm.ArmField), typeof(global::Reachy.Part.Arm.ArmJoints), typeof(global::Reachy.Part.Arm.IKConstrainedMode), typeof(global::Reachy.Part.Arm.IKContinuousMode), typeof(global::Reachy.Part.Arm.ReachabilityError), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -162,7 +169,8 @@ namespace Reachy.Part.Arm {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.SpeedLimitRequest), global::Reachy.Part.Arm.SpeedLimitRequest.Parser, new[]{ "Id", "Limit" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.TorqueLimitRequest), global::Reachy.Part.Arm.TorqueLimitRequest.Parser, new[]{ "Id", "Limit" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.ArmLimits), global::Reachy.Part.Arm.ArmLimits.Parser, new[]{ "ShoulderLimits", "ElbowLimits", "WristLimits" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.ArmTemperatures), global::Reachy.Part.Arm.ArmTemperatures.Parser, new[]{ "ShoulderTemperature", "ElbowTemperature", "WristTemperature" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.ArmTemperatures), global::Reachy.Part.Arm.ArmTemperatures.Parser, new[]{ "ShoulderTemperature", "ElbowTemperature", "WristTemperature" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Arm.ArmComponentsCommands), global::Reachy.Part.Arm.ArmComponentsCommands.Parser, new[]{ "ShoulderCommand", "ElbowCommand", "WristCommand" }, null, null, null, null)
           }));
     }
     #endregion
@@ -5680,6 +5688,296 @@ namespace Reachy.Part.Arm {
               WristTemperature = new global::Component.Orbita3D.Float3d();
             }
             input.ReadMessage(WristTemperature);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class ArmComponentsCommands : pb::IMessage<ArmComponentsCommands>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ArmComponentsCommands> _parser = new pb::MessageParser<ArmComponentsCommands>(() => new ArmComponentsCommands());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ArmComponentsCommands> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Reachy.Part.Arm.ArmReflection.Descriptor.MessageTypes[19]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ArmComponentsCommands() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ArmComponentsCommands(ArmComponentsCommands other) : this() {
+      shoulderCommand_ = other.shoulderCommand_ != null ? other.shoulderCommand_.Clone() : null;
+      elbowCommand_ = other.elbowCommand_ != null ? other.elbowCommand_.Clone() : null;
+      wristCommand_ = other.wristCommand_ != null ? other.wristCommand_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ArmComponentsCommands Clone() {
+      return new ArmComponentsCommands(this);
+    }
+
+    /// <summary>Field number for the "shoulder_command" field.</summary>
+    public const int ShoulderCommandFieldNumber = 1;
+    private global::Component.Orbita2D.Orbita2dsCommand shoulderCommand_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Component.Orbita2D.Orbita2dsCommand ShoulderCommand {
+      get { return shoulderCommand_; }
+      set {
+        shoulderCommand_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "elbow_command" field.</summary>
+    public const int ElbowCommandFieldNumber = 2;
+    private global::Component.Orbita2D.Orbita2dsCommand elbowCommand_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Component.Orbita2D.Orbita2dsCommand ElbowCommand {
+      get { return elbowCommand_; }
+      set {
+        elbowCommand_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "wrist_command" field.</summary>
+    public const int WristCommandFieldNumber = 3;
+    private global::Component.Orbita3D.Orbita3dsCommand wristCommand_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Component.Orbita3D.Orbita3dsCommand WristCommand {
+      get { return wristCommand_; }
+      set {
+        wristCommand_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ArmComponentsCommands);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ArmComponentsCommands other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(ShoulderCommand, other.ShoulderCommand)) return false;
+      if (!object.Equals(ElbowCommand, other.ElbowCommand)) return false;
+      if (!object.Equals(WristCommand, other.WristCommand)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (shoulderCommand_ != null) hash ^= ShoulderCommand.GetHashCode();
+      if (elbowCommand_ != null) hash ^= ElbowCommand.GetHashCode();
+      if (wristCommand_ != null) hash ^= WristCommand.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (shoulderCommand_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ShoulderCommand);
+      }
+      if (elbowCommand_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ElbowCommand);
+      }
+      if (wristCommand_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(WristCommand);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (shoulderCommand_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ShoulderCommand);
+      }
+      if (elbowCommand_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ElbowCommand);
+      }
+      if (wristCommand_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(WristCommand);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (shoulderCommand_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ShoulderCommand);
+      }
+      if (elbowCommand_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ElbowCommand);
+      }
+      if (wristCommand_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(WristCommand);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ArmComponentsCommands other) {
+      if (other == null) {
+        return;
+      }
+      if (other.shoulderCommand_ != null) {
+        if (shoulderCommand_ == null) {
+          ShoulderCommand = new global::Component.Orbita2D.Orbita2dsCommand();
+        }
+        ShoulderCommand.MergeFrom(other.ShoulderCommand);
+      }
+      if (other.elbowCommand_ != null) {
+        if (elbowCommand_ == null) {
+          ElbowCommand = new global::Component.Orbita2D.Orbita2dsCommand();
+        }
+        ElbowCommand.MergeFrom(other.ElbowCommand);
+      }
+      if (other.wristCommand_ != null) {
+        if (wristCommand_ == null) {
+          WristCommand = new global::Component.Orbita3D.Orbita3dsCommand();
+        }
+        WristCommand.MergeFrom(other.WristCommand);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (shoulderCommand_ == null) {
+              ShoulderCommand = new global::Component.Orbita2D.Orbita2dsCommand();
+            }
+            input.ReadMessage(ShoulderCommand);
+            break;
+          }
+          case 18: {
+            if (elbowCommand_ == null) {
+              ElbowCommand = new global::Component.Orbita2D.Orbita2dsCommand();
+            }
+            input.ReadMessage(ElbowCommand);
+            break;
+          }
+          case 26: {
+            if (wristCommand_ == null) {
+              WristCommand = new global::Component.Orbita3D.Orbita3dsCommand();
+            }
+            input.ReadMessage(WristCommand);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (shoulderCommand_ == null) {
+              ShoulderCommand = new global::Component.Orbita2D.Orbita2dsCommand();
+            }
+            input.ReadMessage(ShoulderCommand);
+            break;
+          }
+          case 18: {
+            if (elbowCommand_ == null) {
+              ElbowCommand = new global::Component.Orbita2D.Orbita2dsCommand();
+            }
+            input.ReadMessage(ElbowCommand);
+            break;
+          }
+          case 26: {
+            if (wristCommand_ == null) {
+              WristCommand = new global::Component.Orbita3D.Orbita3dsCommand();
+            }
+            input.ReadMessage(WristCommand);
             break;
           }
         }

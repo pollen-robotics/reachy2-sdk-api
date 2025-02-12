@@ -60,16 +60,26 @@ namespace Reachy {
             "dHVzIlMKGFJlYWNoeVN0cmVhbVN0YXRlUmVxdWVzdBIcCgJpZBgBIAEoCzIQ",
             "LnJlYWNoeS5SZWFjaHlJZBIZChFwdWJsaXNoX2ZyZXF1ZW5jeRgCIAEoAiJT",
             "ChhSZWFjaHlTdHJlYW1BdWRpdFJlcXVlc3QSHAoCaWQYASABKAsyEC5yZWFj",
-            "aHkuUmVhY2h5SWQSGQoRcHVibGlzaF9mcmVxdWVuY3kYAiABKAIqOgoOUmVh",
-            "Y2h5Q29yZU1vZGUSCAoETk9ORRAAEggKBEZBS0UQARIICgRSRUFMEAISCgoG",
-            "R0FaRUJPEAMyxQIKDVJlYWNoeVNlcnZpY2USMwoJR2V0UmVhY2h5EhYuZ29v",
-            "Z2xlLnByb3RvYnVmLkVtcHR5Gg4ucmVhY2h5LlJlYWNoeRI3Cg5HZXRSZWFj",
-            "aHlTdGF0ZRIQLnJlYWNoeS5SZWFjaHlJZBoTLnJlYWNoeS5SZWFjaHlTdGF0",
-            "ZRJMChFTdHJlYW1SZWFjaHlTdGF0ZRIgLnJlYWNoeS5SZWFjaHlTdHJlYW1T",
-            "dGF0ZVJlcXVlc3QaEy5yZWFjaHkuUmVhY2h5U3RhdGUwARIvCgVBdWRpdBIQ",
-            "LnJlYWNoeS5SZWFjaHlJZBoULnJlYWNoeS5SZWFjaHlTdGF0dXMSRwoLU3Ry",
-            "ZWFtQXVkaXQSIC5yZWFjaHkuUmVhY2h5U3RyZWFtQXVkaXRSZXF1ZXN0GhQu",
-            "cmVhY2h5LlJlYWNoeVN0YXR1czABYgZwcm90bzM="));
+            "aHkuUmVhY2h5SWQSGQoRcHVibGlzaF9mcmVxdWVuY3kYAiABKAIi2QIKGFJl",
+            "YWNoeUNvbXBvbmVudHNDb21tYW5kcxI+Cg5sX2FybV9jb21tYW5kcxgBIAEo",
+            "CzImLnJlYWNoeS5wYXJ0LmFybS5Bcm1Db21wb25lbnRzQ29tbWFuZHMSPgoO",
+            "cl9hcm1fY29tbWFuZHMYAiABKAsyJi5yZWFjaHkucGFydC5hcm0uQXJtQ29t",
+            "cG9uZW50c0NvbW1hbmRzEj8KDWhlYWRfY29tbWFuZHMYAyABKAsyKC5yZWFj",
+            "aHkucGFydC5oZWFkLkhlYWRDb21wb25lbnRzQ29tbWFuZHMSPQoObF9oYW5k",
+            "X2NvbW1hbmQYBCABKAsyJS5yZWFjaHkucGFydC5oYW5kLkhhbmRQb3NpdGlv",
+            "blJlcXVlc3QSPQoOcl9oYW5kX2NvbW1hbmQYBSABKAsyJS5yZWFjaHkucGFy",
+            "dC5oYW5kLkhhbmRQb3NpdGlvblJlcXVlc3QqOgoOUmVhY2h5Q29yZU1vZGUS",
+            "CAoETk9ORRAAEggKBEZBS0UQARIICgRSRUFMEAISCgoGR0FaRUJPEAMymQMK",
+            "DVJlYWNoeVNlcnZpY2USMwoJR2V0UmVhY2h5EhYuZ29vZ2xlLnByb3RvYnVm",
+            "LkVtcHR5Gg4ucmVhY2h5LlJlYWNoeRI3Cg5HZXRSZWFjaHlTdGF0ZRIQLnJl",
+            "YWNoeS5SZWFjaHlJZBoTLnJlYWNoeS5SZWFjaHlTdGF0ZRJMChFTdHJlYW1S",
+            "ZWFjaHlTdGF0ZRIgLnJlYWNoeS5SZWFjaHlTdHJlYW1TdGF0ZVJlcXVlc3Qa",
+            "Ey5yZWFjaHkuUmVhY2h5U3RhdGUwARJSChZTZW5kQ29tcG9uZW50c0NvbW1h",
+            "bmRzEiAucmVhY2h5LlJlYWNoeUNvbXBvbmVudHNDb21tYW5kcxoWLmdvb2ds",
+            "ZS5wcm90b2J1Zi5FbXB0eRIvCgVBdWRpdBIQLnJlYWNoeS5SZWFjaHlJZBoU",
+            "LnJlYWNoeS5SZWFjaHlTdGF0dXMSRwoLU3RyZWFtQXVkaXQSIC5yZWFjaHku",
+            "UmVhY2h5U3RyZWFtQXVkaXRSZXF1ZXN0GhQucmVhY2h5LlJlYWNoeVN0YXR1",
+            "czABYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Reachy.Part.Mobile.Base.Utility.MobileBaseUtilityReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.ReachyCoreMode), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -79,7 +89,8 @@ namespace Reachy {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyState), global::Reachy.ReachyState.Parser, new[]{ "Timestamp", "Id", "LArmState", "RArmState", "HeadState", "LHandState", "RHandState", "MobileBaseState" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStatus), global::Reachy.ReachyStatus.Parser, new[]{ "Timestamp", "Id", "LArmStatus", "RArmStatus", "HeadStatus", "LHandStatus", "RHandStatus", "MobileBaseStatus" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStreamStateRequest), global::Reachy.ReachyStreamStateRequest.Parser, new[]{ "Id", "PublishFrequency" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStreamAuditRequest), global::Reachy.ReachyStreamAuditRequest.Parser, new[]{ "Id", "PublishFrequency" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStreamAuditRequest), global::Reachy.ReachyStreamAuditRequest.Parser, new[]{ "Id", "PublishFrequency" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyComponentsCommands), global::Reachy.ReachyComponentsCommands.Parser, new[]{ "LArmCommands", "RArmCommands", "HeadCommands", "LHandCommand", "RHandCommand" }, null, null, null, null)
           }));
     }
     #endregion
@@ -2643,6 +2654,388 @@ namespace Reachy {
           }
           case 21: {
             PublishFrequency = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class ReachyComponentsCommands : pb::IMessage<ReachyComponentsCommands>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ReachyComponentsCommands> _parser = new pb::MessageParser<ReachyComponentsCommands>(() => new ReachyComponentsCommands());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ReachyComponentsCommands> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Reachy.ReachyReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ReachyComponentsCommands() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ReachyComponentsCommands(ReachyComponentsCommands other) : this() {
+      lArmCommands_ = other.lArmCommands_ != null ? other.lArmCommands_.Clone() : null;
+      rArmCommands_ = other.rArmCommands_ != null ? other.rArmCommands_.Clone() : null;
+      headCommands_ = other.headCommands_ != null ? other.headCommands_.Clone() : null;
+      lHandCommand_ = other.lHandCommand_ != null ? other.lHandCommand_.Clone() : null;
+      rHandCommand_ = other.rHandCommand_ != null ? other.rHandCommand_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ReachyComponentsCommands Clone() {
+      return new ReachyComponentsCommands(this);
+    }
+
+    /// <summary>Field number for the "l_arm_commands" field.</summary>
+    public const int LArmCommandsFieldNumber = 1;
+    private global::Reachy.Part.Arm.ArmComponentsCommands lArmCommands_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Arm.ArmComponentsCommands LArmCommands {
+      get { return lArmCommands_; }
+      set {
+        lArmCommands_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "r_arm_commands" field.</summary>
+    public const int RArmCommandsFieldNumber = 2;
+    private global::Reachy.Part.Arm.ArmComponentsCommands rArmCommands_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Arm.ArmComponentsCommands RArmCommands {
+      get { return rArmCommands_; }
+      set {
+        rArmCommands_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "head_commands" field.</summary>
+    public const int HeadCommandsFieldNumber = 3;
+    private global::Reachy.Part.Head.HeadComponentsCommands headCommands_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Head.HeadComponentsCommands HeadCommands {
+      get { return headCommands_; }
+      set {
+        headCommands_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "l_hand_command" field.</summary>
+    public const int LHandCommandFieldNumber = 4;
+    private global::Reachy.Part.Hand.HandPositionRequest lHandCommand_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Hand.HandPositionRequest LHandCommand {
+      get { return lHandCommand_; }
+      set {
+        lHandCommand_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "r_hand_command" field.</summary>
+    public const int RHandCommandFieldNumber = 5;
+    private global::Reachy.Part.Hand.HandPositionRequest rHandCommand_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Hand.HandPositionRequest RHandCommand {
+      get { return rHandCommand_; }
+      set {
+        rHandCommand_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ReachyComponentsCommands);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ReachyComponentsCommands other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(LArmCommands, other.LArmCommands)) return false;
+      if (!object.Equals(RArmCommands, other.RArmCommands)) return false;
+      if (!object.Equals(HeadCommands, other.HeadCommands)) return false;
+      if (!object.Equals(LHandCommand, other.LHandCommand)) return false;
+      if (!object.Equals(RHandCommand, other.RHandCommand)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (lArmCommands_ != null) hash ^= LArmCommands.GetHashCode();
+      if (rArmCommands_ != null) hash ^= RArmCommands.GetHashCode();
+      if (headCommands_ != null) hash ^= HeadCommands.GetHashCode();
+      if (lHandCommand_ != null) hash ^= LHandCommand.GetHashCode();
+      if (rHandCommand_ != null) hash ^= RHandCommand.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (lArmCommands_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(LArmCommands);
+      }
+      if (rArmCommands_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(RArmCommands);
+      }
+      if (headCommands_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(HeadCommands);
+      }
+      if (lHandCommand_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(LHandCommand);
+      }
+      if (rHandCommand_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(RHandCommand);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (lArmCommands_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(LArmCommands);
+      }
+      if (rArmCommands_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(RArmCommands);
+      }
+      if (headCommands_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(HeadCommands);
+      }
+      if (lHandCommand_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(LHandCommand);
+      }
+      if (rHandCommand_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(RHandCommand);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (lArmCommands_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LArmCommands);
+      }
+      if (rArmCommands_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RArmCommands);
+      }
+      if (headCommands_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(HeadCommands);
+      }
+      if (lHandCommand_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LHandCommand);
+      }
+      if (rHandCommand_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RHandCommand);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ReachyComponentsCommands other) {
+      if (other == null) {
+        return;
+      }
+      if (other.lArmCommands_ != null) {
+        if (lArmCommands_ == null) {
+          LArmCommands = new global::Reachy.Part.Arm.ArmComponentsCommands();
+        }
+        LArmCommands.MergeFrom(other.LArmCommands);
+      }
+      if (other.rArmCommands_ != null) {
+        if (rArmCommands_ == null) {
+          RArmCommands = new global::Reachy.Part.Arm.ArmComponentsCommands();
+        }
+        RArmCommands.MergeFrom(other.RArmCommands);
+      }
+      if (other.headCommands_ != null) {
+        if (headCommands_ == null) {
+          HeadCommands = new global::Reachy.Part.Head.HeadComponentsCommands();
+        }
+        HeadCommands.MergeFrom(other.HeadCommands);
+      }
+      if (other.lHandCommand_ != null) {
+        if (lHandCommand_ == null) {
+          LHandCommand = new global::Reachy.Part.Hand.HandPositionRequest();
+        }
+        LHandCommand.MergeFrom(other.LHandCommand);
+      }
+      if (other.rHandCommand_ != null) {
+        if (rHandCommand_ == null) {
+          RHandCommand = new global::Reachy.Part.Hand.HandPositionRequest();
+        }
+        RHandCommand.MergeFrom(other.RHandCommand);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (lArmCommands_ == null) {
+              LArmCommands = new global::Reachy.Part.Arm.ArmComponentsCommands();
+            }
+            input.ReadMessage(LArmCommands);
+            break;
+          }
+          case 18: {
+            if (rArmCommands_ == null) {
+              RArmCommands = new global::Reachy.Part.Arm.ArmComponentsCommands();
+            }
+            input.ReadMessage(RArmCommands);
+            break;
+          }
+          case 26: {
+            if (headCommands_ == null) {
+              HeadCommands = new global::Reachy.Part.Head.HeadComponentsCommands();
+            }
+            input.ReadMessage(HeadCommands);
+            break;
+          }
+          case 34: {
+            if (lHandCommand_ == null) {
+              LHandCommand = new global::Reachy.Part.Hand.HandPositionRequest();
+            }
+            input.ReadMessage(LHandCommand);
+            break;
+          }
+          case 42: {
+            if (rHandCommand_ == null) {
+              RHandCommand = new global::Reachy.Part.Hand.HandPositionRequest();
+            }
+            input.ReadMessage(RHandCommand);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (lArmCommands_ == null) {
+              LArmCommands = new global::Reachy.Part.Arm.ArmComponentsCommands();
+            }
+            input.ReadMessage(LArmCommands);
+            break;
+          }
+          case 18: {
+            if (rArmCommands_ == null) {
+              RArmCommands = new global::Reachy.Part.Arm.ArmComponentsCommands();
+            }
+            input.ReadMessage(RArmCommands);
+            break;
+          }
+          case 26: {
+            if (headCommands_ == null) {
+              HeadCommands = new global::Reachy.Part.Head.HeadComponentsCommands();
+            }
+            input.ReadMessage(HeadCommands);
+            break;
+          }
+          case 34: {
+            if (lHandCommand_ == null) {
+              LHandCommand = new global::Reachy.Part.Hand.HandPositionRequest();
+            }
+            input.ReadMessage(LHandCommand);
+            break;
+          }
+          case 42: {
+            if (rHandCommand_ == null) {
+              RHandCommand = new global::Reachy.Part.Hand.HandPositionRequest();
+            }
+            input.ReadMessage(RHandCommand);
             break;
           }
         }
