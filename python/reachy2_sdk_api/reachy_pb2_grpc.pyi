@@ -32,6 +32,10 @@ class ReachyServiceStub:
         reachy_pb2.ReachyStreamStateRequest,
         reachy_pb2.ReachyState,
     ]
+    SendComponentsCommands: grpc.UnaryUnaryMultiCallable[
+        reachy_pb2.ReachyComponentsCommands,
+        google.protobuf.empty_pb2.Empty,
+    ]
     Audit: grpc.UnaryUnaryMultiCallable[
         reachy_pb2.ReachyId,
         reachy_pb2.ReachyStatus,
@@ -53,6 +57,10 @@ class ReachyServiceAsyncStub:
     StreamReachyState: grpc.aio.UnaryStreamMultiCallable[
         reachy_pb2.ReachyStreamStateRequest,
         reachy_pb2.ReachyState,
+    ]
+    SendComponentsCommands: grpc.aio.UnaryUnaryMultiCallable[
+        reachy_pb2.ReachyComponentsCommands,
+        google.protobuf.empty_pb2.Empty,
     ]
     Audit: grpc.aio.UnaryUnaryMultiCallable[
         reachy_pb2.ReachyId,
@@ -82,6 +90,12 @@ class ReachyServiceServicer(metaclass=abc.ABCMeta):
         request: reachy_pb2.ReachyStreamStateRequest,
         context: _ServicerContext,
     ) -> typing.Union[collections.abc.Iterator[reachy_pb2.ReachyState], collections.abc.AsyncIterator[reachy_pb2.ReachyState]]: ...
+    @abc.abstractmethod
+    def SendComponentsCommands(
+        self,
+        request: reachy_pb2.ReachyComponentsCommands,
+        context: _ServicerContext,
+    ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
     @abc.abstractmethod
     def Audit(
         self,

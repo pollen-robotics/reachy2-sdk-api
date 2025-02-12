@@ -90,6 +90,10 @@ class HeadServiceStub:
         head_pb2.NeckJointGoal,
         google.protobuf.empty_pb2.Empty,
     ]
+    SendComponentsCommands: grpc.UnaryUnaryMultiCallable[
+        head_pb2.HeadComponentsCommands,
+        google.protobuf.empty_pb2.Empty,
+    ]
 
 class HeadServiceAsyncStub:
     GetAllHeads: grpc.aio.UnaryUnaryMultiCallable[
@@ -158,6 +162,10 @@ class HeadServiceAsyncStub:
     ]
     SendNeckJointGoal: grpc.aio.UnaryUnaryMultiCallable[
         head_pb2.NeckJointGoal,
+        google.protobuf.empty_pb2.Empty,
+    ]
+    SendComponentsCommands: grpc.aio.UnaryUnaryMultiCallable[
+        head_pb2.HeadComponentsCommands,
         google.protobuf.empty_pb2.Empty,
     ]
 
@@ -262,6 +270,12 @@ class HeadServiceServicer(metaclass=abc.ABCMeta):
     def SendNeckJointGoal(
         self,
         request: head_pb2.NeckJointGoal,
+        context: _ServicerContext,
+    ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
+    @abc.abstractmethod
+    def SendComponentsCommands(
+        self,
+        request: head_pb2.HeadComponentsCommands,
         context: _ServicerContext,
     ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
 

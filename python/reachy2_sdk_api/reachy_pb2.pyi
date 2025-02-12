@@ -256,3 +256,36 @@ class ReachyStreamAuditRequest(google.protobuf.message.Message):
     def ClearField(self, field_name: typing_extensions.Literal["id", b"id", "publish_frequency", b"publish_frequency"]) -> None: ...
 
 global___ReachyStreamAuditRequest = ReachyStreamAuditRequest
+
+@typing_extensions.final
+class ReachyComponentsCommands(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    L_ARM_COMMANDS_FIELD_NUMBER: builtins.int
+    R_ARM_COMMANDS_FIELD_NUMBER: builtins.int
+    HEAD_COMMANDS_FIELD_NUMBER: builtins.int
+    L_HAND_COMMAND_FIELD_NUMBER: builtins.int
+    R_HAND_COMMAND_FIELD_NUMBER: builtins.int
+    @property
+    def l_arm_commands(self) -> arm_pb2.ArmComponentsCommands: ...
+    @property
+    def r_arm_commands(self) -> arm_pb2.ArmComponentsCommands: ...
+    @property
+    def head_commands(self) -> head_pb2.HeadComponentsCommands: ...
+    @property
+    def l_hand_command(self) -> hand_pb2.HandPositionRequest: ...
+    @property
+    def r_hand_command(self) -> hand_pb2.HandPositionRequest: ...
+    def __init__(
+        self,
+        *,
+        l_arm_commands: arm_pb2.ArmComponentsCommands | None = ...,
+        r_arm_commands: arm_pb2.ArmComponentsCommands | None = ...,
+        head_commands: head_pb2.HeadComponentsCommands | None = ...,
+        l_hand_command: hand_pb2.HandPositionRequest | None = ...,
+        r_hand_command: hand_pb2.HandPositionRequest | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["head_commands", b"head_commands", "l_arm_commands", b"l_arm_commands", "l_hand_command", b"l_hand_command", "r_arm_commands", b"r_arm_commands", "r_hand_command", b"r_hand_command"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["head_commands", b"head_commands", "l_arm_commands", b"l_arm_commands", "l_hand_command", b"l_hand_command", "r_arm_commands", b"r_arm_commands", "r_hand_command", b"r_hand_command"]) -> None: ...
+
+global___ReachyComponentsCommands = ReachyComponentsCommands

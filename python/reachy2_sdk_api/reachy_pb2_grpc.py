@@ -30,6 +30,11 @@ class ReachyServiceStub(object):
                 request_serializer=reachy__pb2.ReachyStreamStateRequest.SerializeToString,
                 response_deserializer=reachy__pb2.ReachyState.FromString,
                 )
+        self.SendComponentsCommands = channel.unary_unary(
+                '/reachy.ReachyService/SendComponentsCommands',
+                request_serializer=reachy__pb2.ReachyComponentsCommands.SerializeToString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                )
         self.Audit = channel.unary_unary(
                 '/reachy.ReachyService/Audit',
                 request_serializer=reachy__pb2.ReachyId.SerializeToString,
@@ -58,6 +63,12 @@ class ReachyServiceServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def StreamReachyState(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def SendComponentsCommands(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -92,6 +103,11 @@ def add_ReachyServiceServicer_to_server(servicer, server):
                     servicer.StreamReachyState,
                     request_deserializer=reachy__pb2.ReachyStreamStateRequest.FromString,
                     response_serializer=reachy__pb2.ReachyState.SerializeToString,
+            ),
+            'SendComponentsCommands': grpc.unary_unary_rpc_method_handler(
+                    servicer.SendComponentsCommands,
+                    request_deserializer=reachy__pb2.ReachyComponentsCommands.FromString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
             'Audit': grpc.unary_unary_rpc_method_handler(
                     servicer.Audit,
@@ -161,6 +177,23 @@ class ReachyService(object):
         return grpc.experimental.unary_stream(request, target, '/reachy.ReachyService/StreamReachyState',
             reachy__pb2.ReachyStreamStateRequest.SerializeToString,
             reachy__pb2.ReachyState.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def SendComponentsCommands(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/reachy.ReachyService/SendComponentsCommands',
+            reachy__pb2.ReachyComponentsCommands.SerializeToString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 

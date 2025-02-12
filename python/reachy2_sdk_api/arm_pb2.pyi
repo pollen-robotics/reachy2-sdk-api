@@ -626,3 +626,28 @@ class ArmTemperatures(google.protobuf.message.Message):
     def ClearField(self, field_name: typing_extensions.Literal["elbow_temperature", b"elbow_temperature", "shoulder_temperature", b"shoulder_temperature", "wrist_temperature", b"wrist_temperature"]) -> None: ...
 
 global___ArmTemperatures = ArmTemperatures
+
+@typing_extensions.final
+class ArmComponentsCommands(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    SHOULDER_COMMAND_FIELD_NUMBER: builtins.int
+    ELBOW_COMMAND_FIELD_NUMBER: builtins.int
+    WRIST_COMMAND_FIELD_NUMBER: builtins.int
+    @property
+    def shoulder_command(self) -> orbita2d_pb2.Orbita2dsCommand: ...
+    @property
+    def elbow_command(self) -> orbita2d_pb2.Orbita2dsCommand: ...
+    @property
+    def wrist_command(self) -> orbita3d_pb2.Orbita3dsCommand: ...
+    def __init__(
+        self,
+        *,
+        shoulder_command: orbita2d_pb2.Orbita2dsCommand | None = ...,
+        elbow_command: orbita2d_pb2.Orbita2dsCommand | None = ...,
+        wrist_command: orbita3d_pb2.Orbita3dsCommand | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["elbow_command", b"elbow_command", "shoulder_command", b"shoulder_command", "wrist_command", b"wrist_command"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["elbow_command", b"elbow_command", "shoulder_command", b"shoulder_command", "wrist_command", b"wrist_command"]) -> None: ...
+
+global___ArmComponentsCommands = ArmComponentsCommands
