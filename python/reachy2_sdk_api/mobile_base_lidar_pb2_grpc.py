@@ -26,6 +26,11 @@ class MobileBaseLidarServiceStub(object):
                 request_serializer=part__pb2.PartId.SerializeToString,
                 response_deserializer=mobile__base__lidar__pb2.LidarSafety.FromString,
                 )
+        self.ResetDefaultSafetyDistances = channel.unary_unary(
+                '/reachy.part.mobile.base.lidar.MobileBaseLidarService/ResetDefaultSafetyDistances',
+                request_serializer=part__pb2.PartId.SerializeToString,
+                response_deserializer=mobile__base__mobility__pb2.MobilityServiceAck.FromString,
+                )
         self.GetLidarMap = channel.unary_unary(
                 '/reachy.part.mobile.base.lidar.MobileBaseLidarService/GetLidarMap',
                 request_serializer=part__pb2.PartId.SerializeToString,
@@ -48,6 +53,12 @@ class MobileBaseLidarServiceServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def GetZuuuSafety(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def ResetDefaultSafetyDistances(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -77,6 +88,11 @@ def add_MobileBaseLidarServiceServicer_to_server(servicer, server):
                     servicer.GetZuuuSafety,
                     request_deserializer=part__pb2.PartId.FromString,
                     response_serializer=mobile__base__lidar__pb2.LidarSafety.SerializeToString,
+            ),
+            'ResetDefaultSafetyDistances': grpc.unary_unary_rpc_method_handler(
+                    servicer.ResetDefaultSafetyDistances,
+                    request_deserializer=part__pb2.PartId.FromString,
+                    response_serializer=mobile__base__mobility__pb2.MobilityServiceAck.SerializeToString,
             ),
             'GetLidarMap': grpc.unary_unary_rpc_method_handler(
                     servicer.GetLidarMap,
@@ -129,6 +145,23 @@ class MobileBaseLidarService(object):
         return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.lidar.MobileBaseLidarService/GetZuuuSafety',
             part__pb2.PartId.SerializeToString,
             mobile__base__lidar__pb2.LidarSafety.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def ResetDefaultSafetyDistances(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.lidar.MobileBaseLidarService/ResetDefaultSafetyDistances',
+            part__pb2.PartId.SerializeToString,
+            mobile__base__mobility__pb2.MobilityServiceAck.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 

@@ -32,42 +32,34 @@ namespace Reachy.Part.Mobile.Base.Mobility {
             "b29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSJ/ChZUYXJnZXREaXJlY3Rpb25D",
             "b21tYW5kEh8KAmlkGAEgASgLMhMucmVhY2h5LnBhcnQuUGFydElkEkQKCWRp",
             "cmVjdGlvbhgCIAEoCzIxLnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLm1vYmls",
-            "aXR5LkRpcmVjdGlvblZlY3RvciK4AQoKR29Ub1ZlY3RvchIfCgJpZBgBIAEo",
-            "CzITLnJlYWNoeS5wYXJ0LlBhcnRJZBIrCgZ4X2dvYWwYAiABKAsyGy5nb29n",
-            "bGUucHJvdG9idWYuRmxvYXRWYWx1ZRIrCgZ5X2dvYWwYAyABKAsyGy5nb29n",
-            "bGUucHJvdG9idWYuRmxvYXRWYWx1ZRIvCgp0aGV0YV9nb2FsGAQgASgLMhsu",
-            "Z29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUi5gEKDlNldFNwZWVkVmVjdG9y",
-            "Eh8KAmlkGAEgASgLMhMucmVhY2h5LnBhcnQuUGFydElkEioKBXhfdmVsGAIg",
-            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSKgoFeV92ZWwYAyAB",
-            "KAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRIsCgdyb3RfdmVsGAQg",
-            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSLQoIZHVyYXRpb24Y",
-            "BSABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSLTAQoURGlzdGFu",
-            "Y2VUb0dvYWxWZWN0b3ISLAoHZGVsdGFfeBgBIAEoCzIbLmdvb2dsZS5wcm90",
-            "b2J1Zi5GbG9hdFZhbHVlEiwKB2RlbHRhX3kYAiABKAsyGy5nb29nbGUucHJv",
-            "dG9idWYuRmxvYXRWYWx1ZRIwCgtkZWx0YV90aGV0YRgDIAEoCzIbLmdvb2ds",
-            "ZS5wcm90b2J1Zi5GbG9hdFZhbHVlEi0KCGRpc3RhbmNlGAQgASgLMhsuZ29v",
-            "Z2xlLnByb3RvYnVmLkZsb2F0VmFsdWUiQQoSTW9iaWxpdHlTZXJ2aWNlQWNr",
-            "EisKB3N1Y2Nlc3MYASABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVl",
-            "Mr8EChlNb2JpbGVCYXNlTW9iaWxpdHlTZXJ2aWNlEn8KDVNlbmREaXJlY3Rp",
-            "b24SOC5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5UYXJnZXRE",
-            "aXJlY3Rpb25Db21tYW5kGjQucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UubW9i",
-            "aWxpdHkuTW9iaWxpdHlTZXJ2aWNlQWNrEnYKDFNlbmRTZXRTcGVlZBIwLnJl",
-            "YWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLm1vYmlsaXR5LlNldFNwZWVkVmVjdG9y",
-            "GjQucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UubW9iaWxpdHkuTW9iaWxpdHlT",
-            "ZXJ2aWNlQWNrEm4KCFNlbmRHb1RvEiwucmVhY2h5LnBhcnQubW9iaWxlLmJh",
-            "c2UubW9iaWxpdHkuR29Ub1ZlY3Rvcho0LnJlYWNoeS5wYXJ0Lm1vYmlsZS5i",
-            "YXNlLm1vYmlsaXR5Lk1vYmlsaXR5U2VydmljZUFjaxJaChBHZXRMYXN0RGly",
-            "ZWN0aW9uEhMucmVhY2h5LnBhcnQuUGFydElkGjEucmVhY2h5LnBhcnQubW9i",
-            "aWxlLmJhc2UubW9iaWxpdHkuRGlyZWN0aW9uVmVjdG9yEl0KDkRpc3RhbmNl",
-            "VG9Hb2FsEhMucmVhY2h5LnBhcnQuUGFydElkGjYucmVhY2h5LnBhcnQubW9i",
-            "aWxlLmJhc2UubW9iaWxpdHkuRGlzdGFuY2VUb0dvYWxWZWN0b3JiBnByb3Rv",
-            "Mw=="));
+            "aXR5LkRpcmVjdGlvblZlY3RvciLmAQoOU2V0U3BlZWRWZWN0b3ISHwoCaWQY",
+            "ASABKAsyEy5yZWFjaHkucGFydC5QYXJ0SWQSKgoFeF92ZWwYAiABKAsyGy5n",
+            "b29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRIqCgV5X3ZlbBgDIAEoCzIbLmdv",
+            "b2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlEiwKB3JvdF92ZWwYBCABKAsyGy5n",
+            "b29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRItCghkdXJhdGlvbhgFIAEoCzIb",
+            "Lmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlItMBChREaXN0YW5jZVRvR29h",
+            "bFZlY3RvchIsCgdkZWx0YV94GAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZs",
+            "b2F0VmFsdWUSLAoHZGVsdGFfeRgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5G",
+            "bG9hdFZhbHVlEjAKC2RlbHRhX3RoZXRhGAMgASgLMhsuZ29vZ2xlLnByb3Rv",
+            "YnVmLkZsb2F0VmFsdWUSLQoIZGlzdGFuY2UYBCABKAsyGy5nb29nbGUucHJv",
+            "dG9idWYuRmxvYXRWYWx1ZSJBChJNb2JpbGl0eVNlcnZpY2VBY2sSKwoHc3Vj",
+            "Y2VzcxgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUyzwMKGU1v",
+            "YmlsZUJhc2VNb2JpbGl0eVNlcnZpY2USfwoNU2VuZERpcmVjdGlvbhI4LnJl",
+            "YWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLm1vYmlsaXR5LlRhcmdldERpcmVjdGlv",
+            "bkNvbW1hbmQaNC5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5N",
+            "b2JpbGl0eVNlcnZpY2VBY2sSdgoMU2VuZFNldFNwZWVkEjAucmVhY2h5LnBh",
+            "cnQubW9iaWxlLmJhc2UubW9iaWxpdHkuU2V0U3BlZWRWZWN0b3IaNC5yZWFj",
+            "aHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5Nb2JpbGl0eVNlcnZpY2VB",
+            "Y2sSWgoQR2V0TGFzdERpcmVjdGlvbhITLnJlYWNoeS5wYXJ0LlBhcnRJZBox",
+            "LnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLm1vYmlsaXR5LkRpcmVjdGlvblZl",
+            "Y3RvchJdCg5EaXN0YW5jZVRvR29hbBITLnJlYWNoeS5wYXJ0LlBhcnRJZBo2",
+            "LnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLm1vYmlsaXR5LkRpc3RhbmNlVG9H",
+            "b2FsVmVjdG9yYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Mobility.DirectionVector), global::Reachy.Part.Mobile.Base.Mobility.DirectionVector.Parser, new[]{ "X", "Y", "Theta" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Mobility.TargetDirectionCommand), global::Reachy.Part.Mobile.Base.Mobility.TargetDirectionCommand.Parser, new[]{ "Id", "Direction" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Mobility.GoToVector), global::Reachy.Part.Mobile.Base.Mobility.GoToVector.Parser, new[]{ "Id", "XGoal", "YGoal", "ThetaGoal" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Mobility.SetSpeedVector), global::Reachy.Part.Mobile.Base.Mobility.SetSpeedVector.Parser, new[]{ "Id", "XVel", "YVel", "RotVel", "Duration" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Mobility.DistanceToGoalVector), global::Reachy.Part.Mobile.Base.Mobility.DistanceToGoalVector.Parser, new[]{ "DeltaX", "DeltaY", "DeltaTheta", "Distance" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck), global::Reachy.Part.Mobile.Base.Mobility.MobilityServiceAck.Parser, new[]{ "Success" }, null, null, null, null)
@@ -614,339 +606,6 @@ namespace Reachy.Part.Mobile.Base.Mobility {
 
   }
 
-  public sealed partial class GoToVector : pb::IMessage<GoToVector>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<GoToVector> _parser = new pb::MessageParser<GoToVector>(() => new GoToVector());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<GoToVector> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor.MessageTypes[2]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GoToVector() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GoToVector(GoToVector other) : this() {
-      id_ = other.id_ != null ? other.id_.Clone() : null;
-      XGoal = other.XGoal;
-      YGoal = other.YGoal;
-      ThetaGoal = other.ThetaGoal;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GoToVector Clone() {
-      return new GoToVector(this);
-    }
-
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private global::Reachy.Part.PartId id_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Reachy.Part.PartId Id {
-      get { return id_; }
-      set {
-        id_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "x_goal" field.</summary>
-    public const int XGoalFieldNumber = 2;
-    private static readonly pb::FieldCodec<float?> _single_xGoal_codec = pb::FieldCodec.ForStructWrapper<float>(18);
-    private float? xGoal_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float? XGoal {
-      get { return xGoal_; }
-      set {
-        xGoal_ = value;
-      }
-    }
-
-
-    /// <summary>Field number for the "y_goal" field.</summary>
-    public const int YGoalFieldNumber = 3;
-    private static readonly pb::FieldCodec<float?> _single_yGoal_codec = pb::FieldCodec.ForStructWrapper<float>(26);
-    private float? yGoal_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float? YGoal {
-      get { return yGoal_; }
-      set {
-        yGoal_ = value;
-      }
-    }
-
-
-    /// <summary>Field number for the "theta_goal" field.</summary>
-    public const int ThetaGoalFieldNumber = 4;
-    private static readonly pb::FieldCodec<float?> _single_thetaGoal_codec = pb::FieldCodec.ForStructWrapper<float>(34);
-    private float? thetaGoal_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float? ThetaGoal {
-      get { return thetaGoal_; }
-      set {
-        thetaGoal_ = value;
-      }
-    }
-
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as GoToVector);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(GoToVector other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(Id, other.Id)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(XGoal, other.XGoal)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(YGoal, other.YGoal)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(ThetaGoal, other.ThetaGoal)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (id_ != null) hash ^= Id.GetHashCode();
-      if (xGoal_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(XGoal);
-      if (yGoal_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(YGoal);
-      if (thetaGoal_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(ThetaGoal);
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (id_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Id);
-      }
-      if (xGoal_ != null) {
-        _single_xGoal_codec.WriteTagAndValue(output, XGoal);
-      }
-      if (yGoal_ != null) {
-        _single_yGoal_codec.WriteTagAndValue(output, YGoal);
-      }
-      if (thetaGoal_ != null) {
-        _single_thetaGoal_codec.WriteTagAndValue(output, ThetaGoal);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (id_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Id);
-      }
-      if (xGoal_ != null) {
-        _single_xGoal_codec.WriteTagAndValue(ref output, XGoal);
-      }
-      if (yGoal_ != null) {
-        _single_yGoal_codec.WriteTagAndValue(ref output, YGoal);
-      }
-      if (thetaGoal_ != null) {
-        _single_thetaGoal_codec.WriteTagAndValue(ref output, ThetaGoal);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (id_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
-      }
-      if (xGoal_ != null) {
-        size += _single_xGoal_codec.CalculateSizeWithTag(XGoal);
-      }
-      if (yGoal_ != null) {
-        size += _single_yGoal_codec.CalculateSizeWithTag(YGoal);
-      }
-      if (thetaGoal_ != null) {
-        size += _single_thetaGoal_codec.CalculateSizeWithTag(ThetaGoal);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(GoToVector other) {
-      if (other == null) {
-        return;
-      }
-      if (other.id_ != null) {
-        if (id_ == null) {
-          Id = new global::Reachy.Part.PartId();
-        }
-        Id.MergeFrom(other.Id);
-      }
-      if (other.xGoal_ != null) {
-        if (xGoal_ == null || other.XGoal != 0F) {
-          XGoal = other.XGoal;
-        }
-      }
-      if (other.yGoal_ != null) {
-        if (yGoal_ == null || other.YGoal != 0F) {
-          YGoal = other.YGoal;
-        }
-      }
-      if (other.thetaGoal_ != null) {
-        if (thetaGoal_ == null || other.ThetaGoal != 0F) {
-          ThetaGoal = other.ThetaGoal;
-        }
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            if (id_ == null) {
-              Id = new global::Reachy.Part.PartId();
-            }
-            input.ReadMessage(Id);
-            break;
-          }
-          case 18: {
-            float? value = _single_xGoal_codec.Read(input);
-            if (xGoal_ == null || value != 0F) {
-              XGoal = value;
-            }
-            break;
-          }
-          case 26: {
-            float? value = _single_yGoal_codec.Read(input);
-            if (yGoal_ == null || value != 0F) {
-              YGoal = value;
-            }
-            break;
-          }
-          case 34: {
-            float? value = _single_thetaGoal_codec.Read(input);
-            if (thetaGoal_ == null || value != 0F) {
-              ThetaGoal = value;
-            }
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (id_ == null) {
-              Id = new global::Reachy.Part.PartId();
-            }
-            input.ReadMessage(Id);
-            break;
-          }
-          case 18: {
-            float? value = _single_xGoal_codec.Read(ref input);
-            if (xGoal_ == null || value != 0F) {
-              XGoal = value;
-            }
-            break;
-          }
-          case 26: {
-            float? value = _single_yGoal_codec.Read(ref input);
-            if (yGoal_ == null || value != 0F) {
-              YGoal = value;
-            }
-            break;
-          }
-          case 34: {
-            float? value = _single_thetaGoal_codec.Read(ref input);
-            if (thetaGoal_ == null || value != 0F) {
-              ThetaGoal = value;
-            }
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
   public sealed partial class SetSpeedVector : pb::IMessage<SetSpeedVector>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -961,7 +620,7 @@ namespace Reachy.Part.Mobile.Base.Mobility {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Reachy.Part.Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1339,7 +998,7 @@ namespace Reachy.Part.Mobile.Base.Mobility {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Reachy.Part.Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1671,7 +1330,7 @@ namespace Reachy.Part.Mobile.Base.Mobility {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Reachy.Part.Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

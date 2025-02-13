@@ -16,37 +16,40 @@ from google.protobuf import wrappers_pb2 as google_dot_protobuf_dot_wrappers__pb
 import arm_pb2 as arm__pb2
 import head_pb2 as head__pb2
 import part_pb2 as part__pb2
+import mobile_base_mobility_pb2 as mobile__base__mobility__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\ngoto.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1egoogle/protobuf/wrappers.proto\x1a\tarm.proto\x1a\nhead.proto\x1a\npart.proto\"\x14\n\x06GoToId\x12\n\n\x02id\x18\x01 \x01(\x05\"\x16\n\x07GoToAck\x12\x0b\n\x03\x61\x63k\x18\x01 \x01(\x08\"2\n\x0eGoToGoalStatus\x12 \n\x0bgoal_status\x18\x01 \x01(\x0e\x32\x0b.GoalStatus\"\xa6\x01\n\rCartesianGoal\x12?\n\x12\x61rm_cartesian_goal\x18\x01 \x01(\x0b\x32!.reachy.part.arm.ArmCartesianGoalH\x00\x12\x42\n\x13neck_cartesian_goal\x18\x02 \x01(\x0b\x32#.reachy.part.head.NeckCartesianGoalH\x00\x42\x10\n\x0e\x63\x61rtesian_goal\"\xbf\x01\n\nJointsGoal\x12\x37\n\x0e\x61rm_joint_goal\x18\x01 \x01(\x0b\x32\x1d.reachy.part.arm.ArmJointGoalH\x00\x12:\n\x0fneck_joint_goal\x18\x02 \x01(\x0b\x32\x1f.reachy.part.head.NeckJointGoalH\x00\x12-\n\x11\x63ustom_joint_goal\x18\x03 \x01(\x0b\x32\x10.CustomJointGoalH\x00\x42\r\n\x0bjoints_goal\"\x91\x02\n\x0f\x43ustomJointGoal\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x36\n\narm_joints\x18\x02 \x01(\x0b\x32 .reachy.part.arm.CustomArmJointsH\x00\x12\x39\n\x0bneck_joints\x18\x03 \x01(\x0b\x32\".reachy.part.head.CustomNeckJointsH\x00\x12\x31\n\x0cjoints_goals\x18\x04 \x03(\x0b\x32\x1b.google.protobuf.FloatValue\x12-\n\x08\x64uration\x18\n \x01(\x0b\x32\x1b.google.protobuf.FloatValueB\x08\n\x06joints\"C\n\x11GoToInterpolation\x12.\n\x12interpolation_type\x18\x01 \x01(\x0e\x32\x12.InterpolationMode\"\x93\x01\n\x0bGoToRequest\x12(\n\x0e\x63\x61rtesian_goal\x18\x01 \x01(\x0b\x32\x0e.CartesianGoalH\x00\x12\"\n\x0bjoints_goal\x18\x02 \x01(\x0b\x32\x0b.JointsGoalH\x00\x12.\n\x12interpolation_mode\x18\x03 \x01(\x0b\x32\x12.GoToInterpolationB\x06\n\x04goal\"&\n\tGoToQueue\x12\x19\n\x08goto_ids\x18\x01 \x03(\x0b\x32\x07.GoToId*\xaa\x01\n\nGoalStatus\x12\x08\n\x04NONE\x10\x00\x12\x12\n\x0eSTATUS_UNKNOWN\x10\x01\x12\x13\n\x0fSTATUS_ACCEPTED\x10\x02\x12\x14\n\x10STATUS_EXECUTING\x10\x03\x12\x14\n\x10STATUS_CANCELING\x10\x04\x12\x14\n\x10STATUS_SUCCEEDED\x10\x05\x12\x13\n\x0fSTATUS_CANCELED\x10\x06\x12\x12\n\x0eSTATUS_ABORTED\x10\x07*I\n\x11InterpolationMode\x12\x16\n\x12NONE_INTERPOLATION\x10\x00\x12\n\n\x06LINEAR\x10\x01\x12\x10\n\x0cMINIMUM_JERK\x10\x02\x32\x9e\x03\n\x0bGoToService\x12&\n\rGoToCartesian\x12\x0c.GoToRequest\x1a\x07.GoToId\x12#\n\nGoToJoints\x12\x0c.GoToRequest\x1a\x07.GoToId\x12(\n\x0cGetGoToState\x12\x07.GoToId\x1a\x0f.GoToGoalStatus\x12\'\n\x0eGetGoToRequest\x12\x07.GoToId\x1a\x0c.GoToRequest\x12\x32\n\x12GetPartGoToPlaying\x12\x13.reachy.part.PartId\x1a\x07.GoToId\x12\x33\n\x10GetPartGoToQueue\x12\x13.reachy.part.PartId\x1a\n.GoToQueue\x12\x1f\n\nCancelGoTo\x12\x07.GoToId\x1a\x08.GoToAck\x12\x31\n\rCancelAllGoTo\x12\x16.google.protobuf.Empty\x1a\x08.GoToAck\x12\x32\n\x11\x43\x61ncelPartAllGoTo\x12\x13.reachy.part.PartId\x1a\x08.GoToAckb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\ngoto.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a\x1egoogle/protobuf/wrappers.proto\x1a\tarm.proto\x1a\nhead.proto\x1a\npart.proto\x1a\x1amobile_base_mobility.proto\"\x14\n\x06GoToId\x12\n\n\x02id\x18\x01 \x01(\x05\"\x16\n\x07GoToAck\x12\x0b\n\x03\x61\x63k\x18\x01 \x01(\x08\"2\n\x0eGoToGoalStatus\x12 \n\x0bgoal_status\x18\x01 \x01(\x0e\x32\x0b.GoalStatus\"\xa6\x01\n\rCartesianGoal\x12?\n\x12\x61rm_cartesian_goal\x18\x01 \x01(\x0b\x32!.reachy.part.arm.ArmCartesianGoalH\x00\x12\x42\n\x13neck_cartesian_goal\x18\x02 \x01(\x0b\x32#.reachy.part.head.NeckCartesianGoalH\x00\x42\x10\n\x0e\x63\x61rtesian_goal\"\xbf\x01\n\nJointsGoal\x12\x37\n\x0e\x61rm_joint_goal\x18\x01 \x01(\x0b\x32\x1d.reachy.part.arm.ArmJointGoalH\x00\x12:\n\x0fneck_joint_goal\x18\x02 \x01(\x0b\x32\x1f.reachy.part.head.NeckJointGoalH\x00\x12-\n\x11\x63ustom_joint_goal\x18\x03 \x01(\x0b\x32\x10.CustomJointGoalH\x00\x42\r\n\x0bjoints_goal\"\xfc\x01\n\x0cOdometryGoal\x12O\n\rodometry_goal\x18\x01 \x01(\x0b\x32\x38.reachy.part.mobile.base.mobility.TargetDirectionCommand\x12\x37\n\x12\x64istance_tolerance\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x34\n\x0f\x61ngle_tolerance\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12,\n\x07timeout\x18\n \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"\x91\x02\n\x0f\x43ustomJointGoal\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x36\n\narm_joints\x18\x02 \x01(\x0b\x32 .reachy.part.arm.CustomArmJointsH\x00\x12\x39\n\x0bneck_joints\x18\x03 \x01(\x0b\x32\".reachy.part.head.CustomNeckJointsH\x00\x12\x31\n\x0cjoints_goals\x18\x04 \x03(\x0b\x32\x1b.google.protobuf.FloatValue\x12-\n\x08\x64uration\x18\n \x01(\x0b\x32\x1b.google.protobuf.FloatValueB\x08\n\x06joints\"C\n\x11GoToInterpolation\x12.\n\x12interpolation_type\x18\x01 \x01(\x0e\x32\x12.InterpolationMode\"\xbb\x01\n\x0bGoToRequest\x12(\n\x0e\x63\x61rtesian_goal\x18\x01 \x01(\x0b\x32\x0e.CartesianGoalH\x00\x12\"\n\x0bjoints_goal\x18\x02 \x01(\x0b\x32\x0b.JointsGoalH\x00\x12&\n\rodometry_goal\x18\x03 \x01(\x0b\x32\r.OdometryGoalH\x00\x12.\n\x12interpolation_mode\x18\n \x01(\x0b\x32\x12.GoToInterpolationB\x06\n\x04goal\"&\n\tGoToQueue\x12\x19\n\x08goto_ids\x18\x01 \x03(\x0b\x32\x07.GoToId*\xaa\x01\n\nGoalStatus\x12\x08\n\x04NONE\x10\x00\x12\x12\n\x0eSTATUS_UNKNOWN\x10\x01\x12\x13\n\x0fSTATUS_ACCEPTED\x10\x02\x12\x14\n\x10STATUS_EXECUTING\x10\x03\x12\x14\n\x10STATUS_CANCELING\x10\x04\x12\x14\n\x10STATUS_SUCCEEDED\x10\x05\x12\x13\n\x0fSTATUS_CANCELED\x10\x06\x12\x12\n\x0eSTATUS_ABORTED\x10\x07*I\n\x11InterpolationMode\x12\x16\n\x12NONE_INTERPOLATION\x10\x00\x12\n\n\x06LINEAR\x10\x01\x12\x10\n\x0cMINIMUM_JERK\x10\x02\x32\xc5\x03\n\x0bGoToService\x12&\n\rGoToCartesian\x12\x0c.GoToRequest\x1a\x07.GoToId\x12#\n\nGoToJoints\x12\x0c.GoToRequest\x1a\x07.GoToId\x12%\n\x0cGoToOdometry\x12\x0c.GoToRequest\x1a\x07.GoToId\x12(\n\x0cGetGoToState\x12\x07.GoToId\x1a\x0f.GoToGoalStatus\x12\'\n\x0eGetGoToRequest\x12\x07.GoToId\x1a\x0c.GoToRequest\x12\x32\n\x12GetPartGoToPlaying\x12\x13.reachy.part.PartId\x1a\x07.GoToId\x12\x33\n\x10GetPartGoToQueue\x12\x13.reachy.part.PartId\x1a\n.GoToQueue\x12\x1f\n\nCancelGoTo\x12\x07.GoToId\x1a\x08.GoToAck\x12\x31\n\rCancelAllGoTo\x12\x16.google.protobuf.Empty\x1a\x08.GoToAck\x12\x32\n\x11\x43\x61ncelPartAllGoTo\x12\x13.reachy.part.PartId\x1a\x08.GoToAckb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'goto_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   DESCRIPTOR._options = None
-  _globals['_GOALSTATUS']._serialized_start=1107
-  _globals['_GOALSTATUS']._serialized_end=1277
-  _globals['_INTERPOLATIONMODE']._serialized_start=1279
-  _globals['_INTERPOLATIONMODE']._serialized_end=1352
-  _globals['_GOTOID']._serialized_start=110
-  _globals['_GOTOID']._serialized_end=130
-  _globals['_GOTOACK']._serialized_start=132
-  _globals['_GOTOACK']._serialized_end=154
-  _globals['_GOTOGOALSTATUS']._serialized_start=156
-  _globals['_GOTOGOALSTATUS']._serialized_end=206
-  _globals['_CARTESIANGOAL']._serialized_start=209
-  _globals['_CARTESIANGOAL']._serialized_end=375
-  _globals['_JOINTSGOAL']._serialized_start=378
-  _globals['_JOINTSGOAL']._serialized_end=569
-  _globals['_CUSTOMJOINTGOAL']._serialized_start=572
-  _globals['_CUSTOMJOINTGOAL']._serialized_end=845
-  _globals['_GOTOINTERPOLATION']._serialized_start=847
-  _globals['_GOTOINTERPOLATION']._serialized_end=914
-  _globals['_GOTOREQUEST']._serialized_start=917
-  _globals['_GOTOREQUEST']._serialized_end=1064
-  _globals['_GOTOQUEUE']._serialized_start=1066
-  _globals['_GOTOQUEUE']._serialized_end=1104
-  _globals['_GOTOSERVICE']._serialized_start=1355
-  _globals['_GOTOSERVICE']._serialized_end=1769
+  _globals['_GOALSTATUS']._serialized_start=1430
+  _globals['_GOALSTATUS']._serialized_end=1600
+  _globals['_INTERPOLATIONMODE']._serialized_start=1602
+  _globals['_INTERPOLATIONMODE']._serialized_end=1675
+  _globals['_GOTOID']._serialized_start=138
+  _globals['_GOTOID']._serialized_end=158
+  _globals['_GOTOACK']._serialized_start=160
+  _globals['_GOTOACK']._serialized_end=182
+  _globals['_GOTOGOALSTATUS']._serialized_start=184
+  _globals['_GOTOGOALSTATUS']._serialized_end=234
+  _globals['_CARTESIANGOAL']._serialized_start=237
+  _globals['_CARTESIANGOAL']._serialized_end=403
+  _globals['_JOINTSGOAL']._serialized_start=406
+  _globals['_JOINTSGOAL']._serialized_end=597
+  _globals['_ODOMETRYGOAL']._serialized_start=600
+  _globals['_ODOMETRYGOAL']._serialized_end=852
+  _globals['_CUSTOMJOINTGOAL']._serialized_start=855
+  _globals['_CUSTOMJOINTGOAL']._serialized_end=1128
+  _globals['_GOTOINTERPOLATION']._serialized_start=1130
+  _globals['_GOTOINTERPOLATION']._serialized_end=1197
+  _globals['_GOTOREQUEST']._serialized_start=1200
+  _globals['_GOTOREQUEST']._serialized_end=1387
+  _globals['_GOTOQUEUE']._serialized_start=1389
+  _globals['_GOTOQUEUE']._serialized_end=1427
+  _globals['_GOTOSERVICE']._serialized_start=1678
+  _globals['_GOTOSERVICE']._serialized_end=2131
 # @@protoc_insertion_point(module_scope)

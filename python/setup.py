@@ -11,7 +11,7 @@ here = path.abspath(path.dirname(__file__))
 
 setup(
     name="reachy2_sdk_api",
-    version="1.0.15",
+    version="1.0.16",
     packages=find_packages(exclude=["tests"]),
     install_requires=[
         "grpcio>=1.59.0, <=1.62.2",

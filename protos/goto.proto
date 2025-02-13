@@ -6,6 +6,7 @@ import "google/protobuf/wrappers.proto";
 import "arm.proto";
 import "head.proto";
 import "part.proto";
+import "mobile_base_mobility.proto";
 
 enum GoalStatus {
     NONE = 0;
@@ -45,6 +46,15 @@ message JointsGoal {
     }
 }
 
+message OdometryGoal {
+    reachy.part.mobile.base.mobility.TargetDirectionCommand odometry_goal = 1;
+
+    google.protobuf.FloatValue distance_tolerance = 2;
+    google.protobuf.FloatValue angle_tolerance = 3;
+
+    google.protobuf.FloatValue timeout = 10;
+}
+
 message CustomJointGoal {
     reachy.part.PartId id = 1;
     oneof joints {
@@ -69,8 +79,9 @@ message GoToRequest {
     oneof goal {
         CartesianGoal cartesian_goal = 1;
         JointsGoal joints_goal = 2;
+        OdometryGoal odometry_goal = 3;
     }
-    GoToInterpolation interpolation_mode = 3;
+    GoToInterpolation interpolation_mode = 10;
 }
 
 message GoToQueue {
@@ -81,6 +92,7 @@ message GoToQueue {
 service GoToService {
     rpc GoToCartesian (GoToRequest) returns (GoToId);
     rpc GoToJoints (GoToRequest) returns (GoToId);
+    rpc GoToOdometry (GoToRequest) returns (GoToId);
     rpc GetGoToState (GoToId) returns (GoToGoalStatus);
     rpc GetGoToRequest (GoToId) returns (GoToRequest);
     rpc GetPartGoToPlaying (reachy.part.PartId) returns (GoToId);

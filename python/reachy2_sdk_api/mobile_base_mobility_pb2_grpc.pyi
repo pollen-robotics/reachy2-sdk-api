@@ -24,13 +24,8 @@ class MobileBaseMobilityServiceStub:
         mobile_base_mobility_pb2.TargetDirectionCommand,
         mobile_base_mobility_pb2.MobilityServiceAck,
     ]
-    """Mobility commands"""
     SendSetSpeed: grpc.UnaryUnaryMultiCallable[
         mobile_base_mobility_pb2.SetSpeedVector,
-        mobile_base_mobility_pb2.MobilityServiceAck,
-    ]
-    SendGoTo: grpc.UnaryUnaryMultiCallable[
-        mobile_base_mobility_pb2.GoToVector,
         mobile_base_mobility_pb2.MobilityServiceAck,
     ]
     GetLastDirection: grpc.UnaryUnaryMultiCallable[
@@ -47,13 +42,8 @@ class MobileBaseMobilityServiceAsyncStub:
         mobile_base_mobility_pb2.TargetDirectionCommand,
         mobile_base_mobility_pb2.MobilityServiceAck,
     ]
-    """Mobility commands"""
     SendSetSpeed: grpc.aio.UnaryUnaryMultiCallable[
         mobile_base_mobility_pb2.SetSpeedVector,
-        mobile_base_mobility_pb2.MobilityServiceAck,
-    ]
-    SendGoTo: grpc.aio.UnaryUnaryMultiCallable[
-        mobile_base_mobility_pb2.GoToVector,
         mobile_base_mobility_pb2.MobilityServiceAck,
     ]
     GetLastDirection: grpc.aio.UnaryUnaryMultiCallable[
@@ -71,18 +61,11 @@ class MobileBaseMobilityServiceServicer(metaclass=abc.ABCMeta):
         self,
         request: mobile_base_mobility_pb2.TargetDirectionCommand,
         context: _ServicerContext,
-    ) -> typing.Union[mobile_base_mobility_pb2.MobilityServiceAck, collections.abc.Awaitable[mobile_base_mobility_pb2.MobilityServiceAck]]:
-        """Mobility commands"""
+    ) -> typing.Union[mobile_base_mobility_pb2.MobilityServiceAck, collections.abc.Awaitable[mobile_base_mobility_pb2.MobilityServiceAck]]: ...
     @abc.abstractmethod
     def SendSetSpeed(
         self,
         request: mobile_base_mobility_pb2.SetSpeedVector,
-        context: _ServicerContext,
-    ) -> typing.Union[mobile_base_mobility_pb2.MobilityServiceAck, collections.abc.Awaitable[mobile_base_mobility_pb2.MobilityServiceAck]]: ...
-    @abc.abstractmethod
-    def SendGoTo(
-        self,
-        request: mobile_base_mobility_pb2.GoToVector,
         context: _ServicerContext,
     ) -> typing.Union[mobile_base_mobility_pb2.MobilityServiceAck, collections.abc.Awaitable[mobile_base_mobility_pb2.MobilityServiceAck]]: ...
     @abc.abstractmethod

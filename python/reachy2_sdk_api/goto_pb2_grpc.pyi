@@ -29,6 +29,10 @@ class GoToServiceStub:
         goto_pb2.GoToRequest,
         goto_pb2.GoToId,
     ]
+    GoToOdometry: grpc.UnaryUnaryMultiCallable[
+        goto_pb2.GoToRequest,
+        goto_pb2.GoToId,
+    ]
     GetGoToState: grpc.UnaryUnaryMultiCallable[
         goto_pb2.GoToId,
         goto_pb2.GoToGoalStatus,
@@ -64,6 +68,10 @@ class GoToServiceAsyncStub:
         goto_pb2.GoToId,
     ]
     GoToJoints: grpc.aio.UnaryUnaryMultiCallable[
+        goto_pb2.GoToRequest,
+        goto_pb2.GoToId,
+    ]
+    GoToOdometry: grpc.aio.UnaryUnaryMultiCallable[
         goto_pb2.GoToRequest,
         goto_pb2.GoToId,
     ]
@@ -105,6 +113,12 @@ class GoToServiceServicer(metaclass=abc.ABCMeta):
     ) -> typing.Union[goto_pb2.GoToId, collections.abc.Awaitable[goto_pb2.GoToId]]: ...
     @abc.abstractmethod
     def GoToJoints(
+        self,
+        request: goto_pb2.GoToRequest,
+        context: _ServicerContext,
+    ) -> typing.Union[goto_pb2.GoToId, collections.abc.Awaitable[goto_pb2.GoToId]]: ...
+    @abc.abstractmethod
+    def GoToOdometry(
         self,
         request: goto_pb2.GoToRequest,
         context: _ServicerContext,
