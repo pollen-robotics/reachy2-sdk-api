@@ -66,13 +66,23 @@ message CustomJointGoal {
 }
 
 enum InterpolationMode {
-    NONE_INTERPOLATION = 0;
+    NONE_INTERPOLATION_MODE = 0;
     LINEAR = 1;
     MINIMUM_JERK = 2;
 }
 
+enum InterpolationSpace {
+    NONE_INTERPOLATION_SPACE = 0;
+    JOINTS = 1;
+    CARTESIAN = 2;
+}
+
 message GoToInterpolation {
     InterpolationMode interpolation_type = 1;
+}
+
+message GoToInterpolationSpace {
+    InterpolationSpace interpolation_space = 1;
 }
 
 message GoToRequest {
@@ -81,6 +91,7 @@ message GoToRequest {
         JointsGoal joints_goal = 2;
         OdometryGoal odometry_goal = 3;
     }
+    GoToInterpolationSpace interpolation_space = 9;
     GoToInterpolation interpolation_mode = 10;
 }
 
