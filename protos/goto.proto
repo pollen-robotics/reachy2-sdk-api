@@ -69,12 +69,23 @@ enum InterpolationMode {
     NONE_INTERPOLATION_MODE = 0;
     LINEAR = 1;
     MINIMUM_JERK = 2;
+    ELLIPTICAL = 3;
 }
 
 enum InterpolationSpace {
     NONE_INTERPOLATION_SPACE = 0;
-    JOINTS = 1;
-    CARTESIAN = 2;
+    JOINT_SPACE = 1;
+    CARTESIAN_SPACE = 2;
+}
+
+enum ArcDirection {
+    NONE_ARC_DIRECTION = 0;
+    ABOVE = 1;
+    BELOW = 2;
+    FRONT = 3;
+    BACK = 4;
+    LEFT = 5;
+    RIGHT = 6;
 }
 
 message GoToInterpolation {
@@ -85,6 +96,11 @@ message GoToInterpolationSpace {
     InterpolationSpace interpolation_space = 1;
 }
 
+message EllipticalGoToParameters {
+    ArcDirection arc_direction = 1;
+    secondary_radius = 2;
+}
+
 message GoToRequest {
     oneof goal {
         CartesianGoal cartesian_goal = 1;
@@ -93,6 +109,8 @@ message GoToRequest {
     }
     GoToInterpolationSpace interpolation_space = 9;
     GoToInterpolation interpolation_mode = 10;
+
+    EllipticalGoToParameters elliptical_parameters = 15;
 }
 
 message GoToQueue {
