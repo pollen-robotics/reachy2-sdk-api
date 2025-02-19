@@ -98,7 +98,7 @@ message GoToInterpolationSpace {
 
 message EllipticalGoToParameters {
     ArcDirection arc_direction = 1;
-    secondary_radius = 2;
+    google.protobuf.FloatValue secondary_radius = 2;
 }
 
 message GoToRequest {
