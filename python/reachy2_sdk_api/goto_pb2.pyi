@@ -59,12 +59,14 @@ class _InterpolationModeEnumTypeWrapper(google.protobuf.internal.enum_type_wrapp
     NONE_INTERPOLATION_MODE: _InterpolationMode.ValueType  # 0
     LINEAR: _InterpolationMode.ValueType  # 1
     MINIMUM_JERK: _InterpolationMode.ValueType  # 2
+    ELLIPTICAL: _InterpolationMode.ValueType  # 3
 
 class InterpolationMode(_InterpolationMode, metaclass=_InterpolationModeEnumTypeWrapper): ...
 
 NONE_INTERPOLATION_MODE: InterpolationMode.ValueType  # 0
 LINEAR: InterpolationMode.ValueType  # 1
 MINIMUM_JERK: InterpolationMode.ValueType  # 2
+ELLIPTICAL: InterpolationMode.ValueType  # 3
 global___InterpolationMode = InterpolationMode
 
 class _InterpolationSpace:
@@ -74,15 +76,40 @@ class _InterpolationSpace:
 class _InterpolationSpaceEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_InterpolationSpace.ValueType], builtins.type):
     DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
     NONE_INTERPOLATION_SPACE: _InterpolationSpace.ValueType  # 0
-    JOINTS: _InterpolationSpace.ValueType  # 1
-    CARTESIAN: _InterpolationSpace.ValueType  # 2
+    JOINT_SPACE: _InterpolationSpace.ValueType  # 1
+    CARTESIAN_SPACE: _InterpolationSpace.ValueType  # 2
 
 class InterpolationSpace(_InterpolationSpace, metaclass=_InterpolationSpaceEnumTypeWrapper): ...
 
 NONE_INTERPOLATION_SPACE: InterpolationSpace.ValueType  # 0
-JOINTS: InterpolationSpace.ValueType  # 1
-CARTESIAN: InterpolationSpace.ValueType  # 2
+JOINT_SPACE: InterpolationSpace.ValueType  # 1
+CARTESIAN_SPACE: InterpolationSpace.ValueType  # 2
 global___InterpolationSpace = InterpolationSpace
+
+class _ArcDirection:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _ArcDirectionEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_ArcDirection.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    NONE_ARC_DIRECTION: _ArcDirection.ValueType  # 0
+    ABOVE: _ArcDirection.ValueType  # 1
+    BELOW: _ArcDirection.ValueType  # 2
+    FRONT: _ArcDirection.ValueType  # 3
+    BACK: _ArcDirection.ValueType  # 4
+    LEFT: _ArcDirection.ValueType  # 5
+    RIGHT: _ArcDirection.ValueType  # 6
+
+class ArcDirection(_ArcDirection, metaclass=_ArcDirectionEnumTypeWrapper): ...
+
+NONE_ARC_DIRECTION: ArcDirection.ValueType  # 0
+ABOVE: ArcDirection.ValueType  # 1
+BELOW: ArcDirection.ValueType  # 2
+FRONT: ArcDirection.ValueType  # 3
+BACK: ArcDirection.ValueType  # 4
+LEFT: ArcDirection.ValueType  # 5
+RIGHT: ArcDirection.ValueType  # 6
+global___ArcDirection = ArcDirection
 
 @typing_extensions.final
 class GoToId(google.protobuf.message.Message):
@@ -271,6 +298,26 @@ class GoToInterpolationSpace(google.protobuf.message.Message):
 global___GoToInterpolationSpace = GoToInterpolationSpace
 
 @typing_extensions.final
+class EllipticalGoToParameters(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    ARC_DIRECTION_FIELD_NUMBER: builtins.int
+    SECONDARY_RADIUS_FIELD_NUMBER: builtins.int
+    arc_direction: global___ArcDirection.ValueType
+    @property
+    def secondary_radius(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    def __init__(
+        self,
+        *,
+        arc_direction: global___ArcDirection.ValueType = ...,
+        secondary_radius: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["secondary_radius", b"secondary_radius"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["arc_direction", b"arc_direction", "secondary_radius", b"secondary_radius"]) -> None: ...
+
+global___EllipticalGoToParameters = EllipticalGoToParameters
+
+@typing_extensions.final
 class GoToRequest(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
@@ -279,6 +326,7 @@ class GoToRequest(google.protobuf.message.Message):
     ODOMETRY_GOAL_FIELD_NUMBER: builtins.int
     INTERPOLATION_SPACE_FIELD_NUMBER: builtins.int
     INTERPOLATION_MODE_FIELD_NUMBER: builtins.int
+    ELLIPTICAL_PARAMETERS_FIELD_NUMBER: builtins.int
     @property
     def cartesian_goal(self) -> global___CartesianGoal: ...
     @property
@@ -289,6 +337,8 @@ class GoToRequest(google.protobuf.message.Message):
     def interpolation_space(self) -> global___GoToInterpolationSpace: ...
     @property
     def interpolation_mode(self) -> global___GoToInterpolation: ...
+    @property
+    def elliptical_parameters(self) -> global___EllipticalGoToParameters: ...
     def __init__(
         self,
         *,
@@ -297,9 +347,10 @@ class GoToRequest(google.protobuf.message.Message):
         odometry_goal: global___OdometryGoal | None = ...,
         interpolation_space: global___GoToInterpolationSpace | None = ...,
         interpolation_mode: global___GoToInterpolation | None = ...,
+        elliptical_parameters: global___EllipticalGoToParameters | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["cartesian_goal", b"cartesian_goal", "goal", b"goal", "interpolation_mode", b"interpolation_mode", "interpolation_space", b"interpolation_space", "joints_goal", b"joints_goal", "odometry_goal", b"odometry_goal"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["cartesian_goal", b"cartesian_goal", "goal", b"goal", "interpolation_mode", b"interpolation_mode", "interpolation_space", b"interpolation_space", "joints_goal", b"joints_goal", "odometry_goal", b"odometry_goal"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["cartesian_goal", b"cartesian_goal", "elliptical_parameters", b"elliptical_parameters", "goal", b"goal", "interpolation_mode", b"interpolation_mode", "interpolation_space", b"interpolation_space", "joints_goal", b"joints_goal", "odometry_goal", b"odometry_goal"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["cartesian_goal", b"cartesian_goal", "elliptical_parameters", b"elliptical_parameters", "goal", b"goal", "interpolation_mode", b"interpolation_mode", "interpolation_space", b"interpolation_space", "joints_goal", b"joints_goal", "odometry_goal", b"odometry_goal"]) -> None: ...
     def WhichOneof(self, oneof_group: typing_extensions.Literal["goal", b"goal"]) -> typing_extensions.Literal["cartesian_goal", "joints_goal", "odometry_goal"] | None: ...
 
 global___GoToRequest = GoToRequest
