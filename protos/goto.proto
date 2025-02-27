@@ -6,6 +6,7 @@ import "google/protobuf/wrappers.proto";
 import "arm.proto";
 import "head.proto";
 import "part.proto";
+import "component.proto";
 import "mobile_base_mobility.proto";
 
 enum GoalStatus {
