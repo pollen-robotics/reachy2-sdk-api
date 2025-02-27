@@ -2,6 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
+import component_pb2 as component__pb2
 from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 import goto_pb2 as goto__pb2
 import part_pb2 as part__pb2
@@ -46,9 +47,19 @@ class GoToServiceStub(object):
                 request_serializer=part__pb2.PartId.SerializeToString,
                 response_deserializer=goto__pb2.GoToId.FromString,
                 )
+        self.GetComponentGoToPlaying = channel.unary_unary(
+                '/GoToService/GetComponentGoToPlaying',
+                request_serializer=component__pb2.ComponentId.SerializeToString,
+                response_deserializer=goto__pb2.GoToId.FromString,
+                )
         self.GetPartGoToQueue = channel.unary_unary(
                 '/GoToService/GetPartGoToQueue',
                 request_serializer=part__pb2.PartId.SerializeToString,
+                response_deserializer=goto__pb2.GoToQueue.FromString,
+                )
+        self.GetComponentGoToQueue = channel.unary_unary(
+                '/GoToService/GetComponentGoToQueue',
+                request_serializer=component__pb2.ComponentId.SerializeToString,
                 response_deserializer=goto__pb2.GoToQueue.FromString,
                 )
         self.CancelGoTo = channel.unary_unary(
@@ -64,6 +75,11 @@ class GoToServiceStub(object):
         self.CancelPartAllGoTo = channel.unary_unary(
                 '/GoToService/CancelPartAllGoTo',
                 request_serializer=part__pb2.PartId.SerializeToString,
+                response_deserializer=goto__pb2.GoToAck.FromString,
+                )
+        self.CancelComponentAllGoTo = channel.unary_unary(
+                '/GoToService/CancelComponentAllGoTo',
+                request_serializer=component__pb2.ComponentId.SerializeToString,
                 response_deserializer=goto__pb2.GoToAck.FromString,
                 )
 
@@ -107,7 +123,19 @@ class GoToServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def GetComponentGoToPlaying(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
     def GetPartGoToQueue(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def GetComponentGoToQueue(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -126,6 +154,12 @@ class GoToServiceServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def CancelPartAllGoTo(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def CancelComponentAllGoTo(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -164,9 +198,19 @@ def add_GoToServiceServicer_to_server(servicer, server):
                     request_deserializer=part__pb2.PartId.FromString,
                     response_serializer=goto__pb2.GoToId.SerializeToString,
             ),
+            'GetComponentGoToPlaying': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetComponentGoToPlaying,
+                    request_deserializer=component__pb2.ComponentId.FromString,
+                    response_serializer=goto__pb2.GoToId.SerializeToString,
+            ),
             'GetPartGoToQueue': grpc.unary_unary_rpc_method_handler(
                     servicer.GetPartGoToQueue,
                     request_deserializer=part__pb2.PartId.FromString,
+                    response_serializer=goto__pb2.GoToQueue.SerializeToString,
+            ),
+            'GetComponentGoToQueue': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetComponentGoToQueue,
+                    request_deserializer=component__pb2.ComponentId.FromString,
                     response_serializer=goto__pb2.GoToQueue.SerializeToString,
             ),
             'CancelGoTo': grpc.unary_unary_rpc_method_handler(
@@ -182,6 +226,11 @@ def add_GoToServiceServicer_to_server(servicer, server):
             'CancelPartAllGoTo': grpc.unary_unary_rpc_method_handler(
                     servicer.CancelPartAllGoTo,
                     request_deserializer=part__pb2.PartId.FromString,
+                    response_serializer=goto__pb2.GoToAck.SerializeToString,
+            ),
+            'CancelComponentAllGoTo': grpc.unary_unary_rpc_method_handler(
+                    servicer.CancelComponentAllGoTo,
+                    request_deserializer=component__pb2.ComponentId.FromString,
                     response_serializer=goto__pb2.GoToAck.SerializeToString,
             ),
     }
@@ -297,6 +346,23 @@ class GoToService(object):
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
+    def GetComponentGoToPlaying(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/GoToService/GetComponentGoToPlaying',
+            component__pb2.ComponentId.SerializeToString,
+            goto__pb2.GoToId.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
     def GetPartGoToQueue(request,
             target,
             options=(),
@@ -309,6 +375,23 @@ class GoToService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/GoToService/GetPartGoToQueue',
             part__pb2.PartId.SerializeToString,
+            goto__pb2.GoToQueue.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def GetComponentGoToQueue(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/GoToService/GetComponentGoToQueue',
+            component__pb2.ComponentId.SerializeToString,
             goto__pb2.GoToQueue.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
@@ -360,6 +443,23 @@ class GoToService(object):
             metadata=None):
         return grpc.experimental.unary_unary(request, target, '/GoToService/CancelPartAllGoTo',
             part__pb2.PartId.SerializeToString,
+            goto__pb2.GoToAck.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def CancelComponentAllGoTo(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/GoToService/CancelComponentAllGoTo',
+            component__pb2.ComponentId.SerializeToString,
             goto__pb2.GoToAck.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
