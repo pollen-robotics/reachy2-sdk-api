@@ -91,6 +91,17 @@ message NeckJointGoal {
     google.protobuf.FloatValue duration = 3;
 }
 
+message AntennaJointGoal {
+    reachy.part.PartId id = 1;
+    oneof antenna 
+    {
+        component.dynamixel_motor.DynamixelMotor l_antenna = 1;
+        component.dynamixel_motor.DynamixelMotor r_antenna = 2;
+    }
+    google.protobuf.FloatValue joint_goal = 3;
+    google.protobuf.FloatValue duration = 4;
+
+}
 
 message NeckOrientation {
     kinematics.Rotation3d rotation = 1;
