@@ -56,72 +56,71 @@ namespace Reachy.Part.Head {
             "dFZhbHVlIpcBCg1OZWNrSm9pbnRHb2FsEh8KAmlkGAEgASgLMhMucmVhY2h5",
             "LnBhcnQuUGFydElkEjYKC2pvaW50c19nb2FsGAIgASgLMiEucmVhY2h5LnBh",
             "cnQuaGVhZC5OZWNrT3JpZW50YXRpb24SLQoIZHVyYXRpb24YAyABKAsyGy5n",
-            "b29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSKeAgoQQW50ZW5uYUpvaW50R29h",
-            "bBIfCgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBI+CglsX2FudGVu",
-            "bmEYAiABKAsyKS5jb21wb25lbnQuZHluYW1peGVsX21vdG9yLkR5bmFtaXhl",
-            "bE1vdG9ySAASPgoJcl9hbnRlbm5hGAMgASgLMikuY29tcG9uZW50LmR5bmFt",
-            "aXhlbF9tb3Rvci5EeW5hbWl4ZWxNb3RvckgAEi8KCmpvaW50X2dvYWwYBSAB",
-            "KAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRItCghkdXJhdGlvbhgG",
-            "IAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlQgkKB2FudGVubmEi",
-            "QgoPTmVja09yaWVudGF0aW9uEi8KCHJvdGF0aW9uGAEgASgLMh0ucmVhY2h5",
-            "LmtpbmVtYXRpY3MuUm90YXRpb24zZCJiCg1OZWNrRktSZXF1ZXN0Eh8KAmlk",
-            "GAEgASgLMhMucmVhY2h5LnBhcnQuUGFydElkEjAKCHBvc2l0aW9uGAIgASgL",
-            "Mh4ucmVhY2h5LnBhcnQuaGVhZC5IZWFkUG9zaXRpb24iWQoOTmVja0ZLU29s",
-            "dXRpb24SDwoHc3VjY2VzcxgBIAEoCBI2CgtvcmllbnRhdGlvbhgCIAEoCzIh",
-            "LnJlYWNoeS5wYXJ0LmhlYWQuTmVja09yaWVudGF0aW9uIo4BCg1OZWNrSUtS",
-            "ZXF1ZXN0Eh8KAmlkGAEgASgLMhMucmVhY2h5LnBhcnQuUGFydElkEjEKBnRh",
-            "cmdldBgCIAEoCzIhLnJlYWNoeS5wYXJ0LmhlYWQuTmVja09yaWVudGF0aW9u",
-            "EikKAnEwGAMgASgLMh0ucmVhY2h5LmtpbmVtYXRpY3MuUm90YXRpb24zZCJv",
-            "Cg5OZWNrSUtTb2x1dGlvbhIPCgdzdWNjZXNzGAEgASgIEi8KCHBvc2l0aW9u",
-            "GAIgASgLMh0ucmVhY2h5LmtpbmVtYXRpY3MuUm90YXRpb24zZBIbCgVlcnJv",
-            "chgDIAEoCzIMLmVycm9yLkVycm9yItsBCgpIZWFkU3RhdHVzEjcKC25lY2tf",
-            "c3RhdHVzGAEgASgLMiIuY29tcG9uZW50Lm9yYml0YTNkLk9yYml0YTNkU3Rh",
-            "dHVzEkkKEGxfYW50ZW5uYV9zdGF0dXMYAiABKAsyLy5jb21wb25lbnQuZHlu",
-            "YW1peGVsX21vdG9yLkR5bmFtaXhlbE1vdG9yU3RhdHVzEkkKEHJfYW50ZW5u",
-            "YV9zdGF0dXMYAyABKAsyLy5jb21wb25lbnQuZHluYW1peGVsX21vdG9yLkR5",
-            "bmFtaXhlbE1vdG9yU3RhdHVzIkMKEVNwZWVkTGltaXRSZXF1ZXN0Eh8KAmlk",
-            "GAEgASgLMhMucmVhY2h5LnBhcnQuUGFydElkEg0KBWxpbWl0GAIgASgNIkQK",
-            "ElRvcnF1ZUxpbWl0UmVxdWVzdBIfCgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0",
-            "LlBhcnRJZBINCgVsaW1pdBgCIAEoDSKlAQoMSm9pbnRzTGltaXRzEjEKC25l",
-            "Y2tfbGltaXRzGAEgASgLMhwuY29tcG9uZW50Lm9yYml0YTNkLkxpbWl0czNk",
-            "EjAKEGxfYW50ZW5uYV9saW1pdHMYAiABKAsyFi5jb21wb25lbnQuSm9pbnRM",
-            "aW1pdHMSMAoQcl9hbnRlbm5hX2xpbWl0cxgDIAEoCzIWLmNvbXBvbmVudC5K",
-            "b2ludExpbWl0cyKHAQoQSGVhZFRlbXBlcmF0dXJlcxI1ChBuZWNrX3RlbXBl",
-            "cmF0dXJlGAEgASgLMhsuY29tcG9uZW50Lm9yYml0YTNkLkZsb2F0M2QSHQoV",
-            "bF9hbnRlbm5hX3RlbXBlcmF0dXJlGAIgASgCEh0KFXJfYW50ZW5uYV90ZW1w",
-            "ZXJhdHVyZRgDIAEoAircAQoJSGVhZEZpZWxkEggKBE5PTkUQABIICgROQU1F",
-            "EAESBgoCSUQQAhIUChBQUkVTRU5UX1BPU0lUSU9OEAMSEQoNUFJFU0VOVF9T",
-            "UEVFRBAEEhAKDFBSRVNFTlRfTE9BRBAFEg8KC1RFTVBFUkFUVVJFEAYSEAoM",
-            "Sk9JTlRfTElNSVRTEAcSDQoJQ09NUExJQU5UEAgSEQoNR09BTF9QT1NJVElP",
-            "ThAJEg8KC1NQRUVEX0xJTUlUEAoSEAoMVE9SUVVFX0xJTUlUEAsSBwoDUElE",
-            "EAwSBwoDQUxMEA8qKgoKTmVja0pvaW50cxIICgRST0xMEAASCQoFUElUQ0gQ",
-            "ARIHCgNZQVcQAjKqCQoLSGVhZFNlcnZpY2USQwoLR2V0QWxsSGVhZHMSFi5n",
-            "b29nbGUucHJvdG9idWYuRW1wdHkaHC5yZWFjaHkucGFydC5oZWFkLkxpc3RP",
-            "ZkhlYWQSPAoIR2V0U3RhdGUSEy5yZWFjaHkucGFydC5QYXJ0SWQaGy5yZWFj",
-            "aHkucGFydC5oZWFkLkhlYWRTdGF0ZRJSCg1Db21wdXRlTmVja0ZLEh8ucmVh",
-            "Y2h5LnBhcnQuaGVhZC5OZWNrRktSZXF1ZXN0GiAucmVhY2h5LnBhcnQuaGVh",
-            "ZC5OZWNrRktTb2x1dGlvbhJSCg1Db21wdXRlTmVja0lLEh8ucmVhY2h5LnBh",
-            "cnQuaGVhZC5OZWNrSUtSZXF1ZXN0GiAucmVhY2h5LnBhcnQuaGVhZC5OZWNr",
-            "SUtTb2x1dGlvbhJECg5HZXRPcmllbnRhdGlvbhITLnJlYWNoeS5wYXJ0LlBh",
-            "cnRJZBodLnJlYWNoeS5raW5lbWF0aWNzLlJvdGF0aW9uM2QSOgoFQXVkaXQS",
-            "Ey5yZWFjaHkucGFydC5QYXJ0SWQaHC5yZWFjaHkucGFydC5oZWFkLkhlYWRT",
-            "dGF0dXMSOAoJSGVhcnRCZWF0EhMucmVhY2h5LnBhcnQuUGFydElkGhYuZ29v",
-            "Z2xlLnByb3RvYnVmLkVtcHR5EjYKB1Jlc3RhcnQSEy5yZWFjaHkucGFydC5Q",
-            "YXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSQQoSUmVzZXREZWZhdWx0",
-            "VmFsdWVzEhMucmVhY2h5LnBhcnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVm",
-            "LkVtcHR5EjUKBlR1cm5PbhITLnJlYWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2ds",
-            "ZS5wcm90b2J1Zi5FbXB0eRI2CgdUdXJuT2ZmEhMucmVhY2h5LnBhcnQuUGFy",
-            "dElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EkYKD0dldEpvaW50c0xpbWl0",
-            "cxITLnJlYWNoeS5wYXJ0LlBhcnRJZBoeLnJlYWNoeS5wYXJ0LmhlYWQuSm9p",
-            "bnRzTGltaXRzEkoKD0dldFRlbXBlcmF0dXJlcxITLnJlYWNoeS5wYXJ0LlBh",
-            "cnRJZBoiLnJlYWNoeS5wYXJ0LmhlYWQuSGVhZFRlbXBlcmF0dXJlcxJKChRH",
-            "ZXRKb2ludEdvYWxQb3NpdGlvbhITLnJlYWNoeS5wYXJ0LlBhcnRJZBodLnJl",
-            "YWNoeS5raW5lbWF0aWNzLlJvdGF0aW9uM2QSTAoNU2V0U3BlZWRMaW1pdBIj",
-            "LnJlYWNoeS5wYXJ0LmhlYWQuU3BlZWRMaW1pdFJlcXVlc3QaFi5nb29nbGUu",
-            "cHJvdG9idWYuRW1wdHkSTgoOU2V0VG9ycXVlTGltaXQSJC5yZWFjaHkucGFy",
-            "dC5oZWFkLlRvcnF1ZUxpbWl0UmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5F",
-            "bXB0eRJMChFTZW5kTmVja0pvaW50R29hbBIfLnJlYWNoeS5wYXJ0LmhlYWQu",
-            "TmVja0pvaW50R29hbBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eWIGcHJvdG8z"));
+            "b29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSLPAQoQQW50ZW5uYUpvaW50R29h",
+            "bBIfCgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBI6CgdhbnRlbm5h",
+            "GAIgASgLMikuY29tcG9uZW50LmR5bmFtaXhlbF9tb3Rvci5EeW5hbWl4ZWxN",
+            "b3RvchIvCgpqb2ludF9nb2FsGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZs",
+            "b2F0VmFsdWUSLQoIZHVyYXRpb24YBCABKAsyGy5nb29nbGUucHJvdG9idWYu",
+            "RmxvYXRWYWx1ZSJCCg9OZWNrT3JpZW50YXRpb24SLwoIcm90YXRpb24YASAB",
+            "KAsyHS5yZWFjaHkua2luZW1hdGljcy5Sb3RhdGlvbjNkImIKDU5lY2tGS1Jl",
+            "cXVlc3QSHwoCaWQYASABKAsyEy5yZWFjaHkucGFydC5QYXJ0SWQSMAoIcG9z",
+            "aXRpb24YAiABKAsyHi5yZWFjaHkucGFydC5oZWFkLkhlYWRQb3NpdGlvbiJZ",
+            "Cg5OZWNrRktTb2x1dGlvbhIPCgdzdWNjZXNzGAEgASgIEjYKC29yaWVudGF0",
+            "aW9uGAIgASgLMiEucmVhY2h5LnBhcnQuaGVhZC5OZWNrT3JpZW50YXRpb24i",
+            "jgEKDU5lY2tJS1JlcXVlc3QSHwoCaWQYASABKAsyEy5yZWFjaHkucGFydC5Q",
+            "YXJ0SWQSMQoGdGFyZ2V0GAIgASgLMiEucmVhY2h5LnBhcnQuaGVhZC5OZWNr",
+            "T3JpZW50YXRpb24SKQoCcTAYAyABKAsyHS5yZWFjaHkua2luZW1hdGljcy5S",
+            "b3RhdGlvbjNkIm8KDk5lY2tJS1NvbHV0aW9uEg8KB3N1Y2Nlc3MYASABKAgS",
+            "LwoIcG9zaXRpb24YAiABKAsyHS5yZWFjaHkua2luZW1hdGljcy5Sb3RhdGlv",
+            "bjNkEhsKBWVycm9yGAMgASgLMgwuZXJyb3IuRXJyb3Ii2wEKCkhlYWRTdGF0",
+            "dXMSNwoLbmVja19zdGF0dXMYASABKAsyIi5jb21wb25lbnQub3JiaXRhM2Qu",
+            "T3JiaXRhM2RTdGF0dXMSSQoQbF9hbnRlbm5hX3N0YXR1cxgCIAEoCzIvLmNv",
+            "bXBvbmVudC5keW5hbWl4ZWxfbW90b3IuRHluYW1peGVsTW90b3JTdGF0dXMS",
+            "SQoQcl9hbnRlbm5hX3N0YXR1cxgDIAEoCzIvLmNvbXBvbmVudC5keW5hbWl4",
+            "ZWxfbW90b3IuRHluYW1peGVsTW90b3JTdGF0dXMiQwoRU3BlZWRMaW1pdFJl",
+            "cXVlc3QSHwoCaWQYASABKAsyEy5yZWFjaHkucGFydC5QYXJ0SWQSDQoFbGlt",
+            "aXQYAiABKA0iRAoSVG9ycXVlTGltaXRSZXF1ZXN0Eh8KAmlkGAEgASgLMhMu",
+            "cmVhY2h5LnBhcnQuUGFydElkEg0KBWxpbWl0GAIgASgNIqUBCgxKb2ludHNM",
+            "aW1pdHMSMQoLbmVja19saW1pdHMYASABKAsyHC5jb21wb25lbnQub3JiaXRh",
+            "M2QuTGltaXRzM2QSMAoQbF9hbnRlbm5hX2xpbWl0cxgCIAEoCzIWLmNvbXBv",
+            "bmVudC5Kb2ludExpbWl0cxIwChByX2FudGVubmFfbGltaXRzGAMgASgLMhYu",
+            "Y29tcG9uZW50LkpvaW50TGltaXRzIocBChBIZWFkVGVtcGVyYXR1cmVzEjUK",
+            "EG5lY2tfdGVtcGVyYXR1cmUYASABKAsyGy5jb21wb25lbnQub3JiaXRhM2Qu",
+            "RmxvYXQzZBIdChVsX2FudGVubmFfdGVtcGVyYXR1cmUYAiABKAISHQoVcl9h",
+            "bnRlbm5hX3RlbXBlcmF0dXJlGAMgASgCKtwBCglIZWFkRmllbGQSCAoETk9O",
+            "RRAAEggKBE5BTUUQARIGCgJJRBACEhQKEFBSRVNFTlRfUE9TSVRJT04QAxIR",
+            "Cg1QUkVTRU5UX1NQRUVEEAQSEAoMUFJFU0VOVF9MT0FEEAUSDwoLVEVNUEVS",
+            "QVRVUkUQBhIQCgxKT0lOVF9MSU1JVFMQBxINCglDT01QTElBTlQQCBIRCg1H",
+            "T0FMX1BPU0lUSU9OEAkSDwoLU1BFRURfTElNSVQQChIQCgxUT1JRVUVfTElN",
+            "SVQQCxIHCgNQSUQQDBIHCgNBTEwQDyoqCgpOZWNrSm9pbnRzEggKBFJPTEwQ",
+            "ABIJCgVQSVRDSBABEgcKA1lBVxACMqoJCgtIZWFkU2VydmljZRJDCgtHZXRB",
+            "bGxIZWFkcxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRocLnJlYWNoeS5wYXJ0",
+            "LmhlYWQuTGlzdE9mSGVhZBI8CghHZXRTdGF0ZRITLnJlYWNoeS5wYXJ0LlBh",
+            "cnRJZBobLnJlYWNoeS5wYXJ0LmhlYWQuSGVhZFN0YXRlElIKDUNvbXB1dGVO",
+            "ZWNrRksSHy5yZWFjaHkucGFydC5oZWFkLk5lY2tGS1JlcXVlc3QaIC5yZWFj",
+            "aHkucGFydC5oZWFkLk5lY2tGS1NvbHV0aW9uElIKDUNvbXB1dGVOZWNrSUsS",
+            "Hy5yZWFjaHkucGFydC5oZWFkLk5lY2tJS1JlcXVlc3QaIC5yZWFjaHkucGFy",
+            "dC5oZWFkLk5lY2tJS1NvbHV0aW9uEkQKDkdldE9yaWVudGF0aW9uEhMucmVh",
+            "Y2h5LnBhcnQuUGFydElkGh0ucmVhY2h5LmtpbmVtYXRpY3MuUm90YXRpb24z",
+            "ZBI6CgVBdWRpdBITLnJlYWNoeS5wYXJ0LlBhcnRJZBocLnJlYWNoeS5wYXJ0",
+            "LmhlYWQuSGVhZFN0YXR1cxI4CglIZWFydEJlYXQSEy5yZWFjaHkucGFydC5Q",
+            "YXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSNgoHUmVzdGFydBITLnJl",
+            "YWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJBChJS",
+            "ZXNldERlZmF1bHRWYWx1ZXMSEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5nb29n",
+            "bGUucHJvdG9idWYuRW1wdHkSNQoGVHVybk9uEhMucmVhY2h5LnBhcnQuUGFy",
+            "dElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EjYKB1R1cm5PZmYSEy5yZWFj",
+            "aHkucGFydC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSRgoPR2V0",
+            "Sm9pbnRzTGltaXRzEhMucmVhY2h5LnBhcnQuUGFydElkGh4ucmVhY2h5LnBh",
+            "cnQuaGVhZC5Kb2ludHNMaW1pdHMSSgoPR2V0VGVtcGVyYXR1cmVzEhMucmVh",
+            "Y2h5LnBhcnQuUGFydElkGiIucmVhY2h5LnBhcnQuaGVhZC5IZWFkVGVtcGVy",
+            "YXR1cmVzEkoKFEdldEpvaW50R29hbFBvc2l0aW9uEhMucmVhY2h5LnBhcnQu",
+            "UGFydElkGh0ucmVhY2h5LmtpbmVtYXRpY3MuUm90YXRpb24zZBJMCg1TZXRT",
+            "cGVlZExpbWl0EiMucmVhY2h5LnBhcnQuaGVhZC5TcGVlZExpbWl0UmVxdWVz",
+            "dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJOCg5TZXRUb3JxdWVMaW1pdBIk",
+            "LnJlYWNoeS5wYXJ0LmhlYWQuVG9ycXVlTGltaXRSZXF1ZXN0GhYuZ29vZ2xl",
+            "LnByb3RvYnVmLkVtcHR5EkwKEVNlbmROZWNrSm9pbnRHb2FsEh8ucmVhY2h5",
+            "LnBhcnQuaGVhZC5OZWNrSm9pbnRHb2FsGhYuZ29vZ2xlLnByb3RvYnVmLkVt",
+            "cHR5YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, global::Reachy.Kinematics.KinematicsReflection.Descriptor, global::Error.ErrorReflection.Descriptor, global::Component.ComponentReflection.Descriptor, global::Component.Orbita3D.Orbita3DReflection.Descriptor, global::Component.DynamixelMotor.DynamixelMotorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.Part.Head.HeadField), typeof(global::Reachy.Part.Head.NeckJoints), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -133,7 +132,7 @@ namespace Reachy.Part.Head {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.HeadPosition), global::Reachy.Part.Head.HeadPosition.Parser, new[]{ "NeckPosition", "LAntennaPosition", "RAntennaPosition" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.NeckCartesianGoal), global::Reachy.Part.Head.NeckCartesianGoal.Parser, new[]{ "Id", "Point", "Duration" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.NeckJointGoal), global::Reachy.Part.Head.NeckJointGoal.Parser, new[]{ "Id", "JointsGoal", "Duration" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.AntennaJointGoal), global::Reachy.Part.Head.AntennaJointGoal.Parser, new[]{ "Id", "LAntenna", "RAntenna", "JointGoal", "Duration" }, new[]{ "Antenna" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.AntennaJointGoal), global::Reachy.Part.Head.AntennaJointGoal.Parser, new[]{ "Id", "Antenna", "JointGoal", "Duration" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.NeckOrientation), global::Reachy.Part.Head.NeckOrientation.Parser, new[]{ "Rotation" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.NeckFKRequest), global::Reachy.Part.Head.NeckFKRequest.Parser, new[]{ "Id", "Position" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.NeckFKSolution), global::Reachy.Part.Head.NeckFKSolution.Parser, new[]{ "Success", "Orientation" }, null, null, null, null),
@@ -2434,17 +2433,9 @@ namespace Reachy.Part.Head {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AntennaJointGoal(AntennaJointGoal other) : this() {
       id_ = other.id_ != null ? other.id_.Clone() : null;
+      antenna_ = other.antenna_ != null ? other.antenna_.Clone() : null;
       JointGoal = other.JointGoal;
       Duration = other.Duration;
-      switch (other.AntennaCase) {
-        case AntennaOneofCase.LAntenna:
-          LAntenna = other.LAntenna.Clone();
-          break;
-        case AntennaOneofCase.RAntenna:
-          RAntenna = other.RAntenna.Clone();
-          break;
-      }
-
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2466,33 +2457,21 @@ namespace Reachy.Part.Head {
       }
     }
 
-    /// <summary>Field number for the "l_antenna" field.</summary>
-    public const int LAntennaFieldNumber = 2;
+    /// <summary>Field number for the "antenna" field.</summary>
+    public const int AntennaFieldNumber = 2;
+    private global::Component.DynamixelMotor.DynamixelMotor antenna_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Component.DynamixelMotor.DynamixelMotor LAntenna {
-      get { return antennaCase_ == AntennaOneofCase.LAntenna ? (global::Component.DynamixelMotor.DynamixelMotor) antenna_ : null; }
+    public global::Component.DynamixelMotor.DynamixelMotor Antenna {
+      get { return antenna_; }
       set {
         antenna_ = value;
-        antennaCase_ = value == null ? AntennaOneofCase.None : AntennaOneofCase.LAntenna;
-      }
-    }
-
-    /// <summary>Field number for the "r_antenna" field.</summary>
-    public const int RAntennaFieldNumber = 3;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Component.DynamixelMotor.DynamixelMotor RAntenna {
-      get { return antennaCase_ == AntennaOneofCase.RAntenna ? (global::Component.DynamixelMotor.DynamixelMotor) antenna_ : null; }
-      set {
-        antenna_ = value;
-        antennaCase_ = value == null ? AntennaOneofCase.None : AntennaOneofCase.RAntenna;
       }
     }
 
     /// <summary>Field number for the "joint_goal" field.</summary>
-    public const int JointGoalFieldNumber = 5;
-    private static readonly pb::FieldCodec<float?> _single_jointGoal_codec = pb::FieldCodec.ForStructWrapper<float>(42);
+    public const int JointGoalFieldNumber = 3;
+    private static readonly pb::FieldCodec<float?> _single_jointGoal_codec = pb::FieldCodec.ForStructWrapper<float>(26);
     private float? jointGoal_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2505,8 +2484,8 @@ namespace Reachy.Part.Head {
 
 
     /// <summary>Field number for the "duration" field.</summary>
-    public const int DurationFieldNumber = 6;
-    private static readonly pb::FieldCodec<float?> _single_duration_codec = pb::FieldCodec.ForStructWrapper<float>(50);
+    public const int DurationFieldNumber = 4;
+    private static readonly pb::FieldCodec<float?> _single_duration_codec = pb::FieldCodec.ForStructWrapper<float>(34);
     private float? duration_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2517,27 +2496,6 @@ namespace Reachy.Part.Head {
       }
     }
 
-
-    private object antenna_;
-    /// <summary>Enum of possible cases for the "antenna" oneof.</summary>
-    public enum AntennaOneofCase {
-      None = 0,
-      LAntenna = 2,
-      RAntenna = 3,
-    }
-    private AntennaOneofCase antennaCase_ = AntennaOneofCase.None;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public AntennaOneofCase AntennaCase {
-      get { return antennaCase_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearAntenna() {
-      antennaCase_ = AntennaOneofCase.None;
-      antenna_ = null;
-    }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2555,11 +2513,9 @@ namespace Reachy.Part.Head {
         return true;
       }
       if (!object.Equals(Id, other.Id)) return false;
-      if (!object.Equals(LAntenna, other.LAntenna)) return false;
-      if (!object.Equals(RAntenna, other.RAntenna)) return false;
+      if (!object.Equals(Antenna, other.Antenna)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(JointGoal, other.JointGoal)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(Duration, other.Duration)) return false;
-      if (AntennaCase != other.AntennaCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2568,11 +2524,9 @@ namespace Reachy.Part.Head {
     public override int GetHashCode() {
       int hash = 1;
       if (id_ != null) hash ^= Id.GetHashCode();
-      if (antennaCase_ == AntennaOneofCase.LAntenna) hash ^= LAntenna.GetHashCode();
-      if (antennaCase_ == AntennaOneofCase.RAntenna) hash ^= RAntenna.GetHashCode();
+      if (antenna_ != null) hash ^= Antenna.GetHashCode();
       if (jointGoal_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(JointGoal);
       if (duration_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Duration);
-      hash ^= (int) antennaCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2595,13 +2549,9 @@ namespace Reachy.Part.Head {
         output.WriteRawTag(10);
         output.WriteMessage(Id);
       }
-      if (antennaCase_ == AntennaOneofCase.LAntenna) {
+      if (antenna_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(LAntenna);
-      }
-      if (antennaCase_ == AntennaOneofCase.RAntenna) {
-        output.WriteRawTag(26);
-        output.WriteMessage(RAntenna);
+        output.WriteMessage(Antenna);
       }
       if (jointGoal_ != null) {
         _single_jointGoal_codec.WriteTagAndValue(output, JointGoal);
@@ -2623,13 +2573,9 @@ namespace Reachy.Part.Head {
         output.WriteRawTag(10);
         output.WriteMessage(Id);
       }
-      if (antennaCase_ == AntennaOneofCase.LAntenna) {
+      if (antenna_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(LAntenna);
-      }
-      if (antennaCase_ == AntennaOneofCase.RAntenna) {
-        output.WriteRawTag(26);
-        output.WriteMessage(RAntenna);
+        output.WriteMessage(Antenna);
       }
       if (jointGoal_ != null) {
         _single_jointGoal_codec.WriteTagAndValue(ref output, JointGoal);
@@ -2650,11 +2596,8 @@ namespace Reachy.Part.Head {
       if (id_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
       }
-      if (antennaCase_ == AntennaOneofCase.LAntenna) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LAntenna);
-      }
-      if (antennaCase_ == AntennaOneofCase.RAntenna) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RAntenna);
+      if (antenna_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Antenna);
       }
       if (jointGoal_ != null) {
         size += _single_jointGoal_codec.CalculateSizeWithTag(JointGoal);
@@ -2680,6 +2623,12 @@ namespace Reachy.Part.Head {
         }
         Id.MergeFrom(other.Id);
       }
+      if (other.antenna_ != null) {
+        if (antenna_ == null) {
+          Antenna = new global::Component.DynamixelMotor.DynamixelMotor();
+        }
+        Antenna.MergeFrom(other.Antenna);
+      }
       if (other.jointGoal_ != null) {
         if (jointGoal_ == null || other.JointGoal != 0F) {
           JointGoal = other.JointGoal;
@@ -2690,21 +2639,6 @@ namespace Reachy.Part.Head {
           Duration = other.Duration;
         }
       }
-      switch (other.AntennaCase) {
-        case AntennaOneofCase.LAntenna:
-          if (LAntenna == null) {
-            LAntenna = new global::Component.DynamixelMotor.DynamixelMotor();
-          }
-          LAntenna.MergeFrom(other.LAntenna);
-          break;
-        case AntennaOneofCase.RAntenna:
-          if (RAntenna == null) {
-            RAntenna = new global::Component.DynamixelMotor.DynamixelMotor();
-          }
-          RAntenna.MergeFrom(other.RAntenna);
-          break;
-      }
-
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2728,31 +2662,20 @@ namespace Reachy.Part.Head {
             break;
           }
           case 18: {
-            global::Component.DynamixelMotor.DynamixelMotor subBuilder = new global::Component.DynamixelMotor.DynamixelMotor();
-            if (antennaCase_ == AntennaOneofCase.LAntenna) {
-              subBuilder.MergeFrom(LAntenna);
+            if (antenna_ == null) {
+              Antenna = new global::Component.DynamixelMotor.DynamixelMotor();
             }
-            input.ReadMessage(subBuilder);
-            LAntenna = subBuilder;
+            input.ReadMessage(Antenna);
             break;
           }
           case 26: {
-            global::Component.DynamixelMotor.DynamixelMotor subBuilder = new global::Component.DynamixelMotor.DynamixelMotor();
-            if (antennaCase_ == AntennaOneofCase.RAntenna) {
-              subBuilder.MergeFrom(RAntenna);
-            }
-            input.ReadMessage(subBuilder);
-            RAntenna = subBuilder;
-            break;
-          }
-          case 42: {
             float? value = _single_jointGoal_codec.Read(input);
             if (jointGoal_ == null || value != 0F) {
               JointGoal = value;
             }
             break;
           }
-          case 50: {
+          case 34: {
             float? value = _single_duration_codec.Read(input);
             if (duration_ == null || value != 0F) {
               Duration = value;
@@ -2782,31 +2705,20 @@ namespace Reachy.Part.Head {
             break;
           }
           case 18: {
-            global::Component.DynamixelMotor.DynamixelMotor subBuilder = new global::Component.DynamixelMotor.DynamixelMotor();
-            if (antennaCase_ == AntennaOneofCase.LAntenna) {
-              subBuilder.MergeFrom(LAntenna);
+            if (antenna_ == null) {
+              Antenna = new global::Component.DynamixelMotor.DynamixelMotor();
             }
-            input.ReadMessage(subBuilder);
-            LAntenna = subBuilder;
+            input.ReadMessage(Antenna);
             break;
           }
           case 26: {
-            global::Component.DynamixelMotor.DynamixelMotor subBuilder = new global::Component.DynamixelMotor.DynamixelMotor();
-            if (antennaCase_ == AntennaOneofCase.RAntenna) {
-              subBuilder.MergeFrom(RAntenna);
-            }
-            input.ReadMessage(subBuilder);
-            RAntenna = subBuilder;
-            break;
-          }
-          case 42: {
             float? value = _single_jointGoal_codec.Read(ref input);
             if (jointGoal_ == null || value != 0F) {
               JointGoal = value;
             }
             break;
           }
-          case 50: {
+          case 34: {
             float? value = _single_duration_codec.Read(ref input);
             if (duration_ == null || value != 0F) {
               Duration = value;
