@@ -43,7 +43,7 @@ message JointsGoal {
         reachy.part.arm.ArmJointGoal arm_joint_goal = 1;
         reachy.part.head.NeckJointGoal neck_joint_goal = 2;
         CustomJointGoal custom_joint_goal = 3;
-        reach.part.head.AntennaJointGoal antenna_joint_goal = 4;
+        reachy.part.head.AntennaJointGoal antenna_joint_goal = 4;
     }
 }
 
