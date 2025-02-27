@@ -276,6 +276,40 @@ class NeckJointGoal(google.protobuf.message.Message):
 global___NeckJointGoal = NeckJointGoal
 
 @typing_extensions.final
+class AntennaJointGoal(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    ID_FIELD_NUMBER: builtins.int
+    L_ANTENNA_FIELD_NUMBER: builtins.int
+    R_ANTENNA_FIELD_NUMBER: builtins.int
+    JOINT_GOAL_FIELD_NUMBER: builtins.int
+    DURATION_FIELD_NUMBER: builtins.int
+    @property
+    def id(self) -> part_pb2.PartId: ...
+    @property
+    def l_antenna(self) -> dynamixel_motor_pb2.DynamixelMotor: ...
+    @property
+    def r_antenna(self) -> dynamixel_motor_pb2.DynamixelMotor: ...
+    @property
+    def joint_goal(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    @property
+    def duration(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    def __init__(
+        self,
+        *,
+        id: part_pb2.PartId | None = ...,
+        l_antenna: dynamixel_motor_pb2.DynamixelMotor | None = ...,
+        r_antenna: dynamixel_motor_pb2.DynamixelMotor | None = ...,
+        joint_goal: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        duration: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["antenna", b"antenna", "duration", b"duration", "id", b"id", "joint_goal", b"joint_goal", "l_antenna", b"l_antenna", "r_antenna", b"r_antenna"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["antenna", b"antenna", "duration", b"duration", "id", b"id", "joint_goal", b"joint_goal", "l_antenna", b"l_antenna", "r_antenna", b"r_antenna"]) -> None: ...
+    def WhichOneof(self, oneof_group: typing_extensions.Literal["antenna", b"antenna"]) -> typing_extensions.Literal["l_antenna", "r_antenna"] | None: ...
+
+global___AntennaJointGoal = AntennaJointGoal
+
+@typing_extensions.final
 class NeckOrientation(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
