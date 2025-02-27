@@ -30,58 +30,59 @@ public static partial class GotoReflection {
           "b2FsU3RhdHVzIqYBCg1DYXJ0ZXNpYW5Hb2FsEj8KEmFybV9jYXJ0ZXNpYW5f",
           "Z29hbBgBIAEoCzIhLnJlYWNoeS5wYXJ0LmFybS5Bcm1DYXJ0ZXNpYW5Hb2Fs",
           "SAASQgoTbmVja19jYXJ0ZXNpYW5fZ29hbBgCIAEoCzIjLnJlYWNoeS5wYXJ0",
-          "LmhlYWQuTmVja0NhcnRlc2lhbkdvYWxIAEIQCg5jYXJ0ZXNpYW5fZ29hbCK/",
-          "AQoKSm9pbnRzR29hbBI3Cg5hcm1fam9pbnRfZ29hbBgBIAEoCzIdLnJlYWNo",
+          "LmhlYWQuTmVja0NhcnRlc2lhbkdvYWxIAEIQCg5jYXJ0ZXNpYW5fZ29hbCKB",
+          "AgoKSm9pbnRzR29hbBI3Cg5hcm1fam9pbnRfZ29hbBgBIAEoCzIdLnJlYWNo",
           "eS5wYXJ0LmFybS5Bcm1Kb2ludEdvYWxIABI6Cg9uZWNrX2pvaW50X2dvYWwY",
           "AiABKAsyHy5yZWFjaHkucGFydC5oZWFkLk5lY2tKb2ludEdvYWxIABItChFj",
-          "dXN0b21fam9pbnRfZ29hbBgDIAEoCzIQLkN1c3RvbUpvaW50R29hbEgAQg0K",
-          "C2pvaW50c19nb2FsIvwBCgxPZG9tZXRyeUdvYWwSTwoNb2RvbWV0cnlfZ29h",
-          "bBgBIAEoCzI4LnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLm1vYmlsaXR5LlRh",
-          "cmdldERpcmVjdGlvbkNvbW1hbmQSNwoSZGlzdGFuY2VfdG9sZXJhbmNlGAIg",
-          "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSNAoPYW5nbGVfdG9s",
-          "ZXJhbmNlGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSLAoH",
-          "dGltZW91dBgKIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlIpEC",
-          "Cg9DdXN0b21Kb2ludEdvYWwSHwoCaWQYASABKAsyEy5yZWFjaHkucGFydC5Q",
-          "YXJ0SWQSNgoKYXJtX2pvaW50cxgCIAEoCzIgLnJlYWNoeS5wYXJ0LmFybS5D",
-          "dXN0b21Bcm1Kb2ludHNIABI5CgtuZWNrX2pvaW50cxgDIAEoCzIiLnJlYWNo",
-          "eS5wYXJ0LmhlYWQuQ3VzdG9tTmVja0pvaW50c0gAEjEKDGpvaW50c19nb2Fs",
-          "cxgEIAMoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlEi0KCGR1cmF0",
-          "aW9uGAogASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWVCCAoGam9p",
-          "bnRzIkMKEUdvVG9JbnRlcnBvbGF0aW9uEi4KEmludGVycG9sYXRpb25fdHlw",
-          "ZRgBIAEoDjISLkludGVycG9sYXRpb25Nb2RlIkoKFkdvVG9JbnRlcnBvbGF0",
-          "aW9uU3BhY2USMAoTaW50ZXJwb2xhdGlvbl9zcGFjZRgBIAEoDjITLkludGVy",
-          "cG9sYXRpb25TcGFjZSJ3ChhFbGxpcHRpY2FsR29Ub1BhcmFtZXRlcnMSJAoN",
-          "YXJjX2RpcmVjdGlvbhgBIAEoDjINLkFyY0RpcmVjdGlvbhI1ChBzZWNvbmRh",
-          "cnlfcmFkaXVzGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUi",
-          "qwIKC0dvVG9SZXF1ZXN0EigKDmNhcnRlc2lhbl9nb2FsGAEgASgLMg4uQ2Fy",
-          "dGVzaWFuR29hbEgAEiIKC2pvaW50c19nb2FsGAIgASgLMgsuSm9pbnRzR29h",
-          "bEgAEiYKDW9kb21ldHJ5X2dvYWwYAyABKAsyDS5PZG9tZXRyeUdvYWxIABI0",
-          "ChNpbnRlcnBvbGF0aW9uX3NwYWNlGAkgASgLMhcuR29Ub0ludGVycG9sYXRp",
-          "b25TcGFjZRIuChJpbnRlcnBvbGF0aW9uX21vZGUYCiABKAsyEi5Hb1RvSW50",
-          "ZXJwb2xhdGlvbhI4ChVlbGxpcHRpY2FsX3BhcmFtZXRlcnMYDyABKAsyGS5F",
-          "bGxpcHRpY2FsR29Ub1BhcmFtZXRlcnNCBgoEZ29hbCImCglHb1RvUXVldWUS",
-          "GQoIZ290b19pZHMYASADKAsyBy5Hb1RvSWQqqgEKCkdvYWxTdGF0dXMSCAoE",
-          "Tk9ORRAAEhIKDlNUQVRVU19VTktOT1dOEAESEwoPU1RBVFVTX0FDQ0VQVEVE",
-          "EAISFAoQU1RBVFVTX0VYRUNVVElORxADEhQKEFNUQVRVU19DQU5DRUxJTkcQ",
-          "BBIUChBTVEFUVVNfU1VDQ0VFREVEEAUSEwoPU1RBVFVTX0NBTkNFTEVEEAYS",
-          "EgoOU1RBVFVTX0FCT1JURUQQBypeChFJbnRlcnBvbGF0aW9uTW9kZRIbChdO",
-          "T05FX0lOVEVSUE9MQVRJT05fTU9ERRAAEgoKBkxJTkVBUhABEhAKDE1JTklN",
-          "VU1fSkVSSxACEg4KCkVMTElQVElDQUwQAypYChJJbnRlcnBvbGF0aW9uU3Bh",
-          "Y2USHAoYTk9ORV9JTlRFUlBPTEFUSU9OX1NQQUNFEAASDwoLSk9JTlRfU1BB",
-          "Q0UQARITCg9DQVJURVNJQU5fU1BBQ0UQAipmCgxBcmNEaXJlY3Rpb24SFgoS",
-          "Tk9ORV9BUkNfRElSRUNUSU9OEAASCQoFQUJPVkUQARIJCgVCRUxPVxACEgkK",
-          "BUZST05UEAMSCAoEQkFDSxAEEggKBExFRlQQBRIJCgVSSUdIVBAGMsUDCgtH",
-          "b1RvU2VydmljZRImCg1Hb1RvQ2FydGVzaWFuEgwuR29Ub1JlcXVlc3QaBy5H",
-          "b1RvSWQSIwoKR29Ub0pvaW50cxIMLkdvVG9SZXF1ZXN0GgcuR29Ub0lkEiUK",
-          "DEdvVG9PZG9tZXRyeRIMLkdvVG9SZXF1ZXN0GgcuR29Ub0lkEigKDEdldEdv",
-          "VG9TdGF0ZRIHLkdvVG9JZBoPLkdvVG9Hb2FsU3RhdHVzEicKDkdldEdvVG9S",
-          "ZXF1ZXN0EgcuR29Ub0lkGgwuR29Ub1JlcXVlc3QSMgoSR2V0UGFydEdvVG9Q",
-          "bGF5aW5nEhMucmVhY2h5LnBhcnQuUGFydElkGgcuR29Ub0lkEjMKEEdldFBh",
-          "cnRHb1RvUXVldWUSEy5yZWFjaHkucGFydC5QYXJ0SWQaCi5Hb1RvUXVldWUS",
-          "HwoKQ2FuY2VsR29UbxIHLkdvVG9JZBoILkdvVG9BY2sSMQoNQ2FuY2VsQWxs",
-          "R29UbxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRoILkdvVG9BY2sSMgoRQ2Fu",
-          "Y2VsUGFydEFsbEdvVG8SEy5yZWFjaHkucGFydC5QYXJ0SWQaCC5Hb1RvQWNr",
-          "YgZwcm90bzM="));
+          "dXN0b21fam9pbnRfZ29hbBgDIAEoCzIQLkN1c3RvbUpvaW50R29hbEgAEkAK",
+          "EmFudGVubmFfam9pbnRfZ29hbBgEIAEoCzIiLnJlYWNoeS5wYXJ0LmhlYWQu",
+          "QW50ZW5uYUpvaW50R29hbEgAQg0KC2pvaW50c19nb2FsIvwBCgxPZG9tZXRy",
+          "eUdvYWwSTwoNb2RvbWV0cnlfZ29hbBgBIAEoCzI4LnJlYWNoeS5wYXJ0Lm1v",
+          "YmlsZS5iYXNlLm1vYmlsaXR5LlRhcmdldERpcmVjdGlvbkNvbW1hbmQSNwoS",
+          "ZGlzdGFuY2VfdG9sZXJhbmNlGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZs",
+          "b2F0VmFsdWUSNAoPYW5nbGVfdG9sZXJhbmNlGAMgASgLMhsuZ29vZ2xlLnBy",
+          "b3RvYnVmLkZsb2F0VmFsdWUSLAoHdGltZW91dBgKIAEoCzIbLmdvb2dsZS5w",
+          "cm90b2J1Zi5GbG9hdFZhbHVlIpECCg9DdXN0b21Kb2ludEdvYWwSHwoCaWQY",
+          "ASABKAsyEy5yZWFjaHkucGFydC5QYXJ0SWQSNgoKYXJtX2pvaW50cxgCIAEo",
+          "CzIgLnJlYWNoeS5wYXJ0LmFybS5DdXN0b21Bcm1Kb2ludHNIABI5CgtuZWNr",
+          "X2pvaW50cxgDIAEoCzIiLnJlYWNoeS5wYXJ0LmhlYWQuQ3VzdG9tTmVja0pv",
+          "aW50c0gAEjEKDGpvaW50c19nb2FscxgEIAMoCzIbLmdvb2dsZS5wcm90b2J1",
+          "Zi5GbG9hdFZhbHVlEi0KCGR1cmF0aW9uGAogASgLMhsuZ29vZ2xlLnByb3Rv",
+          "YnVmLkZsb2F0VmFsdWVCCAoGam9pbnRzIkMKEUdvVG9JbnRlcnBvbGF0aW9u",
+          "Ei4KEmludGVycG9sYXRpb25fdHlwZRgBIAEoDjISLkludGVycG9sYXRpb25N",
+          "b2RlIkoKFkdvVG9JbnRlcnBvbGF0aW9uU3BhY2USMAoTaW50ZXJwb2xhdGlv",
+          "bl9zcGFjZRgBIAEoDjITLkludGVycG9sYXRpb25TcGFjZSJ3ChhFbGxpcHRp",
+          "Y2FsR29Ub1BhcmFtZXRlcnMSJAoNYXJjX2RpcmVjdGlvbhgBIAEoDjINLkFy",
+          "Y0RpcmVjdGlvbhI1ChBzZWNvbmRhcnlfcmFkaXVzGAIgASgLMhsuZ29vZ2xl",
+          "LnByb3RvYnVmLkZsb2F0VmFsdWUiqwIKC0dvVG9SZXF1ZXN0EigKDmNhcnRl",
+          "c2lhbl9nb2FsGAEgASgLMg4uQ2FydGVzaWFuR29hbEgAEiIKC2pvaW50c19n",
+          "b2FsGAIgASgLMgsuSm9pbnRzR29hbEgAEiYKDW9kb21ldHJ5X2dvYWwYAyAB",
+          "KAsyDS5PZG9tZXRyeUdvYWxIABI0ChNpbnRlcnBvbGF0aW9uX3NwYWNlGAkg",
+          "ASgLMhcuR29Ub0ludGVycG9sYXRpb25TcGFjZRIuChJpbnRlcnBvbGF0aW9u",
+          "X21vZGUYCiABKAsyEi5Hb1RvSW50ZXJwb2xhdGlvbhI4ChVlbGxpcHRpY2Fs",
+          "X3BhcmFtZXRlcnMYDyABKAsyGS5FbGxpcHRpY2FsR29Ub1BhcmFtZXRlcnNC",
+          "BgoEZ29hbCImCglHb1RvUXVldWUSGQoIZ290b19pZHMYASADKAsyBy5Hb1Rv",
+          "SWQqqgEKCkdvYWxTdGF0dXMSCAoETk9ORRAAEhIKDlNUQVRVU19VTktOT1dO",
+          "EAESEwoPU1RBVFVTX0FDQ0VQVEVEEAISFAoQU1RBVFVTX0VYRUNVVElORxAD",
+          "EhQKEFNUQVRVU19DQU5DRUxJTkcQBBIUChBTVEFUVVNfU1VDQ0VFREVEEAUS",
+          "EwoPU1RBVFVTX0NBTkNFTEVEEAYSEgoOU1RBVFVTX0FCT1JURUQQBypeChFJ",
+          "bnRlcnBvbGF0aW9uTW9kZRIbChdOT05FX0lOVEVSUE9MQVRJT05fTU9ERRAA",
+          "EgoKBkxJTkVBUhABEhAKDE1JTklNVU1fSkVSSxACEg4KCkVMTElQVElDQUwQ",
+          "AypYChJJbnRlcnBvbGF0aW9uU3BhY2USHAoYTk9ORV9JTlRFUlBPTEFUSU9O",
+          "X1NQQUNFEAASDwoLSk9JTlRfU1BBQ0UQARITCg9DQVJURVNJQU5fU1BBQ0UQ",
+          "AipmCgxBcmNEaXJlY3Rpb24SFgoSTk9ORV9BUkNfRElSRUNUSU9OEAASCQoF",
+          "QUJPVkUQARIJCgVCRUxPVxACEgkKBUZST05UEAMSCAoEQkFDSxAEEggKBExF",
+          "RlQQBRIJCgVSSUdIVBAGMsUDCgtHb1RvU2VydmljZRImCg1Hb1RvQ2FydGVz",
+          "aWFuEgwuR29Ub1JlcXVlc3QaBy5Hb1RvSWQSIwoKR29Ub0pvaW50cxIMLkdv",
+          "VG9SZXF1ZXN0GgcuR29Ub0lkEiUKDEdvVG9PZG9tZXRyeRIMLkdvVG9SZXF1",
+          "ZXN0GgcuR29Ub0lkEigKDEdldEdvVG9TdGF0ZRIHLkdvVG9JZBoPLkdvVG9H",
+          "b2FsU3RhdHVzEicKDkdldEdvVG9SZXF1ZXN0EgcuR29Ub0lkGgwuR29Ub1Jl",
+          "cXVlc3QSMgoSR2V0UGFydEdvVG9QbGF5aW5nEhMucmVhY2h5LnBhcnQuUGFy",
+          "dElkGgcuR29Ub0lkEjMKEEdldFBhcnRHb1RvUXVldWUSEy5yZWFjaHkucGFy",
+          "dC5QYXJ0SWQaCi5Hb1RvUXVldWUSHwoKQ2FuY2VsR29UbxIHLkdvVG9JZBoI",
+          "LkdvVG9BY2sSMQoNQ2FuY2VsQWxsR29UbxIWLmdvb2dsZS5wcm90b2J1Zi5F",
+          "bXB0eRoILkdvVG9BY2sSMgoRQ2FuY2VsUGFydEFsbEdvVG8SEy5yZWFjaHku",
+          "cGFydC5QYXJ0SWQaCC5Hb1RvQWNrYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, global::Reachy.Part.Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor, },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GoalStatus), typeof(global::InterpolationMode), typeof(global::InterpolationSpace), typeof(global::ArcDirection), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -89,7 +90,7 @@ public static partial class GotoReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToAck), global::GoToAck.Parser, new[]{ "Ack" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToGoalStatus), global::GoToGoalStatus.Parser, new[]{ "GoalStatus" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::CartesianGoal), global::CartesianGoal.Parser, new[]{ "ArmCartesianGoal", "NeckCartesianGoal" }, new[]{ "CartesianGoal" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::JointsGoal), global::JointsGoal.Parser, new[]{ "ArmJointGoal", "NeckJointGoal", "CustomJointGoal" }, new[]{ "JointsGoal" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::JointsGoal), global::JointsGoal.Parser, new[]{ "ArmJointGoal", "NeckJointGoal", "CustomJointGoal", "AntennaJointGoal" }, new[]{ "JointsGoal" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::OdometryGoal), global::OdometryGoal.Parser, new[]{ "OdometryGoal_", "DistanceTolerance", "AngleTolerance", "Timeout" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::CustomJointGoal), global::CustomJointGoal.Parser, new[]{ "Id", "ArmJoints", "NeckJoints", "JointsGoals", "Duration" }, new[]{ "Joints" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToInterpolation), global::GoToInterpolation.Parser, new[]{ "InterpolationType" }, null, null, null, null),
@@ -1036,6 +1037,9 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
       case JointsGoalOneofCase.CustomJointGoal:
         CustomJointGoal = other.CustomJointGoal.Clone();
         break;
+      case JointsGoalOneofCase.AntennaJointGoal:
+        AntennaJointGoal = other.AntennaJointGoal.Clone();
+        break;
     }
 
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1083,6 +1087,18 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
     }
   }
 
+  /// <summary>Field number for the "antenna_joint_goal" field.</summary>
+  public const int AntennaJointGoalFieldNumber = 4;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public global::Reachy.Part.Head.AntennaJointGoal AntennaJointGoal {
+    get { return jointsGoalCase_ == JointsGoalOneofCase.AntennaJointGoal ? (global::Reachy.Part.Head.AntennaJointGoal) jointsGoal_ : null; }
+    set {
+      jointsGoal_ = value;
+      jointsGoalCase_ = value == null ? JointsGoalOneofCase.None : JointsGoalOneofCase.AntennaJointGoal;
+    }
+  }
+
   private object jointsGoal_;
   /// <summary>Enum of possible cases for the "joints_goal" oneof.</summary>
   public enum JointsGoalOneofCase {
@@ -1090,6 +1106,7 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
     ArmJointGoal = 1,
     NeckJointGoal = 2,
     CustomJointGoal = 3,
+    AntennaJointGoal = 4,
   }
   private JointsGoalOneofCase jointsGoalCase_ = JointsGoalOneofCase.None;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1123,6 +1140,7 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
     if (!object.Equals(ArmJointGoal, other.ArmJointGoal)) return false;
     if (!object.Equals(NeckJointGoal, other.NeckJointGoal)) return false;
     if (!object.Equals(CustomJointGoal, other.CustomJointGoal)) return false;
+    if (!object.Equals(AntennaJointGoal, other.AntennaJointGoal)) return false;
     if (JointsGoalCase != other.JointsGoalCase) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -1134,6 +1152,7 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
     if (jointsGoalCase_ == JointsGoalOneofCase.ArmJointGoal) hash ^= ArmJointGoal.GetHashCode();
     if (jointsGoalCase_ == JointsGoalOneofCase.NeckJointGoal) hash ^= NeckJointGoal.GetHashCode();
     if (jointsGoalCase_ == JointsGoalOneofCase.CustomJointGoal) hash ^= CustomJointGoal.GetHashCode();
+    if (jointsGoalCase_ == JointsGoalOneofCase.AntennaJointGoal) hash ^= AntennaJointGoal.GetHashCode();
     hash ^= (int) jointsGoalCase_;
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -1165,6 +1184,10 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
       output.WriteRawTag(26);
       output.WriteMessage(CustomJointGoal);
     }
+    if (jointsGoalCase_ == JointsGoalOneofCase.AntennaJointGoal) {
+      output.WriteRawTag(34);
+      output.WriteMessage(AntennaJointGoal);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -1187,6 +1210,10 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
       output.WriteRawTag(26);
       output.WriteMessage(CustomJointGoal);
     }
+    if (jointsGoalCase_ == JointsGoalOneofCase.AntennaJointGoal) {
+      output.WriteRawTag(34);
+      output.WriteMessage(AntennaJointGoal);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -1205,6 +1232,9 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
     }
     if (jointsGoalCase_ == JointsGoalOneofCase.CustomJointGoal) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(CustomJointGoal);
+    }
+    if (jointsGoalCase_ == JointsGoalOneofCase.AntennaJointGoal) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(AntennaJointGoal);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -1236,6 +1266,12 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
           CustomJointGoal = new global::CustomJointGoal();
         }
         CustomJointGoal.MergeFrom(other.CustomJointGoal);
+        break;
+      case JointsGoalOneofCase.AntennaJointGoal:
+        if (AntennaJointGoal == null) {
+          AntennaJointGoal = new global::Reachy.Part.Head.AntennaJointGoal();
+        }
+        AntennaJointGoal.MergeFrom(other.AntennaJointGoal);
         break;
     }
 
@@ -1281,6 +1317,15 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
           CustomJointGoal = subBuilder;
           break;
         }
+        case 34: {
+          global::Reachy.Part.Head.AntennaJointGoal subBuilder = new global::Reachy.Part.Head.AntennaJointGoal();
+          if (jointsGoalCase_ == JointsGoalOneofCase.AntennaJointGoal) {
+            subBuilder.MergeFrom(AntennaJointGoal);
+          }
+          input.ReadMessage(subBuilder);
+          AntennaJointGoal = subBuilder;
+          break;
+        }
       }
     }
   #endif
@@ -1321,6 +1366,15 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
           }
           input.ReadMessage(subBuilder);
           CustomJointGoal = subBuilder;
+          break;
+        }
+        case 34: {
+          global::Reachy.Part.Head.AntennaJointGoal subBuilder = new global::Reachy.Part.Head.AntennaJointGoal();
+          if (jointsGoalCase_ == JointsGoalOneofCase.AntennaJointGoal) {
+            subBuilder.MergeFrom(AntennaJointGoal);
+          }
+          input.ReadMessage(subBuilder);
+          AntennaJointGoal = subBuilder;
           break;
         }
       }
