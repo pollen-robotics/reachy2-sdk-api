@@ -93,13 +93,9 @@ message NeckJointGoal {
 
 message AntennaJointGoal {
     reachy.part.PartId id = 1;
-    oneof antenna 
-    {
-        component.dynamixel_motor.DynamixelMotor l_antenna = 2;
-        component.dynamixel_motor.DynamixelMotor r_antenna = 3;
-    }
-    google.protobuf.FloatValue joint_goal = 5;
-    google.protobuf.FloatValue duration = 6;
+    component.dynamixel_motor.DynamixelMotor antenna = 2;
+    google.protobuf.FloatValue joint_goal = 3;
+    google.protobuf.FloatValue duration = 4;
 
 }
 
