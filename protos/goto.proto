@@ -127,11 +127,11 @@ service GoToService {
     rpc GetGoToState (GoToId) returns (GoToGoalStatus);
     rpc GetGoToRequest (GoToId) returns (GoToRequest);
     rpc GetPartGoToPlaying (reachy.part.PartId) returns (GoToId);
-    rpc GetComponentGoToPlaying (reachy.component.ComponentId) returns (GoToId);
+    rpc GetComponentGoToPlaying (component.ComponentId) returns (GoToId);
     rpc GetPartGoToQueue (reachy.part.PartId) returns (GoToQueue);
-    rpc GetComponentGoToQueue (reachy.component.ComponentId) returns (GoToQueue);
+    rpc GetComponentGoToQueue (component.ComponentId) returns (GoToQueue);
     rpc CancelGoTo (GoToId) returns (GoToAck);
     rpc CancelAllGoTo (google.protobuf.Empty) returns (GoToAck);
     rpc CancelPartAllGoTo (reachy.part.PartId) returns (GoToAck);
-    rpc CancelComponentAllGoTo (reachy.component.ComponentId) returns (GoToAck);
+    rpc CancelComponentAllGoTo (component.ComponentId) returns (GoToAck);
 }
