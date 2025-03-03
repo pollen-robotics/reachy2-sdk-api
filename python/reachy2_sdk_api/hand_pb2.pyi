@@ -21,6 +21,21 @@ else:
 
 DESCRIPTOR: google.protobuf.descriptor.FileDescriptor
 
+class _HandType:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _HandTypeEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_HandType.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    NO_TYPE: _HandType.ValueType  # 0
+    PARALLEL_GRIPPER: _HandType.ValueType  # 1
+
+class HandType(_HandType, metaclass=_HandTypeEnumTypeWrapper): ...
+
+NO_TYPE: HandType.ValueType  # 0
+PARALLEL_GRIPPER: HandType.ValueType  # 1
+global___HandType = HandType
+
 class _SpeedLimit:
     ValueType = typing.NewType("ValueType", builtins.int)
     V: typing_extensions.TypeAlias = ValueType
@@ -45,19 +60,22 @@ class Hand(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
     PART_ID_FIELD_NUMBER: builtins.int
+    TYPE_FIELD_NUMBER: builtins.int
     INFO_FIELD_NUMBER: builtins.int
     @property
     def part_id(self) -> part_pb2.PartId: ...
+    type: global___HandType.ValueType
     @property
     def info(self) -> part_pb2.PartInfo: ...
     def __init__(
         self,
         *,
         part_id: part_pb2.PartId | None = ...,
+        type: global___HandType.ValueType = ...,
         info: part_pb2.PartInfo | None = ...,
     ) -> None: ...
     def HasField(self, field_name: typing_extensions.Literal["info", b"info", "part_id", b"part_id"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["info", b"info", "part_id", b"part_id"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["info", b"info", "part_id", b"part_id", "type", b"type"]) -> None: ...
 
 global___Hand = Hand
 
