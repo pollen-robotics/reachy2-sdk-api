@@ -23,79 +23,80 @@ public static partial class GotoReflection {
     byte[] descriptorData = global::System.Convert.FromBase64String(
         string.Concat(
           "Cgpnb3RvLnByb3RvGhtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8aHmdv",
-          "b2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxoJYXJtLnByb3RvGgpoZWFk",
-          "LnByb3RvGgpwYXJ0LnByb3RvGg9jb21wb25lbnQucHJvdG8aGm1vYmlsZV9i",
-          "YXNlX21vYmlsaXR5LnByb3RvIhQKBkdvVG9JZBIKCgJpZBgBIAEoBSIWCgdH",
-          "b1RvQWNrEgsKA2FjaxgBIAEoCCIyCg5Hb1RvR29hbFN0YXR1cxIgCgtnb2Fs",
-          "X3N0YXR1cxgBIAEoDjILLkdvYWxTdGF0dXMipgEKDUNhcnRlc2lhbkdvYWwS",
-          "PwoSYXJtX2NhcnRlc2lhbl9nb2FsGAEgASgLMiEucmVhY2h5LnBhcnQuYXJt",
-          "LkFybUNhcnRlc2lhbkdvYWxIABJCChNuZWNrX2NhcnRlc2lhbl9nb2FsGAIg",
-          "ASgLMiMucmVhY2h5LnBhcnQuaGVhZC5OZWNrQ2FydGVzaWFuR29hbEgAQhAK",
-          "DmNhcnRlc2lhbl9nb2FsIoECCgpKb2ludHNHb2FsEjcKDmFybV9qb2ludF9n",
-          "b2FsGAEgASgLMh0ucmVhY2h5LnBhcnQuYXJtLkFybUpvaW50R29hbEgAEjoK",
-          "D25lY2tfam9pbnRfZ29hbBgCIAEoCzIfLnJlYWNoeS5wYXJ0LmhlYWQuTmVj",
-          "a0pvaW50R29hbEgAEi0KEWN1c3RvbV9qb2ludF9nb2FsGAMgASgLMhAuQ3Vz",
-          "dG9tSm9pbnRHb2FsSAASQAoSYW50ZW5uYV9qb2ludF9nb2FsGAQgASgLMiIu",
-          "cmVhY2h5LnBhcnQuaGVhZC5BbnRlbm5hSm9pbnRHb2FsSABCDQoLam9pbnRz",
-          "X2dvYWwi/AEKDE9kb21ldHJ5R29hbBJPCg1vZG9tZXRyeV9nb2FsGAEgASgL",
-          "MjgucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UubW9iaWxpdHkuVGFyZ2V0RGly",
-          "ZWN0aW9uQ29tbWFuZBI3ChJkaXN0YW5jZV90b2xlcmFuY2UYAiABKAsyGy5n",
-          "b29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRI0Cg9hbmdsZV90b2xlcmFuY2UY",
-          "AyABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRIsCgd0aW1lb3V0",
-          "GAogASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUikQIKD0N1c3Rv",
-          "bUpvaW50R29hbBIfCgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBI2",
-          "Cgphcm1fam9pbnRzGAIgASgLMiAucmVhY2h5LnBhcnQuYXJtLkN1c3RvbUFy",
-          "bUpvaW50c0gAEjkKC25lY2tfam9pbnRzGAMgASgLMiIucmVhY2h5LnBhcnQu",
-          "aGVhZC5DdXN0b21OZWNrSm9pbnRzSAASMQoMam9pbnRzX2dvYWxzGAQgAygL",
-          "MhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSLQoIZHVyYXRpb24YCiAB",
-          "KAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZUIICgZqb2ludHMiQwoR",
-          "R29Ub0ludGVycG9sYXRpb24SLgoSaW50ZXJwb2xhdGlvbl90eXBlGAEgASgO",
-          "MhIuSW50ZXJwb2xhdGlvbk1vZGUiSgoWR29Ub0ludGVycG9sYXRpb25TcGFj",
-          "ZRIwChNpbnRlcnBvbGF0aW9uX3NwYWNlGAEgASgOMhMuSW50ZXJwb2xhdGlv",
-          "blNwYWNlIncKGEVsbGlwdGljYWxHb1RvUGFyYW1ldGVycxIkCg1hcmNfZGly",
-          "ZWN0aW9uGAEgASgOMg0uQXJjRGlyZWN0aW9uEjUKEHNlY29uZGFyeV9yYWRp",
-          "dXMYAiABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSKrAgoLR29U",
-          "b1JlcXVlc3QSKAoOY2FydGVzaWFuX2dvYWwYASABKAsyDi5DYXJ0ZXNpYW5H",
-          "b2FsSAASIgoLam9pbnRzX2dvYWwYAiABKAsyCy5Kb2ludHNHb2FsSAASJgoN",
-          "b2RvbWV0cnlfZ29hbBgDIAEoCzINLk9kb21ldHJ5R29hbEgAEjQKE2ludGVy",
-          "cG9sYXRpb25fc3BhY2UYCSABKAsyFy5Hb1RvSW50ZXJwb2xhdGlvblNwYWNl",
-          "Ei4KEmludGVycG9sYXRpb25fbW9kZRgKIAEoCzISLkdvVG9JbnRlcnBvbGF0",
-          "aW9uEjgKFWVsbGlwdGljYWxfcGFyYW1ldGVycxgPIAEoCzIZLkVsbGlwdGlj",
-          "YWxHb1RvUGFyYW1ldGVyc0IGCgRnb2FsIiYKCUdvVG9RdWV1ZRIZCghnb3Rv",
-          "X2lkcxgBIAMoCzIHLkdvVG9JZCqqAQoKR29hbFN0YXR1cxIICgROT05FEAAS",
-          "EgoOU1RBVFVTX1VOS05PV04QARITCg9TVEFUVVNfQUNDRVBURUQQAhIUChBT",
-          "VEFUVVNfRVhFQ1VUSU5HEAMSFAoQU1RBVFVTX0NBTkNFTElORxAEEhQKEFNU",
-          "QVRVU19TVUNDRUVERUQQBRITCg9TVEFUVVNfQ0FOQ0VMRUQQBhISCg5TVEFU",
-          "VVNfQUJPUlRFRBAHKl4KEUludGVycG9sYXRpb25Nb2RlEhsKF05PTkVfSU5U",
-          "RVJQT0xBVElPTl9NT0RFEAASCgoGTElORUFSEAESEAoMTUlOSU1VTV9KRVJL",
-          "EAISDgoKRUxMSVBUSUNBTBADKlgKEkludGVycG9sYXRpb25TcGFjZRIcChhO",
-          "T05FX0lOVEVSUE9MQVRJT05fU1BBQ0UQABIPCgtKT0lOVF9TUEFDRRABEhMK",
-          "D0NBUlRFU0lBTl9TUEFDRRACKmYKDEFyY0RpcmVjdGlvbhIWChJOT05FX0FS",
-          "Q19ESVJFQ1RJT04QABIJCgVBQk9WRRABEgkKBUJFTE9XEAISCQoFRlJPTlQQ",
-          "AxIICgRCQUNLEAQSCAoETEVGVBAFEgkKBVJJR0hUEAYy+gQKC0dvVG9TZXJ2",
-          "aWNlEiYKDUdvVG9DYXJ0ZXNpYW4SDC5Hb1RvUmVxdWVzdBoHLkdvVG9JZBIj",
-          "CgpHb1RvSm9pbnRzEgwuR29Ub1JlcXVlc3QaBy5Hb1RvSWQSJQoMR29Ub09k",
-          "b21ldHJ5EgwuR29Ub1JlcXVlc3QaBy5Hb1RvSWQSKAoMR2V0R29Ub1N0YXRl",
-          "EgcuR29Ub0lkGg8uR29Ub0dvYWxTdGF0dXMSJwoOR2V0R29Ub1JlcXVlc3QS",
-          "By5Hb1RvSWQaDC5Hb1RvUmVxdWVzdBIyChJHZXRQYXJ0R29Ub1BsYXlpbmcS",
-          "Ey5yZWFjaHkucGFydC5QYXJ0SWQaBy5Hb1RvSWQSOgoXR2V0Q29tcG9uZW50",
-          "R29Ub1BsYXlpbmcSFi5jb21wb25lbnQuQ29tcG9uZW50SWQaBy5Hb1RvSWQS",
-          "MwoQR2V0UGFydEdvVG9RdWV1ZRITLnJlYWNoeS5wYXJ0LlBhcnRJZBoKLkdv",
-          "VG9RdWV1ZRI7ChVHZXRDb21wb25lbnRHb1RvUXVldWUSFi5jb21wb25lbnQu",
-          "Q29tcG9uZW50SWQaCi5Hb1RvUXVldWUSHwoKQ2FuY2VsR29UbxIHLkdvVG9J",
-          "ZBoILkdvVG9BY2sSMQoNQ2FuY2VsQWxsR29UbxIWLmdvb2dsZS5wcm90b2J1",
-          "Zi5FbXB0eRoILkdvVG9BY2sSMgoRQ2FuY2VsUGFydEFsbEdvVG8SEy5yZWFj",
-          "aHkucGFydC5QYXJ0SWQaCC5Hb1RvQWNrEjoKFkNhbmNlbENvbXBvbmVudEFs",
-          "bEdvVG8SFi5jb21wb25lbnQuQ29tcG9uZW50SWQaCC5Hb1RvQWNrYgZwcm90",
-          "bzM="));
+          "b2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxoJYXJtLnByb3RvGg9jb21w",
+          "b25lbnQucHJvdG8aCmhhbmQucHJvdG8aCmhlYWQucHJvdG8aGm1vYmlsZV9i",
+          "YXNlX21vYmlsaXR5LnByb3RvGgpwYXJ0LnByb3RvIhQKBkdvVG9JZBIKCgJp",
+          "ZBgBIAEoBSIWCgdHb1RvQWNrEgsKA2FjaxgBIAEoCCIyCg5Hb1RvR29hbFN0",
+          "YXR1cxIgCgtnb2FsX3N0YXR1cxgBIAEoDjILLkdvYWxTdGF0dXMipgEKDUNh",
+          "cnRlc2lhbkdvYWwSPwoSYXJtX2NhcnRlc2lhbl9nb2FsGAEgASgLMiEucmVh",
+          "Y2h5LnBhcnQuYXJtLkFybUNhcnRlc2lhbkdvYWxIABJCChNuZWNrX2NhcnRl",
+          "c2lhbl9nb2FsGAIgASgLMiMucmVhY2h5LnBhcnQuaGVhZC5OZWNrQ2FydGVz",
+          "aWFuR29hbEgAQhAKDmNhcnRlc2lhbl9nb2FsIsMCCgpKb2ludHNHb2FsEjcK",
+          "DmFybV9qb2ludF9nb2FsGAEgASgLMh0ucmVhY2h5LnBhcnQuYXJtLkFybUpv",
+          "aW50R29hbEgAEjoKD25lY2tfam9pbnRfZ29hbBgCIAEoCzIfLnJlYWNoeS5w",
+          "YXJ0LmhlYWQuTmVja0pvaW50R29hbEgAEi0KEWN1c3RvbV9qb2ludF9nb2Fs",
+          "GAMgASgLMhAuQ3VzdG9tSm9pbnRHb2FsSAASQAoSYW50ZW5uYV9qb2ludF9n",
+          "b2FsGAQgASgLMiIucmVhY2h5LnBhcnQuaGVhZC5BbnRlbm5hSm9pbnRHb2Fs",
+          "SAASQAoPaGFuZF9qb2ludF9nb2FsGAUgASgLMiUucmVhY2h5LnBhcnQuaGFu",
+          "ZC5IYW5kUG9zaXRpb25SZXF1ZXN0SABCDQoLam9pbnRzX2dvYWwi/AEKDE9k",
+          "b21ldHJ5R29hbBJPCg1vZG9tZXRyeV9nb2FsGAEgASgLMjgucmVhY2h5LnBh",
+          "cnQubW9iaWxlLmJhc2UubW9iaWxpdHkuVGFyZ2V0RGlyZWN0aW9uQ29tbWFu",
+          "ZBI3ChJkaXN0YW5jZV90b2xlcmFuY2UYAiABKAsyGy5nb29nbGUucHJvdG9i",
+          "dWYuRmxvYXRWYWx1ZRI0Cg9hbmdsZV90b2xlcmFuY2UYAyABKAsyGy5nb29n",
+          "bGUucHJvdG9idWYuRmxvYXRWYWx1ZRIsCgd0aW1lb3V0GAogASgLMhsuZ29v",
+          "Z2xlLnByb3RvYnVmLkZsb2F0VmFsdWUikQIKD0N1c3RvbUpvaW50R29hbBIf",
+          "CgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBI2Cgphcm1fam9pbnRz",
+          "GAIgASgLMiAucmVhY2h5LnBhcnQuYXJtLkN1c3RvbUFybUpvaW50c0gAEjkK",
+          "C25lY2tfam9pbnRzGAMgASgLMiIucmVhY2h5LnBhcnQuaGVhZC5DdXN0b21O",
+          "ZWNrSm9pbnRzSAASMQoMam9pbnRzX2dvYWxzGAQgAygLMhsuZ29vZ2xlLnBy",
+          "b3RvYnVmLkZsb2F0VmFsdWUSLQoIZHVyYXRpb24YCiABKAsyGy5nb29nbGUu",
+          "cHJvdG9idWYuRmxvYXRWYWx1ZUIICgZqb2ludHMiQwoRR29Ub0ludGVycG9s",
+          "YXRpb24SLgoSaW50ZXJwb2xhdGlvbl90eXBlGAEgASgOMhIuSW50ZXJwb2xh",
+          "dGlvbk1vZGUiSgoWR29Ub0ludGVycG9sYXRpb25TcGFjZRIwChNpbnRlcnBv",
+          "bGF0aW9uX3NwYWNlGAEgASgOMhMuSW50ZXJwb2xhdGlvblNwYWNlIncKGEVs",
+          "bGlwdGljYWxHb1RvUGFyYW1ldGVycxIkCg1hcmNfZGlyZWN0aW9uGAEgASgO",
+          "Mg0uQXJjRGlyZWN0aW9uEjUKEHNlY29uZGFyeV9yYWRpdXMYAiABKAsyGy5n",
+          "b29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSKrAgoLR29Ub1JlcXVlc3QSKAoO",
+          "Y2FydGVzaWFuX2dvYWwYASABKAsyDi5DYXJ0ZXNpYW5Hb2FsSAASIgoLam9p",
+          "bnRzX2dvYWwYAiABKAsyCy5Kb2ludHNHb2FsSAASJgoNb2RvbWV0cnlfZ29h",
+          "bBgDIAEoCzINLk9kb21ldHJ5R29hbEgAEjQKE2ludGVycG9sYXRpb25fc3Bh",
+          "Y2UYCSABKAsyFy5Hb1RvSW50ZXJwb2xhdGlvblNwYWNlEi4KEmludGVycG9s",
+          "YXRpb25fbW9kZRgKIAEoCzISLkdvVG9JbnRlcnBvbGF0aW9uEjgKFWVsbGlw",
+          "dGljYWxfcGFyYW1ldGVycxgPIAEoCzIZLkVsbGlwdGljYWxHb1RvUGFyYW1l",
+          "dGVyc0IGCgRnb2FsIiYKCUdvVG9RdWV1ZRIZCghnb3RvX2lkcxgBIAMoCzIH",
+          "LkdvVG9JZCqqAQoKR29hbFN0YXR1cxIICgROT05FEAASEgoOU1RBVFVTX1VO",
+          "S05PV04QARITCg9TVEFUVVNfQUNDRVBURUQQAhIUChBTVEFUVVNfRVhFQ1VU",
+          "SU5HEAMSFAoQU1RBVFVTX0NBTkNFTElORxAEEhQKEFNUQVRVU19TVUNDRUVE",
+          "RUQQBRITCg9TVEFUVVNfQ0FOQ0VMRUQQBhISCg5TVEFUVVNfQUJPUlRFRBAH",
+          "Kl4KEUludGVycG9sYXRpb25Nb2RlEhsKF05PTkVfSU5URVJQT0xBVElPTl9N",
+          "T0RFEAASCgoGTElORUFSEAESEAoMTUlOSU1VTV9KRVJLEAISDgoKRUxMSVBU",
+          "SUNBTBADKlgKEkludGVycG9sYXRpb25TcGFjZRIcChhOT05FX0lOVEVSUE9M",
+          "QVRJT05fU1BBQ0UQABIPCgtKT0lOVF9TUEFDRRABEhMKD0NBUlRFU0lBTl9T",
+          "UEFDRRACKmYKDEFyY0RpcmVjdGlvbhIWChJOT05FX0FSQ19ESVJFQ1RJT04Q",
+          "ABIJCgVBQk9WRRABEgkKBUJFTE9XEAISCQoFRlJPTlQQAxIICgRCQUNLEAQS",
+          "CAoETEVGVBAFEgkKBVJJR0hUEAYy+gQKC0dvVG9TZXJ2aWNlEiYKDUdvVG9D",
+          "YXJ0ZXNpYW4SDC5Hb1RvUmVxdWVzdBoHLkdvVG9JZBIjCgpHb1RvSm9pbnRz",
+          "EgwuR29Ub1JlcXVlc3QaBy5Hb1RvSWQSJQoMR29Ub09kb21ldHJ5EgwuR29U",
+          "b1JlcXVlc3QaBy5Hb1RvSWQSKAoMR2V0R29Ub1N0YXRlEgcuR29Ub0lkGg8u",
+          "R29Ub0dvYWxTdGF0dXMSJwoOR2V0R29Ub1JlcXVlc3QSBy5Hb1RvSWQaDC5H",
+          "b1RvUmVxdWVzdBIyChJHZXRQYXJ0R29Ub1BsYXlpbmcSEy5yZWFjaHkucGFy",
+          "dC5QYXJ0SWQaBy5Hb1RvSWQSOgoXR2V0Q29tcG9uZW50R29Ub1BsYXlpbmcS",
+          "Fi5jb21wb25lbnQuQ29tcG9uZW50SWQaBy5Hb1RvSWQSMwoQR2V0UGFydEdv",
+          "VG9RdWV1ZRITLnJlYWNoeS5wYXJ0LlBhcnRJZBoKLkdvVG9RdWV1ZRI7ChVH",
+          "ZXRDb21wb25lbnRHb1RvUXVldWUSFi5jb21wb25lbnQuQ29tcG9uZW50SWQa",
+          "Ci5Hb1RvUXVldWUSHwoKQ2FuY2VsR29UbxIHLkdvVG9JZBoILkdvVG9BY2sS",
+          "MQoNQ2FuY2VsQWxsR29UbxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRoILkdv",
+          "VG9BY2sSMgoRQ2FuY2VsUGFydEFsbEdvVG8SEy5yZWFjaHkucGFydC5QYXJ0",
+          "SWQaCC5Hb1RvQWNrEjoKFkNhbmNlbENvbXBvbmVudEFsbEdvVG8SFi5jb21w",
+          "b25lbnQuQ29tcG9uZW50SWQaCC5Hb1RvQWNrYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-        new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, global::Component.ComponentReflection.Descriptor, global::Reachy.Part.Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor, },
+        new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Component.ComponentReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GoalStatus), typeof(global::InterpolationMode), typeof(global::InterpolationSpace), typeof(global::ArcDirection), }, null, new pbr::GeneratedClrTypeInfo[] {
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToId), global::GoToId.Parser, new[]{ "Id" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToAck), global::GoToAck.Parser, new[]{ "Ack" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToGoalStatus), global::GoToGoalStatus.Parser, new[]{ "GoalStatus" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::CartesianGoal), global::CartesianGoal.Parser, new[]{ "ArmCartesianGoal", "NeckCartesianGoal" }, new[]{ "CartesianGoal" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::JointsGoal), global::JointsGoal.Parser, new[]{ "ArmJointGoal", "NeckJointGoal", "CustomJointGoal", "AntennaJointGoal" }, new[]{ "JointsGoal" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::JointsGoal), global::JointsGoal.Parser, new[]{ "ArmJointGoal", "NeckJointGoal", "CustomJointGoal", "AntennaJointGoal", "HandJointGoal" }, new[]{ "JointsGoal" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::OdometryGoal), global::OdometryGoal.Parser, new[]{ "OdometryGoal_", "DistanceTolerance", "AngleTolerance", "Timeout" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::CustomJointGoal), global::CustomJointGoal.Parser, new[]{ "Id", "ArmJoints", "NeckJoints", "JointsGoals", "Duration" }, new[]{ "Joints" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToInterpolation), global::GoToInterpolation.Parser, new[]{ "InterpolationType" }, null, null, null, null),
@@ -1045,6 +1046,9 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
       case JointsGoalOneofCase.AntennaJointGoal:
         AntennaJointGoal = other.AntennaJointGoal.Clone();
         break;
+      case JointsGoalOneofCase.HandJointGoal:
+        HandJointGoal = other.HandJointGoal.Clone();
+        break;
     }
 
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1104,6 +1108,18 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
     }
   }
 
+  /// <summary>Field number for the "hand_joint_goal" field.</summary>
+  public const int HandJointGoalFieldNumber = 5;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public global::Reachy.Part.Hand.HandPositionRequest HandJointGoal {
+    get { return jointsGoalCase_ == JointsGoalOneofCase.HandJointGoal ? (global::Reachy.Part.Hand.HandPositionRequest) jointsGoal_ : null; }
+    set {
+      jointsGoal_ = value;
+      jointsGoalCase_ = value == null ? JointsGoalOneofCase.None : JointsGoalOneofCase.HandJointGoal;
+    }
+  }
+
   private object jointsGoal_;
   /// <summary>Enum of possible cases for the "joints_goal" oneof.</summary>
   public enum JointsGoalOneofCase {
@@ -1112,6 +1128,7 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
     NeckJointGoal = 2,
     CustomJointGoal = 3,
     AntennaJointGoal = 4,
+    HandJointGoal = 5,
   }
   private JointsGoalOneofCase jointsGoalCase_ = JointsGoalOneofCase.None;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1146,6 +1163,7 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
     if (!object.Equals(NeckJointGoal, other.NeckJointGoal)) return false;
     if (!object.Equals(CustomJointGoal, other.CustomJointGoal)) return false;
     if (!object.Equals(AntennaJointGoal, other.AntennaJointGoal)) return false;
+    if (!object.Equals(HandJointGoal, other.HandJointGoal)) return false;
     if (JointsGoalCase != other.JointsGoalCase) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -1158,6 +1176,7 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
     if (jointsGoalCase_ == JointsGoalOneofCase.NeckJointGoal) hash ^= NeckJointGoal.GetHashCode();
     if (jointsGoalCase_ == JointsGoalOneofCase.CustomJointGoal) hash ^= CustomJointGoal.GetHashCode();
     if (jointsGoalCase_ == JointsGoalOneofCase.AntennaJointGoal) hash ^= AntennaJointGoal.GetHashCode();
+    if (jointsGoalCase_ == JointsGoalOneofCase.HandJointGoal) hash ^= HandJointGoal.GetHashCode();
     hash ^= (int) jointsGoalCase_;
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -1193,6 +1212,10 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
       output.WriteRawTag(34);
       output.WriteMessage(AntennaJointGoal);
     }
+    if (jointsGoalCase_ == JointsGoalOneofCase.HandJointGoal) {
+      output.WriteRawTag(42);
+      output.WriteMessage(HandJointGoal);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -1219,6 +1242,10 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
       output.WriteRawTag(34);
       output.WriteMessage(AntennaJointGoal);
     }
+    if (jointsGoalCase_ == JointsGoalOneofCase.HandJointGoal) {
+      output.WriteRawTag(42);
+      output.WriteMessage(HandJointGoal);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -1240,6 +1267,9 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
     }
     if (jointsGoalCase_ == JointsGoalOneofCase.AntennaJointGoal) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(AntennaJointGoal);
+    }
+    if (jointsGoalCase_ == JointsGoalOneofCase.HandJointGoal) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(HandJointGoal);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -1277,6 +1307,12 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
           AntennaJointGoal = new global::Reachy.Part.Head.AntennaJointGoal();
         }
         AntennaJointGoal.MergeFrom(other.AntennaJointGoal);
+        break;
+      case JointsGoalOneofCase.HandJointGoal:
+        if (HandJointGoal == null) {
+          HandJointGoal = new global::Reachy.Part.Hand.HandPositionRequest();
+        }
+        HandJointGoal.MergeFrom(other.HandJointGoal);
         break;
     }
 
@@ -1331,6 +1367,15 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
           AntennaJointGoal = subBuilder;
           break;
         }
+        case 42: {
+          global::Reachy.Part.Hand.HandPositionRequest subBuilder = new global::Reachy.Part.Hand.HandPositionRequest();
+          if (jointsGoalCase_ == JointsGoalOneofCase.HandJointGoal) {
+            subBuilder.MergeFrom(HandJointGoal);
+          }
+          input.ReadMessage(subBuilder);
+          HandJointGoal = subBuilder;
+          break;
+        }
       }
     }
   #endif
@@ -1380,6 +1425,15 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
           }
           input.ReadMessage(subBuilder);
           AntennaJointGoal = subBuilder;
+          break;
+        }
+        case 42: {
+          global::Reachy.Part.Hand.HandPositionRequest subBuilder = new global::Reachy.Part.Hand.HandPositionRequest();
+          if (jointsGoalCase_ == JointsGoalOneofCase.HandJointGoal) {
+            subBuilder.MergeFrom(HandJointGoal);
+          }
+          input.ReadMessage(subBuilder);
+          HandJointGoal = subBuilder;
           break;
         }
       }
