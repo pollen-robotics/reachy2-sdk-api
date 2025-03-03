@@ -26,72 +26,74 @@ namespace Reachy.Part.Hand {
           string.Concat(
             "CgpoYW5kLnByb3RvEhByZWFjaHkucGFydC5oYW5kGh5nb29nbGUvcHJvdG9i",
             "dWYvd3JhcHBlcnMucHJvdG8aG2dvb2dsZS9wcm90b2J1Zi9lbXB0eS5wcm90",
-            "bxoLZXJyb3IucHJvdG8aCnBhcnQucHJvdG8iUQoESGFuZBIkCgdwYXJ0X2lk",
-            "GAEgASgLMhMucmVhY2h5LnBhcnQuUGFydElkEiMKBGluZm8YBSABKAsyFS5y",
-            "ZWFjaHkucGFydC5QYXJ0SW5mbyIyCgpMaXN0T2ZIYW5kEiQKBGhhbmQYASAD",
-            "KAsyFi5yZWFjaHkucGFydC5oYW5kLkhhbmQiqgMKCUhhbmRTdGF0ZRIsCgdv",
-            "cGVuaW5nGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSKgoF",
-            "Zm9yY2UYAiABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRIyCg5o",
-            "b2xkaW5nX29iamVjdBgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFs",
-            "dWUSNQoNam9pbnRzX2xpbWl0cxgEIAEoCzIeLnJlYWNoeS5wYXJ0LmhhbmQu",
-            "Sm9pbnRzTGltaXRzEjgKDHRlbXBlcmF0dXJlcxgFIAEoCzIiLnJlYWNoeS5w",
-            "YXJ0LmhhbmQuSGFuZFRlbXBlcmF0dXJlcxI4ChBwcmVzZW50X3Bvc2l0aW9u",
-            "GAYgASgLMh4ucmVhY2h5LnBhcnQuaGFuZC5IYW5kUG9zaXRpb24SNQoNZ29h",
-            "bF9wb3NpdGlvbhgHIAEoCzIeLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFBvc2l0",
-            "aW9uEi0KCWNvbXBsaWFudBgIIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29s",
-            "VmFsdWUiKgoKSGFuZFN0YXR1cxIcCgZlcnJvcnMYASADKAsyDC5lcnJvci5F",
-            "cnJvciIHCgVGb3JjZSInCgtKb2ludExpbWl0cxILCgNtaW4YASABKAISCwoD",
-            "bWF4GAIgASgCIkYKFVBhcmFsbGVsR3JpcHBlckxpbWl0cxItCgZsaW1pdHMY",
-            "ASABKAsyHS5yZWFjaHkucGFydC5oYW5kLkpvaW50TGltaXRzIl0KDEpvaW50",
-            "c0xpbWl0cxJDChBwYXJhbGxlbF9ncmlwcGVyGAEgASgLMicucmVhY2h5LnBh",
-            "cnQuaGFuZC5QYXJhbGxlbEdyaXBwZXJMaW1pdHNIAEIICgZsaW1pdHMimQEK",
-            "F1BhcmFsbGVsR3JpcHBlclBvc2l0aW9uEjkKEm9wZW5pbmdfcGVyY2VudGFn",
-            "ZRgBIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlSAASLwoIcG9z",
-            "aXRpb24YAiABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZUgAQhIK",
-            "EGdyaXBwZXJfcG9zaXRpb24iYQoMSGFuZFBvc2l0aW9uEkUKEHBhcmFsbGVs",
-            "X2dyaXBwZXIYASABKAsyKS5yZWFjaHkucGFydC5oYW5kLlBhcmFsbGVsR3Jp",
-            "cHBlclBvc2l0aW9uSABCCgoIcG9zaXRpb24iaAoTSGFuZFBvc2l0aW9uUmVx",
-            "dWVzdBIfCgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBIwCghwb3Np",
-            "dGlvbhgCIAEoCzIeLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFBvc2l0aW9uInsK",
-            "DUhhbmRKb2ludEdvYWwSOwoMZ29hbF9yZXF1ZXN0GAEgASgLMiUucmVhY2h5",
-            "LnBhcnQuaGFuZC5IYW5kUG9zaXRpb25SZXF1ZXN0Ei0KCGR1cmF0aW9uGAIg",
-            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUiLQoMVGVtcGVyYXR1",
-            "cmVzEg0KBW1vdG9yGAEgASgCEg4KBmRyaXZlchgCIAEoAiJRChpQYXJhbGxl",
-            "bEdyaXBwZXJUZW1wZXJhdHVyZRIzCgt0ZW1wZXJhdHVyZRgBIAEoCzIeLnJl",
-            "YWNoeS5wYXJ0LmhhbmQuVGVtcGVyYXR1cmVzIl4KEEhhbmRUZW1wZXJhdHVy",
-            "ZXMSOgoQcGFyYWxsZWxfZ3JpcHBlchgBIAEoCzIeLnJlYWNoeS5wYXJ0Lmhh",
-            "bmQuVGVtcGVyYXR1cmVzSABCDgoMdGVtcGVyYXR1cmVzImEKEVNwZWVkTGlt",
-            "aXRSZXF1ZXN0Eh8KAmlkGAEgASgLMhMucmVhY2h5LnBhcnQuUGFydElkEisK",
-            "BWxpbWl0GAIgASgOMhwucmVhY2h5LnBhcnQuaGFuZC5TcGVlZExpbWl0KjoK",
-            "ClNwZWVkTGltaXQSDAoITk9fTElNSVQQABIICgRGQVNUEAESCgoGTk9STUFM",
-            "EAISCAoEU0xPVxADMpoICgtIYW5kU2VydmljZRJDCgtHZXRBbGxIYW5kcxIW",
-            "Lmdvb2dsZS5wcm90b2J1Zi5FbXB0eRocLnJlYWNoeS5wYXJ0LmhhbmQuTGlz",
-            "dE9mSGFuZBI8CghHZXRTdGF0ZRITLnJlYWNoeS5wYXJ0LlBhcnRJZBobLnJl",
-            "YWNoeS5wYXJ0LmhhbmQuSGFuZFN0YXRlEjcKCE9wZW5IYW5kEhMucmVhY2h5",
-            "LnBhcnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EjgKCUNsb3Nl",
-            "SGFuZBITLnJlYWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5F",
-            "bXB0eRI6CgVBdWRpdBITLnJlYWNoeS5wYXJ0LlBhcnRJZBocLnJlYWNoeS5w",
-            "YXJ0LmhhbmQuSGFuZFN0YXR1cxI4CglIZWFydEJlYXQSEy5yZWFjaHkucGFy",
-            "dC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSNgoHUmVzdGFydBIT",
-            "LnJlYWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJB",
-            "ChJSZXNldERlZmF1bHRWYWx1ZXMSEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5n",
-            "b29nbGUucHJvdG9idWYuRW1wdHkSNQoGVHVybk9uEhMucmVhY2h5LnBhcnQu",
-            "UGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EjYKB1R1cm5PZmYSEy5y",
-            "ZWFjaHkucGFydC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSRAoN",
-            "R2V0Sm9pbnRMaW1pdBITLnJlYWNoeS5wYXJ0LlBhcnRJZBoeLnJlYWNoeS5w",
-            "YXJ0LmhhbmQuSm9pbnRzTGltaXRzEkkKDkdldFRlbXBlcmF0dXJlEhMucmVh",
-            "Y2h5LnBhcnQuUGFydElkGiIucmVhY2h5LnBhcnQuaGFuZC5IYW5kVGVtcGVy",
-            "YXR1cmVzEkoKE0dldEhhbmRHb2FsUG9zaXRpb24SEy5yZWFjaHkucGFydC5Q",
-            "YXJ0SWQaHi5yZWFjaHkucGFydC5oYW5kLkhhbmRQb3NpdGlvbhJMCg1TZXRT",
-            "cGVlZExpbWl0EiMucmVhY2h5LnBhcnQuaGFuZC5TcGVlZExpbWl0UmVxdWVz",
-            "dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJQCg9TZXRIYW5kUG9zaXRpb24S",
-            "JS5yZWFjaHkucGFydC5oYW5kLkhhbmRQb3NpdGlvblJlcXVlc3QaFi5nb29n",
-            "bGUucHJvdG9idWYuRW1wdHkSOAoIR2V0Rm9yY2USEy5yZWFjaHkucGFydC5Q",
-            "YXJ0SWQaFy5yZWFjaHkucGFydC5oYW5kLkZvcmNlYgZwcm90bzM="));
+            "bxoLZXJyb3IucHJvdG8aCnBhcnQucHJvdG8iewoESGFuZBIkCgdwYXJ0X2lk",
+            "GAEgASgLMhMucmVhY2h5LnBhcnQuUGFydElkEigKBHR5cGUYAiABKA4yGi5y",
+            "ZWFjaHkucGFydC5oYW5kLkhhbmRUeXBlEiMKBGluZm8YBSABKAsyFS5yZWFj",
+            "aHkucGFydC5QYXJ0SW5mbyIyCgpMaXN0T2ZIYW5kEiQKBGhhbmQYASADKAsy",
+            "Fi5yZWFjaHkucGFydC5oYW5kLkhhbmQiqgMKCUhhbmRTdGF0ZRIsCgdvcGVu",
+            "aW5nGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSKgoFZm9y",
+            "Y2UYAiABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRIyCg5ob2xk",
+            "aW5nX29iamVjdBgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUS",
+            "NQoNam9pbnRzX2xpbWl0cxgEIAEoCzIeLnJlYWNoeS5wYXJ0LmhhbmQuSm9p",
+            "bnRzTGltaXRzEjgKDHRlbXBlcmF0dXJlcxgFIAEoCzIiLnJlYWNoeS5wYXJ0",
+            "LmhhbmQuSGFuZFRlbXBlcmF0dXJlcxI4ChBwcmVzZW50X3Bvc2l0aW9uGAYg",
+            "ASgLMh4ucmVhY2h5LnBhcnQuaGFuZC5IYW5kUG9zaXRpb24SNQoNZ29hbF9w",
+            "b3NpdGlvbhgHIAEoCzIeLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFBvc2l0aW9u",
+            "Ei0KCWNvbXBsaWFudBgIIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFs",
+            "dWUiKgoKSGFuZFN0YXR1cxIcCgZlcnJvcnMYASADKAsyDC5lcnJvci5FcnJv",
+            "ciIHCgVGb3JjZSInCgtKb2ludExpbWl0cxILCgNtaW4YASABKAISCwoDbWF4",
+            "GAIgASgCIkYKFVBhcmFsbGVsR3JpcHBlckxpbWl0cxItCgZsaW1pdHMYASAB",
+            "KAsyHS5yZWFjaHkucGFydC5oYW5kLkpvaW50TGltaXRzIl0KDEpvaW50c0xp",
+            "bWl0cxJDChBwYXJhbGxlbF9ncmlwcGVyGAEgASgLMicucmVhY2h5LnBhcnQu",
+            "aGFuZC5QYXJhbGxlbEdyaXBwZXJMaW1pdHNIAEIICgZsaW1pdHMimQEKF1Bh",
+            "cmFsbGVsR3JpcHBlclBvc2l0aW9uEjkKEm9wZW5pbmdfcGVyY2VudGFnZRgB",
+            "IAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlSAASLwoIcG9zaXRp",
+            "b24YAiABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZUgAQhIKEGdy",
+            "aXBwZXJfcG9zaXRpb24iYQoMSGFuZFBvc2l0aW9uEkUKEHBhcmFsbGVsX2dy",
+            "aXBwZXIYASABKAsyKS5yZWFjaHkucGFydC5oYW5kLlBhcmFsbGVsR3JpcHBl",
+            "clBvc2l0aW9uSABCCgoIcG9zaXRpb24iaAoTSGFuZFBvc2l0aW9uUmVxdWVz",
+            "dBIfCgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBIwCghwb3NpdGlv",
+            "bhgCIAEoCzIeLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFBvc2l0aW9uInsKDUhh",
+            "bmRKb2ludEdvYWwSOwoMZ29hbF9yZXF1ZXN0GAEgASgLMiUucmVhY2h5LnBh",
+            "cnQuaGFuZC5IYW5kUG9zaXRpb25SZXF1ZXN0Ei0KCGR1cmF0aW9uGAIgASgL",
+            "MhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUiLQoMVGVtcGVyYXR1cmVz",
+            "Eg0KBW1vdG9yGAEgASgCEg4KBmRyaXZlchgCIAEoAiJRChpQYXJhbGxlbEdy",
+            "aXBwZXJUZW1wZXJhdHVyZRIzCgt0ZW1wZXJhdHVyZRgBIAEoCzIeLnJlYWNo",
+            "eS5wYXJ0LmhhbmQuVGVtcGVyYXR1cmVzIl4KEEhhbmRUZW1wZXJhdHVyZXMS",
+            "OgoQcGFyYWxsZWxfZ3JpcHBlchgBIAEoCzIeLnJlYWNoeS5wYXJ0LmhhbmQu",
+            "VGVtcGVyYXR1cmVzSABCDgoMdGVtcGVyYXR1cmVzImEKEVNwZWVkTGltaXRS",
+            "ZXF1ZXN0Eh8KAmlkGAEgASgLMhMucmVhY2h5LnBhcnQuUGFydElkEisKBWxp",
+            "bWl0GAIgASgOMhwucmVhY2h5LnBhcnQuaGFuZC5TcGVlZExpbWl0Ki0KCEhh",
+            "bmRUeXBlEgsKB05PX1RZUEUQABIUChBQQVJBTExFTF9HUklQUEVSEAEqOgoK",
+            "U3BlZWRMaW1pdBIMCghOT19MSU1JVBAAEggKBEZBU1QQARIKCgZOT1JNQUwQ",
+            "AhIICgRTTE9XEAMymggKC0hhbmRTZXJ2aWNlEkMKC0dldEFsbEhhbmRzEhYu",
+            "Z29vZ2xlLnByb3RvYnVmLkVtcHR5GhwucmVhY2h5LnBhcnQuaGFuZC5MaXN0",
+            "T2ZIYW5kEjwKCEdldFN0YXRlEhMucmVhY2h5LnBhcnQuUGFydElkGhsucmVh",
+            "Y2h5LnBhcnQuaGFuZC5IYW5kU3RhdGUSNwoIT3BlbkhhbmQSEy5yZWFjaHku",
+            "cGFydC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSOAoJQ2xvc2VI",
+            "YW5kEhMucmVhY2h5LnBhcnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVt",
+            "cHR5EjoKBUF1ZGl0EhMucmVhY2h5LnBhcnQuUGFydElkGhwucmVhY2h5LnBh",
+            "cnQuaGFuZC5IYW5kU3RhdHVzEjgKCUhlYXJ0QmVhdBITLnJlYWNoeS5wYXJ0",
+            "LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRI2CgdSZXN0YXJ0EhMu",
+            "cmVhY2h5LnBhcnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EkEK",
+            "ElJlc2V0RGVmYXVsdFZhbHVlcxITLnJlYWNoeS5wYXJ0LlBhcnRJZBoWLmdv",
+            "b2dsZS5wcm90b2J1Zi5FbXB0eRI1CgZUdXJuT24SEy5yZWFjaHkucGFydC5Q",
+            "YXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSNgoHVHVybk9mZhITLnJl",
+            "YWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJECg1H",
+            "ZXRKb2ludExpbWl0EhMucmVhY2h5LnBhcnQuUGFydElkGh4ucmVhY2h5LnBh",
+            "cnQuaGFuZC5Kb2ludHNMaW1pdHMSSQoOR2V0VGVtcGVyYXR1cmUSEy5yZWFj",
+            "aHkucGFydC5QYXJ0SWQaIi5yZWFjaHkucGFydC5oYW5kLkhhbmRUZW1wZXJh",
+            "dHVyZXMSSgoTR2V0SGFuZEdvYWxQb3NpdGlvbhITLnJlYWNoeS5wYXJ0LlBh",
+            "cnRJZBoeLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFBvc2l0aW9uEkwKDVNldFNw",
+            "ZWVkTGltaXQSIy5yZWFjaHkucGFydC5oYW5kLlNwZWVkTGltaXRSZXF1ZXN0",
+            "GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5ElAKD1NldEhhbmRQb3NpdGlvbhIl",
+            "LnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFBvc2l0aW9uUmVxdWVzdBoWLmdvb2ds",
+            "ZS5wcm90b2J1Zi5FbXB0eRI4CghHZXRGb3JjZRITLnJlYWNoeS5wYXJ0LlBh",
+            "cnRJZBoXLnJlYWNoeS5wYXJ0LmhhbmQuRm9yY2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Error.ErrorReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.Part.Hand.SpeedLimit), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Hand.Hand), global::Reachy.Part.Hand.Hand.Parser, new[]{ "PartId", "Info" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.Part.Hand.HandType), typeof(global::Reachy.Part.Hand.SpeedLimit), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Hand.Hand), global::Reachy.Part.Hand.Hand.Parser, new[]{ "PartId", "Type", "Info" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Hand.ListOfHand), global::Reachy.Part.Hand.ListOfHand.Parser, new[]{ "Hand" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Hand.HandState), global::Reachy.Part.Hand.HandState.Parser, new[]{ "Opening", "Force", "HoldingObject", "JointsLimits", "Temperatures", "PresentPosition", "GoalPosition", "Compliant" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Hand.HandStatus), global::Reachy.Part.Hand.HandStatus.Parser, new[]{ "Errors" }, null, null, null, null),
@@ -113,6 +115,11 @@ namespace Reachy.Part.Hand {
 
   }
   #region Enums
+  public enum HandType {
+    [pbr::OriginalName("NO_TYPE")] NoType = 0,
+    [pbr::OriginalName("PARALLEL_GRIPPER")] ParallelGripper = 1,
+  }
+
   public enum SpeedLimit {
     [pbr::OriginalName("NO_LIMIT")] NoLimit = 0,
     [pbr::OriginalName("FAST")] Fast = 1,
@@ -158,6 +165,7 @@ namespace Reachy.Part.Hand {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Hand(Hand other) : this() {
       partId_ = other.partId_ != null ? other.partId_.Clone() : null;
+      type_ = other.type_;
       info_ = other.info_ != null ? other.info_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -177,6 +185,18 @@ namespace Reachy.Part.Hand {
       get { return partId_; }
       set {
         partId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "type" field.</summary>
+    public const int TypeFieldNumber = 2;
+    private global::Reachy.Part.Hand.HandType type_ = global::Reachy.Part.Hand.HandType.NoType;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Hand.HandType Type {
+      get { return type_; }
+      set {
+        type_ = value;
       }
     }
 
@@ -208,6 +228,7 @@ namespace Reachy.Part.Hand {
         return true;
       }
       if (!object.Equals(PartId, other.PartId)) return false;
+      if (Type != other.Type) return false;
       if (!object.Equals(Info, other.Info)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -217,6 +238,7 @@ namespace Reachy.Part.Hand {
     public override int GetHashCode() {
       int hash = 1;
       if (partId_ != null) hash ^= PartId.GetHashCode();
+      if (Type != global::Reachy.Part.Hand.HandType.NoType) hash ^= Type.GetHashCode();
       if (info_ != null) hash ^= Info.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -240,6 +262,10 @@ namespace Reachy.Part.Hand {
         output.WriteRawTag(10);
         output.WriteMessage(PartId);
       }
+      if (Type != global::Reachy.Part.Hand.HandType.NoType) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Type);
+      }
       if (info_ != null) {
         output.WriteRawTag(42);
         output.WriteMessage(Info);
@@ -258,6 +284,10 @@ namespace Reachy.Part.Hand {
         output.WriteRawTag(10);
         output.WriteMessage(PartId);
       }
+      if (Type != global::Reachy.Part.Hand.HandType.NoType) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Type);
+      }
       if (info_ != null) {
         output.WriteRawTag(42);
         output.WriteMessage(Info);
@@ -274,6 +304,9 @@ namespace Reachy.Part.Hand {
       int size = 0;
       if (partId_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PartId);
+      }
+      if (Type != global::Reachy.Part.Hand.HandType.NoType) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (info_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Info);
@@ -295,6 +328,9 @@ namespace Reachy.Part.Hand {
           PartId = new global::Reachy.Part.PartId();
         }
         PartId.MergeFrom(other.PartId);
+      }
+      if (other.Type != global::Reachy.Part.Hand.HandType.NoType) {
+        Type = other.Type;
       }
       if (other.info_ != null) {
         if (info_ == null) {
@@ -324,6 +360,10 @@ namespace Reachy.Part.Hand {
             input.ReadMessage(PartId);
             break;
           }
+          case 16: {
+            Type = (global::Reachy.Part.Hand.HandType) input.ReadEnum();
+            break;
+          }
           case 42: {
             if (info_ == null) {
               Info = new global::Reachy.Part.PartInfo();
@@ -351,6 +391,10 @@ namespace Reachy.Part.Hand {
               PartId = new global::Reachy.Part.PartId();
             }
             input.ReadMessage(PartId);
+            break;
+          }
+          case 16: {
+            Type = (global::Reachy.Part.Hand.HandType) input.ReadEnum();
             break;
           }
           case 42: {
