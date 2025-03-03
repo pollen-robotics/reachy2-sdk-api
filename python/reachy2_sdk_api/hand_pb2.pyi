@@ -263,6 +263,27 @@ class HandPositionRequest(google.protobuf.message.Message):
 global___HandPositionRequest = HandPositionRequest
 
 @typing_extensions.final
+class HandJointGoal(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    GOAL_REQUEST_FIELD_NUMBER: builtins.int
+    DURATION_FIELD_NUMBER: builtins.int
+    @property
+    def goal_request(self) -> global___HandPositionRequest: ...
+    @property
+    def duration(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    def __init__(
+        self,
+        *,
+        goal_request: global___HandPositionRequest | None = ...,
+        duration: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["duration", b"duration", "goal_request", b"goal_request"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["duration", b"duration", "goal_request", b"goal_request"]) -> None: ...
+
+global___HandJointGoal = HandJointGoal
+
+@typing_extensions.final
 class Temperatures(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
