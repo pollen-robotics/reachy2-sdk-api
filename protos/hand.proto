@@ -71,6 +71,11 @@ message HandPositionRequest {
     HandPosition position = 2;
 }
 
+message HandJointGoal {
+    HandPositionRequest goal_request = 1;
+    google.protobuf.FloatValue duration = 2;
+}
+
 message Temperatures {
     float motor = 1;
     float driver = 2;
