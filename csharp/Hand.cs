@@ -52,40 +52,42 @@ namespace Reachy.Part.Hand {
             "X2dyaXBwZXIYASABKAsyKS5yZWFjaHkucGFydC5oYW5kLlBhcmFsbGVsR3Jp",
             "cHBlclBvc2l0aW9uSABCCgoIcG9zaXRpb24iaAoTSGFuZFBvc2l0aW9uUmVx",
             "dWVzdBIfCgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBIwCghwb3Np",
-            "dGlvbhgCIAEoCzIeLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFBvc2l0aW9uIi0K",
-            "DFRlbXBlcmF0dXJlcxINCgVtb3RvchgBIAEoAhIOCgZkcml2ZXIYAiABKAIi",
-            "UQoaUGFyYWxsZWxHcmlwcGVyVGVtcGVyYXR1cmUSMwoLdGVtcGVyYXR1cmUY",
-            "ASABKAsyHi5yZWFjaHkucGFydC5oYW5kLlRlbXBlcmF0dXJlcyJeChBIYW5k",
-            "VGVtcGVyYXR1cmVzEjoKEHBhcmFsbGVsX2dyaXBwZXIYASABKAsyHi5yZWFj",
-            "aHkucGFydC5oYW5kLlRlbXBlcmF0dXJlc0gAQg4KDHRlbXBlcmF0dXJlcyJh",
-            "ChFTcGVlZExpbWl0UmVxdWVzdBIfCgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0",
-            "LlBhcnRJZBIrCgVsaW1pdBgCIAEoDjIcLnJlYWNoeS5wYXJ0LmhhbmQuU3Bl",
-            "ZWRMaW1pdCo6CgpTcGVlZExpbWl0EgwKCE5PX0xJTUlUEAASCAoERkFTVBAB",
-            "EgoKBk5PUk1BTBACEggKBFNMT1cQAzKaCAoLSGFuZFNlcnZpY2USQwoLR2V0",
-            "QWxsSGFuZHMSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaHC5yZWFjaHkucGFy",
-            "dC5oYW5kLkxpc3RPZkhhbmQSPAoIR2V0U3RhdGUSEy5yZWFjaHkucGFydC5Q",
-            "YXJ0SWQaGy5yZWFjaHkucGFydC5oYW5kLkhhbmRTdGF0ZRI3CghPcGVuSGFu",
-            "ZBITLnJlYWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0",
-            "eRI4CglDbG9zZUhhbmQSEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5nb29nbGUu",
-            "cHJvdG9idWYuRW1wdHkSOgoFQXVkaXQSEy5yZWFjaHkucGFydC5QYXJ0SWQa",
-            "HC5yZWFjaHkucGFydC5oYW5kLkhhbmRTdGF0dXMSOAoJSGVhcnRCZWF0EhMu",
-            "cmVhY2h5LnBhcnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EjYK",
-            "B1Jlc3RhcnQSEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5nb29nbGUucHJvdG9i",
-            "dWYuRW1wdHkSQQoSUmVzZXREZWZhdWx0VmFsdWVzEhMucmVhY2h5LnBhcnQu",
-            "UGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EjUKBlR1cm5PbhITLnJl",
-            "YWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRI2CgdU",
-            "dXJuT2ZmEhMucmVhY2h5LnBhcnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVm",
-            "LkVtcHR5EkQKDUdldEpvaW50TGltaXQSEy5yZWFjaHkucGFydC5QYXJ0SWQa",
-            "Hi5yZWFjaHkucGFydC5oYW5kLkpvaW50c0xpbWl0cxJJCg5HZXRUZW1wZXJh",
-            "dHVyZRITLnJlYWNoeS5wYXJ0LlBhcnRJZBoiLnJlYWNoeS5wYXJ0LmhhbmQu",
-            "SGFuZFRlbXBlcmF0dXJlcxJKChNHZXRIYW5kR29hbFBvc2l0aW9uEhMucmVh",
-            "Y2h5LnBhcnQuUGFydElkGh4ucmVhY2h5LnBhcnQuaGFuZC5IYW5kUG9zaXRp",
-            "b24STAoNU2V0U3BlZWRMaW1pdBIjLnJlYWNoeS5wYXJ0LmhhbmQuU3BlZWRM",
-            "aW1pdFJlcXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSUAoPU2V0SGFu",
-            "ZFBvc2l0aW9uEiUucmVhY2h5LnBhcnQuaGFuZC5IYW5kUG9zaXRpb25SZXF1",
-            "ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EjgKCEdldEZvcmNlEhMucmVh",
-            "Y2h5LnBhcnQuUGFydElkGhcucmVhY2h5LnBhcnQuaGFuZC5Gb3JjZWIGcHJv",
-            "dG8z"));
+            "dGlvbhgCIAEoCzIeLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFBvc2l0aW9uInsK",
+            "DUhhbmRKb2ludEdvYWwSOwoMZ29hbF9yZXF1ZXN0GAEgASgLMiUucmVhY2h5",
+            "LnBhcnQuaGFuZC5IYW5kUG9zaXRpb25SZXF1ZXN0Ei0KCGR1cmF0aW9uGAIg",
+            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUiLQoMVGVtcGVyYXR1",
+            "cmVzEg0KBW1vdG9yGAEgASgCEg4KBmRyaXZlchgCIAEoAiJRChpQYXJhbGxl",
+            "bEdyaXBwZXJUZW1wZXJhdHVyZRIzCgt0ZW1wZXJhdHVyZRgBIAEoCzIeLnJl",
+            "YWNoeS5wYXJ0LmhhbmQuVGVtcGVyYXR1cmVzIl4KEEhhbmRUZW1wZXJhdHVy",
+            "ZXMSOgoQcGFyYWxsZWxfZ3JpcHBlchgBIAEoCzIeLnJlYWNoeS5wYXJ0Lmhh",
+            "bmQuVGVtcGVyYXR1cmVzSABCDgoMdGVtcGVyYXR1cmVzImEKEVNwZWVkTGlt",
+            "aXRSZXF1ZXN0Eh8KAmlkGAEgASgLMhMucmVhY2h5LnBhcnQuUGFydElkEisK",
+            "BWxpbWl0GAIgASgOMhwucmVhY2h5LnBhcnQuaGFuZC5TcGVlZExpbWl0KjoK",
+            "ClNwZWVkTGltaXQSDAoITk9fTElNSVQQABIICgRGQVNUEAESCgoGTk9STUFM",
+            "EAISCAoEU0xPVxADMpoICgtIYW5kU2VydmljZRJDCgtHZXRBbGxIYW5kcxIW",
+            "Lmdvb2dsZS5wcm90b2J1Zi5FbXB0eRocLnJlYWNoeS5wYXJ0LmhhbmQuTGlz",
+            "dE9mSGFuZBI8CghHZXRTdGF0ZRITLnJlYWNoeS5wYXJ0LlBhcnRJZBobLnJl",
+            "YWNoeS5wYXJ0LmhhbmQuSGFuZFN0YXRlEjcKCE9wZW5IYW5kEhMucmVhY2h5",
+            "LnBhcnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EjgKCUNsb3Nl",
+            "SGFuZBITLnJlYWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5F",
+            "bXB0eRI6CgVBdWRpdBITLnJlYWNoeS5wYXJ0LlBhcnRJZBocLnJlYWNoeS5w",
+            "YXJ0LmhhbmQuSGFuZFN0YXR1cxI4CglIZWFydEJlYXQSEy5yZWFjaHkucGFy",
+            "dC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSNgoHUmVzdGFydBIT",
+            "LnJlYWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJB",
+            "ChJSZXNldERlZmF1bHRWYWx1ZXMSEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5n",
+            "b29nbGUucHJvdG9idWYuRW1wdHkSNQoGVHVybk9uEhMucmVhY2h5LnBhcnQu",
+            "UGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EjYKB1R1cm5PZmYSEy5y",
+            "ZWFjaHkucGFydC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSRAoN",
+            "R2V0Sm9pbnRMaW1pdBITLnJlYWNoeS5wYXJ0LlBhcnRJZBoeLnJlYWNoeS5w",
+            "YXJ0LmhhbmQuSm9pbnRzTGltaXRzEkkKDkdldFRlbXBlcmF0dXJlEhMucmVh",
+            "Y2h5LnBhcnQuUGFydElkGiIucmVhY2h5LnBhcnQuaGFuZC5IYW5kVGVtcGVy",
+            "YXR1cmVzEkoKE0dldEhhbmRHb2FsUG9zaXRpb24SEy5yZWFjaHkucGFydC5Q",
+            "YXJ0SWQaHi5yZWFjaHkucGFydC5oYW5kLkhhbmRQb3NpdGlvbhJMCg1TZXRT",
+            "cGVlZExpbWl0EiMucmVhY2h5LnBhcnQuaGFuZC5TcGVlZExpbWl0UmVxdWVz",
+            "dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJQCg9TZXRIYW5kUG9zaXRpb24S",
+            "JS5yZWFjaHkucGFydC5oYW5kLkhhbmRQb3NpdGlvblJlcXVlc3QaFi5nb29n",
+            "bGUucHJvdG9idWYuRW1wdHkSOAoIR2V0Rm9yY2USEy5yZWFjaHkucGFydC5Q",
+            "YXJ0SWQaFy5yZWFjaHkucGFydC5oYW5kLkZvcmNlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Error.ErrorReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.Part.Hand.SpeedLimit), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -100,6 +102,7 @@ namespace Reachy.Part.Hand {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Hand.ParallelGripperPosition), global::Reachy.Part.Hand.ParallelGripperPosition.Parser, new[]{ "OpeningPercentage", "Position" }, new[]{ "GripperPosition" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Hand.HandPosition), global::Reachy.Part.Hand.HandPosition.Parser, new[]{ "ParallelGripper" }, new[]{ "Position" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Hand.HandPositionRequest), global::Reachy.Part.Hand.HandPositionRequest.Parser, new[]{ "Id", "Position" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Hand.HandJointGoal), global::Reachy.Part.Hand.HandJointGoal.Parser, new[]{ "GoalRequest", "Duration" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Hand.Temperatures), global::Reachy.Part.Hand.Temperatures.Parser, new[]{ "Motor", "Driver" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Hand.ParallelGripperTemperature), global::Reachy.Part.Hand.ParallelGripperTemperature.Parser, new[]{ "Temperature" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Hand.HandTemperatures), global::Reachy.Part.Hand.HandTemperatures.Parser, new[]{ "ParallelGripper" }, new[]{ "Temperatures" }, null, null, null),
@@ -2777,6 +2780,249 @@ namespace Reachy.Part.Hand {
 
   }
 
+  public sealed partial class HandJointGoal : pb::IMessage<HandJointGoal>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<HandJointGoal> _parser = new pb::MessageParser<HandJointGoal>(() => new HandJointGoal());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<HandJointGoal> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Reachy.Part.Hand.HandReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public HandJointGoal() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public HandJointGoal(HandJointGoal other) : this() {
+      goalRequest_ = other.goalRequest_ != null ? other.goalRequest_.Clone() : null;
+      Duration = other.Duration;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public HandJointGoal Clone() {
+      return new HandJointGoal(this);
+    }
+
+    /// <summary>Field number for the "goal_request" field.</summary>
+    public const int GoalRequestFieldNumber = 1;
+    private global::Reachy.Part.Hand.HandPositionRequest goalRequest_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Hand.HandPositionRequest GoalRequest {
+      get { return goalRequest_; }
+      set {
+        goalRequest_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "duration" field.</summary>
+    public const int DurationFieldNumber = 2;
+    private static readonly pb::FieldCodec<float?> _single_duration_codec = pb::FieldCodec.ForStructWrapper<float>(18);
+    private float? duration_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float? Duration {
+      get { return duration_; }
+      set {
+        duration_ = value;
+      }
+    }
+
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as HandJointGoal);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(HandJointGoal other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(GoalRequest, other.GoalRequest)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(Duration, other.Duration)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (goalRequest_ != null) hash ^= GoalRequest.GetHashCode();
+      if (duration_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Duration);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (goalRequest_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(GoalRequest);
+      }
+      if (duration_ != null) {
+        _single_duration_codec.WriteTagAndValue(output, Duration);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (goalRequest_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(GoalRequest);
+      }
+      if (duration_ != null) {
+        _single_duration_codec.WriteTagAndValue(ref output, Duration);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (goalRequest_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GoalRequest);
+      }
+      if (duration_ != null) {
+        size += _single_duration_codec.CalculateSizeWithTag(Duration);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(HandJointGoal other) {
+      if (other == null) {
+        return;
+      }
+      if (other.goalRequest_ != null) {
+        if (goalRequest_ == null) {
+          GoalRequest = new global::Reachy.Part.Hand.HandPositionRequest();
+        }
+        GoalRequest.MergeFrom(other.GoalRequest);
+      }
+      if (other.duration_ != null) {
+        if (duration_ == null || other.Duration != 0F) {
+          Duration = other.Duration;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (goalRequest_ == null) {
+              GoalRequest = new global::Reachy.Part.Hand.HandPositionRequest();
+            }
+            input.ReadMessage(GoalRequest);
+            break;
+          }
+          case 18: {
+            float? value = _single_duration_codec.Read(input);
+            if (duration_ == null || value != 0F) {
+              Duration = value;
+            }
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (goalRequest_ == null) {
+              GoalRequest = new global::Reachy.Part.Hand.HandPositionRequest();
+            }
+            input.ReadMessage(GoalRequest);
+            break;
+          }
+          case 18: {
+            float? value = _single_duration_codec.Read(ref input);
+            if (duration_ == null || value != 0F) {
+              Duration = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class Temperatures : pb::IMessage<Temperatures>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2791,7 +3037,7 @@ namespace Reachy.Part.Hand {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Hand.HandReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Reachy.Part.Hand.HandReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3017,7 +3263,7 @@ namespace Reachy.Part.Hand {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Hand.HandReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Reachy.Part.Hand.HandReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3215,7 +3461,7 @@ namespace Reachy.Part.Hand {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Hand.HandReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Reachy.Part.Hand.HandReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3447,7 +3693,7 @@ namespace Reachy.Part.Hand {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Hand.HandReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Reachy.Part.Hand.HandReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
