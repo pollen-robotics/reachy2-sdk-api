@@ -10,6 +10,7 @@ import google.protobuf.internal.containers
 import google.protobuf.internal.enum_type_wrapper
 import google.protobuf.message
 import google.protobuf.wrappers_pb2
+import hand_pb2
 import head_pb2
 import mobile_base_mobility_pb2
 import part_pb2
@@ -186,6 +187,7 @@ class JointsGoal(google.protobuf.message.Message):
     NECK_JOINT_GOAL_FIELD_NUMBER: builtins.int
     CUSTOM_JOINT_GOAL_FIELD_NUMBER: builtins.int
     ANTENNA_JOINT_GOAL_FIELD_NUMBER: builtins.int
+    HAND_JOINT_GOAL_FIELD_NUMBER: builtins.int
     @property
     def arm_joint_goal(self) -> arm_pb2.ArmJointGoal: ...
     @property
@@ -194,6 +196,8 @@ class JointsGoal(google.protobuf.message.Message):
     def custom_joint_goal(self) -> global___CustomJointGoal: ...
     @property
     def antenna_joint_goal(self) -> head_pb2.AntennaJointGoal: ...
+    @property
+    def hand_joint_goal(self) -> hand_pb2.HandPositionRequest: ...
     def __init__(
         self,
         *,
@@ -201,10 +205,11 @@ class JointsGoal(google.protobuf.message.Message):
         neck_joint_goal: head_pb2.NeckJointGoal | None = ...,
         custom_joint_goal: global___CustomJointGoal | None = ...,
         antenna_joint_goal: head_pb2.AntennaJointGoal | None = ...,
+        hand_joint_goal: hand_pb2.HandPositionRequest | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["antenna_joint_goal", b"antenna_joint_goal", "arm_joint_goal", b"arm_joint_goal", "custom_joint_goal", b"custom_joint_goal", "joints_goal", b"joints_goal", "neck_joint_goal", b"neck_joint_goal"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["antenna_joint_goal", b"antenna_joint_goal", "arm_joint_goal", b"arm_joint_goal", "custom_joint_goal", b"custom_joint_goal", "joints_goal", b"joints_goal", "neck_joint_goal", b"neck_joint_goal"]) -> None: ...
-    def WhichOneof(self, oneof_group: typing_extensions.Literal["joints_goal", b"joints_goal"]) -> typing_extensions.Literal["arm_joint_goal", "neck_joint_goal", "custom_joint_goal", "antenna_joint_goal"] | None: ...
+    def HasField(self, field_name: typing_extensions.Literal["antenna_joint_goal", b"antenna_joint_goal", "arm_joint_goal", b"arm_joint_goal", "custom_joint_goal", b"custom_joint_goal", "hand_joint_goal", b"hand_joint_goal", "joints_goal", b"joints_goal", "neck_joint_goal", b"neck_joint_goal"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["antenna_joint_goal", b"antenna_joint_goal", "arm_joint_goal", b"arm_joint_goal", "custom_joint_goal", b"custom_joint_goal", "hand_joint_goal", b"hand_joint_goal", "joints_goal", b"joints_goal", "neck_joint_goal", b"neck_joint_goal"]) -> None: ...
+    def WhichOneof(self, oneof_group: typing_extensions.Literal["joints_goal", b"joints_goal"]) -> typing_extensions.Literal["arm_joint_goal", "neck_joint_goal", "custom_joint_goal", "antenna_joint_goal", "hand_joint_goal"] | None: ...
 
 global___JointsGoal = JointsGoal
 
