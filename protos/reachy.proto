@@ -21,7 +21,7 @@ message Reachy {
 
     reachy.part.mobile.base.utility.MobileBase mobile_base = 7;
 
-    reachy.part.tripod tripod = 8;
+    reachy.part.tripod.Tripod tripod = 8;
 
     ReachyInfo info = 20;
 }
