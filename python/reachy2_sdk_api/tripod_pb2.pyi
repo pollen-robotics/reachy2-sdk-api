@@ -3,8 +3,11 @@
 isort:skip_file
 """
 import builtins
+import collections.abc
 import component_pb2
+import error_pb2
 import google.protobuf.descriptor
+import google.protobuf.internal.containers
 import google.protobuf.internal.enum_type_wrapper
 import google.protobuf.message
 import google.protobuf.wrappers_pb2
@@ -134,6 +137,27 @@ class TripodState(google.protobuf.message.Message):
     def ClearField(self, field_name: typing_extensions.Literal["height", b"height", "part_id", b"part_id"]) -> None: ...
 
 global___TripodState = TripodState
+
+@typing_extensions.final
+class TripodStatus(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    PART_ID_FIELD_NUMBER: builtins.int
+    ERRORS_FIELD_NUMBER: builtins.int
+    @property
+    def part_id(self) -> part_pb2.PartId: ...
+    @property
+    def errors(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[error_pb2.Error]: ...
+    def __init__(
+        self,
+        *,
+        part_id: part_pb2.PartId | None = ...,
+        errors: collections.abc.Iterable[error_pb2.Error] | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["part_id", b"part_id"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["errors", b"errors", "part_id", b"part_id"]) -> None: ...
+
+global___TripodStatus = TripodStatus
 
 @typing_extensions.final
 class TripodCommand(google.protobuf.message.Message):
