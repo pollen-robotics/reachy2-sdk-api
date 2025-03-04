@@ -28,7 +28,9 @@ message TripodJoint {
 
 message TripodJointState {
     TripodJoint joint = 1;
-    google.protobuf.FloatValue position = 2;
+
+    google.protobuf.FloatValue present_position = 2;
+    google.protobuf.FloatValue goal_position = 3;
 }
 
 message TripodState {
