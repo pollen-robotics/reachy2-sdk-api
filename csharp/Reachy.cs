@@ -27,57 +27,61 @@ namespace Reachy {
             "CgxyZWFjaHkucHJvdG8SBnJlYWNoeRobZ29vZ2xlL3Byb3RvYnVmL2VtcHR5",
             "LnByb3RvGh9nb29nbGUvcHJvdG9idWYvdGltZXN0YW1wLnByb3RvGglhcm0u",
             "cHJvdG8aCmhlYWQucHJvdG8aCmhhbmQucHJvdG8aGW1vYmlsZV9iYXNlX3V0",
-            "aWxpdHkucHJvdG8iygIKBlJlYWNoeRIcCgJpZBgBIAEoCzIQLnJlYWNoeS5S",
-            "ZWFjaHlJZBIjCgVsX2FybRgCIAEoCzIULnJlYWNoeS5wYXJ0LmFybS5Bcm0S",
-            "IwoFcl9hcm0YAyABKAsyFC5yZWFjaHkucGFydC5hcm0uQXJtEiQKBGhlYWQY",
-            "BCABKAsyFi5yZWFjaHkucGFydC5oZWFkLkhlYWQSJgoGbF9oYW5kGAUgASgL",
-            "MhYucmVhY2h5LnBhcnQuaGFuZC5IYW5kEiYKBnJfaGFuZBgGIAEoCzIWLnJl",
-            "YWNoeS5wYXJ0LmhhbmQuSGFuZBJACgttb2JpbGVfYmFzZRgHIAEoCzIrLnJl",
-            "YWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLnV0aWxpdHkuTW9iaWxlQmFzZRIgCgRp",
-            "bmZvGBQgASgLMhIucmVhY2h5LlJlYWNoeUluZm8iJAoIUmVhY2h5SWQSCgoC",
-            "aWQYASABKA0SDAoEbmFtZRgCIAEoCSJ6CgpSZWFjaHlJbmZvEhUKDXNlcmlh",
-            "bF9udW1iZXIYASABKAkSFAoMdmVyc2lvbl9oYXJkGAIgASgJEhQKDHZlcnNp",
-            "b25fc29mdBgDIAEoCRIpCgljb3JlX21vZGUYBCABKA4yFi5yZWFjaHkuUmVh",
-            "Y2h5Q29yZU1vZGUingMKC1JlYWNoeVN0YXRlEi0KCXRpbWVzdGFtcBgBIAEo",
-            "CzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASHAoCaWQYAiABKAsyEC5y",
-            "ZWFjaHkuUmVhY2h5SWQSLgoLbF9hcm1fc3RhdGUYAyABKAsyGS5yZWFjaHku",
-            "cGFydC5hcm0uQXJtU3RhdGUSLgoLcl9hcm1fc3RhdGUYBCABKAsyGS5yZWFj",
-            "aHkucGFydC5hcm0uQXJtU3RhdGUSLwoKaGVhZF9zdGF0ZRgFIAEoCzIbLnJl",
-            "YWNoeS5wYXJ0LmhlYWQuSGVhZFN0YXRlEjEKDGxfaGFuZF9zdGF0ZRgGIAEo",
-            "CzIbLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFN0YXRlEjEKDHJfaGFuZF9zdGF0",
-            "ZRgHIAEoCzIbLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFN0YXRlEksKEW1vYmls",
-            "ZV9iYXNlX3N0YXRlGAggASgLMjAucmVhY2h5LnBhcnQubW9iaWxlLmJhc2Uu",
-            "dXRpbGl0eS5Nb2JpbGVCYXNlU3RhdGUiqwMKDFJlYWNoeVN0YXR1cxItCgl0",
+            "aWxpdHkucHJvdG8aDHRyaXBvZC5wcm90byL2AgoGUmVhY2h5EhwKAmlkGAEg",
+            "ASgLMhAucmVhY2h5LlJlYWNoeUlkEiMKBWxfYXJtGAIgASgLMhQucmVhY2h5",
+            "LnBhcnQuYXJtLkFybRIjCgVyX2FybRgDIAEoCzIULnJlYWNoeS5wYXJ0LmFy",
+            "bS5Bcm0SJAoEaGVhZBgEIAEoCzIWLnJlYWNoeS5wYXJ0LmhlYWQuSGVhZBIm",
+            "CgZsX2hhbmQYBSABKAsyFi5yZWFjaHkucGFydC5oYW5kLkhhbmQSJgoGcl9o",
+            "YW5kGAYgASgLMhYucmVhY2h5LnBhcnQuaGFuZC5IYW5kEkAKC21vYmlsZV9i",
+            "YXNlGAcgASgLMisucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0eS5N",
+            "b2JpbGVCYXNlEioKBnRyaXBvZBgIIAEoCzIaLnJlYWNoeS5wYXJ0LnRyaXBv",
+            "ZC5Ucmlwb2QSIAoEaW5mbxgUIAEoCzISLnJlYWNoeS5SZWFjaHlJbmZvIiQK",
+            "CFJlYWNoeUlkEgoKAmlkGAEgASgNEgwKBG5hbWUYAiABKAkiegoKUmVhY2h5",
+            "SW5mbxIVCg1zZXJpYWxfbnVtYmVyGAEgASgJEhQKDHZlcnNpb25faGFyZBgC",
+            "IAEoCRIUCgx2ZXJzaW9uX3NvZnQYAyABKAkSKQoJY29yZV9tb2RlGAQgASgO",
+            "MhYucmVhY2h5LlJlYWNoeUNvcmVNb2RlItUDCgtSZWFjaHlTdGF0ZRItCgl0",
             "aW1lc3RhbXAYASABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEhwK",
-            "AmlkGAIgASgLMhAucmVhY2h5LlJlYWNoeUlkEjAKDGxfYXJtX3N0YXR1cxgD",
-            "IAEoCzIaLnJlYWNoeS5wYXJ0LmFybS5Bcm1TdGF0dXMSMAoMcl9hcm1fc3Rh",
-            "dHVzGAQgASgLMhoucmVhY2h5LnBhcnQuYXJtLkFybVN0YXR1cxIxCgtoZWFk",
-            "X3N0YXR1cxgFIAEoCzIcLnJlYWNoeS5wYXJ0LmhlYWQuSGVhZFN0YXR1cxIz",
-            "Cg1sX2hhbmRfc3RhdHVzGAYgASgLMhwucmVhY2h5LnBhcnQuaGFuZC5IYW5k",
-            "U3RhdHVzEjMKDXJfaGFuZF9zdGF0dXMYByABKAsyHC5yZWFjaHkucGFydC5o",
-            "YW5kLkhhbmRTdGF0dXMSTQoSbW9iaWxlX2Jhc2Vfc3RhdHVzGAggASgLMjEu",
-            "cmVhY2h5LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0eS5Nb2JpbGVCYXNlU3Rh",
-            "dHVzIlMKGFJlYWNoeVN0cmVhbVN0YXRlUmVxdWVzdBIcCgJpZBgBIAEoCzIQ",
-            "LnJlYWNoeS5SZWFjaHlJZBIZChFwdWJsaXNoX2ZyZXF1ZW5jeRgCIAEoAiJT",
-            "ChhSZWFjaHlTdHJlYW1BdWRpdFJlcXVlc3QSHAoCaWQYASABKAsyEC5yZWFj",
-            "aHkuUmVhY2h5SWQSGQoRcHVibGlzaF9mcmVxdWVuY3kYAiABKAIqOgoOUmVh",
-            "Y2h5Q29yZU1vZGUSCAoETk9ORRAAEggKBEZBS0UQARIICgRSRUFMEAISCgoG",
-            "R0FaRUJPEAMyxQIKDVJlYWNoeVNlcnZpY2USMwoJR2V0UmVhY2h5EhYuZ29v",
-            "Z2xlLnByb3RvYnVmLkVtcHR5Gg4ucmVhY2h5LlJlYWNoeRI3Cg5HZXRSZWFj",
-            "aHlTdGF0ZRIQLnJlYWNoeS5SZWFjaHlJZBoTLnJlYWNoeS5SZWFjaHlTdGF0",
-            "ZRJMChFTdHJlYW1SZWFjaHlTdGF0ZRIgLnJlYWNoeS5SZWFjaHlTdHJlYW1T",
-            "dGF0ZVJlcXVlc3QaEy5yZWFjaHkuUmVhY2h5U3RhdGUwARIvCgVBdWRpdBIQ",
-            "LnJlYWNoeS5SZWFjaHlJZBoULnJlYWNoeS5SZWFjaHlTdGF0dXMSRwoLU3Ry",
-            "ZWFtQXVkaXQSIC5yZWFjaHkuUmVhY2h5U3RyZWFtQXVkaXRSZXF1ZXN0GhQu",
-            "cmVhY2h5LlJlYWNoeVN0YXR1czABYgZwcm90bzM="));
+            "AmlkGAIgASgLMhAucmVhY2h5LlJlYWNoeUlkEi4KC2xfYXJtX3N0YXRlGAMg",
+            "ASgLMhkucmVhY2h5LnBhcnQuYXJtLkFybVN0YXRlEi4KC3JfYXJtX3N0YXRl",
+            "GAQgASgLMhkucmVhY2h5LnBhcnQuYXJtLkFybVN0YXRlEi8KCmhlYWRfc3Rh",
+            "dGUYBSABKAsyGy5yZWFjaHkucGFydC5oZWFkLkhlYWRTdGF0ZRIxCgxsX2hh",
+            "bmRfc3RhdGUYBiABKAsyGy5yZWFjaHkucGFydC5oYW5kLkhhbmRTdGF0ZRIx",
+            "CgxyX2hhbmRfc3RhdGUYByABKAsyGy5yZWFjaHkucGFydC5oYW5kLkhhbmRT",
+            "dGF0ZRJLChFtb2JpbGVfYmFzZV9zdGF0ZRgIIAEoCzIwLnJlYWNoeS5wYXJ0",
+            "Lm1vYmlsZS5iYXNlLnV0aWxpdHkuTW9iaWxlQmFzZVN0YXRlEjUKDHRyaXBv",
+            "ZF9zdGF0ZRgJIAEoCzIfLnJlYWNoeS5wYXJ0LnRyaXBvZC5Ucmlwb2RTdGF0",
+            "ZSLkAwoMUmVhY2h5U3RhdHVzEi0KCXRpbWVzdGFtcBgBIAEoCzIaLmdvb2ds",
+            "ZS5wcm90b2J1Zi5UaW1lc3RhbXASHAoCaWQYAiABKAsyEC5yZWFjaHkuUmVh",
+            "Y2h5SWQSMAoMbF9hcm1fc3RhdHVzGAMgASgLMhoucmVhY2h5LnBhcnQuYXJt",
+            "LkFybVN0YXR1cxIwCgxyX2FybV9zdGF0dXMYBCABKAsyGi5yZWFjaHkucGFy",
+            "dC5hcm0uQXJtU3RhdHVzEjEKC2hlYWRfc3RhdHVzGAUgASgLMhwucmVhY2h5",
+            "LnBhcnQuaGVhZC5IZWFkU3RhdHVzEjMKDWxfaGFuZF9zdGF0dXMYBiABKAsy",
+            "HC5yZWFjaHkucGFydC5oYW5kLkhhbmRTdGF0dXMSMwoNcl9oYW5kX3N0YXR1",
+            "cxgHIAEoCzIcLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFN0YXR1cxJNChJtb2Jp",
+            "bGVfYmFzZV9zdGF0dXMYCCABKAsyMS5yZWFjaHkucGFydC5tb2JpbGUuYmFz",
+            "ZS51dGlsaXR5Lk1vYmlsZUJhc2VTdGF0dXMSNwoNdHJpcG9kX3N0YXR1cxgJ",
+            "IAEoCzIgLnJlYWNoeS5wYXJ0LnRyaXBvZC5Ucmlwb2RTdGF0dXMiUwoYUmVh",
+            "Y2h5U3RyZWFtU3RhdGVSZXF1ZXN0EhwKAmlkGAEgASgLMhAucmVhY2h5LlJl",
+            "YWNoeUlkEhkKEXB1Ymxpc2hfZnJlcXVlbmN5GAIgASgCIlMKGFJlYWNoeVN0",
+            "cmVhbUF1ZGl0UmVxdWVzdBIcCgJpZBgBIAEoCzIQLnJlYWNoeS5SZWFjaHlJ",
+            "ZBIZChFwdWJsaXNoX2ZyZXF1ZW5jeRgCIAEoAio6Cg5SZWFjaHlDb3JlTW9k",
+            "ZRIICgROT05FEAASCAoERkFLRRABEggKBFJFQUwQAhIKCgZHQVpFQk8QAzLF",
+            "AgoNUmVhY2h5U2VydmljZRIzCglHZXRSZWFjaHkSFi5nb29nbGUucHJvdG9i",
+            "dWYuRW1wdHkaDi5yZWFjaHkuUmVhY2h5EjcKDkdldFJlYWNoeVN0YXRlEhAu",
+            "cmVhY2h5LlJlYWNoeUlkGhMucmVhY2h5LlJlYWNoeVN0YXRlEkwKEVN0cmVh",
+            "bVJlYWNoeVN0YXRlEiAucmVhY2h5LlJlYWNoeVN0cmVhbVN0YXRlUmVxdWVz",
+            "dBoTLnJlYWNoeS5SZWFjaHlTdGF0ZTABEi8KBUF1ZGl0EhAucmVhY2h5LlJl",
+            "YWNoeUlkGhQucmVhY2h5LlJlYWNoeVN0YXR1cxJHCgtTdHJlYW1BdWRpdBIg",
+            "LnJlYWNoeS5SZWFjaHlTdHJlYW1BdWRpdFJlcXVlc3QaFC5yZWFjaHkuUmVh",
+            "Y2h5U3RhdHVzMAFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Reachy.Part.Mobile.Base.Utility.MobileBaseUtilityReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Reachy.Part.Mobile.Base.Utility.MobileBaseUtilityReflection.Descriptor, global::Reachy.Part.Tripod.TripodReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.ReachyCoreMode), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Reachy), global::Reachy.Reachy.Parser, new[]{ "Id", "LArm", "RArm", "Head", "LHand", "RHand", "MobileBase", "Info" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Reachy), global::Reachy.Reachy.Parser, new[]{ "Id", "LArm", "RArm", "Head", "LHand", "RHand", "MobileBase", "Tripod", "Info" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyId), global::Reachy.ReachyId.Parser, new[]{ "Id", "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyInfo), global::Reachy.ReachyInfo.Parser, new[]{ "SerialNumber", "VersionHard", "VersionSoft", "CoreMode" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyState), global::Reachy.ReachyState.Parser, new[]{ "Timestamp", "Id", "LArmState", "RArmState", "HeadState", "LHandState", "RHandState", "MobileBaseState" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStatus), global::Reachy.ReachyStatus.Parser, new[]{ "Timestamp", "Id", "LArmStatus", "RArmStatus", "HeadStatus", "LHandStatus", "RHandStatus", "MobileBaseStatus" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyState), global::Reachy.ReachyState.Parser, new[]{ "Timestamp", "Id", "LArmState", "RArmState", "HeadState", "LHandState", "RHandState", "MobileBaseState", "TripodState" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStatus), global::Reachy.ReachyStatus.Parser, new[]{ "Timestamp", "Id", "LArmStatus", "RArmStatus", "HeadStatus", "LHandStatus", "RHandStatus", "MobileBaseStatus", "TripodStatus" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStreamStateRequest), global::Reachy.ReachyStreamStateRequest.Parser, new[]{ "Id", "PublishFrequency" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStreamAuditRequest), global::Reachy.ReachyStreamAuditRequest.Parser, new[]{ "Id", "PublishFrequency" }, null, null, null, null)
           }));
@@ -137,6 +141,7 @@ namespace Reachy {
       lHand_ = other.lHand_ != null ? other.lHand_.Clone() : null;
       rHand_ = other.rHand_ != null ? other.rHand_.Clone() : null;
       mobileBase_ = other.mobileBase_ != null ? other.mobileBase_.Clone() : null;
+      tripod_ = other.tripod_ != null ? other.tripod_.Clone() : null;
       info_ = other.info_ != null ? other.info_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -231,6 +236,18 @@ namespace Reachy {
       }
     }
 
+    /// <summary>Field number for the "tripod" field.</summary>
+    public const int TripodFieldNumber = 8;
+    private global::Reachy.Part.Tripod.Tripod tripod_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Tripod.Tripod Tripod {
+      get { return tripod_; }
+      set {
+        tripod_ = value;
+      }
+    }
+
     /// <summary>Field number for the "info" field.</summary>
     public const int InfoFieldNumber = 20;
     private global::Reachy.ReachyInfo info_;
@@ -265,6 +282,7 @@ namespace Reachy {
       if (!object.Equals(LHand, other.LHand)) return false;
       if (!object.Equals(RHand, other.RHand)) return false;
       if (!object.Equals(MobileBase, other.MobileBase)) return false;
+      if (!object.Equals(Tripod, other.Tripod)) return false;
       if (!object.Equals(Info, other.Info)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -280,6 +298,7 @@ namespace Reachy {
       if (lHand_ != null) hash ^= LHand.GetHashCode();
       if (rHand_ != null) hash ^= RHand.GetHashCode();
       if (mobileBase_ != null) hash ^= MobileBase.GetHashCode();
+      if (tripod_ != null) hash ^= Tripod.GetHashCode();
       if (info_ != null) hash ^= Info.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -327,6 +346,10 @@ namespace Reachy {
         output.WriteRawTag(58);
         output.WriteMessage(MobileBase);
       }
+      if (tripod_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Tripod);
+      }
       if (info_ != null) {
         output.WriteRawTag(162, 1);
         output.WriteMessage(Info);
@@ -369,6 +392,10 @@ namespace Reachy {
         output.WriteRawTag(58);
         output.WriteMessage(MobileBase);
       }
+      if (tripod_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Tripod);
+      }
       if (info_ != null) {
         output.WriteRawTag(162, 1);
         output.WriteMessage(Info);
@@ -403,6 +430,9 @@ namespace Reachy {
       }
       if (mobileBase_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(MobileBase);
+      }
+      if (tripod_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Tripod);
       }
       if (info_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(Info);
@@ -460,6 +490,12 @@ namespace Reachy {
           MobileBase = new global::Reachy.Part.Mobile.Base.Utility.MobileBase();
         }
         MobileBase.MergeFrom(other.MobileBase);
+      }
+      if (other.tripod_ != null) {
+        if (tripod_ == null) {
+          Tripod = new global::Reachy.Part.Tripod.Tripod();
+        }
+        Tripod.MergeFrom(other.Tripod);
       }
       if (other.info_ != null) {
         if (info_ == null) {
@@ -531,6 +567,13 @@ namespace Reachy {
             input.ReadMessage(MobileBase);
             break;
           }
+          case 66: {
+            if (tripod_ == null) {
+              Tripod = new global::Reachy.Part.Tripod.Tripod();
+            }
+            input.ReadMessage(Tripod);
+            break;
+          }
           case 162: {
             if (info_ == null) {
               Info = new global::Reachy.ReachyInfo();
@@ -600,6 +643,13 @@ namespace Reachy {
               MobileBase = new global::Reachy.Part.Mobile.Base.Utility.MobileBase();
             }
             input.ReadMessage(MobileBase);
+            break;
+          }
+          case 66: {
+            if (tripod_ == null) {
+              Tripod = new global::Reachy.Part.Tripod.Tripod();
+            }
+            input.ReadMessage(Tripod);
             break;
           }
           case 162: {
@@ -1184,6 +1234,7 @@ namespace Reachy {
       lHandState_ = other.lHandState_ != null ? other.lHandState_.Clone() : null;
       rHandState_ = other.rHandState_ != null ? other.rHandState_.Clone() : null;
       mobileBaseState_ = other.mobileBaseState_ != null ? other.mobileBaseState_.Clone() : null;
+      tripodState_ = other.tripodState_ != null ? other.tripodState_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1289,6 +1340,18 @@ namespace Reachy {
       }
     }
 
+    /// <summary>Field number for the "tripod_state" field.</summary>
+    public const int TripodStateFieldNumber = 9;
+    private global::Reachy.Part.Tripod.TripodState tripodState_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Tripod.TripodState TripodState {
+      get { return tripodState_; }
+      set {
+        tripodState_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1312,6 +1375,7 @@ namespace Reachy {
       if (!object.Equals(LHandState, other.LHandState)) return false;
       if (!object.Equals(RHandState, other.RHandState)) return false;
       if (!object.Equals(MobileBaseState, other.MobileBaseState)) return false;
+      if (!object.Equals(TripodState, other.TripodState)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1327,6 +1391,7 @@ namespace Reachy {
       if (lHandState_ != null) hash ^= LHandState.GetHashCode();
       if (rHandState_ != null) hash ^= RHandState.GetHashCode();
       if (mobileBaseState_ != null) hash ^= MobileBaseState.GetHashCode();
+      if (tripodState_ != null) hash ^= TripodState.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1377,6 +1442,10 @@ namespace Reachy {
         output.WriteRawTag(66);
         output.WriteMessage(MobileBaseState);
       }
+      if (tripodState_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(TripodState);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1419,6 +1488,10 @@ namespace Reachy {
         output.WriteRawTag(66);
         output.WriteMessage(MobileBaseState);
       }
+      if (tripodState_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(TripodState);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1452,6 +1525,9 @@ namespace Reachy {
       }
       if (mobileBaseState_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(MobileBaseState);
+      }
+      if (tripodState_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TripodState);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1512,6 +1588,12 @@ namespace Reachy {
           MobileBaseState = new global::Reachy.Part.Mobile.Base.Utility.MobileBaseState();
         }
         MobileBaseState.MergeFrom(other.MobileBaseState);
+      }
+      if (other.tripodState_ != null) {
+        if (tripodState_ == null) {
+          TripodState = new global::Reachy.Part.Tripod.TripodState();
+        }
+        TripodState.MergeFrom(other.TripodState);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1582,6 +1664,13 @@ namespace Reachy {
               MobileBaseState = new global::Reachy.Part.Mobile.Base.Utility.MobileBaseState();
             }
             input.ReadMessage(MobileBaseState);
+            break;
+          }
+          case 74: {
+            if (tripodState_ == null) {
+              TripodState = new global::Reachy.Part.Tripod.TripodState();
+            }
+            input.ReadMessage(TripodState);
             break;
           }
         }
@@ -1655,6 +1744,13 @@ namespace Reachy {
             input.ReadMessage(MobileBaseState);
             break;
           }
+          case 74: {
+            if (tripodState_ == null) {
+              TripodState = new global::Reachy.Part.Tripod.TripodState();
+            }
+            input.ReadMessage(TripodState);
+            break;
+          }
         }
       }
     }
@@ -1704,6 +1800,7 @@ namespace Reachy {
       lHandStatus_ = other.lHandStatus_ != null ? other.lHandStatus_.Clone() : null;
       rHandStatus_ = other.rHandStatus_ != null ? other.rHandStatus_.Clone() : null;
       mobileBaseStatus_ = other.mobileBaseStatus_ != null ? other.mobileBaseStatus_.Clone() : null;
+      tripodStatus_ = other.tripodStatus_ != null ? other.tripodStatus_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1809,6 +1906,18 @@ namespace Reachy {
       }
     }
 
+    /// <summary>Field number for the "tripod_status" field.</summary>
+    public const int TripodStatusFieldNumber = 9;
+    private global::Reachy.Part.Tripod.TripodStatus tripodStatus_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Tripod.TripodStatus TripodStatus {
+      get { return tripodStatus_; }
+      set {
+        tripodStatus_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1832,6 +1941,7 @@ namespace Reachy {
       if (!object.Equals(LHandStatus, other.LHandStatus)) return false;
       if (!object.Equals(RHandStatus, other.RHandStatus)) return false;
       if (!object.Equals(MobileBaseStatus, other.MobileBaseStatus)) return false;
+      if (!object.Equals(TripodStatus, other.TripodStatus)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1847,6 +1957,7 @@ namespace Reachy {
       if (lHandStatus_ != null) hash ^= LHandStatus.GetHashCode();
       if (rHandStatus_ != null) hash ^= RHandStatus.GetHashCode();
       if (mobileBaseStatus_ != null) hash ^= MobileBaseStatus.GetHashCode();
+      if (tripodStatus_ != null) hash ^= TripodStatus.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1897,6 +2008,10 @@ namespace Reachy {
         output.WriteRawTag(66);
         output.WriteMessage(MobileBaseStatus);
       }
+      if (tripodStatus_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(TripodStatus);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1939,6 +2054,10 @@ namespace Reachy {
         output.WriteRawTag(66);
         output.WriteMessage(MobileBaseStatus);
       }
+      if (tripodStatus_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(TripodStatus);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1972,6 +2091,9 @@ namespace Reachy {
       }
       if (mobileBaseStatus_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(MobileBaseStatus);
+      }
+      if (tripodStatus_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TripodStatus);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2032,6 +2154,12 @@ namespace Reachy {
           MobileBaseStatus = new global::Reachy.Part.Mobile.Base.Utility.MobileBaseStatus();
         }
         MobileBaseStatus.MergeFrom(other.MobileBaseStatus);
+      }
+      if (other.tripodStatus_ != null) {
+        if (tripodStatus_ == null) {
+          TripodStatus = new global::Reachy.Part.Tripod.TripodStatus();
+        }
+        TripodStatus.MergeFrom(other.TripodStatus);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2104,6 +2232,13 @@ namespace Reachy {
             input.ReadMessage(MobileBaseStatus);
             break;
           }
+          case 74: {
+            if (tripodStatus_ == null) {
+              TripodStatus = new global::Reachy.Part.Tripod.TripodStatus();
+            }
+            input.ReadMessage(TripodStatus);
+            break;
+          }
         }
       }
     #endif
@@ -2173,6 +2308,13 @@ namespace Reachy {
               MobileBaseStatus = new global::Reachy.Part.Mobile.Base.Utility.MobileBaseStatus();
             }
             input.ReadMessage(MobileBaseStatus);
+            break;
+          }
+          case 74: {
+            if (tripodStatus_ == null) {
+              TripodStatus = new global::Reachy.Part.Tripod.TripodStatus();
+            }
+            input.ReadMessage(TripodStatus);
             break;
           }
         }

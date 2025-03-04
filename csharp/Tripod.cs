@@ -26,41 +26,44 @@ namespace Reachy.Part.Tripod {
           string.Concat(
             "Cgx0cmlwb2QucHJvdG8SEnJlYWNoeS5wYXJ0LnRyaXBvZBobZ29vZ2xlL3By",
             "b3RvYnVmL2VtcHR5LnByb3RvGh5nb29nbGUvcHJvdG9idWYvd3JhcHBlcnMu",
-            "cHJvdG8aD2NvbXBvbmVudC5wcm90bxoKcGFydC5wcm90byKPAQoGVHJpcG9k",
-            "EiQKB3BhcnRfaWQYASABKAsyEy5yZWFjaHkucGFydC5QYXJ0SWQSOgoLZGVz",
-            "Y3JpcHRpb24YAiABKAsyJS5yZWFjaHkucGFydC50cmlwb2QuVHJpcG9kRGVz",
-            "Y3JpcHRpb24SIwoEaW5mbxgFIAEoCzIVLnJlYWNoeS5wYXJ0LlBhcnRJbmZv",
-            "IkoKEVRyaXBvZERlc2NyaXB0aW9uEjUKDGhlaWdodF9qb2ludBgBIAEoCzIf",
-            "LnJlYWNoeS5wYXJ0LnRyaXBvZC5Ucmlwb2RKb2ludCI7CgtUcmlwb2RKb2lu",
-            "dBIsCgRheGlzGAEgASgOMh4ucmVhY2h5LnBhcnQudHJpcG9kLlRyaXBvZEF4",
-            "aXMirQEKEFRyaXBvZEpvaW50U3RhdGUSLgoFam9pbnQYASABKAsyHy5yZWFj",
-            "aHkucGFydC50cmlwb2QuVHJpcG9kSm9pbnQSNQoQcHJlc2VudF9wb3NpdGlv",
-            "bhgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlEjIKDWdvYWxf",
-            "cG9zaXRpb24YAyABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSJp",
-            "CgtUcmlwb2RTdGF0ZRIkCgdwYXJ0X2lkGAEgASgLMhMucmVhY2h5LnBhcnQu",
-            "UGFydElkEjQKBmhlaWdodBgCIAEoCzIkLnJlYWNoeS5wYXJ0LnRyaXBvZC5U",
-            "cmlwb2RKb2ludFN0YXRlImsKDVRyaXBvZENvbW1hbmQSJAoHcGFydF9pZBgB",
-            "IAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBI0Cg9oZWlnaHRfcG9zaXRpb24Y",
-            "AiABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSJCChJUcmlwb2RK",
-            "b2ludHNMaW1pdHMSLAoMaGVpZ2h0X2xpbWl0GAEgASgLMhYuY29tcG9uZW50",
-            "LkpvaW50TGltaXRzKhgKClRyaXBvZEF4aXMSCgoGSEVJR0hUEAAy7wIKDVRy",
-            "aXBvZFNlcnZpY2USPwoJR2V0VHJpcG9kEhYuZ29vZ2xlLnByb3RvYnVmLkVt",
-            "cHR5GhoucmVhY2h5LnBhcnQudHJpcG9kLlRyaXBvZBJACghHZXRTdGF0ZRIT",
-            "LnJlYWNoeS5wYXJ0LlBhcnRJZBofLnJlYWNoeS5wYXJ0LnRyaXBvZC5Ucmlw",
-            "b2RTdGF0ZRJICgtTZW5kQ29tbWFuZBIhLnJlYWNoeS5wYXJ0LnRyaXBvZC5U",
-            "cmlwb2RDb21tYW5kGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EkEKElJlc2V0",
-            "RGVmYXVsdFZhbHVlcxITLnJlYWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5w",
-            "cm90b2J1Zi5FbXB0eRJOCg9HZXRKb2ludHNMaW1pdHMSEy5yZWFjaHkucGFy",
-            "dC5QYXJ0SWQaJi5yZWFjaHkucGFydC50cmlwb2QuVHJpcG9kSm9pbnRzTGlt",
-            "aXRzYgZwcm90bzM="));
+            "cHJvdG8aD2NvbXBvbmVudC5wcm90bxoLZXJyb3IucHJvdG8aCnBhcnQucHJv",
+            "dG8ijwEKBlRyaXBvZBIkCgdwYXJ0X2lkGAEgASgLMhMucmVhY2h5LnBhcnQu",
+            "UGFydElkEjoKC2Rlc2NyaXB0aW9uGAIgASgLMiUucmVhY2h5LnBhcnQudHJp",
+            "cG9kLlRyaXBvZERlc2NyaXB0aW9uEiMKBGluZm8YBSABKAsyFS5yZWFjaHku",
+            "cGFydC5QYXJ0SW5mbyJKChFUcmlwb2REZXNjcmlwdGlvbhI1CgxoZWlnaHRf",
+            "am9pbnQYASABKAsyHy5yZWFjaHkucGFydC50cmlwb2QuVHJpcG9kSm9pbnQi",
+            "OwoLVHJpcG9kSm9pbnQSLAoEYXhpcxgBIAEoDjIeLnJlYWNoeS5wYXJ0LnRy",
+            "aXBvZC5Ucmlwb2RBeGlzIq0BChBUcmlwb2RKb2ludFN0YXRlEi4KBWpvaW50",
+            "GAEgASgLMh8ucmVhY2h5LnBhcnQudHJpcG9kLlRyaXBvZEpvaW50EjUKEHBy",
+            "ZXNlbnRfcG9zaXRpb24YAiABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRW",
+            "YWx1ZRIyCg1nb2FsX3Bvc2l0aW9uGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVm",
+            "LkZsb2F0VmFsdWUiaQoLVHJpcG9kU3RhdGUSJAoHcGFydF9pZBgBIAEoCzIT",
+            "LnJlYWNoeS5wYXJ0LlBhcnRJZBI0CgZoZWlnaHQYAiABKAsyJC5yZWFjaHku",
+            "cGFydC50cmlwb2QuVHJpcG9kSm9pbnRTdGF0ZSJSCgxUcmlwb2RTdGF0dXMS",
+            "JAoHcGFydF9pZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBIcCgZlcnJv",
+            "cnMYAiADKAsyDC5lcnJvci5FcnJvciJrCg1Ucmlwb2RDb21tYW5kEiQKB3Bh",
+            "cnRfaWQYASABKAsyEy5yZWFjaHkucGFydC5QYXJ0SWQSNAoPaGVpZ2h0X3Bv",
+            "c2l0aW9uGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUiQgoS",
+            "VHJpcG9kSm9pbnRzTGltaXRzEiwKDGhlaWdodF9saW1pdBgBIAEoCzIWLmNv",
+            "bXBvbmVudC5Kb2ludExpbWl0cyoYCgpUcmlwb2RBeGlzEgoKBkhFSUdIVBAA",
+            "Mu8CCg1Ucmlwb2RTZXJ2aWNlEj8KCUdldFRyaXBvZBIWLmdvb2dsZS5wcm90",
+            "b2J1Zi5FbXB0eRoaLnJlYWNoeS5wYXJ0LnRyaXBvZC5Ucmlwb2QSQAoIR2V0",
+            "U3RhdGUSEy5yZWFjaHkucGFydC5QYXJ0SWQaHy5yZWFjaHkucGFydC50cmlw",
+            "b2QuVHJpcG9kU3RhdGUSSAoLU2VuZENvbW1hbmQSIS5yZWFjaHkucGFydC50",
+            "cmlwb2QuVHJpcG9kQ29tbWFuZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJB",
+            "ChJSZXNldERlZmF1bHRWYWx1ZXMSEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5n",
+            "b29nbGUucHJvdG9idWYuRW1wdHkSTgoPR2V0Sm9pbnRzTGltaXRzEhMucmVh",
+            "Y2h5LnBhcnQuUGFydElkGiYucmVhY2h5LnBhcnQudHJpcG9kLlRyaXBvZEpv",
+            "aW50c0xpbWl0c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Component.ComponentReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Component.ComponentReflection.Descriptor, global::Error.ErrorReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.Part.Tripod.TripodAxis), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.Tripod), global::Reachy.Part.Tripod.Tripod.Parser, new[]{ "PartId", "Description", "Info" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodDescription), global::Reachy.Part.Tripod.TripodDescription.Parser, new[]{ "HeightJoint" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodJoint), global::Reachy.Part.Tripod.TripodJoint.Parser, new[]{ "Axis" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodJointState), global::Reachy.Part.Tripod.TripodJointState.Parser, new[]{ "Joint", "PresentPosition", "GoalPosition" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodState), global::Reachy.Part.Tripod.TripodState.Parser, new[]{ "PartId", "Height" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodStatus), global::Reachy.Part.Tripod.TripodStatus.Parser, new[]{ "PartId", "Errors" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodCommand), global::Reachy.Part.Tripod.TripodCommand.Parser, new[]{ "PartId", "HeightPosition" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodJointsLimits), global::Reachy.Part.Tripod.TripodJointsLimits.Parser, new[]{ "HeightLimit" }, null, null, null, null)
           }));
@@ -1285,6 +1288,230 @@ namespace Reachy.Part.Tripod {
 
   }
 
+  public sealed partial class TripodStatus : pb::IMessage<TripodStatus>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<TripodStatus> _parser = new pb::MessageParser<TripodStatus>(() => new TripodStatus());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<TripodStatus> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Reachy.Part.Tripod.TripodReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TripodStatus() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TripodStatus(TripodStatus other) : this() {
+      partId_ = other.partId_ != null ? other.partId_.Clone() : null;
+      errors_ = other.errors_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TripodStatus Clone() {
+      return new TripodStatus(this);
+    }
+
+    /// <summary>Field number for the "part_id" field.</summary>
+    public const int PartIdFieldNumber = 1;
+    private global::Reachy.Part.PartId partId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.PartId PartId {
+      get { return partId_; }
+      set {
+        partId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "errors" field.</summary>
+    public const int ErrorsFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Error.Error> _repeated_errors_codec
+        = pb::FieldCodec.ForMessage(18, global::Error.Error.Parser);
+    private readonly pbc::RepeatedField<global::Error.Error> errors_ = new pbc::RepeatedField<global::Error.Error>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Error.Error> Errors {
+      get { return errors_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as TripodStatus);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(TripodStatus other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(PartId, other.PartId)) return false;
+      if(!errors_.Equals(other.errors_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (partId_ != null) hash ^= PartId.GetHashCode();
+      hash ^= errors_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (partId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(PartId);
+      }
+      errors_.WriteTo(output, _repeated_errors_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (partId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(PartId);
+      }
+      errors_.WriteTo(ref output, _repeated_errors_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (partId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PartId);
+      }
+      size += errors_.CalculateSize(_repeated_errors_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(TripodStatus other) {
+      if (other == null) {
+        return;
+      }
+      if (other.partId_ != null) {
+        if (partId_ == null) {
+          PartId = new global::Reachy.Part.PartId();
+        }
+        PartId.MergeFrom(other.PartId);
+      }
+      errors_.Add(other.errors_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (partId_ == null) {
+              PartId = new global::Reachy.Part.PartId();
+            }
+            input.ReadMessage(PartId);
+            break;
+          }
+          case 18: {
+            errors_.AddEntriesFrom(input, _repeated_errors_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (partId_ == null) {
+              PartId = new global::Reachy.Part.PartId();
+            }
+            input.ReadMessage(PartId);
+            break;
+          }
+          case 18: {
+            errors_.AddEntriesFrom(ref input, _repeated_errors_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class TripodCommand : pb::IMessage<TripodCommand>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1299,7 +1526,7 @@ namespace Reachy.Part.Tripod {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Tripod.TripodReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Reachy.Part.Tripod.TripodReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1542,7 +1769,7 @@ namespace Reachy.Part.Tripod {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Tripod.TripodReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Reachy.Part.Tripod.TripodReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
