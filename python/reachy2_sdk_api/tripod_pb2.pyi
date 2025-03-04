@@ -79,16 +79,13 @@ class TripodJoint(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
     AXIS_FIELD_NUMBER: builtins.int
-    NAME_FIELD_NUMBER: builtins.int
     axis: global___TripodAxis.ValueType
-    name: builtins.str
     def __init__(
         self,
         *,
         axis: global___TripodAxis.ValueType = ...,
-        name: builtins.str = ...,
     ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["axis", b"axis", "name", b"name"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["axis", b"axis"]) -> None: ...
 
 global___TripodJoint = TripodJoint
 

@@ -31,33 +31,32 @@ namespace Reachy.Part.Tripod {
             "Y3JpcHRpb24YAiABKAsyJS5yZWFjaHkucGFydC50cmlwb2QuVHJpcG9kRGVz",
             "Y3JpcHRpb24SIwoEaW5mbxgFIAEoCzIVLnJlYWNoeS5wYXJ0LlBhcnRJbmZv",
             "IkoKEVRyaXBvZERlc2NyaXB0aW9uEjUKDGhlaWdodF9qb2ludBgBIAEoCzIf",
-            "LnJlYWNoeS5wYXJ0LnRyaXBvZC5Ucmlwb2RKb2ludCJJCgtUcmlwb2RKb2lu",
+            "LnJlYWNoeS5wYXJ0LnRyaXBvZC5Ucmlwb2RKb2ludCI7CgtUcmlwb2RKb2lu",
             "dBIsCgRheGlzGAEgASgOMh4ucmVhY2h5LnBhcnQudHJpcG9kLlRyaXBvZEF4",
-            "aXMSDAoEbmFtZRgCIAEoCSJxChBUcmlwb2RKb2ludFN0YXRlEi4KBWpvaW50",
-            "GAEgASgLMh8ucmVhY2h5LnBhcnQudHJpcG9kLlRyaXBvZEpvaW50Ei0KCHBv",
-            "c2l0aW9uGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUiaQoL",
-            "VHJpcG9kU3RhdGUSJAoHcGFydF9pZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBh",
-            "cnRJZBI0CgZoZWlnaHQYAiABKAsyJC5yZWFjaHkucGFydC50cmlwb2QuVHJp",
-            "cG9kSm9pbnRTdGF0ZSJrCg1Ucmlwb2RDb21tYW5kEiQKB3BhcnRfaWQYASAB",
-            "KAsyEy5yZWFjaHkucGFydC5QYXJ0SWQSNAoPaGVpZ2h0X3Bvc2l0aW9uGAIg",
-            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUiQgoSVHJpcG9kSm9p",
-            "bnRzTGltaXRzEiwKDGhlaWdodF9saW1pdBgBIAEoCzIWLmNvbXBvbmVudC5K",
-            "b2ludExpbWl0cyoYCgpUcmlwb2RBeGlzEgoKBkhFSUdIVBAAMu8CCg1Ucmlw",
-            "b2RTZXJ2aWNlEj8KCUdldFRyaXBvZBIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0",
-            "eRoaLnJlYWNoeS5wYXJ0LnRyaXBvZC5Ucmlwb2QSQAoIR2V0U3RhdGUSEy5y",
-            "ZWFjaHkucGFydC5QYXJ0SWQaHy5yZWFjaHkucGFydC50cmlwb2QuVHJpcG9k",
-            "U3RhdGUSSAoLU2VuZENvbW1hbmQSIS5yZWFjaHkucGFydC50cmlwb2QuVHJp",
-            "cG9kQ29tbWFuZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJBChJSZXNldERl",
-            "ZmF1bHRWYWx1ZXMSEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5nb29nbGUucHJv",
-            "dG9idWYuRW1wdHkSTgoPR2V0Sm9pbnRzTGltaXRzEhMucmVhY2h5LnBhcnQu",
-            "UGFydElkGiYucmVhY2h5LnBhcnQudHJpcG9kLlRyaXBvZEpvaW50c0xpbWl0",
-            "c2IGcHJvdG8z"));
+            "aXMicQoQVHJpcG9kSm9pbnRTdGF0ZRIuCgVqb2ludBgBIAEoCzIfLnJlYWNo",
+            "eS5wYXJ0LnRyaXBvZC5Ucmlwb2RKb2ludBItCghwb3NpdGlvbhgCIAEoCzIb",
+            "Lmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlImkKC1RyaXBvZFN0YXRlEiQK",
+            "B3BhcnRfaWQYASABKAsyEy5yZWFjaHkucGFydC5QYXJ0SWQSNAoGaGVpZ2h0",
+            "GAIgASgLMiQucmVhY2h5LnBhcnQudHJpcG9kLlRyaXBvZEpvaW50U3RhdGUi",
+            "awoNVHJpcG9kQ29tbWFuZBIkCgdwYXJ0X2lkGAEgASgLMhMucmVhY2h5LnBh",
+            "cnQuUGFydElkEjQKD2hlaWdodF9wb3NpdGlvbhgCIAEoCzIbLmdvb2dsZS5w",
+            "cm90b2J1Zi5GbG9hdFZhbHVlIkIKElRyaXBvZEpvaW50c0xpbWl0cxIsCgxo",
+            "ZWlnaHRfbGltaXQYASABKAsyFi5jb21wb25lbnQuSm9pbnRMaW1pdHMqGAoK",
+            "VHJpcG9kQXhpcxIKCgZIRUlHSFQQADLvAgoNVHJpcG9kU2VydmljZRI/CglH",
+            "ZXRUcmlwb2QSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaGi5yZWFjaHkucGFy",
+            "dC50cmlwb2QuVHJpcG9kEkAKCEdldFN0YXRlEhMucmVhY2h5LnBhcnQuUGFy",
+            "dElkGh8ucmVhY2h5LnBhcnQudHJpcG9kLlRyaXBvZFN0YXRlEkgKC1NlbmRD",
+            "b21tYW5kEiEucmVhY2h5LnBhcnQudHJpcG9kLlRyaXBvZENvbW1hbmQaFi5n",
+            "b29nbGUucHJvdG9idWYuRW1wdHkSQQoSUmVzZXREZWZhdWx0VmFsdWVzEhMu",
+            "cmVhY2h5LnBhcnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Ek4K",
+            "D0dldEpvaW50c0xpbWl0cxITLnJlYWNoeS5wYXJ0LlBhcnRJZBomLnJlYWNo",
+            "eS5wYXJ0LnRyaXBvZC5Ucmlwb2RKb2ludHNMaW1pdHNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Component.ComponentReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.Part.Tripod.TripodAxis), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.Tripod), global::Reachy.Part.Tripod.Tripod.Parser, new[]{ "PartId", "Description", "Info" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodDescription), global::Reachy.Part.Tripod.TripodDescription.Parser, new[]{ "HeightJoint" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodJoint), global::Reachy.Part.Tripod.TripodJoint.Parser, new[]{ "Axis", "Name" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodJoint), global::Reachy.Part.Tripod.TripodJoint.Parser, new[]{ "Axis" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodJointState), global::Reachy.Part.Tripod.TripodJointState.Parser, new[]{ "Joint", "Position" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodState), global::Reachy.Part.Tripod.TripodState.Parser, new[]{ "PartId", "Height" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodCommand), global::Reachy.Part.Tripod.TripodCommand.Parser, new[]{ "PartId", "HeightPosition" }, null, null, null, null),
@@ -598,7 +597,6 @@ namespace Reachy.Part.Tripod {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TripodJoint(TripodJoint other) : this() {
       axis_ = other.axis_;
-      name_ = other.name_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -620,18 +618,6 @@ namespace Reachy.Part.Tripod {
       }
     }
 
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 2;
-    private string name_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -648,7 +634,6 @@ namespace Reachy.Part.Tripod {
         return true;
       }
       if (Axis != other.Axis) return false;
-      if (Name != other.Name) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -657,7 +642,6 @@ namespace Reachy.Part.Tripod {
     public override int GetHashCode() {
       int hash = 1;
       if (Axis != global::Reachy.Part.Tripod.TripodAxis.Height) hash ^= Axis.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -680,10 +664,6 @@ namespace Reachy.Part.Tripod {
         output.WriteRawTag(8);
         output.WriteEnum((int) Axis);
       }
-      if (Name.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Name);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -698,10 +678,6 @@ namespace Reachy.Part.Tripod {
         output.WriteRawTag(8);
         output.WriteEnum((int) Axis);
       }
-      if (Name.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Name);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -714,9 +690,6 @@ namespace Reachy.Part.Tripod {
       int size = 0;
       if (Axis != global::Reachy.Part.Tripod.TripodAxis.Height) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Axis);
-      }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -732,9 +705,6 @@ namespace Reachy.Part.Tripod {
       }
       if (other.Axis != global::Reachy.Part.Tripod.TripodAxis.Height) {
         Axis = other.Axis;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -755,10 +725,6 @@ namespace Reachy.Part.Tripod {
             Axis = (global::Reachy.Part.Tripod.TripodAxis) input.ReadEnum();
             break;
           }
-          case 18: {
-            Name = input.ReadString();
-            break;
-          }
         }
       }
     #endif
@@ -776,10 +742,6 @@ namespace Reachy.Part.Tripod {
             break;
           case 8: {
             Axis = (global::Reachy.Part.Tripod.TripodAxis) input.ReadEnum();
-            break;
-          }
-          case 18: {
-            Name = input.ReadString();
             break;
           }
         }
