@@ -33,31 +33,33 @@ namespace Reachy.Part.Tripod {
             "IkoKEVRyaXBvZERlc2NyaXB0aW9uEjUKDGhlaWdodF9qb2ludBgBIAEoCzIf",
             "LnJlYWNoeS5wYXJ0LnRyaXBvZC5Ucmlwb2RKb2ludCI7CgtUcmlwb2RKb2lu",
             "dBIsCgRheGlzGAEgASgOMh4ucmVhY2h5LnBhcnQudHJpcG9kLlRyaXBvZEF4",
-            "aXMicQoQVHJpcG9kSm9pbnRTdGF0ZRIuCgVqb2ludBgBIAEoCzIfLnJlYWNo",
-            "eS5wYXJ0LnRyaXBvZC5Ucmlwb2RKb2ludBItCghwb3NpdGlvbhgCIAEoCzIb",
-            "Lmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlImkKC1RyaXBvZFN0YXRlEiQK",
-            "B3BhcnRfaWQYASABKAsyEy5yZWFjaHkucGFydC5QYXJ0SWQSNAoGaGVpZ2h0",
-            "GAIgASgLMiQucmVhY2h5LnBhcnQudHJpcG9kLlRyaXBvZEpvaW50U3RhdGUi",
-            "awoNVHJpcG9kQ29tbWFuZBIkCgdwYXJ0X2lkGAEgASgLMhMucmVhY2h5LnBh",
-            "cnQuUGFydElkEjQKD2hlaWdodF9wb3NpdGlvbhgCIAEoCzIbLmdvb2dsZS5w",
-            "cm90b2J1Zi5GbG9hdFZhbHVlIkIKElRyaXBvZEpvaW50c0xpbWl0cxIsCgxo",
-            "ZWlnaHRfbGltaXQYASABKAsyFi5jb21wb25lbnQuSm9pbnRMaW1pdHMqGAoK",
-            "VHJpcG9kQXhpcxIKCgZIRUlHSFQQADLvAgoNVHJpcG9kU2VydmljZRI/CglH",
-            "ZXRUcmlwb2QSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaGi5yZWFjaHkucGFy",
-            "dC50cmlwb2QuVHJpcG9kEkAKCEdldFN0YXRlEhMucmVhY2h5LnBhcnQuUGFy",
-            "dElkGh8ucmVhY2h5LnBhcnQudHJpcG9kLlRyaXBvZFN0YXRlEkgKC1NlbmRD",
-            "b21tYW5kEiEucmVhY2h5LnBhcnQudHJpcG9kLlRyaXBvZENvbW1hbmQaFi5n",
-            "b29nbGUucHJvdG9idWYuRW1wdHkSQQoSUmVzZXREZWZhdWx0VmFsdWVzEhMu",
-            "cmVhY2h5LnBhcnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Ek4K",
-            "D0dldEpvaW50c0xpbWl0cxITLnJlYWNoeS5wYXJ0LlBhcnRJZBomLnJlYWNo",
-            "eS5wYXJ0LnRyaXBvZC5Ucmlwb2RKb2ludHNMaW1pdHNiBnByb3RvMw=="));
+            "aXMirQEKEFRyaXBvZEpvaW50U3RhdGUSLgoFam9pbnQYASABKAsyHy5yZWFj",
+            "aHkucGFydC50cmlwb2QuVHJpcG9kSm9pbnQSNQoQcHJlc2VudF9wb3NpdGlv",
+            "bhgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlEjIKDWdvYWxf",
+            "cG9zaXRpb24YAyABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSJp",
+            "CgtUcmlwb2RTdGF0ZRIkCgdwYXJ0X2lkGAEgASgLMhMucmVhY2h5LnBhcnQu",
+            "UGFydElkEjQKBmhlaWdodBgCIAEoCzIkLnJlYWNoeS5wYXJ0LnRyaXBvZC5U",
+            "cmlwb2RKb2ludFN0YXRlImsKDVRyaXBvZENvbW1hbmQSJAoHcGFydF9pZBgB",
+            "IAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBI0Cg9oZWlnaHRfcG9zaXRpb24Y",
+            "AiABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSJCChJUcmlwb2RK",
+            "b2ludHNMaW1pdHMSLAoMaGVpZ2h0X2xpbWl0GAEgASgLMhYuY29tcG9uZW50",
+            "LkpvaW50TGltaXRzKhgKClRyaXBvZEF4aXMSCgoGSEVJR0hUEAAy7wIKDVRy",
+            "aXBvZFNlcnZpY2USPwoJR2V0VHJpcG9kEhYuZ29vZ2xlLnByb3RvYnVmLkVt",
+            "cHR5GhoucmVhY2h5LnBhcnQudHJpcG9kLlRyaXBvZBJACghHZXRTdGF0ZRIT",
+            "LnJlYWNoeS5wYXJ0LlBhcnRJZBofLnJlYWNoeS5wYXJ0LnRyaXBvZC5Ucmlw",
+            "b2RTdGF0ZRJICgtTZW5kQ29tbWFuZBIhLnJlYWNoeS5wYXJ0LnRyaXBvZC5U",
+            "cmlwb2RDb21tYW5kGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EkEKElJlc2V0",
+            "RGVmYXVsdFZhbHVlcxITLnJlYWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5w",
+            "cm90b2J1Zi5FbXB0eRJOCg9HZXRKb2ludHNMaW1pdHMSEy5yZWFjaHkucGFy",
+            "dC5QYXJ0SWQaJi5yZWFjaHkucGFydC50cmlwb2QuVHJpcG9kSm9pbnRzTGlt",
+            "aXRzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Component.ComponentReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.Part.Tripod.TripodAxis), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.Tripod), global::Reachy.Part.Tripod.Tripod.Parser, new[]{ "PartId", "Description", "Info" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodDescription), global::Reachy.Part.Tripod.TripodDescription.Parser, new[]{ "HeightJoint" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodJoint), global::Reachy.Part.Tripod.TripodJoint.Parser, new[]{ "Axis" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodJointState), global::Reachy.Part.Tripod.TripodJointState.Parser, new[]{ "Joint", "Position" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodJointState), global::Reachy.Part.Tripod.TripodJointState.Parser, new[]{ "Joint", "PresentPosition", "GoalPosition" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodState), global::Reachy.Part.Tripod.TripodState.Parser, new[]{ "PartId", "Height" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodCommand), global::Reachy.Part.Tripod.TripodCommand.Parser, new[]{ "PartId", "HeightPosition" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Tripod.TripodJointsLimits), global::Reachy.Part.Tripod.TripodJointsLimits.Parser, new[]{ "HeightLimit" }, null, null, null, null)
@@ -786,7 +788,8 @@ namespace Reachy.Part.Tripod {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TripodJointState(TripodJointState other) : this() {
       joint_ = other.joint_ != null ? other.joint_.Clone() : null;
-      Position = other.Position;
+      PresentPosition = other.PresentPosition;
+      GoalPosition = other.GoalPosition;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -808,16 +811,30 @@ namespace Reachy.Part.Tripod {
       }
     }
 
-    /// <summary>Field number for the "position" field.</summary>
-    public const int PositionFieldNumber = 2;
-    private static readonly pb::FieldCodec<float?> _single_position_codec = pb::FieldCodec.ForStructWrapper<float>(18);
-    private float? position_;
+    /// <summary>Field number for the "present_position" field.</summary>
+    public const int PresentPositionFieldNumber = 2;
+    private static readonly pb::FieldCodec<float?> _single_presentPosition_codec = pb::FieldCodec.ForStructWrapper<float>(18);
+    private float? presentPosition_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float? Position {
-      get { return position_; }
+    public float? PresentPosition {
+      get { return presentPosition_; }
       set {
-        position_ = value;
+        presentPosition_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "goal_position" field.</summary>
+    public const int GoalPositionFieldNumber = 3;
+    private static readonly pb::FieldCodec<float?> _single_goalPosition_codec = pb::FieldCodec.ForStructWrapper<float>(26);
+    private float? goalPosition_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float? GoalPosition {
+      get { return goalPosition_; }
+      set {
+        goalPosition_ = value;
       }
     }
 
@@ -838,7 +855,8 @@ namespace Reachy.Part.Tripod {
         return true;
       }
       if (!object.Equals(Joint, other.Joint)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(Position, other.Position)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(PresentPosition, other.PresentPosition)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(GoalPosition, other.GoalPosition)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -847,7 +865,8 @@ namespace Reachy.Part.Tripod {
     public override int GetHashCode() {
       int hash = 1;
       if (joint_ != null) hash ^= Joint.GetHashCode();
-      if (position_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Position);
+      if (presentPosition_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(PresentPosition);
+      if (goalPosition_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(GoalPosition);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -870,8 +889,11 @@ namespace Reachy.Part.Tripod {
         output.WriteRawTag(10);
         output.WriteMessage(Joint);
       }
-      if (position_ != null) {
-        _single_position_codec.WriteTagAndValue(output, Position);
+      if (presentPosition_ != null) {
+        _single_presentPosition_codec.WriteTagAndValue(output, PresentPosition);
+      }
+      if (goalPosition_ != null) {
+        _single_goalPosition_codec.WriteTagAndValue(output, GoalPosition);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -887,8 +909,11 @@ namespace Reachy.Part.Tripod {
         output.WriteRawTag(10);
         output.WriteMessage(Joint);
       }
-      if (position_ != null) {
-        _single_position_codec.WriteTagAndValue(ref output, Position);
+      if (presentPosition_ != null) {
+        _single_presentPosition_codec.WriteTagAndValue(ref output, PresentPosition);
+      }
+      if (goalPosition_ != null) {
+        _single_goalPosition_codec.WriteTagAndValue(ref output, GoalPosition);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -903,8 +928,11 @@ namespace Reachy.Part.Tripod {
       if (joint_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Joint);
       }
-      if (position_ != null) {
-        size += _single_position_codec.CalculateSizeWithTag(Position);
+      if (presentPosition_ != null) {
+        size += _single_presentPosition_codec.CalculateSizeWithTag(PresentPosition);
+      }
+      if (goalPosition_ != null) {
+        size += _single_goalPosition_codec.CalculateSizeWithTag(GoalPosition);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -924,9 +952,14 @@ namespace Reachy.Part.Tripod {
         }
         Joint.MergeFrom(other.Joint);
       }
-      if (other.position_ != null) {
-        if (position_ == null || other.Position != 0F) {
-          Position = other.Position;
+      if (other.presentPosition_ != null) {
+        if (presentPosition_ == null || other.PresentPosition != 0F) {
+          PresentPosition = other.PresentPosition;
+        }
+      }
+      if (other.goalPosition_ != null) {
+        if (goalPosition_ == null || other.GoalPosition != 0F) {
+          GoalPosition = other.GoalPosition;
         }
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -952,9 +985,16 @@ namespace Reachy.Part.Tripod {
             break;
           }
           case 18: {
-            float? value = _single_position_codec.Read(input);
-            if (position_ == null || value != 0F) {
-              Position = value;
+            float? value = _single_presentPosition_codec.Read(input);
+            if (presentPosition_ == null || value != 0F) {
+              PresentPosition = value;
+            }
+            break;
+          }
+          case 26: {
+            float? value = _single_goalPosition_codec.Read(input);
+            if (goalPosition_ == null || value != 0F) {
+              GoalPosition = value;
             }
             break;
           }
@@ -981,9 +1021,16 @@ namespace Reachy.Part.Tripod {
             break;
           }
           case 18: {
-            float? value = _single_position_codec.Read(ref input);
-            if (position_ == null || value != 0F) {
-              Position = value;
+            float? value = _single_presentPosition_codec.Read(ref input);
+            if (presentPosition_ == null || value != 0F) {
+              PresentPosition = value;
+            }
+            break;
+          }
+          case 26: {
+            float? value = _single_goalPosition_codec.Read(ref input);
+            if (goalPosition_ == null || value != 0F) {
+              GoalPosition = value;
             }
             break;
           }
