@@ -32,8 +32,9 @@ message ReachyInfo {
     string serial_number = 1;
     string version_hard = 2;
     string version_soft = 3;
+    string api_version = 4;
 
-    ReachyCoreMode core_mode = 4;
+    ReachyCoreMode core_mode = 10;
 }
 
 enum ReachyCoreMode {
