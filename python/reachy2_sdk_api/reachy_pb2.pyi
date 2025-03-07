@@ -115,10 +115,12 @@ class ReachyInfo(google.protobuf.message.Message):
     SERIAL_NUMBER_FIELD_NUMBER: builtins.int
     VERSION_HARD_FIELD_NUMBER: builtins.int
     VERSION_SOFT_FIELD_NUMBER: builtins.int
+    API_VERSION_FIELD_NUMBER: builtins.int
     CORE_MODE_FIELD_NUMBER: builtins.int
     serial_number: builtins.str
     version_hard: builtins.str
     version_soft: builtins.str
+    api_version: builtins.str
     core_mode: global___ReachyCoreMode.ValueType
     def __init__(
         self,
@@ -126,9 +128,10 @@ class ReachyInfo(google.protobuf.message.Message):
         serial_number: builtins.str = ...,
         version_hard: builtins.str = ...,
         version_soft: builtins.str = ...,
+        api_version: builtins.str = ...,
         core_mode: global___ReachyCoreMode.ValueType = ...,
     ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["core_mode", b"core_mode", "serial_number", b"serial_number", "version_hard", b"version_hard", "version_soft", b"version_soft"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["api_version", b"api_version", "core_mode", b"core_mode", "serial_number", b"serial_number", "version_hard", b"version_hard", "version_soft", b"version_soft"]) -> None: ...
 
 global___ReachyInfo = ReachyInfo
 

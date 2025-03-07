@@ -79,9 +79,10 @@ namespace Reachy {
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.ReachyCoreMode), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Reachy), global::Reachy.Reachy.Parser, new[]{ "Id", "LArm", "RArm", "Head", "LHand", "RHand", "MobileBase", "Tripod", "Info" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyId), global::Reachy.ReachyId.Parser, new[]{ "Id", "Name" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyInfo), global::Reachy.ReachyInfo.Parser, new[]{ "SerialNumber", "VersionHard", "VersionSoft", "CoreMode" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyState), global::Reachy.ReachyState.Parser, new[]{ "Timestamp", "Id", "LArmState", "RArmState", "HeadState", "LHandState", "RHandState", "MobileBaseState", "TripodState" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStatus), global::Reachy.ReachyStatus.Parser, new[]{ "Timestamp", "Id", "LArmStatus", "RArmStatus", "HeadStatus", "LHandStatus", "RHandStatus", "MobileBaseStatus", "TripodStatus" }, null, null, null, null),
+
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyInfo), global::Reachy.ReachyInfo.Parser, new[]{ "SerialNumber", "VersionHard", "VersionSoft", "ApiVersion", "CoreMode" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyState), global::Reachy.ReachyState.Parser, new[]{ "Timestamp", "Id", "LArmState", "RArmState", "HeadState", "LHandState", "RHandState", "MobileBaseState" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStatus), global::Reachy.ReachyStatus.Parser, new[]{ "Timestamp", "Id", "LArmStatus", "RArmStatus", "HeadStatus", "LHandStatus", "RHandStatus", "MobileBaseStatus" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStreamStateRequest), global::Reachy.ReachyStreamStateRequest.Parser, new[]{ "Id", "PublishFrequency" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStreamAuditRequest), global::Reachy.ReachyStreamAuditRequest.Parser, new[]{ "Id", "PublishFrequency" }, null, null, null, null)
           }));
@@ -929,6 +930,7 @@ namespace Reachy {
       serialNumber_ = other.serialNumber_;
       versionHard_ = other.versionHard_;
       versionSoft_ = other.versionSoft_;
+      apiVersion_ = other.apiVersion_;
       coreMode_ = other.coreMode_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -975,8 +977,20 @@ namespace Reachy {
       }
     }
 
+    /// <summary>Field number for the "api_version" field.</summary>
+    public const int ApiVersionFieldNumber = 4;
+    private string apiVersion_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ApiVersion {
+      get { return apiVersion_; }
+      set {
+        apiVersion_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "core_mode" field.</summary>
-    public const int CoreModeFieldNumber = 4;
+    public const int CoreModeFieldNumber = 10;
     private global::Reachy.ReachyCoreMode coreMode_ = global::Reachy.ReachyCoreMode.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1005,6 +1019,7 @@ namespace Reachy {
       if (SerialNumber != other.SerialNumber) return false;
       if (VersionHard != other.VersionHard) return false;
       if (VersionSoft != other.VersionSoft) return false;
+      if (ApiVersion != other.ApiVersion) return false;
       if (CoreMode != other.CoreMode) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1016,6 +1031,7 @@ namespace Reachy {
       if (SerialNumber.Length != 0) hash ^= SerialNumber.GetHashCode();
       if (VersionHard.Length != 0) hash ^= VersionHard.GetHashCode();
       if (VersionSoft.Length != 0) hash ^= VersionSoft.GetHashCode();
+      if (ApiVersion.Length != 0) hash ^= ApiVersion.GetHashCode();
       if (CoreMode != global::Reachy.ReachyCoreMode.None) hash ^= CoreMode.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1047,8 +1063,12 @@ namespace Reachy {
         output.WriteRawTag(26);
         output.WriteString(VersionSoft);
       }
+      if (ApiVersion.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(ApiVersion);
+      }
       if (CoreMode != global::Reachy.ReachyCoreMode.None) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(80);
         output.WriteEnum((int) CoreMode);
       }
       if (_unknownFields != null) {
@@ -1073,8 +1093,12 @@ namespace Reachy {
         output.WriteRawTag(26);
         output.WriteString(VersionSoft);
       }
+      if (ApiVersion.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(ApiVersion);
+      }
       if (CoreMode != global::Reachy.ReachyCoreMode.None) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(80);
         output.WriteEnum((int) CoreMode);
       }
       if (_unknownFields != null) {
@@ -1095,6 +1119,9 @@ namespace Reachy {
       }
       if (VersionSoft.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(VersionSoft);
+      }
+      if (ApiVersion.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ApiVersion);
       }
       if (CoreMode != global::Reachy.ReachyCoreMode.None) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) CoreMode);
@@ -1119,6 +1146,9 @@ namespace Reachy {
       }
       if (other.VersionSoft.Length != 0) {
         VersionSoft = other.VersionSoft;
+      }
+      if (other.ApiVersion.Length != 0) {
+        ApiVersion = other.ApiVersion;
       }
       if (other.CoreMode != global::Reachy.ReachyCoreMode.None) {
         CoreMode = other.CoreMode;
@@ -1150,7 +1180,11 @@ namespace Reachy {
             VersionSoft = input.ReadString();
             break;
           }
-          case 32: {
+          case 34: {
+            ApiVersion = input.ReadString();
+            break;
+          }
+          case 80: {
             CoreMode = (global::Reachy.ReachyCoreMode) input.ReadEnum();
             break;
           }
@@ -1181,7 +1215,11 @@ namespace Reachy {
             VersionSoft = input.ReadString();
             break;
           }
-          case 32: {
+          case 34: {
+            ApiVersion = input.ReadString();
+            break;
+          }
+          case 80: {
             CoreMode = (global::Reachy.ReachyCoreMode) input.ReadEnum();
             break;
           }
