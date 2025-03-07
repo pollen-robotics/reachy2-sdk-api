@@ -1,0 +1,66 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+
+import "component.proto";
+import "error.proto";
+import "part.proto";
+
+package reachy.part.tripod;
+
+message Tripod {
+    PartId part_id = 1;
+    TripodDescription description = 2;
+    PartInfo info = 5;
+}
+
+message TripodDescription {
+    TripodJoint height_joint = 1;
+}
+
+enum TripodAxis {
+    HEIGHT = 0;
+}
+
+message TripodJoint {
+    TripodAxis axis = 1;
+}
+
+message TripodJointState {
+    TripodJoint joint = 1;
+
+    google.protobuf.FloatValue present_position = 2;
+    google.protobuf.FloatValue goal_position = 3;
+}
+
+message TripodState {
+    PartId part_id = 1;
+
+    TripodJointState height = 2;
+}
+
+message TripodStatus {
+    PartId part_id = 1;
+    repeated error.Error errors = 2;
+}
+
+message TripodCommand {
+    PartId part_id = 1;
+
+    google.protobuf.FloatValue height_position = 2;
+}
+
+message TripodJointsLimits {
+    component.JointLimits height_limit = 1;
+}
+
+service TripodService {
+    rpc GetTripod (google.protobuf.Empty) returns (Tripod);
+
+    rpc GetState (reachy.part.PartId) returns (TripodState);
+
+    rpc SendCommand (TripodCommand) returns (google.protobuf.Empty);
+    rpc ResetDefaultValues (reachy.part.PartId) returns (google.protobuf.Empty);
+    rpc GetJointsLimits (reachy.part.PartId) returns (TripodJointsLimits);
+}
