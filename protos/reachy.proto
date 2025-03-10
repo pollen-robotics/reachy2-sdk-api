@@ -7,6 +7,7 @@ import "arm.proto";
 import "head.proto";
 import "hand.proto";
 import "mobile_base_utility.proto";
+import "tripod.proto";
 
 package reachy;
 
@@ -15,10 +16,12 @@ message Reachy {
     reachy.part.arm.Arm l_arm = 2;
     reachy.part.arm.Arm r_arm = 3;
     reachy.part.head.Head head = 4;
-    reachy.part.hand.Hand l_hand= 5;
-    reachy.part.hand.Hand r_hand= 6;
+    reachy.part.hand.Hand l_hand = 5;
+    reachy.part.hand.Hand r_hand = 6;
 
-    reachy.part.mobile.base.utility.MobileBase mobile_base= 7;
+    reachy.part.mobile.base.utility.MobileBase mobile_base = 7;
+
+    reachy.part.tripod.Tripod tripod = 8;
 
     ReachyInfo info = 20;
 }
@@ -32,8 +35,9 @@ message ReachyInfo {
     string serial_number = 1;
     string version_hard = 2;
     string version_soft = 3;
+    string api_version = 4;
 
-    ReachyCoreMode core_mode = 4;
+    ReachyCoreMode core_mode = 10;
 }
 
 enum ReachyCoreMode {
@@ -54,6 +58,7 @@ message ReachyState {
     reachy.part.hand.HandState l_hand_state = 6;
     reachy.part.hand.HandState r_hand_state = 7;
     reachy.part.mobile.base.utility.MobileBaseState mobile_base_state = 8;
+    reachy.part.tripod.TripodState tripod_state = 9;
 }
 
 message ReachyStatus {
@@ -67,6 +72,7 @@ message ReachyStatus {
     reachy.part.hand.HandStatus l_hand_status = 6;
     reachy.part.hand.HandStatus r_hand_status = 7;
     reachy.part.mobile.base.utility.MobileBaseStatus mobile_base_status = 8;
+    reachy.part.tripod.TripodStatus tripod_status = 9;
 }
 
 message ReachyStreamStateRequest {
