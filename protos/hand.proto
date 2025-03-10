@@ -10,12 +10,18 @@ package reachy.part.hand;
 
 message Hand {
     PartId part_id = 1;
+    HandType type = 2;
 
     PartInfo info = 5;
 }
 
 message ListOfHand {
     repeated Hand hand = 1;
+}
+
+enum HandType {
+    NO_TYPE = 0;
+    PARALLEL_GRIPPER = 1;
 }
 
 message HandState {
@@ -69,6 +75,11 @@ message HandPosition {
 message HandPositionRequest {
     reachy.part.PartId id = 1;
     HandPosition position = 2;
+}
+
+message HandJointGoal {
+    HandPositionRequest goal_request = 1;
+    google.protobuf.FloatValue duration = 2;
 }
 
 message Temperatures {

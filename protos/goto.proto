@@ -4,10 +4,11 @@ import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
 
 import "arm.proto";
-import "head.proto";
-import "part.proto";
 import "component.proto";
+import "hand.proto";
+import "head.proto";
 import "mobile_base_mobility.proto";
+import "part.proto";
 
 enum GoalStatus {
     NONE = 0;
@@ -45,6 +46,7 @@ message JointsGoal {
         reachy.part.head.NeckJointGoal neck_joint_goal = 2;
         CustomJointGoal custom_joint_goal = 3;
         reachy.part.head.AntennaJointGoal antenna_joint_goal = 4;
+        reachy.part.hand.HandJointGoal hand_joint_goal = 5;
     }
 }
 
