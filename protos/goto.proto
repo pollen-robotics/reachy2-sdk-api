@@ -6,6 +6,7 @@ import "google/protobuf/wrappers.proto";
 import "arm.proto";
 import "head.proto";
 import "part.proto";
+import "component.proto";
 import "mobile_base_mobility.proto";
 
 enum GoalStatus {
@@ -43,6 +44,7 @@ message JointsGoal {
         reachy.part.arm.ArmJointGoal arm_joint_goal = 1;
         reachy.part.head.NeckJointGoal neck_joint_goal = 2;
         CustomJointGoal custom_joint_goal = 3;
+        reachy.part.head.AntennaJointGoal antenna_joint_goal = 4;
     }
 }
 
@@ -125,8 +127,11 @@ service GoToService {
     rpc GetGoToState (GoToId) returns (GoToGoalStatus);
     rpc GetGoToRequest (GoToId) returns (GoToRequest);
     rpc GetPartGoToPlaying (reachy.part.PartId) returns (GoToId);
+    rpc GetComponentGoToPlaying (component.ComponentId) returns (GoToId);
     rpc GetPartGoToQueue (reachy.part.PartId) returns (GoToQueue);
+    rpc GetComponentGoToQueue (component.ComponentId) returns (GoToQueue);
     rpc CancelGoTo (GoToId) returns (GoToAck);
     rpc CancelAllGoTo (google.protobuf.Empty) returns (GoToAck);
     rpc CancelPartAllGoTo (reachy.part.PartId) returns (GoToAck);
+    rpc CancelComponentAllGoTo (component.ComponentId) returns (GoToAck);
 }
