@@ -48,31 +48,43 @@ public static partial class GotoReflection {
           "cxgEIAMoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlEi0KCGR1cmF0",
           "aW9uGAogASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWVCCAoGam9p",
           "bnRzIkMKEUdvVG9JbnRlcnBvbGF0aW9uEi4KEmludGVycG9sYXRpb25fdHlw",
-          "ZRgBIAEoDjISLkludGVycG9sYXRpb25Nb2RlIrsBCgtHb1RvUmVxdWVzdBIo",
-          "Cg5jYXJ0ZXNpYW5fZ29hbBgBIAEoCzIOLkNhcnRlc2lhbkdvYWxIABIiCgtq",
-          "b2ludHNfZ29hbBgCIAEoCzILLkpvaW50c0dvYWxIABImCg1vZG9tZXRyeV9n",
-          "b2FsGAMgASgLMg0uT2RvbWV0cnlHb2FsSAASLgoSaW50ZXJwb2xhdGlvbl9t",
-          "b2RlGAogASgLMhIuR29Ub0ludGVycG9sYXRpb25CBgoEZ29hbCImCglHb1Rv",
-          "UXVldWUSGQoIZ290b19pZHMYASADKAsyBy5Hb1RvSWQqqgEKCkdvYWxTdGF0",
-          "dXMSCAoETk9ORRAAEhIKDlNUQVRVU19VTktOT1dOEAESEwoPU1RBVFVTX0FD",
-          "Q0VQVEVEEAISFAoQU1RBVFVTX0VYRUNVVElORxADEhQKEFNUQVRVU19DQU5D",
-          "RUxJTkcQBBIUChBTVEFUVVNfU1VDQ0VFREVEEAUSEwoPU1RBVFVTX0NBTkNF",
-          "TEVEEAYSEgoOU1RBVFVTX0FCT1JURUQQBypJChFJbnRlcnBvbGF0aW9uTW9k",
-          "ZRIWChJOT05FX0lOVEVSUE9MQVRJT04QABIKCgZMSU5FQVIQARIQCgxNSU5J",
-          "TVVNX0pFUksQAjLFAwoLR29Ub1NlcnZpY2USJgoNR29Ub0NhcnRlc2lhbhIM",
-          "LkdvVG9SZXF1ZXN0GgcuR29Ub0lkEiMKCkdvVG9Kb2ludHMSDC5Hb1RvUmVx",
-          "dWVzdBoHLkdvVG9JZBIlCgxHb1RvT2RvbWV0cnkSDC5Hb1RvUmVxdWVzdBoH",
-          "LkdvVG9JZBIoCgxHZXRHb1RvU3RhdGUSBy5Hb1RvSWQaDy5Hb1RvR29hbFN0",
-          "YXR1cxInCg5HZXRHb1RvUmVxdWVzdBIHLkdvVG9JZBoMLkdvVG9SZXF1ZXN0",
-          "EjIKEkdldFBhcnRHb1RvUGxheWluZxITLnJlYWNoeS5wYXJ0LlBhcnRJZBoH",
-          "LkdvVG9JZBIzChBHZXRQYXJ0R29Ub1F1ZXVlEhMucmVhY2h5LnBhcnQuUGFy",
-          "dElkGgouR29Ub1F1ZXVlEh8KCkNhbmNlbEdvVG8SBy5Hb1RvSWQaCC5Hb1Rv",
-          "QWNrEjEKDUNhbmNlbEFsbEdvVG8SFi5nb29nbGUucHJvdG9idWYuRW1wdHka",
-          "CC5Hb1RvQWNrEjIKEUNhbmNlbFBhcnRBbGxHb1RvEhMucmVhY2h5LnBhcnQu",
-          "UGFydElkGgguR29Ub0Fja2IGcHJvdG8z"));
+          "ZRgBIAEoDjISLkludGVycG9sYXRpb25Nb2RlIkoKFkdvVG9JbnRlcnBvbGF0",
+          "aW9uU3BhY2USMAoTaW50ZXJwb2xhdGlvbl9zcGFjZRgBIAEoDjITLkludGVy",
+          "cG9sYXRpb25TcGFjZSJ3ChhFbGxpcHRpY2FsR29Ub1BhcmFtZXRlcnMSJAoN",
+          "YXJjX2RpcmVjdGlvbhgBIAEoDjINLkFyY0RpcmVjdGlvbhI1ChBzZWNvbmRh",
+          "cnlfcmFkaXVzGAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUi",
+          "qwIKC0dvVG9SZXF1ZXN0EigKDmNhcnRlc2lhbl9nb2FsGAEgASgLMg4uQ2Fy",
+          "dGVzaWFuR29hbEgAEiIKC2pvaW50c19nb2FsGAIgASgLMgsuSm9pbnRzR29h",
+          "bEgAEiYKDW9kb21ldHJ5X2dvYWwYAyABKAsyDS5PZG9tZXRyeUdvYWxIABI0",
+          "ChNpbnRlcnBvbGF0aW9uX3NwYWNlGAkgASgLMhcuR29Ub0ludGVycG9sYXRp",
+          "b25TcGFjZRIuChJpbnRlcnBvbGF0aW9uX21vZGUYCiABKAsyEi5Hb1RvSW50",
+          "ZXJwb2xhdGlvbhI4ChVlbGxpcHRpY2FsX3BhcmFtZXRlcnMYDyABKAsyGS5F",
+          "bGxpcHRpY2FsR29Ub1BhcmFtZXRlcnNCBgoEZ29hbCImCglHb1RvUXVldWUS",
+          "GQoIZ290b19pZHMYASADKAsyBy5Hb1RvSWQqqgEKCkdvYWxTdGF0dXMSCAoE",
+          "Tk9ORRAAEhIKDlNUQVRVU19VTktOT1dOEAESEwoPU1RBVFVTX0FDQ0VQVEVE",
+          "EAISFAoQU1RBVFVTX0VYRUNVVElORxADEhQKEFNUQVRVU19DQU5DRUxJTkcQ",
+          "BBIUChBTVEFUVVNfU1VDQ0VFREVEEAUSEwoPU1RBVFVTX0NBTkNFTEVEEAYS",
+          "EgoOU1RBVFVTX0FCT1JURUQQBypeChFJbnRlcnBvbGF0aW9uTW9kZRIbChdO",
+          "T05FX0lOVEVSUE9MQVRJT05fTU9ERRAAEgoKBkxJTkVBUhABEhAKDE1JTklN",
+          "VU1fSkVSSxACEg4KCkVMTElQVElDQUwQAypYChJJbnRlcnBvbGF0aW9uU3Bh",
+          "Y2USHAoYTk9ORV9JTlRFUlBPTEFUSU9OX1NQQUNFEAASDwoLSk9JTlRfU1BB",
+          "Q0UQARITCg9DQVJURVNJQU5fU1BBQ0UQAipmCgxBcmNEaXJlY3Rpb24SFgoS",
+          "Tk9ORV9BUkNfRElSRUNUSU9OEAASCQoFQUJPVkUQARIJCgVCRUxPVxACEgkK",
+          "BUZST05UEAMSCAoEQkFDSxAEEggKBExFRlQQBRIJCgVSSUdIVBAGMsUDCgtH",
+          "b1RvU2VydmljZRImCg1Hb1RvQ2FydGVzaWFuEgwuR29Ub1JlcXVlc3QaBy5H",
+          "b1RvSWQSIwoKR29Ub0pvaW50cxIMLkdvVG9SZXF1ZXN0GgcuR29Ub0lkEiUK",
+          "DEdvVG9PZG9tZXRyeRIMLkdvVG9SZXF1ZXN0GgcuR29Ub0lkEigKDEdldEdv",
+          "VG9TdGF0ZRIHLkdvVG9JZBoPLkdvVG9Hb2FsU3RhdHVzEicKDkdldEdvVG9S",
+          "ZXF1ZXN0EgcuR29Ub0lkGgwuR29Ub1JlcXVlc3QSMgoSR2V0UGFydEdvVG9Q",
+          "bGF5aW5nEhMucmVhY2h5LnBhcnQuUGFydElkGgcuR29Ub0lkEjMKEEdldFBh",
+          "cnRHb1RvUXVldWUSEy5yZWFjaHkucGFydC5QYXJ0SWQaCi5Hb1RvUXVldWUS",
+          "HwoKQ2FuY2VsR29UbxIHLkdvVG9JZBoILkdvVG9BY2sSMQoNQ2FuY2VsQWxs",
+          "R29UbxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRoILkdvVG9BY2sSMgoRQ2Fu",
+          "Y2VsUGFydEFsbEdvVG8SEy5yZWFjaHkucGFydC5QYXJ0SWQaCC5Hb1RvQWNr",
+          "YgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, global::Reachy.Part.Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor, },
-        new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GoalStatus), typeof(global::InterpolationMode), }, null, new pbr::GeneratedClrTypeInfo[] {
+        new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GoalStatus), typeof(global::InterpolationMode), typeof(global::InterpolationSpace), typeof(global::ArcDirection), }, null, new pbr::GeneratedClrTypeInfo[] {
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToId), global::GoToId.Parser, new[]{ "Id" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToAck), global::GoToAck.Parser, new[]{ "Ack" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToGoalStatus), global::GoToGoalStatus.Parser, new[]{ "GoalStatus" }, null, null, null, null),
@@ -81,7 +93,9 @@ public static partial class GotoReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::OdometryGoal), global::OdometryGoal.Parser, new[]{ "OdometryGoal_", "DistanceTolerance", "AngleTolerance", "Timeout" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::CustomJointGoal), global::CustomJointGoal.Parser, new[]{ "Id", "ArmJoints", "NeckJoints", "JointsGoals", "Duration" }, new[]{ "Joints" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToInterpolation), global::GoToInterpolation.Parser, new[]{ "InterpolationType" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::GoToRequest), global::GoToRequest.Parser, new[]{ "CartesianGoal", "JointsGoal", "OdometryGoal", "InterpolationMode" }, new[]{ "Goal" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GoToInterpolationSpace), global::GoToInterpolationSpace.Parser, new[]{ "InterpolationSpace" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::EllipticalGoToParameters), global::EllipticalGoToParameters.Parser, new[]{ "ArcDirection", "SecondaryRadius" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GoToRequest), global::GoToRequest.Parser, new[]{ "CartesianGoal", "JointsGoal", "OdometryGoal", "InterpolationSpace", "InterpolationMode", "EllipticalParameters" }, new[]{ "Goal" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToQueue), global::GoToQueue.Parser, new[]{ "GotoIds" }, null, null, null, null)
         }));
   }
@@ -101,9 +115,26 @@ public enum GoalStatus {
 }
 
 public enum InterpolationMode {
-  [pbr::OriginalName("NONE_INTERPOLATION")] NoneInterpolation = 0,
+  [pbr::OriginalName("NONE_INTERPOLATION_MODE")] NoneInterpolationMode = 0,
   [pbr::OriginalName("LINEAR")] Linear = 1,
   [pbr::OriginalName("MINIMUM_JERK")] MinimumJerk = 2,
+  [pbr::OriginalName("ELLIPTICAL")] Elliptical = 3,
+}
+
+public enum InterpolationSpace {
+  [pbr::OriginalName("NONE_INTERPOLATION_SPACE")] NoneInterpolationSpace = 0,
+  [pbr::OriginalName("JOINT_SPACE")] JointSpace = 1,
+  [pbr::OriginalName("CARTESIAN_SPACE")] CartesianSpace = 2,
+}
+
+public enum ArcDirection {
+  [pbr::OriginalName("NONE_ARC_DIRECTION")] NoneArcDirection = 0,
+  [pbr::OriginalName("ABOVE")] Above = 1,
+  [pbr::OriginalName("BELOW")] Below = 2,
+  [pbr::OriginalName("FRONT")] Front = 3,
+  [pbr::OriginalName("BACK")] Back = 4,
+  [pbr::OriginalName("LEFT")] Left = 5,
+  [pbr::OriginalName("RIGHT")] Right = 6,
 }
 
 #endregion
@@ -2080,7 +2111,7 @@ public sealed partial class GoToInterpolation : pb::IMessage<GoToInterpolation>
 
   /// <summary>Field number for the "interpolation_type" field.</summary>
   public const int InterpolationTypeFieldNumber = 1;
-  private global::InterpolationMode interpolationType_ = global::InterpolationMode.NoneInterpolation;
+  private global::InterpolationMode interpolationType_ = global::InterpolationMode.NoneInterpolationMode;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public global::InterpolationMode InterpolationType {
@@ -2113,7 +2144,7 @@ public sealed partial class GoToInterpolation : pb::IMessage<GoToInterpolation>
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public override int GetHashCode() {
     int hash = 1;
-    if (InterpolationType != global::InterpolationMode.NoneInterpolation) hash ^= InterpolationType.GetHashCode();
+    if (InterpolationType != global::InterpolationMode.NoneInterpolationMode) hash ^= InterpolationType.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -2132,7 +2163,7 @@ public sealed partial class GoToInterpolation : pb::IMessage<GoToInterpolation>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     output.WriteRawMessage(this);
   #else
-    if (InterpolationType != global::InterpolationMode.NoneInterpolation) {
+    if (InterpolationType != global::InterpolationMode.NoneInterpolationMode) {
       output.WriteRawTag(8);
       output.WriteEnum((int) InterpolationType);
     }
@@ -2146,7 +2177,7 @@ public sealed partial class GoToInterpolation : pb::IMessage<GoToInterpolation>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-    if (InterpolationType != global::InterpolationMode.NoneInterpolation) {
+    if (InterpolationType != global::InterpolationMode.NoneInterpolationMode) {
       output.WriteRawTag(8);
       output.WriteEnum((int) InterpolationType);
     }
@@ -2160,7 +2191,7 @@ public sealed partial class GoToInterpolation : pb::IMessage<GoToInterpolation>
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public int CalculateSize() {
     int size = 0;
-    if (InterpolationType != global::InterpolationMode.NoneInterpolation) {
+    if (InterpolationType != global::InterpolationMode.NoneInterpolationMode) {
       size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) InterpolationType);
     }
     if (_unknownFields != null) {
@@ -2175,7 +2206,7 @@ public sealed partial class GoToInterpolation : pb::IMessage<GoToInterpolation>
     if (other == null) {
       return;
     }
-    if (other.InterpolationType != global::InterpolationMode.NoneInterpolation) {
+    if (other.InterpolationType != global::InterpolationMode.NoneInterpolationMode) {
       InterpolationType = other.InterpolationType;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -2223,6 +2254,429 @@ public sealed partial class GoToInterpolation : pb::IMessage<GoToInterpolation>
 
 }
 
+public sealed partial class GoToInterpolationSpace : pb::IMessage<GoToInterpolationSpace>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<GoToInterpolationSpace> _parser = new pb::MessageParser<GoToInterpolationSpace>(() => new GoToInterpolationSpace());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public static pb::MessageParser<GoToInterpolationSpace> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GotoReflection.Descriptor.MessageTypes[8]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public GoToInterpolationSpace() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public GoToInterpolationSpace(GoToInterpolationSpace other) : this() {
+    interpolationSpace_ = other.interpolationSpace_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public GoToInterpolationSpace Clone() {
+    return new GoToInterpolationSpace(this);
+  }
+
+  /// <summary>Field number for the "interpolation_space" field.</summary>
+  public const int InterpolationSpaceFieldNumber = 1;
+  private global::InterpolationSpace interpolationSpace_ = global::InterpolationSpace.NoneInterpolationSpace;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public global::InterpolationSpace InterpolationSpace {
+    get { return interpolationSpace_; }
+    set {
+      interpolationSpace_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override bool Equals(object other) {
+    return Equals(other as GoToInterpolationSpace);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public bool Equals(GoToInterpolationSpace other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (InterpolationSpace != other.InterpolationSpace) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (InterpolationSpace != global::InterpolationSpace.NoneInterpolationSpace) hash ^= InterpolationSpace.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (InterpolationSpace != global::InterpolationSpace.NoneInterpolationSpace) {
+      output.WriteRawTag(8);
+      output.WriteEnum((int) InterpolationSpace);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (InterpolationSpace != global::InterpolationSpace.NoneInterpolationSpace) {
+      output.WriteRawTag(8);
+      output.WriteEnum((int) InterpolationSpace);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public int CalculateSize() {
+    int size = 0;
+    if (InterpolationSpace != global::InterpolationSpace.NoneInterpolationSpace) {
+      size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) InterpolationSpace);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void MergeFrom(GoToInterpolationSpace other) {
+    if (other == null) {
+      return;
+    }
+    if (other.InterpolationSpace != global::InterpolationSpace.NoneInterpolationSpace) {
+      InterpolationSpace = other.InterpolationSpace;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          InterpolationSpace = (global::InterpolationSpace) input.ReadEnum();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          InterpolationSpace = (global::InterpolationSpace) input.ReadEnum();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class EllipticalGoToParameters : pb::IMessage<EllipticalGoToParameters>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<EllipticalGoToParameters> _parser = new pb::MessageParser<EllipticalGoToParameters>(() => new EllipticalGoToParameters());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public static pb::MessageParser<EllipticalGoToParameters> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GotoReflection.Descriptor.MessageTypes[9]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public EllipticalGoToParameters() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public EllipticalGoToParameters(EllipticalGoToParameters other) : this() {
+    arcDirection_ = other.arcDirection_;
+    SecondaryRadius = other.SecondaryRadius;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public EllipticalGoToParameters Clone() {
+    return new EllipticalGoToParameters(this);
+  }
+
+  /// <summary>Field number for the "arc_direction" field.</summary>
+  public const int ArcDirectionFieldNumber = 1;
+  private global::ArcDirection arcDirection_ = global::ArcDirection.NoneArcDirection;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public global::ArcDirection ArcDirection {
+    get { return arcDirection_; }
+    set {
+      arcDirection_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "secondary_radius" field.</summary>
+  public const int SecondaryRadiusFieldNumber = 2;
+  private static readonly pb::FieldCodec<float?> _single_secondaryRadius_codec = pb::FieldCodec.ForStructWrapper<float>(18);
+  private float? secondaryRadius_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public float? SecondaryRadius {
+    get { return secondaryRadius_; }
+    set {
+      secondaryRadius_ = value;
+    }
+  }
+
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override bool Equals(object other) {
+    return Equals(other as EllipticalGoToParameters);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public bool Equals(EllipticalGoToParameters other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (ArcDirection != other.ArcDirection) return false;
+    if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(SecondaryRadius, other.SecondaryRadius)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (ArcDirection != global::ArcDirection.NoneArcDirection) hash ^= ArcDirection.GetHashCode();
+    if (secondaryRadius_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(SecondaryRadius);
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (ArcDirection != global::ArcDirection.NoneArcDirection) {
+      output.WriteRawTag(8);
+      output.WriteEnum((int) ArcDirection);
+    }
+    if (secondaryRadius_ != null) {
+      _single_secondaryRadius_codec.WriteTagAndValue(output, SecondaryRadius);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (ArcDirection != global::ArcDirection.NoneArcDirection) {
+      output.WriteRawTag(8);
+      output.WriteEnum((int) ArcDirection);
+    }
+    if (secondaryRadius_ != null) {
+      _single_secondaryRadius_codec.WriteTagAndValue(ref output, SecondaryRadius);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public int CalculateSize() {
+    int size = 0;
+    if (ArcDirection != global::ArcDirection.NoneArcDirection) {
+      size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ArcDirection);
+    }
+    if (secondaryRadius_ != null) {
+      size += _single_secondaryRadius_codec.CalculateSizeWithTag(SecondaryRadius);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void MergeFrom(EllipticalGoToParameters other) {
+    if (other == null) {
+      return;
+    }
+    if (other.ArcDirection != global::ArcDirection.NoneArcDirection) {
+      ArcDirection = other.ArcDirection;
+    }
+    if (other.secondaryRadius_ != null) {
+      if (secondaryRadius_ == null || other.SecondaryRadius != 0F) {
+        SecondaryRadius = other.SecondaryRadius;
+      }
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          ArcDirection = (global::ArcDirection) input.ReadEnum();
+          break;
+        }
+        case 18: {
+          float? value = _single_secondaryRadius_codec.Read(input);
+          if (secondaryRadius_ == null || value != 0F) {
+            SecondaryRadius = value;
+          }
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          ArcDirection = (global::ArcDirection) input.ReadEnum();
+          break;
+        }
+        case 18: {
+          float? value = _single_secondaryRadius_codec.Read(ref input);
+          if (secondaryRadius_ == null || value != 0F) {
+            SecondaryRadius = value;
+          }
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
 public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
@@ -2237,7 +2691,7 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GotoReflection.Descriptor.MessageTypes[8]; }
+    get { return global::GotoReflection.Descriptor.MessageTypes[10]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2257,7 +2711,9 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public GoToRequest(GoToRequest other) : this() {
+    interpolationSpace_ = other.interpolationSpace_ != null ? other.interpolationSpace_.Clone() : null;
     interpolationMode_ = other.interpolationMode_ != null ? other.interpolationMode_.Clone() : null;
+    ellipticalParameters_ = other.ellipticalParameters_ != null ? other.ellipticalParameters_.Clone() : null;
     switch (other.GoalCase) {
       case GoalOneofCase.CartesianGoal:
         CartesianGoal = other.CartesianGoal.Clone();
@@ -2315,6 +2771,18 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
     }
   }
 
+  /// <summary>Field number for the "interpolation_space" field.</summary>
+  public const int InterpolationSpaceFieldNumber = 9;
+  private global::GoToInterpolationSpace interpolationSpace_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public global::GoToInterpolationSpace InterpolationSpace {
+    get { return interpolationSpace_; }
+    set {
+      interpolationSpace_ = value;
+    }
+  }
+
   /// <summary>Field number for the "interpolation_mode" field.</summary>
   public const int InterpolationModeFieldNumber = 10;
   private global::GoToInterpolation interpolationMode_;
@@ -2324,6 +2792,18 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
     get { return interpolationMode_; }
     set {
       interpolationMode_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "elliptical_parameters" field.</summary>
+  public const int EllipticalParametersFieldNumber = 15;
+  private global::EllipticalGoToParameters ellipticalParameters_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public global::EllipticalGoToParameters EllipticalParameters {
+    get { return ellipticalParameters_; }
+    set {
+      ellipticalParameters_ = value;
     }
   }
 
@@ -2367,7 +2847,9 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
     if (!object.Equals(CartesianGoal, other.CartesianGoal)) return false;
     if (!object.Equals(JointsGoal, other.JointsGoal)) return false;
     if (!object.Equals(OdometryGoal, other.OdometryGoal)) return false;
+    if (!object.Equals(InterpolationSpace, other.InterpolationSpace)) return false;
     if (!object.Equals(InterpolationMode, other.InterpolationMode)) return false;
+    if (!object.Equals(EllipticalParameters, other.EllipticalParameters)) return false;
     if (GoalCase != other.GoalCase) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -2379,7 +2861,9 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
     if (goalCase_ == GoalOneofCase.CartesianGoal) hash ^= CartesianGoal.GetHashCode();
     if (goalCase_ == GoalOneofCase.JointsGoal) hash ^= JointsGoal.GetHashCode();
     if (goalCase_ == GoalOneofCase.OdometryGoal) hash ^= OdometryGoal.GetHashCode();
+    if (interpolationSpace_ != null) hash ^= InterpolationSpace.GetHashCode();
     if (interpolationMode_ != null) hash ^= InterpolationMode.GetHashCode();
+    if (ellipticalParameters_ != null) hash ^= EllipticalParameters.GetHashCode();
     hash ^= (int) goalCase_;
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -2411,9 +2895,17 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
       output.WriteRawTag(26);
       output.WriteMessage(OdometryGoal);
     }
+    if (interpolationSpace_ != null) {
+      output.WriteRawTag(74);
+      output.WriteMessage(InterpolationSpace);
+    }
     if (interpolationMode_ != null) {
       output.WriteRawTag(82);
       output.WriteMessage(InterpolationMode);
+    }
+    if (ellipticalParameters_ != null) {
+      output.WriteRawTag(122);
+      output.WriteMessage(EllipticalParameters);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -2437,9 +2929,17 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
       output.WriteRawTag(26);
       output.WriteMessage(OdometryGoal);
     }
+    if (interpolationSpace_ != null) {
+      output.WriteRawTag(74);
+      output.WriteMessage(InterpolationSpace);
+    }
     if (interpolationMode_ != null) {
       output.WriteRawTag(82);
       output.WriteMessage(InterpolationMode);
+    }
+    if (ellipticalParameters_ != null) {
+      output.WriteRawTag(122);
+      output.WriteMessage(EllipticalParameters);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -2460,8 +2960,14 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
     if (goalCase_ == GoalOneofCase.OdometryGoal) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(OdometryGoal);
     }
+    if (interpolationSpace_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(InterpolationSpace);
+    }
     if (interpolationMode_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(InterpolationMode);
+    }
+    if (ellipticalParameters_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(EllipticalParameters);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -2475,11 +2981,23 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
     if (other == null) {
       return;
     }
+    if (other.interpolationSpace_ != null) {
+      if (interpolationSpace_ == null) {
+        InterpolationSpace = new global::GoToInterpolationSpace();
+      }
+      InterpolationSpace.MergeFrom(other.InterpolationSpace);
+    }
     if (other.interpolationMode_ != null) {
       if (interpolationMode_ == null) {
         InterpolationMode = new global::GoToInterpolation();
       }
       InterpolationMode.MergeFrom(other.InterpolationMode);
+    }
+    if (other.ellipticalParameters_ != null) {
+      if (ellipticalParameters_ == null) {
+        EllipticalParameters = new global::EllipticalGoToParameters();
+      }
+      EllipticalParameters.MergeFrom(other.EllipticalParameters);
     }
     switch (other.GoalCase) {
       case GoalOneofCase.CartesianGoal:
@@ -2544,11 +3062,25 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
           OdometryGoal = subBuilder;
           break;
         }
+        case 74: {
+          if (interpolationSpace_ == null) {
+            InterpolationSpace = new global::GoToInterpolationSpace();
+          }
+          input.ReadMessage(InterpolationSpace);
+          break;
+        }
         case 82: {
           if (interpolationMode_ == null) {
             InterpolationMode = new global::GoToInterpolation();
           }
           input.ReadMessage(InterpolationMode);
+          break;
+        }
+        case 122: {
+          if (ellipticalParameters_ == null) {
+            EllipticalParameters = new global::EllipticalGoToParameters();
+          }
+          input.ReadMessage(EllipticalParameters);
           break;
         }
       }
@@ -2593,11 +3125,25 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
           OdometryGoal = subBuilder;
           break;
         }
+        case 74: {
+          if (interpolationSpace_ == null) {
+            InterpolationSpace = new global::GoToInterpolationSpace();
+          }
+          input.ReadMessage(InterpolationSpace);
+          break;
+        }
         case 82: {
           if (interpolationMode_ == null) {
             InterpolationMode = new global::GoToInterpolation();
           }
           input.ReadMessage(InterpolationMode);
+          break;
+        }
+        case 122: {
+          if (ellipticalParameters_ == null) {
+            EllipticalParameters = new global::EllipticalGoToParameters();
+          }
+          input.ReadMessage(EllipticalParameters);
           break;
         }
       }
@@ -2621,7 +3167,7 @@ public sealed partial class GoToQueue : pb::IMessage<GoToQueue>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GotoReflection.Descriptor.MessageTypes[9]; }
+    get { return global::GotoReflection.Descriptor.MessageTypes[11]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

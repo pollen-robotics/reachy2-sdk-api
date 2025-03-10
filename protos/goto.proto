@@ -66,13 +66,39 @@ message CustomJointGoal {
 }
 
 enum InterpolationMode {
-    NONE_INTERPOLATION = 0;
+    NONE_INTERPOLATION_MODE = 0;
     LINEAR = 1;
     MINIMUM_JERK = 2;
+    ELLIPTICAL = 3;
+}
+
+enum InterpolationSpace {
+    NONE_INTERPOLATION_SPACE = 0;
+    JOINT_SPACE = 1;
+    CARTESIAN_SPACE = 2;
+}
+
+enum ArcDirection {
+    NONE_ARC_DIRECTION = 0;
+    ABOVE = 1;
+    BELOW = 2;
+    FRONT = 3;
+    BACK = 4;
+    LEFT = 5;
+    RIGHT = 6;
 }
 
 message GoToInterpolation {
     InterpolationMode interpolation_type = 1;
+}
+
+message GoToInterpolationSpace {
+    InterpolationSpace interpolation_space = 1;
+}
+
+message EllipticalGoToParameters {
+    ArcDirection arc_direction = 1;
+    google.protobuf.FloatValue secondary_radius = 2;
 }
 
 message GoToRequest {
@@ -81,7 +107,10 @@ message GoToRequest {
         JointsGoal joints_goal = 2;
         OdometryGoal odometry_goal = 3;
     }
+    GoToInterpolationSpace interpolation_space = 9;
     GoToInterpolation interpolation_mode = 10;
+
+    EllipticalGoToParameters elliptical_parameters = 15;
 }
 
 message GoToQueue {
