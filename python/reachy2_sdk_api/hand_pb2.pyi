@@ -21,6 +21,21 @@ else:
 
 DESCRIPTOR: google.protobuf.descriptor.FileDescriptor
 
+class _HandType:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _HandTypeEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_HandType.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    NO_TYPE: _HandType.ValueType  # 0
+    PARALLEL_GRIPPER: _HandType.ValueType  # 1
+
+class HandType(_HandType, metaclass=_HandTypeEnumTypeWrapper): ...
+
+NO_TYPE: HandType.ValueType  # 0
+PARALLEL_GRIPPER: HandType.ValueType  # 1
+global___HandType = HandType
+
 class _SpeedLimit:
     ValueType = typing.NewType("ValueType", builtins.int)
     V: typing_extensions.TypeAlias = ValueType
@@ -45,19 +60,22 @@ class Hand(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
     PART_ID_FIELD_NUMBER: builtins.int
+    TYPE_FIELD_NUMBER: builtins.int
     INFO_FIELD_NUMBER: builtins.int
     @property
     def part_id(self) -> part_pb2.PartId: ...
+    type: global___HandType.ValueType
     @property
     def info(self) -> part_pb2.PartInfo: ...
     def __init__(
         self,
         *,
         part_id: part_pb2.PartId | None = ...,
+        type: global___HandType.ValueType = ...,
         info: part_pb2.PartInfo | None = ...,
     ) -> None: ...
     def HasField(self, field_name: typing_extensions.Literal["info", b"info", "part_id", b"part_id"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["info", b"info", "part_id", b"part_id"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["info", b"info", "part_id", b"part_id", "type", b"type"]) -> None: ...
 
 global___Hand = Hand
 
@@ -261,6 +279,27 @@ class HandPositionRequest(google.protobuf.message.Message):
     def ClearField(self, field_name: typing_extensions.Literal["id", b"id", "position", b"position"]) -> None: ...
 
 global___HandPositionRequest = HandPositionRequest
+
+@typing_extensions.final
+class HandJointGoal(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    GOAL_REQUEST_FIELD_NUMBER: builtins.int
+    DURATION_FIELD_NUMBER: builtins.int
+    @property
+    def goal_request(self) -> global___HandPositionRequest: ...
+    @property
+    def duration(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    def __init__(
+        self,
+        *,
+        goal_request: global___HandPositionRequest | None = ...,
+        duration: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["duration", b"duration", "goal_request", b"goal_request"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["duration", b"duration", "goal_request", b"goal_request"]) -> None: ...
+
+global___HandJointGoal = HandJointGoal
 
 @typing_extensions.final
 class Temperatures(google.protobuf.message.Message):

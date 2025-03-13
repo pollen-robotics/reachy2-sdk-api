@@ -29,6 +29,10 @@ class MobileBaseLidarServiceStub:
         part_pb2.PartId,
         mobile_base_lidar_pb2.LidarSafety,
     ]
+    ResetDefaultSafetyDistances: grpc.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        mobile_base_mobility_pb2.MobilityServiceAck,
+    ]
     GetLidarMap: grpc.UnaryUnaryMultiCallable[
         part_pb2.PartId,
         mobile_base_lidar_pb2.LidarMap,
@@ -46,6 +50,10 @@ class MobileBaseLidarServiceAsyncStub:
     GetZuuuSafety: grpc.aio.UnaryUnaryMultiCallable[
         part_pb2.PartId,
         mobile_base_lidar_pb2.LidarSafety,
+    ]
+    ResetDefaultSafetyDistances: grpc.aio.UnaryUnaryMultiCallable[
+        part_pb2.PartId,
+        mobile_base_mobility_pb2.MobilityServiceAck,
     ]
     GetLidarMap: grpc.aio.UnaryUnaryMultiCallable[
         part_pb2.PartId,
@@ -69,6 +77,12 @@ class MobileBaseLidarServiceServicer(metaclass=abc.ABCMeta):
         request: part_pb2.PartId,
         context: _ServicerContext,
     ) -> typing.Union[mobile_base_lidar_pb2.LidarSafety, collections.abc.Awaitable[mobile_base_lidar_pb2.LidarSafety]]: ...
+    @abc.abstractmethod
+    def ResetDefaultSafetyDistances(
+        self,
+        request: part_pb2.PartId,
+        context: _ServicerContext,
+    ) -> typing.Union[mobile_base_mobility_pb2.MobilityServiceAck, collections.abc.Awaitable[mobile_base_mobility_pb2.MobilityServiceAck]]: ...
     @abc.abstractmethod
     def GetLidarMap(
         self,

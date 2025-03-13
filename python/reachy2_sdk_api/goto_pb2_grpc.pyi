@@ -4,6 +4,7 @@ isort:skip_file
 """
 import abc
 import collections.abc
+import component_pb2
 import google.protobuf.empty_pb2
 import goto_pb2
 import grpc
@@ -29,6 +30,10 @@ class GoToServiceStub:
         goto_pb2.GoToRequest,
         goto_pb2.GoToId,
     ]
+    GoToOdometry: grpc.UnaryUnaryMultiCallable[
+        goto_pb2.GoToRequest,
+        goto_pb2.GoToId,
+    ]
     GetGoToState: grpc.UnaryUnaryMultiCallable[
         goto_pb2.GoToId,
         goto_pb2.GoToGoalStatus,
@@ -41,8 +46,16 @@ class GoToServiceStub:
         part_pb2.PartId,
         goto_pb2.GoToId,
     ]
+    GetComponentGoToPlaying: grpc.UnaryUnaryMultiCallable[
+        component_pb2.ComponentId,
+        goto_pb2.GoToId,
+    ]
     GetPartGoToQueue: grpc.UnaryUnaryMultiCallable[
         part_pb2.PartId,
+        goto_pb2.GoToQueue,
+    ]
+    GetComponentGoToQueue: grpc.UnaryUnaryMultiCallable[
+        component_pb2.ComponentId,
         goto_pb2.GoToQueue,
     ]
     CancelGoTo: grpc.UnaryUnaryMultiCallable[
@@ -57,6 +70,10 @@ class GoToServiceStub:
         part_pb2.PartId,
         goto_pb2.GoToAck,
     ]
+    CancelComponentAllGoTo: grpc.UnaryUnaryMultiCallable[
+        component_pb2.ComponentId,
+        goto_pb2.GoToAck,
+    ]
 
 class GoToServiceAsyncStub:
     GoToCartesian: grpc.aio.UnaryUnaryMultiCallable[
@@ -64,6 +81,10 @@ class GoToServiceAsyncStub:
         goto_pb2.GoToId,
     ]
     GoToJoints: grpc.aio.UnaryUnaryMultiCallable[
+        goto_pb2.GoToRequest,
+        goto_pb2.GoToId,
+    ]
+    GoToOdometry: grpc.aio.UnaryUnaryMultiCallable[
         goto_pb2.GoToRequest,
         goto_pb2.GoToId,
     ]
@@ -79,8 +100,16 @@ class GoToServiceAsyncStub:
         part_pb2.PartId,
         goto_pb2.GoToId,
     ]
+    GetComponentGoToPlaying: grpc.aio.UnaryUnaryMultiCallable[
+        component_pb2.ComponentId,
+        goto_pb2.GoToId,
+    ]
     GetPartGoToQueue: grpc.aio.UnaryUnaryMultiCallable[
         part_pb2.PartId,
+        goto_pb2.GoToQueue,
+    ]
+    GetComponentGoToQueue: grpc.aio.UnaryUnaryMultiCallable[
+        component_pb2.ComponentId,
         goto_pb2.GoToQueue,
     ]
     CancelGoTo: grpc.aio.UnaryUnaryMultiCallable[
@@ -95,6 +124,10 @@ class GoToServiceAsyncStub:
         part_pb2.PartId,
         goto_pb2.GoToAck,
     ]
+    CancelComponentAllGoTo: grpc.aio.UnaryUnaryMultiCallable[
+        component_pb2.ComponentId,
+        goto_pb2.GoToAck,
+    ]
 
 class GoToServiceServicer(metaclass=abc.ABCMeta):
     @abc.abstractmethod
@@ -105,6 +138,12 @@ class GoToServiceServicer(metaclass=abc.ABCMeta):
     ) -> typing.Union[goto_pb2.GoToId, collections.abc.Awaitable[goto_pb2.GoToId]]: ...
     @abc.abstractmethod
     def GoToJoints(
+        self,
+        request: goto_pb2.GoToRequest,
+        context: _ServicerContext,
+    ) -> typing.Union[goto_pb2.GoToId, collections.abc.Awaitable[goto_pb2.GoToId]]: ...
+    @abc.abstractmethod
+    def GoToOdometry(
         self,
         request: goto_pb2.GoToRequest,
         context: _ServicerContext,
@@ -128,9 +167,21 @@ class GoToServiceServicer(metaclass=abc.ABCMeta):
         context: _ServicerContext,
     ) -> typing.Union[goto_pb2.GoToId, collections.abc.Awaitable[goto_pb2.GoToId]]: ...
     @abc.abstractmethod
+    def GetComponentGoToPlaying(
+        self,
+        request: component_pb2.ComponentId,
+        context: _ServicerContext,
+    ) -> typing.Union[goto_pb2.GoToId, collections.abc.Awaitable[goto_pb2.GoToId]]: ...
+    @abc.abstractmethod
     def GetPartGoToQueue(
         self,
         request: part_pb2.PartId,
+        context: _ServicerContext,
+    ) -> typing.Union[goto_pb2.GoToQueue, collections.abc.Awaitable[goto_pb2.GoToQueue]]: ...
+    @abc.abstractmethod
+    def GetComponentGoToQueue(
+        self,
+        request: component_pb2.ComponentId,
         context: _ServicerContext,
     ) -> typing.Union[goto_pb2.GoToQueue, collections.abc.Awaitable[goto_pb2.GoToQueue]]: ...
     @abc.abstractmethod
@@ -149,6 +200,12 @@ class GoToServiceServicer(metaclass=abc.ABCMeta):
     def CancelPartAllGoTo(
         self,
         request: part_pb2.PartId,
+        context: _ServicerContext,
+    ) -> typing.Union[goto_pb2.GoToAck, collections.abc.Awaitable[goto_pb2.GoToAck]]: ...
+    @abc.abstractmethod
+    def CancelComponentAllGoTo(
+        self,
+        request: component_pb2.ComponentId,
         context: _ServicerContext,
     ) -> typing.Union[goto_pb2.GoToAck, collections.abc.Awaitable[goto_pb2.GoToAck]]: ...
 

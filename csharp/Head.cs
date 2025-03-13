@@ -56,74 +56,71 @@ namespace Reachy.Part.Head {
             "dFZhbHVlIpcBCg1OZWNrSm9pbnRHb2FsEh8KAmlkGAEgASgLMhMucmVhY2h5",
             "LnBhcnQuUGFydElkEjYKC2pvaW50c19nb2FsGAIgASgLMiEucmVhY2h5LnBh",
             "cnQuaGVhZC5OZWNrT3JpZW50YXRpb24SLQoIZHVyYXRpb24YAyABKAsyGy5n",
-            "b29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSJCCg9OZWNrT3JpZW50YXRpb24S",
-            "LwoIcm90YXRpb24YASABKAsyHS5yZWFjaHkua2luZW1hdGljcy5Sb3RhdGlv",
-            "bjNkImIKDU5lY2tGS1JlcXVlc3QSHwoCaWQYASABKAsyEy5yZWFjaHkucGFy",
-            "dC5QYXJ0SWQSMAoIcG9zaXRpb24YAiABKAsyHi5yZWFjaHkucGFydC5oZWFk",
-            "LkhlYWRQb3NpdGlvbiJZCg5OZWNrRktTb2x1dGlvbhIPCgdzdWNjZXNzGAEg",
-            "ASgIEjYKC29yaWVudGF0aW9uGAIgASgLMiEucmVhY2h5LnBhcnQuaGVhZC5O",
-            "ZWNrT3JpZW50YXRpb24ijgEKDU5lY2tJS1JlcXVlc3QSHwoCaWQYASABKAsy",
-            "Ey5yZWFjaHkucGFydC5QYXJ0SWQSMQoGdGFyZ2V0GAIgASgLMiEucmVhY2h5",
-            "LnBhcnQuaGVhZC5OZWNrT3JpZW50YXRpb24SKQoCcTAYAyABKAsyHS5yZWFj",
-            "aHkua2luZW1hdGljcy5Sb3RhdGlvbjNkIm8KDk5lY2tJS1NvbHV0aW9uEg8K",
-            "B3N1Y2Nlc3MYASABKAgSLwoIcG9zaXRpb24YAiABKAsyHS5yZWFjaHkua2lu",
-            "ZW1hdGljcy5Sb3RhdGlvbjNkEhsKBWVycm9yGAMgASgLMgwuZXJyb3IuRXJy",
-            "b3Ii2wEKCkhlYWRTdGF0dXMSNwoLbmVja19zdGF0dXMYASABKAsyIi5jb21w",
-            "b25lbnQub3JiaXRhM2QuT3JiaXRhM2RTdGF0dXMSSQoQbF9hbnRlbm5hX3N0",
-            "YXR1cxgCIAEoCzIvLmNvbXBvbmVudC5keW5hbWl4ZWxfbW90b3IuRHluYW1p",
-            "eGVsTW90b3JTdGF0dXMSSQoQcl9hbnRlbm5hX3N0YXR1cxgDIAEoCzIvLmNv",
-            "bXBvbmVudC5keW5hbWl4ZWxfbW90b3IuRHluYW1peGVsTW90b3JTdGF0dXMi",
-            "QwoRU3BlZWRMaW1pdFJlcXVlc3QSHwoCaWQYASABKAsyEy5yZWFjaHkucGFy",
-            "dC5QYXJ0SWQSDQoFbGltaXQYAiABKA0iRAoSVG9ycXVlTGltaXRSZXF1ZXN0",
-            "Eh8KAmlkGAEgASgLMhMucmVhY2h5LnBhcnQuUGFydElkEg0KBWxpbWl0GAIg",
-            "ASgNIqUBCgxKb2ludHNMaW1pdHMSMQoLbmVja19saW1pdHMYASABKAsyHC5j",
-            "b21wb25lbnQub3JiaXRhM2QuTGltaXRzM2QSMAoQbF9hbnRlbm5hX2xpbWl0",
-            "cxgCIAEoCzIWLmNvbXBvbmVudC5Kb2ludExpbWl0cxIwChByX2FudGVubmFf",
-            "bGltaXRzGAMgASgLMhYuY29tcG9uZW50LkpvaW50TGltaXRzIocBChBIZWFk",
-            "VGVtcGVyYXR1cmVzEjUKEG5lY2tfdGVtcGVyYXR1cmUYASABKAsyGy5jb21w",
-            "b25lbnQub3JiaXRhM2QuRmxvYXQzZBIdChVsX2FudGVubmFfdGVtcGVyYXR1",
-            "cmUYAiABKAISHQoVcl9hbnRlbm5hX3RlbXBlcmF0dXJlGAMgASgCIvABChZI",
-            "ZWFkQ29tcG9uZW50c0NvbW1hbmRzEjoKDG5lY2tfY29tbWFuZBgBIAEoCzIk",
-            "LmNvbXBvbmVudC5vcmJpdGEzZC5PcmJpdGEzZHNDb21tYW5kEkwKEWxfYW50",
-            "ZW5uYV9jb21tYW5kGAIgASgLMjEuY29tcG9uZW50LmR5bmFtaXhlbF9tb3Rv",
-            "ci5EeW5hbWl4ZWxNb3RvcnNDb21tYW5kEkwKEXJfYW50ZW5uYV9jb21tYW5k",
-            "GAMgASgLMjEuY29tcG9uZW50LmR5bmFtaXhlbF9tb3Rvci5EeW5hbWl4ZWxN",
-            "b3RvcnNDb21tYW5kKtwBCglIZWFkRmllbGQSCAoETk9ORRAAEggKBE5BTUUQ",
-            "ARIGCgJJRBACEhQKEFBSRVNFTlRfUE9TSVRJT04QAxIRCg1QUkVTRU5UX1NQ",
-            "RUVEEAQSEAoMUFJFU0VOVF9MT0FEEAUSDwoLVEVNUEVSQVRVUkUQBhIQCgxK",
-            "T0lOVF9MSU1JVFMQBxINCglDT01QTElBTlQQCBIRCg1HT0FMX1BPU0lUSU9O",
-            "EAkSDwoLU1BFRURfTElNSVQQChIQCgxUT1JRVUVfTElNSVQQCxIHCgNQSUQQ",
-            "DBIHCgNBTEwQDyoqCgpOZWNrSm9pbnRzEggKBFJPTEwQABIJCgVQSVRDSBAB",
-            "EgcKA1lBVxACMoYKCgtIZWFkU2VydmljZRJDCgtHZXRBbGxIZWFkcxIWLmdv",
-            "b2dsZS5wcm90b2J1Zi5FbXB0eRocLnJlYWNoeS5wYXJ0LmhlYWQuTGlzdE9m",
-            "SGVhZBI8CghHZXRTdGF0ZRITLnJlYWNoeS5wYXJ0LlBhcnRJZBobLnJlYWNo",
-            "eS5wYXJ0LmhlYWQuSGVhZFN0YXRlElIKDUNvbXB1dGVOZWNrRksSHy5yZWFj",
-            "aHkucGFydC5oZWFkLk5lY2tGS1JlcXVlc3QaIC5yZWFjaHkucGFydC5oZWFk",
-            "Lk5lY2tGS1NvbHV0aW9uElIKDUNvbXB1dGVOZWNrSUsSHy5yZWFjaHkucGFy",
-            "dC5oZWFkLk5lY2tJS1JlcXVlc3QaIC5yZWFjaHkucGFydC5oZWFkLk5lY2tJ",
-            "S1NvbHV0aW9uEkQKDkdldE9yaWVudGF0aW9uEhMucmVhY2h5LnBhcnQuUGFy",
-            "dElkGh0ucmVhY2h5LmtpbmVtYXRpY3MuUm90YXRpb24zZBI6CgVBdWRpdBIT",
-            "LnJlYWNoeS5wYXJ0LlBhcnRJZBocLnJlYWNoeS5wYXJ0LmhlYWQuSGVhZFN0",
-            "YXR1cxI4CglIZWFydEJlYXQSEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5nb29n",
-            "bGUucHJvdG9idWYuRW1wdHkSNgoHUmVzdGFydBITLnJlYWNoeS5wYXJ0LlBh",
-            "cnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJBChJSZXNldERlZmF1bHRW",
-            "YWx1ZXMSEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYu",
-            "RW1wdHkSNQoGVHVybk9uEhMucmVhY2h5LnBhcnQuUGFydElkGhYuZ29vZ2xl",
-            "LnByb3RvYnVmLkVtcHR5EjYKB1R1cm5PZmYSEy5yZWFjaHkucGFydC5QYXJ0",
-            "SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSRgoPR2V0Sm9pbnRzTGltaXRz",
-            "EhMucmVhY2h5LnBhcnQuUGFydElkGh4ucmVhY2h5LnBhcnQuaGVhZC5Kb2lu",
-            "dHNMaW1pdHMSSgoPR2V0VGVtcGVyYXR1cmVzEhMucmVhY2h5LnBhcnQuUGFy",
-            "dElkGiIucmVhY2h5LnBhcnQuaGVhZC5IZWFkVGVtcGVyYXR1cmVzEkoKFEdl",
-            "dEpvaW50R29hbFBvc2l0aW9uEhMucmVhY2h5LnBhcnQuUGFydElkGh0ucmVh",
-            "Y2h5LmtpbmVtYXRpY3MuUm90YXRpb24zZBJMCg1TZXRTcGVlZExpbWl0EiMu",
-            "cmVhY2h5LnBhcnQuaGVhZC5TcGVlZExpbWl0UmVxdWVzdBoWLmdvb2dsZS5w",
-            "cm90b2J1Zi5FbXB0eRJOCg5TZXRUb3JxdWVMaW1pdBIkLnJlYWNoeS5wYXJ0",
-            "LmhlYWQuVG9ycXVlTGltaXRSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVt",
-            "cHR5EkwKEVNlbmROZWNrSm9pbnRHb2FsEh8ucmVhY2h5LnBhcnQuaGVhZC5O",
-            "ZWNrSm9pbnRHb2FsGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EloKFlNlbmRD",
-            "b21wb25lbnRzQ29tbWFuZHMSKC5yZWFjaHkucGFydC5oZWFkLkhlYWRDb21w",
-            "b25lbnRzQ29tbWFuZHMaFi5nb29nbGUucHJvdG9idWYuRW1wdHliBnByb3Rv",
-            "Mw=="));
+            "b29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSLPAQoQQW50ZW5uYUpvaW50R29h",
+            "bBIfCgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBI6CgdhbnRlbm5h",
+            "GAIgASgLMikuY29tcG9uZW50LmR5bmFtaXhlbF9tb3Rvci5EeW5hbWl4ZWxN",
+            "b3RvchIvCgpqb2ludF9nb2FsGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZs",
+            "b2F0VmFsdWUSLQoIZHVyYXRpb24YBCABKAsyGy5nb29nbGUucHJvdG9idWYu",
+            "RmxvYXRWYWx1ZSJCCg9OZWNrT3JpZW50YXRpb24SLwoIcm90YXRpb24YASAB",
+            "KAsyHS5yZWFjaHkua2luZW1hdGljcy5Sb3RhdGlvbjNkImIKDU5lY2tGS1Jl",
+            "cXVlc3QSHwoCaWQYASABKAsyEy5yZWFjaHkucGFydC5QYXJ0SWQSMAoIcG9z",
+            "aXRpb24YAiABKAsyHi5yZWFjaHkucGFydC5oZWFkLkhlYWRQb3NpdGlvbiJZ",
+            "Cg5OZWNrRktTb2x1dGlvbhIPCgdzdWNjZXNzGAEgASgIEjYKC29yaWVudGF0",
+            "aW9uGAIgASgLMiEucmVhY2h5LnBhcnQuaGVhZC5OZWNrT3JpZW50YXRpb24i",
+            "jgEKDU5lY2tJS1JlcXVlc3QSHwoCaWQYASABKAsyEy5yZWFjaHkucGFydC5Q",
+            "YXJ0SWQSMQoGdGFyZ2V0GAIgASgLMiEucmVhY2h5LnBhcnQuaGVhZC5OZWNr",
+            "T3JpZW50YXRpb24SKQoCcTAYAyABKAsyHS5yZWFjaHkua2luZW1hdGljcy5S",
+            "b3RhdGlvbjNkIm8KDk5lY2tJS1NvbHV0aW9uEg8KB3N1Y2Nlc3MYASABKAgS",
+            "LwoIcG9zaXRpb24YAiABKAsyHS5yZWFjaHkua2luZW1hdGljcy5Sb3RhdGlv",
+            "bjNkEhsKBWVycm9yGAMgASgLMgwuZXJyb3IuRXJyb3Ii2wEKCkhlYWRTdGF0",
+            "dXMSNwoLbmVja19zdGF0dXMYASABKAsyIi5jb21wb25lbnQub3JiaXRhM2Qu",
+            "T3JiaXRhM2RTdGF0dXMSSQoQbF9hbnRlbm5hX3N0YXR1cxgCIAEoCzIvLmNv",
+            "bXBvbmVudC5keW5hbWl4ZWxfbW90b3IuRHluYW1peGVsTW90b3JTdGF0dXMS",
+            "SQoQcl9hbnRlbm5hX3N0YXR1cxgDIAEoCzIvLmNvbXBvbmVudC5keW5hbWl4",
+            "ZWxfbW90b3IuRHluYW1peGVsTW90b3JTdGF0dXMiQwoRU3BlZWRMaW1pdFJl",
+            "cXVlc3QSHwoCaWQYASABKAsyEy5yZWFjaHkucGFydC5QYXJ0SWQSDQoFbGlt",
+            "aXQYAiABKA0iRAoSVG9ycXVlTGltaXRSZXF1ZXN0Eh8KAmlkGAEgASgLMhMu",
+            "cmVhY2h5LnBhcnQuUGFydElkEg0KBWxpbWl0GAIgASgNIqUBCgxKb2ludHNM",
+            "aW1pdHMSMQoLbmVja19saW1pdHMYASABKAsyHC5jb21wb25lbnQub3JiaXRh",
+            "M2QuTGltaXRzM2QSMAoQbF9hbnRlbm5hX2xpbWl0cxgCIAEoCzIWLmNvbXBv",
+            "bmVudC5Kb2ludExpbWl0cxIwChByX2FudGVubmFfbGltaXRzGAMgASgLMhYu",
+            "Y29tcG9uZW50LkpvaW50TGltaXRzIocBChBIZWFkVGVtcGVyYXR1cmVzEjUK",
+            "EG5lY2tfdGVtcGVyYXR1cmUYASABKAsyGy5jb21wb25lbnQub3JiaXRhM2Qu",
+            "RmxvYXQzZBIdChVsX2FudGVubmFfdGVtcGVyYXR1cmUYAiABKAISHQoVcl9h",
+            "bnRlbm5hX3RlbXBlcmF0dXJlGAMgASgCKtwBCglIZWFkRmllbGQSCAoETk9O",
+            "RRAAEggKBE5BTUUQARIGCgJJRBACEhQKEFBSRVNFTlRfUE9TSVRJT04QAxIR",
+            "Cg1QUkVTRU5UX1NQRUVEEAQSEAoMUFJFU0VOVF9MT0FEEAUSDwoLVEVNUEVS",
+            "QVRVUkUQBhIQCgxKT0lOVF9MSU1JVFMQBxINCglDT01QTElBTlQQCBIRCg1H",
+            "T0FMX1BPU0lUSU9OEAkSDwoLU1BFRURfTElNSVQQChIQCgxUT1JRVUVfTElN",
+            "SVQQCxIHCgNQSUQQDBIHCgNBTEwQDyoqCgpOZWNrSm9pbnRzEggKBFJPTEwQ",
+            "ABIJCgVQSVRDSBABEgcKA1lBVxACMqoJCgtIZWFkU2VydmljZRJDCgtHZXRB",
+            "bGxIZWFkcxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRocLnJlYWNoeS5wYXJ0",
+            "LmhlYWQuTGlzdE9mSGVhZBI8CghHZXRTdGF0ZRITLnJlYWNoeS5wYXJ0LlBh",
+            "cnRJZBobLnJlYWNoeS5wYXJ0LmhlYWQuSGVhZFN0YXRlElIKDUNvbXB1dGVO",
+            "ZWNrRksSHy5yZWFjaHkucGFydC5oZWFkLk5lY2tGS1JlcXVlc3QaIC5yZWFj",
+            "aHkucGFydC5oZWFkLk5lY2tGS1NvbHV0aW9uElIKDUNvbXB1dGVOZWNrSUsS",
+            "Hy5yZWFjaHkucGFydC5oZWFkLk5lY2tJS1JlcXVlc3QaIC5yZWFjaHkucGFy",
+            "dC5oZWFkLk5lY2tJS1NvbHV0aW9uEkQKDkdldE9yaWVudGF0aW9uEhMucmVh",
+            "Y2h5LnBhcnQuUGFydElkGh0ucmVhY2h5LmtpbmVtYXRpY3MuUm90YXRpb24z",
+            "ZBI6CgVBdWRpdBITLnJlYWNoeS5wYXJ0LlBhcnRJZBocLnJlYWNoeS5wYXJ0",
+            "LmhlYWQuSGVhZFN0YXR1cxI4CglIZWFydEJlYXQSEy5yZWFjaHkucGFydC5Q",
+            "YXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSNgoHUmVzdGFydBITLnJl",
+            "YWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJBChJS",
+            "ZXNldERlZmF1bHRWYWx1ZXMSEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5nb29n",
+            "bGUucHJvdG9idWYuRW1wdHkSNQoGVHVybk9uEhMucmVhY2h5LnBhcnQuUGFy",
+            "dElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EjYKB1R1cm5PZmYSEy5yZWFj",
+            "aHkucGFydC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSRgoPR2V0",
+            "Sm9pbnRzTGltaXRzEhMucmVhY2h5LnBhcnQuUGFydElkGh4ucmVhY2h5LnBh",
+            "cnQuaGVhZC5Kb2ludHNMaW1pdHMSSgoPR2V0VGVtcGVyYXR1cmVzEhMucmVh",
+            "Y2h5LnBhcnQuUGFydElkGiIucmVhY2h5LnBhcnQuaGVhZC5IZWFkVGVtcGVy",
+            "YXR1cmVzEkoKFEdldEpvaW50R29hbFBvc2l0aW9uEhMucmVhY2h5LnBhcnQu",
+            "UGFydElkGh0ucmVhY2h5LmtpbmVtYXRpY3MuUm90YXRpb24zZBJMCg1TZXRT",
+            "cGVlZExpbWl0EiMucmVhY2h5LnBhcnQuaGVhZC5TcGVlZExpbWl0UmVxdWVz",
+            "dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJOCg5TZXRUb3JxdWVMaW1pdBIk",
+            "LnJlYWNoeS5wYXJ0LmhlYWQuVG9ycXVlTGltaXRSZXF1ZXN0GhYuZ29vZ2xl",
+            "LnByb3RvYnVmLkVtcHR5EkwKEVNlbmROZWNrSm9pbnRHb2FsEh8ucmVhY2h5",
+            "LnBhcnQuaGVhZC5OZWNrSm9pbnRHb2FsGhYuZ29vZ2xlLnByb3RvYnVmLkVt",
+            "cHR5YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, global::Reachy.Kinematics.KinematicsReflection.Descriptor, global::Error.ErrorReflection.Descriptor, global::Component.ComponentReflection.Descriptor, global::Component.Orbita3D.Orbita3DReflection.Descriptor, global::Component.DynamixelMotor.DynamixelMotorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.Part.Head.HeadField), typeof(global::Reachy.Part.Head.NeckJoints), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -135,6 +132,7 @@ namespace Reachy.Part.Head {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.HeadPosition), global::Reachy.Part.Head.HeadPosition.Parser, new[]{ "NeckPosition", "LAntennaPosition", "RAntennaPosition" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.NeckCartesianGoal), global::Reachy.Part.Head.NeckCartesianGoal.Parser, new[]{ "Id", "Point", "Duration" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.NeckJointGoal), global::Reachy.Part.Head.NeckJointGoal.Parser, new[]{ "Id", "JointsGoal", "Duration" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.AntennaJointGoal), global::Reachy.Part.Head.AntennaJointGoal.Parser, new[]{ "Id", "Antenna", "JointGoal", "Duration" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.NeckOrientation), global::Reachy.Part.Head.NeckOrientation.Parser, new[]{ "Rotation" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.NeckFKRequest), global::Reachy.Part.Head.NeckFKRequest.Parser, new[]{ "Id", "Position" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.NeckFKSolution), global::Reachy.Part.Head.NeckFKSolution.Parser, new[]{ "Success", "Orientation" }, null, null, null, null),
@@ -2401,6 +2399,340 @@ namespace Reachy.Part.Head {
 
   }
 
+  public sealed partial class AntennaJointGoal : pb::IMessage<AntennaJointGoal>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<AntennaJointGoal> _parser = new pb::MessageParser<AntennaJointGoal>(() => new AntennaJointGoal());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<AntennaJointGoal> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AntennaJointGoal() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AntennaJointGoal(AntennaJointGoal other) : this() {
+      id_ = other.id_ != null ? other.id_.Clone() : null;
+      antenna_ = other.antenna_ != null ? other.antenna_.Clone() : null;
+      JointGoal = other.JointGoal;
+      Duration = other.Duration;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AntennaJointGoal Clone() {
+      return new AntennaJointGoal(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private global::Reachy.Part.PartId id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.PartId Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "antenna" field.</summary>
+    public const int AntennaFieldNumber = 2;
+    private global::Component.DynamixelMotor.DynamixelMotor antenna_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Component.DynamixelMotor.DynamixelMotor Antenna {
+      get { return antenna_; }
+      set {
+        antenna_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "joint_goal" field.</summary>
+    public const int JointGoalFieldNumber = 3;
+    private static readonly pb::FieldCodec<float?> _single_jointGoal_codec = pb::FieldCodec.ForStructWrapper<float>(26);
+    private float? jointGoal_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float? JointGoal {
+      get { return jointGoal_; }
+      set {
+        jointGoal_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "duration" field.</summary>
+    public const int DurationFieldNumber = 4;
+    private static readonly pb::FieldCodec<float?> _single_duration_codec = pb::FieldCodec.ForStructWrapper<float>(34);
+    private float? duration_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float? Duration {
+      get { return duration_; }
+      set {
+        duration_ = value;
+      }
+    }
+
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as AntennaJointGoal);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(AntennaJointGoal other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Id, other.Id)) return false;
+      if (!object.Equals(Antenna, other.Antenna)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(JointGoal, other.JointGoal)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(Duration, other.Duration)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (id_ != null) hash ^= Id.GetHashCode();
+      if (antenna_ != null) hash ^= Antenna.GetHashCode();
+      if (jointGoal_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(JointGoal);
+      if (duration_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Duration);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (id_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Id);
+      }
+      if (antenna_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Antenna);
+      }
+      if (jointGoal_ != null) {
+        _single_jointGoal_codec.WriteTagAndValue(output, JointGoal);
+      }
+      if (duration_ != null) {
+        _single_duration_codec.WriteTagAndValue(output, Duration);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (id_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Id);
+      }
+      if (antenna_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Antenna);
+      }
+      if (jointGoal_ != null) {
+        _single_jointGoal_codec.WriteTagAndValue(ref output, JointGoal);
+      }
+      if (duration_ != null) {
+        _single_duration_codec.WriteTagAndValue(ref output, Duration);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (id_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Id);
+      }
+      if (antenna_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Antenna);
+      }
+      if (jointGoal_ != null) {
+        size += _single_jointGoal_codec.CalculateSizeWithTag(JointGoal);
+      }
+      if (duration_ != null) {
+        size += _single_duration_codec.CalculateSizeWithTag(Duration);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(AntennaJointGoal other) {
+      if (other == null) {
+        return;
+      }
+      if (other.id_ != null) {
+        if (id_ == null) {
+          Id = new global::Reachy.Part.PartId();
+        }
+        Id.MergeFrom(other.Id);
+      }
+      if (other.antenna_ != null) {
+        if (antenna_ == null) {
+          Antenna = new global::Component.DynamixelMotor.DynamixelMotor();
+        }
+        Antenna.MergeFrom(other.Antenna);
+      }
+      if (other.jointGoal_ != null) {
+        if (jointGoal_ == null || other.JointGoal != 0F) {
+          JointGoal = other.JointGoal;
+        }
+      }
+      if (other.duration_ != null) {
+        if (duration_ == null || other.Duration != 0F) {
+          Duration = other.Duration;
+        }
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (id_ == null) {
+              Id = new global::Reachy.Part.PartId();
+            }
+            input.ReadMessage(Id);
+            break;
+          }
+          case 18: {
+            if (antenna_ == null) {
+              Antenna = new global::Component.DynamixelMotor.DynamixelMotor();
+            }
+            input.ReadMessage(Antenna);
+            break;
+          }
+          case 26: {
+            float? value = _single_jointGoal_codec.Read(input);
+            if (jointGoal_ == null || value != 0F) {
+              JointGoal = value;
+            }
+            break;
+          }
+          case 34: {
+            float? value = _single_duration_codec.Read(input);
+            if (duration_ == null || value != 0F) {
+              Duration = value;
+            }
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (id_ == null) {
+              Id = new global::Reachy.Part.PartId();
+            }
+            input.ReadMessage(Id);
+            break;
+          }
+          case 18: {
+            if (antenna_ == null) {
+              Antenna = new global::Component.DynamixelMotor.DynamixelMotor();
+            }
+            input.ReadMessage(Antenna);
+            break;
+          }
+          case 26: {
+            float? value = _single_jointGoal_codec.Read(ref input);
+            if (jointGoal_ == null || value != 0F) {
+              JointGoal = value;
+            }
+            break;
+          }
+          case 34: {
+            float? value = _single_duration_codec.Read(ref input);
+            if (duration_ == null || value != 0F) {
+              Duration = value;
+            }
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class NeckOrientation : pb::IMessage<NeckOrientation>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2415,7 +2747,7 @@ namespace Reachy.Part.Head {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2613,7 +2945,7 @@ namespace Reachy.Part.Head {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2857,7 +3189,7 @@ namespace Reachy.Part.Head {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3092,7 +3424,7 @@ namespace Reachy.Part.Head {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3382,7 +3714,7 @@ namespace Reachy.Part.Head {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3663,7 +3995,7 @@ namespace Reachy.Part.Head {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3953,7 +4285,7 @@ namespace Reachy.Part.Head {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4188,7 +4520,7 @@ namespace Reachy.Part.Head {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4423,7 +4755,7 @@ namespace Reachy.Part.Head {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[16]; }
+      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4713,7 +5045,7 @@ namespace Reachy.Part.Head {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[17]; }
+      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

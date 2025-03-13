@@ -12,6 +12,7 @@ import hand_pb2
 import head_pb2
 import mobile_base_utility_pb2
 import sys
+import tripod_pb2
 import typing
 
 if sys.version_info >= (3, 10):
@@ -51,6 +52,7 @@ class Reachy(google.protobuf.message.Message):
     L_HAND_FIELD_NUMBER: builtins.int
     R_HAND_FIELD_NUMBER: builtins.int
     MOBILE_BASE_FIELD_NUMBER: builtins.int
+    TRIPOD_FIELD_NUMBER: builtins.int
     INFO_FIELD_NUMBER: builtins.int
     @property
     def id(self) -> global___ReachyId: ...
@@ -67,6 +69,8 @@ class Reachy(google.protobuf.message.Message):
     @property
     def mobile_base(self) -> mobile_base_utility_pb2.MobileBase: ...
     @property
+    def tripod(self) -> tripod_pb2.Tripod: ...
+    @property
     def info(self) -> global___ReachyInfo: ...
     def __init__(
         self,
@@ -78,10 +82,11 @@ class Reachy(google.protobuf.message.Message):
         l_hand: hand_pb2.Hand | None = ...,
         r_hand: hand_pb2.Hand | None = ...,
         mobile_base: mobile_base_utility_pb2.MobileBase | None = ...,
+        tripod: tripod_pb2.Tripod | None = ...,
         info: global___ReachyInfo | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["head", b"head", "id", b"id", "info", b"info", "l_arm", b"l_arm", "l_hand", b"l_hand", "mobile_base", b"mobile_base", "r_arm", b"r_arm", "r_hand", b"r_hand"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["head", b"head", "id", b"id", "info", b"info", "l_arm", b"l_arm", "l_hand", b"l_hand", "mobile_base", b"mobile_base", "r_arm", b"r_arm", "r_hand", b"r_hand"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["head", b"head", "id", b"id", "info", b"info", "l_arm", b"l_arm", "l_hand", b"l_hand", "mobile_base", b"mobile_base", "r_arm", b"r_arm", "r_hand", b"r_hand", "tripod", b"tripod"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["head", b"head", "id", b"id", "info", b"info", "l_arm", b"l_arm", "l_hand", b"l_hand", "mobile_base", b"mobile_base", "r_arm", b"r_arm", "r_hand", b"r_hand", "tripod", b"tripod"]) -> None: ...
 
 global___Reachy = Reachy
 
@@ -110,10 +115,12 @@ class ReachyInfo(google.protobuf.message.Message):
     SERIAL_NUMBER_FIELD_NUMBER: builtins.int
     VERSION_HARD_FIELD_NUMBER: builtins.int
     VERSION_SOFT_FIELD_NUMBER: builtins.int
+    API_VERSION_FIELD_NUMBER: builtins.int
     CORE_MODE_FIELD_NUMBER: builtins.int
     serial_number: builtins.str
     version_hard: builtins.str
     version_soft: builtins.str
+    api_version: builtins.str
     core_mode: global___ReachyCoreMode.ValueType
     def __init__(
         self,
@@ -121,9 +128,10 @@ class ReachyInfo(google.protobuf.message.Message):
         serial_number: builtins.str = ...,
         version_hard: builtins.str = ...,
         version_soft: builtins.str = ...,
+        api_version: builtins.str = ...,
         core_mode: global___ReachyCoreMode.ValueType = ...,
     ) -> None: ...
-    def ClearField(self, field_name: typing_extensions.Literal["core_mode", b"core_mode", "serial_number", b"serial_number", "version_hard", b"version_hard", "version_soft", b"version_soft"]) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["api_version", b"api_version", "core_mode", b"core_mode", "serial_number", b"serial_number", "version_hard", b"version_hard", "version_soft", b"version_soft"]) -> None: ...
 
 global___ReachyInfo = ReachyInfo
 
@@ -139,6 +147,7 @@ class ReachyState(google.protobuf.message.Message):
     L_HAND_STATE_FIELD_NUMBER: builtins.int
     R_HAND_STATE_FIELD_NUMBER: builtins.int
     MOBILE_BASE_STATE_FIELD_NUMBER: builtins.int
+    TRIPOD_STATE_FIELD_NUMBER: builtins.int
     @property
     def timestamp(self) -> google.protobuf.timestamp_pb2.Timestamp: ...
     @property
@@ -155,6 +164,8 @@ class ReachyState(google.protobuf.message.Message):
     def r_hand_state(self) -> hand_pb2.HandState: ...
     @property
     def mobile_base_state(self) -> mobile_base_utility_pb2.MobileBaseState: ...
+    @property
+    def tripod_state(self) -> tripod_pb2.TripodState: ...
     def __init__(
         self,
         *,
@@ -166,9 +177,10 @@ class ReachyState(google.protobuf.message.Message):
         l_hand_state: hand_pb2.HandState | None = ...,
         r_hand_state: hand_pb2.HandState | None = ...,
         mobile_base_state: mobile_base_utility_pb2.MobileBaseState | None = ...,
+        tripod_state: tripod_pb2.TripodState | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["head_state", b"head_state", "id", b"id", "l_arm_state", b"l_arm_state", "l_hand_state", b"l_hand_state", "mobile_base_state", b"mobile_base_state", "r_arm_state", b"r_arm_state", "r_hand_state", b"r_hand_state", "timestamp", b"timestamp"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["head_state", b"head_state", "id", b"id", "l_arm_state", b"l_arm_state", "l_hand_state", b"l_hand_state", "mobile_base_state", b"mobile_base_state", "r_arm_state", b"r_arm_state", "r_hand_state", b"r_hand_state", "timestamp", b"timestamp"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["head_state", b"head_state", "id", b"id", "l_arm_state", b"l_arm_state", "l_hand_state", b"l_hand_state", "mobile_base_state", b"mobile_base_state", "r_arm_state", b"r_arm_state", "r_hand_state", b"r_hand_state", "timestamp", b"timestamp", "tripod_state", b"tripod_state"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["head_state", b"head_state", "id", b"id", "l_arm_state", b"l_arm_state", "l_hand_state", b"l_hand_state", "mobile_base_state", b"mobile_base_state", "r_arm_state", b"r_arm_state", "r_hand_state", b"r_hand_state", "timestamp", b"timestamp", "tripod_state", b"tripod_state"]) -> None: ...
 
 global___ReachyState = ReachyState
 
@@ -184,6 +196,7 @@ class ReachyStatus(google.protobuf.message.Message):
     L_HAND_STATUS_FIELD_NUMBER: builtins.int
     R_HAND_STATUS_FIELD_NUMBER: builtins.int
     MOBILE_BASE_STATUS_FIELD_NUMBER: builtins.int
+    TRIPOD_STATUS_FIELD_NUMBER: builtins.int
     @property
     def timestamp(self) -> google.protobuf.timestamp_pb2.Timestamp: ...
     @property
@@ -200,6 +213,8 @@ class ReachyStatus(google.protobuf.message.Message):
     def r_hand_status(self) -> hand_pb2.HandStatus: ...
     @property
     def mobile_base_status(self) -> mobile_base_utility_pb2.MobileBaseStatus: ...
+    @property
+    def tripod_status(self) -> tripod_pb2.TripodStatus: ...
     def __init__(
         self,
         *,
@@ -211,9 +226,10 @@ class ReachyStatus(google.protobuf.message.Message):
         l_hand_status: hand_pb2.HandStatus | None = ...,
         r_hand_status: hand_pb2.HandStatus | None = ...,
         mobile_base_status: mobile_base_utility_pb2.MobileBaseStatus | None = ...,
+        tripod_status: tripod_pb2.TripodStatus | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["head_status", b"head_status", "id", b"id", "l_arm_status", b"l_arm_status", "l_hand_status", b"l_hand_status", "mobile_base_status", b"mobile_base_status", "r_arm_status", b"r_arm_status", "r_hand_status", b"r_hand_status", "timestamp", b"timestamp"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["head_status", b"head_status", "id", b"id", "l_arm_status", b"l_arm_status", "l_hand_status", b"l_hand_status", "mobile_base_status", b"mobile_base_status", "r_arm_status", b"r_arm_status", "r_hand_status", b"r_hand_status", "timestamp", b"timestamp"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["head_status", b"head_status", "id", b"id", "l_arm_status", b"l_arm_status", "l_hand_status", b"l_hand_status", "mobile_base_status", b"mobile_base_status", "r_arm_status", b"r_arm_status", "r_hand_status", b"r_hand_status", "timestamp", b"timestamp", "tripod_status", b"tripod_status"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["head_status", b"head_status", "id", b"id", "l_arm_status", b"l_arm_status", "l_hand_status", b"l_hand_status", "mobile_base_status", b"mobile_base_status", "r_arm_status", b"r_arm_status", "r_hand_status", b"r_hand_status", "timestamp", b"timestamp", "tripod_status", b"tripod_status"]) -> None: ...
 
 global___ReachyStatus = ReachyStatus
 

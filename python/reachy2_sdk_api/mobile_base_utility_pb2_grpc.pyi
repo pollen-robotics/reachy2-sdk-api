@@ -42,10 +42,6 @@ class MobileBaseUtilityServiceStub:
         part_pb2.PartId,
         google.protobuf.empty_pb2.Empty,
     ]
-    ResetDefaultValues: grpc.UnaryUnaryMultiCallable[
-        part_pb2.PartId,
-        google.protobuf.empty_pb2.Empty,
-    ]
     TurnOn: grpc.UnaryUnaryMultiCallable[
         part_pb2.PartId,
         google.protobuf.empty_pb2.Empty,
@@ -101,10 +97,6 @@ class MobileBaseUtilityServiceAsyncStub:
         google.protobuf.empty_pb2.Empty,
     ]
     Restart: grpc.aio.UnaryUnaryMultiCallable[
-        part_pb2.PartId,
-        google.protobuf.empty_pb2.Empty,
-    ]
-    ResetDefaultValues: grpc.aio.UnaryUnaryMultiCallable[
         part_pb2.PartId,
         google.protobuf.empty_pb2.Empty,
     ]
@@ -172,12 +164,6 @@ class MobileBaseUtilityServiceServicer(metaclass=abc.ABCMeta):
     ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
     @abc.abstractmethod
     def Restart(
-        self,
-        request: part_pb2.PartId,
-        context: _ServicerContext,
-    ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
-    @abc.abstractmethod
-    def ResetDefaultValues(
         self,
         request: part_pb2.PartId,
         context: _ServicerContext,

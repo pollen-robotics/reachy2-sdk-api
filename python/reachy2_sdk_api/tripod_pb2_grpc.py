@@ -2,12 +2,12 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-import mobile_base_lidar_pb2 as mobile__base__lidar__pb2
-import mobile_base_mobility_pb2 as mobile__base__mobility__pb2
+from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 import part_pb2 as part__pb2
+import tripod_pb2 as tripod__pb2
 
 
-class MobileBaseLidarServiceStub(object):
+class TripodServiceStub(object):
     """Missing associated documentation comment in .proto file."""
 
     def __init__(self, channel):
@@ -16,106 +16,106 @@ class MobileBaseLidarServiceStub(object):
         Args:
             channel: A grpc.Channel.
         """
-        self.SetZuuuSafety = channel.unary_unary(
-                '/reachy.part.mobile.base.lidar.MobileBaseLidarService/SetZuuuSafety',
-                request_serializer=mobile__base__lidar__pb2.LidarSafety.SerializeToString,
-                response_deserializer=mobile__base__mobility__pb2.MobilityServiceAck.FromString,
+        self.GetTripod = channel.unary_unary(
+                '/reachy.part.tripod.TripodService/GetTripod',
+                request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+                response_deserializer=tripod__pb2.Tripod.FromString,
                 )
-        self.GetZuuuSafety = channel.unary_unary(
-                '/reachy.part.mobile.base.lidar.MobileBaseLidarService/GetZuuuSafety',
+        self.GetState = channel.unary_unary(
+                '/reachy.part.tripod.TripodService/GetState',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=mobile__base__lidar__pb2.LidarSafety.FromString,
+                response_deserializer=tripod__pb2.TripodState.FromString,
                 )
-        self.ResetDefaultSafetyDistances = channel.unary_unary(
-                '/reachy.part.mobile.base.lidar.MobileBaseLidarService/ResetDefaultSafetyDistances',
-                request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=mobile__base__mobility__pb2.MobilityServiceAck.FromString,
+        self.SendCommand = channel.unary_unary(
+                '/reachy.part.tripod.TripodService/SendCommand',
+                request_serializer=tripod__pb2.TripodCommand.SerializeToString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
-        self.GetLidarMap = channel.unary_unary(
-                '/reachy.part.mobile.base.lidar.MobileBaseLidarService/GetLidarMap',
+        self.ResetDefaultValues = channel.unary_unary(
+                '/reachy.part.tripod.TripodService/ResetDefaultValues',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=mobile__base__lidar__pb2.LidarMap.FromString,
+                response_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                 )
-        self.GetLidarObstacleDetectionStatus = channel.unary_unary(
-                '/reachy.part.mobile.base.lidar.MobileBaseLidarService/GetLidarObstacleDetectionStatus',
+        self.GetJointsLimits = channel.unary_unary(
+                '/reachy.part.tripod.TripodService/GetJointsLimits',
                 request_serializer=part__pb2.PartId.SerializeToString,
-                response_deserializer=mobile__base__lidar__pb2.LidarObstacleDetectionStatus.FromString,
+                response_deserializer=tripod__pb2.TripodJointsLimits.FromString,
                 )
 
 
-class MobileBaseLidarServiceServicer(object):
+class TripodServiceServicer(object):
     """Missing associated documentation comment in .proto file."""
 
-    def SetZuuuSafety(self, request, context):
+    def GetTripod(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
-    def GetZuuuSafety(self, request, context):
+    def GetState(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
-    def ResetDefaultSafetyDistances(self, request, context):
+    def SendCommand(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
-    def GetLidarMap(self, request, context):
+    def ResetDefaultValues(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
-    def GetLidarObstacleDetectionStatus(self, request, context):
+    def GetJointsLimits(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
 
-def add_MobileBaseLidarServiceServicer_to_server(servicer, server):
+def add_TripodServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
-            'SetZuuuSafety': grpc.unary_unary_rpc_method_handler(
-                    servicer.SetZuuuSafety,
-                    request_deserializer=mobile__base__lidar__pb2.LidarSafety.FromString,
-                    response_serializer=mobile__base__mobility__pb2.MobilityServiceAck.SerializeToString,
+            'GetTripod': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetTripod,
+                    request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
+                    response_serializer=tripod__pb2.Tripod.SerializeToString,
             ),
-            'GetZuuuSafety': grpc.unary_unary_rpc_method_handler(
-                    servicer.GetZuuuSafety,
+            'GetState': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetState,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=mobile__base__lidar__pb2.LidarSafety.SerializeToString,
+                    response_serializer=tripod__pb2.TripodState.SerializeToString,
             ),
-            'ResetDefaultSafetyDistances': grpc.unary_unary_rpc_method_handler(
-                    servicer.ResetDefaultSafetyDistances,
-                    request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=mobile__base__mobility__pb2.MobilityServiceAck.SerializeToString,
+            'SendCommand': grpc.unary_unary_rpc_method_handler(
+                    servicer.SendCommand,
+                    request_deserializer=tripod__pb2.TripodCommand.FromString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
-            'GetLidarMap': grpc.unary_unary_rpc_method_handler(
-                    servicer.GetLidarMap,
+            'ResetDefaultValues': grpc.unary_unary_rpc_method_handler(
+                    servicer.ResetDefaultValues,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=mobile__base__lidar__pb2.LidarMap.SerializeToString,
+                    response_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             ),
-            'GetLidarObstacleDetectionStatus': grpc.unary_unary_rpc_method_handler(
-                    servicer.GetLidarObstacleDetectionStatus,
+            'GetJointsLimits': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetJointsLimits,
                     request_deserializer=part__pb2.PartId.FromString,
-                    response_serializer=mobile__base__lidar__pb2.LidarObstacleDetectionStatus.SerializeToString,
+                    response_serializer=tripod__pb2.TripodJointsLimits.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-            'reachy.part.mobile.base.lidar.MobileBaseLidarService', rpc_method_handlers)
+            'reachy.part.tripod.TripodService', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
 
 
  # This class is part of an EXPERIMENTAL API.
-class MobileBaseLidarService(object):
+class TripodService(object):
     """Missing associated documentation comment in .proto file."""
 
     @staticmethod
-    def SetZuuuSafety(request,
+    def GetTripod(request,
             target,
             options=(),
             channel_credentials=None,
@@ -125,14 +125,14 @@ class MobileBaseLidarService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.lidar.MobileBaseLidarService/SetZuuuSafety',
-            mobile__base__lidar__pb2.LidarSafety.SerializeToString,
-            mobile__base__mobility__pb2.MobilityServiceAck.FromString,
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.tripod.TripodService/GetTripod',
+            google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
+            tripod__pb2.Tripod.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
-    def GetZuuuSafety(request,
+    def GetState(request,
             target,
             options=(),
             channel_credentials=None,
@@ -142,14 +142,14 @@ class MobileBaseLidarService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.lidar.MobileBaseLidarService/GetZuuuSafety',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.tripod.TripodService/GetState',
             part__pb2.PartId.SerializeToString,
-            mobile__base__lidar__pb2.LidarSafety.FromString,
+            tripod__pb2.TripodState.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
-    def ResetDefaultSafetyDistances(request,
+    def SendCommand(request,
             target,
             options=(),
             channel_credentials=None,
@@ -159,14 +159,14 @@ class MobileBaseLidarService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.lidar.MobileBaseLidarService/ResetDefaultSafetyDistances',
-            part__pb2.PartId.SerializeToString,
-            mobile__base__mobility__pb2.MobilityServiceAck.FromString,
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.tripod.TripodService/SendCommand',
+            tripod__pb2.TripodCommand.SerializeToString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
-    def GetLidarMap(request,
+    def ResetDefaultValues(request,
             target,
             options=(),
             channel_credentials=None,
@@ -176,14 +176,14 @@ class MobileBaseLidarService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.lidar.MobileBaseLidarService/GetLidarMap',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.tripod.TripodService/ResetDefaultValues',
             part__pb2.PartId.SerializeToString,
-            mobile__base__lidar__pb2.LidarMap.FromString,
+            google_dot_protobuf_dot_empty__pb2.Empty.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
     @staticmethod
-    def GetLidarObstacleDetectionStatus(request,
+    def GetJointsLimits(request,
             target,
             options=(),
             channel_credentials=None,
@@ -193,8 +193,8 @@ class MobileBaseLidarService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/reachy.part.mobile.base.lidar.MobileBaseLidarService/GetLidarObstacleDetectionStatus',
+        return grpc.experimental.unary_unary(request, target, '/reachy.part.tripod.TripodService/GetJointsLimits',
             part__pb2.PartId.SerializeToString,
-            mobile__base__lidar__pb2.LidarObstacleDetectionStatus.FromString,
+            tripod__pb2.TripodJointsLimits.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

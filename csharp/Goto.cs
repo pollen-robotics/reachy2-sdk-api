@@ -23,56 +23,86 @@ public static partial class GotoReflection {
     byte[] descriptorData = global::System.Convert.FromBase64String(
         string.Concat(
           "Cgpnb3RvLnByb3RvGhtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8aHmdv",
-          "b2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxoJYXJtLnByb3RvGgpoZWFk",
-          "LnByb3RvGgpwYXJ0LnByb3RvIhQKBkdvVG9JZBIKCgJpZBgBIAEoBSIWCgdH",
-          "b1RvQWNrEgsKA2FjaxgBIAEoCCIyCg5Hb1RvR29hbFN0YXR1cxIgCgtnb2Fs",
-          "X3N0YXR1cxgBIAEoDjILLkdvYWxTdGF0dXMipgEKDUNhcnRlc2lhbkdvYWwS",
-          "PwoSYXJtX2NhcnRlc2lhbl9nb2FsGAEgASgLMiEucmVhY2h5LnBhcnQuYXJt",
-          "LkFybUNhcnRlc2lhbkdvYWxIABJCChNuZWNrX2NhcnRlc2lhbl9nb2FsGAIg",
-          "ASgLMiMucmVhY2h5LnBhcnQuaGVhZC5OZWNrQ2FydGVzaWFuR29hbEgAQhAK",
-          "DmNhcnRlc2lhbl9nb2FsIr8BCgpKb2ludHNHb2FsEjcKDmFybV9qb2ludF9n",
-          "b2FsGAEgASgLMh0ucmVhY2h5LnBhcnQuYXJtLkFybUpvaW50R29hbEgAEjoK",
-          "D25lY2tfam9pbnRfZ29hbBgCIAEoCzIfLnJlYWNoeS5wYXJ0LmhlYWQuTmVj",
-          "a0pvaW50R29hbEgAEi0KEWN1c3RvbV9qb2ludF9nb2FsGAMgASgLMhAuQ3Vz",
-          "dG9tSm9pbnRHb2FsSABCDQoLam9pbnRzX2dvYWwikQIKD0N1c3RvbUpvaW50",
-          "R29hbBIfCgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBI2Cgphcm1f",
-          "am9pbnRzGAIgASgLMiAucmVhY2h5LnBhcnQuYXJtLkN1c3RvbUFybUpvaW50",
-          "c0gAEjkKC25lY2tfam9pbnRzGAMgASgLMiIucmVhY2h5LnBhcnQuaGVhZC5D",
-          "dXN0b21OZWNrSm9pbnRzSAASMQoMam9pbnRzX2dvYWxzGAQgAygLMhsuZ29v",
-          "Z2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSLQoIZHVyYXRpb24YCiABKAsyGy5n",
-          "b29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZUIICgZqb2ludHMiQwoRR29Ub0lu",
-          "dGVycG9sYXRpb24SLgoSaW50ZXJwb2xhdGlvbl90eXBlGAEgASgOMhIuSW50",
-          "ZXJwb2xhdGlvbk1vZGUikwEKC0dvVG9SZXF1ZXN0EigKDmNhcnRlc2lhbl9n",
-          "b2FsGAEgASgLMg4uQ2FydGVzaWFuR29hbEgAEiIKC2pvaW50c19nb2FsGAIg",
-          "ASgLMgsuSm9pbnRzR29hbEgAEi4KEmludGVycG9sYXRpb25fbW9kZRgDIAEo",
-          "CzISLkdvVG9JbnRlcnBvbGF0aW9uQgYKBGdvYWwiJgoJR29Ub1F1ZXVlEhkK",
-          "CGdvdG9faWRzGAEgAygLMgcuR29Ub0lkKqoBCgpHb2FsU3RhdHVzEggKBE5P",
-          "TkUQABISCg5TVEFUVVNfVU5LTk9XThABEhMKD1NUQVRVU19BQ0NFUFRFRBAC",
-          "EhQKEFNUQVRVU19FWEVDVVRJTkcQAxIUChBTVEFUVVNfQ0FOQ0VMSU5HEAQS",
-          "FAoQU1RBVFVTX1NVQ0NFRURFRBAFEhMKD1NUQVRVU19DQU5DRUxFRBAGEhIK",
-          "DlNUQVRVU19BQk9SVEVEEAcqSQoRSW50ZXJwb2xhdGlvbk1vZGUSFgoSTk9O",
-          "RV9JTlRFUlBPTEFUSU9OEAASCgoGTElORUFSEAESEAoMTUlOSU1VTV9KRVJL",
-          "EAIyngMKC0dvVG9TZXJ2aWNlEiYKDUdvVG9DYXJ0ZXNpYW4SDC5Hb1RvUmVx",
-          "dWVzdBoHLkdvVG9JZBIjCgpHb1RvSm9pbnRzEgwuR29Ub1JlcXVlc3QaBy5H",
-          "b1RvSWQSKAoMR2V0R29Ub1N0YXRlEgcuR29Ub0lkGg8uR29Ub0dvYWxTdGF0",
-          "dXMSJwoOR2V0R29Ub1JlcXVlc3QSBy5Hb1RvSWQaDC5Hb1RvUmVxdWVzdBIy",
-          "ChJHZXRQYXJ0R29Ub1BsYXlpbmcSEy5yZWFjaHkucGFydC5QYXJ0SWQaBy5H",
-          "b1RvSWQSMwoQR2V0UGFydEdvVG9RdWV1ZRITLnJlYWNoeS5wYXJ0LlBhcnRJ",
-          "ZBoKLkdvVG9RdWV1ZRIfCgpDYW5jZWxHb1RvEgcuR29Ub0lkGgguR29Ub0Fj",
-          "axIxCg1DYW5jZWxBbGxHb1RvEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Gggu",
-          "R29Ub0FjaxIyChFDYW5jZWxQYXJ0QWxsR29UbxITLnJlYWNoeS5wYXJ0LlBh",
-          "cnRJZBoILkdvVG9BY2tiBnByb3RvMw=="));
+          "b2dsZS9wcm90b2J1Zi93cmFwcGVycy5wcm90bxoJYXJtLnByb3RvGg9jb21w",
+          "b25lbnQucHJvdG8aCmhhbmQucHJvdG8aCmhlYWQucHJvdG8aGm1vYmlsZV9i",
+          "YXNlX21vYmlsaXR5LnByb3RvGgpwYXJ0LnByb3RvIhQKBkdvVG9JZBIKCgJp",
+          "ZBgBIAEoBSIWCgdHb1RvQWNrEgsKA2FjaxgBIAEoCCIyCg5Hb1RvR29hbFN0",
+          "YXR1cxIgCgtnb2FsX3N0YXR1cxgBIAEoDjILLkdvYWxTdGF0dXMipgEKDUNh",
+          "cnRlc2lhbkdvYWwSPwoSYXJtX2NhcnRlc2lhbl9nb2FsGAEgASgLMiEucmVh",
+          "Y2h5LnBhcnQuYXJtLkFybUNhcnRlc2lhbkdvYWxIABJCChNuZWNrX2NhcnRl",
+          "c2lhbl9nb2FsGAIgASgLMiMucmVhY2h5LnBhcnQuaGVhZC5OZWNrQ2FydGVz",
+          "aWFuR29hbEgAQhAKDmNhcnRlc2lhbl9nb2FsIr0CCgpKb2ludHNHb2FsEjcK",
+          "DmFybV9qb2ludF9nb2FsGAEgASgLMh0ucmVhY2h5LnBhcnQuYXJtLkFybUpv",
+          "aW50R29hbEgAEjoKD25lY2tfam9pbnRfZ29hbBgCIAEoCzIfLnJlYWNoeS5w",
+          "YXJ0LmhlYWQuTmVja0pvaW50R29hbEgAEi0KEWN1c3RvbV9qb2ludF9nb2Fs",
+          "GAMgASgLMhAuQ3VzdG9tSm9pbnRHb2FsSAASQAoSYW50ZW5uYV9qb2ludF9n",
+          "b2FsGAQgASgLMiIucmVhY2h5LnBhcnQuaGVhZC5BbnRlbm5hSm9pbnRHb2Fs",
+          "SAASOgoPaGFuZF9qb2ludF9nb2FsGAUgASgLMh8ucmVhY2h5LnBhcnQuaGFu",
+          "ZC5IYW5kSm9pbnRHb2FsSABCDQoLam9pbnRzX2dvYWwi/AEKDE9kb21ldHJ5",
+          "R29hbBJPCg1vZG9tZXRyeV9nb2FsGAEgASgLMjgucmVhY2h5LnBhcnQubW9i",
+          "aWxlLmJhc2UubW9iaWxpdHkuVGFyZ2V0RGlyZWN0aW9uQ29tbWFuZBI3ChJk",
+          "aXN0YW5jZV90b2xlcmFuY2UYAiABKAsyGy5nb29nbGUucHJvdG9idWYuRmxv",
+          "YXRWYWx1ZRI0Cg9hbmdsZV90b2xlcmFuY2UYAyABKAsyGy5nb29nbGUucHJv",
+          "dG9idWYuRmxvYXRWYWx1ZRIsCgd0aW1lb3V0GAogASgLMhsuZ29vZ2xlLnBy",
+          "b3RvYnVmLkZsb2F0VmFsdWUikQIKD0N1c3RvbUpvaW50R29hbBIfCgJpZBgB",
+          "IAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBI2Cgphcm1fam9pbnRzGAIgASgL",
+          "MiAucmVhY2h5LnBhcnQuYXJtLkN1c3RvbUFybUpvaW50c0gAEjkKC25lY2tf",
+          "am9pbnRzGAMgASgLMiIucmVhY2h5LnBhcnQuaGVhZC5DdXN0b21OZWNrSm9p",
+          "bnRzSAASMQoMam9pbnRzX2dvYWxzGAQgAygLMhsuZ29vZ2xlLnByb3RvYnVm",
+          "LkZsb2F0VmFsdWUSLQoIZHVyYXRpb24YCiABKAsyGy5nb29nbGUucHJvdG9i",
+          "dWYuRmxvYXRWYWx1ZUIICgZqb2ludHMiQwoRR29Ub0ludGVycG9sYXRpb24S",
+          "LgoSaW50ZXJwb2xhdGlvbl90eXBlGAEgASgOMhIuSW50ZXJwb2xhdGlvbk1v",
+          "ZGUiSgoWR29Ub0ludGVycG9sYXRpb25TcGFjZRIwChNpbnRlcnBvbGF0aW9u",
+          "X3NwYWNlGAEgASgOMhMuSW50ZXJwb2xhdGlvblNwYWNlIncKGEVsbGlwdGlj",
+          "YWxHb1RvUGFyYW1ldGVycxIkCg1hcmNfZGlyZWN0aW9uGAEgASgOMg0uQXJj",
+          "RGlyZWN0aW9uEjUKEHNlY29uZGFyeV9yYWRpdXMYAiABKAsyGy5nb29nbGUu",
+          "cHJvdG9idWYuRmxvYXRWYWx1ZSKrAgoLR29Ub1JlcXVlc3QSKAoOY2FydGVz",
+          "aWFuX2dvYWwYASABKAsyDi5DYXJ0ZXNpYW5Hb2FsSAASIgoLam9pbnRzX2dv",
+          "YWwYAiABKAsyCy5Kb2ludHNHb2FsSAASJgoNb2RvbWV0cnlfZ29hbBgDIAEo",
+          "CzINLk9kb21ldHJ5R29hbEgAEjQKE2ludGVycG9sYXRpb25fc3BhY2UYCSAB",
+          "KAsyFy5Hb1RvSW50ZXJwb2xhdGlvblNwYWNlEi4KEmludGVycG9sYXRpb25f",
+          "bW9kZRgKIAEoCzISLkdvVG9JbnRlcnBvbGF0aW9uEjgKFWVsbGlwdGljYWxf",
+          "cGFyYW1ldGVycxgPIAEoCzIZLkVsbGlwdGljYWxHb1RvUGFyYW1ldGVyc0IG",
+          "CgRnb2FsIiYKCUdvVG9RdWV1ZRIZCghnb3RvX2lkcxgBIAMoCzIHLkdvVG9J",
+          "ZCqqAQoKR29hbFN0YXR1cxIICgROT05FEAASEgoOU1RBVFVTX1VOS05PV04Q",
+          "ARITCg9TVEFUVVNfQUNDRVBURUQQAhIUChBTVEFUVVNfRVhFQ1VUSU5HEAMS",
+          "FAoQU1RBVFVTX0NBTkNFTElORxAEEhQKEFNUQVRVU19TVUNDRUVERUQQBRIT",
+          "Cg9TVEFUVVNfQ0FOQ0VMRUQQBhISCg5TVEFUVVNfQUJPUlRFRBAHKl4KEUlu",
+          "dGVycG9sYXRpb25Nb2RlEhsKF05PTkVfSU5URVJQT0xBVElPTl9NT0RFEAAS",
+          "CgoGTElORUFSEAESEAoMTUlOSU1VTV9KRVJLEAISDgoKRUxMSVBUSUNBTBAD",
+          "KlgKEkludGVycG9sYXRpb25TcGFjZRIcChhOT05FX0lOVEVSUE9MQVRJT05f",
+          "U1BBQ0UQABIPCgtKT0lOVF9TUEFDRRABEhMKD0NBUlRFU0lBTl9TUEFDRRAC",
+          "KmYKDEFyY0RpcmVjdGlvbhIWChJOT05FX0FSQ19ESVJFQ1RJT04QABIJCgVB",
+          "Qk9WRRABEgkKBUJFTE9XEAISCQoFRlJPTlQQAxIICgRCQUNLEAQSCAoETEVG",
+          "VBAFEgkKBVJJR0hUEAYy+gQKC0dvVG9TZXJ2aWNlEiYKDUdvVG9DYXJ0ZXNp",
+          "YW4SDC5Hb1RvUmVxdWVzdBoHLkdvVG9JZBIjCgpHb1RvSm9pbnRzEgwuR29U",
+          "b1JlcXVlc3QaBy5Hb1RvSWQSJQoMR29Ub09kb21ldHJ5EgwuR29Ub1JlcXVl",
+          "c3QaBy5Hb1RvSWQSKAoMR2V0R29Ub1N0YXRlEgcuR29Ub0lkGg8uR29Ub0dv",
+          "YWxTdGF0dXMSJwoOR2V0R29Ub1JlcXVlc3QSBy5Hb1RvSWQaDC5Hb1RvUmVx",
+          "dWVzdBIyChJHZXRQYXJ0R29Ub1BsYXlpbmcSEy5yZWFjaHkucGFydC5QYXJ0",
+          "SWQaBy5Hb1RvSWQSOgoXR2V0Q29tcG9uZW50R29Ub1BsYXlpbmcSFi5jb21w",
+          "b25lbnQuQ29tcG9uZW50SWQaBy5Hb1RvSWQSMwoQR2V0UGFydEdvVG9RdWV1",
+          "ZRITLnJlYWNoeS5wYXJ0LlBhcnRJZBoKLkdvVG9RdWV1ZRI7ChVHZXRDb21w",
+          "b25lbnRHb1RvUXVldWUSFi5jb21wb25lbnQuQ29tcG9uZW50SWQaCi5Hb1Rv",
+          "UXVldWUSHwoKQ2FuY2VsR29UbxIHLkdvVG9JZBoILkdvVG9BY2sSMQoNQ2Fu",
+          "Y2VsQWxsR29UbxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRoILkdvVG9BY2sS",
+          "MgoRQ2FuY2VsUGFydEFsbEdvVG8SEy5yZWFjaHkucGFydC5QYXJ0SWQaCC5H",
+          "b1RvQWNrEjoKFkNhbmNlbENvbXBvbmVudEFsbEdvVG8SFi5jb21wb25lbnQu",
+          "Q29tcG9uZW50SWQaCC5Hb1RvQWNrYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-        new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, },
-        new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GoalStatus), typeof(global::InterpolationMode), }, null, new pbr::GeneratedClrTypeInfo[] {
+        new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Component.ComponentReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, },
+        new pbr::GeneratedClrTypeInfo(new[] {typeof(global::GoalStatus), typeof(global::InterpolationMode), typeof(global::InterpolationSpace), typeof(global::ArcDirection), }, null, new pbr::GeneratedClrTypeInfo[] {
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToId), global::GoToId.Parser, new[]{ "Id" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToAck), global::GoToAck.Parser, new[]{ "Ack" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToGoalStatus), global::GoToGoalStatus.Parser, new[]{ "GoalStatus" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::CartesianGoal), global::CartesianGoal.Parser, new[]{ "ArmCartesianGoal", "NeckCartesianGoal" }, new[]{ "CartesianGoal" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::JointsGoal), global::JointsGoal.Parser, new[]{ "ArmJointGoal", "NeckJointGoal", "CustomJointGoal" }, new[]{ "JointsGoal" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::JointsGoal), global::JointsGoal.Parser, new[]{ "ArmJointGoal", "NeckJointGoal", "CustomJointGoal", "AntennaJointGoal", "HandJointGoal" }, new[]{ "JointsGoal" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::OdometryGoal), global::OdometryGoal.Parser, new[]{ "OdometryGoal_", "DistanceTolerance", "AngleTolerance", "Timeout" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::CustomJointGoal), global::CustomJointGoal.Parser, new[]{ "Id", "ArmJoints", "NeckJoints", "JointsGoals", "Duration" }, new[]{ "Joints" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToInterpolation), global::GoToInterpolation.Parser, new[]{ "InterpolationType" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::GoToRequest), global::GoToRequest.Parser, new[]{ "CartesianGoal", "JointsGoal", "InterpolationMode" }, new[]{ "Goal" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GoToInterpolationSpace), global::GoToInterpolationSpace.Parser, new[]{ "InterpolationSpace" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::EllipticalGoToParameters), global::EllipticalGoToParameters.Parser, new[]{ "ArcDirection", "SecondaryRadius" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GoToRequest), global::GoToRequest.Parser, new[]{ "CartesianGoal", "JointsGoal", "OdometryGoal", "InterpolationSpace", "InterpolationMode", "EllipticalParameters" }, new[]{ "Goal" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GoToQueue), global::GoToQueue.Parser, new[]{ "GotoIds" }, null, null, null, null)
         }));
   }
@@ -92,9 +122,26 @@ public enum GoalStatus {
 }
 
 public enum InterpolationMode {
-  [pbr::OriginalName("NONE_INTERPOLATION")] NoneInterpolation = 0,
+  [pbr::OriginalName("NONE_INTERPOLATION_MODE")] NoneInterpolationMode = 0,
   [pbr::OriginalName("LINEAR")] Linear = 1,
   [pbr::OriginalName("MINIMUM_JERK")] MinimumJerk = 2,
+  [pbr::OriginalName("ELLIPTICAL")] Elliptical = 3,
+}
+
+public enum InterpolationSpace {
+  [pbr::OriginalName("NONE_INTERPOLATION_SPACE")] NoneInterpolationSpace = 0,
+  [pbr::OriginalName("JOINT_SPACE")] JointSpace = 1,
+  [pbr::OriginalName("CARTESIAN_SPACE")] CartesianSpace = 2,
+}
+
+public enum ArcDirection {
+  [pbr::OriginalName("NONE_ARC_DIRECTION")] NoneArcDirection = 0,
+  [pbr::OriginalName("ABOVE")] Above = 1,
+  [pbr::OriginalName("BELOW")] Below = 2,
+  [pbr::OriginalName("FRONT")] Front = 3,
+  [pbr::OriginalName("BACK")] Back = 4,
+  [pbr::OriginalName("LEFT")] Left = 5,
+  [pbr::OriginalName("RIGHT")] Right = 6,
 }
 
 #endregion
@@ -996,6 +1043,12 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
       case JointsGoalOneofCase.CustomJointGoal:
         CustomJointGoal = other.CustomJointGoal.Clone();
         break;
+      case JointsGoalOneofCase.AntennaJointGoal:
+        AntennaJointGoal = other.AntennaJointGoal.Clone();
+        break;
+      case JointsGoalOneofCase.HandJointGoal:
+        HandJointGoal = other.HandJointGoal.Clone();
+        break;
     }
 
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1043,6 +1096,30 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
     }
   }
 
+  /// <summary>Field number for the "antenna_joint_goal" field.</summary>
+  public const int AntennaJointGoalFieldNumber = 4;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public global::Reachy.Part.Head.AntennaJointGoal AntennaJointGoal {
+    get { return jointsGoalCase_ == JointsGoalOneofCase.AntennaJointGoal ? (global::Reachy.Part.Head.AntennaJointGoal) jointsGoal_ : null; }
+    set {
+      jointsGoal_ = value;
+      jointsGoalCase_ = value == null ? JointsGoalOneofCase.None : JointsGoalOneofCase.AntennaJointGoal;
+    }
+  }
+
+  /// <summary>Field number for the "hand_joint_goal" field.</summary>
+  public const int HandJointGoalFieldNumber = 5;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public global::Reachy.Part.Hand.HandJointGoal HandJointGoal {
+    get { return jointsGoalCase_ == JointsGoalOneofCase.HandJointGoal ? (global::Reachy.Part.Hand.HandJointGoal) jointsGoal_ : null; }
+    set {
+      jointsGoal_ = value;
+      jointsGoalCase_ = value == null ? JointsGoalOneofCase.None : JointsGoalOneofCase.HandJointGoal;
+    }
+  }
+
   private object jointsGoal_;
   /// <summary>Enum of possible cases for the "joints_goal" oneof.</summary>
   public enum JointsGoalOneofCase {
@@ -1050,6 +1127,8 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
     ArmJointGoal = 1,
     NeckJointGoal = 2,
     CustomJointGoal = 3,
+    AntennaJointGoal = 4,
+    HandJointGoal = 5,
   }
   private JointsGoalOneofCase jointsGoalCase_ = JointsGoalOneofCase.None;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1083,6 +1162,8 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
     if (!object.Equals(ArmJointGoal, other.ArmJointGoal)) return false;
     if (!object.Equals(NeckJointGoal, other.NeckJointGoal)) return false;
     if (!object.Equals(CustomJointGoal, other.CustomJointGoal)) return false;
+    if (!object.Equals(AntennaJointGoal, other.AntennaJointGoal)) return false;
+    if (!object.Equals(HandJointGoal, other.HandJointGoal)) return false;
     if (JointsGoalCase != other.JointsGoalCase) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -1094,6 +1175,8 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
     if (jointsGoalCase_ == JointsGoalOneofCase.ArmJointGoal) hash ^= ArmJointGoal.GetHashCode();
     if (jointsGoalCase_ == JointsGoalOneofCase.NeckJointGoal) hash ^= NeckJointGoal.GetHashCode();
     if (jointsGoalCase_ == JointsGoalOneofCase.CustomJointGoal) hash ^= CustomJointGoal.GetHashCode();
+    if (jointsGoalCase_ == JointsGoalOneofCase.AntennaJointGoal) hash ^= AntennaJointGoal.GetHashCode();
+    if (jointsGoalCase_ == JointsGoalOneofCase.HandJointGoal) hash ^= HandJointGoal.GetHashCode();
     hash ^= (int) jointsGoalCase_;
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -1125,6 +1208,14 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
       output.WriteRawTag(26);
       output.WriteMessage(CustomJointGoal);
     }
+    if (jointsGoalCase_ == JointsGoalOneofCase.AntennaJointGoal) {
+      output.WriteRawTag(34);
+      output.WriteMessage(AntennaJointGoal);
+    }
+    if (jointsGoalCase_ == JointsGoalOneofCase.HandJointGoal) {
+      output.WriteRawTag(42);
+      output.WriteMessage(HandJointGoal);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -1147,6 +1238,14 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
       output.WriteRawTag(26);
       output.WriteMessage(CustomJointGoal);
     }
+    if (jointsGoalCase_ == JointsGoalOneofCase.AntennaJointGoal) {
+      output.WriteRawTag(34);
+      output.WriteMessage(AntennaJointGoal);
+    }
+    if (jointsGoalCase_ == JointsGoalOneofCase.HandJointGoal) {
+      output.WriteRawTag(42);
+      output.WriteMessage(HandJointGoal);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -1165,6 +1264,12 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
     }
     if (jointsGoalCase_ == JointsGoalOneofCase.CustomJointGoal) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(CustomJointGoal);
+    }
+    if (jointsGoalCase_ == JointsGoalOneofCase.AntennaJointGoal) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(AntennaJointGoal);
+    }
+    if (jointsGoalCase_ == JointsGoalOneofCase.HandJointGoal) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(HandJointGoal);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -1196,6 +1301,18 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
           CustomJointGoal = new global::CustomJointGoal();
         }
         CustomJointGoal.MergeFrom(other.CustomJointGoal);
+        break;
+      case JointsGoalOneofCase.AntennaJointGoal:
+        if (AntennaJointGoal == null) {
+          AntennaJointGoal = new global::Reachy.Part.Head.AntennaJointGoal();
+        }
+        AntennaJointGoal.MergeFrom(other.AntennaJointGoal);
+        break;
+      case JointsGoalOneofCase.HandJointGoal:
+        if (HandJointGoal == null) {
+          HandJointGoal = new global::Reachy.Part.Hand.HandJointGoal();
+        }
+        HandJointGoal.MergeFrom(other.HandJointGoal);
         break;
     }
 
@@ -1241,6 +1358,24 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
           CustomJointGoal = subBuilder;
           break;
         }
+        case 34: {
+          global::Reachy.Part.Head.AntennaJointGoal subBuilder = new global::Reachy.Part.Head.AntennaJointGoal();
+          if (jointsGoalCase_ == JointsGoalOneofCase.AntennaJointGoal) {
+            subBuilder.MergeFrom(AntennaJointGoal);
+          }
+          input.ReadMessage(subBuilder);
+          AntennaJointGoal = subBuilder;
+          break;
+        }
+        case 42: {
+          global::Reachy.Part.Hand.HandJointGoal subBuilder = new global::Reachy.Part.Hand.HandJointGoal();
+          if (jointsGoalCase_ == JointsGoalOneofCase.HandJointGoal) {
+            subBuilder.MergeFrom(HandJointGoal);
+          }
+          input.ReadMessage(subBuilder);
+          HandJointGoal = subBuilder;
+          break;
+        }
       }
     }
   #endif
@@ -1283,6 +1418,357 @@ public sealed partial class JointsGoal : pb::IMessage<JointsGoal>
           CustomJointGoal = subBuilder;
           break;
         }
+        case 34: {
+          global::Reachy.Part.Head.AntennaJointGoal subBuilder = new global::Reachy.Part.Head.AntennaJointGoal();
+          if (jointsGoalCase_ == JointsGoalOneofCase.AntennaJointGoal) {
+            subBuilder.MergeFrom(AntennaJointGoal);
+          }
+          input.ReadMessage(subBuilder);
+          AntennaJointGoal = subBuilder;
+          break;
+        }
+        case 42: {
+          global::Reachy.Part.Hand.HandJointGoal subBuilder = new global::Reachy.Part.Hand.HandJointGoal();
+          if (jointsGoalCase_ == JointsGoalOneofCase.HandJointGoal) {
+            subBuilder.MergeFrom(HandJointGoal);
+          }
+          input.ReadMessage(subBuilder);
+          HandJointGoal = subBuilder;
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class OdometryGoal : pb::IMessage<OdometryGoal>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<OdometryGoal> _parser = new pb::MessageParser<OdometryGoal>(() => new OdometryGoal());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public static pb::MessageParser<OdometryGoal> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GotoReflection.Descriptor.MessageTypes[5]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public OdometryGoal() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public OdometryGoal(OdometryGoal other) : this() {
+    odometryGoal_ = other.odometryGoal_ != null ? other.odometryGoal_.Clone() : null;
+    DistanceTolerance = other.DistanceTolerance;
+    AngleTolerance = other.AngleTolerance;
+    Timeout = other.Timeout;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public OdometryGoal Clone() {
+    return new OdometryGoal(this);
+  }
+
+  /// <summary>Field number for the "odometry_goal" field.</summary>
+  public const int OdometryGoal_FieldNumber = 1;
+  private global::Reachy.Part.Mobile.Base.Mobility.TargetDirectionCommand odometryGoal_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public global::Reachy.Part.Mobile.Base.Mobility.TargetDirectionCommand OdometryGoal_ {
+    get { return odometryGoal_; }
+    set {
+      odometryGoal_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "distance_tolerance" field.</summary>
+  public const int DistanceToleranceFieldNumber = 2;
+  private static readonly pb::FieldCodec<float?> _single_distanceTolerance_codec = pb::FieldCodec.ForStructWrapper<float>(18);
+  private float? distanceTolerance_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public float? DistanceTolerance {
+    get { return distanceTolerance_; }
+    set {
+      distanceTolerance_ = value;
+    }
+  }
+
+
+  /// <summary>Field number for the "angle_tolerance" field.</summary>
+  public const int AngleToleranceFieldNumber = 3;
+  private static readonly pb::FieldCodec<float?> _single_angleTolerance_codec = pb::FieldCodec.ForStructWrapper<float>(26);
+  private float? angleTolerance_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public float? AngleTolerance {
+    get { return angleTolerance_; }
+    set {
+      angleTolerance_ = value;
+    }
+  }
+
+
+  /// <summary>Field number for the "timeout" field.</summary>
+  public const int TimeoutFieldNumber = 10;
+  private static readonly pb::FieldCodec<float?> _single_timeout_codec = pb::FieldCodec.ForStructWrapper<float>(82);
+  private float? timeout_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public float? Timeout {
+    get { return timeout_; }
+    set {
+      timeout_ = value;
+    }
+  }
+
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override bool Equals(object other) {
+    return Equals(other as OdometryGoal);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public bool Equals(OdometryGoal other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (!object.Equals(OdometryGoal_, other.OdometryGoal_)) return false;
+    if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(DistanceTolerance, other.DistanceTolerance)) return false;
+    if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(AngleTolerance, other.AngleTolerance)) return false;
+    if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(Timeout, other.Timeout)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (odometryGoal_ != null) hash ^= OdometryGoal_.GetHashCode();
+    if (distanceTolerance_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(DistanceTolerance);
+    if (angleTolerance_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(AngleTolerance);
+    if (timeout_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Timeout);
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (odometryGoal_ != null) {
+      output.WriteRawTag(10);
+      output.WriteMessage(OdometryGoal_);
+    }
+    if (distanceTolerance_ != null) {
+      _single_distanceTolerance_codec.WriteTagAndValue(output, DistanceTolerance);
+    }
+    if (angleTolerance_ != null) {
+      _single_angleTolerance_codec.WriteTagAndValue(output, AngleTolerance);
+    }
+    if (timeout_ != null) {
+      _single_timeout_codec.WriteTagAndValue(output, Timeout);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (odometryGoal_ != null) {
+      output.WriteRawTag(10);
+      output.WriteMessage(OdometryGoal_);
+    }
+    if (distanceTolerance_ != null) {
+      _single_distanceTolerance_codec.WriteTagAndValue(ref output, DistanceTolerance);
+    }
+    if (angleTolerance_ != null) {
+      _single_angleTolerance_codec.WriteTagAndValue(ref output, AngleTolerance);
+    }
+    if (timeout_ != null) {
+      _single_timeout_codec.WriteTagAndValue(ref output, Timeout);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public int CalculateSize() {
+    int size = 0;
+    if (odometryGoal_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(OdometryGoal_);
+    }
+    if (distanceTolerance_ != null) {
+      size += _single_distanceTolerance_codec.CalculateSizeWithTag(DistanceTolerance);
+    }
+    if (angleTolerance_ != null) {
+      size += _single_angleTolerance_codec.CalculateSizeWithTag(AngleTolerance);
+    }
+    if (timeout_ != null) {
+      size += _single_timeout_codec.CalculateSizeWithTag(Timeout);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void MergeFrom(OdometryGoal other) {
+    if (other == null) {
+      return;
+    }
+    if (other.odometryGoal_ != null) {
+      if (odometryGoal_ == null) {
+        OdometryGoal_ = new global::Reachy.Part.Mobile.Base.Mobility.TargetDirectionCommand();
+      }
+      OdometryGoal_.MergeFrom(other.OdometryGoal_);
+    }
+    if (other.distanceTolerance_ != null) {
+      if (distanceTolerance_ == null || other.DistanceTolerance != 0F) {
+        DistanceTolerance = other.DistanceTolerance;
+      }
+    }
+    if (other.angleTolerance_ != null) {
+      if (angleTolerance_ == null || other.AngleTolerance != 0F) {
+        AngleTolerance = other.AngleTolerance;
+      }
+    }
+    if (other.timeout_ != null) {
+      if (timeout_ == null || other.Timeout != 0F) {
+        Timeout = other.Timeout;
+      }
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10: {
+          if (odometryGoal_ == null) {
+            OdometryGoal_ = new global::Reachy.Part.Mobile.Base.Mobility.TargetDirectionCommand();
+          }
+          input.ReadMessage(OdometryGoal_);
+          break;
+        }
+        case 18: {
+          float? value = _single_distanceTolerance_codec.Read(input);
+          if (distanceTolerance_ == null || value != 0F) {
+            DistanceTolerance = value;
+          }
+          break;
+        }
+        case 26: {
+          float? value = _single_angleTolerance_codec.Read(input);
+          if (angleTolerance_ == null || value != 0F) {
+            AngleTolerance = value;
+          }
+          break;
+        }
+        case 82: {
+          float? value = _single_timeout_codec.Read(input);
+          if (timeout_ == null || value != 0F) {
+            Timeout = value;
+          }
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10: {
+          if (odometryGoal_ == null) {
+            OdometryGoal_ = new global::Reachy.Part.Mobile.Base.Mobility.TargetDirectionCommand();
+          }
+          input.ReadMessage(OdometryGoal_);
+          break;
+        }
+        case 18: {
+          float? value = _single_distanceTolerance_codec.Read(ref input);
+          if (distanceTolerance_ == null || value != 0F) {
+            DistanceTolerance = value;
+          }
+          break;
+        }
+        case 26: {
+          float? value = _single_angleTolerance_codec.Read(ref input);
+          if (angleTolerance_ == null || value != 0F) {
+            AngleTolerance = value;
+          }
+          break;
+        }
+        case 82: {
+          float? value = _single_timeout_codec.Read(ref input);
+          if (timeout_ == null || value != 0F) {
+            Timeout = value;
+          }
+          break;
+        }
       }
     }
   }
@@ -1304,7 +1790,7 @@ public sealed partial class CustomJointGoal : pb::IMessage<CustomJointGoal>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GotoReflection.Descriptor.MessageTypes[5]; }
+    get { return global::GotoReflection.Descriptor.MessageTypes[6]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1706,7 +2192,7 @@ public sealed partial class GoToInterpolation : pb::IMessage<GoToInterpolation>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GotoReflection.Descriptor.MessageTypes[6]; }
+    get { return global::GotoReflection.Descriptor.MessageTypes[7]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1738,7 +2224,7 @@ public sealed partial class GoToInterpolation : pb::IMessage<GoToInterpolation>
 
   /// <summary>Field number for the "interpolation_type" field.</summary>
   public const int InterpolationTypeFieldNumber = 1;
-  private global::InterpolationMode interpolationType_ = global::InterpolationMode.NoneInterpolation;
+  private global::InterpolationMode interpolationType_ = global::InterpolationMode.NoneInterpolationMode;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public global::InterpolationMode InterpolationType {
@@ -1771,7 +2257,7 @@ public sealed partial class GoToInterpolation : pb::IMessage<GoToInterpolation>
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public override int GetHashCode() {
     int hash = 1;
-    if (InterpolationType != global::InterpolationMode.NoneInterpolation) hash ^= InterpolationType.GetHashCode();
+    if (InterpolationType != global::InterpolationMode.NoneInterpolationMode) hash ^= InterpolationType.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -1790,7 +2276,7 @@ public sealed partial class GoToInterpolation : pb::IMessage<GoToInterpolation>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     output.WriteRawMessage(this);
   #else
-    if (InterpolationType != global::InterpolationMode.NoneInterpolation) {
+    if (InterpolationType != global::InterpolationMode.NoneInterpolationMode) {
       output.WriteRawTag(8);
       output.WriteEnum((int) InterpolationType);
     }
@@ -1804,7 +2290,7 @@ public sealed partial class GoToInterpolation : pb::IMessage<GoToInterpolation>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-    if (InterpolationType != global::InterpolationMode.NoneInterpolation) {
+    if (InterpolationType != global::InterpolationMode.NoneInterpolationMode) {
       output.WriteRawTag(8);
       output.WriteEnum((int) InterpolationType);
     }
@@ -1818,7 +2304,7 @@ public sealed partial class GoToInterpolation : pb::IMessage<GoToInterpolation>
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public int CalculateSize() {
     int size = 0;
-    if (InterpolationType != global::InterpolationMode.NoneInterpolation) {
+    if (InterpolationType != global::InterpolationMode.NoneInterpolationMode) {
       size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) InterpolationType);
     }
     if (_unknownFields != null) {
@@ -1833,7 +2319,7 @@ public sealed partial class GoToInterpolation : pb::IMessage<GoToInterpolation>
     if (other == null) {
       return;
     }
-    if (other.InterpolationType != global::InterpolationMode.NoneInterpolation) {
+    if (other.InterpolationType != global::InterpolationMode.NoneInterpolationMode) {
       InterpolationType = other.InterpolationType;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1881,6 +2367,429 @@ public sealed partial class GoToInterpolation : pb::IMessage<GoToInterpolation>
 
 }
 
+public sealed partial class GoToInterpolationSpace : pb::IMessage<GoToInterpolationSpace>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<GoToInterpolationSpace> _parser = new pb::MessageParser<GoToInterpolationSpace>(() => new GoToInterpolationSpace());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public static pb::MessageParser<GoToInterpolationSpace> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GotoReflection.Descriptor.MessageTypes[8]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public GoToInterpolationSpace() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public GoToInterpolationSpace(GoToInterpolationSpace other) : this() {
+    interpolationSpace_ = other.interpolationSpace_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public GoToInterpolationSpace Clone() {
+    return new GoToInterpolationSpace(this);
+  }
+
+  /// <summary>Field number for the "interpolation_space" field.</summary>
+  public const int InterpolationSpaceFieldNumber = 1;
+  private global::InterpolationSpace interpolationSpace_ = global::InterpolationSpace.NoneInterpolationSpace;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public global::InterpolationSpace InterpolationSpace {
+    get { return interpolationSpace_; }
+    set {
+      interpolationSpace_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override bool Equals(object other) {
+    return Equals(other as GoToInterpolationSpace);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public bool Equals(GoToInterpolationSpace other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (InterpolationSpace != other.InterpolationSpace) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (InterpolationSpace != global::InterpolationSpace.NoneInterpolationSpace) hash ^= InterpolationSpace.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (InterpolationSpace != global::InterpolationSpace.NoneInterpolationSpace) {
+      output.WriteRawTag(8);
+      output.WriteEnum((int) InterpolationSpace);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (InterpolationSpace != global::InterpolationSpace.NoneInterpolationSpace) {
+      output.WriteRawTag(8);
+      output.WriteEnum((int) InterpolationSpace);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public int CalculateSize() {
+    int size = 0;
+    if (InterpolationSpace != global::InterpolationSpace.NoneInterpolationSpace) {
+      size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) InterpolationSpace);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void MergeFrom(GoToInterpolationSpace other) {
+    if (other == null) {
+      return;
+    }
+    if (other.InterpolationSpace != global::InterpolationSpace.NoneInterpolationSpace) {
+      InterpolationSpace = other.InterpolationSpace;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          InterpolationSpace = (global::InterpolationSpace) input.ReadEnum();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          InterpolationSpace = (global::InterpolationSpace) input.ReadEnum();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class EllipticalGoToParameters : pb::IMessage<EllipticalGoToParameters>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<EllipticalGoToParameters> _parser = new pb::MessageParser<EllipticalGoToParameters>(() => new EllipticalGoToParameters());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public static pb::MessageParser<EllipticalGoToParameters> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GotoReflection.Descriptor.MessageTypes[9]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public EllipticalGoToParameters() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public EllipticalGoToParameters(EllipticalGoToParameters other) : this() {
+    arcDirection_ = other.arcDirection_;
+    SecondaryRadius = other.SecondaryRadius;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public EllipticalGoToParameters Clone() {
+    return new EllipticalGoToParameters(this);
+  }
+
+  /// <summary>Field number for the "arc_direction" field.</summary>
+  public const int ArcDirectionFieldNumber = 1;
+  private global::ArcDirection arcDirection_ = global::ArcDirection.NoneArcDirection;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public global::ArcDirection ArcDirection {
+    get { return arcDirection_; }
+    set {
+      arcDirection_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "secondary_radius" field.</summary>
+  public const int SecondaryRadiusFieldNumber = 2;
+  private static readonly pb::FieldCodec<float?> _single_secondaryRadius_codec = pb::FieldCodec.ForStructWrapper<float>(18);
+  private float? secondaryRadius_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public float? SecondaryRadius {
+    get { return secondaryRadius_; }
+    set {
+      secondaryRadius_ = value;
+    }
+  }
+
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override bool Equals(object other) {
+    return Equals(other as EllipticalGoToParameters);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public bool Equals(EllipticalGoToParameters other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (ArcDirection != other.ArcDirection) return false;
+    if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(SecondaryRadius, other.SecondaryRadius)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (ArcDirection != global::ArcDirection.NoneArcDirection) hash ^= ArcDirection.GetHashCode();
+    if (secondaryRadius_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(SecondaryRadius);
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (ArcDirection != global::ArcDirection.NoneArcDirection) {
+      output.WriteRawTag(8);
+      output.WriteEnum((int) ArcDirection);
+    }
+    if (secondaryRadius_ != null) {
+      _single_secondaryRadius_codec.WriteTagAndValue(output, SecondaryRadius);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (ArcDirection != global::ArcDirection.NoneArcDirection) {
+      output.WriteRawTag(8);
+      output.WriteEnum((int) ArcDirection);
+    }
+    if (secondaryRadius_ != null) {
+      _single_secondaryRadius_codec.WriteTagAndValue(ref output, SecondaryRadius);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public int CalculateSize() {
+    int size = 0;
+    if (ArcDirection != global::ArcDirection.NoneArcDirection) {
+      size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ArcDirection);
+    }
+    if (secondaryRadius_ != null) {
+      size += _single_secondaryRadius_codec.CalculateSizeWithTag(SecondaryRadius);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void MergeFrom(EllipticalGoToParameters other) {
+    if (other == null) {
+      return;
+    }
+    if (other.ArcDirection != global::ArcDirection.NoneArcDirection) {
+      ArcDirection = other.ArcDirection;
+    }
+    if (other.secondaryRadius_ != null) {
+      if (secondaryRadius_ == null || other.SecondaryRadius != 0F) {
+        SecondaryRadius = other.SecondaryRadius;
+      }
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          ArcDirection = (global::ArcDirection) input.ReadEnum();
+          break;
+        }
+        case 18: {
+          float? value = _single_secondaryRadius_codec.Read(input);
+          if (secondaryRadius_ == null || value != 0F) {
+            SecondaryRadius = value;
+          }
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          ArcDirection = (global::ArcDirection) input.ReadEnum();
+          break;
+        }
+        case 18: {
+          float? value = _single_secondaryRadius_codec.Read(ref input);
+          if (secondaryRadius_ == null || value != 0F) {
+            SecondaryRadius = value;
+          }
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
 public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
@@ -1895,7 +2804,7 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GotoReflection.Descriptor.MessageTypes[7]; }
+    get { return global::GotoReflection.Descriptor.MessageTypes[10]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1915,13 +2824,18 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public GoToRequest(GoToRequest other) : this() {
+    interpolationSpace_ = other.interpolationSpace_ != null ? other.interpolationSpace_.Clone() : null;
     interpolationMode_ = other.interpolationMode_ != null ? other.interpolationMode_.Clone() : null;
+    ellipticalParameters_ = other.ellipticalParameters_ != null ? other.ellipticalParameters_.Clone() : null;
     switch (other.GoalCase) {
       case GoalOneofCase.CartesianGoal:
         CartesianGoal = other.CartesianGoal.Clone();
         break;
       case GoalOneofCase.JointsGoal:
         JointsGoal = other.JointsGoal.Clone();
+        break;
+      case GoalOneofCase.OdometryGoal:
+        OdometryGoal = other.OdometryGoal.Clone();
         break;
     }
 
@@ -1958,8 +2872,32 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
     }
   }
 
+  /// <summary>Field number for the "odometry_goal" field.</summary>
+  public const int OdometryGoalFieldNumber = 3;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public global::OdometryGoal OdometryGoal {
+    get { return goalCase_ == GoalOneofCase.OdometryGoal ? (global::OdometryGoal) goal_ : null; }
+    set {
+      goal_ = value;
+      goalCase_ = value == null ? GoalOneofCase.None : GoalOneofCase.OdometryGoal;
+    }
+  }
+
+  /// <summary>Field number for the "interpolation_space" field.</summary>
+  public const int InterpolationSpaceFieldNumber = 9;
+  private global::GoToInterpolationSpace interpolationSpace_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public global::GoToInterpolationSpace InterpolationSpace {
+    get { return interpolationSpace_; }
+    set {
+      interpolationSpace_ = value;
+    }
+  }
+
   /// <summary>Field number for the "interpolation_mode" field.</summary>
-  public const int InterpolationModeFieldNumber = 3;
+  public const int InterpolationModeFieldNumber = 10;
   private global::GoToInterpolation interpolationMode_;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1970,12 +2908,25 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
     }
   }
 
+  /// <summary>Field number for the "elliptical_parameters" field.</summary>
+  public const int EllipticalParametersFieldNumber = 15;
+  private global::EllipticalGoToParameters ellipticalParameters_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+  public global::EllipticalGoToParameters EllipticalParameters {
+    get { return ellipticalParameters_; }
+    set {
+      ellipticalParameters_ = value;
+    }
+  }
+
   private object goal_;
   /// <summary>Enum of possible cases for the "goal" oneof.</summary>
   public enum GoalOneofCase {
     None = 0,
     CartesianGoal = 1,
     JointsGoal = 2,
+    OdometryGoal = 3,
   }
   private GoalOneofCase goalCase_ = GoalOneofCase.None;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2008,7 +2959,10 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
     }
     if (!object.Equals(CartesianGoal, other.CartesianGoal)) return false;
     if (!object.Equals(JointsGoal, other.JointsGoal)) return false;
+    if (!object.Equals(OdometryGoal, other.OdometryGoal)) return false;
+    if (!object.Equals(InterpolationSpace, other.InterpolationSpace)) return false;
     if (!object.Equals(InterpolationMode, other.InterpolationMode)) return false;
+    if (!object.Equals(EllipticalParameters, other.EllipticalParameters)) return false;
     if (GoalCase != other.GoalCase) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -2019,7 +2973,10 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
     int hash = 1;
     if (goalCase_ == GoalOneofCase.CartesianGoal) hash ^= CartesianGoal.GetHashCode();
     if (goalCase_ == GoalOneofCase.JointsGoal) hash ^= JointsGoal.GetHashCode();
+    if (goalCase_ == GoalOneofCase.OdometryGoal) hash ^= OdometryGoal.GetHashCode();
+    if (interpolationSpace_ != null) hash ^= InterpolationSpace.GetHashCode();
     if (interpolationMode_ != null) hash ^= InterpolationMode.GetHashCode();
+    if (ellipticalParameters_ != null) hash ^= EllipticalParameters.GetHashCode();
     hash ^= (int) goalCase_;
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -2047,9 +3004,21 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
       output.WriteRawTag(18);
       output.WriteMessage(JointsGoal);
     }
-    if (interpolationMode_ != null) {
+    if (goalCase_ == GoalOneofCase.OdometryGoal) {
       output.WriteRawTag(26);
+      output.WriteMessage(OdometryGoal);
+    }
+    if (interpolationSpace_ != null) {
+      output.WriteRawTag(74);
+      output.WriteMessage(InterpolationSpace);
+    }
+    if (interpolationMode_ != null) {
+      output.WriteRawTag(82);
       output.WriteMessage(InterpolationMode);
+    }
+    if (ellipticalParameters_ != null) {
+      output.WriteRawTag(122);
+      output.WriteMessage(EllipticalParameters);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -2069,9 +3038,21 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
       output.WriteRawTag(18);
       output.WriteMessage(JointsGoal);
     }
-    if (interpolationMode_ != null) {
+    if (goalCase_ == GoalOneofCase.OdometryGoal) {
       output.WriteRawTag(26);
+      output.WriteMessage(OdometryGoal);
+    }
+    if (interpolationSpace_ != null) {
+      output.WriteRawTag(74);
+      output.WriteMessage(InterpolationSpace);
+    }
+    if (interpolationMode_ != null) {
+      output.WriteRawTag(82);
       output.WriteMessage(InterpolationMode);
+    }
+    if (ellipticalParameters_ != null) {
+      output.WriteRawTag(122);
+      output.WriteMessage(EllipticalParameters);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -2089,8 +3070,17 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
     if (goalCase_ == GoalOneofCase.JointsGoal) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(JointsGoal);
     }
+    if (goalCase_ == GoalOneofCase.OdometryGoal) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(OdometryGoal);
+    }
+    if (interpolationSpace_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(InterpolationSpace);
+    }
     if (interpolationMode_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(InterpolationMode);
+    }
+    if (ellipticalParameters_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(EllipticalParameters);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -2104,11 +3094,23 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
     if (other == null) {
       return;
     }
+    if (other.interpolationSpace_ != null) {
+      if (interpolationSpace_ == null) {
+        InterpolationSpace = new global::GoToInterpolationSpace();
+      }
+      InterpolationSpace.MergeFrom(other.InterpolationSpace);
+    }
     if (other.interpolationMode_ != null) {
       if (interpolationMode_ == null) {
         InterpolationMode = new global::GoToInterpolation();
       }
       InterpolationMode.MergeFrom(other.InterpolationMode);
+    }
+    if (other.ellipticalParameters_ != null) {
+      if (ellipticalParameters_ == null) {
+        EllipticalParameters = new global::EllipticalGoToParameters();
+      }
+      EllipticalParameters.MergeFrom(other.EllipticalParameters);
     }
     switch (other.GoalCase) {
       case GoalOneofCase.CartesianGoal:
@@ -2122,6 +3124,12 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
           JointsGoal = new global::JointsGoal();
         }
         JointsGoal.MergeFrom(other.JointsGoal);
+        break;
+      case GoalOneofCase.OdometryGoal:
+        if (OdometryGoal == null) {
+          OdometryGoal = new global::OdometryGoal();
+        }
+        OdometryGoal.MergeFrom(other.OdometryGoal);
         break;
     }
 
@@ -2159,10 +3167,33 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
           break;
         }
         case 26: {
+          global::OdometryGoal subBuilder = new global::OdometryGoal();
+          if (goalCase_ == GoalOneofCase.OdometryGoal) {
+            subBuilder.MergeFrom(OdometryGoal);
+          }
+          input.ReadMessage(subBuilder);
+          OdometryGoal = subBuilder;
+          break;
+        }
+        case 74: {
+          if (interpolationSpace_ == null) {
+            InterpolationSpace = new global::GoToInterpolationSpace();
+          }
+          input.ReadMessage(InterpolationSpace);
+          break;
+        }
+        case 82: {
           if (interpolationMode_ == null) {
             InterpolationMode = new global::GoToInterpolation();
           }
           input.ReadMessage(InterpolationMode);
+          break;
+        }
+        case 122: {
+          if (ellipticalParameters_ == null) {
+            EllipticalParameters = new global::EllipticalGoToParameters();
+          }
+          input.ReadMessage(EllipticalParameters);
           break;
         }
       }
@@ -2199,10 +3230,33 @@ public sealed partial class GoToRequest : pb::IMessage<GoToRequest>
           break;
         }
         case 26: {
+          global::OdometryGoal subBuilder = new global::OdometryGoal();
+          if (goalCase_ == GoalOneofCase.OdometryGoal) {
+            subBuilder.MergeFrom(OdometryGoal);
+          }
+          input.ReadMessage(subBuilder);
+          OdometryGoal = subBuilder;
+          break;
+        }
+        case 74: {
+          if (interpolationSpace_ == null) {
+            InterpolationSpace = new global::GoToInterpolationSpace();
+          }
+          input.ReadMessage(InterpolationSpace);
+          break;
+        }
+        case 82: {
           if (interpolationMode_ == null) {
             InterpolationMode = new global::GoToInterpolation();
           }
           input.ReadMessage(InterpolationMode);
+          break;
+        }
+        case 122: {
+          if (ellipticalParameters_ == null) {
+            EllipticalParameters = new global::EllipticalGoToParameters();
+          }
+          input.ReadMessage(EllipticalParameters);
           break;
         }
       }
@@ -2226,7 +3280,7 @@ public sealed partial class GoToQueue : pb::IMessage<GoToQueue>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GotoReflection.Descriptor.MessageTypes[8]; }
+    get { return global::GotoReflection.Descriptor.MessageTypes[11]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

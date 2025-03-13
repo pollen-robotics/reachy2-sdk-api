@@ -10,7 +10,9 @@ import google.protobuf.internal.containers
 import google.protobuf.internal.enum_type_wrapper
 import google.protobuf.message
 import google.protobuf.wrappers_pb2
+import hand_pb2
 import head_pb2
+import mobile_base_mobility_pb2
 import part_pb2
 import sys
 import typing
@@ -55,16 +57,60 @@ class _InterpolationMode:
 
 class _InterpolationModeEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_InterpolationMode.ValueType], builtins.type):
     DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
-    NONE_INTERPOLATION: _InterpolationMode.ValueType  # 0
+    NONE_INTERPOLATION_MODE: _InterpolationMode.ValueType  # 0
     LINEAR: _InterpolationMode.ValueType  # 1
     MINIMUM_JERK: _InterpolationMode.ValueType  # 2
+    ELLIPTICAL: _InterpolationMode.ValueType  # 3
 
 class InterpolationMode(_InterpolationMode, metaclass=_InterpolationModeEnumTypeWrapper): ...
 
-NONE_INTERPOLATION: InterpolationMode.ValueType  # 0
+NONE_INTERPOLATION_MODE: InterpolationMode.ValueType  # 0
 LINEAR: InterpolationMode.ValueType  # 1
 MINIMUM_JERK: InterpolationMode.ValueType  # 2
+ELLIPTICAL: InterpolationMode.ValueType  # 3
 global___InterpolationMode = InterpolationMode
+
+class _InterpolationSpace:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _InterpolationSpaceEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_InterpolationSpace.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    NONE_INTERPOLATION_SPACE: _InterpolationSpace.ValueType  # 0
+    JOINT_SPACE: _InterpolationSpace.ValueType  # 1
+    CARTESIAN_SPACE: _InterpolationSpace.ValueType  # 2
+
+class InterpolationSpace(_InterpolationSpace, metaclass=_InterpolationSpaceEnumTypeWrapper): ...
+
+NONE_INTERPOLATION_SPACE: InterpolationSpace.ValueType  # 0
+JOINT_SPACE: InterpolationSpace.ValueType  # 1
+CARTESIAN_SPACE: InterpolationSpace.ValueType  # 2
+global___InterpolationSpace = InterpolationSpace
+
+class _ArcDirection:
+    ValueType = typing.NewType("ValueType", builtins.int)
+    V: typing_extensions.TypeAlias = ValueType
+
+class _ArcDirectionEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper._EnumTypeWrapper[_ArcDirection.ValueType], builtins.type):
+    DESCRIPTOR: google.protobuf.descriptor.EnumDescriptor
+    NONE_ARC_DIRECTION: _ArcDirection.ValueType  # 0
+    ABOVE: _ArcDirection.ValueType  # 1
+    BELOW: _ArcDirection.ValueType  # 2
+    FRONT: _ArcDirection.ValueType  # 3
+    BACK: _ArcDirection.ValueType  # 4
+    LEFT: _ArcDirection.ValueType  # 5
+    RIGHT: _ArcDirection.ValueType  # 6
+
+class ArcDirection(_ArcDirection, metaclass=_ArcDirectionEnumTypeWrapper): ...
+
+NONE_ARC_DIRECTION: ArcDirection.ValueType  # 0
+ABOVE: ArcDirection.ValueType  # 1
+BELOW: ArcDirection.ValueType  # 2
+FRONT: ArcDirection.ValueType  # 3
+BACK: ArcDirection.ValueType  # 4
+LEFT: ArcDirection.ValueType  # 5
+RIGHT: ArcDirection.ValueType  # 6
+global___ArcDirection = ArcDirection
 
 @typing_extensions.final
 class GoToId(google.protobuf.message.Message):
@@ -140,24 +186,61 @@ class JointsGoal(google.protobuf.message.Message):
     ARM_JOINT_GOAL_FIELD_NUMBER: builtins.int
     NECK_JOINT_GOAL_FIELD_NUMBER: builtins.int
     CUSTOM_JOINT_GOAL_FIELD_NUMBER: builtins.int
+    ANTENNA_JOINT_GOAL_FIELD_NUMBER: builtins.int
+    HAND_JOINT_GOAL_FIELD_NUMBER: builtins.int
     @property
     def arm_joint_goal(self) -> arm_pb2.ArmJointGoal: ...
     @property
     def neck_joint_goal(self) -> head_pb2.NeckJointGoal: ...
     @property
     def custom_joint_goal(self) -> global___CustomJointGoal: ...
+    @property
+    def antenna_joint_goal(self) -> head_pb2.AntennaJointGoal: ...
+    @property
+    def hand_joint_goal(self) -> hand_pb2.HandJointGoal: ...
     def __init__(
         self,
         *,
         arm_joint_goal: arm_pb2.ArmJointGoal | None = ...,
         neck_joint_goal: head_pb2.NeckJointGoal | None = ...,
         custom_joint_goal: global___CustomJointGoal | None = ...,
+        antenna_joint_goal: head_pb2.AntennaJointGoal | None = ...,
+        hand_joint_goal: hand_pb2.HandJointGoal | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["arm_joint_goal", b"arm_joint_goal", "custom_joint_goal", b"custom_joint_goal", "joints_goal", b"joints_goal", "neck_joint_goal", b"neck_joint_goal"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["arm_joint_goal", b"arm_joint_goal", "custom_joint_goal", b"custom_joint_goal", "joints_goal", b"joints_goal", "neck_joint_goal", b"neck_joint_goal"]) -> None: ...
-    def WhichOneof(self, oneof_group: typing_extensions.Literal["joints_goal", b"joints_goal"]) -> typing_extensions.Literal["arm_joint_goal", "neck_joint_goal", "custom_joint_goal"] | None: ...
+    def HasField(self, field_name: typing_extensions.Literal["antenna_joint_goal", b"antenna_joint_goal", "arm_joint_goal", b"arm_joint_goal", "custom_joint_goal", b"custom_joint_goal", "hand_joint_goal", b"hand_joint_goal", "joints_goal", b"joints_goal", "neck_joint_goal", b"neck_joint_goal"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["antenna_joint_goal", b"antenna_joint_goal", "arm_joint_goal", b"arm_joint_goal", "custom_joint_goal", b"custom_joint_goal", "hand_joint_goal", b"hand_joint_goal", "joints_goal", b"joints_goal", "neck_joint_goal", b"neck_joint_goal"]) -> None: ...
+    def WhichOneof(self, oneof_group: typing_extensions.Literal["joints_goal", b"joints_goal"]) -> typing_extensions.Literal["arm_joint_goal", "neck_joint_goal", "custom_joint_goal", "antenna_joint_goal", "hand_joint_goal"] | None: ...
 
 global___JointsGoal = JointsGoal
+
+@typing_extensions.final
+class OdometryGoal(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    ODOMETRY_GOAL_FIELD_NUMBER: builtins.int
+    DISTANCE_TOLERANCE_FIELD_NUMBER: builtins.int
+    ANGLE_TOLERANCE_FIELD_NUMBER: builtins.int
+    TIMEOUT_FIELD_NUMBER: builtins.int
+    @property
+    def odometry_goal(self) -> mobile_base_mobility_pb2.TargetDirectionCommand: ...
+    @property
+    def distance_tolerance(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    @property
+    def angle_tolerance(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    @property
+    def timeout(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    def __init__(
+        self,
+        *,
+        odometry_goal: mobile_base_mobility_pb2.TargetDirectionCommand | None = ...,
+        distance_tolerance: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        angle_tolerance: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+        timeout: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["angle_tolerance", b"angle_tolerance", "distance_tolerance", b"distance_tolerance", "odometry_goal", b"odometry_goal", "timeout", b"timeout"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["angle_tolerance", b"angle_tolerance", "distance_tolerance", b"distance_tolerance", "odometry_goal", b"odometry_goal", "timeout", b"timeout"]) -> None: ...
+
+global___OdometryGoal = OdometryGoal
 
 @typing_extensions.final
 class CustomJointGoal(google.protobuf.message.Message):
@@ -209,28 +292,75 @@ class GoToInterpolation(google.protobuf.message.Message):
 global___GoToInterpolation = GoToInterpolation
 
 @typing_extensions.final
+class GoToInterpolationSpace(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    INTERPOLATION_SPACE_FIELD_NUMBER: builtins.int
+    interpolation_space: global___InterpolationSpace.ValueType
+    def __init__(
+        self,
+        *,
+        interpolation_space: global___InterpolationSpace.ValueType = ...,
+    ) -> None: ...
+    def ClearField(self, field_name: typing_extensions.Literal["interpolation_space", b"interpolation_space"]) -> None: ...
+
+global___GoToInterpolationSpace = GoToInterpolationSpace
+
+@typing_extensions.final
+class EllipticalGoToParameters(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    ARC_DIRECTION_FIELD_NUMBER: builtins.int
+    SECONDARY_RADIUS_FIELD_NUMBER: builtins.int
+    arc_direction: global___ArcDirection.ValueType
+    @property
+    def secondary_radius(self) -> google.protobuf.wrappers_pb2.FloatValue: ...
+    def __init__(
+        self,
+        *,
+        arc_direction: global___ArcDirection.ValueType = ...,
+        secondary_radius: google.protobuf.wrappers_pb2.FloatValue | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["secondary_radius", b"secondary_radius"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["arc_direction", b"arc_direction", "secondary_radius", b"secondary_radius"]) -> None: ...
+
+global___EllipticalGoToParameters = EllipticalGoToParameters
+
+@typing_extensions.final
 class GoToRequest(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 
     CARTESIAN_GOAL_FIELD_NUMBER: builtins.int
     JOINTS_GOAL_FIELD_NUMBER: builtins.int
+    ODOMETRY_GOAL_FIELD_NUMBER: builtins.int
+    INTERPOLATION_SPACE_FIELD_NUMBER: builtins.int
     INTERPOLATION_MODE_FIELD_NUMBER: builtins.int
+    ELLIPTICAL_PARAMETERS_FIELD_NUMBER: builtins.int
     @property
     def cartesian_goal(self) -> global___CartesianGoal: ...
     @property
     def joints_goal(self) -> global___JointsGoal: ...
     @property
+    def odometry_goal(self) -> global___OdometryGoal: ...
+    @property
+    def interpolation_space(self) -> global___GoToInterpolationSpace: ...
+    @property
     def interpolation_mode(self) -> global___GoToInterpolation: ...
+    @property
+    def elliptical_parameters(self) -> global___EllipticalGoToParameters: ...
     def __init__(
         self,
         *,
         cartesian_goal: global___CartesianGoal | None = ...,
         joints_goal: global___JointsGoal | None = ...,
+        odometry_goal: global___OdometryGoal | None = ...,
+        interpolation_space: global___GoToInterpolationSpace | None = ...,
         interpolation_mode: global___GoToInterpolation | None = ...,
+        elliptical_parameters: global___EllipticalGoToParameters | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["cartesian_goal", b"cartesian_goal", "goal", b"goal", "interpolation_mode", b"interpolation_mode", "joints_goal", b"joints_goal"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["cartesian_goal", b"cartesian_goal", "goal", b"goal", "interpolation_mode", b"interpolation_mode", "joints_goal", b"joints_goal"]) -> None: ...
-    def WhichOneof(self, oneof_group: typing_extensions.Literal["goal", b"goal"]) -> typing_extensions.Literal["cartesian_goal", "joints_goal"] | None: ...
+    def HasField(self, field_name: typing_extensions.Literal["cartesian_goal", b"cartesian_goal", "elliptical_parameters", b"elliptical_parameters", "goal", b"goal", "interpolation_mode", b"interpolation_mode", "interpolation_space", b"interpolation_space", "joints_goal", b"joints_goal", "odometry_goal", b"odometry_goal"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["cartesian_goal", b"cartesian_goal", "elliptical_parameters", b"elliptical_parameters", "goal", b"goal", "interpolation_mode", b"interpolation_mode", "interpolation_space", b"interpolation_space", "joints_goal", b"joints_goal", "odometry_goal", b"odometry_goal"]) -> None: ...
+    def WhichOneof(self, oneof_group: typing_extensions.Literal["goal", b"goal"]) -> typing_extensions.Literal["cartesian_goal", "joints_goal", "odometry_goal"] | None: ...
 
 global___GoToRequest = GoToRequest
 
