@@ -65,25 +65,25 @@ namespace Reachy {
             "CgJpZBgBIAEoCzIQLnJlYWNoeS5SZWFjaHlJZBIZChFwdWJsaXNoX2ZyZXF1",
             "ZW5jeRgCIAEoAiJTChhSZWFjaHlTdHJlYW1BdWRpdFJlcXVlc3QSHAoCaWQY",
             "ASABKAsyEC5yZWFjaHkuUmVhY2h5SWQSGQoRcHVibGlzaF9mcmVxdWVuY3kY",
-            "AiABKAIi2QIKGFJlYWNoeUNvbXBvbmVudHNDb21tYW5kcxI+Cg5sX2FybV9j",
+            "AiABKAIi2wIKGFJlYWNoeUNvbXBvbmVudHNDb21tYW5kcxI+Cg5sX2FybV9j",
             "b21tYW5kcxgBIAEoCzImLnJlYWNoeS5wYXJ0LmFybS5Bcm1Db21wb25lbnRz",
             "Q29tbWFuZHMSPgoOcl9hcm1fY29tbWFuZHMYAiABKAsyJi5yZWFjaHkucGFy",
             "dC5hcm0uQXJtQ29tcG9uZW50c0NvbW1hbmRzEj8KDWhlYWRfY29tbWFuZHMY",
             "AyABKAsyKC5yZWFjaHkucGFydC5oZWFkLkhlYWRDb21wb25lbnRzQ29tbWFu",
-            "ZHMSPQoObF9oYW5kX2NvbW1hbmQYBCABKAsyJS5yZWFjaHkucGFydC5oYW5k",
-            "LkhhbmRQb3NpdGlvblJlcXVlc3QSPQoOcl9oYW5kX2NvbW1hbmQYBSABKAsy",
-            "JS5yZWFjaHkucGFydC5oYW5kLkhhbmRQb3NpdGlvblJlcXVlc3QqOgoOUmVh",
-            "Y2h5Q29yZU1vZGUSCAoETk9ORRAAEggKBEZBS0UQARIICgRSRUFMEAISCgoG",
-            "R0FaRUJPEAMymQMKDVJlYWNoeVNlcnZpY2USMwoJR2V0UmVhY2h5EhYuZ29v",
-            "Z2xlLnByb3RvYnVmLkVtcHR5Gg4ucmVhY2h5LlJlYWNoeRI3Cg5HZXRSZWFj",
-            "aHlTdGF0ZRIQLnJlYWNoeS5SZWFjaHlJZBoTLnJlYWNoeS5SZWFjaHlTdGF0",
-            "ZRJMChFTdHJlYW1SZWFjaHlTdGF0ZRIgLnJlYWNoeS5SZWFjaHlTdHJlYW1T",
-            "dGF0ZVJlcXVlc3QaEy5yZWFjaHkuUmVhY2h5U3RhdGUwARJSChZTZW5kQ29t",
-            "cG9uZW50c0NvbW1hbmRzEiAucmVhY2h5LlJlYWNoeUNvbXBvbmVudHNDb21t",
-            "YW5kcxoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRIvCgVBdWRpdBIQLnJlYWNo",
-            "eS5SZWFjaHlJZBoULnJlYWNoeS5SZWFjaHlTdGF0dXMSRwoLU3RyZWFtQXVk",
-            "aXQSIC5yZWFjaHkuUmVhY2h5U3RyZWFtQXVkaXRSZXF1ZXN0GhQucmVhY2h5",
-            "LlJlYWNoeVN0YXR1czABYgZwcm90bzM="));
+            "ZHMSPgoPbF9oYW5kX2NvbW1hbmRzGAQgASgLMiUucmVhY2h5LnBhcnQuaGFu",
+            "ZC5IYW5kUG9zaXRpb25SZXF1ZXN0Ej4KD3JfaGFuZF9jb21tYW5kcxgFIAEo",
+            "CzIlLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFBvc2l0aW9uUmVxdWVzdCo6Cg5S",
+            "ZWFjaHlDb3JlTW9kZRIICgROT05FEAASCAoERkFLRRABEggKBFJFQUwQAhIK",
+            "CgZHQVpFQk8QAzKZAwoNUmVhY2h5U2VydmljZRIzCglHZXRSZWFjaHkSFi5n",
+            "b29nbGUucHJvdG9idWYuRW1wdHkaDi5yZWFjaHkuUmVhY2h5EjcKDkdldFJl",
+            "YWNoeVN0YXRlEhAucmVhY2h5LlJlYWNoeUlkGhMucmVhY2h5LlJlYWNoeVN0",
+            "YXRlEkwKEVN0cmVhbVJlYWNoeVN0YXRlEiAucmVhY2h5LlJlYWNoeVN0cmVh",
+            "bVN0YXRlUmVxdWVzdBoTLnJlYWNoeS5SZWFjaHlTdGF0ZTABElIKFlNlbmRD",
+            "b21wb25lbnRzQ29tbWFuZHMSIC5yZWFjaHkuUmVhY2h5Q29tcG9uZW50c0Nv",
+            "bW1hbmRzGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Ei8KBUF1ZGl0EhAucmVh",
+            "Y2h5LlJlYWNoeUlkGhQucmVhY2h5LlJlYWNoeVN0YXR1cxJHCgtTdHJlYW1B",
+            "dWRpdBIgLnJlYWNoeS5SZWFjaHlTdHJlYW1BdWRpdFJlcXVlc3QaFC5yZWFj",
+            "aHkuUmVhY2h5U3RhdHVzMAFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Reachy.Part.Mobile.Base.Utility.MobileBaseUtilityReflection.Descriptor, global::Reachy.Part.Tripod.TripodReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.ReachyCoreMode), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -94,7 +94,7 @@ namespace Reachy {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStatus), global::Reachy.ReachyStatus.Parser, new[]{ "Timestamp", "Id", "LArmStatus", "RArmStatus", "HeadStatus", "LHandStatus", "RHandStatus", "MobileBaseStatus", "TripodStatus" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStreamStateRequest), global::Reachy.ReachyStreamStateRequest.Parser, new[]{ "Id", "PublishFrequency" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyStreamAuditRequest), global::Reachy.ReachyStreamAuditRequest.Parser, new[]{ "Id", "PublishFrequency" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyComponentsCommands), global::Reachy.ReachyComponentsCommands.Parser, new[]{ "LArmCommands", "RArmCommands", "HeadCommands", "LHandCommand", "RHandCommand" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.ReachyComponentsCommands), global::Reachy.ReachyComponentsCommands.Parser, new[]{ "LArmCommands", "RArmCommands", "HeadCommands", "LHandCommands", "RHandCommands" }, null, null, null, null)
           }));
     }
     #endregion
@@ -2879,8 +2879,8 @@ namespace Reachy {
       lArmCommands_ = other.lArmCommands_ != null ? other.lArmCommands_.Clone() : null;
       rArmCommands_ = other.rArmCommands_ != null ? other.rArmCommands_.Clone() : null;
       headCommands_ = other.headCommands_ != null ? other.headCommands_.Clone() : null;
-      lHandCommand_ = other.lHandCommand_ != null ? other.lHandCommand_.Clone() : null;
-      rHandCommand_ = other.rHandCommand_ != null ? other.rHandCommand_.Clone() : null;
+      lHandCommands_ = other.lHandCommands_ != null ? other.lHandCommands_.Clone() : null;
+      rHandCommands_ = other.rHandCommands_ != null ? other.rHandCommands_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2926,27 +2926,27 @@ namespace Reachy {
       }
     }
 
-    /// <summary>Field number for the "l_hand_command" field.</summary>
-    public const int LHandCommandFieldNumber = 4;
-    private global::Reachy.Part.Hand.HandPositionRequest lHandCommand_;
+    /// <summary>Field number for the "l_hand_commands" field.</summary>
+    public const int LHandCommandsFieldNumber = 4;
+    private global::Reachy.Part.Hand.HandPositionRequest lHandCommands_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Reachy.Part.Hand.HandPositionRequest LHandCommand {
-      get { return lHandCommand_; }
+    public global::Reachy.Part.Hand.HandPositionRequest LHandCommands {
+      get { return lHandCommands_; }
       set {
-        lHandCommand_ = value;
+        lHandCommands_ = value;
       }
     }
 
-    /// <summary>Field number for the "r_hand_command" field.</summary>
-    public const int RHandCommandFieldNumber = 5;
-    private global::Reachy.Part.Hand.HandPositionRequest rHandCommand_;
+    /// <summary>Field number for the "r_hand_commands" field.</summary>
+    public const int RHandCommandsFieldNumber = 5;
+    private global::Reachy.Part.Hand.HandPositionRequest rHandCommands_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Reachy.Part.Hand.HandPositionRequest RHandCommand {
-      get { return rHandCommand_; }
+    public global::Reachy.Part.Hand.HandPositionRequest RHandCommands {
+      get { return rHandCommands_; }
       set {
-        rHandCommand_ = value;
+        rHandCommands_ = value;
       }
     }
 
@@ -2968,8 +2968,8 @@ namespace Reachy {
       if (!object.Equals(LArmCommands, other.LArmCommands)) return false;
       if (!object.Equals(RArmCommands, other.RArmCommands)) return false;
       if (!object.Equals(HeadCommands, other.HeadCommands)) return false;
-      if (!object.Equals(LHandCommand, other.LHandCommand)) return false;
-      if (!object.Equals(RHandCommand, other.RHandCommand)) return false;
+      if (!object.Equals(LHandCommands, other.LHandCommands)) return false;
+      if (!object.Equals(RHandCommands, other.RHandCommands)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2980,8 +2980,8 @@ namespace Reachy {
       if (lArmCommands_ != null) hash ^= LArmCommands.GetHashCode();
       if (rArmCommands_ != null) hash ^= RArmCommands.GetHashCode();
       if (headCommands_ != null) hash ^= HeadCommands.GetHashCode();
-      if (lHandCommand_ != null) hash ^= LHandCommand.GetHashCode();
-      if (rHandCommand_ != null) hash ^= RHandCommand.GetHashCode();
+      if (lHandCommands_ != null) hash ^= LHandCommands.GetHashCode();
+      if (rHandCommands_ != null) hash ^= RHandCommands.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3012,13 +3012,13 @@ namespace Reachy {
         output.WriteRawTag(26);
         output.WriteMessage(HeadCommands);
       }
-      if (lHandCommand_ != null) {
+      if (lHandCommands_ != null) {
         output.WriteRawTag(34);
-        output.WriteMessage(LHandCommand);
+        output.WriteMessage(LHandCommands);
       }
-      if (rHandCommand_ != null) {
+      if (rHandCommands_ != null) {
         output.WriteRawTag(42);
-        output.WriteMessage(RHandCommand);
+        output.WriteMessage(RHandCommands);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -3042,13 +3042,13 @@ namespace Reachy {
         output.WriteRawTag(26);
         output.WriteMessage(HeadCommands);
       }
-      if (lHandCommand_ != null) {
+      if (lHandCommands_ != null) {
         output.WriteRawTag(34);
-        output.WriteMessage(LHandCommand);
+        output.WriteMessage(LHandCommands);
       }
-      if (rHandCommand_ != null) {
+      if (rHandCommands_ != null) {
         output.WriteRawTag(42);
-        output.WriteMessage(RHandCommand);
+        output.WriteMessage(RHandCommands);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -3069,11 +3069,11 @@ namespace Reachy {
       if (headCommands_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(HeadCommands);
       }
-      if (lHandCommand_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LHandCommand);
+      if (lHandCommands_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LHandCommands);
       }
-      if (rHandCommand_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RHandCommand);
+      if (rHandCommands_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RHandCommands);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3105,17 +3105,17 @@ namespace Reachy {
         }
         HeadCommands.MergeFrom(other.HeadCommands);
       }
-      if (other.lHandCommand_ != null) {
-        if (lHandCommand_ == null) {
-          LHandCommand = new global::Reachy.Part.Hand.HandPositionRequest();
+      if (other.lHandCommands_ != null) {
+        if (lHandCommands_ == null) {
+          LHandCommands = new global::Reachy.Part.Hand.HandPositionRequest();
         }
-        LHandCommand.MergeFrom(other.LHandCommand);
+        LHandCommands.MergeFrom(other.LHandCommands);
       }
-      if (other.rHandCommand_ != null) {
-        if (rHandCommand_ == null) {
-          RHandCommand = new global::Reachy.Part.Hand.HandPositionRequest();
+      if (other.rHandCommands_ != null) {
+        if (rHandCommands_ == null) {
+          RHandCommands = new global::Reachy.Part.Hand.HandPositionRequest();
         }
-        RHandCommand.MergeFrom(other.RHandCommand);
+        RHandCommands.MergeFrom(other.RHandCommands);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3154,17 +3154,17 @@ namespace Reachy {
             break;
           }
           case 34: {
-            if (lHandCommand_ == null) {
-              LHandCommand = new global::Reachy.Part.Hand.HandPositionRequest();
+            if (lHandCommands_ == null) {
+              LHandCommands = new global::Reachy.Part.Hand.HandPositionRequest();
             }
-            input.ReadMessage(LHandCommand);
+            input.ReadMessage(LHandCommands);
             break;
           }
           case 42: {
-            if (rHandCommand_ == null) {
-              RHandCommand = new global::Reachy.Part.Hand.HandPositionRequest();
+            if (rHandCommands_ == null) {
+              RHandCommands = new global::Reachy.Part.Hand.HandPositionRequest();
             }
-            input.ReadMessage(RHandCommand);
+            input.ReadMessage(RHandCommands);
             break;
           }
         }
@@ -3204,17 +3204,17 @@ namespace Reachy {
             break;
           }
           case 34: {
-            if (lHandCommand_ == null) {
-              LHandCommand = new global::Reachy.Part.Hand.HandPositionRequest();
+            if (lHandCommands_ == null) {
+              LHandCommands = new global::Reachy.Part.Hand.HandPositionRequest();
             }
-            input.ReadMessage(LHandCommand);
+            input.ReadMessage(LHandCommands);
             break;
           }
           case 42: {
-            if (rHandCommand_ == null) {
-              RHandCommand = new global::Reachy.Part.Hand.HandPositionRequest();
+            if (rHandCommands_ == null) {
+              RHandCommands = new global::Reachy.Part.Hand.HandPositionRequest();
             }
-            input.ReadMessage(RHandCommand);
+            input.ReadMessage(RHandCommands);
             break;
           }
         }
