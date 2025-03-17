@@ -280,8 +280,8 @@ class ReachyComponentsCommands(google.protobuf.message.Message):
     L_ARM_COMMANDS_FIELD_NUMBER: builtins.int
     R_ARM_COMMANDS_FIELD_NUMBER: builtins.int
     HEAD_COMMANDS_FIELD_NUMBER: builtins.int
-    L_HAND_COMMAND_FIELD_NUMBER: builtins.int
-    R_HAND_COMMAND_FIELD_NUMBER: builtins.int
+    L_HAND_COMMANDS_FIELD_NUMBER: builtins.int
+    R_HAND_COMMANDS_FIELD_NUMBER: builtins.int
     @property
     def l_arm_commands(self) -> arm_pb2.ArmComponentsCommands: ...
     @property
@@ -289,19 +289,19 @@ class ReachyComponentsCommands(google.protobuf.message.Message):
     @property
     def head_commands(self) -> head_pb2.HeadComponentsCommands: ...
     @property
-    def l_hand_command(self) -> hand_pb2.HandPositionRequest: ...
+    def l_hand_commands(self) -> hand_pb2.HandPositionRequest: ...
     @property
-    def r_hand_command(self) -> hand_pb2.HandPositionRequest: ...
+    def r_hand_commands(self) -> hand_pb2.HandPositionRequest: ...
     def __init__(
         self,
         *,
         l_arm_commands: arm_pb2.ArmComponentsCommands | None = ...,
         r_arm_commands: arm_pb2.ArmComponentsCommands | None = ...,
         head_commands: head_pb2.HeadComponentsCommands | None = ...,
-        l_hand_command: hand_pb2.HandPositionRequest | None = ...,
-        r_hand_command: hand_pb2.HandPositionRequest | None = ...,
+        l_hand_commands: hand_pb2.HandPositionRequest | None = ...,
+        r_hand_commands: hand_pb2.HandPositionRequest | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["head_commands", b"head_commands", "l_arm_commands", b"l_arm_commands", "l_hand_command", b"l_hand_command", "r_arm_commands", b"r_arm_commands", "r_hand_command", b"r_hand_command"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["head_commands", b"head_commands", "l_arm_commands", b"l_arm_commands", "l_hand_command", b"l_hand_command", "r_arm_commands", b"r_arm_commands", "r_hand_command", b"r_hand_command"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["head_commands", b"head_commands", "l_arm_commands", b"l_arm_commands", "l_hand_commands", b"l_hand_commands", "r_arm_commands", b"r_arm_commands", "r_hand_commands", b"r_hand_commands"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["head_commands", b"head_commands", "l_arm_commands", b"l_arm_commands", "l_hand_commands", b"l_hand_commands", "r_arm_commands", b"r_arm_commands", "r_hand_commands", b"r_hand_commands"]) -> None: ...
 
 global___ReachyComponentsCommands = ReachyComponentsCommands
