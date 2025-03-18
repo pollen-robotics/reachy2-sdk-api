@@ -87,40 +87,47 @@ namespace Reachy.Part.Head {
             "Y29tcG9uZW50LkpvaW50TGltaXRzIocBChBIZWFkVGVtcGVyYXR1cmVzEjUK",
             "EG5lY2tfdGVtcGVyYXR1cmUYASABKAsyGy5jb21wb25lbnQub3JiaXRhM2Qu",
             "RmxvYXQzZBIdChVsX2FudGVubmFfdGVtcGVyYXR1cmUYAiABKAISHQoVcl9h",
-            "bnRlbm5hX3RlbXBlcmF0dXJlGAMgASgCKtwBCglIZWFkRmllbGQSCAoETk9O",
-            "RRAAEggKBE5BTUUQARIGCgJJRBACEhQKEFBSRVNFTlRfUE9TSVRJT04QAxIR",
-            "Cg1QUkVTRU5UX1NQRUVEEAQSEAoMUFJFU0VOVF9MT0FEEAUSDwoLVEVNUEVS",
-            "QVRVUkUQBhIQCgxKT0lOVF9MSU1JVFMQBxINCglDT01QTElBTlQQCBIRCg1H",
-            "T0FMX1BPU0lUSU9OEAkSDwoLU1BFRURfTElNSVQQChIQCgxUT1JRVUVfTElN",
-            "SVQQCxIHCgNQSUQQDBIHCgNBTEwQDyoqCgpOZWNrSm9pbnRzEggKBFJPTEwQ",
-            "ABIJCgVQSVRDSBABEgcKA1lBVxACMqoJCgtIZWFkU2VydmljZRJDCgtHZXRB",
-            "bGxIZWFkcxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRocLnJlYWNoeS5wYXJ0",
-            "LmhlYWQuTGlzdE9mSGVhZBI8CghHZXRTdGF0ZRITLnJlYWNoeS5wYXJ0LlBh",
-            "cnRJZBobLnJlYWNoeS5wYXJ0LmhlYWQuSGVhZFN0YXRlElIKDUNvbXB1dGVO",
-            "ZWNrRksSHy5yZWFjaHkucGFydC5oZWFkLk5lY2tGS1JlcXVlc3QaIC5yZWFj",
-            "aHkucGFydC5oZWFkLk5lY2tGS1NvbHV0aW9uElIKDUNvbXB1dGVOZWNrSUsS",
-            "Hy5yZWFjaHkucGFydC5oZWFkLk5lY2tJS1JlcXVlc3QaIC5yZWFjaHkucGFy",
-            "dC5oZWFkLk5lY2tJS1NvbHV0aW9uEkQKDkdldE9yaWVudGF0aW9uEhMucmVh",
-            "Y2h5LnBhcnQuUGFydElkGh0ucmVhY2h5LmtpbmVtYXRpY3MuUm90YXRpb24z",
-            "ZBI6CgVBdWRpdBITLnJlYWNoeS5wYXJ0LlBhcnRJZBocLnJlYWNoeS5wYXJ0",
-            "LmhlYWQuSGVhZFN0YXR1cxI4CglIZWFydEJlYXQSEy5yZWFjaHkucGFydC5Q",
-            "YXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSNgoHUmVzdGFydBITLnJl",
-            "YWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJBChJS",
-            "ZXNldERlZmF1bHRWYWx1ZXMSEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5nb29n",
-            "bGUucHJvdG9idWYuRW1wdHkSNQoGVHVybk9uEhMucmVhY2h5LnBhcnQuUGFy",
-            "dElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EjYKB1R1cm5PZmYSEy5yZWFj",
-            "aHkucGFydC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSRgoPR2V0",
-            "Sm9pbnRzTGltaXRzEhMucmVhY2h5LnBhcnQuUGFydElkGh4ucmVhY2h5LnBh",
-            "cnQuaGVhZC5Kb2ludHNMaW1pdHMSSgoPR2V0VGVtcGVyYXR1cmVzEhMucmVh",
-            "Y2h5LnBhcnQuUGFydElkGiIucmVhY2h5LnBhcnQuaGVhZC5IZWFkVGVtcGVy",
-            "YXR1cmVzEkoKFEdldEpvaW50R29hbFBvc2l0aW9uEhMucmVhY2h5LnBhcnQu",
-            "UGFydElkGh0ucmVhY2h5LmtpbmVtYXRpY3MuUm90YXRpb24zZBJMCg1TZXRT",
-            "cGVlZExpbWl0EiMucmVhY2h5LnBhcnQuaGVhZC5TcGVlZExpbWl0UmVxdWVz",
-            "dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJOCg5TZXRUb3JxdWVMaW1pdBIk",
-            "LnJlYWNoeS5wYXJ0LmhlYWQuVG9ycXVlTGltaXRSZXF1ZXN0GhYuZ29vZ2xl",
-            "LnByb3RvYnVmLkVtcHR5EkwKEVNlbmROZWNrSm9pbnRHb2FsEh8ucmVhY2h5",
-            "LnBhcnQuaGVhZC5OZWNrSm9pbnRHb2FsGhYuZ29vZ2xlLnByb3RvYnVmLkVt",
-            "cHR5YgZwcm90bzM="));
+            "bnRlbm5hX3RlbXBlcmF0dXJlGAMgASgCIvABChZIZWFkQ29tcG9uZW50c0Nv",
+            "bW1hbmRzEjoKDG5lY2tfY29tbWFuZBgBIAEoCzIkLmNvbXBvbmVudC5vcmJp",
+            "dGEzZC5PcmJpdGEzZHNDb21tYW5kEkwKEWxfYW50ZW5uYV9jb21tYW5kGAIg",
+            "ASgLMjEuY29tcG9uZW50LmR5bmFtaXhlbF9tb3Rvci5EeW5hbWl4ZWxNb3Rv",
+            "cnNDb21tYW5kEkwKEXJfYW50ZW5uYV9jb21tYW5kGAMgASgLMjEuY29tcG9u",
+            "ZW50LmR5bmFtaXhlbF9tb3Rvci5EeW5hbWl4ZWxNb3RvcnNDb21tYW5kKtwB",
+            "CglIZWFkRmllbGQSCAoETk9ORRAAEggKBE5BTUUQARIGCgJJRBACEhQKEFBS",
+            "RVNFTlRfUE9TSVRJT04QAxIRCg1QUkVTRU5UX1NQRUVEEAQSEAoMUFJFU0VO",
+            "VF9MT0FEEAUSDwoLVEVNUEVSQVRVUkUQBhIQCgxKT0lOVF9MSU1JVFMQBxIN",
+            "CglDT01QTElBTlQQCBIRCg1HT0FMX1BPU0lUSU9OEAkSDwoLU1BFRURfTElN",
+            "SVQQChIQCgxUT1JRVUVfTElNSVQQCxIHCgNQSUQQDBIHCgNBTEwQDyoqCgpO",
+            "ZWNrSm9pbnRzEggKBFJPTEwQABIJCgVQSVRDSBABEgcKA1lBVxACMoYKCgtI",
+            "ZWFkU2VydmljZRJDCgtHZXRBbGxIZWFkcxIWLmdvb2dsZS5wcm90b2J1Zi5F",
+            "bXB0eRocLnJlYWNoeS5wYXJ0LmhlYWQuTGlzdE9mSGVhZBI8CghHZXRTdGF0",
+            "ZRITLnJlYWNoeS5wYXJ0LlBhcnRJZBobLnJlYWNoeS5wYXJ0LmhlYWQuSGVh",
+            "ZFN0YXRlElIKDUNvbXB1dGVOZWNrRksSHy5yZWFjaHkucGFydC5oZWFkLk5l",
+            "Y2tGS1JlcXVlc3QaIC5yZWFjaHkucGFydC5oZWFkLk5lY2tGS1NvbHV0aW9u",
+            "ElIKDUNvbXB1dGVOZWNrSUsSHy5yZWFjaHkucGFydC5oZWFkLk5lY2tJS1Jl",
+            "cXVlc3QaIC5yZWFjaHkucGFydC5oZWFkLk5lY2tJS1NvbHV0aW9uEkQKDkdl",
+            "dE9yaWVudGF0aW9uEhMucmVhY2h5LnBhcnQuUGFydElkGh0ucmVhY2h5Lmtp",
+            "bmVtYXRpY3MuUm90YXRpb24zZBI6CgVBdWRpdBITLnJlYWNoeS5wYXJ0LlBh",
+            "cnRJZBocLnJlYWNoeS5wYXJ0LmhlYWQuSGVhZFN0YXR1cxI4CglIZWFydEJl",
+            "YXQSEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1w",
+            "dHkSNgoHUmVzdGFydBITLnJlYWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5w",
+            "cm90b2J1Zi5FbXB0eRJBChJSZXNldERlZmF1bHRWYWx1ZXMSEy5yZWFjaHku",
+            "cGFydC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSNQoGVHVybk9u",
+            "EhMucmVhY2h5LnBhcnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5",
+            "EjYKB1R1cm5PZmYSEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5nb29nbGUucHJv",
+            "dG9idWYuRW1wdHkSRgoPR2V0Sm9pbnRzTGltaXRzEhMucmVhY2h5LnBhcnQu",
+            "UGFydElkGh4ucmVhY2h5LnBhcnQuaGVhZC5Kb2ludHNMaW1pdHMSSgoPR2V0",
+            "VGVtcGVyYXR1cmVzEhMucmVhY2h5LnBhcnQuUGFydElkGiIucmVhY2h5LnBh",
+            "cnQuaGVhZC5IZWFkVGVtcGVyYXR1cmVzEkoKFEdldEpvaW50R29hbFBvc2l0",
+            "aW9uEhMucmVhY2h5LnBhcnQuUGFydElkGh0ucmVhY2h5LmtpbmVtYXRpY3Mu",
+            "Um90YXRpb24zZBJMCg1TZXRTcGVlZExpbWl0EiMucmVhY2h5LnBhcnQuaGVh",
+            "ZC5TcGVlZExpbWl0UmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJO",
+            "Cg5TZXRUb3JxdWVMaW1pdBIkLnJlYWNoeS5wYXJ0LmhlYWQuVG9ycXVlTGlt",
+            "aXRSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EkwKEVNlbmROZWNr",
+            "Sm9pbnRHb2FsEh8ucmVhY2h5LnBhcnQuaGVhZC5OZWNrSm9pbnRHb2FsGhYu",
+            "Z29vZ2xlLnByb3RvYnVmLkVtcHR5EloKFlNlbmRDb21wb25lbnRzQ29tbWFu",
+            "ZHMSKC5yZWFjaHkucGFydC5oZWFkLkhlYWRDb21wb25lbnRzQ29tbWFuZHMa",
+            "Fi5nb29nbGUucHJvdG9idWYuRW1wdHliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, global::Reachy.Kinematics.KinematicsReflection.Descriptor, global::Error.ErrorReflection.Descriptor, global::Component.ComponentReflection.Descriptor, global::Component.Orbita3D.Orbita3DReflection.Descriptor, global::Component.DynamixelMotor.DynamixelMotorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.Part.Head.HeadField), typeof(global::Reachy.Part.Head.NeckJoints), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -142,7 +149,8 @@ namespace Reachy.Part.Head {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.SpeedLimitRequest), global::Reachy.Part.Head.SpeedLimitRequest.Parser, new[]{ "Id", "Limit" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.TorqueLimitRequest), global::Reachy.Part.Head.TorqueLimitRequest.Parser, new[]{ "Id", "Limit" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.JointsLimits), global::Reachy.Part.Head.JointsLimits.Parser, new[]{ "NeckLimits", "LAntennaLimits", "RAntennaLimits" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.HeadTemperatures), global::Reachy.Part.Head.HeadTemperatures.Parser, new[]{ "NeckTemperature", "LAntennaTemperature", "RAntennaTemperature" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.HeadTemperatures), global::Reachy.Part.Head.HeadTemperatures.Parser, new[]{ "NeckTemperature", "LAntennaTemperature", "RAntennaTemperature" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Head.HeadComponentsCommands), global::Reachy.Part.Head.HeadComponentsCommands.Parser, new[]{ "NeckCommand", "LAntennaCommand", "RAntennaCommand" }, null, null, null, null)
           }));
     }
     #endregion
@@ -5293,6 +5301,296 @@ namespace Reachy.Part.Head {
           }
           case 29: {
             RAntennaTemperature = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class HeadComponentsCommands : pb::IMessage<HeadComponentsCommands>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<HeadComponentsCommands> _parser = new pb::MessageParser<HeadComponentsCommands>(() => new HeadComponentsCommands());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<HeadComponentsCommands> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Reachy.Part.Head.HeadReflection.Descriptor.MessageTypes[19]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public HeadComponentsCommands() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public HeadComponentsCommands(HeadComponentsCommands other) : this() {
+      neckCommand_ = other.neckCommand_ != null ? other.neckCommand_.Clone() : null;
+      lAntennaCommand_ = other.lAntennaCommand_ != null ? other.lAntennaCommand_.Clone() : null;
+      rAntennaCommand_ = other.rAntennaCommand_ != null ? other.rAntennaCommand_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public HeadComponentsCommands Clone() {
+      return new HeadComponentsCommands(this);
+    }
+
+    /// <summary>Field number for the "neck_command" field.</summary>
+    public const int NeckCommandFieldNumber = 1;
+    private global::Component.Orbita3D.Orbita3dsCommand neckCommand_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Component.Orbita3D.Orbita3dsCommand NeckCommand {
+      get { return neckCommand_; }
+      set {
+        neckCommand_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "l_antenna_command" field.</summary>
+    public const int LAntennaCommandFieldNumber = 2;
+    private global::Component.DynamixelMotor.DynamixelMotorsCommand lAntennaCommand_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Component.DynamixelMotor.DynamixelMotorsCommand LAntennaCommand {
+      get { return lAntennaCommand_; }
+      set {
+        lAntennaCommand_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "r_antenna_command" field.</summary>
+    public const int RAntennaCommandFieldNumber = 3;
+    private global::Component.DynamixelMotor.DynamixelMotorsCommand rAntennaCommand_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Component.DynamixelMotor.DynamixelMotorsCommand RAntennaCommand {
+      get { return rAntennaCommand_; }
+      set {
+        rAntennaCommand_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as HeadComponentsCommands);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(HeadComponentsCommands other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(NeckCommand, other.NeckCommand)) return false;
+      if (!object.Equals(LAntennaCommand, other.LAntennaCommand)) return false;
+      if (!object.Equals(RAntennaCommand, other.RAntennaCommand)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (neckCommand_ != null) hash ^= NeckCommand.GetHashCode();
+      if (lAntennaCommand_ != null) hash ^= LAntennaCommand.GetHashCode();
+      if (rAntennaCommand_ != null) hash ^= RAntennaCommand.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (neckCommand_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(NeckCommand);
+      }
+      if (lAntennaCommand_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(LAntennaCommand);
+      }
+      if (rAntennaCommand_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(RAntennaCommand);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (neckCommand_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(NeckCommand);
+      }
+      if (lAntennaCommand_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(LAntennaCommand);
+      }
+      if (rAntennaCommand_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(RAntennaCommand);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (neckCommand_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(NeckCommand);
+      }
+      if (lAntennaCommand_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LAntennaCommand);
+      }
+      if (rAntennaCommand_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RAntennaCommand);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(HeadComponentsCommands other) {
+      if (other == null) {
+        return;
+      }
+      if (other.neckCommand_ != null) {
+        if (neckCommand_ == null) {
+          NeckCommand = new global::Component.Orbita3D.Orbita3dsCommand();
+        }
+        NeckCommand.MergeFrom(other.NeckCommand);
+      }
+      if (other.lAntennaCommand_ != null) {
+        if (lAntennaCommand_ == null) {
+          LAntennaCommand = new global::Component.DynamixelMotor.DynamixelMotorsCommand();
+        }
+        LAntennaCommand.MergeFrom(other.LAntennaCommand);
+      }
+      if (other.rAntennaCommand_ != null) {
+        if (rAntennaCommand_ == null) {
+          RAntennaCommand = new global::Component.DynamixelMotor.DynamixelMotorsCommand();
+        }
+        RAntennaCommand.MergeFrom(other.RAntennaCommand);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (neckCommand_ == null) {
+              NeckCommand = new global::Component.Orbita3D.Orbita3dsCommand();
+            }
+            input.ReadMessage(NeckCommand);
+            break;
+          }
+          case 18: {
+            if (lAntennaCommand_ == null) {
+              LAntennaCommand = new global::Component.DynamixelMotor.DynamixelMotorsCommand();
+            }
+            input.ReadMessage(LAntennaCommand);
+            break;
+          }
+          case 26: {
+            if (rAntennaCommand_ == null) {
+              RAntennaCommand = new global::Component.DynamixelMotor.DynamixelMotorsCommand();
+            }
+            input.ReadMessage(RAntennaCommand);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (neckCommand_ == null) {
+              NeckCommand = new global::Component.Orbita3D.Orbita3dsCommand();
+            }
+            input.ReadMessage(NeckCommand);
+            break;
+          }
+          case 18: {
+            if (lAntennaCommand_ == null) {
+              LAntennaCommand = new global::Component.DynamixelMotor.DynamixelMotorsCommand();
+            }
+            input.ReadMessage(LAntennaCommand);
+            break;
+          }
+          case 26: {
+            if (rAntennaCommand_ == null) {
+              RAntennaCommand = new global::Component.DynamixelMotor.DynamixelMotorsCommand();
+            }
+            input.ReadMessage(RAntennaCommand);
             break;
           }
         }

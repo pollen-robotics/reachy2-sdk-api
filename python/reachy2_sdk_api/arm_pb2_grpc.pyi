@@ -94,6 +94,10 @@ class ArmServiceStub:
         arm_pb2.ArmCartesianGoal,
         google.protobuf.empty_pb2.Empty,
     ]
+    SendComponentsCommands: grpc.UnaryUnaryMultiCallable[
+        arm_pb2.ArmComponentsCommands,
+        google.protobuf.empty_pb2.Empty,
+    ]
 
 class ArmServiceAsyncStub:
     GetAllArms: grpc.aio.UnaryUnaryMultiCallable[
@@ -166,6 +170,10 @@ class ArmServiceAsyncStub:
     ]
     SendArmCartesianGoal: grpc.aio.UnaryUnaryMultiCallable[
         arm_pb2.ArmCartesianGoal,
+        google.protobuf.empty_pb2.Empty,
+    ]
+    SendComponentsCommands: grpc.aio.UnaryUnaryMultiCallable[
+        arm_pb2.ArmComponentsCommands,
         google.protobuf.empty_pb2.Empty,
     ]
 
@@ -276,6 +284,12 @@ class ArmServiceServicer(metaclass=abc.ABCMeta):
     def SendArmCartesianGoal(
         self,
         request: arm_pb2.ArmCartesianGoal,
+        context: _ServicerContext,
+    ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
+    @abc.abstractmethod
+    def SendComponentsCommands(
+        self,
+        request: arm_pb2.ArmComponentsCommands,
         context: _ServicerContext,
     ) -> typing.Union[google.protobuf.empty_pb2.Empty, collections.abc.Awaitable[google.protobuf.empty_pb2.Empty]]: ...
 

@@ -523,3 +523,28 @@ class HeadTemperatures(google.protobuf.message.Message):
     def ClearField(self, field_name: typing_extensions.Literal["l_antenna_temperature", b"l_antenna_temperature", "neck_temperature", b"neck_temperature", "r_antenna_temperature", b"r_antenna_temperature"]) -> None: ...
 
 global___HeadTemperatures = HeadTemperatures
+
+@typing_extensions.final
+class HeadComponentsCommands(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    NECK_COMMAND_FIELD_NUMBER: builtins.int
+    L_ANTENNA_COMMAND_FIELD_NUMBER: builtins.int
+    R_ANTENNA_COMMAND_FIELD_NUMBER: builtins.int
+    @property
+    def neck_command(self) -> orbita3d_pb2.Orbita3dsCommand: ...
+    @property
+    def l_antenna_command(self) -> dynamixel_motor_pb2.DynamixelMotorsCommand: ...
+    @property
+    def r_antenna_command(self) -> dynamixel_motor_pb2.DynamixelMotorsCommand: ...
+    def __init__(
+        self,
+        *,
+        neck_command: orbita3d_pb2.Orbita3dsCommand | None = ...,
+        l_antenna_command: dynamixel_motor_pb2.DynamixelMotorsCommand | None = ...,
+        r_antenna_command: dynamixel_motor_pb2.DynamixelMotorsCommand | None = ...,
+    ) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["l_antenna_command", b"l_antenna_command", "neck_command", b"neck_command", "r_antenna_command", b"r_antenna_command"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["l_antenna_command", b"l_antenna_command", "neck_command", b"neck_command", "r_antenna_command", b"r_antenna_command"]) -> None: ...
+
+global___HeadComponentsCommands = HeadComponentsCommands
