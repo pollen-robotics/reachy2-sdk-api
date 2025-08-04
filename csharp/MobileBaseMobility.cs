@@ -26,39 +26,39 @@ namespace Reachy.Part.Mobile.Base.Mobility {
           string.Concat(
             "Chptb2JpbGVfYmFzZV9tb2JpbGl0eS5wcm90bxIgcmVhY2h5LnBhcnQubW9i",
             "aWxlLmJhc2UubW9iaWxpdHkaHmdvb2dsZS9wcm90b2J1Zi93cmFwcGVycy5w",
-            "cm90bxoKcGFydC5wcm90byKNAQoPRGlyZWN0aW9uVmVjdG9yEiYKAXgYASAB",
-            "KAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRImCgF5GAIgASgLMhsu",
-            "Z29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSKgoFdGhldGEYAyABKAsyGy5n",
-            "b29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSJ/ChZUYXJnZXREaXJlY3Rpb25D",
-            "b21tYW5kEh8KAmlkGAEgASgLMhMucmVhY2h5LnBhcnQuUGFydElkEkQKCWRp",
-            "cmVjdGlvbhgCIAEoCzIxLnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLm1vYmls",
-            "aXR5LkRpcmVjdGlvblZlY3RvciLmAQoOU2V0U3BlZWRWZWN0b3ISHwoCaWQY",
-            "ASABKAsyEy5yZWFjaHkucGFydC5QYXJ0SWQSKgoFeF92ZWwYAiABKAsyGy5n",
-            "b29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRIqCgV5X3ZlbBgDIAEoCzIbLmdv",
-            "b2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlEiwKB3JvdF92ZWwYBCABKAsyGy5n",
-            "b29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRItCghkdXJhdGlvbhgFIAEoCzIb",
-            "Lmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlItMBChREaXN0YW5jZVRvR29h",
-            "bFZlY3RvchIsCgdkZWx0YV94GAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZs",
-            "b2F0VmFsdWUSLAoHZGVsdGFfeRgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5G",
-            "bG9hdFZhbHVlEjAKC2RlbHRhX3RoZXRhGAMgASgLMhsuZ29vZ2xlLnByb3Rv",
-            "YnVmLkZsb2F0VmFsdWUSLQoIZGlzdGFuY2UYBCABKAsyGy5nb29nbGUucHJv",
-            "dG9idWYuRmxvYXRWYWx1ZSJBChJNb2JpbGl0eVNlcnZpY2VBY2sSKwoHc3Vj",
-            "Y2VzcxgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUyzwMKGU1v",
-            "YmlsZUJhc2VNb2JpbGl0eVNlcnZpY2USfwoNU2VuZERpcmVjdGlvbhI4LnJl",
-            "YWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLm1vYmlsaXR5LlRhcmdldERpcmVjdGlv",
-            "bkNvbW1hbmQaNC5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5N",
-            "b2JpbGl0eVNlcnZpY2VBY2sSdgoMU2VuZFNldFNwZWVkEjAucmVhY2h5LnBh",
-            "cnQubW9iaWxlLmJhc2UubW9iaWxpdHkuU2V0U3BlZWRWZWN0b3IaNC5yZWFj",
-            "aHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5Nb2JpbGl0eVNlcnZpY2VB",
-            "Y2sSWgoQR2V0TGFzdERpcmVjdGlvbhITLnJlYWNoeS5wYXJ0LlBhcnRJZBox",
-            "LnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLm1vYmlsaXR5LkRpcmVjdGlvblZl",
-            "Y3RvchJdCg5EaXN0YW5jZVRvR29hbBITLnJlYWNoeS5wYXJ0LlBhcnRJZBo2",
-            "LnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLm1vYmlsaXR5LkRpc3RhbmNlVG9H",
-            "b2FsVmVjdG9yYgZwcm90bzM="));
+            "cm90bxoKcGFydC5wcm90byKQAQoPRGlyZWN0aW9uVmVjdG9yEicKAnZ4GAEg",
+            "ASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSJwoCdnkYAiABKAsy",
+            "Gy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRIrCgZ2dGhldGEYAyABKAsy",
+            "Gy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSJ/ChZUYXJnZXREaXJlY3Rp",
+            "b25Db21tYW5kEh8KAmlkGAEgASgLMhMucmVhY2h5LnBhcnQuUGFydElkEkQK",
+            "CWRpcmVjdGlvbhgCIAEoCzIxLnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLm1v",
+            "YmlsaXR5LkRpcmVjdGlvblZlY3RvciLmAQoOU2V0U3BlZWRWZWN0b3ISHwoC",
+            "aWQYASABKAsyEy5yZWFjaHkucGFydC5QYXJ0SWQSKgoFeF92ZWwYAiABKAsy",
+            "Gy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRIqCgV5X3ZlbBgDIAEoCzIb",
+            "Lmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlEiwKB3JvdF92ZWwYBCABKAsy",
+            "Gy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRItCghkdXJhdGlvbhgFIAEo",
+            "CzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlItMBChREaXN0YW5jZVRv",
+            "R29hbFZlY3RvchIsCgdkZWx0YV94GAEgASgLMhsuZ29vZ2xlLnByb3RvYnVm",
+            "LkZsb2F0VmFsdWUSLAoHZGVsdGFfeRgCIAEoCzIbLmdvb2dsZS5wcm90b2J1",
+            "Zi5GbG9hdFZhbHVlEjAKC2RlbHRhX3RoZXRhGAMgASgLMhsuZ29vZ2xlLnBy",
+            "b3RvYnVmLkZsb2F0VmFsdWUSLQoIZGlzdGFuY2UYBCABKAsyGy5nb29nbGUu",
+            "cHJvdG9idWYuRmxvYXRWYWx1ZSJBChJNb2JpbGl0eVNlcnZpY2VBY2sSKwoH",
+            "c3VjY2VzcxgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFsdWUyzwMK",
+            "GU1vYmlsZUJhc2VNb2JpbGl0eVNlcnZpY2USfwoNU2VuZERpcmVjdGlvbhI4",
+            "LnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLm1vYmlsaXR5LlRhcmdldERpcmVj",
+            "dGlvbkNvbW1hbmQaNC5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0",
+            "eS5Nb2JpbGl0eVNlcnZpY2VBY2sSdgoMU2VuZFNldFNwZWVkEjAucmVhY2h5",
+            "LnBhcnQubW9iaWxlLmJhc2UubW9iaWxpdHkuU2V0U3BlZWRWZWN0b3IaNC5y",
+            "ZWFjaHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5Nb2JpbGl0eVNlcnZp",
+            "Y2VBY2sSWgoQR2V0TGFzdERpcmVjdGlvbhITLnJlYWNoeS5wYXJ0LlBhcnRJ",
+            "ZBoxLnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLm1vYmlsaXR5LkRpcmVjdGlv",
+            "blZlY3RvchJdCg5EaXN0YW5jZVRvR29hbBITLnJlYWNoeS5wYXJ0LlBhcnRJ",
+            "ZBo2LnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLm1vYmlsaXR5LkRpc3RhbmNl",
+            "VG9Hb2FsVmVjdG9yYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Mobility.DirectionVector), global::Reachy.Part.Mobile.Base.Mobility.DirectionVector.Parser, new[]{ "X", "Y", "Theta" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Mobility.DirectionVector), global::Reachy.Part.Mobile.Base.Mobility.DirectionVector.Parser, new[]{ "Vx", "Vy", "Vtheta" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Mobility.TargetDirectionCommand), global::Reachy.Part.Mobile.Base.Mobility.TargetDirectionCommand.Parser, new[]{ "Id", "Direction" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Mobility.SetSpeedVector), global::Reachy.Part.Mobile.Base.Mobility.SetSpeedVector.Parser, new[]{ "Id", "XVel", "YVel", "RotVel", "Duration" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Mobility.DistanceToGoalVector), global::Reachy.Part.Mobile.Base.Mobility.DistanceToGoalVector.Parser, new[]{ "DeltaX", "DeltaY", "DeltaTheta", "Distance" }, null, null, null, null),
@@ -106,9 +106,9 @@ namespace Reachy.Part.Mobile.Base.Mobility {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DirectionVector(DirectionVector other) : this() {
-      X = other.X;
-      Y = other.Y;
-      Theta = other.Theta;
+      Vx = other.Vx;
+      Vy = other.Vy;
+      Vtheta = other.Vtheta;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -118,47 +118,47 @@ namespace Reachy.Part.Mobile.Base.Mobility {
       return new DirectionVector(this);
     }
 
-    /// <summary>Field number for the "x" field.</summary>
-    public const int XFieldNumber = 1;
-    private static readonly pb::FieldCodec<float?> _single_x_codec = pb::FieldCodec.ForStructWrapper<float>(10);
-    private float? x_;
+    /// <summary>Field number for the "vx" field.</summary>
+    public const int VxFieldNumber = 1;
+    private static readonly pb::FieldCodec<float?> _single_vx_codec = pb::FieldCodec.ForStructWrapper<float>(10);
+    private float? vx_;
     /// <summary>
     /// use FloatValue instead of double to avoid 0.0 default value being ignored
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float? X {
-      get { return x_; }
+    public float? Vx {
+      get { return vx_; }
       set {
-        x_ = value;
+        vx_ = value;
       }
     }
 
 
-    /// <summary>Field number for the "y" field.</summary>
-    public const int YFieldNumber = 2;
-    private static readonly pb::FieldCodec<float?> _single_y_codec = pb::FieldCodec.ForStructWrapper<float>(18);
-    private float? y_;
+    /// <summary>Field number for the "vy" field.</summary>
+    public const int VyFieldNumber = 2;
+    private static readonly pb::FieldCodec<float?> _single_vy_codec = pb::FieldCodec.ForStructWrapper<float>(18);
+    private float? vy_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float? Y {
-      get { return y_; }
+    public float? Vy {
+      get { return vy_; }
       set {
-        y_ = value;
+        vy_ = value;
       }
     }
 
 
-    /// <summary>Field number for the "theta" field.</summary>
-    public const int ThetaFieldNumber = 3;
-    private static readonly pb::FieldCodec<float?> _single_theta_codec = pb::FieldCodec.ForStructWrapper<float>(26);
-    private float? theta_;
+    /// <summary>Field number for the "vtheta" field.</summary>
+    public const int VthetaFieldNumber = 3;
+    private static readonly pb::FieldCodec<float?> _single_vtheta_codec = pb::FieldCodec.ForStructWrapper<float>(26);
+    private float? vtheta_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float? Theta {
-      get { return theta_; }
+    public float? Vtheta {
+      get { return vtheta_; }
       set {
-        theta_ = value;
+        vtheta_ = value;
       }
     }
 
@@ -178,9 +178,9 @@ namespace Reachy.Part.Mobile.Base.Mobility {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(X, other.X)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(Y, other.Y)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(Theta, other.Theta)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(Vx, other.Vx)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(Vy, other.Vy)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(Vtheta, other.Vtheta)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -188,9 +188,9 @@ namespace Reachy.Part.Mobile.Base.Mobility {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (x_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(X);
-      if (y_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Y);
-      if (theta_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Theta);
+      if (vx_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Vx);
+      if (vy_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Vy);
+      if (vtheta_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Vtheta);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -209,14 +209,14 @@ namespace Reachy.Part.Mobile.Base.Mobility {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (x_ != null) {
-        _single_x_codec.WriteTagAndValue(output, X);
+      if (vx_ != null) {
+        _single_vx_codec.WriteTagAndValue(output, Vx);
       }
-      if (y_ != null) {
-        _single_y_codec.WriteTagAndValue(output, Y);
+      if (vy_ != null) {
+        _single_vy_codec.WriteTagAndValue(output, Vy);
       }
-      if (theta_ != null) {
-        _single_theta_codec.WriteTagAndValue(output, Theta);
+      if (vtheta_ != null) {
+        _single_vtheta_codec.WriteTagAndValue(output, Vtheta);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -228,14 +228,14 @@ namespace Reachy.Part.Mobile.Base.Mobility {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (x_ != null) {
-        _single_x_codec.WriteTagAndValue(ref output, X);
+      if (vx_ != null) {
+        _single_vx_codec.WriteTagAndValue(ref output, Vx);
       }
-      if (y_ != null) {
-        _single_y_codec.WriteTagAndValue(ref output, Y);
+      if (vy_ != null) {
+        _single_vy_codec.WriteTagAndValue(ref output, Vy);
       }
-      if (theta_ != null) {
-        _single_theta_codec.WriteTagAndValue(ref output, Theta);
+      if (vtheta_ != null) {
+        _single_vtheta_codec.WriteTagAndValue(ref output, Vtheta);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -247,14 +247,14 @@ namespace Reachy.Part.Mobile.Base.Mobility {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (x_ != null) {
-        size += _single_x_codec.CalculateSizeWithTag(X);
+      if (vx_ != null) {
+        size += _single_vx_codec.CalculateSizeWithTag(Vx);
       }
-      if (y_ != null) {
-        size += _single_y_codec.CalculateSizeWithTag(Y);
+      if (vy_ != null) {
+        size += _single_vy_codec.CalculateSizeWithTag(Vy);
       }
-      if (theta_ != null) {
-        size += _single_theta_codec.CalculateSizeWithTag(Theta);
+      if (vtheta_ != null) {
+        size += _single_vtheta_codec.CalculateSizeWithTag(Vtheta);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -268,19 +268,19 @@ namespace Reachy.Part.Mobile.Base.Mobility {
       if (other == null) {
         return;
       }
-      if (other.x_ != null) {
-        if (x_ == null || other.X != 0F) {
-          X = other.X;
+      if (other.vx_ != null) {
+        if (vx_ == null || other.Vx != 0F) {
+          Vx = other.Vx;
         }
       }
-      if (other.y_ != null) {
-        if (y_ == null || other.Y != 0F) {
-          Y = other.Y;
+      if (other.vy_ != null) {
+        if (vy_ == null || other.Vy != 0F) {
+          Vy = other.Vy;
         }
       }
-      if (other.theta_ != null) {
-        if (theta_ == null || other.Theta != 0F) {
-          Theta = other.Theta;
+      if (other.vtheta_ != null) {
+        if (vtheta_ == null || other.Vtheta != 0F) {
+          Vtheta = other.Vtheta;
         }
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -299,23 +299,23 @@ namespace Reachy.Part.Mobile.Base.Mobility {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            float? value = _single_x_codec.Read(input);
-            if (x_ == null || value != 0F) {
-              X = value;
+            float? value = _single_vx_codec.Read(input);
+            if (vx_ == null || value != 0F) {
+              Vx = value;
             }
             break;
           }
           case 18: {
-            float? value = _single_y_codec.Read(input);
-            if (y_ == null || value != 0F) {
-              Y = value;
+            float? value = _single_vy_codec.Read(input);
+            if (vy_ == null || value != 0F) {
+              Vy = value;
             }
             break;
           }
           case 26: {
-            float? value = _single_theta_codec.Read(input);
-            if (theta_ == null || value != 0F) {
-              Theta = value;
+            float? value = _single_vtheta_codec.Read(input);
+            if (vtheta_ == null || value != 0F) {
+              Vtheta = value;
             }
             break;
           }
@@ -335,23 +335,23 @@ namespace Reachy.Part.Mobile.Base.Mobility {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            float? value = _single_x_codec.Read(ref input);
-            if (x_ == null || value != 0F) {
-              X = value;
+            float? value = _single_vx_codec.Read(ref input);
+            if (vx_ == null || value != 0F) {
+              Vx = value;
             }
             break;
           }
           case 18: {
-            float? value = _single_y_codec.Read(ref input);
-            if (y_ == null || value != 0F) {
-              Y = value;
+            float? value = _single_vy_codec.Read(ref input);
+            if (vy_ == null || value != 0F) {
+              Vy = value;
             }
             break;
           }
           case 26: {
-            float? value = _single_theta_codec.Read(ref input);
-            if (theta_ == null || value != 0F) {
-              Theta = value;
+            float? value = _single_vtheta_codec.Read(ref input);
+            if (vtheta_ == null || value != 0F) {
+              Vtheta = value;
             }
             break;
           }

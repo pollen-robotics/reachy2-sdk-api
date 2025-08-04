@@ -33,7 +33,7 @@ namespace Reachy.Part.Mobile.Base.Utility {
             "aHkucGFydC5QYXJ0SWQSIwoEaW5mbxgFIAEoCzIVLnJlYWNoeS5wYXJ0LlBh",
             "cnRJbmZvIlQKEExpc3RPZk1vYmlsZUJhc2USQAoLbW9iaWxlX2Jhc2UYASAD",
             "KAsyKy5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS51dGlsaXR5Lk1vYmlsZUJh",
-            "c2UijAMKD01vYmlsZUJhc2VTdGF0ZRItCgl0aW1lc3RhbXAYASABKAsyGi5n",
+            "c2UilwQKD01vYmlsZUJhc2VTdGF0ZRItCgl0aW1lc3RhbXAYASABKAsyGi5n",
             "b29nbGUucHJvdG9idWYuVGltZXN0YW1wEh8KAmlkGAIgASgLMhMucmVhY2h5",
             "LnBhcnQuUGFydElkEhEKCWFjdGl2YXRlZBgDIAEoCBJECg1iYXR0ZXJ5X2xl",
             "dmVsGAQgASgLMi0ucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0eS5C",
@@ -41,59 +41,62 @@ namespace Reachy.Part.Mobile.Base.Utility {
             "cnQubW9iaWxlLmJhc2UubGlkYXIuTGlkYXJTYWZldHkSQwoJenV1dV9tb2Rl",
             "GAYgASgLMjAucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0eS5adXV1",
             "TW9kZUNvbW1hbmQSSQoMY29udHJvbF9tb2RlGAcgASgLMjMucmVhY2h5LnBh",
-            "cnQubW9iaWxlLmJhc2UudXRpbGl0eS5Db250cm9sTW9kZUNvbW1hbmQiiwIK",
-            "Dk9kb21ldHJ5VmVjdG9yEiYKAXgYASABKAsyGy5nb29nbGUucHJvdG9idWYu",
-            "RmxvYXRWYWx1ZRImCgF5GAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0",
-            "VmFsdWUSKgoFdGhldGEYAyABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRW",
-            "YWx1ZRInCgJ2eBgEIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVl",
-            "EicKAnZ5GAUgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSKwoG",
-            "dnRoZXRhGAYgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUifQoS",
-            "Q29udHJvbE1vZGVDb21tYW5kEh8KAmlkGAEgASgLMhMucmVhY2h5LnBhcnQu",
-            "UGFydElkEkYKBG1vZGUYAiABKA4yOC5yZWFjaHkucGFydC5tb2JpbGUuYmFz",
-            "ZS51dGlsaXR5LkNvbnRyb2xNb2RlUG9zc2libGl0aWVzIncKD1p1dXVNb2Rl",
-            "Q29tbWFuZBIfCgJpZBgBIAEoCzITLnJlYWNoeS5wYXJ0LlBhcnRJZBJDCgRt",
-            "b2RlGAIgASgOMjUucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0eS5a",
-            "dXV1TW9kZVBvc3NpYmxpdGllcyI6CgxCYXR0ZXJ5TGV2ZWwSKgoFbGV2ZWwY",
-            "ASABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSIwChBNb2JpbGVC",
-            "YXNlU3RhdHVzEhwKBmVycm9ycxgBIAMoCzIMLmVycm9yLkVycm9yKkgKF0Nv",
-            "bnRyb2xNb2RlUG9zc2libGl0aWVzEhUKEU5PTkVfQ09OVFJPTF9NT0RFEAAS",
-            "DQoJT1BFTl9MT09QEAESBwoDUElEEAIqiQEKFFp1dXVNb2RlUG9zc2libGl0",
-            "aWVzEhIKDk5PTkVfWlVVVV9NT0RFEAASCwoHQ01EX1ZFTBABEgkKBUJSQUtF",
-            "EAISDgoKRlJFRV9XSEVFTBADEgkKBVNQRUVEEAQSCAoER09UTxAFEhIKDkVN",
-            "RVJHRU5DWV9TVE9QEAYSDAoIQ01EX0dPVE8QBzKtCQoYTW9iaWxlQmFzZVV0",
-            "aWxpdHlTZXJ2aWNlEl4KEUdldEFsbE1vYmlsZUJhc2VzEhYuZ29vZ2xlLnBy",
-            "b3RvYnVmLkVtcHR5GjEucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0",
-            "eS5MaXN0T2ZNb2JpbGVCYXNlElEKCEdldFN0YXRlEhMucmVhY2h5LnBhcnQu",
-            "UGFydElkGjAucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0eS5Nb2Jp",
-            "bGVCYXNlU3RhdGUSTwoFQXVkaXQSEy5yZWFjaHkucGFydC5QYXJ0SWQaMS5y",
-            "ZWFjaHkucGFydC5tb2JpbGUuYmFzZS51dGlsaXR5Lk1vYmlsZUJhc2VTdGF0",
-            "dXMSOAoJSGVhcnRCZWF0EhMucmVhY2h5LnBhcnQuUGFydElkGhYuZ29vZ2xl",
-            "LnByb3RvYnVmLkVtcHR5EjYKB1Jlc3RhcnQSEy5yZWFjaHkucGFydC5QYXJ0",
-            "SWQaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSNQoGVHVybk9uEhMucmVhY2h5",
-            "LnBhcnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EjYKB1R1cm5P",
-            "ZmYSEy5yZWFjaHkucGFydC5QYXJ0SWQaFi5nb29nbGUucHJvdG9idWYuRW1w",
-            "dHkSewoOU2V0Q29udHJvbE1vZGUSMy5yZWFjaHkucGFydC5tb2JpbGUuYmFz",
-            "ZS51dGlsaXR5LkNvbnRyb2xNb2RlQ29tbWFuZBo0LnJlYWNoeS5wYXJ0Lm1v",
-            "YmlsZS5iYXNlLm1vYmlsaXR5Lk1vYmlsaXR5U2VydmljZUFjaxJaCg5HZXRD",
-            "b250cm9sTW9kZRITLnJlYWNoeS5wYXJ0LlBhcnRJZBozLnJlYWNoeS5wYXJ0",
-            "Lm1vYmlsZS5iYXNlLnV0aWxpdHkuQ29udHJvbE1vZGVDb21tYW5kEnUKC1Nl",
-            "dFp1dXVNb2RlEjAucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0eS5a",
-            "dXV1TW9kZUNvbW1hbmQaNC5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS5tb2Jp",
-            "bGl0eS5Nb2JpbGl0eVNlcnZpY2VBY2sSVAoLR2V0WnV1dU1vZGUSEy5yZWFj",
-            "aHkucGFydC5QYXJ0SWQaMC5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS51dGls",
-            "aXR5Llp1dXVNb2RlQ29tbWFuZBJVCg9HZXRCYXR0ZXJ5TGV2ZWwSEy5yZWFj",
-            "aHkucGFydC5QYXJ0SWQaLS5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS51dGls",
-            "aXR5LkJhdHRlcnlMZXZlbBJTCgtHZXRPZG9tZXRyeRITLnJlYWNoeS5wYXJ0",
-            "LlBhcnRJZBovLnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLnV0aWxpdHkuT2Rv",
-            "bWV0cnlWZWN0b3ISWgoNUmVzZXRPZG9tZXRyeRITLnJlYWNoeS5wYXJ0LlBh",
-            "cnRJZBo0LnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLm1vYmlsaXR5Lk1vYmls",
-            "aXR5U2VydmljZUFja2IGcHJvdG8z"));
+            "cnQubW9iaWxlLmJhc2UudXRpbGl0eS5Db250cm9sTW9kZUNvbW1hbmQSQQoI",
+            "b2RvbWV0cnkYCCABKAsyLy5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS51dGls",
+            "aXR5Lk9kb21ldHJ5VmVjdG9yEkYKC2dvYWxfc3BlZWRzGAkgASgLMjEucmVh",
+            "Y2h5LnBhcnQubW9iaWxlLmJhc2UubW9iaWxpdHkuRGlyZWN0aW9uVmVjdG9y",
+            "IosCCg5PZG9tZXRyeVZlY3RvchImCgF4GAEgASgLMhsuZ29vZ2xlLnByb3Rv",
+            "YnVmLkZsb2F0VmFsdWUSJgoBeRgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5G",
+            "bG9hdFZhbHVlEioKBXRoZXRhGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZs",
+            "b2F0VmFsdWUSJwoCdngYBCABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRW",
+            "YWx1ZRInCgJ2eRgFIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVl",
+            "EisKBnZ0aGV0YRgGIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVl",
+            "In0KEkNvbnRyb2xNb2RlQ29tbWFuZBIfCgJpZBgBIAEoCzITLnJlYWNoeS5w",
+            "YXJ0LlBhcnRJZBJGCgRtb2RlGAIgASgOMjgucmVhY2h5LnBhcnQubW9iaWxl",
+            "LmJhc2UudXRpbGl0eS5Db250cm9sTW9kZVBvc3NpYmxpdGllcyJ3Cg9adXV1",
+            "TW9kZUNvbW1hbmQSHwoCaWQYASABKAsyEy5yZWFjaHkucGFydC5QYXJ0SWQS",
+            "QwoEbW9kZRgCIAEoDjI1LnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLnV0aWxp",
+            "dHkuWnV1dU1vZGVQb3NzaWJsaXRpZXMiOgoMQmF0dGVyeUxldmVsEioKBWxl",
+            "dmVsGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUiMAoQTW9i",
+            "aWxlQmFzZVN0YXR1cxIcCgZlcnJvcnMYASADKAsyDC5lcnJvci5FcnJvcipI",
+            "ChdDb250cm9sTW9kZVBvc3NpYmxpdGllcxIVChFOT05FX0NPTlRST0xfTU9E",
+            "RRAAEg0KCU9QRU5fTE9PUBABEgcKA1BJRBACKokBChRadXV1TW9kZVBvc3Np",
+            "YmxpdGllcxISCg5OT05FX1pVVVVfTU9ERRAAEgsKB0NNRF9WRUwQARIJCgVC",
+            "UkFLRRACEg4KCkZSRUVfV0hFRUwQAxIJCgVTUEVFRBAEEggKBEdPVE8QBRIS",
+            "Cg5FTUVSR0VOQ1lfU1RPUBAGEgwKCENNRF9HT1RPEAcyrQkKGE1vYmlsZUJh",
+            "c2VVdGlsaXR5U2VydmljZRJeChFHZXRBbGxNb2JpbGVCYXNlcxIWLmdvb2ds",
+            "ZS5wcm90b2J1Zi5FbXB0eRoxLnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLnV0",
+            "aWxpdHkuTGlzdE9mTW9iaWxlQmFzZRJRCghHZXRTdGF0ZRITLnJlYWNoeS5w",
+            "YXJ0LlBhcnRJZBowLnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLnV0aWxpdHku",
+            "TW9iaWxlQmFzZVN0YXRlEk8KBUF1ZGl0EhMucmVhY2h5LnBhcnQuUGFydElk",
+            "GjEucmVhY2h5LnBhcnQubW9iaWxlLmJhc2UudXRpbGl0eS5Nb2JpbGVCYXNl",
+            "U3RhdHVzEjgKCUhlYXJ0QmVhdBITLnJlYWNoeS5wYXJ0LlBhcnRJZBoWLmdv",
+            "b2dsZS5wcm90b2J1Zi5FbXB0eRI2CgdSZXN0YXJ0EhMucmVhY2h5LnBhcnQu",
+            "UGFydElkGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EjUKBlR1cm5PbhITLnJl",
+            "YWNoeS5wYXJ0LlBhcnRJZBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRI2CgdU",
+            "dXJuT2ZmEhMucmVhY2h5LnBhcnQuUGFydElkGhYuZ29vZ2xlLnByb3RvYnVm",
+            "LkVtcHR5EnsKDlNldENvbnRyb2xNb2RlEjMucmVhY2h5LnBhcnQubW9iaWxl",
+            "LmJhc2UudXRpbGl0eS5Db250cm9sTW9kZUNvbW1hbmQaNC5yZWFjaHkucGFy",
+            "dC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5Nb2JpbGl0eVNlcnZpY2VBY2sSWgoO",
+            "R2V0Q29udHJvbE1vZGUSEy5yZWFjaHkucGFydC5QYXJ0SWQaMy5yZWFjaHku",
+            "cGFydC5tb2JpbGUuYmFzZS51dGlsaXR5LkNvbnRyb2xNb2RlQ29tbWFuZBJ1",
+            "CgtTZXRadXV1TW9kZRIwLnJlYWNoeS5wYXJ0Lm1vYmlsZS5iYXNlLnV0aWxp",
+            "dHkuWnV1dU1vZGVDb21tYW5kGjQucmVhY2h5LnBhcnQubW9iaWxlLmJhc2Uu",
+            "bW9iaWxpdHkuTW9iaWxpdHlTZXJ2aWNlQWNrElQKC0dldFp1dXVNb2RlEhMu",
+            "cmVhY2h5LnBhcnQuUGFydElkGjAucmVhY2h5LnBhcnQubW9iaWxlLmJhc2Uu",
+            "dXRpbGl0eS5adXV1TW9kZUNvbW1hbmQSVQoPR2V0QmF0dGVyeUxldmVsEhMu",
+            "cmVhY2h5LnBhcnQuUGFydElkGi0ucmVhY2h5LnBhcnQubW9iaWxlLmJhc2Uu",
+            "dXRpbGl0eS5CYXR0ZXJ5TGV2ZWwSUwoLR2V0T2RvbWV0cnkSEy5yZWFjaHku",
+            "cGFydC5QYXJ0SWQaLy5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS51dGlsaXR5",
+            "Lk9kb21ldHJ5VmVjdG9yEloKDVJlc2V0T2RvbWV0cnkSEy5yZWFjaHkucGFy",
+            "dC5QYXJ0SWQaNC5yZWFjaHkucGFydC5tb2JpbGUuYmFzZS5tb2JpbGl0eS5N",
+            "b2JpbGl0eVNlcnZpY2VBY2tiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.Mobile.Base.Lidar.MobileBaseLidarReflection.Descriptor, global::Reachy.Part.Mobile.Base.Mobility.MobileBaseMobilityReflection.Descriptor, global::Error.ErrorReflection.Descriptor, global::Reachy.Part.PartReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.Part.Mobile.Base.Utility.ControlModePossiblities), typeof(global::Reachy.Part.Mobile.Base.Utility.ZuuuModePossiblities), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Utility.MobileBase), global::Reachy.Part.Mobile.Base.Utility.MobileBase.Parser, new[]{ "PartId", "Info" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Utility.ListOfMobileBase), global::Reachy.Part.Mobile.Base.Utility.ListOfMobileBase.Parser, new[]{ "MobileBase" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Utility.MobileBaseState), global::Reachy.Part.Mobile.Base.Utility.MobileBaseState.Parser, new[]{ "Timestamp", "Id", "Activated", "BatteryLevel", "LidarSafety", "ZuuuMode", "ControlMode" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Utility.MobileBaseState), global::Reachy.Part.Mobile.Base.Utility.MobileBaseState.Parser, new[]{ "Timestamp", "Id", "Activated", "BatteryLevel", "LidarSafety", "ZuuuMode", "ControlMode", "Odometry", "GoalSpeeds" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Utility.OdometryVector), global::Reachy.Part.Mobile.Base.Utility.OdometryVector.Parser, new[]{ "X", "Y", "Theta", "Vx", "Vy", "Vtheta" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand), global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand.Parser, new[]{ "Id", "Mode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand), global::Reachy.Part.Mobile.Base.Utility.ZuuuModeCommand.Parser, new[]{ "Id", "Mode" }, null, null, null, null),
@@ -588,6 +591,8 @@ namespace Reachy.Part.Mobile.Base.Utility {
       lidarSafety_ = other.lidarSafety_ != null ? other.lidarSafety_.Clone() : null;
       zuuuMode_ = other.zuuuMode_ != null ? other.zuuuMode_.Clone() : null;
       controlMode_ = other.controlMode_ != null ? other.controlMode_.Clone() : null;
+      odometry_ = other.odometry_ != null ? other.odometry_.Clone() : null;
+      goalSpeeds_ = other.goalSpeeds_ != null ? other.goalSpeeds_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -681,6 +686,30 @@ namespace Reachy.Part.Mobile.Base.Utility {
       }
     }
 
+    /// <summary>Field number for the "odometry" field.</summary>
+    public const int OdometryFieldNumber = 8;
+    private global::Reachy.Part.Mobile.Base.Utility.OdometryVector odometry_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Mobile.Base.Utility.OdometryVector Odometry {
+      get { return odometry_; }
+      set {
+        odometry_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "goal_speeds" field.</summary>
+    public const int GoalSpeedsFieldNumber = 9;
+    private global::Reachy.Part.Mobile.Base.Mobility.DirectionVector goalSpeeds_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Reachy.Part.Mobile.Base.Mobility.DirectionVector GoalSpeeds {
+      get { return goalSpeeds_; }
+      set {
+        goalSpeeds_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -703,6 +732,8 @@ namespace Reachy.Part.Mobile.Base.Utility {
       if (!object.Equals(LidarSafety, other.LidarSafety)) return false;
       if (!object.Equals(ZuuuMode, other.ZuuuMode)) return false;
       if (!object.Equals(ControlMode, other.ControlMode)) return false;
+      if (!object.Equals(Odometry, other.Odometry)) return false;
+      if (!object.Equals(GoalSpeeds, other.GoalSpeeds)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -717,6 +748,8 @@ namespace Reachy.Part.Mobile.Base.Utility {
       if (lidarSafety_ != null) hash ^= LidarSafety.GetHashCode();
       if (zuuuMode_ != null) hash ^= ZuuuMode.GetHashCode();
       if (controlMode_ != null) hash ^= ControlMode.GetHashCode();
+      if (odometry_ != null) hash ^= Odometry.GetHashCode();
+      if (goalSpeeds_ != null) hash ^= GoalSpeeds.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -763,6 +796,14 @@ namespace Reachy.Part.Mobile.Base.Utility {
         output.WriteRawTag(58);
         output.WriteMessage(ControlMode);
       }
+      if (odometry_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Odometry);
+      }
+      if (goalSpeeds_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(GoalSpeeds);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -801,6 +842,14 @@ namespace Reachy.Part.Mobile.Base.Utility {
         output.WriteRawTag(58);
         output.WriteMessage(ControlMode);
       }
+      if (odometry_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Odometry);
+      }
+      if (goalSpeeds_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(GoalSpeeds);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -831,6 +880,12 @@ namespace Reachy.Part.Mobile.Base.Utility {
       }
       if (controlMode_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ControlMode);
+      }
+      if (odometry_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Odometry);
+      }
+      if (goalSpeeds_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GoalSpeeds);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -882,6 +937,18 @@ namespace Reachy.Part.Mobile.Base.Utility {
           ControlMode = new global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand();
         }
         ControlMode.MergeFrom(other.ControlMode);
+      }
+      if (other.odometry_ != null) {
+        if (odometry_ == null) {
+          Odometry = new global::Reachy.Part.Mobile.Base.Utility.OdometryVector();
+        }
+        Odometry.MergeFrom(other.Odometry);
+      }
+      if (other.goalSpeeds_ != null) {
+        if (goalSpeeds_ == null) {
+          GoalSpeeds = new global::Reachy.Part.Mobile.Base.Mobility.DirectionVector();
+        }
+        GoalSpeeds.MergeFrom(other.GoalSpeeds);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -944,6 +1011,20 @@ namespace Reachy.Part.Mobile.Base.Utility {
             input.ReadMessage(ControlMode);
             break;
           }
+          case 66: {
+            if (odometry_ == null) {
+              Odometry = new global::Reachy.Part.Mobile.Base.Utility.OdometryVector();
+            }
+            input.ReadMessage(Odometry);
+            break;
+          }
+          case 74: {
+            if (goalSpeeds_ == null) {
+              GoalSpeeds = new global::Reachy.Part.Mobile.Base.Mobility.DirectionVector();
+            }
+            input.ReadMessage(GoalSpeeds);
+            break;
+          }
         }
       }
     #endif
@@ -1003,6 +1084,20 @@ namespace Reachy.Part.Mobile.Base.Utility {
               ControlMode = new global::Reachy.Part.Mobile.Base.Utility.ControlModeCommand();
             }
             input.ReadMessage(ControlMode);
+            break;
+          }
+          case 66: {
+            if (odometry_ == null) {
+              Odometry = new global::Reachy.Part.Mobile.Base.Utility.OdometryVector();
+            }
+            input.ReadMessage(Odometry);
+            break;
+          }
+          case 74: {
+            if (goalSpeeds_ == null) {
+              GoalSpeeds = new global::Reachy.Part.Mobile.Base.Mobility.DirectionVector();
+            }
+            input.ReadMessage(GoalSpeeds);
             break;
           }
         }
