@@ -15,7 +15,7 @@ from google.protobuf import wrappers_pb2 as google_dot_protobuf_dot_wrappers__pb
 import part_pb2 as part__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x1amobile_base_mobility.proto\x12 reachy.part.mobile.base.mobility\x1a\x1egoogle/protobuf/wrappers.proto\x1a\npart.proto\"\x8d\x01\n\x0f\x44irectionVector\x12&\n\x01x\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12&\n\x01y\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12*\n\x05theta\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"\x7f\n\x16TargetDirectionCommand\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x44\n\tdirection\x18\x02 \x01(\x0b\x32\x31.reachy.part.mobile.base.mobility.DirectionVector\"\xe6\x01\n\x0eSetSpeedVector\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12*\n\x05x_vel\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12*\n\x05y_vel\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12,\n\x07rot_vel\x18\x04 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12-\n\x08\x64uration\x18\x05 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"\xd3\x01\n\x14\x44istanceToGoalVector\x12,\n\x07\x64\x65lta_x\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12,\n\x07\x64\x65lta_y\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x30\n\x0b\x64\x65lta_theta\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12-\n\x08\x64istance\x18\x04 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"A\n\x12MobilityServiceAck\x12+\n\x07success\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.BoolValue2\xcf\x03\n\x19MobileBaseMobilityService\x12\x7f\n\rSendDirection\x12\x38.reachy.part.mobile.base.mobility.TargetDirectionCommand\x1a\x34.reachy.part.mobile.base.mobility.MobilityServiceAck\x12v\n\x0cSendSetSpeed\x12\x30.reachy.part.mobile.base.mobility.SetSpeedVector\x1a\x34.reachy.part.mobile.base.mobility.MobilityServiceAck\x12Z\n\x10GetLastDirection\x12\x13.reachy.part.PartId\x1a\x31.reachy.part.mobile.base.mobility.DirectionVector\x12]\n\x0e\x44istanceToGoal\x12\x13.reachy.part.PartId\x1a\x36.reachy.part.mobile.base.mobility.DistanceToGoalVectorb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x1amobile_base_mobility.proto\x12 reachy.part.mobile.base.mobility\x1a\x1egoogle/protobuf/wrappers.proto\x1a\npart.proto\"\x90\x01\n\x0f\x44irectionVector\x12\'\n\x02vx\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\'\n\x02vy\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12+\n\x06vtheta\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"\x7f\n\x16TargetDirectionCommand\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12\x44\n\tdirection\x18\x02 \x01(\x0b\x32\x31.reachy.part.mobile.base.mobility.DirectionVector\"\xe6\x01\n\x0eSetSpeedVector\x12\x1f\n\x02id\x18\x01 \x01(\x0b\x32\x13.reachy.part.PartId\x12*\n\x05x_vel\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12*\n\x05y_vel\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12,\n\x07rot_vel\x18\x04 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12-\n\x08\x64uration\x18\x05 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"\xd3\x01\n\x14\x44istanceToGoalVector\x12,\n\x07\x64\x65lta_x\x18\x01 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12,\n\x07\x64\x65lta_y\x18\x02 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12\x30\n\x0b\x64\x65lta_theta\x18\x03 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\x12-\n\x08\x64istance\x18\x04 \x01(\x0b\x32\x1b.google.protobuf.FloatValue\"A\n\x12MobilityServiceAck\x12+\n\x07success\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.BoolValue2\xcf\x03\n\x19MobileBaseMobilityService\x12\x7f\n\rSendDirection\x12\x38.reachy.part.mobile.base.mobility.TargetDirectionCommand\x1a\x34.reachy.part.mobile.base.mobility.MobilityServiceAck\x12v\n\x0cSendSetSpeed\x12\x30.reachy.part.mobile.base.mobility.SetSpeedVector\x1a\x34.reachy.part.mobile.base.mobility.MobilityServiceAck\x12Z\n\x10GetLastDirection\x12\x13.reachy.part.PartId\x1a\x31.reachy.part.mobile.base.mobility.DirectionVector\x12]\n\x0e\x44istanceToGoal\x12\x13.reachy.part.PartId\x1a\x36.reachy.part.mobile.base.mobility.DistanceToGoalVectorb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -23,15 +23,15 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mobile_base_mobility_pb2', 
 if _descriptor._USE_C_DESCRIPTORS == False:
   DESCRIPTOR._options = None
   _globals['_DIRECTIONVECTOR']._serialized_start=109
-  _globals['_DIRECTIONVECTOR']._serialized_end=250
-  _globals['_TARGETDIRECTIONCOMMAND']._serialized_start=252
-  _globals['_TARGETDIRECTIONCOMMAND']._serialized_end=379
-  _globals['_SETSPEEDVECTOR']._serialized_start=382
-  _globals['_SETSPEEDVECTOR']._serialized_end=612
-  _globals['_DISTANCETOGOALVECTOR']._serialized_start=615
-  _globals['_DISTANCETOGOALVECTOR']._serialized_end=826
-  _globals['_MOBILITYSERVICEACK']._serialized_start=828
-  _globals['_MOBILITYSERVICEACK']._serialized_end=893
-  _globals['_MOBILEBASEMOBILITYSERVICE']._serialized_start=896
-  _globals['_MOBILEBASEMOBILITYSERVICE']._serialized_end=1359
+  _globals['_DIRECTIONVECTOR']._serialized_end=253
+  _globals['_TARGETDIRECTIONCOMMAND']._serialized_start=255
+  _globals['_TARGETDIRECTIONCOMMAND']._serialized_end=382
+  _globals['_SETSPEEDVECTOR']._serialized_start=385
+  _globals['_SETSPEEDVECTOR']._serialized_end=615
+  _globals['_DISTANCETOGOALVECTOR']._serialized_start=618
+  _globals['_DISTANCETOGOALVECTOR']._serialized_end=829
+  _globals['_MOBILITYSERVICEACK']._serialized_start=831
+  _globals['_MOBILITYSERVICEACK']._serialized_end=896
+  _globals['_MOBILEBASEMOBILITYSERVICE']._serialized_start=899
+  _globals['_MOBILEBASEMOBILITYSERVICE']._serialized_end=1362
 # @@protoc_insertion_point(module_scope)

@@ -12,6 +12,7 @@ import google.protobuf.message
 import google.protobuf.timestamp_pb2
 import google.protobuf.wrappers_pb2
 import mobile_base_lidar_pb2
+import mobile_base_mobility_pb2
 import part_pb2
 import sys
 import typing
@@ -115,6 +116,8 @@ class MobileBaseState(google.protobuf.message.Message):
     LIDAR_SAFETY_FIELD_NUMBER: builtins.int
     ZUUU_MODE_FIELD_NUMBER: builtins.int
     CONTROL_MODE_FIELD_NUMBER: builtins.int
+    ODOMETRY_FIELD_NUMBER: builtins.int
+    GOAL_SPEEDS_FIELD_NUMBER: builtins.int
     @property
     def timestamp(self) -> google.protobuf.timestamp_pb2.Timestamp: ...
     @property
@@ -128,6 +131,10 @@ class MobileBaseState(google.protobuf.message.Message):
     def zuuu_mode(self) -> global___ZuuuModeCommand: ...
     @property
     def control_mode(self) -> global___ControlModeCommand: ...
+    @property
+    def odometry(self) -> global___OdometryVector: ...
+    @property
+    def goal_speeds(self) -> mobile_base_mobility_pb2.DirectionVector: ...
     def __init__(
         self,
         *,
@@ -138,9 +145,11 @@ class MobileBaseState(google.protobuf.message.Message):
         lidar_safety: mobile_base_lidar_pb2.LidarSafety | None = ...,
         zuuu_mode: global___ZuuuModeCommand | None = ...,
         control_mode: global___ControlModeCommand | None = ...,
+        odometry: global___OdometryVector | None = ...,
+        goal_speeds: mobile_base_mobility_pb2.DirectionVector | None = ...,
     ) -> None: ...
-    def HasField(self, field_name: typing_extensions.Literal["battery_level", b"battery_level", "control_mode", b"control_mode", "id", b"id", "lidar_safety", b"lidar_safety", "timestamp", b"timestamp", "zuuu_mode", b"zuuu_mode"]) -> builtins.bool: ...
-    def ClearField(self, field_name: typing_extensions.Literal["activated", b"activated", "battery_level", b"battery_level", "control_mode", b"control_mode", "id", b"id", "lidar_safety", b"lidar_safety", "timestamp", b"timestamp", "zuuu_mode", b"zuuu_mode"]) -> None: ...
+    def HasField(self, field_name: typing_extensions.Literal["battery_level", b"battery_level", "control_mode", b"control_mode", "goal_speeds", b"goal_speeds", "id", b"id", "lidar_safety", b"lidar_safety", "odometry", b"odometry", "timestamp", b"timestamp", "zuuu_mode", b"zuuu_mode"]) -> builtins.bool: ...
+    def ClearField(self, field_name: typing_extensions.Literal["activated", b"activated", "battery_level", b"battery_level", "control_mode", b"control_mode", "goal_speeds", b"goal_speeds", "id", b"id", "lidar_safety", b"lidar_safety", "odometry", b"odometry", "timestamp", b"timestamp", "zuuu_mode", b"zuuu_mode"]) -> None: ...
 
 global___MobileBaseState = MobileBaseState
 
