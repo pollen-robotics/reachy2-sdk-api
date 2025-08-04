@@ -32,6 +32,9 @@ message MobileBaseState {
 
     ZuuuModeCommand zuuu_mode = 6;
     ControlModeCommand control_mode = 7;
+
+    OdometryVector odometry = 8;
+    mobile.base.mobility.DirectionVector goal_speeds = 9;
 }
 
 message OdometryVector {

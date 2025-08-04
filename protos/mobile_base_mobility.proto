@@ -8,9 +8,9 @@ package reachy.part.mobile.base.mobility;
 // Speed commands in SI units (m/s and rad/s)
 message DirectionVector {
     // use FloatValue instead of double to avoid 0.0 default value being ignored
-    google.protobuf.FloatValue x = 1;
-    google.protobuf.FloatValue y = 2;
-    google.protobuf.FloatValue theta = 3;
+    google.protobuf.FloatValue vx = 1;
+    google.protobuf.FloatValue vy = 2;
+    google.protobuf.FloatValue vtheta = 3;
 }
 
 message TargetDirectionCommand {
