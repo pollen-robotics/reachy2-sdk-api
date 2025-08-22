@@ -72,18 +72,18 @@ namespace Reachy {
             "AyABKAsyKC5yZWFjaHkucGFydC5oZWFkLkhlYWRDb21wb25lbnRzQ29tbWFu",
             "ZHMSPgoPbF9oYW5kX2NvbW1hbmRzGAQgASgLMiUucmVhY2h5LnBhcnQuaGFu",
             "ZC5IYW5kUG9zaXRpb25SZXF1ZXN0Ej4KD3JfaGFuZF9jb21tYW5kcxgFIAEo",
-            "CzIlLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFBvc2l0aW9uUmVxdWVzdCo6Cg5S",
+            "CzIlLnJlYWNoeS5wYXJ0LmhhbmQuSGFuZFBvc2l0aW9uUmVxdWVzdCpGCg5S",
             "ZWFjaHlDb3JlTW9kZRIICgROT05FEAASCAoERkFLRRABEggKBFJFQUwQAhIK",
-            "CgZHQVpFQk8QAzKZAwoNUmVhY2h5U2VydmljZRIzCglHZXRSZWFjaHkSFi5n",
-            "b29nbGUucHJvdG9idWYuRW1wdHkaDi5yZWFjaHkuUmVhY2h5EjcKDkdldFJl",
-            "YWNoeVN0YXRlEhAucmVhY2h5LlJlYWNoeUlkGhMucmVhY2h5LlJlYWNoeVN0",
-            "YXRlEkwKEVN0cmVhbVJlYWNoeVN0YXRlEiAucmVhY2h5LlJlYWNoeVN0cmVh",
-            "bVN0YXRlUmVxdWVzdBoTLnJlYWNoeS5SZWFjaHlTdGF0ZTABElIKFlNlbmRD",
-            "b21wb25lbnRzQ29tbWFuZHMSIC5yZWFjaHkuUmVhY2h5Q29tcG9uZW50c0Nv",
-            "bW1hbmRzGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Ei8KBUF1ZGl0EhAucmVh",
-            "Y2h5LlJlYWNoeUlkGhQucmVhY2h5LlJlYWNoeVN0YXR1cxJHCgtTdHJlYW1B",
-            "dWRpdBIgLnJlYWNoeS5SZWFjaHlTdHJlYW1BdWRpdFJlcXVlc3QaFC5yZWFj",
-            "aHkuUmVhY2h5U3RhdHVzMAFiBnByb3RvMw=="));
+            "CgZHQVpFQk8QAxIKCgZNVUpPQ08QBDKZAwoNUmVhY2h5U2VydmljZRIzCglH",
+            "ZXRSZWFjaHkSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaDi5yZWFjaHkuUmVh",
+            "Y2h5EjcKDkdldFJlYWNoeVN0YXRlEhAucmVhY2h5LlJlYWNoeUlkGhMucmVh",
+            "Y2h5LlJlYWNoeVN0YXRlEkwKEVN0cmVhbVJlYWNoeVN0YXRlEiAucmVhY2h5",
+            "LlJlYWNoeVN0cmVhbVN0YXRlUmVxdWVzdBoTLnJlYWNoeS5SZWFjaHlTdGF0",
+            "ZTABElIKFlNlbmRDb21wb25lbnRzQ29tbWFuZHMSIC5yZWFjaHkuUmVhY2h5",
+            "Q29tcG9uZW50c0NvbW1hbmRzGhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Ei8K",
+            "BUF1ZGl0EhAucmVhY2h5LlJlYWNoeUlkGhQucmVhY2h5LlJlYWNoeVN0YXR1",
+            "cxJHCgtTdHJlYW1BdWRpdBIgLnJlYWNoeS5SZWFjaHlTdHJlYW1BdWRpdFJl",
+            "cXVlc3QaFC5yZWFjaHkuUmVhY2h5U3RhdHVzMAFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Reachy.Part.Arm.ArmReflection.Descriptor, global::Reachy.Part.Head.HeadReflection.Descriptor, global::Reachy.Part.Hand.HandReflection.Descriptor, global::Reachy.Part.Mobile.Base.Utility.MobileBaseUtilityReflection.Descriptor, global::Reachy.Part.Tripod.TripodReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Reachy.ReachyCoreMode), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -106,6 +106,7 @@ namespace Reachy {
     [pbr::OriginalName("FAKE")] Fake = 1,
     [pbr::OriginalName("REAL")] Real = 2,
     [pbr::OriginalName("GAZEBO")] Gazebo = 3,
+    [pbr::OriginalName("MUJOCO")] Mujoco = 4,
   }
 
   #endregion
