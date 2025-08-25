@@ -32,6 +32,7 @@ class _ReachyCoreModeEnumTypeWrapper(google.protobuf.internal.enum_type_wrapper.
     FAKE: _ReachyCoreMode.ValueType  # 1
     REAL: _ReachyCoreMode.ValueType  # 2
     GAZEBO: _ReachyCoreMode.ValueType  # 3
+    MUJOCO: _ReachyCoreMode.ValueType  # 4
 
 class ReachyCoreMode(_ReachyCoreMode, metaclass=_ReachyCoreModeEnumTypeWrapper): ...
 
@@ -39,6 +40,7 @@ NONE: ReachyCoreMode.ValueType  # 0
 FAKE: ReachyCoreMode.ValueType  # 1
 REAL: ReachyCoreMode.ValueType  # 2
 GAZEBO: ReachyCoreMode.ValueType  # 3
+MUJOCO: ReachyCoreMode.ValueType  # 4
 global___ReachyCoreMode = ReachyCoreMode
 
 @typing_extensions.final
