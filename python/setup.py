@@ -25,7 +25,7 @@ setup(
     install_requires=[
         "grpcio>=1.59.0, <=1.70.0",
         "grpcio-tools>=1.59.0, <=1.62.2",
-        "protobuf>=4.25.0, <=5.29.3",
+        "protobuf>=4.25.0, <=6.32.0",
     ],
     author="Pollen Robotics",
     author_email="contact@pollen-robotics.com",
