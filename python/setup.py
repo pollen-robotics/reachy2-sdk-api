@@ -23,8 +23,8 @@ setup(
     version=version,
     packages=find_packages(exclude=["tests"]),
     install_requires=[
-        "grpcio>=1.59.0, <=1.70.0",
-        "grpcio-tools>=1.59.0, <=1.62.2",
+        "grpcio>=1.59.0, <=1.73.1",
+        "grpcio-tools>=1.59.0, <=1.73.1",
         "protobuf>=4.25.0, <=6.32.0",
     ],
     author="Pollen Robotics",
