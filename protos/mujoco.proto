@@ -1,0 +1,18 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+import "kinematics.proto";
+
+package reachy.mujoco;
+
+message MujocoObjectPose {
+    string name = 1;
+    kinematics.Matrix4x4 pose = 2;
+}
+
+message MujocoObjectsPoses {
+    repeated MujocoObjectPose poses = 1;
+}
+
+service MujocoService {
+    rpc GetObjectsPoses(google.protobuf.Empty) returns (MujocoObjectsPoses);
+}
